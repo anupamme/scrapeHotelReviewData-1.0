@@ -1,0 +1,1267 @@
+<div id="expanded_review_224233128">
+<a name="UR224233128"></a>
+<div id="UR224233128" class="extended provider0 first newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_8F77165690F2E43C0809C2E65C90DA07-SRC_224233128" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_8F77165690F2E43C0809C2E65C90DA07 ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: '8F77165690F2E43C0809C2E65C90DA07'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/9c/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:8F77165690F2E43C0809C2E65C90DA07" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_8F77165690F2E43C0809C2E65C90DA07" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">sylvieVE</span>
+</div>
+</div>
+<div class="location">
+Antwerpen, Belgium
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_8F77165690F2E43C0809C2E65C90DA07-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">2 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '8F77165690F2E43C0809C2E65C90DA07', screenName: 'sylvieVE', geos: [297698, 659610], geo: '297698' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 2 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 2 cities</span> </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g297698-d302653-r224233128-Melia_Bali_Indonesia-Nusa_Dua_Nusa_Dua_Peninsula_Bali.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224233128">&#x201c;<span class='noQuotes'>excellent resort</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed yesterday
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+excellent holiday resort, huge but quiet and well landscaped. Very friendly staff. Good breakfast buffets and dining facilities. Very considerate attitude towards children. excellent pool service: staff finds chairs and installs you on a spot near the pool that you prefer. some organised pool acticities such as volleyball, basketball but never intrusive. Nice mix of nationalities, well-mannered guests. The only downside for me were the slightly outdated bathrooms.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<p>Review collected in partnership with Melia Hotels International <span class="sprite-info_grn info_grn" onclick="ta.call('ta.overlays.Factory.showPartnerAttributionTip', event, this.parentNode, 'This business uses online tools and resources provided by TripAdvisor to encourage and collect reviews (including this one) from its guests.');"></span></p>
+<div id="helpfulq224233128_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224233128 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAk3AvqHMmKX3omqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXmmUXv6XoXfXXdXmKKKU6XoXfXXdXXvAAK6XoXfXXdXKXvmm6XoXfXXdUvv33o6XoXfXXdKoUm336XoXfXXmvUok3v6XoXfXXmmUkXvX6XoXfXXmXAUUdv6XoXfXXmUokkKAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXmmUXvqHDVcSJQQoqnQQ7JcSQQoqnQQlCMiCVtSJqHZptJQQoqnQQxMpJQQoqnQQZptJQQoqnQQxMpJQQoqnQQwVCSCtpcJQQoqnQQ7JcSxiGIac6XoXmqoTpcXXdXmmUXv0tEn1XXdXmmUXv0zH1XAk3Av0pSM1vqnkkU3o3AKqnXzsdmfKvKAfXzs3ofAKxMbKk0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224233128" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224233128'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '302653', 'sylvieVE', '8F77165690F2E43C0809C2E65C90DA07', 'en', '224233128', 'Melia Bali Indonesia');">Ask sylvieVE about Melia Bali Indonesia</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_224230001">
+<a name="UR224230001"></a>
+<div id="UR224230001" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_DF3E6C30996EFEBDBC058A6DCD7525F0-SRC_224230001" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_DF3E6C30996EFEBDBC058A6DCD7525F0 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/59/avatar031.jpg" class="avatar potentialFacebookAvatar avatarGUID:DF3E6C30996EFEBDBC058A6DCD7525F0" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_DF3E6C30996EFEBDBC058A6DCD7525F0" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Catherine B</span>
+</div>
+</div>
+<div class="location">
+Nusa Duau
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_DF3E6C30996EFEBDBC058A6DCD7525F0-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g297698-d302653-r224230001-Melia_Bali_Indonesia-Nusa_Dua_Nusa_Dua_Peninsula_Bali.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224230001">&#x201c;<span class='noQuotes'>Melia experience</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed yesterday
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+We enjoyed a very relaxing week at the Melia. The pool area is great! The room was clean and very comfortable. The resort is in a good location with plenty of restaurants and shops close by. The staff were friendly and helpful .
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Review collected in partnership with Melia Hotels International <span class="sprite-info_grn info_grn" onclick="ta.call('ta.overlays.Factory.showPartnerAttributionTip', event, this.parentNode, 'This business uses online tools and resources provided by TripAdvisor to encourage and collect reviews (including this one) from its guests.');"></span></p>
+<div id="helpfulq224230001_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224230001 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAk3AvqHMmKX3omqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXmmUXv6XoXfXXdXmKKKU6XoXfXXdXXvAAK6XoXfXXdXKXvmm6XoXfXXdUvv33o6XoXfXXdKoUm336XoXfXXmvUok3v6XoXfXXmmUkXvX6XoXfXXmXAUUdv6XoXfXXmUokkKAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXmmUXvqHDVcSJQQoqnQQ7JcSQQoqnQQlCMiCVtSJqHZptJQQoqnQQxMpJQQoqnQQZptJQQoqnQQxMpJQQoqnQQwVCSCtpcJQQoqnQQ7JcSxiGIac6XoXmqoTpcXXdXmKKKU0tEn1XXdXmKKKU0zH1XAk3Av0pSM1xMqnmzs3fmKAA3zsqnzs7xM7fKovb3xMfxMkoXoqnK0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224230001" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224230001'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '302653', 'Catherine B', 'DF3E6C30996EFEBDBC058A6DCD7525F0', 'en', '224230001', 'Melia Bali Indonesia');">Ask Catherine B about Melia Bali Indonesia</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224228990">
+<a name="UR224228990"></a>
+<div id="UR224228990" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_0A3D9F8EEE1093275F562B7E221FA0AB-SRC_224228990" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_0A3D9F8EEE1093275F562B7E221FA0AB ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/74/avatar056.jpg" class="avatar potentialFacebookAvatar avatarGUID:0A3D9F8EEE1093275F562B7E221FA0AB" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_0A3D9F8EEE1093275F562B7E221FA0AB" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Jani P</span>
+</div>
+</div>
+<div class="location">
+Nusa Dua
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_0A3D9F8EEE1093275F562B7E221FA0AB-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g297698-d302653-r224228990-Melia_Bali_Indonesia-Nusa_Dua_Nusa_Dua_Peninsula_Bali.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224228990">&#x201c;<span class='noQuotes'>A good experience</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed yesterday
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+I would recommend this hotel to everyone. The breakfast was excellent and the stuff was very friendly. The only thing that was negative was the smell of mold in the room. I hope that something will be done for this. If I visit Bali again, I will choose Melia Hotel for my accommodation.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Review collected in partnership with Melia Hotels International <span class="sprite-info_grn info_grn" onclick="ta.call('ta.overlays.Factory.showPartnerAttributionTip', event, this.parentNode, 'This business uses online tools and resources provided by TripAdvisor to encourage and collect reviews (including this one) from its guests.');"></span></p>
+<div id="helpfulq224228990_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224228990 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAk3AvqHMmKX3omqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXmmUXv6XoXfXXdXmKKKU6XoXfXXdXXvAAK6XoXfXXdXKXvmm6XoXfXXdUvv33o6XoXfXXdKoUm336XoXfXXmvUok3v6XoXfXXmmUkXvX6XoXfXXmXAUUdv6XoXfXXmUokkKAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXmmUXvqHDVcSJQQoqnQQ7JcSQQoqnQQlCMiCVtSJqHZptJQQoqnQQxMpJQQoqnQQZptJQQoqnQQxMpJQQoqnQQwVCSCtpcJQQoqnQQ7JcSxiGIac6XoXmqoTpcXXdXXvAAK0tEn1XXdXXvAAK0zH1XAk3Av0pSM1KbmxMAqnvzszszsUKAmXkoqno3X7kzsXXUqnbKb70EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224228990" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224228990'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '302653', 'Jani P', '0A3D9F8EEE1093275F562B7E221FA0AB', 'en', '224228990', 'Melia Bali Indonesia');">Ask Jani P about Melia Bali Indonesia</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224202833">
+<a name="UR224202833"></a>
+<div id="UR224202833" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_B42864D4005CD6DFAE0488B46BA8B1F5-SRC_224202833" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_B42864D4005CD6DFAE0488B46BA8B1F5 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/57/avatar030.jpg" class="avatar potentialFacebookAvatar avatarGUID:B42864D4005CD6DFAE0488B46BA8B1F5" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_B42864D4005CD6DFAE0488B46BA8B1F5" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">rkwarneford</span>
+</div>
+</div>
+<div class="location">
+Adelaide, Australia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_B42864D4005CD6DFAE0488B46BA8B1F5-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">4 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">4 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'B42864D4005CD6DFAE0488B46BA8B1F5', screenName: 'rkwarneford', geos: [297701, 297700, 297698, 294265], geo: '297698' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 4 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 4 cities</span> </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g297698-d302653-r224202833-Melia_Bali_Indonesia-Nusa_Dua_Nusa_Dua_Peninsula_Bali.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224202833">&#x201c;<span class='noQuotes'>This place is great with kids</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed yesterday
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+We had a lagoon access room this was great, kids used kids club everyday they loved it 10yrs and 7yrs, room was fantastic with plenty of extras, breakfast was awesome so much to choose from, located walking distance to bali collection
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq224202833_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224202833 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAk3AvqHMmKX3omqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXmmUXv6XoXfXXdXmKKKU6XoXfXXdXXvAAK6XoXfXXdXKXvmm6XoXfXXdUvv33o6XoXfXXdKoUm336XoXfXXmvUok3v6XoXfXXmmUkXvX6XoXfXXmXAUUdv6XoXfXXmUokkKAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXmmUXvqHDVcSJQQoqnQQ7JcSQQoqnQQlCMiCVtSJqHZptJQQoqnQQxMpJQQoqnQQZptJQQoqnQQxMpJQQoqnQQwVCSCtpcJQQoqnQQ7JcSxiGIac6XoXmqoTpcXXdXKXvmm0tEn1XXdXKXvmm0zH1XAk3Av0pSM17dXv3dxMdKKofxM3xMqnbzsKdvv7d37bv7Uqno0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224202833" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224202833'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '302653', 'rkwarneford', 'B42864D4005CD6DFAE0488B46BA8B1F5', 'en', '224202833', 'Melia Bali Indonesia');">Ask rkwarneford about Melia Bali Indonesia</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224188665">
+<a name="UR224188665"></a>
+<div id="UR224188665" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_D9B365F6A9E09C1CBF328FE0D0095044-SRC_224188665" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_D9B365F6A9E09C1CBF328FE0D0095044 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/04/28/5f/28/lisa-m.jpg" class="avatar potentialFacebookAvatar avatarGUID:D9B365F6A9E09C1CBF328FE0D0095044" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_D9B365F6A9E09C1CBF328FE0D0095044" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Lisa M</span>
+</div>
+</div>
+<div class="location">
+Witham, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_D9B365F6A9E09C1CBF328FE0D0095044-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Top Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="54 reviews" class="icon badge_topcontributor sprite-badge_topcontributor" width="25" height="24">
+<span class="badgeText">54 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">10 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'D9B365F6A9E09C1CBF328FE0D0095044', screenName: 'Lisa M', geos: [503775, 190735, 503772, 294217, 503796, 187514, 499545, 186387, 186385, 681388, 1765412, 1096554, 551706, 297698, 3574566, 187051, 503783, 186338, 303804], geo: '297698' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 19 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 19 cities</span> </div>
+<div id="UID_D9B365F6A9E09C1CBF328FE0D0095044-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="76 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">76 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g297698-d302653-r224188665-Melia_Bali_Indonesia-Nusa_Dua_Nusa_Dua_Peninsula_Bali.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224188665">&#x201c;<span class='noQuotes'>All the staff are smiley, happy and helpful</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+This was our first trip to Bali and we stayed at the Melia for nearly 2 weeks. We had an amazing time. The facilities are good and the beach side location was superb. We never had a problem finding sun beds and we are not early birds! We stayed in a junior suite which has a mezzanine bedroom and bathroom over the living area and we enjoyed having a little extra space to use. The best part though was the guaranteed view of the gardens. Be sure to request a garden view as some of the rooms at the back of the hotel would not have good views. <br/>For us, though, the two most important elements that made our holiday, were the quality of the food available at such a large hotel and the amazing attitude of all the staff. The training manager of the Melia must be congratulated as the consistency in approach and attitude from all categories of staff were superb. We would recommend learning a few Balinese phrases as people were delighted by our attempts to say thank you, good morning etc.<br/>Our tips for improvement for the hotel would be to upgrade the showers ( at least in our room!) invest in some new music for the beach bar ( there is only so much Adele you can take in one holiday!) and get some more stools for the bar. None of these little points would stop us coming again - we loved it!
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> We suggest asking for a garden view.
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224188665_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224188665 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAk3AvqHMmKX3omqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXmmUXv6XoXfXXdXmKKKU6XoXfXXdXXvAAK6XoXfXXdXKXvmm6XoXfXXdUvv33o6XoXfXXdKoUm336XoXfXXmvUok3v6XoXfXXmmUkXvX6XoXfXXmXAUUdv6XoXfXXmUokkKAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXmmUXvqHDVcSJQQoqnQQ7JcSQQoqnQQlCMiCVtSJqHZptJQQoqnQQxMpJQQoqnQQZptJQQoqnQQxMpJQQoqnQQwVCSCtpcJQQoqnQQ7JcSxiGIac6XoXmqoTpcXXdUvv33o0tEn1XXdUvv33o0zH1XAk3Av0pSM1xMA7m3oqn3bAzsKAfUf7qnmXvqnzsKxMKKAoKdd0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224188665" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224188665'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '302653', 'Lisa M', 'D9B365F6A9E09C1CBF328FE0D0095044', 'en', '224188665', 'Melia Bali Indonesia');">Ask Lisa M about Melia Bali Indonesia</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224051366">
+<a name="UR224051366"></a>
+<div id="UR224051366" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_51E63CA11593598DAFD13C9757B2C521-SRC_224051366" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_51E63CA11593598DAFD13C9757B2C521 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/02/3d/f9/f6/daveb88.jpg" class="avatar potentialFacebookAvatar avatarGUID:51E63CA11593598DAFD13C9757B2C521" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_51E63CA11593598DAFD13C9757B2C521" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Daveb88</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_51E63CA11593598DAFD13C9757B2C521-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">3 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '51E63CA11593598DAFD13C9757B2C521', screenName: 'Daveb88', geos: [297698, 297697, 32655], geo: '297698' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 3 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 3 cities</span> </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g297698-d302653-r224051366-Melia_Bali_Indonesia-Nusa_Dua_Nusa_Dua_Peninsula_Bali.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224051366">&#x201c;<span class='noQuotes'>Family trip to Bali</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+This was our first trip to Bali as a family. Nusa Dua is a beautiful area which only locals who work in the area are allowed access to. The security checks into Nusa Dua and the hotel were comforting. The Lobby is beautifully presented with the gardens and water features. The room was not what we expected, the brochure from the travel agent gave us the impression that our room would comprise of two rooms which was not the case. We had a loft room with a large staircase, causing significant concerns with our young child. We tried explaining this to the manager who whilst understanding had no family suites available, leaving us with the only option of upgrading to a more expensive room that was not split level. The only benefit to this was we had access to the lagoon pool and the ground floor meaning no lifts up and down all the time. The resort is walking distance to Bali Collections which is where we mainly dined during our stay. The breakfast buffet in the restaurant catered and had a broad range compared to the eating area near the beach which was not as good. The staff were always friendly. Both rooms that we stayed in were beautifully presented and would perfectly suit a couple without kids. The main pool was great, however difficult at times to get a lounge chair as alot of the chairs are reserved very early in the morning. I would still stay at the resort again.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> - The hotel offers two bottles of water per room per day without charge. Bali collections next door...
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224051366_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224051366 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAk3AvqHMmKX3omqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXmmUXv6XoXfXXdXmKKKU6XoXfXXdXXvAAK6XoXfXXdXKXvmm6XoXfXXdUvv33o6XoXfXXdKoUm336XoXfXXmvUok3v6XoXfXXmmUkXvX6XoXfXXmXAUUdv6XoXfXXmUokkKAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXmmUXvqHDVcSJQQoqnQQ7JcSQQoqnQQlCMiCVtSJqHZptJQQoqnQQxMpJQQoqnQQZptJQQoqnQQxMpJQQoqnQQwVCSCtpcJQQoqnQQ7JcSxiGIac6XoXmqoTpcXXdKoUm330tEn1XXdKoUm330zH1XAk3Av0pSM1oUzs3mfbUUoAmoAvxMbqnxMUmfAkok7XfoXU0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224051366" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224051366'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '302653', 'Daveb88', '51E63CA11593598DAFD13C9757B2C521', 'en', '224051366', 'Melia Bali Indonesia');">Ask Daveb88 about Melia Bali Indonesia</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223815768">
+<a name="UR223815768"></a>
+<div id="UR223815768" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_2BEE2AFEA4CED78929C62B7F376C1D09-SRC_223815768" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_2BEE2AFEA4CED78929C62B7F376C1D09 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/97/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:2BEE2AFEA4CED78929C62B7F376C1D09" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_2BEE2AFEA4CED78929C62B7F376C1D09" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Trishson</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_2BEE2AFEA4CED78929C62B7F376C1D09-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g297698-d302653-r223815768-Melia_Bali_Indonesia-Nusa_Dua_Nusa_Dua_Peninsula_Bali.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223815768">&#x201c;<span class='noQuotes'>Could not fault a thing ...</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='23 August 2014'>Reviewed 3 days ago
+<span class="new">NEW</span>
+</span>
+<a class="viaMobile sprite-grayPhone" href="/apps" target="_blank" onclick="ta.util.cookie.setPIDCookie(24687)">via mobile</a>
+</div>
+<div class="entry">
+<p>
+Stayed at level lagoon suite 1121 - fantastic having pool at our door. Staff were friendly and could not do enough to help. Nusa Dua is quiet but plenty of restaurants to choose from and can still get cheap massage and pedi. We'll be coming back to this hotel again.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq223815768_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223815768 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAk3AvqHMmKX3omqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXmmUXv6XoXfXXdXmKKKU6XoXfXXdXXvAAK6XoXfXXdXKXvmm6XoXfXXdUvv33o6XoXfXXdKoUm336XoXfXXmvUok3v6XoXfXXmmUkXvX6XoXfXXmXAUUdv6XoXfXXmUokkKAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXmmUXvqHDVcSJQQoqnQQ7JcSQQoqnQQlCMiCVtSJqHZptJQQoqnQQxMpJQQoqnQQZptJQQoqnQQxMpJQQoqnQQwVCSCtpcJQQoqnQQ7JcSxiGIac6XoXmqoTpcXXmvUok3v0tEn1XXmvUok3v0zH1XAk3Av0pSM1X7zszsXbqnzsbdfzsxMkvAXAf3X7kqnmk3fUxMKA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223815768" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223815768'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '302653', 'Trishson', '2BEE2AFEA4CED78929C62B7F376C1D09', 'en', '223815768', 'Melia Bali Indonesia');">Ask Trishson about Melia Bali Indonesia</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Wayan B, Manager at Melia Bali Indonesia, responded to this review,
+<span class="res_date relativeDate" title='24 August 2014'>2 days ago</span>
+</div>
+<div class="displayText" id="response_223815768">
+Warmest greetings from Melia Bali!<br/><br/>Dear Trishon,<br/><br/>Warmest greetings from the Meliá Bali!<br/><br/>We would like to take this opportunity to thank you for spending your time to write your review of our property in TripAdvisor.<br/><br/>We are happy to learn that you always had a wonderful stay at our The Level Lagoon Access Suite with the service and facilities provided. At The Level we look after everything down to the last detail to make your stay a perfect Balinese experience.<br/><br/>Once again, thank you for your continuous support and compliments to our staffs.<br/>We look forward to welcoming you back on your next Bali trip, please check our website melia.com to get the special deal.<br/><br/>Best regards,<br/><br/>Hotel Management
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223972816" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223972816, isGeo:false, locationid:302653})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223972816" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223972816">
+<a name="UR223972816"></a>
+<div id="UR223972816" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g297698-d302653-r223972816-Melia_Bali_Indonesia-Nusa_Dua_Nusa_Dua_Peninsula_Bali.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223972816">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Warmest greetings from Melia Bali!<br/><br/>Dear Trishon,<br/><br/>Warmest greetings from the Meliá Bali!<br/><br/>We would like to take this opportunity to thank you for spending your time to write your review of our property in TripAdvisor.<br/><br/>We are happy to learn that you always had a wonderful stay at our The Level Lagoon Access Suite with the service and facilities provided. At The Level we look after everything down to the last detail to make your stay a perfect Balinese experience.<br/><br/>Once again, thank you for your continuous support and compliments to our staffs.<br/>We look forward to welcoming you back on your next Bali trip, please check our website melia.com to get the special deal.<br/><br/>Best regards,<br/><br/>Hotel Management
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223972816_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223972816 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAk3AvqHMmKX3omqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXmmUXv6XoXfXXdXmKKKU6XoXfXXdXXvAAK6XoXfXXdXKXvmm6XoXfXXdUvv33o6XoXfXXdKoUm336XoXfXXmvUok3v6XoXfXXmmUkXvX6XoXfXXmXAUUdv6XoXfXXmUokkKAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXmmUXvqHDVcSJQQoqnQQ7JcSQQoqnQQlCMiCVtSJqHZptJQQoqnQQxMpJQQoqnQQZptJQQoqnQQxMpJQQoqnQQwVCSCtpcJQQoqnQQ7JcSxiGIac6XoXmqoTpcXXmAkXvU30tEn1XXmAkXvU30zH1XAk3Av0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223972816" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223972816'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223317282">
+<a name="UR223317282"></a>
+<div id="UR223317282" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_217350828D59C2D9ABE5ECCA66E096E8-SRC_223317282" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_217350828D59C2D9ABE5ECCA66E096E8 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/6a/f6/09/alicehalice.jpg" class="avatar potentialFacebookAvatar avatarGUID:217350828D59C2D9ABE5ECCA66E096E8" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_217350828D59C2D9ABE5ECCA66E096E8" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">alicehalice</span>
+</div>
+</div>
+<div class="location">
+Basingstoke, UK
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_217350828D59C2D9ABE5ECCA66E096E8-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="6 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">6 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">5 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '217350828D59C2D9ABE5ECCA66E096E8', screenName: 'alicehalice', geos: [4283716, 469404, 297698, 293917, 294230], geo: '297698' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 5 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 5 cities</span> </div>
+<div id="UID_217350828D59C2D9ABE5ECCA66E096E8-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="41 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">41 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g297698-d302653-r223317282-Melia_Bali_Indonesia-Nusa_Dua_Nusa_Dua_Peninsula_Bali.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223317282">&#x201c;<span class='noQuotes'>Good solid family hotel</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+I was worried after seeing some of these reviews. We were a family of 4, with two kids under 12. We booked a lagoon access suite on an All Inclusive basis. It wasn't cheap but in total, but it was way cheaper than many other Nusa Dua hotels and well worth it. I last stayed in this hotel back in 1999 and it hasn't changed much, apart from the lagoon access rooms which were added 2 years ago.<br/>The lagoon access rooms, whilst a bit noisy through passing traffic, were absolutely fine. A few minor niggles but nothing major. Could have done with a bit more storage for clothes, but the space suited us all well. We were in building 2 which made the terrace shaded. If you want a sunny terrace, ask for building 1 on the side which would face the sea. <br/>Beds very comfortable. Nice linen. Great soft pillows. TV didn't have the best channels available but there was a DVD player which is a nice touch. Plenty of plugs to charge electronics.<br/>The resort is best suited to families. The pool didn't seem massively big, but surprised us every day as it was never full. Sunloungers - like everywhere - can be a challenge, but we always found some. What made our trip for us was the entertainment available for our children (aged 10 and 11). Every day, they participated in pool aerobics, water polo, water basketball, table tennis, chess. And they never even went in the kids club. For the first time since they were born, I read a book most days and got a tan! They could totally entertain themselves. We ate most evenings at the beachside restaurant with theme nights and live bands/entertainment. To be honest, theme nights and live bands are my version of hell, but my kids loved it. And if my kids are happy, then I am. <br/>If I were travelling solo, or as a couple, I would go somewhere a little quieter and a bit more refined, but the Melia have nailed it. They could upgrade everything, charge the prices of the hotels next door and beyond, but I presume they have chosen not to. It is a lively hotel, a little rough around the edges in places (didn't see the other rooms but lagoon access rooms were light and spacious) but the price fits that. As for our All Inclusive decision....you're given wristbands which show the staff you've paid for AI. Most people hadn't. We spotted two other families the whole time we were there who had. With children who can drink soda and eat ice cream and enjoy international food (rather than the cheaper local food) it was a no brainer for us and fabulous a bill that we were expecting with no extras charged!<br/>Would I go back? Yes - with the kids; but not for a romantic break with my husband!
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223317282_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223317282 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAk3AvqHMmKX3omqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXmmUXv6XoXfXXdXmKKKU6XoXfXXdXXvAAK6XoXfXXdXKXvmm6XoXfXXdUvv33o6XoXfXXdKoUm336XoXfXXmvUok3v6XoXfXXmmUkXvX6XoXfXXmXAUUdv6XoXfXXmUokkKAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXmmUXvqHDVcSJQQoqnQQ7JcSQQoqnQQlCMiCVtSJqHZptJQQoqnQQxMpJQQoqnQQZptJQQoqnQQxMpJQQoqnQQwVCSCtpcJQQoqnQQ7JcSxiGIac6XoXmqoTpcXXmmUkXvX0tEn1XXmmUkXvX0zH1XAk3Av0pSM1XUkmoKvXvxMoAfXxMAb7zsozsffb33zsKA3zsv0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">4</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223317282" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223317282'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '302653', 'alicehalice', '217350828D59C2D9ABE5ECCA66E096E8', 'en', '223317282', 'Melia Bali Indonesia');">Ask alicehalice about Melia Bali Indonesia</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Wayan B, Manager at Melia Bali Indonesia, responded to this review,
+<span class="res_date relativeDate" title='24 August 2014'>2 days ago</span>
+</div>
+<div class="displayText" id="response_223317282">
+Dear alicehalice,<br/><br/>Warmest greetings from the Meliá Bali!<br/><br/>We would like to take this opportunity to thank you for spending your time to write your review of our property in TripAdvisor, at the same time, coming back again to the Melia Bali for the second time.<br/><br/>We are happy to learn that you always had a wonderful family holiday at our Lagoon Access Suite with the service and facilities provided. At the Melia Bali we always think that the kids are our future customers. Therefore we look after everything down to the last detail to make your stay a perfect Balinese experience.<br/><br/>An all inclusive package is the best choice you have made. The all inclusive package will make your family holiday really a family holiday, you don't need to think of how many digits printed on your bill upon check out. <br/><br/>Melia Bali is also a perfect place for couples who need some privacy during their holiday. Our Garden Villa will give you almost 100% of privacy you need. Each villa is with the concept of traditional Balinese houses with additional luxurious touch and feeling, surrounded by a concrete wall is the perfect place for honeymooners or couples who need some privacy.<br/><br/>Once again, thank you for your continuous support and compliments to our staffs.<br/>We look forward to welcoming you and family back or you and your husband on your next Bali trip.<br/><br/>Best regards,<br/><br/><br/>Wayan B
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223983108" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223983108, isGeo:false, locationid:302653})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223983108" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223983108">
+<a name="UR223983108"></a>
+<div id="UR223983108" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g297698-d302653-r223983108-Melia_Bali_Indonesia-Nusa_Dua_Nusa_Dua_Peninsula_Bali.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223983108">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear alicehalice,<br/><br/>Warmest greetings from the Meliá Bali!<br/><br/>We would like to take this opportunity to thank you for spending your time to write your review of our property in TripAdvisor, at the same time, coming back again to the Melia Bali for the second time.<br/><br/>We are happy to learn that you always had a wonderful family holiday at our Lagoon Access Suite with the service and facilities provided. At the Melia Bali we always think that the kids are our future customers. Therefore we look after everything down to the last detail to make your stay a perfect Balinese experience.<br/><br/>An all inclusive package is the best choice you have made. The all inclusive package will make your family holiday really a family holiday, you don't need to think of how many digits printed on your bill upon check out. <br/><br/>Melia Bali is also a perfect place for couples who need some privacy during their holiday. Our Garden Villa will give you almost 100% of privacy you need. Each villa is with the concept of traditional Balinese houses with additional luxurious touch and feeling, surrounded by a concrete wall is the perfect place for honeymooners or couples who need some privacy.<br/><br/>Once again, thank you for your continuous support and compliments to our staffs.<br/>We look forward to welcoming you and family back or you and your husband on your next Bali trip.<br/><br/>Best regards,<br/><br/><br/>Wayan B
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223983108_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223983108 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAk3AvqHMmKX3omqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXmmUXv6XoXfXXdXmKKKU6XoXfXXdXXvAAK6XoXfXXdXKXvmm6XoXfXXdUvv33o6XoXfXXdKoUm336XoXfXXmvUok3v6XoXfXXmmUkXvX6XoXfXXmXAUUdv6XoXfXXmUokkKAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXmmUXvqHDVcSJQQoqnQQ7JcSQQoqnQQlCMiCVtSJqHZptJQQoqnQQxMpJQQoqnQQZptJQQoqnQQxMpJQQoqnQQwVCSCtpcJQQoqnQQ7JcSxiGIac6XoXmqoTpcXXmAvmUKv0tEn1XXmAvmUKv0zH1XAk3Av0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223983108" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223983108'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223291148">
+<a name="UR223291148"></a>
+<div id="UR223291148" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_47D789EB0A270144471421905DC8D8BF-SRC_223291148" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_47D789EB0A270144471421905DC8D8BF ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-f/06/0f/38/a7/brandon-l.jpg" class="avatar potentialFacebookAvatar avatarGUID:47D789EB0A270144471421905DC8D8BF" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_47D789EB0A270144471421905DC8D8BF" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Brandonlwp</span>
+</div>
+</div>
+<div class="location">
+Dalian, China
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_47D789EB0A270144471421905DC8D8BF-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="8 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">8 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">7 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '47D789EB0A270144471421905DC8D8BF', screenName: 'Brandonlwp', geos: [469404, 297698, 297697, 293916, 297452], geo: '297698' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 5 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 5 cities</span> </div>
+<div id="UID_47D789EB0A270144471421905DC8D8BF-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">4 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g297698-d302653-r223291148-Melia_Bali_Indonesia-Nusa_Dua_Nusa_Dua_Peninsula_Bali.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223291148">&#x201c;<span class='noQuotes'>Exceptional</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Staff were friendly and very helpful. Well appointed rooms, we stayed in a Family suite which was perfect. Lovely gardens. Breakfast buffet at the Santrian(?) Restaurant was great, good variety and fresh and had a nice area which overlooked the beach. Great pool. Nice beach. Large amount of different amenities on the resort including a library, spa, gym, and a number of restaurants. Arrival and departure lounge was fantastic. Our flight was not until 10.30pm and as hotel checkout is 12pm, it was very helpful to have use of clean toilets and showers before heading to the airport.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed June 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223291148_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223291148 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAk3AvqHMmKX3omqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXmmUXv6XoXfXXdXmKKKU6XoXfXXdXXvAAK6XoXfXXdXKXvmm6XoXfXXdUvv33o6XoXfXXdKoUm336XoXfXXmvUok3v6XoXfXXmmUkXvX6XoXfXXmXAUUdv6XoXfXXmUokkKAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXmmUXvqHDVcSJQQoqnQQ7JcSQQoqnQQlCMiCVtSJqHZptJQQoqnQQxMpJQQoqnQQZptJQQoqnQQxMpJQQoqnQQwVCSCtpcJQQoqnQQ7JcSxiGIac6XoXmqoTpcXXmXAUUdv0tEn1XXmXAUUdv0zH1XAk3Av0pSM1dkxMkvAzs7KbXkKUdddkUdXUAKoxMfvxMv7qn0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223291148" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223291148'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '302653', 'Brandonlwp', '47D789EB0A270144471421905DC8D8BF', 'en', '223291148', 'Melia Bali Indonesia');">Ask Brandonlwp about Melia Bali Indonesia</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Wayan B, Manager at Melia Bali Indonesia, responded to this review,
+<span class="res_date relativeDate" title='24 August 2014'>2 days ago</span>
+</div>
+<div class="displayText" id="response_223291148">
+Dear Brandonlwp,<br/><br/>Warmest greetings from the Meliá Bali!<br/><br/>We would like to take this opportunity to thank you for spending your time to write your excellent review of our property in TripAdvisor.<br/><br/>We are happy to learn that you always had a wonderful stay at our Family Suite with the service and facilities provided. We also glad to know that you really had enjoyed our breakfast buffet at our Sateria (Santrian is another hotel brand) beachfront restaurant. You are not the only one, as there are many guests also enjoyed to have breakfast on the beach.<br/><br/>The arrival and departure lounge is one of our &quot;one step ahead&quot; thinking of our previous General Manager. Bali, as one of the international holiday destinations with various flight schedule, having shower and feel fresh before the long flight is really necessary.<br/><br/>Once again, thank you for your continuous support and compliments to our staffs.<br/>We look forward to welcoming you back on your next Bali trip.<br/><br/>Best regards,<br/><br/>Wayan B
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223985003" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223985003, isGeo:false, locationid:302653})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223985003" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223985003">
+<a name="UR223985003"></a>
+<div id="UR223985003" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g297698-d302653-r223985003-Melia_Bali_Indonesia-Nusa_Dua_Nusa_Dua_Peninsula_Bali.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223985003">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Brandonlwp,<br/><br/>Warmest greetings from the Meliá Bali!<br/><br/>We would like to take this opportunity to thank you for spending your time to write your excellent review of our property in TripAdvisor.<br/><br/>We are happy to learn that you always had a wonderful stay at our Family Suite with the service and facilities provided. We also glad to know that you really had enjoyed our breakfast buffet at our Sateria (Santrian is another hotel brand) beachfront restaurant. You are not the only one, as there are many guests also enjoyed to have breakfast on the beach.<br/><br/>The arrival and departure lounge is one of our &quot;one step ahead&quot; thinking of our previous General Manager. Bali, as one of the international holiday destinations with various flight schedule, having shower and feel fresh before the long flight is really necessary.<br/><br/>Once again, thank you for your continuous support and compliments to our staffs.<br/>We look forward to welcoming you back on your next Bali trip.<br/><br/>Best regards,<br/><br/>Wayan B
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223985003_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223985003 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAk3AvqHMmKX3omqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXmmUXv6XoXfXXdXmKKKU6XoXfXXdXXvAAK6XoXfXXdXKXvmm6XoXfXXdUvv33o6XoXfXXdKoUm336XoXfXXmvUok3v6XoXfXXmmUkXvX6XoXfXXmXAUUdv6XoXfXXmUokkKAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXmmUXvqHDVcSJQQoqnQQ7JcSQQoqnQQlCMiCVtSJqHZptJQQoqnQQxMpJQQoqnQQZptJQQoqnQQxMpJQQoqnQQwVCSCtpcJQQoqnQQ7JcSxiGIac6XoXmqoTpcXXmAvoKKm0tEn1XXmAvoKKm0zH1XAk3Av0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223985003" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223985003'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223157709">
+<a name="UR223157709"></a>
+<div id="UR223157709" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_8B55C126699A83E1FE1DFB4EF56CB2D1-SRC_223157709" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_8B55C126699A83E1FE1DFB4EF56CB2D1 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9b/avatar062.jpg" class="avatar potentialFacebookAvatar avatarGUID:8B55C126699A83E1FE1DFB4EF56CB2D1" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_8B55C126699A83E1FE1DFB4EF56CB2D1" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Dean B</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_8B55C126699A83E1FE1DFB4EF56CB2D1-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g297698-d302653-r223157709-Melia_Bali_Indonesia-Nusa_Dua_Nusa_Dua_Peninsula_Bali.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223157709">&#x201c;<span class='noQuotes'>Not for couples</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='20 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+We just returned home after staying at the Melia but it unfortunately wasn't the best experience. Arrived for check in &amp; room wasn't ready, said to return in 30 minutes. So we had lunch by the beach &amp; returned 1 hour later but room still wasn't ready. 1.5 hours later we were checked in to a smoking room despite specifically asking &amp; booking a non. Manager was almost arguing with me (in a nice way) that it wasn't booked as a non smokers room even though my confirmation clearly states it. We finally got our room after 7pm &amp; were both underwhelmed by the appearance. The rooms are a bit tired &amp; need a renovation but the grounds are amazing. Pool is far too crowed, plenty of kids &amp; a struggle to get a sun-bed. Overall an average hotel &amp; you're just a number as they 400 plus rooms &amp; it's all about $$$.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223157709_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223157709 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAk3AvqHMmKX3omqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXmmUXv6XoXfXXdXmKKKU6XoXfXXdXXvAAK6XoXfXXdXKXvmm6XoXfXXdUvv33o6XoXfXXdKoUm336XoXfXXmvUok3v6XoXfXXmmUkXvX6XoXfXXmXAUUdv6XoXfXXmUokkKAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXmmUXvqHDVcSJQQoqnQQ7JcSQQoqnQQlCMiCVtSJqHZptJQQoqnQQxMpJQQoqnQQZptJQQoqnQQxMpJQQoqnQQwVCSCtpcJQQoqnQQ7JcSxiGIac6XoXmqoTpcXXmUokkKA0tEn1XXmUokkKA0zH1XAk3Av0pSM1v7oofUX33AAbvmzsUqnzsUxMqn7dzsqno3f7XxMU0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223157709" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223157709'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '302653', 'Dean B', '8B55C126699A83E1FE1DFB4EF56CB2D1', 'en', '223157709', 'Melia Bali Indonesia');">Ask Dean B about Melia Bali Indonesia</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>

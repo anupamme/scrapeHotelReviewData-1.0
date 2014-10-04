@@ -1,0 +1,1760 @@
+<div id="expanded_review_224142903">
+<a name="UR224142903"></a>
+<div id="UR224142903" class="extended provider0 first newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_B78F559F0510D8261B67CCCCD8A9A104-SRC_224142903" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_B78F559F0510D8261B67CCCCD8A9A104 ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: 'B78F559F0510D8261B67CCCCD8A9A104'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/8f/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:B78F559F0510D8261B67CCCCD8A9A104" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_B78F559F0510D8261B67CCCCD8A9A104" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">George700East</span>
+</div>
+</div>
+<div class="location">
+Los Angeles, California
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_B78F559F0510D8261B67CCCCD8A9A104-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Top Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="58 reviews" class="icon badge_topcontributor sprite-badge_topcontributor" width="25" height="24">
+<span class="badgeText">58 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_3rd sprite-badge_hotels_3rd" width="25" height="24">
+<span class="badgeText">26 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'B78F559F0510D8261B67CCCCD8A9A104', screenName: 'George700East', geos: [60872, 294305, 32847, 60878, 29105, 147320, 297906, 297908, 32859, 297912, 60880, 40314, 45963, 33029, 1432365, 293913, 665810, 295425, 34168, 32420, 147346, 187497, 60583, 312741, 58732, 1723175, 32431], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 27 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 27 cities</span> </div>
+<div id="UID_B78F559F0510D8261B67CCCCD8A9A104-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="31 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">31 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d293200-r224142903-Sheraton_Kona_Resort_Spa_at_Keauhou_Bay-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224142903">&#x201c;<span class='noQuotes'>BEAUTIFUL VIEW OF THE OCEAN BEACHES NEAR BY</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+The hotel is located about thirty minutes away from the airport depending on the route that is taken.<br/>There are no strip malls or large malls within walking distance of the hotel. There is a local tram that stops at the hotel about once every two hour that makes several stops on the way to the city. There is also a regional bus that makes limited stops in the area and the city. This bus stops on the main road at the entrance to the driveway to the hotel. If you miss the tram or do not want to wait for the next tram the local area bus stops near the hotel. Check with the driver before boarding to make sure the route will drop you off near the hotel. The regional buses have route to different locations on the island and do not run that frequently.<br/>There is a small mall with five minutes of the hotel with a movie theatre with many shops, market, drug store and several restaurants. A fifteen minutes drive to the cities with the large shopping areas and local restaurant.<br/>We arrived at the hotel and were greeted by Dori in the early afternoon. Dori advised us that only one room was available and she would let us know when the second room would be available. I found that Dori and Sally who assisted us at checkout to be the most helpful and friendly to speak to.<br/>Our rooms were next to each other with an ocean view. <br/>The bathroom has a shower tub combination and a toilet in one room. Outside of the bathroom there is a wash basin and a long counter top to lay out all the personal items. The room was a fair side with a large work table top for computers. The table had plenty of outlets with a power strip on the side of the table. The Internet speed was very good. The cloth closet and dresser were adequate size. There was one small end table between the two beds.<br/>There are two large pools connected by a small bridge located in the main area of the hotel. There is a water slide connected to one of the pools.<br/>We had the morning buffet everyday at the hotel. Cathleen the restaurant seated us the first day. We were also seat by Mehana one of the hostess. We were always seated promptly. The servers made sure that we were well taken care of. The full buffet had an omelet station with a whole section of hot foods.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Try to get an ocean view room for the best view of the ocean and the coastline.
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224142903_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224142903 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXAmXKKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUdXAKm6XoXfXXdUXvKdd6XoXfXXdUX33Kv6XoXfXXmAkoUvU6XoXfXXmoKvKK36XoXfXXmdAvoAk6XoXfXXmdkK3om6XoXfXXXAkkvvv6XoXfXXXAkmmXm6XoXfXXXkKvKkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUdXAKmqHhGVEJIiCQQoqnQQxbiCJQQoqnQQeVtiEIQQoqnQQh2JQQoqnQQJIQQoqnQQxbVJpGipQQoqnQQ7JgqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXdUdXAKm0tEn1XXdUdXAKm0zH13KvkX0pSM17kvqnooAqnKoUKxMvX3U73kffffxMvbAbUKd0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224142903" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224142903'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/George700East/g60872" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 6 reviews by George700East for Kailua-Kona </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '293200', 'George700East', 'B78F559F0510D8261B67CCCCD8A9A104', 'en', '224142903', 'Sheraton Kona Resort &amp; Spa at Keauhou Bay');">Ask George700East about Sheraton Kona Resort &amp; Spa at Keauhou Bay</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+SheratonKonaPR, Manager at Sheraton Kona Resort &amp; Spa at Keauhou Bay, responded to this review,
+<span class="res_date relativeDate" title='27 August 2014'>2 days ago</span>
+</div>
+<div class="displayText" id="response_224142903">
+Hi George,<br/><br/>Mahalo for taking the time to write a review on TripAdvisor about your stay with us at the Sheraton Kona. I'm so happy to hear that you enjoyed everything about your stay, from the pool to the excellent service in our food &amp; beverage outlets. <br/><br/>We look forward to hosting you again!<br/><br/>Regards,<br/>Katie Vanes<br/>PR Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_224717047" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:224717047, isGeo:false, locationid:293200})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_224717047" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_224717047">
+<a name="UR224717047"></a>
+<div id="UR224717047" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d293200-r224717047-Sheraton_Kona_Resort_Spa_at_Keauhou_Bay-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224717047">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='27 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Hi George,<br/><br/>Mahalo for taking the time to write a review on TripAdvisor about your stay with us at the Sheraton Kona. I'm so happy to hear that you enjoyed everything about your stay, from the pool to the excellent service in our food &amp; beverage outlets. <br/><br/>We look forward to hosting you again!<br/><br/>Regards,<br/>Katie Vanes<br/>PR Manager
+</p>
+</div>
+<div id="helpfulq224717047_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224717047 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXAmXKKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUdXAKm6XoXfXXdUXvKdd6XoXfXXdUX33Kv6XoXfXXmAkoUvU6XoXfXXmoKvKK36XoXfXXmdAvoAk6XoXfXXmdkK3om6XoXfXXXAkkvvv6XoXfXXXAkmmXm6XoXfXXXkKvKkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUdXAKmqHhGVEJIiCQQoqnQQxbiCJQQoqnQQeVtiEIQQoqnQQh2JQQoqnQQJIQQoqnQQxbVJpGipQQoqnQQ7JgqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXdkUkKdk0tEn1XXdkUkKdk0zH13KvkX0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224717047" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224717047'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224128044">
+<a name="UR224128044"></a>
+<div id="UR224128044" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_8598BC82E5DAA391BB759421C6C575AC-SRC_224128044" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_8598BC82E5DAA391BB759421C6C575AC ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/70/7d/c3/larrypanza.jpg" class="avatar potentialFacebookAvatar avatarGUID:8598BC82E5DAA391BB759421C6C575AC" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_8598BC82E5DAA391BB759421C6C575AC" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">larrypanza</span>
+</div>
+</div>
+<div class="location">
+Santa Monica, California
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_8598BC82E5DAA391BB759421C6C575AC-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">2 reviews</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d293200-r224128044-Sheraton_Kona_Resort_Spa_at_Keauhou_Bay-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224128044">&#x201c;<span class='noQuotes'>Fantastic Experience</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+I am a doorman at The Beverly Hilton Hotel &lt; Forty Years &gt; and I am very cognizant of good and poor service.<br/>My wife and I had the good fortune to book our hotel stay here and we thoroughly enjoyed our seven day stay.<br/>The service from the guys out front who helped with our luggage and parking the car to the front desk when we checked in gave us a clue to how well we were going to be taken care of. Everyone was very friendly and helpful.<br/>The concierge Yuki booked two tee times for us at the best golf courses, got us tickets to the hotels luau and booked reservations to Rays At The Bay Restaurant. She also gave us maps and great directions to the places we wanted to explore on the Island.<br/>Our waiter Ben at Rays At The Bay was excellent too. <br/>The property is open air everywhere you go which is very enjoyable. The pool is very nice too.<br/>Our room was beautiful and relaxing.<br/>A hotel is really just a big house with a big kitchen and a lot of bedrooms. What makes it great are the people who make us feel at home even though we are thousands of miles away from home.<br/>Matt the General Manager has guided this property to be a gem on the Big Island of Hawaii!<br/>I highly recommend the hotel!
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Try for an ocean view
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224128044_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224128044 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXAmXKKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUdXAKm6XoXfXXdUXvKdd6XoXfXXdUX33Kv6XoXfXXmAkoUvU6XoXfXXmoKvKK36XoXfXXmdAvoAk6XoXfXXmdkK3om6XoXfXXXAkkvvv6XoXfXXXAkmmXm6XoXfXXXkKvKkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUdXAKmqHhGVEJIiCQQoqnQQxbiCJQQoqnQQeVtiEIQQoqnQQh2JQQoqnQQJIQQoqnQQxbVJpGipQQoqnQQ7JgqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXdUXvKdd0tEn1XXdUXvKdd0zH13KvkX0pSM1voAv7fvXzsoxMbbmAU77koAdXUf3fokobf0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224128044" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224128044'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '293200', 'larrypanza', '8598BC82E5DAA391BB759421C6C575AC', 'en', '224128044', 'Sheraton Kona Resort &amp; Spa at Keauhou Bay');">Ask larrypanza about Sheraton Kona Resort &amp; Spa at Keauhou Bay</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+SheratonKonaPR, Manager at Sheraton Kona Resort &amp; Spa at Keauhou Bay, responded to this review,
+<span class="res_date relativeDate" title='27 August 2014'>2 days ago</span>
+</div>
+<div class="displayText" id="response_224128044">
+Hi Larry,<br/><br/>First of all, congratulations on making 40 years in the hospitality industry. We are honored that you and your wife chose the Sheraton Kona as your resort during your Hawaii vacation. I'm glad to hear that you thoroughly enjoyed your stay, and you felt well taken care of. We look forward to hosting you again! <br/><br/>Best regards,<br/>Katie Vanes<br/>PR Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_224712719" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:224712719, isGeo:false, locationid:293200})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_224712719" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224712719">
+<a name="UR224712719"></a>
+<div id="UR224712719" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d293200-r224712719-Sheraton_Kona_Resort_Spa_at_Keauhou_Bay-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224712719">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='27 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Hi Larry,<br/><br/>First of all, congratulations on making 40 years in the hospitality industry. We are honored that you and your wife chose the Sheraton Kona as your resort during your Hawaii vacation. I'm glad to hear that you thoroughly enjoyed your stay, and you felt well taken care of. We look forward to hosting you again! <br/><br/>Best regards,<br/>Katie Vanes<br/>PR Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224712719_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224712719 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXAmXKKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUdXAKm6XoXfXXdUXvKdd6XoXfXXdUX33Kv6XoXfXXmAkoUvU6XoXfXXmoKvKK36XoXfXXmdAvoAk6XoXfXXmdkK3om6XoXfXXXAkkvvv6XoXfXXXAkmmXm6XoXfXXXkKvKkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUdXAKmqHhGVEJIiCQQoqnQQxbiCJQQoqnQQeVtiEIQQoqnQQh2JQQoqnQQJIQQoqnQQxbVJpGipQQoqnQQ7JgqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXdkUXkUA0tEn1XXdkUXkUA0zH13KvkX0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224712719" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224712719'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224126608">
+<a name="UR224126608"></a>
+<div id="UR224126608" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_B124B9D05AC74CFEAADD033F3585C1D0-SRC_224126608" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_B124B9D05AC74CFEAADD033F3585C1D0 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/03/b0/9a/69/sheilanorthwestuk.jpg" class="avatar potentialFacebookAvatar avatarGUID:B124B9D05AC74CFEAADD033F3585C1D0" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_B124B9D05AC74CFEAADD033F3585C1D0" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">sheilaNorthWestUK</span>
+</div>
+</div>
+<div class="location">
+north west uk
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_B124B9D05AC74CFEAADD033F3585C1D0-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="12 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">12 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">8 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'B124B9D05AC74CFEAADD033F3585C1D0', screenName: 'sheilaNorthWestUK', geos: [60872, 186411, 60982, 1096756, 60763, 186525, 186220, 2691242, 60713, 528857], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 10 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 10 cities</span> </div>
+<div id="UID_B124B9D05AC74CFEAADD033F3585C1D0-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">4 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d293200-r224126608-Sheraton_Kona_Resort_Spa_at_Keauhou_Bay-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224126608">&#x201c;<span class='noQuotes'>Really enjoyed our stay</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Lovely big rooms, comfy beds, nice and quiet for sleeping. Beautiful views over the bay and the pool area was great. Food at Rays was a little pricey for what it was, nothing special. Saw a manta ray on the fourth night of trying. I think the snorkelling boats which congregate each evening in the area just outside Rays have spoiled it for the bar/restaurant. The manta rays can't be seen whilst the boats are there and the rest of my family gave up in the end. <br/>Loved the Lei making and the Ukulele lessons. The Luau was fun, made the most of the Mai Tais!<br/>Resort fee soon added up as we needed two rooms for our family, and considering that we only had parking for one car and didn't use the courtesy bus at all it wasn't good value. Maybe one resort fee per family would be more fair
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224126608_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224126608 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXAmXKKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUdXAKm6XoXfXXdUXvKdd6XoXfXXdUX33Kv6XoXfXXmAkoUvU6XoXfXXmoKvKK36XoXfXXmdAvoAk6XoXfXXmdkK3om6XoXfXXXAkkvvv6XoXfXXXAkmmXm6XoXfXXXkKvKkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUdXAKmqHhGVEJIiCQQoqnQQxbiCJQQoqnQQeVtiEIQQoqnQQh2JQQoqnQQJIQQoqnQQxbVJpGipQQoqnQQ7JgqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXdUX33Kv0tEn1XXdUX33Kv0zH13KvkX0pSM17UXd7AxMKobfkdfqnzsbbxMxMKmmqnmovofUxMK0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224126608" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224126608'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '293200', 'sheilaNorthWestUK', 'B124B9D05AC74CFEAADD033F3585C1D0', 'en', '224126608', 'Sheraton Kona Resort &amp; Spa at Keauhou Bay');">Ask sheilaNorthWestUK about Sheraton Kona Resort &amp; Spa at Keauhou Bay</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+SheratonKonaPR, Manager at Sheraton Kona Resort &amp; Spa at Keauhou Bay, responded to this review,
+<span class="res_date relativeDate" title='27 August 2014'>2 days ago</span>
+</div>
+<div class="displayText" id="response_224126608">
+Aloha Sheila,<br/><br/>Thank you for taking the time to write a review about your recent stay with us at Sheraton Kona. We're delighted to hear that you enjoyed seeing the manta rays, our spacious rooms and the complimentary lei making and ukulele lessons. <br/><br/>Mahalo for your insight about the resort fee. While this typically provides our guests with great value, I can see how it makes sense to charge one fee per family -- I will bring this up with our management team. We look forward to hosting you all again on your next Hawaii vacation. <br/><br/>Warm regards,<br/>Katie Vanes, PR Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_224713325" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:224713325, isGeo:false, locationid:293200})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_224713325" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224713325">
+<a name="UR224713325"></a>
+<div id="UR224713325" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d293200-r224713325-Sheraton_Kona_Resort_Spa_at_Keauhou_Bay-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224713325">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='27 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Aloha Sheila,<br/><br/>Thank you for taking the time to write a review about your recent stay with us at Sheraton Kona. We're delighted to hear that you enjoyed seeing the manta rays, our spacious rooms and the complimentary lei making and ukulele lessons. <br/><br/>Mahalo for your insight about the resort fee. While this typically provides our guests with great value, I can see how it makes sense to charge one fee per family -- I will bring this up with our management team. We look forward to hosting you all again on your next Hawaii vacation. <br/><br/>Warm regards,<br/>Katie Vanes, PR Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224713325_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224713325 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXAmXKKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUdXAKm6XoXfXXdUXvKdd6XoXfXXdUX33Kv6XoXfXXmAkoUvU6XoXfXXmoKvKK36XoXfXXmdAvoAk6XoXfXXmdkK3om6XoXfXXXAkkvvv6XoXfXXXAkmmXm6XoXfXXXkKvKkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUdXAKmqHhGVEJIiCQQoqnQQxbiCJQQoqnQQeVtiEIQQoqnQQh2JQQoqnQQJIQQoqnQQxbVJpGipQQoqnQQ7JgqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXdkUmmXo0tEn1XXdkUmmXo0zH13KvkX0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224713325" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224713325'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223975181">
+<a name="UR223975181"></a>
+<div id="UR223975181" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_925BC000EA1AF672FED91753E8E50639-SRC_223975181" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_925BC000EA1AF672FED91753E8E50639 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/a2/bf/5f/drifting-nomad.jpg" class="avatar potentialFacebookAvatar avatarGUID:925BC000EA1AF672FED91753E8E50639" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_925BC000EA1AF672FED91753E8E50639" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">drifting_nomad</span>
+</div>
+</div>
+<div class="location">
+Vancouver
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_925BC000EA1AF672FED91753E8E50639-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="26 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">26 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">12 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '925BC000EA1AF672FED91753E8E50639', screenName: 'drifting_nomad', geos: [181793, 60872, 187147, 293916, 60878, 60982, 190384, 1210687, 60596, 154946, 181716, 154943, 297427, 298566, 1215781, 58350, 183462, 181784, 186338, 1066460], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 20 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 20 cities</span> </div>
+<div id="UID_925BC000EA1AF672FED91753E8E50639-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="55 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">55 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d293200-r223975181-Sheraton_Kona_Resort_Spa_at_Keauhou_Bay-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223975181">&#x201c;<span class='noQuotes'>Like the grounds but the rooms were a bit old</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+I don't regret booking this hotel for my family holiday. We stayed here for 6 days and there is a $30 resort charge for each night. The resort charge includes a parking spot. If you go to the big island you need to rent a car to get around. Booked the car with discounthawaiicarrental and had a decent rental car. The grounds are nice and there have been a few face lifts around the hotel. Price of food is expensive so would take the car and drive to the shopping centre nearby or to kona for food outside the resort. The rooms were spacious but could really do with a makeover. Relaxing in big island and not as busy as waikiki for sure. Pleasant stay indeed! Even saw the manta rays swimming near the rays on the bay restaurant.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> they charge you for a ocean view... charge for anything really.
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+<div class="reviewItem inlineRoomTip">
+<b>Green Features:</b> Don&#39;t bother. They take $5 off any food establishment you go to in the resort if you ask them not to change your sheets.. but with everything overpriced the $5 makes little difference.
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223975181_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223975181 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXAmXKKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUdXAKm6XoXfXXdUXvKdd6XoXfXXdUX33Kv6XoXfXXmAkoUvU6XoXfXXmoKvKK36XoXfXXmdAvoAk6XoXfXXmdkK3om6XoXfXXXAkkvvv6XoXfXXXAkmmXm6XoXfXXXkKvKkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUdXAKmqHhGVEJIiCQQoqnQQxbiCJQQoqnQQeVtiEIQQoqnQQh2JQQoqnQQJIQQoqnQQxbVJpGipQQoqnQQ7JgqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXmAkoUvU0tEn1XXmAkoUvU0zH13KvkX0pSM1AXo7fKKKzsbUbqn3kXqnzsxMAUkomzsvzsoK3mA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223975181" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223975181'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/drifting_nomad/g60872" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 3 reviews by drifting_nomad for Kailua-Kona </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '293200', 'drifting_nomad', '925BC000EA1AF672FED91753E8E50639', 'en', '223975181', 'Sheraton Kona Resort &amp; Spa at Keauhou Bay');">Ask drifting_nomad about Sheraton Kona Resort &amp; Spa at Keauhou Bay</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+SheratonKonaPR, Manager at Sheraton Kona Resort &amp; Spa at Keauhou Bay, responded to this review,
+<span class="res_date relativeDate" title='27 August 2014'>2 days ago</span>
+</div>
+<div class="displayText" id="response_223975181">
+Aloha,<br/><br/>Thank you for taking the time to provide your valuable feedback to us about your recent stay at the Sheraton Kona, That's great to hear that you enjoyed your time with us and were able to see manta rays at Rays on the Bay. It truly is a unique dining experience. <br/><br/>Like most hotels in Hawaii, we feel that this resort fee provides our customers with great value instead of pricing items out separately such as our trolley rides to Kona Village, cultural activities, etc. We hope to have you back soon to create new memories of Keauhou!<br/><br/>With warm regards,<br/>Katie Vanes<br/>PR Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_224711630" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:224711630, isGeo:false, locationid:293200})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_224711630" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224711630">
+<a name="UR224711630"></a>
+<div id="UR224711630" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d293200-r224711630-Sheraton_Kona_Resort_Spa_at_Keauhou_Bay-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224711630">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='27 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Aloha,<br/><br/>Thank you for taking the time to provide your valuable feedback to us about your recent stay at the Sheraton Kona, That's great to hear that you enjoyed your time with us and were able to see manta rays at Rays on the Bay. It truly is a unique dining experience. <br/><br/>Like most hotels in Hawaii, we feel that this resort fee provides our customers with great value instead of pricing items out separately such as our trolley rides to Kona Village, cultural activities, etc. We hope to have you back soon to create new memories of Keauhou!<br/><br/>With warm regards,<br/>Katie Vanes<br/>PR Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224711630_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224711630 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXAmXKKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUdXAKm6XoXfXXdUXvKdd6XoXfXXdUX33Kv6XoXfXXmAkoUvU6XoXfXXmoKvKK36XoXfXXmdAvoAk6XoXfXXmdkK3om6XoXfXXXAkkvvv6XoXfXXXAkmmXm6XoXfXXXkKvKkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUdXAKmqHhGVEJIiCQQoqnQQxbiCJQQoqnQQeVtiEIQQoqnQQh2JQQoqnQQJIQQoqnQQxbVJpGipQQoqnQQ7JgqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXdkUU3mK0tEn1XXdkUU3mK0zH13KvkX0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224711630" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224711630'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223508006">
+<a name="UR223508006"></a>
+<div id="UR223508006" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_C528BA671230C8AED0252C3BCAE6F588-SRC_223508006" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_C528BA671230C8AED0252C3BCAE6F588 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/04/78/cd/39/facebook-avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:C528BA671230C8AED0252C3BCAE6F588" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_C528BA671230C8AED0252C3BCAE6F588" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Daniel T</span>
+</div>
+</div>
+<div class="location">
+Honolulu, Hawaii, United States
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_C528BA671230C8AED0252C3BCAE6F588-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="10 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">10 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'C528BA671230C8AED0252C3BCAE6F588', screenName: 'Daniel T', geos: [29217, 60588, 60872, 294217, 60982, 60583, 143034], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 7 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 7 cities</span> </div>
+<div id="UID_C528BA671230C8AED0252C3BCAE6F588-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="2 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">2 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d293200-r223508006-Sheraton_Kona_Resort_Spa_at_Keauhou_Bay-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223508006">&#x201c;<span class='noQuotes'>Best Resort in Keauhou</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 1 week ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+The Sheraton Kona is great for families as well as couples! Situated right on the ocean, it offers great views of Mauna Loa &amp; Mauna Kea, as well as an awesome sunset! Large, comfortable rooms, several dining options (I really like the ambiance and food at Ray's) and friendly staff.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Always try and get an ocean view room
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+<div class="reviewItem inlineRoomTip">
+<b>Green Features:</b> you can get a $5.00/day credit for food/drink or 500 SPG points if you refuse housekeeping and laundry of towels;
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled on business</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq223508006_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223508006 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXAmXKKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUdXAKm6XoXfXXdUXvKdd6XoXfXXdUX33Kv6XoXfXXmAkoUvU6XoXfXXmoKvKK36XoXfXXmdAvoAk6XoXfXXmdkK3om6XoXfXXXAkkvvv6XoXfXXXAkmmXm6XoXfXXXkKvKkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUdXAKmqHhGVEJIiCQQoqnQQxbiCJQQoqnQQeVtiEIQQoqnQQh2JQQoqnQQJIQQoqnQQxbVJpGipQQoqnQQ7JgqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXmoKvKK30tEn1XXmoKvKK30zH13KvkX0pSM1foXv7b3kUXmKfvbzsxMKXoXfm7fbzs3qnovv0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223508006" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223508006'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '293200', 'Daniel T', 'C528BA671230C8AED0252C3BCAE6F588', 'en', '223508006', 'Sheraton Kona Resort &amp; Spa at Keauhou Bay');">Ask Daniel T about Sheraton Kona Resort &amp; Spa at Keauhou Bay</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+SheratonKonaPR, Manager at Sheraton Kona Resort &amp; Spa at Keauhou Bay, responded to this review,
+<span class="res_date relativeDate" title='27 August 2014'>2 days ago</span>
+</div>
+<div class="displayText" id="response_223508006">
+Aloha Daniel,<br/><br/>Mahalo for taking the time to write about the fantastic vacation you had at our resort. We're so glad that you enjoyed the scenic views and your dining experience/ambiance at Rays! We look forward to hosting you again. <br/><br/>Warm regards,<br/>Katie Vanes<br/>PR Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_224709535" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:224709535, isGeo:false, locationid:293200})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_224709535" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224709535">
+<a name="UR224709535"></a>
+<div id="UR224709535" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d293200-r224709535-Sheraton_Kona_Resort_Spa_at_Keauhou_Bay-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224709535">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='27 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Aloha Daniel,<br/><br/>Mahalo for taking the time to write about the fantastic vacation you had at our resort. We're so glad that you enjoyed the scenic views and your dining experience/ambiance at Rays! We look forward to hosting you again. <br/><br/>Warm regards,<br/>Katie Vanes<br/>PR Manager
+</p>
+</div>
+<div id="helpfulq224709535_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224709535 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXAmXKKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUdXAKm6XoXfXXdUXvKdd6XoXfXXdUX33Kv6XoXfXXmAkoUvU6XoXfXXmoKvKK36XoXfXXmdAvoAk6XoXfXXmdkK3om6XoXfXXXAkkvvv6XoXfXXXAkmmXm6XoXfXXXkKvKkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUdXAKmqHhGVEJIiCQQoqnQQxbiCJQQoqnQQeVtiEIQQoqnQQh2JQQoqnQQJIQQoqnQQxbVJpGipQQoqnQQ7JgqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXdkKAomo0tEn1XXdkKAomo0zH13KvkX0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224709535" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224709535'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223498597">
+<a name="UR223498597"></a>
+<div id="UR223498597" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_D01DB713C7281F68A86F6BB758787EDE-SRC_223498597" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_D01DB713C7281F68A86F6BB758787EDE ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9e/avatar069.jpg" class="avatar potentialFacebookAvatar avatarGUID:D01DB713C7281F68A86F6BB758787EDE" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_D01DB713C7281F68A86F6BB758787EDE" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">AlohaGirl86</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_D01DB713C7281F68A86F6BB758787EDE-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="17 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">17 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">17 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'D01DB713C7281F68A86F6BB758787EDE', screenName: 'AlohaGirl86', geos: [32999, 60634, 60872, 2312116, 32815, 609129, 60982, 60625, 32171, 33028, 60750], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 11 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 11 cities</span> </div>
+<div id="UID_D01DB713C7281F68A86F6BB758787EDE-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="14 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">14 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d293200-r223498597-Sheraton_Kona_Resort_Spa_at_Keauhou_Bay-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223498597">&#x201c;<span class='noQuotes'>Beautiful Views, Older Rooms</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 1 week ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Have stayed here a few times since I like to try and stick with Starwood properties and it's the only one in Kona. It's usually nice. Had a bad experience this past trip with miscommunication among the staff there, causing me to delay my morning almost an hour. I left really frustrated. However, the manager emailed me and offered his apologies and a complimentary upgrade on my next stay. The rooms are a little old and could use some renovation. Parking is a little far away from the entrance. The views are really nice. They offer room service now, but it comes in doggie bags and not very good. The spa is nice - I got an outdoor massage by Helen. She is awesome!
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled solo</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss20" src="http://c1.tacdn.com/img2/x.gif" alt="2 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223498597_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223498597 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXAmXKKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUdXAKm6XoXfXXdUXvKdd6XoXfXXdUX33Kv6XoXfXXmAkoUvU6XoXfXXmoKvKK36XoXfXXmdAvoAk6XoXfXXmdkK3om6XoXfXXXAkkvvv6XoXfXXXAkmmXm6XoXfXXXkKvKkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUdXAKmqHhGVEJIiCQQoqnQQxbiCJQQoqnQQeVtiEIQQoqnQQh2JQQoqnQQJIQQoqnQQxbVJpGipQQoqnQQ7JgqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXmdAvoAk0tEn1XXmdAvoAk0zH13KvkX0pSM1xMKUxM7kUmfkXvUqn3vbv3qn377kovkvkzsxMzs0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223498597" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223498597'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '293200', 'AlohaGirl86', 'D01DB713C7281F68A86F6BB758787EDE', 'en', '223498597', 'Sheraton Kona Resort &amp; Spa at Keauhou Bay');">Ask AlohaGirl86 about Sheraton Kona Resort &amp; Spa at Keauhou Bay</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+SheratonKonaPR, Manager at Sheraton Kona Resort &amp; Spa at Keauhou Bay, responded to this review,
+<span class="res_date relativeDate" title='27 August 2014'>2 days ago</span>
+</div>
+<div class="displayText" id="response_223498597">
+Hi AlohaGirl86,<br/><br/>Thank you for taking the time to write a review about your experience with us. While I'm happy to hear that you're a loyal Starwood member and that the manager followed up with you after the incident, it disappoints me to hear about your overall negative experience that was not up to par with your expectations. <br/><br/>We are currently working on our In Room menu, and hope to have new choices the next time you come back for your upgraded room! Please feel free to email me directly at kathryn.vanes@sheraton.com to discuss your trip in more detail. <br/><br/>Sincerely,<br/>Katie Vanes<br/>PR manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_224710669" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:224710669, isGeo:false, locationid:293200})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_224710669" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224710669">
+<a name="UR224710669"></a>
+<div id="UR224710669" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d293200-r224710669-Sheraton_Kona_Resort_Spa_at_Keauhou_Bay-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224710669">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='27 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Hi AlohaGirl86,<br/><br/>Thank you for taking the time to write a review about your experience with us. While I'm happy to hear that you're a loyal Starwood member and that the manager followed up with you after the incident, it disappoints me to hear about your overall negative experience that was not up to par with your expectations. <br/><br/>We are currently working on our In Room menu, and hope to have new choices the next time you come back for your upgraded room! Please feel free to email me directly at kathryn.vanes@sheraton.com to discuss your trip in more detail. <br/><br/>Sincerely,<br/>Katie Vanes<br/>PR manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224710669_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224710669 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXAmXKKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUdXAKm6XoXfXXdUXvKdd6XoXfXXdUX33Kv6XoXfXXmAkoUvU6XoXfXXmoKvKK36XoXfXXmdAvoAk6XoXfXXmdkK3om6XoXfXXXAkkvvv6XoXfXXXAkmmXm6XoXfXXXkKvKkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUdXAKmqHhGVEJIiCQQoqnQQxbiCJQQoqnQQeVtiEIQQoqnQQh2JQQoqnQQJIQQoqnQQxbVJpGipQQoqnQQ7JgqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXdkUK33A0tEn1XXdkUK33A0zH13KvkX0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224710669" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224710669'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223470653">
+<a name="UR223470653"></a>
+<div id="UR223470653" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_E8BCA049B46939282A8B7B63B2256656-SRC_223470653" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_E8BCA049B46939282A8B7B63B2256656 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/72/avatar054.jpg" class="avatar potentialFacebookAvatar avatarGUID:E8BCA049B46939282A8B7B63B2256656" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_E8BCA049B46939282A8B7B63B2256656" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Chris J</span>
+</div>
+</div>
+<div class="location">
+Richmond, California
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_E8BCA049B46939282A8B7B63B2256656-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="6 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">6 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'E8BCA049B46939282A8B7B63B2256656', screenName: 'Chris J', geos: [60872, 60639, 291962], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 3 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 3 cities</span> </div>
+<div id="UID_E8BCA049B46939282A8B7B63B2256656-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="5 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">5 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d293200-r223470653-Sheraton_Kona_Resort_Spa_at_Keauhou_Bay-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223470653">&#x201c;<span class='noQuotes'>Adequate...just.</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 1 week ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Best thing: excellent pool area, just the thing to come back to after a busy and active day.<br/><br/>Worst thing: pretty much everything else. Room cleaning was very poor indeed, food and drink on site is hugely overpriced and there’s not a lot of choice, staff were not particularly friendly or helpful (hint: if we request something be brought up to our room, please knock and wait for a response rather than just charging in unannounced). <br/><br/>Overall it’s OK value for money. Don’t expect anything special just because it’s a resort and definitely keep in mind the ridiculous “resort fee” you’ll be charged at checkout. I know this seems to be a standard practice, but personally I’d prefer it to be added to the basic room charge. $30 a day for a parking space, 2 bottles of water a day, free local phone calls and a few other bits and bobs just comes across as absurd to me.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss20" src="http://c1.tacdn.com/img2/x.gif" alt="2 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223470653_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223470653 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXAmXKKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUdXAKm6XoXfXXdUXvKdd6XoXfXXdUX33Kv6XoXfXXmAkoUvU6XoXfXXmoKvKK36XoXfXXmdAvoAk6XoXfXXmdkK3om6XoXfXXXAkkvvv6XoXfXXXAkmmXm6XoXfXXXkKvKkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUdXAKmqHhGVEJIiCQQoqnQQxbiCJQQoqnQQeVtiEIQQoqnQQh2JQQoqnQQJIQQoqnQQxbVJpGipQQoqnQQ7JgqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXmdkK3om0tEn1XXmdkK3om0zH13KvkX0pSM1zsv7fbKdA7d3AmAXvXbv7k73m7XXo33o30EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223470653" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223470653'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/ChrisJ578/g60872" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 4 reviews by Chris J for Kailua-Kona </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '293200', 'Chris J', 'E8BCA049B46939282A8B7B63B2256656', 'en', '223470653', 'Sheraton Kona Resort &amp; Spa at Keauhou Bay');">Ask Chris J about Sheraton Kona Resort &amp; Spa at Keauhou Bay</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+SheratonKonaPR, Manager at Sheraton Kona Resort &amp; Spa at Keauhou Bay, responded to this review,
+<span class="res_date relativeDate" title='27 August 2014'>2 days ago</span>
+</div>
+<div class="displayText" id="response_223470653">
+Aloha Chris,<br/><br/>Mahalo for providing us with your valuable insight on your recent stay with us. I'm happy to hear that you enjoyed our fabulous pool, but it's disappointing to learn that you were not satisfied with the rest of your stay. <br/><br/>Regarding the staff entering your room in the way that you described, this is certainly not our standard, and I'm sorry we failed you. I will be sure to bring this up to management. I see there were several other concerns; please feel free to email me directly at kathryn.vanes@sheraton.com to let us know how we can do better. <br/><br/>Kind regards,<br/>Katie Vanes<br/>PR Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_224708855" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:224708855, isGeo:false, locationid:293200})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_224708855" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224708855">
+<a name="UR224708855"></a>
+<div id="UR224708855" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d293200-r224708855-Sheraton_Kona_Resort_Spa_at_Keauhou_Bay-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224708855">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='27 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Aloha Chris,<br/><br/>Mahalo for providing us with your valuable insight on your recent stay with us. I'm happy to hear that you enjoyed our fabulous pool, but it's disappointing to learn that you were not satisfied with the rest of your stay. <br/><br/>Regarding the staff entering your room in the way that you described, this is certainly not our standard, and I'm sorry we failed you. I will be sure to bring this up to management. I see there were several other concerns; please feel free to email me directly at kathryn.vanes@sheraton.com to let us know how we can do better. <br/><br/>Kind regards,<br/>Katie Vanes<br/>PR Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224708855_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224708855 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXAmXKKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUdXAKm6XoXfXXdUXvKdd6XoXfXXdUX33Kv6XoXfXXmAkoUvU6XoXfXXmoKvKK36XoXfXXmdAvoAk6XoXfXXmdkK3om6XoXfXXXAkkvvv6XoXfXXXAkmmXm6XoXfXXXkKvKkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUdXAKmqHhGVEJIiCQQoqnQQxbiCJQQoqnQQeVtiEIQQoqnQQh2JQQoqnQQJIQQoqnQQxbVJpGipQQoqnQQ7JgqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXdkKvvoo0tEn1XXdkKvvoo0zH13KvkX0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224708855" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224708855'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222977888">
+<a name="UR222977888"></a>
+<div id="UR222977888" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_395F758099AC3B6E382176F8FC623F65-SRC_222977888" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_395F758099AC3B6E382176F8FC623F65 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-o/03/cf/cb/a1/sassyceremonies.jpg" class="avatar potentialFacebookAvatar avatarGUID:395F758099AC3B6E382176F8FC623F65" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_395F758099AC3B6E382176F8FC623F65" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">SassyCeremonies</span>
+</div>
+</div>
+<div class="location">
+Blue Mountains National Park, Australia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_395F758099AC3B6E382176F8FC623F65-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="5 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">5 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">3 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '395F758099AC3B6E382176F8FC623F65', screenName: 'SassyCeremonies', geos: [60872, 60982, 293917, 261618, 261620], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 5 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 5 cities</span> </div>
+<div id="UID_395F758099AC3B6E382176F8FC623F65-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="7 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">7 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d293200-r222977888-Sheraton_Kona_Resort_Spa_at_Keauhou_Bay-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222977888">&#x201c;<span class='noQuotes'>A bit disappointing</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='20 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+I selected this hotel because I wanted one that was close to, or had easy access to, the main centre. I have been bitterly disappointed. The trolley bus only operates every two hours which doesn't really make it a great transport system. There is nothing in walking distance - no alternative eating places or access to grocery shop without hiring a car (which we did for two days and was fantastic). This we rented from the hotel which was very convenient. The hotel I think is overpriced (as others have said). The $31 per night resort fee isn't really worth it. The games room is a bit tired. The accommodation rooms are clean but are in need of a renovation and definitely not 5 star. The room service food was terrible (actually the worse we have had anywhere) we ordered a Romaine salad which was literally a few lettuce leaves, two cherry tomatoes and a stale crouton. And the dressing tasted like it had fish sauce in it (my daughter and I are vegetarians). We couldn't eat it. The cheese flat bread would have been OK had it come to us hot (or even warm!) but it was cold and tasted like cardboard. And it was all very expensive (a can of sprite was $5). My husband (meat eater and usually not fussy at all) couldn't finish the burger. On the plus side - the wifi works well and the staff are friendly. The highlight of the resort is undoubtably the pool. It is huge, has a slide, a waterfall, a little beach area for toddlers and a hottub. My children loved it. But I would not recommend this hotel as a five star experience and definitely not value for money.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Green Features:</b> You can choose to go &quot;eco-green&quot; which means leaving your towels unchanged.
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss20" src="http://c1.tacdn.com/img2/x.gif" alt="2 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222977888_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222977888 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXAmXKKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUdXAKm6XoXfXXdUXvKdd6XoXfXXdUX33Kv6XoXfXXmAkoUvU6XoXfXXmoKvKK36XoXfXXmdAvoAk6XoXfXXmdkK3om6XoXfXXXAkkvvv6XoXfXXXAkmmXm6XoXfXXXkKvKkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUdXAKmqHhGVEJIiCQQoqnQQxbiCJQQoqnQQeVtiEIQQoqnQQh2JQQoqnQQJIQQoqnQQxbVJpGipQQoqnQQ7JgqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXXAkkvvv0tEn1XXXAkkvvv0zH13KvkX0pSM1mAoqnkovKAAbfm73zsmvXUk3qnvqnf3Xmqn3o0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">3</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222977888" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222977888'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '293200', 'SassyCeremonies', '395F758099AC3B6E382176F8FC623F65', 'en', '222977888', 'Sheraton Kona Resort &amp; Spa at Keauhou Bay');">Ask SassyCeremonies about Sheraton Kona Resort &amp; Spa at Keauhou Bay</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+SheratonKonaPR, Manager at Sheraton Kona Resort &amp; Spa at Keauhou Bay, responded to this review,
+<span class="res_date relativeDate" title='21 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_222977888">
+Aloha SassyCeremonies,<br/><br/>First of all, let me say thank you for providing your valuable, detailed feedback on your recent stay at the Sheraton Kona. While we're happy to hear that your overall staff service was friendly and the wi-fi worked well -- and that you enjoyed the pool -- I am saddened to hear about your disappointment with our location and room service options. <br/><br/>Regarding the location, were you able to make it up to the Keauhou Shopping Center? It's less than a mile from our resort and has nice restaurants with an ocean view, a movie theater and more! Our trolley is complimentary for our guests, but we will consider increasing its frequency. And there are many activities to do right on historic Keauhou Bay such as canoe paddling, snorkeling, stand-up paddle boarding and swimming.<br/><br/>We're also sorry to hear about your in-room dining experience. That is unacceptable, and we will look into our portion sizes and ensure that all of our meals are fresh. The next time you make it back to Sheraton Kona, let us offer you a complimentary dinner with our new menu from Rays on the Bay. <br/><br/>I noticed there were several other issues during your stay. Please feel free to email me directly at kathryn.vanes@sheraton.com so we may discuss other ways we can improve our services. <br/><br/>Aloha,<br/>Katie Vanes, PR Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223302808" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223302808, isGeo:false, locationid:293200})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223302808" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223302808">
+<a name="UR223302808"></a>
+<div id="UR223302808" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d293200-r223302808-Sheraton_Kona_Resort_Spa_at_Keauhou_Bay-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223302808">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Aloha SassyCeremonies,<br/><br/>First of all, let me say thank you for providing your valuable, detailed feedback on your recent stay at the Sheraton Kona. While we're happy to hear that your overall staff service was friendly and the wi-fi worked well -- and that you enjoyed the pool -- I am saddened to hear about your disappointment with our location and room service options. <br/><br/>Regarding the location, were you able to make it up to the Keauhou Shopping Center? It's less than a mile from our resort and has nice restaurants with an ocean view, a movie theater and more! Our trolley is complimentary for our guests, but we will consider increasing its frequency. And there are many activities to do right on historic Keauhou Bay such as canoe paddling, snorkeling, stand-up paddle boarding and swimming.<br/><br/>We're also sorry to hear about your in-room dining experience. That is unacceptable, and we will look into our portion sizes and ensure that all of our meals are fresh. The next time you make it back to Sheraton Kona, let us offer you a complimentary dinner with our new menu from Rays on the Bay. <br/><br/>I noticed there were several other issues during your stay. Please feel free to email me directly at kathryn.vanes@sheraton.com so we may discuss other ways we can improve our services. <br/><br/>Aloha,<br/>Katie Vanes, PR Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223302808_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223302808 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXAmXKKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUdXAKm6XoXfXXdUXvKdd6XoXfXXdUX33Kv6XoXfXXmAkoUvU6XoXfXXmoKvKK36XoXfXXmdAvoAk6XoXfXXmdkK3om6XoXfXXXAkkvvv6XoXfXXXAkmmXm6XoXfXXXkKvKkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUdXAKmqHhGVEJIiCQQoqnQQxbiCJQQoqnQQeVtiEIQQoqnQQh2JQQoqnQQJIQQoqnQQxbVJpGipQQoqnQQ7JgqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXmmKXvKv0tEn1XXmmKXvKv0zH13KvkX0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223302808" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223302808'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222973323">
+<a name="UR222973323"></a>
+<div id="UR222973323" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_76E2CA70521B84594CB4C098EA021EB9-SRC_222973323" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_76E2CA70521B84594CB4C098EA021EB9 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/56/avatar029.jpg" class="avatar potentialFacebookAvatar avatarGUID:76E2CA70521B84594CB4C098EA021EB9" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_76E2CA70521B84594CB4C098EA021EB9" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">trucksr4girls8</span>
+</div>
+</div>
+<div class="location">
+Rancho Palos Verdes, California, United States
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_76E2CA70521B84594CB4C098EA021EB9-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+<div id="UID_76E2CA70521B84594CB4C098EA021EB9-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="1 helpful vote" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">1 helpful vote</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d293200-r222973323-Sheraton_Kona_Resort_Spa_at_Keauhou_Bay-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222973323">&#x201c;<span class='noQuotes'>Beautiful Hotel, average rooms</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='20 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+My husband and I visited the Sheraton Kona on our honeymoon last week. The trip started out a little rocky, but ended well! They first &quot;upgraded&quot; us to a view of the parking lot on the second floor right next to the elevator which was loud all night. We then found a lizard in our room! They sent someone to catch it, but we were still uneasy staying in that room. We spoke with Veronica the next day who was AWESOME. She moved us to a room with a view of the bay, conveniently on the same floor as the lobby. From then on, our trip was great. The lobby is beautiful, there's plenty of activities and things to see, and the pool is beautiful! The bathrooms in the guest rooms could use a little updating, but other than that our stay was great. Thanks to Veronica!
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Upgrading to an ocean view is worth it. &quot;mountain view&quot; and &quot;partial ocean view&quot...
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+<div class="reviewItem inlineRoomTip">
+<b>Green Features:</b> I don&#39;t have any knowledge about the hotel&#39;s environmentally-friendly practices, and honestly when I&#39;m on vacation, I&#39;m not really worried about it.
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss20" src="http://c1.tacdn.com/img2/x.gif" alt="2 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222973323_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222973323 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXAmXKKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUdXAKm6XoXfXXdUXvKdd6XoXfXXdUX33Kv6XoXfXXmAkoUvU6XoXfXXmoKvKK36XoXfXXmdAvoAk6XoXfXXmdkK3om6XoXfXXXAkkvvv6XoXfXXXAkmmXm6XoXfXXXkKvKkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUdXAKmqHhGVEJIiCQQoqnQQxbiCJQQoqnQQeVtiEIQQoqnQQh2JQQoqnQQJIQQoqnQQxbVJpGipQQoqnQQ7JgqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXXAkmmXm0tEn1XXXAkmmXm0zH13KvkX0pSM1k3zsXfbkKoXU7vdoAdf7dfKAvzsbKXUzs7A0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222973323" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222973323'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '293200', 'trucksr4girls8', '76E2CA70521B84594CB4C098EA021EB9', 'en', '222973323', 'Sheraton Kona Resort &amp; Spa at Keauhou Bay');">Ask trucksr4girls8 about Sheraton Kona Resort &amp; Spa at Keauhou Bay</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+SheratonKonaPR, Manager at Sheraton Kona Resort &amp; Spa at Keauhou Bay, responded to this review,
+<span class="res_date relativeDate" title='21 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_222973323">
+Thank you for recently staying with us at the Sheraton Kona and for providing us with your valuable insight. We're so happy to learn that Veronica was able to assist you and help with your every need. <br/><br/>Being in the tropics, lizards and other pests are an ongoing issue for most hotels. We have our hotel on an aggressive remediation program with our national Starwood vendor Ecolab and do everything possible to stop their intrusion into the resort. We'll step up our efforts. <br/><br/>Should you wish to contact me directly, my email is kathryn.vanes@sheraton.com. Mahalo again for staying with us at the Sheraton Kona. <br/><br/>Regards,<br/>Katie Vanes, PR Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223301451" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223301451, isGeo:false, locationid:293200})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223301451" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223301451">
+<a name="UR223301451"></a>
+<div id="UR223301451" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d293200-r223301451-Sheraton_Kona_Resort_Spa_at_Keauhou_Bay-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223301451">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Thank you for recently staying with us at the Sheraton Kona and for providing us with your valuable insight. We're so happy to learn that Veronica was able to assist you and help with your every need. <br/><br/>Being in the tropics, lizards and other pests are an ongoing issue for most hotels. We have our hotel on an aggressive remediation program with our national Starwood vendor Ecolab and do everything possible to stop their intrusion into the resort. We'll step up our efforts. <br/><br/>Should you wish to contact me directly, my email is kathryn.vanes@sheraton.com. Mahalo again for staying with us at the Sheraton Kona. <br/><br/>Regards,<br/>Katie Vanes, PR Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223301451_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223301451 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXAmXKKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUdXAKm6XoXfXXdUXvKdd6XoXfXXdUX33Kv6XoXfXXmAkoUvU6XoXfXXmoKvKK36XoXfXXmdAvoAk6XoXfXXmdkK3om6XoXfXXXAkkvvv6XoXfXXXAkmmXm6XoXfXXXkKvKkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUdXAKmqHhGVEJIiCQQoqnQQxbiCJQQoqnQQeVtiEIQQoqnQQh2JQQoqnQQJIQQoqnQQxbVJpGipQQoqnQQ7JgqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXmmKUdoU0tEn1XXmmKUdoU0zH13KvkX0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223301451" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223301451'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222708078">
+<a name="UR222708078"></a>
+<div id="UR222708078" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_C64AFC48E4975359A675B6AB5010A852-SRC_222708078" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_C64AFC48E4975359A675B6AB5010A852 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/9a/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:C64AFC48E4975359A675B6AB5010A852" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_C64AFC48E4975359A675B6AB5010A852" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Steve G</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_C64AFC48E4975359A675B6AB5010A852-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+<div id="UID_C64AFC48E4975359A675B6AB5010A852-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="1 helpful vote" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">1 helpful vote</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d293200-r222708078-Sheraton_Kona_Resort_Spa_at_Keauhou_Bay-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222708078">&#x201c;<span class='noQuotes'>Not worth the money</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s10" src="http://c1.tacdn.com/img2/x.gif" alt="1 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='19 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+We selected this hotel for our Big Island vacation this year since Keauhou Beach Hotel closed last October. For the price, the Sheraton was very disappointing. Resort fee $30/day - for services that are standard in other Kona hotels. Roll-away bed is $65/day - again free at other hotels. Rooms need updating - low water pressure and weak air conditioning. Staff was friendly and nice, setting is good though a bit of a drive if you want to get food other than the very pricy hotel fair. Overall, I would expect more for a hotel of this quality, especially if you are paying a significant resort fee on top of your booking rate.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Most rooms have good view, so selecting one is not a problem
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222708078_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222708078 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXAmXKKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUdXAKm6XoXfXXdUXvKdd6XoXfXXdUX33Kv6XoXfXXmAkoUvU6XoXfXXmoKvKK36XoXfXXmdAvoAk6XoXfXXmdkK3om6XoXfXXXAkkvvv6XoXfXXXAkmmXm6XoXfXXXkKvKkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUdXAKmqHhGVEJIiCQQoqnQQxbiCJQQoqnQQeVtiEIQQoqnQQh2JQQoqnQQJIQQoqnQQxbVJpGipQQoqnQQ7JgqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXXkKvKkv0tEn1XXXkKvKkv0zH13KvkX0pSM1f3dbqnfdvzsdAkomoAb3ko73b7oKUKbvoX0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222708078" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222708078'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '293200', 'Steve G', 'C64AFC48E4975359A675B6AB5010A852', 'en', '222708078', 'Sheraton Kona Resort &amp; Spa at Keauhou Bay');">Ask Steve G about Sheraton Kona Resort &amp; Spa at Keauhou Bay</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+SheratonKonaPR, Manager at Sheraton Kona Resort &amp; Spa at Keauhou Bay, responded to this review,
+<span class="res_date relativeDate" title='20 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_222708078">
+Aloha Steve,<br/><br/>Thank you for recently staying here with us at the Sheraton Kona, and for taking the time to provide us with your valuable feedback. I am sorry to hear that you had such a disappointing experience at our resort.<br/><br/>While we're glad to hear that the service was friendly, we're disappointed to hear that you were overall not satisfied. Regarding the resort charge, we have bundled all of our ancillary charges into one simple resort fee instead of applying many different charges. We feel that daily water, internet, parking, 60-minute calls, trolley and cultural programs are of tremendous value and end up saving guests time and money. These charges are never hidden and are fully disclosed on all of your channels -- if this wasn't the case, would you please email me at kathryn.vanes@sheraton.com so we may remedy the error? I would also like to discuss the other items with you personally. <br/><br/>Best regards,<br/>Katie Vanes, PR Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223063542" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223063542, isGeo:false, locationid:293200})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223063542" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223063542">
+<a name="UR223063542"></a>
+<div id="UR223063542" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d293200-r223063542-Sheraton_Kona_Resort_Spa_at_Keauhou_Bay-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223063542">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='20 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Aloha Steve,<br/><br/>Thank you for recently staying here with us at the Sheraton Kona, and for taking the time to provide us with your valuable feedback. I am sorry to hear that you had such a disappointing experience at our resort.<br/><br/>While we're glad to hear that the service was friendly, we're disappointed to hear that you were overall not satisfied. Regarding the resort charge, we have bundled all of our ancillary charges into one simple resort fee instead of applying many different charges. We feel that daily water, internet, parking, 60-minute calls, trolley and cultural programs are of tremendous value and end up saving guests time and money. These charges are never hidden and are fully disclosed on all of your channels -- if this wasn't the case, would you please email me at kathryn.vanes@sheraton.com so we may remedy the error? I would also like to discuss the other items with you personally. <br/><br/>Best regards,<br/>Katie Vanes, PR Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223063542_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223063542 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXAmXKKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUdXAKm6XoXfXXdUXvKdd6XoXfXXdUX33Kv6XoXfXXmAkoUvU6XoXfXXmoKvKK36XoXfXXmdAvoAk6XoXfXXmdkK3om6XoXfXXXAkkvvv6XoXfXXXAkmmXm6XoXfXXXkKvKkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUdXAKmqHhGVEJIiCQQoqnQQxbiCJQQoqnQQeVtiEIQQoqnQQh2JQQoqnQQJIQQoqnQQxbVJpGipQQoqnQQ7JgqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXmK3modX0tEn1XXmK3modX0zH13KvkX0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223063542" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223063542'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,1233 @@
+<div id="expanded_review_224062480">
+<a name="UR224062480"></a>
+<div id="UR224062480" class="extended provider0 first newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_0416AB562D18AD463D84BC43F5837631-SRC_224062480" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_0416AB562D18AD463D84BC43F5837631 ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: '0416AB562D18AD463D84BC43F5837631'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-f/05/95/df/15/dyrhan.jpg" class="avatar potentialFacebookAvatar avatarGUID:0416AB562D18AD463D84BC43F5837631" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_0416AB562D18AD463D84BC43F5837631" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">dyrhan</span>
+</div>
+</div>
+<div class="location">
+Trondheim, Norway
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_0416AB562D18AD463D84BC43F5837631-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Top Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="50 reviews" class="icon badge_topcontributor sprite-badge_topcontributor" width="25" height="24">
+<span class="badgeText">50 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_3rd sprite-badge_hotels_3rd" width="25" height="24">
+<span class="badgeText">36 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '0416AB562D18AD463D84BC43F5837631', screenName: 'dyrhan', geos: [187299, 261596, 308258, 255580, 1191832, 60442, 3612487, 187309, 1480252, 255072, 187319, 58625, 3395240, 294265, 60491, 303908, 45963, 187147, 1466934, 1185728, 255060, 293916, 60908, 295424, 2095767, 1597036, 309706, 255069, 60958, 612490, 255122, 60713, 33252, 154943, 55711, 658988, 60792, 255106, 35805], geo: '60713' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 39 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 39 cities</span> </div>
+<div id="UID_0416AB562D18AD463D84BC43F5837631-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="40 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">40 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60713-d224948-r224062480-Omni_San_Francisco_Hotel-San_Francisco_California.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224062480">&#x201c;<span class='noQuotes'>Back after 3 years</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed yesterday
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+We stayed at the Omni in July 2011, and there were no doubt where to stay on our return to San Francisco this August!<br/><br/>The location is superb on California street, only a stone throw from Chinatown. The staff is polite, and very helpful. The rooms are spaceious, and the beds are very comfy. One not so good thing, is the room-rate: The rate has nearly doubled, since 2011. Anyway, it's still a good idea to consider Omni San Francisco, because of the location, and the friendly people working there! :-)
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Ask for a room in high floors
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with friends</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224062480_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224062480 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KkUmqHMXXdAdvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdK3XdvK6XoXfXXmA3dKXU6XoXfXXmAvXUoA6XoXfXXm33kkAX6XoXfXXmk3UXv36XoXfXXmddvXKK6XoXfXXmodAoXo6XoXfXXmodAoKk6XoXfXXmodA3X36XoXfXXmmXdXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdK3XdvKqHNaCSQQoqnQQhJCQQoqnQQqnEJCnStniQQoqnQQqWqHhJCQQoqnQQqnEJCnStniQQoqnQQfJcSTiECSJxiGIac6XoXmqoTpcXXdK3XdvK0tEn1XXdK3XdvK0zH13KkUm0pSM1KdU3b7o3XxMUvbxMd3mxMvd7fdmqnovmk3mU0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224062480" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224062480'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/dyrhan/g60713" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 3 reviews by dyrhan for San Francisco </a>
+</div>
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=0416AB562D18AD463D84BC43F5837631&amp;lang=en&amp;messagetype=2&amp;d=224948&amp;geo=&amp;src=224062480&amp;t=r&amp;summary=Omni+San+Francisco+Hotel" id="pm0416AB562D18AD463D84BC43F5837631" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask dyrhan about Omni San Francisco Hotel</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class='duplicateReviewsInline'>
+<div class='previous'>dyrhan has 1 more review of Omni San Francisco Hotel</div>
+<ul class='dupReviews'>
+<li class="dupReviewItem">
+<div class='reviewTitle'>
+<a href="/ShowUserReviews-g60713-d224948-r118822060-Omni_San_Francisco_Hotel-San_Francisco_California.html#REVIEWS">&#x201c;Excellent location and service&#x201d;</a>
+</div>
+<div class='rating'>
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="date">Reviewed 2 October 2011</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_223964021">
+<a name="UR223964021"></a>
+<div id="UR223964021" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_06D6A385785F17AE9321523614470908-SRC_223964021" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_06D6A385785F17AE9321523614470908 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-s/01/00/f6/2b/hitmom.jpg" class="avatar potentialFacebookAvatar avatarGUID:06D6A385785F17AE9321523614470908" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_06D6A385785F17AE9321523614470908" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">hitmom</span>
+</div>
+</div>
+<div class="location">
+Bowling Green, Kentucky
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_06D6A385785F17AE9321523614470908-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="27 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">27 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">17 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '06D6A385785F17AE9321523614470908', screenName: 'hitmom', geos: [36264, 187147, 37369, 32684, 60750, 60713, 60956, 33252, 2420187, 308272, 60763, 150807, 2223281, 186338, 186605, 147249, 45963], geo: '60713' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 17 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 17 cities</span> </div>
+<div id="UID_06D6A385785F17AE9321523614470908-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="38 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">38 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60713-d224948-r223964021-Omni_San_Francisco_Hotel-San_Francisco_California.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223964021">&#x201c;<span class='noQuotes'>Not what I was expecting</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+<a class="viaMobile sprite-grayPhone" href="/apps" target="_blank" onclick="ta.util.cookie.setPIDCookie(24687)">via mobile</a>
+</div>
+<div class="entry">
+<p>
+Check in took extremely long because we wanted to stay an extra night. Person behind desk was very helpful when I said bartender was too busy so she ordered up the drinks. I didn't realize when drinks came it would include so many extra charges for delivery. I got the impression she was trying to help us out not add to our bill. <br/>The room was on the 4th floor with no view. Staying in such a beautiful city and looking at a roof. The decor was very outdated and the room seemed empty. The shower curtain smelled of mildew and so did the pillow. The bathroom door was a pocket door which was difficult to open and close. The bed was not comfortable - seemed like old style mattress. We have stayed at several Omni hotels and have always had excellent rooms, beds, ect. This one was not up to par.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014, travelled as a couple</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223964021_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223964021 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KkUmqHMXXdAdvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdK3XdvK6XoXfXXmA3dKXU6XoXfXXmAvXUoA6XoXfXXm33kkAX6XoXfXXmk3UXv36XoXfXXmddvXKK6XoXfXXmodAoXo6XoXfXXmodAoKk6XoXfXXmodA3X36XoXfXXmmXdXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdK3XdvKqHNaCSQQoqnQQhJCQQoqnQQqnEJCnStniQQoqnQQqWqHhJCQQoqnQQqnEJCnStniQQoqnQQfJcSTiECSJxiGIac6XoXmqoTpcXXmA3dKXU0tEn1XXmA3dKXU0zH13KkUm0pSM1K3xM3bmvokvoqnUkbzsAmXUoXm3UddkKAKv0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">3</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223964021" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223964021'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=06D6A385785F17AE9321523614470908&amp;lang=en&amp;messagetype=2&amp;d=224948&amp;geo=&amp;src=223964021&amp;t=r&amp;summary=Omni+San+Francisco+Hotel" id="pm06D6A385785F17AE9321523614470908" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask hitmom about Omni San Francisco Hotel</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223982159">
+<a name="UR223982159"></a>
+<div id="UR223982159" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_10F11E45719B01459516C49917D055A6-SRC_223982159" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_10F11E45719B01459516C49917D055A6 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/93/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:10F11E45719B01459516C49917D055A6" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_10F11E45719B01459516C49917D055A6" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Laurent C</span>
+</div>
+</div>
+<div class="location">
+Hong Kong, China
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_10F11E45719B01459516C49917D055A6-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">2 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '10F11E45719B01459516C49917D055A6', screenName: 'Laurent C', geos: [294260, 60713], geo: '60713' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 2 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 2 cities</span> </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60713-d224948-r223982159-Omni_San_Francisco_Hotel-San_Francisco_California.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223982159">&#x201c;<span class='noQuotes'>Omni Hotel: very convenient location</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='23 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+I like to stay here whenever I am in San Fran because it is so conveniently located to all the tourist sight-seeing areas. There are also a lot of cafés around the corner on Montgomery St so it's easy to get snacks for kids. There is also a playground area 3 blocks away. And our favorite restaurant is R&amp;G Lounge 2 blocks away - great Chinese food!
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<p>Review collected in partnership with Omni Hotels &amp; Resorts <span class="sprite-info_grn info_grn" onclick="ta.call('ta.overlays.Factory.showPartnerAttributionTip', event, this.parentNode, 'This business uses online tools and resources provided by TripAdvisor to encourage and collect reviews (including this one) from its guests.');"></span></p>
+<div id="helpfulq223982159_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223982159 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KkUmqHMXXdAdvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdK3XdvK6XoXfXXmA3dKXU6XoXfXXmAvXUoA6XoXfXXm33kkAX6XoXfXXmk3UXv36XoXfXXmddvXKK6XoXfXXmodAoXo6XoXfXXmodAoKk6XoXfXXmodA3X36XoXfXXmmXdXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdK3XdvKqHNaCSQQoqnQQhJCQQoqnQQqnEJCnStniQQoqnQQqWqHhJCQQoqnQQqnEJCnStniQQoqnQQfJcSTiECSJxiGIac6XoXmqoTpcXXmAvXUoA0tEn1XXmAvXUoA0zH13KkUm0pSM1UKqnUUzsdokUA7KUdoAoU3fdAAUkxMKoob30EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223982159" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223982159'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=10F11E45719B01459516C49917D055A6&amp;lang=en&amp;messagetype=2&amp;d=224948&amp;geo=&amp;src=223982159&amp;t=r&amp;summary=Omni+San+Francisco+Hotel" id="pm10F11E45719B01459516C49917D055A6" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Laurent C about Omni San Francisco Hotel</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223667792">
+<a name="UR223667792"></a>
+<div id="UR223667792" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_3EDDABC62B407348E9FA7F4BE1271ADB-SRC_223667792" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_3EDDABC62B407348E9FA7F4BE1271ADB ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/8e/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:3EDDABC62B407348E9FA7F4BE1271ADB" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_3EDDABC62B407348E9FA7F4BE1271ADB" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">EHolly</span>
+</div>
+</div>
+<div class="location">
+Chapel Hill, North Carolina
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_3EDDABC62B407348E9FA7F4BE1271ADB-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="10 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">10 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">10 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '3EDDABC62B407348E9FA7F4BE1271ADB', screenName: 'EHolly', geos: [49673, 54273, 55123, 55197, 56003, 60864, 60763, 60713], geo: '60713' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 8 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 8 cities</span> </div>
+<div id="UID_3EDDABC62B407348E9FA7F4BE1271ADB-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="6 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">6 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60713-d224948-r223667792-Omni_San_Francisco_Hotel-San_Francisco_California.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223667792">&#x201c;<span class='noQuotes'>Excellent personal service</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 3 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+I stayed here a year ago and came back because of the excellent service the hotel staff provides. As a rewards member, I got water bottles and filled ice buckets, pillows that I liked, free wifi, free pressed clothing, and free morning beverage. Most reward programs require you to stay at least a dozen times before this happens, but Omni's program gives you rewards as soon as you join for free. <br/>The room and bathroom was very clean.Even though everything is clean, I think the hotel furniture and decor needs an update. It feels a little old-school and a little tired, I think.<br/><br/>Overall, I'll stay at the Omni because of its great service and location.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled on business</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223667792_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223667792 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KkUmqHMXXdAdvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdK3XdvK6XoXfXXmA3dKXU6XoXfXXmAvXUoA6XoXfXXm33kkAX6XoXfXXmk3UXv36XoXfXXmddvXKK6XoXfXXmodAoXo6XoXfXXmodAoKk6XoXfXXmodA3X36XoXfXXmmXdXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdK3XdvKqHNaCSQQoqnQQhJCQQoqnQQqnEJCnStniQQoqnQQqWqHhJCQQoqnQQqnEJCnStniQQoqnQQfJcSTiECSJxiGIac6XoXmqoTpcXXm33kkAX0tEn1XXm33kkAX0zH13KkUm0pSM1mzsxMxMb7f3X7dKkmdvzsAqnbkqnd7zsUXkUbxM70EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223667792" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223667792'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=3EDDABC62B407348E9FA7F4BE1271ADB&amp;lang=en&amp;messagetype=2&amp;d=224948&amp;geo=&amp;src=223667792&amp;t=r&amp;summary=Omni+San+Francisco+Hotel" id="pm3EDDABC62B407348E9FA7F4BE1271ADB" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask EHolly about Omni San Francisco Hotel</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class='duplicateReviewsInline'>
+<div class='previous'>EHolly has 1 more review of Omni San Francisco Hotel</div>
+<ul class='dupReviews'>
+<li class="dupReviewItem">
+<div class='reviewTitle'>
+<a href="/ShowUserReviews-g60713-d224948-r179484146-Omni_San_Francisco_Hotel-San_Francisco_California.html#REVIEWS">&#x201c;Excellent hotel, will stay again!&#x201d;</a>
+</div>
+<div class='rating'>
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="date">Reviewed 3 October 2013</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223761286">
+<a name="UR223761286"></a>
+<div id="UR223761286" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_194CC28E9F335FEA51103EFB02B456FE-SRC_223761286" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_194CC28E9F335FEA51103EFB02B456FE ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/92/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:194CC28E9F335FEA51103EFB02B456FE" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_194CC28E9F335FEA51103EFB02B456FE" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Mary S</span>
+</div>
+</div>
+<div class="location">
+Live Oak, United States
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_194CC28E9F335FEA51103EFB02B456FE-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60713-d224948-r223761286-Omni_San_Francisco_Hotel-San_Francisco_California.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223761286">&#x201c;<span class='noQuotes'>Omni Hotel San Francisco</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 3 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Love this place. Accommodations are superior, price is competitive and the staff is friendly, responsive and professional. I am always disappointed when there is not availablity at the Omni. No place else compares.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled on business</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Review collected in partnership with Omni Hotels &amp; Resorts <span class="sprite-info_grn info_grn" onclick="ta.call('ta.overlays.Factory.showPartnerAttributionTip', event, this.parentNode, 'This business uses online tools and resources provided by TripAdvisor to encourage and collect reviews (including this one) from its guests.');"></span></p>
+<div id="helpfulq223761286_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223761286 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KkUmqHMXXdAdvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdK3XdvK6XoXfXXmA3dKXU6XoXfXXmAvXUoA6XoXfXXm33kkAX6XoXfXXmk3UXv36XoXfXXmddvXKK6XoXfXXmodAoXo6XoXfXXmodAoKk6XoXfXXmodA3X36XoXfXXmmXdXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdK3XdvKqHNaCSQQoqnQQhJCQQoqnQQqnEJCnStniQQoqnQQqWqHhJCQQoqnQQqnEJCnStniQQoqnQQfJcSTiECSJxiGIac6XoXmqoTpcXXmk3UXv30tEn1XXmk3UXv30zH13KkUm0pSM1UAdffXvzsAqnmmoqnzsboUUKmzsqn7KX7do3qnzs0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223761286" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223761286'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=194CC28E9F335FEA51103EFB02B456FE&amp;lang=en&amp;messagetype=2&amp;d=224948&amp;geo=&amp;src=223761286&amp;t=r&amp;summary=Omni+San+Francisco+Hotel" id="pm194CC28E9F335FEA51103EFB02B456FE" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Mary S about Omni San Francisco Hotel</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223448200">
+<a name="UR223448200"></a>
+<div id="UR223448200" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_6EEDE4E05529C79A778DBBCC9C87A4F6-SRC_223448200" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_6EEDE4E05529C79A778DBBCC9C87A4F6 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/6b/avatar049.jpg" class="avatar potentialFacebookAvatar avatarGUID:6EEDE4E05529C79A778DBBCC9C87A4F6" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_6EEDE4E05529C79A778DBBCC9C87A4F6" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">D6806LTJohn_C</span>
+</div>
+</div>
+<div class="location">
+Tulsa, Oklahoma
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_6EEDE4E05529C79A778DBBCC9C87A4F6-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+<div id="UID_6EEDE4E05529C79A778DBBCC9C87A4F6-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="2 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">2 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60713-d224948-r223448200-Omni_San_Francisco_Hotel-San_Francisco_California.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223448200">&#x201c;<span class='noQuotes'>Too many &quot;nickel and dime&quot; charges</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Nice hotel but, given the room prices, charging $15 a day for internet and $7.50 for a bottle of water is ridiculous! Decor in rooms is also starting to get a little tired. Bob's restaurant is not worthy of the hotel.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq223448200_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223448200 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KkUmqHMXXdAdvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdK3XdvK6XoXfXXmA3dKXU6XoXfXXmAvXUoA6XoXfXXm33kkAX6XoXfXXmk3UXv36XoXfXXmddvXKK6XoXfXXmodAoXo6XoXfXXmodAoKk6XoXfXXmodA3X36XoXfXXmmXdXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdK3XdvKqHNaCSQQoqnQQhJCQQoqnQQqnEJCnStniQQoqnQQqWqHhJCQQoqnQQqnEJCnStniQQoqnQQfJcSTiECSJxiGIac6XoXmqoTpcXXmddvXKK0tEn1XXmddvXKK0zH13KkUm0pSM13zszsxMzsdzsKooXAfkAbkkvxM77ffAfvkbdqn30EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">4</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223448200" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223448200'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=6EEDE4E05529C79A778DBBCC9C87A4F6&amp;lang=en&amp;messagetype=2&amp;d=224948&amp;geo=&amp;src=223448200&amp;t=r&amp;summary=Omni+San+Francisco+Hotel" id="pm6EEDE4E05529C79A778DBBCC9C87A4F6" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask D6806LTJohn_C about Omni San Francisco Hotel</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223549525">
+<a name="UR223549525"></a>
+<div id="UR223549525" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_EA7B48952944C934BC89998B01BAD49D-SRC_223549525" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_EA7B48952944C934BC89998B01BAD49D ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/93/avatar019.jpg" class="avatar potentialFacebookAvatar avatarGUID:EA7B48952944C934BC89998B01BAD49D" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_EA7B48952944C934BC89998B01BAD49D" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">John A</span>
+</div>
+</div>
+<div class="location">
+San Francisco, United States
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_EA7B48952944C934BC89998B01BAD49D-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60713-d224948-r223549525-Omni_San_Francisco_Hotel-San_Francisco_California.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223549525">&#x201c;<span class='noQuotes'>ACS Conference Stay</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Given that I was on a business trip for the 248th ACS National Meeting, I was therefore given a few option as to where I could stay. I chose the OMNI San Francisco since I had previously stayed at an OMNI while on business in Dallas. The San Francisco hotel was very clean and the decor was tasteful and excellent. Furthermore, if a person wanted to see the sights of San Francisco, this is the perfect location. It is centrally located to common tourist areas such as Fisherman's Wharf, Chinatown, and Union Square, but it is not close enough such that there is heavy tourist traffic in the near vicinity to the hotel, hence the stay is very quiet. Bob's restaurant provides an excellent breakfast selection, however I was not able to enjoy a dinner there, due to other activities. I would highly recommend this hotel to anyone who needed a place to stay for business or for pleasure.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled on business</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<p>Review collected in partnership with Omni Hotels &amp; Resorts <span class="sprite-info_grn info_grn" onclick="ta.call('ta.overlays.Factory.showPartnerAttributionTip', event, this.parentNode, 'This business uses online tools and resources provided by TripAdvisor to encourage and collect reviews (including this one) from its guests.');"></span></p>
+<div id="helpfulq223549525_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223549525 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KkUmqHMXXdAdvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdK3XdvK6XoXfXXmA3dKXU6XoXfXXmAvXUoA6XoXfXXm33kkAX6XoXfXXmk3UXv36XoXfXXmddvXKK6XoXfXXmodAoXo6XoXfXXmodAoKk6XoXfXXmodA3X36XoXfXXmmXdXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdK3XdvKqHNaCSQQoqnQQhJCQQoqnQQqnEJCnStniQQoqnQQqWqHhJCQQoqnQQqnEJCnStniQQoqnQQfJcSTiECSJxiGIac6XoXmqoTpcXXmodAoXo0tEn1XXmodAoXo0zH13KkUm0pSM1zsbk7dvAoXAddfAmd7fvAAAv7KU7bxMdAxM0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223549525" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223549525'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=EA7B48952944C934BC89998B01BAD49D&amp;lang=en&amp;messagetype=2&amp;d=224948&amp;geo=&amp;src=223549525&amp;t=r&amp;summary=Omni+San+Francisco+Hotel" id="pmEA7B48952944C934BC89998B01BAD49D" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask John A about Omni San Francisco Hotel</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223549507">
+<a name="UR223549507"></a>
+<div id="UR223549507" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_E526F1C87FD4A3C92558EB674DD00F69-SRC_223549507" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_E526F1C87FD4A3C92558EB674DD00F69 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/79/avatar060.jpg" class="avatar potentialFacebookAvatar avatarGUID:E526F1C87FD4A3C92558EB674DD00F69" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_E526F1C87FD4A3C92558EB674DD00F69" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Qais L</span>
+</div>
+</div>
+<div class="location">
+Union City, United States
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_E526F1C87FD4A3C92558EB674DD00F69-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+<div id="UID_E526F1C87FD4A3C92558EB674DD00F69-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="1 helpful vote" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">1 helpful vote</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60713-d224948-r223549507-Omni_San_Francisco_Hotel-San_Francisco_California.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223549507">&#x201c;<span class='noQuotes'>Don&#39;t Book for a Wedding</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+We had so many issues with booking our wedding suite and guest rooms. They double booked our suite and didn't even know they did. They switched out all our double rooms for king rooms, leaving a few of our wedding party guests on roll aways instead of actual beds. The suite also smelled like cigarette smoke when we entered.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Review collected in partnership with Omni Hotels &amp; Resorts <span class="sprite-info_grn info_grn" onclick="ta.call('ta.overlays.Factory.showPartnerAttributionTip', event, this.parentNode, 'This business uses online tools and resources provided by TripAdvisor to encourage and collect reviews (including this one) from its guests.');"></span></p>
+<div id="helpfulq223549507_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223549507 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KkUmqHMXXdAdvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdK3XdvK6XoXfXXmA3dKXU6XoXfXXmAvXUoA6XoXfXXm33kkAX6XoXfXXmk3UXv36XoXfXXmddvXKK6XoXfXXmodAoXo6XoXfXXmodAoKk6XoXfXXmodA3X36XoXfXXmmXdXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdK3XdvKqHNaCSQQoqnQQhJCQQoqnQQqnEJCnStniQQoqnQQqWqHhJCQQoqnQQqnEJCnStniQQoqnQQfJcSTiECSJxiGIac6XoXmqoTpcXXmodAoKk0tEn1XXmodAoKk0zH13KkUm0pSM1zsoX3qnUfvkqnxMdbmfAXoovzs73kdxMxMKKqn3A0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223549507" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223549507'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=E526F1C87FD4A3C92558EB674DD00F69&amp;lang=en&amp;messagetype=2&amp;d=224948&amp;geo=&amp;src=223549507&amp;t=r&amp;summary=Omni+San+Francisco+Hotel" id="pmE526F1C87FD4A3C92558EB674DD00F69" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Qais L about Omni San Francisco Hotel</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223549626">
+<a name="UR223549626"></a>
+<div id="UR223549626" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_673A48B97ED51E4F559A8ED7E63CB6E8-SRC_223549626" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_673A48B97ED51E4F559A8ED7E63CB6E8 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/5a/avatar032.jpg" class="avatar potentialFacebookAvatar avatarGUID:673A48B97ED51E4F559A8ED7E63CB6E8" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_673A48B97ED51E4F559A8ED7E63CB6E8" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">susankT2587ZK</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_673A48B97ED51E4F559A8ED7E63CB6E8-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60713-d224948-r223549626-Omni_San_Francisco_Hotel-San_Francisco_California.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223549626">&#x201c;<span class='noQuotes'>A wonderful stay at the Omni San Francisco</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+We loved our stay at the Omni San Francisco. The room was large and extremely comfortable. The service was 1st class. The staff was wonderful; very attentive, friendly and helpful. The location was very convenient, too! We will definitely stay there again and would highly recommend it!
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Review collected in partnership with Omni Hotels &amp; Resorts <span class="sprite-info_grn info_grn" onclick="ta.call('ta.overlays.Factory.showPartnerAttributionTip', event, this.parentNode, 'This business uses online tools and resources provided by TripAdvisor to encourage and collect reviews (including this one) from its guests.');"></span></p>
+<div id="helpfulq223549626_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223549626 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KkUmqHMXXdAdvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdK3XdvK6XoXfXXmA3dKXU6XoXfXXmAvXUoA6XoXfXXm33kkAX6XoXfXXmk3UXv36XoXfXXmddvXKK6XoXfXXmodAoXo6XoXfXXmodAoKk6XoXfXXmodA3X36XoXfXXmmXdXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdK3XdvKqHNaCSQQoqnQQhJCQQoqnQQqnEJCnStniQQoqnQQqWqHhJCQQoqnQQqnEJCnStniQQoqnQQfJcSTiECSJxiGIac6XoXmqoTpcXXmodA3X30tEn1XXmodA3X30zH13KkUm0pSM13kmbdv7AkzsxMoUzsdqnooAbvzsxMkzs3mf73zsv0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223549626" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223549626'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=673A48B97ED51E4F559A8ED7E63CB6E8&amp;lang=en&amp;messagetype=2&amp;d=224948&amp;geo=&amp;src=223549626&amp;t=r&amp;summary=Omni+San+Francisco+Hotel" id="pm673A48B97ED51E4F559A8ED7E63CB6E8" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask susankT2587ZK about Omni San Francisco Hotel</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223324287">
+<a name="UR223324287"></a>
+<div id="UR223324287" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_270E29584CA58F3B717292F8F325B744-SRC_223324287" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_270E29584CA58F3B717292F8F325B744 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/91/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:270E29584CA58F3B717292F8F325B744" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_270E29584CA58F3B717292F8F325B744" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Martin D</span>
+</div>
+</div>
+<div class="location">
+new York, United States
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_270E29584CA58F3B717292F8F325B744-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">2 reviews</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60713-d224948-r223324287-Omni_San_Francisco_Hotel-San_Francisco_California.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223324287">&#x201c;<span class='noQuotes'>Conveniently located</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='20 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Great location in ths financial district. Easy walks to Market Street, North Beach and Union Square. Even walked to and from PacBell Stadium. No real city views, which didn't matter as I was there for work and the room was for sleeping.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled on business</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Review collected in partnership with Omni Hotels &amp; Resorts <span class="sprite-info_grn info_grn" onclick="ta.call('ta.overlays.Factory.showPartnerAttributionTip', event, this.parentNode, 'This business uses online tools and resources provided by TripAdvisor to encourage and collect reviews (including this one) from its guests.');"></span></p>
+<div id="helpfulq223324287_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223324287 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KkUmqHMXXdAdvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdK3XdvK6XoXfXXmA3dKXU6XoXfXXmAvXUoA6XoXfXXm33kkAX6XoXfXXmk3UXv36XoXfXXmddvXKK6XoXfXXmodAoXo6XoXfXXmodAoKk6XoXfXXmodA3X36XoXfXXmmXdXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdK3XdvKqHNaCSQQoqnQQhJCQQoqnQQqnEJCnStniQQoqnQQqWqHhJCQQoqnQQqnEJCnStniQQoqnQQfJcSTiECSJxiGIac6XoXmqoTpcXXmmXdXvk0tEn1XXmmXdXvk0zH13KkUm0pSM1XkKzsXAovdfbovqnm7kUkXAXqnvqnmXo7kdd0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223324287" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223324287'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=270E29584CA58F3B717292F8F325B744&amp;lang=en&amp;messagetype=2&amp;d=224948&amp;geo=&amp;src=223324287&amp;t=r&amp;summary=Omni+San+Francisco+Hotel" id="pm270E29584CA58F3B717292F8F325B744" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Martin D about Omni San Francisco Hotel</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class='duplicateReviewsInline'>
+<div class='previous'>Martin D has 1 more review of Omni San Francisco Hotel</div>
+<ul class='dupReviews'>
+<li class="dupReviewItem">
+<div class='reviewTitle'>
+<a href="/ShowUserReviews-g60713-d224948-r199864158-Omni_San_Francisco_Hotel-San_Francisco_California.html#REVIEWS">&#x201c;Plesant stay - great location for business&#x201d;</a>
+</div>
+<div class='rating'>
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="date">Reviewed 1 April 2014</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>

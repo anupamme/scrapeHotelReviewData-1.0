@@ -1,0 +1,1093 @@
+<div id="expanded_review_222683562">
+<a name="UR222683562"></a>
+<div id="UR222683562" class="extended provider0 first">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_FBBA0F3AAA144800DF0B9D1719887E37-SRC_222683562" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_FBBA0F3AAA144800DF0B9D1719887E37 ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: 'FBBA0F3AAA144800DF0B9D1719887E37'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/67/92/6e/kirk-s.jpg" class="avatar potentialFacebookAvatar avatarGUID:FBBA0F3AAA144800DF0B9D1719887E37" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_FBBA0F3AAA144800DF0B9D1719887E37" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Kirk S</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_FBBA0F3AAA144800DF0B9D1719887E37-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+<div id="UID_FBBA0F3AAA144800DF0B9D1719887E37-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">4 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g147313-d147782-r222683562-Hedonism_II-Negril_Westmoreland_Parish_Jamaica.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222683562">&#x201c;<span class='noQuotes'>2nd Trip, Outstanding Value Once Again</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='18 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Teresa and I had a wonderful travel experience to Hedonism II once again. The trip dates were 9 to 16 August 2014. The property improvements continue, looking forward to the new court yard and wine bar coming soon. Major room renovations appear completed, the new room selections at the higher end of the pricing scale are well planned and include private outdoor whirlpools for four, however I did see one with like six couples enjoying themselves. Our room was an ocean view room which included fresh paint, new bedding, and a new large flat screen television.<br/>We can't say enough about the truly dedicated management and staff. Every employee encountered smiled and greeted us each time we saw them. The rooms are impeccably maintained, always cleaned and prepared as it was on check in day. Food and beverage services are the best we have encountered and include premium foods, wines and spirits, which we have never seen before at an all-inclusive resort. Along with the main dining terrace, both Harry San (Teppanyaki) and Martino's (Italian) serve up both entertainment and great food. Entertainment on the Hedonisim II main stage is simply&quot;off the hook!!&quot; Winston is a must see, and Deon in the piano bar is a must experience event. Be fore warned, practice your piano bar sing along requests before you travel. The Blue Mahoe Spa provides services in the salon and also at beach front cabanas. We would like to personally thank Jennifer and Peta for one of the best couples massages we have had. Realizing I can call out everyone who made this trip special, I do want to say a personal thank you to Lorna Brammer, Guest Relations Manager, Lennox Clarke &quot;Deon&quot;, in the piano bar, Patrick at Blue Mahoe, Cyrenne who serves all her guests with love, and Ricardo at Harry San, all for their outstanding service and constant smile. Thanks Hedo, see you again in March 2015.
+</p>
+</div>
+<div class="media  thumbCols1">
+<div class="thumbnails">
+<div class="photosInline">
+<ul>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g147313-d147782-i107455520-r222683562-Hedonism_II-Negril_Westmoreland_Parish_Jamaica.html#107455520 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 147782, 147313, 2, 107455520);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/67/a4/20/hammock.jpg" alt="" width="50" height="50">
+</span>
+</li>
+</ul>
+</div> </div> </div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222683562_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222683562 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUdkmUmqHMUdkkvXqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXX3vmo3X6XoXfXXXoUA3kA6XoXfXXXmAXXdA6XoXfXXUv3Kd3U6XoXfXXU3XUAvK6XoXfXXUmKvXAK6XoXfXXKvAdovA6XoXfXXKmUkmvk6XoXfXXKUoAomd6XoXfXXKUoUXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXX3vmo3XqH5VMiCStaQQoqnQQllqHZVyEScQQoqnQQxdVtIaiEVcJCMQQoqnQQwJEStGQQoqnQQx2JaJSnJxiGIac6XoXmqoTpcXXX3vmo3X0tEn1XXX3vmo3X0zH1UdkmUm0pSM1qn77bKqnmbbbUddvKKxMqnK7AxMUkUAvvkzsmk0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">4</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222683562" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222683562'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '147782', 'Kirk S', 'FBBA0F3AAA144800DF0B9D1719887E37', 'en', '222683562', 'Hedonism II');">Ask Kirk S about Hedonism II</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_222519679">
+<a name="UR222519679"></a>
+<div id="UR222519679" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_619C84727245908CC222C13FBB6CD71B-SRC_222519679" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_619C84727245908CC222C13FBB6CD71B ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/a3/avatar074.jpg" class="avatar potentialFacebookAvatar avatarGUID:619C84727245908CC222C13FBB6CD71B" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_619C84727245908CC222C13FBB6CD71B" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Dwayne J</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_619C84727245908CC222C13FBB6CD71B-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+<div id="UID_619C84727245908CC222C13FBB6CD71B-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">3 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g147313-d147782-r222519679-Hedonism_II-Negril_Westmoreland_Parish_Jamaica.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222519679">&#x201c;<span class='noQuotes'>Improvements Needed</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='18 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+A brochure is needed in your room explaining what is available on the property for the guests because no on explains property amenities to you, including time table for breakfast, lunch and dinner. The guests have to learn from each other what is on the property, what is available and what time is breakfast, lunch, and dinner.<br/>Ant problem in room needs to be addressed. <br/>Entertainment needed in main dining room when it is severe weather conditions for guests who don't want to stay in their room. <br/>I didn't care for the Guest host. She catered to other races other than black.<br/>On a positive note, the food was good and plentiful. The staff was amazing and always attentive with a smile. The entertainment staff worked really hard. They were phenomenal! Plus the guest entertainment was great. The chefs and servers were top notch and very friendly.<br/>On another note, the sex that takes place is what you make of it. It's uninhibited, all over, and not confined to one particular area or time of day or night. Couples were not afraid to share their mate or be watched by anyone. The welcome you to join in whether in public or in private.<br/>In closing, I want to thank Diana, Owanna, Vanessa, Shanae, and Charmaine the chef.<br/><br/>MISTA
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled solo</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222519679_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222519679 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUdkmUmqHMUdkkvXqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXX3vmo3X6XoXfXXXoUA3kA6XoXfXXXmAXXdA6XoXfXXUv3Kd3U6XoXfXXU3XUAvK6XoXfXXUmKvXAK6XoXfXXKvAdovA6XoXfXXKmUkmvk6XoXfXXKUoAomd6XoXfXXKUoUXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXX3vmo3XqH5VMiCStaQQoqnQQllqHZVyEScQQoqnQQxdVtIaiEVcJCMQQoqnQQwJEStGQQoqnQQx2JaJSnJxiGIac6XoXmqoTpcXXXoUA3kA0tEn1XXXoUA3kA0zH1UdkmUm0pSM13UAfvdkXkXdoAKvffXXXfUmqn773fxMkU70EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">3</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222519679" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222519679'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '147782', 'Dwayne J', '619C84727245908CC222C13FBB6CD71B', 'en', '222519679', 'Hedonism II');">Ask Dwayne J about Hedonism II</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222392249">
+<a name="UR222392249"></a>
+<div id="UR222392249" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_91009DCCA44C16DA76E6A5BE386769E1-SRC_222392249" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_91009DCCA44C16DA76E6A5BE386769E1 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9b/avatar062.jpg" class="avatar potentialFacebookAvatar avatarGUID:91009DCCA44C16DA76E6A5BE386769E1" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_91009DCCA44C16DA76E6A5BE386769E1" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Theresa B</span>
+</div>
+</div>
+<div class="location">
+Ottawa, Canada
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_91009DCCA44C16DA76E6A5BE386769E1-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Top Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="51 reviews" class="icon badge_topcontributor sprite-badge_topcontributor" width="25" height="24">
+<span class="badgeText">51 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">24 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '91009DCCA44C16DA76E6A5BE386769E1', screenName: 'Theresa B', geos: [3176298, 1093759, 317067, 298252, 154951, 155019, 294207, 147312, 147313, 60881, 60763, 186338, 181733, 147275, 154989, 609112, 3902994, 294209, 154913, 294210, 293751, 155004, 147293, 790144, 1062161, 499108, 154996], geo: '147313' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 27 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 27 cities</span> </div>
+<div id="UID_91009DCCA44C16DA76E6A5BE386769E1-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="45 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">45 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g147313-d147782-r222392249-Hedonism_II-Negril_Westmoreland_Parish_Jamaica.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222392249">&#x201c;<span class='noQuotes'>Don&#39;t stay for the room!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s20" src="http://c1.tacdn.com/img2/x.gif" alt="2 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='17 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+We did our research in advance so we weren't too shocked about what went on although was still wilder than we expected.<br/><br/>Definitely not worth the price compared to other adults only properties in Jamaica that offer nude sides! Resort charges way more than they should not because of the rooms or facilities but rather for the wild factor and the fact that you can have sex virtually anywhere on the property and go nude anywhere you please, even to dinner!<br/><br/>We moved to three different rooms and all were beyond run down and had problems such as mouldy showers/bathrooms, missing or filthy grout in bedroom, drawers in dresser that didn't open because of age, uncomfortable beds, no room to sit, electrical receptacles that wouldn't hold plugs in, NO balconies or patios for any rooms except a few hot tub class rooms! Only one window that had no screen and was too old and damaged to slide open anymore! Beach rooms are only a few feet from people, security guides, boats, not by water or shoreline and NOT private nor quiet!<br/><br/>Only plus to this property was the food and Patrick the spa manager who was lovely and did his best for us to find a room that was without mould!<br/><br/>Manager at check in was rude, obnoxious and not going to do anything to help with our room until Patrick got involved!<br/><br/>Definitely would NOT return to this property! Even once their rooms are renovated as newly renovated rooms will not alone be able to overcome the fact that there are no balconies or patios, the rooms are really small, wood decking around rooms that you have to walk on to access your rooms is rotted and unsafe! Pools were also often filthy and unusable due to chemical balance difficulties, so we had only 2 days out of 8 when we actually used a pool!
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222392249_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222392249 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUdkmUmqHMUdkkvXqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXX3vmo3X6XoXfXXXoUA3kA6XoXfXXXmAXXdA6XoXfXXUv3Kd3U6XoXfXXU3XUAvK6XoXfXXUmKvXAK6XoXfXXKvAdovA6XoXfXXKmUkmvk6XoXfXXKUoAomd6XoXfXXKUoUXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXX3vmo3XqH5VMiCStaQQoqnQQllqHZVyEScQQoqnQQxdVtIaiEVcJCMQQoqnQQwJEStGQQoqnQQx2JaJSnJxiGIac6XoXmqoTpcXXXmAXXdA0tEn1XXXmAXXdA0zH1UdkmUm0pSM1AUKKAxMffbddfU3xMbk3zs3bo7zsmv3k3AzsU0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">10</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222392249" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222392249'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '147782', 'Theresa B', '91009DCCA44C16DA76E6A5BE386769E1', 'en', '222392249', 'Hedonism II');">Ask Theresa B about Hedonism II</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221860461">
+<a name="UR221860461"></a>
+<div id="UR221860461" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_4B045EF1DCA83D051DB377380A8EC894-SRC_221860461" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_4B045EF1DCA83D051DB377380A8EC894 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/44/30/b0/kaye-h.jpg" class="avatar potentialFacebookAvatar avatarGUID:4B045EF1DCA83D051DB377380A8EC894" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_4B045EF1DCA83D051DB377380A8EC894" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Kaye H</span>
+</div>
+</div>
+<div class="location">
+New York City, New York
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_4B045EF1DCA83D051DB377380A8EC894-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="8 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">8 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">4 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '4B045EF1DCA83D051DB377380A8EC894', screenName: 'Kaye H', geos: [60845, 47724, 147313, 60763, 34439], geo: '147313' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 5 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 5 cities</span> </div>
+<div id="UID_4B045EF1DCA83D051DB377380A8EC894-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">4 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g147313-d147782-r221860461-Hedonism_II-Negril_Westmoreland_Parish_Jamaica.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221860461">&#x201c;<span class='noQuotes'>Let Loose Baby!!!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='15 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Enjoyed every moment of staying here. Such a liberating and free atmosphere. Lots of private and romantic spots to escape to. Food was okay. As a yaadie I expected better. But the booze made up for all that. Adventurous travelers must check it to out.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Naked is good. Lol.
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed October 2013, travelled solo</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq221860461_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221860461 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUdkmUmqHMUdkkvXqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXX3vmo3X6XoXfXXXoUA3kA6XoXfXXXmAXXdA6XoXfXXUv3Kd3U6XoXfXXU3XUAvK6XoXfXXUmKvXAK6XoXfXXKvAdovA6XoXfXXKmUkmvk6XoXfXXKUoAomd6XoXfXXKUoUXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXX3vmo3XqH5VMiCStaQQoqnQQllqHZVyEScQQoqnQQxdVtIaiEVcJCMQQoqnQQwJEStGQQoqnQQx2JaJSnJxiGIac6XoXmqoTpcXXUv3Kd3U0tEn1XXUv3Kd3U0zH1UdkmUm0pSM1d7KdozsqnUxMfbvmxMKoUxM7mkkmvKbvzsfvAd0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221860461" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221860461'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '147782', 'Kaye H', '4B045EF1DCA83D051DB377380A8EC894', 'en', '221860461', 'Hedonism II');">Ask Kaye H about Hedonism II</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221621980">
+<a name="UR221621980"></a>
+<div id="UR221621980" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_FB377EFC162EE53C534D1481E0B2DF48-SRC_221621980" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_FB377EFC162EE53C534D1481E0B2DF48 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/71/69/01/julie-y.jpg" class="avatar potentialFacebookAvatar avatarGUID:FB377EFC162EE53C534D1481E0B2DF48" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_FB377EFC162EE53C534D1481E0B2DF48" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Julie Y</span>
+</div>
+</div>
+<div class="location">
+Key West, Florida
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_FB377EFC162EE53C534D1481E0B2DF48-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+<div id="UID_FB377EFC162EE53C534D1481E0B2DF48-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">4 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g147313-d147782-r221621980-Hedonism_II-Negril_Westmoreland_Parish_Jamaica.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221621980">&#x201c;<span class='noQuotes'>Not what I expected......even better!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='14 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+First time visitor so I'll start from the beginning. The resort is about an hour and a half away from the airport so we took Tim Air which is a 15 minute hop in a small airplane. The view was amazing and the Tim Air crew was friendly and efficient. It was around $300 each way for two people. Your other alternative is taking the bus which is also a fun trip. There is much to see on the bus so I'm glad I didn't miss it on the way back to the airport. If you expect to be travel weary when you get there, take Tim Air. If not, the bus will not be boring.<br/>As for the resort, let me start by saying we are not nudists or swingers. I was afraid to speak to any other guests for a couple of days because I thought that they would think we wanted to hook up. Nobody was like that. We stayed on the prude side the whole time and occasionally a naked person would roam around but it was no big deal. We stayed so busy with water activities that we never ventured over to the nude side but probably next time. They have complimentary water sports included so we went diving twice a day. Also went snorkeling, sailing and kayaking but the diving was phenomenal. We took the advanced dive course with Orane, also know as Sea Weed. He was perfect, nice, friendly and professional. Actually all of the water sport people were great, Grantly, Orlando, Richard and others, also Augustus who kept the beach tidy. Can't forget our beach bartenders either, Chantel and Sharma. <br/>The food is good. It is not to die for but it is good and there is plenty to choose from. We also made reservations for both restaurants and they were good as well. Chris, our Benihana style chef, was funny and entertaining. The food was good but he made the experience great. <br/>The rooms.....fine. Clean and served the purpose. At first we were upstairs but asked to be switched to downstairs and they were happy to accommodate. We stayed on the prude side and all was good. <br/>The entertainment crew, well it's not vegas but they work tirelessly to make sure everybody is having a good time. The nightly shows are engaging. <br/>A couple of recommendations....Spend the $25 to take the little cab ride through Negril. Jimmy the cabbie was nice and I loved seeing the town. Also,we brought Tervis type cups, plastic cups with lids and straws, and we used them every day. The cups at the resort are little. I brought make up, didn't use it. We brought costumes, didn't use them. Although I heard it was because of the time that we went. It was Jamaican independence week so there were a lot of Jamaican people there. Try Ting, the Jamaican soda. Loved it.<br/>In all we really enjoyed ourselves. We kept hearing how much fun the nude side was so next time we will probably check it out. Will definitely go to Hedo again mainly because of the attentive and warm hearted staff.
+</p>
+</div>
+<div class="media  thumbCols3">
+<div class="thumbnails">
+<div class="photosInline">
+<ul>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g147313-d147782-i106961942-r221621980-Hedonism_II-Negril_Westmoreland_Parish_Jamaica.html#106961942 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 147782, 147313, 2, 106961942);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/60/1c/16/hedonism-ii.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g147313-d147782-i106961986-r221621980-Hedonism_II-Negril_Westmoreland_Parish_Jamaica.html#106961986 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 147782, 147313, 2, 106961986);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/60/1c/42/hedonism-ii.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g147313-d147782-i106961966-r221621980-Hedonism_II-Negril_Westmoreland_Parish_Jamaica.html#106961966 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 147782, 147313, 2, 106961966);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/60/1c/2e/hedonism-ii.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g147313-d147782-i106962010-r221621980-Hedonism_II-Negril_Westmoreland_Parish_Jamaica.html#106962010 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 147782, 147313, 2, 106962010);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/60/1c/5a/hedonism-ii.jpg" alt="" width="50" height="50">
+</span>
+</li>
+</ul>
+</div> </div> </div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221621980_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221621980 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUdkmUmqHMUdkkvXqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXX3vmo3X6XoXfXXXoUA3kA6XoXfXXXmAXXdA6XoXfXXUv3Kd3U6XoXfXXU3XUAvK6XoXfXXUmKvXAK6XoXfXXKvAdovA6XoXfXXKmUkmvk6XoXfXXKUoAomd6XoXfXXKUoUXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXX3vmo3XqH5VMiCStaQQoqnQQllqHZVyEScQQoqnQQxdVtIaiEVcJCMQQoqnQQwJEStGQQoqnQQx2JaJSnJxiGIac6XoXmqoTpcXXU3XUAvK0tEn1XXU3XUAvK0zH1UdkmUm0pSM1qn7mkkzsqnfU3XzszsomfomdxMUdvUzsK7XxMqndv0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">4</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221621980" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221621980'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '147782', 'Julie Y', 'FB377EFC162EE53C534D1481E0B2DF48', 'en', '221621980', 'Hedonism II');">Ask Julie Y about Hedonism II</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221308290">
+<a name="UR221308290"></a>
+<div id="UR221308290" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_5BCEB4D4D31C789EAB174FDFC9B2A124-SRC_221308290" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_5BCEB4D4D31C789EAB174FDFC9B2A124 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/8c/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:5BCEB4D4D31C789EAB174FDFC9B2A124" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_5BCEB4D4D31C789EAB174FDFC9B2A124" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">bsg1969</span>
+</div>
+</div>
+<div class="location">
+london
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_5BCEB4D4D31C789EAB174FDFC9B2A124-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="7 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">7 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">5 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '5BCEB4D4D31C789EAB174FDFC9B2A124', screenName: 'bsg1969', geos: [295424, 147313, 37114, 297555, 155019], geo: '147313' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 5 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 5 cities</span> </div>
+<div id="UID_5BCEB4D4D31C789EAB174FDFC9B2A124-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="9 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">9 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g147313-d147782-r221308290-Hedonism_II-Negril_Westmoreland_Parish_Jamaica.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221308290">&#x201c;<span class='noQuotes'>Virgins to Hedonism</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='12 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+I went with my best friend of 20+ years. It was our first time at such a place and we adopted the &quot;when in Rome ...&quot; approach. We were very impressed with the following: the food and drinks were fantastic and varied on a daily basis. The waiting staff were very attentive and ready to fill your glass with whatever you requested. The guest relations staff - especially Lorna bent over backwards to deal with any issues that arose - and there were a few centred around the rules and regulations on the nude beach! The receptionist and security staff were polite and helpful at all times. But, the entertainment staff and their routine needs improving - apart from Owanda who was a fairly new girl and was very nice and, the couple in the piano bar were also outstanding. Another downside was that, for a nudist hotel, it appeared to aim to please the male guests moreso than the women guests. For example there were only female masseurs in their Beauty Shop. They don't hire male masseurs! The female entertainment staff also left little to the imagination when performing routines but the male entertainment staff were too thin in build and camp in behaviour. One of their routines involved them dressing up as Beyonce and performing Single Lady - which was clearly uncomfortable for them! Overall I would recommend this place to anyone with an open mind and I would definitely go back.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with friends</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221308290_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221308290 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUdkmUmqHMUdkkvXqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXX3vmo3X6XoXfXXXoUA3kA6XoXfXXXmAXXdA6XoXfXXUv3Kd3U6XoXfXXU3XUAvK6XoXfXXUmKvXAK6XoXfXXKvAdovA6XoXfXXKmUkmvk6XoXfXXKUoAomd6XoXfXXKUoUXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXX3vmo3XqH5VMiCStaQQoqnQQllqHZVyEScQQoqnQQxdVtIaiEVcJCMQQoqnQQwJEStGQQoqnQQx2JaJSnJxiGIac6XoXmqoTpcXXUmKvXAK0tEn1XXUmKvXAK0zH1UdkmUm0pSM1o7fzs7dxMdxMmUfkvAzsb7UkdqnxMqnfA7XbUXd0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">7</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221308290" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221308290'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '147782', 'bsg1969', '5BCEB4D4D31C789EAB174FDFC9B2A124', 'en', '221308290', 'Hedonism II');">Ask bsg1969 about Hedonism II</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220894589">
+<a name="UR220894589"></a>
+<div id="UR220894589" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_40B1850A1CECDB1895D7D4368484FE38-SRC_220894589" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_40B1850A1CECDB1895D7D4368484FE38 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/5b/1a/ea/scattashot.jpg" class="avatar potentialFacebookAvatar avatarGUID:40B1850A1CECDB1895D7D4368484FE38" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_40B1850A1CECDB1895D7D4368484FE38" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">scattashot</span>
+</div>
+</div>
+<div class="location">
+Napa Valley, California
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_40B1850A1CECDB1895D7D4368484FE38-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+<div id="UID_40B1850A1CECDB1895D7D4368484FE38-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">3 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g147313-d147782-r220894589-Hedonism_II-Negril_Westmoreland_Parish_Jamaica.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220894589">&#x201c;<span class='noQuotes'>Amazing time @ Hedonism II</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='10 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+Castaway Travel Company put together a very memorable vacation to Jamaica!<br/><br/>The staff at Hedo II - Elysia, O'Randy @ guest services always checking to make sure my visit was perfect, Vernette in dining a very beautiful person with an eye for detail, Ozwald the Beverage Manager, kept me happy with libations:)<br/><br/>Wilfred in Watersports were I spent most of my vacation riding my wakeskate...simply AMAZING!<br/><br/>Lastly, who could forget the AMAZING Diana in entertainment, what a gorgeous dancer, wow!!<br/><br/>Can't wait for my next trip back!<br/><br/>Wine regards, <br/>Scattashot
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled solo</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq220894589_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220894589 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUdkmUmqHMUdkkvXqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXX3vmo3X6XoXfXXXoUA3kA6XoXfXXXmAXXdA6XoXfXXUv3Kd3U6XoXfXXU3XUAvK6XoXfXXUmKvXAK6XoXfXXKvAdovA6XoXfXXKmUkmvk6XoXfXXKUoAomd6XoXfXXKUoUXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXX3vmo3XqH5VMiCStaQQoqnQQllqHZVyEScQQoqnQQxdVtIaiEVcJCMQQoqnQQwJEStGQQoqnQQx2JaJSnJxiGIac6XoXmqoTpcXXKvAdovA0tEn1XXKvAdovA0zH1UdkmUm0pSM1dK7UvoKbUfzsfxM7UvAoxMkxMdm3vdvdqnzsmv0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">3</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220894589" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220894589'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '147782', 'scattashot', '40B1850A1CECDB1895D7D4368484FE38', 'en', '220894589', 'Hedonism II');">Ask scattashot about Hedonism II</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220317387">
+<a name="UR220317387"></a>
+<div id="UR220317387" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_F7DB2C597C0C0A71BDAAF47869A09D66-SRC_220317387" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_F7DB2C597C0C0A71BDAAF47869A09D66 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/a0/avatar071.jpg" class="avatar potentialFacebookAvatar avatarGUID:F7DB2C597C0C0A71BDAAF47869A09D66" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_F7DB2C597C0C0A71BDAAF47869A09D66" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">GeistGuy</span>
+</div>
+</div>
+<div class="location">
+Indianapolis, Indiana
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_F7DB2C597C0C0A71BDAAF47869A09D66-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="22 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">22 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">13 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'F7DB2C597C0C0A71BDAAF47869A09D66', screenName: 'GeistGuy', geos: [37209, 60088, 188590, 186525, 41880, 297586, 60713, 33010, 54121, 60403, 34352, 147313, 34606, 33528, 34515, 35805], geo: '147313' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 16 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 16 cities</span> </div>
+<div id="UID_F7DB2C597C0C0A71BDAAF47869A09D66-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="36 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">36 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g147313-d147782-r220317387-Hedonism_II-Negril_Westmoreland_Parish_Jamaica.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220317387">&#x201c;<span class='noQuotes'>Brace Yourselves for Nudity and...well.... SEX</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='8 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+My wife and I have been to Hedo ii (as well as Hedo 3 when it was open), and as before, we had an amazing, absolutely over-the-top time. If there was a member of the staff who wasn't extremely friendly, and over-the-top attentive, we never saw them. The food was great, with decent variety and attractively presented. It was also plentiful at all hours, but keep in mind, this isn't a gourmet &quot;I go there just for the food&quot; type resort. That being said, the food really is excellent. The drinks were also ever-present, and with good brands. The rooms were acceptable and clean and everything worked, including the air conditioning, which is good, because it was hot. They have a huge new TV with lots of channels, and a bathroom that was clean and working fine, and this year the shower temp was actually adjustable! Which it wasn't last year. All in all, Wild Times aside, this is not a 5 star resort, but it is certainly a great place, with an excellent staff, great shows every night, and LOTS of fun. The piano bar was too bright, and a bit too loud, so it needs a bit of work. By the way Garfield the Tennis Coach is the best tennis coach my wife and I have ever worked with, and he will have you feeling like a pro. It does not cost extra to work with him, and they supply tennis stuff. For my wife and I, this is one of our favorite things about Hedo 2. All in all, it's clear that the management of Hedo 2 really cares about the resort, and the guests, and are constantly upgrading it, including some remodeling that was being done while we were there.<br/><br/>OK, OK, onto the sex part........I'll start with the hang-out place during the afternoons, and that is the &quot;Nude Pool&quot;. While we were there, it had on average (I actually counted one day) anywhere from 30-60 naked (no, not scantly clad, no not almost naked, I mean NAKED!) people in it. Mostly couples go to Hedo, but there is the occasional solo single guy, although they are not always welcomed into the crowd. If you spend more than about 20-30 minutes there, you will see at least a couple, or a few, people having some kind of sex, sometimes with more the two people. My wife and I were chatting in the pool with another couple and talking about football season, while three couples (not three people, three couples) were &quot;mixing and matching&quot; in the pool next to us. Some people are just there to enjoy the nudity, some people are looking for a bit &quot;more&quot;. Because this pool is only about 3.5 feet deep throughout, so its easy to mill around and chat with people, which is exactly what people do. There's a swim up bar and an adjoining grill which churns out burgers, fries, sandwiches and other stuff, all of which are made to order, and are good. The guests, because they chose to come to Hedo rather than someplace more conservative, are generally fun, uninhibited, and absolutely wild! If you are squeamish about nudity, and for that matter, seeing people actually having sex in public, this is not the place for you. Rest assured, the pool is more about socializing while being naked, than it is an all out sexual romp, but if you have never witnessed a threesome, you will see one (or more!) while hanging out in the pool. Guests in the pool are forever hugging and enthusiastically greeting each other (naked of course), so that takes a little getting used to if you've never hugged naked people who you either don't know, or have barely met. It's noteworthy that the guests of other hotels can occasionally be seen cruising by on rafts or dive boats about 100 yards off the beach, and often they are looking over to see what the &quot;Hedo people&quot; are doing.... The Hedo folks don't look in on the other resorts because Hedo is where the wild fun is. Bottom line is this: if you hang out on the nude side, you will see sex in public. If this would freak you out, go somewhere else. If it's after midnight in the hot tub, it gets all the more sexual. By the end of the trip, you will have had your fill of nudity, and will hardly even notice, <br/><br/>You will see all shapes and sizes and age groups (adults only of course) from the beautiful and younger people in their 20's to not so beautiful people, and the not so young, roaming around, sometimes naked, sometimes clothed, and yes, sometimes having sex. In the restaurants and public areas, people are mostly clothed (you have to be clothed in one way or another in the restaurants) but you'll see a lot of wild outfits, especially on theme nights, and sometimes these outfits are adventurous and/or extremely revealing. If you are considering, losing your inhibitions, you will find yourself in very willing company. <br/><br/>All in all, we had an excellent time, and we'll go back....again
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Nude Side is fun, Prude side is quitter and farther away from the activities. We prefer the nude sid...
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq220317387_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220317387 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUdkmUmqHMUdkkvXqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXX3vmo3X6XoXfXXXoUA3kA6XoXfXXXmAXXdA6XoXfXXUv3Kd3U6XoXfXXU3XUAvK6XoXfXXUmKvXAK6XoXfXXKvAdovA6XoXfXXKmUkmvk6XoXfXXKUoAomd6XoXfXXKUoUXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXX3vmo3XqH5VMiCStaQQoqnQQllqHZVyEScQQoqnQQxdVtIaiEVcJCMQQoqnQQwJEStGQQoqnQQx2JaJSnJxiGIac6XoXmqoTpcXXKmUkmvk0tEn1XXKmUkmvk0zH1UdkmUm0pSM1qnkxM7XfoAkfKfKbkU7xMbbqndkv3AbKAxM330EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">19</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220317387" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220317387'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '147782', 'GeistGuy', 'F7DB2C597C0C0A71BDAAF47869A09D66', 'en', '220317387', 'Hedonism II');">Ask GeistGuy about Hedonism II</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class='duplicateReviewsInline'>
+<div class='previous'>GeistGuy has 1 more review of Hedonism II</div>
+<ul class='dupReviews'>
+<li class="dupReviewItem">
+<div class='reviewTitle'>
+<a href="/ShowUserReviews-g147313-d147782-r171245165-Hedonism_II-Negril_Westmoreland_Parish_Jamaica.html#REVIEWS">&#x201c;Oh My God! This was fun!&#x201d;</a>
+</div>
+<div class='rating'>
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="date">Reviewed 8 August 2013</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220159534">
+<a name="UR220159534"></a>
+<div id="UR220159534" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_7B1783659BB996185A02AF0CC28C5B7F-SRC_220159534" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_7B1783659BB996185A02AF0CC28C5B7F ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/8f/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:7B1783659BB996185A02AF0CC28C5B7F" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_7B1783659BB996185A02AF0CC28C5B7F" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">loupern</span>
+</div>
+</div>
+<div class="location">
+East Meadow, New York
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_7B1783659BB996185A02AF0CC28C5B7F-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+<div id="UID_7B1783659BB996185A02AF0CC28C5B7F-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">3 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g147313-d147782-r220159534-Hedonism_II-Negril_Westmoreland_Parish_Jamaica.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220159534">&#x201c;<span class='noQuotes'>Best Bang for Your Buck</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='7 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+This trip was our fourth trip to Hedonism II and it was our best experience yet. The resort changed ownership last year and has made significant progress in their food and service. It had always been a good deal but it had begun to show signs of stagnation. The new owners took off running and have been steadily improving their property. A substantial amount of money has been poured into renovations including new paint everywhere, room upgrades, new TV's, new plumbing and some new construction. The staff is wonderful. They're always smiling and are always willing to make your stay memorable. The food selection and quality have been markedly improved. Both on-site restaurants (Martino's and Harrysan's) are so good that you would not believe that they are also at no additional cost. The buffet always had a nice selection of food including various Caribbean specialities. The pasta bar was always manned by skilled chefs willing to prepare your meal anyway you wanted it. The breakfasts were equally sumptuous with nearly every possible combination of breakfast items available. There is also an omelette station with very competent cooks.<br/>The daytime entertainment was fun at the nude pool. The beach was kept spotless and the water was sparkling. Top shelf liquor is available at all the bars. The staff is very willing to make your stay memorable. Serena Williams is one of the staff who will go out of her way to make sure that you are happy. The front desk is also staffed by very competent people, one of whom was Elisha.<br/>If you want to go on a nude all inclusive vacation, then Hedonism II is the place to go!
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Garden View Nude is located in the center of the nude pool and the dining and entertainment areas.
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq220159534_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220159534 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUdkmUmqHMUdkkvXqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXX3vmo3X6XoXfXXXoUA3kA6XoXfXXXmAXXdA6XoXfXXUv3Kd3U6XoXfXXU3XUAvK6XoXfXXUmKvXAK6XoXfXXKvAdovA6XoXfXXKmUkmvk6XoXfXXKUoAomd6XoXfXXKUoUXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXX3vmo3XqH5VMiCStaQQoqnQQllqHZVyEScQQoqnQQxdVtIaiEVcJCMQQoqnQQwJEStGQQoqnQQx2JaJSnJxiGIac6XoXmqoTpcXXKUoAomd0tEn1XXKUoAomd0zH1UdkmUm0pSM1k7Ukvm3oA77AA3UvobKXbqnKffXvfo7kqn0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">3</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220159534" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220159534'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '147782', 'loupern', '7B1783659BB996185A02AF0CC28C5B7F', 'en', '220159534', 'Hedonism II');">Ask loupern about Hedonism II</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220151287">
+<a name="UR220151287"></a>
+<div id="UR220151287" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_C5E21CD55E35B273785926466EE7AD41-SRC_220151287" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_C5E21CD55E35B273785926466EE7AD41 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/70/avatar053.jpg" class="avatar potentialFacebookAvatar avatarGUID:C5E21CD55E35B273785926466EE7AD41" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_C5E21CD55E35B273785926466EE7AD41" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">J P</span>
+</div>
+</div>
+<div class="location">
+New York
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_C5E21CD55E35B273785926466EE7AD41-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+<div id="UID_C5E21CD55E35B273785926466EE7AD41-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">4 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g147313-d147782-r220151287-Hedonism_II-Negril_Westmoreland_Parish_Jamaica.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220151287">&#x201c;<span class='noQuotes'>Always a great time</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='7 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+We love Hedo and have been here a few times over the years.<br/><br/>This was our first return since the new owners took over. We had an absolute blast. The guests that come to the hotel really make the place. The atmosphere is always fun and exciting. The staff go out of their way to ensure everybody is having a great time <br/><br/>We noticed a lot of changes since our last vacation a couple of years ago for the better. There seem to be constant improvements. We arranged for a greeter at the airport that helped us bypass the long immigration lines. Well worth the money. The hotel is about an hour from the airport. We had a great ride with the most colorful driver. Thanks Hopeton! <br/><br/>Check in was smooth without hassles. We got an oceanfront room on the nude side. You will notice the changes to the room right away. Very comfortable and nothing did not work. Close to the action. The beach was amazing as usual. There was a new security company that did a great job keeping the hustlers from bothering everybody and always friendly and smiling. The bartenders were a lot of fun keeping the drinks and the laughs flowing. And the wait staff were awesome. <br/><br/>Big improvement on the food. We always found something yummy. <br/><br/>The guests really make the place. Everybody was having fun. Don't let your inhibitions get in the way if you've never been. Nobody is judgmental <br/><br/>4th time is a charm. We look forward to returning for another fab vacation. <br/><br/>Well done Hedo
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Stay on the nude side!!!
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq220151287_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220151287 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUdkmUmqHMUdkkvXqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXX3vmo3X6XoXfXXXoUA3kA6XoXfXXXmAXXdA6XoXfXXUv3Kd3U6XoXfXXU3XUAvK6XoXfXXUmKvXAK6XoXfXXKvAdovA6XoXfXXKmUkmvk6XoXfXXKUoAomd6XoXfXXKUoUXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXX3vmo3XqH5VMiCStaQQoqnQQllqHZVyEScQQoqnQQxdVtIaiEVcJCMQQoqnQQwJEStGQQoqnQQx2JaJSnJxiGIac6XoXmqoTpcXXKUoUXvk0tEn1XXKUoUXvk0zH1UdkmUm0pSM1fozsXUfxMoozsmo7XkmkvoAX3d33zszskbxMdU0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">4</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220151287" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220151287'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '147782', 'J P', 'C5E21CD55E35B273785926466EE7AD41', 'en', '220151287', 'Hedonism II');">Ask J P about Hedonism II</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>

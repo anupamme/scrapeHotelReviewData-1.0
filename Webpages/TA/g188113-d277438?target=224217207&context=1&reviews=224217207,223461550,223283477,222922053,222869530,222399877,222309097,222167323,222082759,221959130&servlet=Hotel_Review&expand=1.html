@@ -1,0 +1,1105 @@
+<div id="expanded_review_224217207">
+<a name="UR224217207"></a>
+<div id="UR224217207" class="extended provider0 first newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_8B3E336D48AB5C7E7353EFD611507511-SRC_224217207" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_8B3E336D48AB5C7E7353EFD611507511 ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: '8B3E336D48AB5C7E7353EFD611507511'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/8c/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:8B3E336D48AB5C7E7353EFD611507511" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_8B3E336D48AB5C7E7353EFD611507511" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Clarita M</span>
+</div>
+</div>
+<div class="location">
+Jamsa
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_8B3E336D48AB5C7E7353EFD611507511-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g188113-d277438-r224217207-Swissotel_Zurich-Zurich.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224217207">&#x201c;<span class='noQuotes'>satisfaction</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed yesterday
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+this is my second stay at SwissOtel, in Tallin, Estonia and then Zurich, Switzerland. I am satisfied during my stay.<br/>Hotels, personnel are very helpful and hotels itself are very clean, so can be next travel, i still book to SwissHotel.<br/><br/> <br/>
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled on business</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Review collected in partnership with Swissotel Hotels &amp; Resorts <span class="sprite-info_grn info_grn" onclick="ta.call('ta.overlays.Factory.showPartnerAttributionTip', event, this.parentNode, 'This business uses online tools and resources provided by TripAdvisor to encourage and collect reviews (including this one) from its guests.');"></span></p>
+<div id="helpfulq224217207_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224217207 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvvUUmqHMXkkdmvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXUkXKk6XoXfXXmd3UooK6XoXfXXmXvmdkk6XoXfXXXAXXKom6XoXfXXXv3AomK6XoXfXXXmAAvkk6XoXfXXXmKAKAk6XoXfXXXU3kmXm6XoXfXXXKvXkoA6XoXfXXUAoAUmKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXUkXKkqHhuSttiIVcQQoqnQQx5pESnGqHx5pESnGxiGIac6XoXmqoTpcXXdXUkXKk0tEn1XXdXUkXKk0zH1UvvUUm0pSM1v7mzsmm3xMdvb7ofkzskmomzsqnxM3UUoKkoUU0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224217207" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224217207'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '277438', 'Clarita M', '8B3E336D48AB5C7E7353EFD611507511', 'en', '224217207', 'Swissotel Zurich');">Ask Clarita M about Swissotel Zurich</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_223461550">
+<a name="UR223461550"></a>
+<div id="UR223461550" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_B7B170E05DAE2B1F2547AF0D6CE01FAC-SRC_223461550" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_B7B170E05DAE2B1F2547AF0D6CE01FAC ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/8f/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:B7B170E05DAE2B1F2547AF0D6CE01FAC" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_B7B170E05DAE2B1F2547AF0D6CE01FAC" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">WillEKing</span>
+</div>
+</div>
+<div class="location">
+Jacksonville, Florida
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_B7B170E05DAE2B1F2547AF0D6CE01FAC-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+<div id="UID_B7B170E05DAE2B1F2547AF0D6CE01FAC-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="1 helpful vote" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">1 helpful vote</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g188113-d277438-r223461550-Swissotel_Zurich-Zurich.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223461550">&#x201c;<span class='noQuotes'>Zurich Swissotel</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+This was my first time to stay at a Swissotel - it was fantastic. The hotel is across the street from Oerlikon station and very convenient to get to the hotel via train from the airport. Easy to get to old town area (1 stop away) where most tourist will want to go at least once to wonder around the stores and Lake Zurich. Have to try the dry sauna - it was so relaxing to watch the mountains and sunset (for those concerned it is no clothes and mixed gender - but really no one notices - just relax and enjoy the experience). Staff was extremely friendly and helpful. Rooms were very clean.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled on business</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<p>Review collected in partnership with Swissotel Hotels &amp; Resorts <span class="sprite-info_grn info_grn" onclick="ta.call('ta.overlays.Factory.showPartnerAttributionTip', event, this.parentNode, 'This business uses online tools and resources provided by TripAdvisor to encourage and collect reviews (including this one) from its guests.');"></span></p>
+<div id="helpfulq223461550_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223461550 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvvUUmqHMXkkdmvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXUkXKk6XoXfXXmd3UooK6XoXfXXmXvmdkk6XoXfXXXAXXKom6XoXfXXXv3AomK6XoXfXXXmAAvkk6XoXfXXXmKAKAk6XoXfXXXU3kmXm6XoXfXXXKvXkoA6XoXfXXUAoAUmKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXUkXKkqHhuSttiIVcQQoqnQQx5pESnGqHx5pESnGxiGIac6XoXmqoTpcXXmd3UooK0tEn1XXmd3UooK0zH1UvvUUm0pSM17k7UkKzsKoxMbzsX7UqnXodkbqnKxM3fzsKUqnbf0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223461550" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223461550'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '277438', 'WillEKing', 'B7B170E05DAE2B1F2547AF0D6CE01FAC', 'en', '223461550', 'Swissotel Zurich');">Ask WillEKing about Swissotel Zurich</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223283477">
+<a name="UR223283477"></a>
+<div id="UR223283477" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_F079F1809A1963FAA89F70CEFC2BAF2A-SRC_223283477" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_F079F1809A1963FAA89F70CEFC2BAF2A ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9d/avatar068.jpg" class="avatar potentialFacebookAvatar avatarGUID:F079F1809A1963FAA89F70CEFC2BAF2A" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_F079F1809A1963FAA89F70CEFC2BAF2A" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">BGfamily</span>
+</div>
+</div>
+<div class="location">
+Tampa, Florida
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_F079F1809A1963FAA89F70CEFC2BAF2A-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="19 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">19 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">9 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'F079F1809A1963FAA89F70CEFC2BAF2A', screenName: 'BGfamily', geos: [190445, 55884, 56260, 42551, 187302, 190441, 190427, 42429, 187307, 60763, 35310, 188113], geo: '188113' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 12 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 12 cities</span> </div>
+<div id="UID_F079F1809A1963FAA89F70CEFC2BAF2A-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="9 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">9 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g188113-d277438-r223283477-Swissotel_Zurich-Zurich.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223283477">&#x201c;<span class='noQuotes'>Nice hotel for last night before flying to USA</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+This was the last hotel stop of our 10 day vacation before flying back to the USA. It was recommended to us by a friend back home who told us it was &quot;right by the train station&quot;. And it IS but I didn't realize there are several train stations in Zurich and I had assumed it was by the main train station. It is actually one stop away at Oerlikon. Not a big deal, but wish I had known that ahead of time. When we got to street level at the Oerlikon station there was a lot of construction and it was confusing to figure out how to get over to the hotel, but once we got there we walked into a large, sleek, contemporary lobby, with lots of activity. Check-in was swift and professional and within minutes we were on our way to the 20th floor. You need your room key to activate the elevators (nice safety touch). The rooms we had were very nice, contemporary design with large windows and great views. Everything we needed was there: fast internet, plenty of outlets for charging our phones and ipad, coffee maker, nice toiletry products in the bathroom, plenty of towels, and interesting reading material on Zurich, to name a few. The air conditioning felt heavenly after spending time in other hotels and guest houses that did not have it. The beds were extremely comfortable (best of the trip) and we loved the pillows. Did not get to the pool, but heard it was great. Did have a drink in the bar downstairs (obviously a popular spot) and a very friendly employee helped us with suggestions of where to go that night. We took the train back into the city center to do some sightseeing which was simple enough, one short train stop away to the main station. Sleeping that night was a pleasure--no noise. We weren't going to eat breakfast there because it seemed pricey, but we ran out of time in the morning so decided to eat there afterall. Good move, because it was fabulous. Wide variety of all kinds of breakfast food, all very fresh and appetizing. The restaurant setting was comfortable and the staff were friendly and funny. Wish we could have lingered longer. It was an easy, short train trip to the airport. All in all, the location is very good for getting around due to its location next to the Oerlikon station. We would definitely stay there again.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> We were on the 20th floor. Nice views. Quiet.
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223283477_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223283477 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvvUUmqHMXkkdmvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXUkXKk6XoXfXXmd3UooK6XoXfXXmXvmdkk6XoXfXXXAXXKom6XoXfXXXv3AomK6XoXfXXXmAAvkk6XoXfXXXmKAKAk6XoXfXXXU3kmXm6XoXfXXXKvXkoA6XoXfXXUAoAUmKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXUkXKkqHhuSttiIVcQQoqnQQx5pESnGqHx5pESnGxiGIac6XoXmqoTpcXXmXvmdkk0tEn1XXmXvmdkk0zH1UvvUUm0pSM1qnKkAqnUvKAbUA3mqnbbvAqnkKfzsqnfX7bqnXb0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223283477" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223283477'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '277438', 'BGfamily', 'F079F1809A1963FAA89F70CEFC2BAF2A', 'en', '223283477', 'Swissotel Zurich');">Ask BGfamily about Swissotel Zurich</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222922053">
+<a name="UR222922053"></a>
+<div id="UR222922053" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_0C97DCB45218CC4B5663A6E48E2152C2-SRC_222922053" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_0C97DCB45218CC4B5663A6E48E2152C2 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/6f/71/95/explorerlog.jpg" class="avatar potentialFacebookAvatar avatarGUID:0C97DCB45218CC4B5663A6E48E2152C2" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_0C97DCB45218CC4B5663A6E48E2152C2" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">ExplorerLog</span>
+</div>
+</div>
+<div class="location">
+London, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_0C97DCB45218CC4B5663A6E48E2152C2-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="42 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">42 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">19 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '0C97DCB45218CC4B5663A6E48E2152C2', screenName: 'ExplorerLog', geos: [186234, 674993, 298251, 186284, 187047, 187323, 188064, 298450, 4995930, 666384, 188057, 479764, 315948, 293805, 186545, 295413, 293734, 293797, 504164, 188113, 1495394, 293966, 190928, 1749568, 635766, 1096724, 4739764, 293956, 186402, 189892], geo: '188113' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 30 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 30 cities</span> </div>
+<div id="UID_0C97DCB45218CC4B5663A6E48E2152C2-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="50 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">50 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g188113-d277438-r222922053-Swissotel_Zurich-Zurich.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222922053">&#x201c;<span class='noQuotes'>Fantastic pool</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='19 August 2014'>Reviewed 1 week ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+I have stayed here several times, on business and with my family. The hotel is quite a long way out of the Zurich centre but this causes no difficulties because there are tram stops and a train station directly opposite the hotel. What keeps drawing me back is the pool and spa. The gym is really small but is well maintained and provides a great view across Oerlikon, toward Zurich. Similarly, the pool provides a stunning view out from three sides of the hotel and across the town. Everything about the hotel is organised with the usual Swiss/German efficiency - it all works well and makes for a really easy stay.
+</p>
+</div>
+<div class="media  thumbCols2">
+<div class="thumbnails">
+<div class="photosInline">
+<ul>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g188113-d277438-i107546804-r222922053-Swissotel_Zurich-Zurich.html#107546804 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 277438, 188113, 2, 107546804);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/69/08/b4/swissotel-zurich.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g188113-d277438-i107546685-r222922053-Swissotel_Zurich-Zurich.html#107546685 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 277438, 188113, 2, 107546685);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/69/08/3d/swissotel-zurich.jpg" alt="" width="50" height="50">
+</span>
+</li>
+</ul>
+</div> </div> </div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed May 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222922053_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222922053 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvvUUmqHMXkkdmvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXUkXKk6XoXfXXmd3UooK6XoXfXXmXvmdkk6XoXfXXXAXXKom6XoXfXXXv3AomK6XoXfXXXmAAvkk6XoXfXXXmKAKAk6XoXfXXXU3kmXm6XoXfXXXKvXkoA6XoXfXXUAoAUmKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXUkXKkqHhuSttiIVcQQoqnQQx5pESnGqHx5pESnGxiGIac6XoXmqoTpcXXXAXXKom0tEn1XXXAXXKom0zH1UvvUUm0pSM1KfAkxMf7doXUvffd7o33mb3zsdvzsXUoXfX0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222922053" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222922053'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '277438', 'ExplorerLog', '0C97DCB45218CC4B5663A6E48E2152C2', 'en', '222922053', 'Swissotel Zurich');">Ask ExplorerLog about Swissotel Zurich</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222869530">
+<a name="UR222869530"></a>
+<div id="UR222869530" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_4AE26DC46DF0AC25F5572F076A938903-SRC_222869530" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_4AE26DC46DF0AC25F5572F076A938903 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/02/47/91/e3/arif-x.jpg" class="avatar potentialFacebookAvatar avatarGUID:4AE26DC46DF0AC25F5572F076A938903" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_4AE26DC46DF0AC25F5572F076A938903" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Arif X</span>
+</div>
+</div>
+<div class="location">
+London, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_4AE26DC46DF0AC25F5572F076A938903-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="22 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">22 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">15 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '4AE26DC46DF0AC25F5572F076A938903', screenName: 'Arif X', geos: [60634, 294013, 293916, 60982, 295424, 188590, 4313453, 188113, 60713, 187309, 187439, 34515, 186273, 187895, 186338, 45963, 274887], geo: '188113' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 17 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 17 cities</span> </div>
+<div id="UID_4AE26DC46DF0AC25F5572F076A938903-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="54 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">54 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g188113-d277438-r222869530-Swissotel_Zurich-Zurich.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222869530">&#x201c;<span class='noQuotes'>Very convenient location</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='19 August 2014'>Reviewed 1 week ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+A good modern hotel ideally located opposite the train station with easy access all over Zurich. The rooms were clean and comfortable, the staff were all very helpful and friendly and there is a very nice pool on the 32nd floor with great views over Zurich and gym next to it. We had breakfast which was varied and overall pretty decent. There are some major works going on to the train station opposite but we were there on a bank holiday and weekend so were not affected, not sure how loud it might have been otherwise, the hotel did provide ear plugs which may indicate that it could get noisy but I can not really comment on that. Overall very conveniently situated hotel with lovely staff that I would stay at again.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222869530_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222869530 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvvUUmqHMXkkdmvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXUkXKk6XoXfXXmd3UooK6XoXfXXmXvmdkk6XoXfXXXAXXKom6XoXfXXXv3AomK6XoXfXXXmAAvkk6XoXfXXXmKAKAk6XoXfXXXU3kmXm6XoXfXXXKvXkoA6XoXfXXUAoAUmKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXUkXKkqHhuSttiIVcQQoqnQQx5pESnGqHx5pESnGxiGIac6XoXmqoTpcXXXv3AomK0tEn1XXXv3AomK0zH1UvvUUm0pSM1dbzsX3xMfd3xMqnKbfXoqnookXqnKk3bAmvAKm0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222869530" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222869530'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '277438', 'Arif X', '4AE26DC46DF0AC25F5572F076A938903', 'en', '222869530', 'Swissotel Zurich');">Ask Arif X about Swissotel Zurich</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222399877">
+<a name="UR222399877"></a>
+<div id="UR222399877" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_18266C9E85F2619E019A3DC5CFD55A33-SRC_222399877" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_18266C9E85F2619E019A3DC5CFD55A33 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/02/68/e0/64/facebook-avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:18266C9E85F2619E019A3DC5CFD55A33" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_18266C9E85F2619E019A3DC5CFD55A33" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">pat1976_12</span>
+</div>
+</div>
+<div class="location">
+Royal Tunbridge Wells, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_18266C9E85F2619E019A3DC5CFD55A33-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="9 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">9 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">4 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '18266C9E85F2619E019A3DC5CFD55A33', screenName: 'pat1976_12', geos: [188057, 187058, 188063, 186315, 188081, 186274, 188098, 188113, 2691242], geo: '188113' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 9 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 9 cities</span> </div>
+<div id="UID_18266C9E85F2619E019A3DC5CFD55A33-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">4 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g188113-d277438-r222399877-Swissotel_Zurich-Zurich.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222399877">&#x201c;<span class='noQuotes'>Nices&#39;s location</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='17 August 2014'>Reviewed 1 week ago
+</span>
+<a class="viaMobile sprite-grayPhone" href="/apps" target="_blank" onclick="ta.util.cookie.setPIDCookie(24687)">via mobile</a>
+</div>
+<div class="entry">
+<p>
+Hotel is very nice, recently renovated the lobby, it's beautiful! The rooms are wonderful views of the town of Oerlikon. Hotel is across the street from the Oerlikon train station. Airport not far by train easy to reach every where in town .My favorite part is the Pool and stream room free cup of tea on the 32nd floor.pool heated and the views are breathtaking. a hotel to Consider when visiting Zurich
+</p>
+</div>
+<div class="media  thumbCols3">
+<div class="thumbnails">
+<div class="photosInline">
+<ul>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g188113-d277438-i107338435-r222399877-Swissotel_Zurich-Zurich.html#107338435 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 277438, 188113, 2, 107338435);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/65/da/c3/yumme.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g188113-d277438-i107338209-r222399877-Swissotel_Zurich-Zurich.html#107338209 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 277438, 188113, 2, 107338209);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/65/d9/e1/views.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g188113-d277438-i107338320-r222399877-Swissotel_Zurich-Zurich.html#107338320 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 277438, 188113, 2, 107338320);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/65/da/50/oop.jpg" alt="" width="50" height="50">
+</span>
+</li>
+</ul>
+</div> </div> </div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014, travelled with family</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222399877_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222399877 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvvUUmqHMXkkdmvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXUkXKk6XoXfXXmd3UooK6XoXfXXmXvmdkk6XoXfXXXAXXKom6XoXfXXXv3AomK6XoXfXXXmAAvkk6XoXfXXXmKAKAk6XoXfXXXU3kmXm6XoXfXXXKvXkoA6XoXfXXUAoAUmKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXUkXKkqHhuSttiIVcQQoqnQQx5pESnGqHx5pESnGxiGIac6XoXmqoTpcXXXmAAvkk0tEn1XXXmAAvkk0zH1UvvUUm0pSM1UvX33fAzsvoqnX3UAzsKUAbmxMfofqnxMoobmm0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222399877" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222399877'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '277438', 'pat1976_12', '18266C9E85F2619E019A3DC5CFD55A33', 'en', '222399877', 'Swissotel Zurich');">Ask pat1976_12 about Swissotel Zurich</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222309097">
+<a name="UR222309097"></a>
+<div id="UR222309097" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_25F11EB1E94E213F573959EBF35E0791-SRC_222309097" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_25F11EB1E94E213F573959EBF35E0791 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/03/70/91/f7/yossiazoulay.jpg" class="avatar potentialFacebookAvatar avatarGUID:25F11EB1E94E213F573959EBF35E0791" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_25F11EB1E94E213F573959EBF35E0791" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">YossiAzoulay</span>
+</div>
+</div>
+<div class="location">
+Tel Aviv, Israel
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_25F11EB1E94E213F573959EBF35E0791-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Top Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="97 reviews" class="icon badge_topcontributor sprite-badge_topcontributor" width="25" height="24">
+<span class="badgeText">97 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_3rd sprite-badge_hotels_3rd" width="25" height="24">
+<span class="badgeText">32 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '25F11EB1E94E213F573959EBF35E0791', screenName: 'YossiAzoulay', geos: [187791, 2042453, 297763, 187309, 939822, 187323, 188064, 3238534, 1891686, 303970, 186338, 293984, 293982, 2561658, 293983, 488154, 293980, 198565, 297742, 285724, 198856, 1389503, 297557, 190454, 187514, 188113, 187143, 187278, 297759, 198644, 297747, 776612, 187895], geo: '188113' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 33 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 33 cities</span> </div>
+<div id="UID_25F11EB1E94E213F573959EBF35E0791-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="43 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">43 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g188113-d277438-r222309097-Swissotel_Zurich-Zurich.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222309097">&#x201c;<span class='noQuotes'>Good airport hotel</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='17 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+We went back to a two-week vacation in the Black Forest waiting for a flight home the next day, the hotel is in an excellent location between the airport and the city center opposite the train station. <br/>Great hotel service <br/>Rooms are clean and equipped with everything needed <br/>A rich breakfast<br/>Spa and swimming pool at the 32th floor
+</p>
+</div>
+<div class="media  thumbCols1">
+<div class="thumbnails">
+<div class="photosInline">
+<ul>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g188113-d277438-i107291224-r222309097-Swissotel_Zurich-Zurich.html#107291224 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 277438, 188113, 2, 107291224);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/65/22/58/caption.jpg" alt="" width="50" height="50">
+</span>
+</li>
+</ul>
+</div> </div> </div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq222309097_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222309097 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvvUUmqHMXkkdmvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXUkXKk6XoXfXXmd3UooK6XoXfXXmXvmdkk6XoXfXXXAXXKom6XoXfXXXv3AomK6XoXfXXXmAAvkk6XoXfXXXmKAKAk6XoXfXXXU3kmXm6XoXfXXXKvXkoA6XoXfXXUAoAUmKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXUkXKkqHhuSttiIVcQQoqnQQx5pESnGqHx5pESnGxiGIac6XoXmqoTpcXXXmKAKAk0tEn1XXXmKAKAk0zH1UvvUUm0pSM1XoqnUUzs7UzsAdzsXUmqnokmAoAzs7qnmozsKkAU0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222309097" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222309097'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/YossiAzoulay/g188113" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 6 reviews by YossiAzoulay for Zurich </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '277438', 'YossiAzoulay', '25F11EB1E94E213F573959EBF35E0791', 'en', '222309097', 'Swissotel Zurich');">Ask YossiAzoulay about Swissotel Zurich</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class='duplicateReviewsInline'>
+<div class='previous'>YossiAzoulay has 1 more review of Swissotel Zurich</div>
+<ul class='dupReviews'>
+<li class="dupReviewItem">
+<div class='reviewTitle'>
+<a href="/ShowUserReviews-g188113-d277438-r151283494-Swissotel_Zurich-Zurich.html#REVIEWS">&#x201c;Excellent hotel , good location for the airport&#x201d;</a>
+</div>
+<div class='rating'>
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="date">Reviewed 3 February 2013</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222167323">
+<a name="UR222167323"></a>
+<div id="UR222167323" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_07474A2E4003F831C1C1DDB438049CD7-SRC_222167323" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_07474A2E4003F831C1C1DDB438049CD7 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/5d/6b/f9/jhisley.jpg" class="avatar potentialFacebookAvatar avatarGUID:07474A2E4003F831C1C1DDB438049CD7" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_07474A2E4003F831C1C1DDB438049CD7" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">jhisley</span>
+</div>
+</div>
+<div class="location">
+Minneapolis
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_07474A2E4003F831C1C1DDB438049CD7-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">3 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '07474A2E4003F831C1C1DDB438049CD7', screenName: 'jhisley', geos: [188064, 188085, 188113], geo: '188113' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 3 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 3 cities</span> </div>
+<div id="UID_07474A2E4003F831C1C1DDB438049CD7-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="6 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">6 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g188113-d277438-r222167323-Swissotel_Zurich-Zurich.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222167323">&#x201c;<span class='noQuotes'>Comfortable, corporate .....</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='16 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+This hotel was modern, comfortable, and frankly did it's job very well for us. Proximity to train station is key with this property allowing for fast access to and from Zürich airport and the city center.<br/>Built for the business traveler the room was full of amenities such as a suit presser, Nespresso machine, (which is awesome), DVD player, etc. The concierge was extremely helpful and stands out in our memory. <br/>A couple of thoughts on this hotel: Unless you're under the age of 10 and enjoy humidity in the extreme, avoid the pool. <br/>Also, note that if you plan on showering, you had better be very, very comfortable with your traveling companion seeing you completely naked. They will see you through the clear glass from just about every point of the room. We didn't mind but it did leave us chuckling to ourselves as we wondered out loud, &quot;what on earth were they thinking.&quot; <br/>At the end of the day this was a good value for the $ and we'd stay here again on a transit day.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014, travelled as a couple</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222167323_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222167323 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvvUUmqHMXkkdmvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXUkXKk6XoXfXXmd3UooK6XoXfXXmXvmdkk6XoXfXXXAXXKom6XoXfXXXv3AomK6XoXfXXXmAAvkk6XoXfXXXmKAKAk6XoXfXXXU3kmXm6XoXfXXXKvXkoA6XoXfXXUAoAUmKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXUkXKkqHhuSttiIVcQQoqnQQx5pESnGqHx5pESnGxiGIac6XoXmqoTpcXXXU3kmXm0tEn1XXXU3kmXm0zH1UvvUUm0pSM1KkdkdbXzsdKKmqnvmUfUfUxMxM7dmvKdAfxMk0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222167323" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222167323'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '277438', 'jhisley', '07474A2E4003F831C1C1DDB438049CD7', 'en', '222167323', 'Swissotel Zurich');">Ask jhisley about Swissotel Zurich</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222082759">
+<a name="UR222082759"></a>
+<div id="UR222082759" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_2CA8803C22C8C3E07C02F04C5CA6C86D-SRC_222082759" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_2CA8803C22C8C3E07C02F04C5CA6C86D ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/5e/50/e1/eric-d.jpg" class="avatar potentialFacebookAvatar avatarGUID:2CA8803C22C8C3E07C02F04C5CA6C86D" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_2CA8803C22C8C3E07C02F04C5CA6C86D" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Eric D</span>
+</div>
+</div>
+<div class="location">
+Samois-sur-Seine, France
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_2CA8803C22C8C3E07C02F04C5CA6C86D-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="9 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">9 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">9 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '2CA8803C22C8C3E07C02F04C5CA6C86D', screenName: 'Eric D', geos: [154942, 154943, 181727, 154933, 181784, 181775, 780707, 188113, 154912], geo: '188113' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 9 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 9 cities</span> </div>
+<div id="UID_2CA8803C22C8C3E07C02F04C5CA6C86D-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">3 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g188113-d277438-r222082759-Swissotel_Zurich-Zurich.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222082759">&#x201c;<span class='noQuotes'>Business home</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='16 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+This is my second home in Zurich, where I spend more than a hundred nights a year for business purposes. Modern, clean, and good level of comfort. Ideally located in the city, five minutes by train from the airport, and right at the Oerlikon train station. All amenities are almost perfect, outside of the training sport room could be better equiped. A nice swimming pool located at 32nd floor.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed July 2014, travelled solo</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222082759_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222082759 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvvUUmqHMXkkdmvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXUkXKk6XoXfXXmd3UooK6XoXfXXmXvmdkk6XoXfXXXAXXKom6XoXfXXXv3AomK6XoXfXXXmAAvkk6XoXfXXXmKAKAk6XoXfXXXU3kmXm6XoXfXXXKvXkoA6XoXfXXUAoAUmKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXUkXKkqHhuSttiIVcQQoqnQQx5pESnGqHx5pESnGxiGIac6XoXmqoTpcXXXKvXkoA0tEn1XXXKvXkoA0zH1UvvUUm0pSM1XfbvvKmfXXfvfmzsKkfKXqnKdfofb3fv3xM0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222082759" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222082759'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '277438', 'Eric D', '2CA8803C22C8C3E07C02F04C5CA6C86D', 'en', '222082759', 'Swissotel Zurich');">Ask Eric D about Swissotel Zurich</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221959130">
+<a name="UR221959130"></a>
+<div id="UR221959130" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_6C150555D112A3B38D2EE129A4028648-SRC_221959130" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_6C150555D112A3B38D2EE129A4028648 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/02/b8/56/f4/haris-m.jpg" class="avatar potentialFacebookAvatar avatarGUID:6C150555D112A3B38D2EE129A4028648" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_6C150555D112A3B38D2EE129A4028648" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Haris M</span>
+</div>
+</div>
+<div class="location">
+Nicosia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_6C150555D112A3B38D2EE129A4028648-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="8 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">8 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">8 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '6C150555D112A3B38D2EE129A4028648', screenName: 'Haris M', geos: [1223683, 1183394, 190384, 188081, 661429, 188113, 188052], geo: '188113' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 7 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 7 cities</span> </div>
+<div id="UID_6C150555D112A3B38D2EE129A4028648-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="11 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">11 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g188113-d277438-r221959130-Swissotel_Zurich-Zurich.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221959130">&#x201c;<span class='noQuotes'>Difficult to rate!!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='15 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+I visited this hotel three years ago because a friend was staying in the area. The room was comfortable and nicely decorated. But very small bathrooms with bathtubs. Three years after the rooms remain the same but reception was refurbished in a more minimal style (not bad). I re come d that the bathtubs should become showers in order to give a more modern look in the rooms and feel that the bathroom is bigger. The breakfast of of the hotel is not cheap but these are the prices for Zurich. The food in the breakfast is very good and has everything that you need for a nice breakfast. The main negative for the hotel is the location and internet. Three years ago there was construction just outside the hotel and construction still continues. I did not expect Swiss to be so slow!! You need 13 minutes by train and 8 minutes by car. If you are two people use your car because parking in town will cost less than two train tickets. Re internet. Guys we are in 2014, you should not charge 7-9 eur a day for each device in one room. And the worst of all is to hear the reception staff in the next desk when you check out to allow the new customer to use the free internet. Why this discrimination! Therefore demand free internet.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221959130_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221959130 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvvUUmqHMXkkdmvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXUkXKk6XoXfXXmd3UooK6XoXfXXmXvmdkk6XoXfXXXAXXKom6XoXfXXXv3AomK6XoXfXXXmAAvkk6XoXfXXXmKAKAk6XoXfXXXU3kmXm6XoXfXXXKvXkoA6XoXfXXUAoAUmKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXUkXKkqHhuSttiIVcQQoqnQQx5pESnGqHx5pESnGxiGIac6XoXmqoTpcXXUAoAUmK0tEn1XXUAoAUmK0zH1UvvUUm0pSM13fUoKoooxMUUXbm7mvxMXzszsUXAbdKXv3dv0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221959130" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221959130'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '277438', 'Haris M', '6C150555D112A3B38D2EE129A4028648', 'en', '221959130', 'Swissotel Zurich');">Ask Haris M about Swissotel Zurich</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>

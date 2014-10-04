@@ -1,0 +1,1495 @@
+<div id="expanded_review_224008618">
+<a name="UR224008618"></a>
+<div id="UR224008618" class="extended provider0 first newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_C1E2AECD8423A1194166F1EE1AB938B2-SRC_224008618" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_C1E2AECD8423A1194166F1EE1AB938B2 ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: 'C1E2AECD8423A1194166F1EE1AB938B2'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/8d/avatar014.jpg" class="avatar potentialFacebookAvatar avatarGUID:C1E2AECD8423A1194166F1EE1AB938B2" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_C1E2AECD8423A1194166F1EE1AB938B2" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Mika655</span>
+</div>
+</div>
+<div class="location">
+Brisbane, QLD
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_C1E2AECD8423A1194166F1EE1AB938B2-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="10 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">10 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">6 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'C1E2AECD8423A1194166F1EE1AB938B2', screenName: 'Mika655', geos: [60872, 255061, 261638, 255069, 2464442, 528966], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 6 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 6 cities</span> </div>
+<div id="UID_C1E2AECD8423A1194166F1EE1AB938B2-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="5 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">5 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d87181-r224008618-Courtyard_King_Kamehameha_s_Kona_Beach_Hotel-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224008618">&#x201c;<span class='noQuotes'>Pretty good...</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Room 345<br/>We booked this hotel through a Hawaiian Airlines Package, as such, did not expect much. After the Hurricanes prompted us to change travel dates, we were happy to learn the hotel changed our dates with no fuss at all. Upon arrival, we found the hotel very clean and extremely friendly! The room was large, however, a somewhat small to mid sized bathroom, with a large balcony overlooking the courtyard with glimpses of the sea. Overall, our experience with this hotel was the staff were extremely friendly and accommodating, sometimes going out of their way to help with any problems we had. Room was clean, room service was completed properly, only drawback was bathroom size.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> #345 was well positioned, only noise was from day-time service room next door.
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224008618_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224008618 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMvkUvUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKKv3Uv6XoXfXXmAomKkK6XoXfXXmdo3vXU6XoXfXXmKdAAv36XoXfXXXkkmUAk6XoXfXXXKAvmmv6XoXfXXU3AvXoo6XoXfXXUddUAkX6XoXfXXKvoUU3X6XoXfXXKvmXAoKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKKv3UvqHfipEIgJEMQQoqnQQxbSCyQQoqnQQxbJaVGJaVGJQQoqnQQtQQoqnQQxbiCJQQoqnQQ7VJnGQQoqnQQqWqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXdKKv3Uv0tEn1XXdKKv3Uv0zH13KvkX0pSM1fUzsXbzsfxMvdXmbUUAdU33qnUzszsUb7Amv7X0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224008618" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224008618'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/Mika655/g60872" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 5 reviews by Mika655 for Kailua-Kona </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '87181', 'Mika655', 'C1E2AECD8423A1194166F1EE1AB938B2', 'en', '224008618', 'Courtyard King Kamehameha\'s Kona Beach Hotel');">Ask Mika655 about Courtyard King Kamehameha&#39;s Kona Beach Hotel</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_223953070">
+<a name="UR223953070"></a>
+<div id="UR223953070" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_46C2DE027E1585928724BBBAE09722BE-SRC_223953070" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_46C2DE027E1585928724BBBAE09722BE ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/a7/avatar078.jpg" class="avatar potentialFacebookAvatar avatarGUID:46C2DE027E1585928724BBBAE09722BE" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_46C2DE027E1585928724BBBAE09722BE" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Arthur P</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_46C2DE027E1585928724BBBAE09722BE-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d87181-r223953070-Courtyard_King_Kamehameha_s_Kona_Beach_Hotel-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223953070">&#x201c;<span class='noQuotes'>Great location, terrible service</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s10" src="http://c1.tacdn.com/img2/x.gif" alt="1 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 3 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Room was dirty and not clean when we checked in. The room had a bad smell and the balcony door would not open. The housekeeping is terrible in this hotel. When we walked in the room for the first time I seen clothing on the chair from the previous guest and a open coke bottle half way under the bed. The linens where dirty so I had to request a linen change because there where hairs on the sheets and pillows. They gave us two free breakfast buffets for the mishap. I rented the room for 8 days and by the 5 day I had to call down to housekeeping to beg them to change my linens. This incident no free buffets. The staff is not friendly at all. They had contruction outside the hotel which woke us up at 6;30 AM every morning.I would not recommend this hotel at all.. Not worth the money or time of feeling secure when sleeping in bed with dirty linens and towels
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss10" src="http://c1.tacdn.com/img2/x.gif" alt="1 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss10" src="http://c1.tacdn.com/img2/x.gif" alt="1 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss10" src="http://c1.tacdn.com/img2/x.gif" alt="1 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223953070_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223953070 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMvkUvUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKKv3Uv6XoXfXXmAomKkK6XoXfXXmdo3vXU6XoXfXXmKdAAv36XoXfXXXkkmUAk6XoXfXXXKAvmmv6XoXfXXU3AvXoo6XoXfXXUddUAkX6XoXfXXKvoUU3X6XoXfXXKvmXAoKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKKv3UvqHfipEIgJEMQQoqnQQxbSCyQQoqnQQxbJaVGJaVGJQQoqnQQtQQoqnQQxbiCJQQoqnQQ7VJnGQQoqnQQqWqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXmAomKkK0tEn1XXmAomKkK0zH13KvkX0pSM1d3fXxMzsKXkzsUovoAXvkXd777bzsKAkXX7zs0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223953070" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223953070'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '87181', 'Arthur P', '46C2DE027E1585928724BBBAE09722BE', 'en', '223953070', 'Courtyard King Kamehameha\'s Kona Beach Hotel');">Ask Arthur P about Courtyard King Kamehameha&#39;s Kona Beach Hotel</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223456821">
+<a name="UR223456821"></a>
+<div id="UR223456821" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_B9FAB502E3088F0078891435185D0F5A-SRC_223456821" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_B9FAB502E3088F0078891435185D0F5A ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/6e/avatar051.jpg" class="avatar potentialFacebookAvatar avatarGUID:B9FAB502E3088F0078891435185D0F5A" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_B9FAB502E3088F0078891435185D0F5A" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Christie A</span>
+</div>
+</div>
+<div class="location">
+Juneau, Alaska
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_B9FAB502E3088F0078891435185D0F5A-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="7 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">7 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'B9FAB502E3088F0078891435185D0F5A', screenName: 'Christie A', geos: [60872, 60881, 31020], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 3 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 3 cities</span> </div>
+<div id="UID_B9FAB502E3088F0078891435185D0F5A-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="6 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">6 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d87181-r223456821-Courtyard_King_Kamehameha_s_Kona_Beach_Hotel-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223456821">&#x201c;<span class='noQuotes'>Great location!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+<a class="viaMobile sprite-grayPhone" href="/apps" target="_blank" onclick="ta.util.cookie.setPIDCookie(24687)">via mobile</a>
+</div>
+<div class="entry">
+<p>
+Staying at this hotel was great! We booked a room with a king bed &amp; partial ocean view for $152 per night. Though the price was a tad steep, being able to see the ocean from our balcony made it all worth it! The hotel has a lot excursion offices in the lobby, so if you're looking to go parasailing or manta ray snorkeling, just head downstairs. This hotel is situated in the middle of the Kona pier, so you're within walking distance of great restaurants and great shopping (Ross, Pier 1, Macy's, etc). We did not opt to pre-pay for breakfast at the restaurant downstairs and i'm glad. The buffet is $21.95 per person, but this does not include drinks! They have great menu options, and even with a mimosa, you'll still save $$. All in all, this is a wonderful hotel. I will be staying here the next time i'm in Kona.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223456821_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223456821 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMvkUvUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKKv3Uv6XoXfXXmAomKkK6XoXfXXmdo3vXU6XoXfXXmKdAAv36XoXfXXXkkmUAk6XoXfXXXKAvmmv6XoXfXXU3AvXoo6XoXfXXUddUAkX6XoXfXXKvoUU3X6XoXfXXKvmXAoKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKKv3UvqHfipEIgJEMQQoqnQQxbSCyQQoqnQQxbJaVGJaVGJQQoqnQQtQQoqnQQxbiCJQQoqnQQ7VJnGQQoqnQQqWqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXmdo3vXU0tEn1XXmdo3vXU0zH13KvkX0pSM17Aqnb7oKXzsmKvvqnKKkvvAUdmoUvoxMKqnob0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">3</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223456821" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223456821'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/christiea781/g60872" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 4 reviews by Christie A for Kailua-Kona </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '87181', 'Christie A', 'B9FAB502E3088F0078891435185D0F5A', 'en', '223456821', 'Courtyard King Kamehameha\'s Kona Beach Hotel');">Ask Christie A about Courtyard King Kamehameha&#39;s Kona Beach Hotel</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223049986">
+<a name="UR223049986"></a>
+<div id="UR223049986" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_A0C002AC4975AD6A9019FF9409472053-SRC_223049986" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_A0C002AC4975AD6A9019FF9409472053 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/63/75/75/176hpa.jpg" class="avatar potentialFacebookAvatar avatarGUID:A0C002AC4975AD6A9019FF9409472053" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_A0C002AC4975AD6A9019FF9409472053" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">HPFlat5</span>
+</div>
+</div>
+<div class="location">
+London, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_A0C002AC4975AD6A9019FF9409472053-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="43 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">43 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">9 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'A0C002AC4975AD6A9019FF9409472053', screenName: 'HPFlat5', geos: [32810, 60872, 187212, 190793, 294305, 186394, 293974, 60745, 294210, 60713, 298184, 1066457, 60880, 187895, 186338, 189117], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 16 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 16 cities</span> </div>
+<div id="UID_A0C002AC4975AD6A9019FF9409472053-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="11 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">11 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d87181-r223049986-Courtyard_King_Kamehameha_s_Kona_Beach_Hotel-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223049986">&#x201c;<span class='noQuotes'>Very nice hotel</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='20 August 2014'>Reviewed 1 week ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+The hotel underwent a very well-done renovation a few years ago. It is now a modern, comfortable hotel. The pool and beach are great, and the pool bar is also good. There are so many restaurant choices just down the street that there is no need to eat in the hotel. Breakfast is good but I have had better elsewhere in Hawaii - including in the cafe next to the shop downstairs.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed January 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223049986_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223049986 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMvkUvUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKKv3Uv6XoXfXXmAomKkK6XoXfXXmdo3vXU6XoXfXXmKdAAv36XoXfXXXkkmUAk6XoXfXXXKAvmmv6XoXfXXU3AvXoo6XoXfXXUddUAkX6XoXfXXKvoUU3X6XoXfXXKvmXAoKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKKv3UvqHfipEIgJEMQQoqnQQxbSCyQQoqnQQxbJaVGJaVGJQQoqnQQtQQoqnQQxbiCJQQoqnQQ7VJnGQQoqnQQqWqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXmKdAAv30tEn1XXmKdAAv30zH13KvkX0pSM1bKfKKXbfdAkobxM3bAKUAqnqnAdKAdkXKom0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223049986" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223049986'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/HPFlat5/g60872" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 4 reviews by HPFlat5 for Kailua-Kona </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '87181', 'HPFlat5', 'A0C002AC4975AD6A9019FF9409472053', 'en', '223049986', 'Courtyard King Kamehameha\'s Kona Beach Hotel');">Ask HPFlat5 about Courtyard King Kamehameha&#39;s Kona Beach Hotel</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+General_Manager03, General Manager at Courtyard King Kamehameha&#39;s Kona Beach Hotel, responded to this review,
+<span class="res_date relativeDate" title='21 August 2014'>6 days ago</span>
+</div>
+<div class="displayText" id="response_223049986">
+Aloha,<br/>Thank you for your review and recommendation. We’re glad to hear that you enjoyed your stay as well as our pool and beach area. We appreciate your compliments for our hotel renovations. We look forward to welcoming you back again soon. Mahalo
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223239090" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223239090, isGeo:false, locationid:87181})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223239090" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223239090">
+<a name="UR223239090"></a>
+<div id="UR223239090" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d87181-r223239090-Courtyard_King_Kamehameha_s_Kona_Beach_Hotel-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223239090">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Aloha,<br/>Thank you for your review and recommendation. We’re glad to hear that you enjoyed your stay as well as our pool and beach area. We appreciate your compliments for our hotel renovations. We look forward to welcoming you back again soon. Mahalo
+</p>
+</div>
+<div id="helpfulq223239090_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223239090 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMvkUvUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKKv3Uv6XoXfXXmAomKkK6XoXfXXmdo3vXU6XoXfXXmKdAAv36XoXfXXXkkmUAk6XoXfXXXKAvmmv6XoXfXXU3AvXoo6XoXfXXUddUAkX6XoXfXXKvoUU3X6XoXfXXKvmXAoKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKKv3UvqHfipEIgJEMQQoqnQQxbSCyQQoqnQQxbJaVGJaVGJQQoqnQQtQQoqnQQxbiCJQQoqnQQ7VJnGQQoqnQQqWqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXmXmAKAK0tEn1XXmXmAKAK0zH13KvkX0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223239090" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223239090'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222773197">
+<a name="UR222773197"></a>
+<div id="UR222773197" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_254E242670CE8BE9C9095C7DBB016C30-SRC_222773197" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_254E242670CE8BE9C9095C7DBB016C30 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/cf/22/e6/facebook-avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:254E242670CE8BE9C9095C7DBB016C30" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_254E242670CE8BE9C9095C7DBB016C30" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Bernie_P82</span>
+</div>
+</div>
+<div class="location">
+Trier, Germany
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_254E242670CE8BE9C9095C7DBB016C30-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="34 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">34 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_3rd sprite-badge_hotels_3rd" width="25" height="24">
+<span class="badgeText">27 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '254E242670CE8BE9C9095C7DBB016C30', screenName: 'Bernie_P82', geos: [297889, 60872, 60632, 186638, 60982, 214506, 60625, 34345, 34618, 60751, 34118, 187394, 60622, 211883, 187870, 211877, 315887, 60612, 147275, 186612, 295424, 34439, 297555, 150812, 60583, 670544, 34515, 186605], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 28 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 28 cities</span> </div>
+<div id="UID_254E242670CE8BE9C9095C7DBB016C30-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="26 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">26 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d87181-r222773197-Courtyard_King_Kamehameha_s_Kona_Beach_Hotel-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222773197">&#x201c;<span class='noQuotes'>Good value for fair prics</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='19 August 2014'>Reviewed 1 week ago
+</span>
+<a class="viaMobile sprite-grayPhone" href="/apps" target="_blank" onclick="ta.util.cookie.setPIDCookie(24687)">via mobile</a>
+</div>
+<div class="entry">
+<p>
+Good 3 star hotel in perfect location. Nice room with partial Oceanview. Parking just 14 bucks/night. Pool and beach OK. No ressort fee. A lot of restaurants and shopping possibilities just around the corner.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014, travelled as a couple</span>
+</div>
+</div>
+<div id="helpfulq222773197_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222773197 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMvkUvUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKKv3Uv6XoXfXXmAomKkK6XoXfXXmdo3vXU6XoXfXXmKdAAv36XoXfXXXkkmUAk6XoXfXXXKAvmmv6XoXfXXU3AvXoo6XoXfXXUddUAkX6XoXfXXKvoUU3X6XoXfXXKvmXAoKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKKv3UvqHfipEIgJEMQQoqnQQxbSCyQQoqnQQxbJaVGJaVGJQQoqnQQtQQoqnQQxbiCJQQoqnQQ7VJnGQQoqnQQqWqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXXkkmUAk0tEn1XXXkkmUAk0zH13KvkX0pSM1XodzsXdX3kKfzsv7zsAfAKAofkxM77KU3fmK0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222773197" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222773197'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '87181', 'Bernie_P82', '254E242670CE8BE9C9095C7DBB016C30', 'en', '222773197', 'Courtyard King Kamehameha\'s Kona Beach Hotel');">Ask Bernie_P82 about Courtyard King Kamehameha&#39;s Kona Beach Hotel</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+General_Manager03, General Manager at Courtyard King Kamehameha&#39;s Kona Beach Hotel, responded to this review,
+<span class="res_date relativeDate" title='21 August 2014'>6 days ago</span>
+</div>
+<div class="displayText" id="response_222773197">
+Aloha,<br/>Thank you for your review of the Courtyard King Kamehameha’s Kona Beach Hotel. We are pleased that you had a great time and enjoyed so many aspects of your stay including our convenient location, accommodations and amenities. Should you find yourself returning to Kona, it would be our pleasure to welcome you back. Mahalo
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223238455" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223238455, isGeo:false, locationid:87181})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223238455" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223238455">
+<a name="UR223238455"></a>
+<div id="UR223238455" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d87181-r223238455-Courtyard_King_Kamehameha_s_Kona_Beach_Hotel-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223238455">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Aloha,<br/>Thank you for your review of the Courtyard King Kamehameha’s Kona Beach Hotel. We are pleased that you had a great time and enjoyed so many aspects of your stay including our convenient location, accommodations and amenities. Should you find yourself returning to Kona, it would be our pleasure to welcome you back. Mahalo
+</p>
+</div>
+<div id="helpfulq223238455_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223238455 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMvkUvUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKKv3Uv6XoXfXXmAomKkK6XoXfXXmdo3vXU6XoXfXXmKdAAv36XoXfXXXkkmUAk6XoXfXXXKAvmmv6XoXfXXU3AvXoo6XoXfXXUddUAkX6XoXfXXKvoUU3X6XoXfXXKvmXAoKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKKv3UvqHfipEIgJEMQQoqnQQxbSCyQQoqnQQxbJaVGJaVGJQQoqnQQtQQoqnQQxbiCJQQoqnQQ7VJnGQQoqnQQqWqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXmXmvdoo0tEn1XXmXmvdoo0zH13KvkX0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223238455" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223238455'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222098338">
+<a name="UR222098338"></a>
+<div id="UR222098338" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_3A0376F9DD4ACA2ACB2F1E5A3E3A9AA1-SRC_222098338" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_3A0376F9DD4ACA2ACB2F1E5A3E3A9AA1 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/02/62/68/92/davidandmerilyn.jpg" class="avatar potentialFacebookAvatar avatarGUID:3A0376F9DD4ACA2ACB2F1E5A3E3A9AA1" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_3A0376F9DD4ACA2ACB2F1E5A3E3A9AA1" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">DavidandMerilyn</span>
+</div>
+</div>
+<div class="location">
+Howick, Auckland
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_3A0376F9DD4ACA2ACB2F1E5A3E3A9AA1-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="29 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">29 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">6 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '3A0376F9DD4ACA2ACB2F1E5A3E3A9AA1', screenName: 'DavidandMerilyn', geos: [60872, 255368, 1821930, 294144, 656920, 255100], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 6 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 6 cities</span> </div>
+<div id="UID_3A0376F9DD4ACA2ACB2F1E5A3E3A9AA1-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="8 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">8 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d87181-r222098338-Courtyard_King_Kamehameha_s_Kona_Beach_Hotel-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222098338">&#x201c;<span class='noQuotes'>Get it right and can be an excellent place to stay</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='16 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Location is absolutely superb<br/>Just stayed for four nights. Took some excellent advice and booked an oceanfront room, WEST WING 5th floor. Yes, East wing too noisy, and need to be 4th to 6th floor to get away from noise. If not oceanfront, avoid the ice machine and the elevators.<br/>Reception - quite good, we got the guy who didn't want to be there, others were great.<br/>Beds - very good<br/>Showers - good<br/>Room in general - very good<br/>The adjacent beach - does function well as a small beach, outriggers train from their early morning, absolutely beautiful large manicured grassed area to laze on<br/>Pool - can be idyllic, well designed and good bar/food. Come Friday afternoon all went wrong - was as though hotel was filling up unsold rooms to locals at budget rates and they came to party, pool busy and rowdy and went from tranquil and quite unpleasant. <br/>Eating out - sushi night here very good, lots of good eating nearby<br/>Heat - suggest get up before 6am, walk the street, go for a swim, retire and relax 12 to 3. Evenings around town are vey pleasant, everything closes quite early.<br/>Parking - $14/night. Ask reception, free reasonably safe parking nearby.<br/>Some good shops in lobby<br/>ABC store onsite is excellent for light meals, drinks, gifts
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Took some excellent advice and booked an oceanfront room, WEST WING 5th floor. Yes, East wing too no...
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222098338_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222098338 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMvkUvUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKKv3Uv6XoXfXXmAomKkK6XoXfXXmdo3vXU6XoXfXXmKdAAv36XoXfXXXkkmUAk6XoXfXXXKAvmmv6XoXfXXU3AvXoo6XoXfXXUddUAkX6XoXfXXKvoUU3X6XoXfXXKvmXAoKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKKv3UvqHfipEIgJEMQQoqnQQxbSCyQQoqnQQxbJaVGJaVGJQQoqnQQtQQoqnQQxbiCJQQoqnQQ7VJnGQQoqnQQqWqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXXKAvmmv0tEn1XXXKAvmmv0zH13KvkX0pSM1mbKmk3qnAxMxMdbfbXbf7XqnUzsobmzsmbAbbU0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222098338" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222098338'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '87181', 'DavidandMerilyn', '3A0376F9DD4ACA2ACB2F1E5A3E3A9AA1', 'en', '222098338', 'Courtyard King Kamehameha\'s Kona Beach Hotel');">Ask DavidandMerilyn about Courtyard King Kamehameha&#39;s Kona Beach Hotel</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+General_Manager03, General Manager at Courtyard King Kamehameha&#39;s Kona Beach Hotel, responded to this review,
+<span class="res_date relativeDate" title='21 August 2014'>6 days ago</span>
+</div>
+<div class="displayText" id="response_222098338">
+Aloha,<br/>Thank you so much for providing such a detailed review of your stay at Courtyard King Kamehameha’s Kona Beach Hotel. We love gaining valuable insight into our guest’s experience through their reviews. We’re glad to hear that you enjoyed your stay as well as our beach area and our convenient location. Your positive feedback for our hotel is greatly appreciated. We hope that we can welcome you back again soon. Mahalo
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223238075" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223238075, isGeo:false, locationid:87181})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223238075" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223238075">
+<a name="UR223238075"></a>
+<div id="UR223238075" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d87181-r223238075-Courtyard_King_Kamehameha_s_Kona_Beach_Hotel-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223238075">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Aloha,<br/>Thank you so much for providing such a detailed review of your stay at Courtyard King Kamehameha’s Kona Beach Hotel. We love gaining valuable insight into our guest’s experience through their reviews. We’re glad to hear that you enjoyed your stay as well as our beach area and our convenient location. Your positive feedback for our hotel is greatly appreciated. We hope that we can welcome you back again soon. Mahalo
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223238075_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223238075 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMvkUvUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKKv3Uv6XoXfXXmAomKkK6XoXfXXmdo3vXU6XoXfXXmKdAAv36XoXfXXXkkmUAk6XoXfXXXKAvmmv6XoXfXXU3AvXoo6XoXfXXUddUAkX6XoXfXXKvoUU3X6XoXfXXKvmXAoKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKKv3UvqHfipEIgJEMQQoqnQQxbSCyQQoqnQQxbJaVGJaVGJQQoqnQQtQQoqnQQxbiCJQQoqnQQ7VJnGQQoqnQQqWqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXmXmvKko0tEn1XXmXmvKko0zH13KvkX0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223238075" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223238075'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221698255">
+<a name="UR221698255"></a>
+<div id="UR221698255" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_CE944C3F4FD1145D6DBF627E38DD7881-SRC_221698255" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_CE944C3F4FD1145D6DBF627E38DD7881 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/a0/avatar071.jpg" class="avatar potentialFacebookAvatar avatarGUID:CE944C3F4FD1145D6DBF627E38DD7881" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_CE944C3F4FD1145D6DBF627E38DD7881" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Jeff A</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_CE944C3F4FD1145D6DBF627E38DD7881-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="15 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">15 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'CE944C3F4FD1145D6DBF627E38DD7881', screenName: 'Jeff A', geos: [60872, 39295, 33388, 2219999, 60608], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 5 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 5 cities</span> </div>
+<div id="UID_CE944C3F4FD1145D6DBF627E38DD7881-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="2 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">2 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d87181-r221698255-Courtyard_King_Kamehameha_s_Kona_Beach_Hotel-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221698255">&#x201c;<span class='noQuotes'>Enjoyed our experience</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='14 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+It was a last minute decision to extend our stay, and we are very glad we did. The hotel staff that greeted us was extremely pleasant and the check-in process was smooth and quick. The rooms were comfortable - beds, linens, ...<br/><br/>You are located on the ocean in a protected area so it was easy for children and parents to enjoy themselves. First time snorkeling for the children was made easy due to this. There are water sporting equipment near by for rent, if you wanted. Otherwise you could float and enjoy the ocean.<br/><br/>Being right in town, the location is prime. I would recommend this to any one.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221698255_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221698255 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMvkUvUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKKv3Uv6XoXfXXmAomKkK6XoXfXXmdo3vXU6XoXfXXmKdAAv36XoXfXXXkkmUAk6XoXfXXXKAvmmv6XoXfXXU3AvXoo6XoXfXXUddUAkX6XoXfXXKvoUU3X6XoXfXXKvmXAoKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKKv3UvqHfipEIgJEMQQoqnQQxbSCyQQoqnQQxbJaVGJaVGJQQoqnQQtQQoqnQQxbiCJQQoqnQQ7VJnGQQoqnQQqWqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXU3AvXoo0tEn1XXU3AvXoo0zH13KvkX0pSM1fzsAddfmqndqnxMUUdoxM3xM7qn3XkzsmvxMxMkvvU0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221698255" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221698255'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/255jeffa/g60872" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 6 reviews by Jeff A for Kailua-Kona </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '87181', 'Jeff A', 'CE944C3F4FD1145D6DBF627E38DD7881', 'en', '221698255', 'Courtyard King Kamehameha\'s Kona Beach Hotel');">Ask Jeff A about Courtyard King Kamehameha&#39;s Kona Beach Hotel</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+General_Manager03, General Manager at Courtyard King Kamehameha&#39;s Kona Beach Hotel, responded to this review,
+<span class="res_date relativeDate" title='16 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_221698255">
+Aloha,<br/>Thank you for your review and recommendation. We’re glad to hear that you enjoyed your stay as well as our convenient location, lovely beach area in addition to the friendliness of our staff. We appreciate your compliments for our hotel and staff. Please visit us again soon it would be our pleasure to welcome you back. Mahalo
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_222091019" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:222091019, isGeo:false, locationid:87181})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_222091019" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222091019">
+<a name="UR222091019"></a>
+<div id="UR222091019" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d87181-r222091019-Courtyard_King_Kamehameha_s_Kona_Beach_Hotel-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222091019">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='16 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Aloha,<br/>Thank you for your review and recommendation. We’re glad to hear that you enjoyed your stay as well as our convenient location, lovely beach area in addition to the friendliness of our staff. We appreciate your compliments for our hotel and staff. Please visit us again soon it would be our pleasure to welcome you back. Mahalo
+</p>
+</div>
+<div id="helpfulq222091019_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222091019 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMvkUvUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKKv3Uv6XoXfXXmAomKkK6XoXfXXmdo3vXU6XoXfXXmKdAAv36XoXfXXXkkmUAk6XoXfXXXKAvmmv6XoXfXXU3AvXoo6XoXfXXUddUAkX6XoXfXXKvoUU3X6XoXfXXKvmXAoKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKKv3UvqHfipEIgJEMQQoqnQQxbSCyQQoqnQQxbJaVGJaVGJQQoqnQQtQQoqnQQxbiCJQQoqnQQ7VJnGQQoqnQQqWqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXXKAUKUA0tEn1XXXKAUKUA0zH13KvkX0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222091019" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222091019'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221441972">
+<a name="UR221441972"></a>
+<div id="UR221441972" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_9C0D4DFAE69D0FC10A717F00F0A4592E-SRC_221441972" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_9C0D4DFAE69D0FC10A717F00F0A4592E ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/02/e3/ea/2a/facebook-avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:9C0D4DFAE69D0FC10A717F00F0A4592E" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_9C0D4DFAE69D0FC10A717F00F0A4592E" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Matt310371</span>
+</div>
+</div>
+<div class="location">
+Bristol, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_9C0D4DFAE69D0FC10A717F00F0A4592E-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">3 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '9C0D4DFAE69D0FC10A717F00F0A4592E', screenName: 'Matt310371', geos: [60872, 60661], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 2 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 2 cities</span> </div>
+<div id="UID_9C0D4DFAE69D0FC10A717F00F0A4592E-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="2 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">2 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d87181-r221441972-Courtyard_King_Kamehameha_s_Kona_Beach_Hotel-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221441972">&#x201c;<span class='noQuotes'>Great hotel!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='13 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+Loved this hotel. The location is superb, as are the facilities. The front desk staff are a credit to the hotel. They are so helpful and welcoming. Would not hesitate in recommending this hotel to others.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq221441972_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221441972 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMvkUvUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKKv3Uv6XoXfXXmAomKkK6XoXfXXmdo3vXU6XoXfXXmKdAAv36XoXfXXXkkmUAk6XoXfXXXKAvmmv6XoXfXXU3AvXoo6XoXfXXUddUAkX6XoXfXXKvoUU3X6XoXfXXKvmXAoKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKKv3UvqHfipEIgJEMQQoqnQQxbSCyQQoqnQQxbJaVGJaVGJQQoqnQQtQQoqnQQxbiCJQQoqnQQ7VJnGQQoqnQQqWqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXUddUAkX0tEn1XXUddUAkX0zH13KvkX0pSM1AfKxMdxMqnbzs3AxMKqnfUKbkUkqnKKqnKbdoAXzs0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221441972" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221441972'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '87181', 'Matt310371', '9C0D4DFAE69D0FC10A717F00F0A4592E', 'en', '221441972', 'Courtyard King Kamehameha\'s Kona Beach Hotel');">Ask Matt310371 about Courtyard King Kamehameha&#39;s Kona Beach Hotel</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+General_Manager03, General Manager at Courtyard King Kamehameha&#39;s Kona Beach Hotel, responded to this review,
+<span class="res_date relativeDate" title='16 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_221441972">
+Aloha,<br/>Thank you very much for the great review of your recent stay at Courtyard King Kamehameha’s Kona Beach Hotel. We’re delighted to hear that you had a very pleasant stay with us and enjoyed your stay as well as the friendliness of our staff and our convenient location. We look forward to having you stay with us again in the future. Mahalo
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_222091768" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:222091768, isGeo:false, locationid:87181})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_222091768" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222091768">
+<a name="UR222091768"></a>
+<div id="UR222091768" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d87181-r222091768-Courtyard_King_Kamehameha_s_Kona_Beach_Hotel-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222091768">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='16 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Aloha,<br/>Thank you very much for the great review of your recent stay at Courtyard King Kamehameha’s Kona Beach Hotel. We’re delighted to hear that you had a very pleasant stay with us and enjoyed your stay as well as the friendliness of our staff and our convenient location. We look forward to having you stay with us again in the future. Mahalo
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222091768_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222091768 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMvkUvUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKKv3Uv6XoXfXXmAomKkK6XoXfXXmdo3vXU6XoXfXXmKdAAv36XoXfXXXkkmUAk6XoXfXXXKAvmmv6XoXfXXU3AvXoo6XoXfXXUddUAkX6XoXfXXKvoUU3X6XoXfXXKvmXAoKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKKv3UvqHfipEIgJEMQQoqnQQxbSCyQQoqnQQxbJaVGJaVGJQQoqnQQtQQoqnQQxbiCJQQoqnQQ7VJnGQQoqnQQqWqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXXKAUk3v0tEn1XXXKAUk3v0zH13KvkX0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222091768" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222091768'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220851162">
+<a name="UR220851162"></a>
+<div id="UR220851162" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_8D8FC879DA055D4D943E8AA159C1E96E-SRC_220851162" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_8D8FC879DA055D4D943E8AA159C1E96E ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/41/18/7b/99-redball00ns.jpg" class="avatar potentialFacebookAvatar avatarGUID:8D8FC879DA055D4D943E8AA159C1E96E" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_8D8FC879DA055D4D943E8AA159C1E96E" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">99_redball00ns</span>
+</div>
+</div>
+<div class="location">
+London, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_8D8FC879DA055D4D943E8AA159C1E96E-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="30 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">30 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_3rd sprite-badge_hotels_3rd" width="25" height="24">
+<span class="badgeText">26 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '8D8FC879DA055D4D943E8AA159C1E96E', screenName: '99_redball00ns', geos: [60634, 60872, 60632, 312659, 303506, 658382, 187309, 189970, 187323, 312653, 1066461, 294197, 189852, 187147, 303810, 293734, 297683, 295424, 298224, 60713, 36630, 297671, 304555, 187835, 298561, 304551, 187895], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 27 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 27 cities</span> </div>
+<div id="UID_8D8FC879DA055D4D943E8AA159C1E96E-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="46 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">46 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d87181-r220851162-Courtyard_King_Kamehameha_s_Kona_Beach_Hotel-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220851162">&#x201c;<span class='noQuotes'>An Enjoyable Stay</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='10 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+Having come from the excellent Outrigger Napili Shores condo resort in neighbouring Maui (see my review for this), frankly I was a bit reluctant to be staying at a proper hotel again. Thankfully this hotel proved to be a good choice, and a comfortable stay.<br/><br/>Located in Kailua-Kona, it was easy enough to find from the airport, and has plenty located around it, from the shops and decent cafes/restaurants along Ali'i Drive, to your larger stores located just of the highway. Plenty of parking, of which there should be due to the pricey parking charges (my only real grumble about the place).<br/><br/>The room itself was a decent size, very clean, with decent amenities (air-con, large comfy bed, LCD TV, good shower). The 'partial sea view' tag it had was a bit of a joke, in that if you turned your head you could see a bit of the bay brushing up against a concrete wall. But, it was true to an extent. Other rooms were a lot better for this, but probably a lot more expensive. Still, it was quiet, and it suited us.<br/><br/>The hotel itself is a large complex, and has a fair bit on site. There is a small shopping arcade containing an ABC stores mini-mart which was very useful for picking up snacks, drinks etc (at regular prices too, not inflated hotel ones). There is also a little museum/art gallery dedicated to the King himself to whom this hotel is named after, that is worth a look. The gym looked decent, and the pool area and bar is good, although the pool can get run amok with kids sometimes constantly jumping in, despite there being a cosy seating area, so be warned. The little beach area I thought was only so-so, especially as one side of it was cordoned off whist construction work was going on, making it not appear to be very attractive. However the hotel makes the most of what access it has, as sand is clean, and the water is calm enough to swim in, unlike some of the other shoreline access around Kailua. Just don't go expecting a proper beach resort.<br/><br/>As for the restaurants on site, we didn't really try any of them with the exception of the pool bar and grill. The breakfast restaurant appeared deserted for the most part, but with decent places to eat only 5-10 minutes walk away (a few being just on the opposite side of the hotel), and even a good coffee shop within the hotel plaza, you won't feel restricted by what the hotel offers. As mentioned the poolside bar and grill is well worth a visit. They make some very good cocktails (go for the 'Kona Itch'!) and the bar food is of surprisingly good fare. The staff around the hotel are generally friendly and helpful too.<br/><br/>Overall I enjoyed my stay here, and wouldn't have any issues returning. Just wished they wouldn't charge so much for parking.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014, travelled as a couple</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq220851162_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220851162 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMvkUvUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKKv3Uv6XoXfXXmAomKkK6XoXfXXmdo3vXU6XoXfXXmKdAAv36XoXfXXXkkmUAk6XoXfXXXKAvmmv6XoXfXXU3AvXoo6XoXfXXUddUAkX6XoXfXXKvoUU3X6XoXfXXKvmXAoKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKKv3UvqHfipEIgJEMQQoqnQQxbSCyQQoqnQQxbJaVGJaVGJQQoqnQQtQQoqnQQxbiCJQQoqnQQ7VJnGQQoqnQQqWqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXKvoUU3X0tEn1XXKvoUU3X0zH13KvkX0pSM1vxMvqnfvkAxMbKooxMdxMAdmzsvbbUoAfUzsA3zs0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">3</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220851162" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220851162'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '87181', '99_redball00ns', '8D8FC879DA055D4D943E8AA159C1E96E', 'en', '220851162', 'Courtyard King Kamehameha\'s Kona Beach Hotel');">Ask 99_redball00ns about Courtyard King Kamehameha&#39;s Kona Beach Hotel</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+General_Manager03, General Manager at Courtyard King Kamehameha&#39;s Kona Beach Hotel, responded to this review,
+<span class="res_date relativeDate" title='16 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_220851162">
+Aloha,<br/>Thank you for choosing to stay at the Courtyard King Kamehameha’s Kona Beach Hotel during vacation in Hawaii. We are pleased that we could provide you with accommodations that met your expectations. I’m glad to hear that you enjoyed our amenities, pool bar, convenient location and also the friendly service provided by our staff. Your kind review is greatly appreciated and we look forward to welcoming you back the next time you are visiting the area. Mahalo
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_222092296" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:222092296, isGeo:false, locationid:87181})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_222092296" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222092296">
+<a name="UR222092296"></a>
+<div id="UR222092296" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d87181-r222092296-Courtyard_King_Kamehameha_s_Kona_Beach_Hotel-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222092296">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='16 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Aloha,<br/>Thank you for choosing to stay at the Courtyard King Kamehameha’s Kona Beach Hotel during vacation in Hawaii. We are pleased that we could provide you with accommodations that met your expectations. I’m glad to hear that you enjoyed our amenities, pool bar, convenient location and also the friendly service provided by our staff. Your kind review is greatly appreciated and we look forward to welcoming you back the next time you are visiting the area. Mahalo
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222092296_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222092296 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMvkUvUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKKv3Uv6XoXfXXmAomKkK6XoXfXXmdo3vXU6XoXfXXmKdAAv36XoXfXXXkkmUAk6XoXfXXXKAvmmv6XoXfXXU3AvXoo6XoXfXXUddUAkX6XoXfXXKvoUU3X6XoXfXXKvmXAoKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKKv3UvqHfipEIgJEMQQoqnQQxbSCyQQoqnQQxbJaVGJaVGJQQoqnQQtQQoqnQQxbiCJQQoqnQQ7VJnGQQoqnQQqWqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXXKAXXA30tEn1XXXKAXXA30zH13KvkX0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222092296" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222092296'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220832950">
+<a name="UR220832950"></a>
+<div id="UR220832950" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_2A4E592037DE10A9A1C311E60D6A4DA2-SRC_220832950" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_2A4E592037DE10A9A1C311E60D6A4DA2 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/96/avatar022.jpg" class="avatar potentialFacebookAvatar avatarGUID:2A4E592037DE10A9A1C311E60D6A4DA2" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_2A4E592037DE10A9A1C311E60D6A4DA2" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">travelthemoon</span>
+</div>
+</div>
+<div class="location">
+Cambridge, Massachusetts
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_2A4E592037DE10A9A1C311E60D6A4DA2-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="15 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">15 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '2A4E592037DE10A9A1C311E60D6A4DA2', screenName: 'travelthemoon', geos: [60872, 187440, 60827, 60608, 60942, 297476, 6503218, 60594], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 8 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 8 cities</span> </div>
+<div id="UID_2A4E592037DE10A9A1C311E60D6A4DA2-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="8 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">8 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d87181-r220832950-Courtyard_King_Kamehameha_s_Kona_Beach_Hotel-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220832950">&#x201c;<span class='noQuotes'>great location</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='10 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+Stayed here solo for 2 nights and really enjoyed it. Great location, clean room/hotel, friendly staff and other vacationers! I arrived 2 days before my friends and enjoyed walking around Kona, winding down from work and the flight.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed July 2014, travelled solo</span>
+</div>
+</div>
+<div id="helpfulq220832950_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220832950 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMvkUvUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKKv3Uv6XoXfXXmAomKkK6XoXfXXmdo3vXU6XoXfXXmKdAAv36XoXfXXXkkmUAk6XoXfXXXKAvmmv6XoXfXXU3AvXoo6XoXfXXUddUAkX6XoXfXXKvoUU3X6XoXfXXKvmXAoKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKKv3UvqHfipEIgJEMQQoqnQQxbSCyQQoqnQQxbJaVGJaVGJQQoqnQQtQQoqnQQxbiCJQQoqnQQ7VJnGQQoqnQQqWqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXKvmXAoK0tEn1XXKvmXAoK0zH13KvkX0pSM1XbdzsoAXKmkxMzsUKbAbUfmUUzs3KxM3bdxMbX0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220832950" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220832950'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '87181', 'travelthemoon', '2A4E592037DE10A9A1C311E60D6A4DA2', 'en', '220832950', 'Courtyard King Kamehameha\'s Kona Beach Hotel');">Ask travelthemoon about Courtyard King Kamehameha&#39;s Kona Beach Hotel</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+General_Manager03, General Manager at Courtyard King Kamehameha&#39;s Kona Beach Hotel, responded to this review,
+<span class="res_date relativeDate" title='16 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_220832950">
+Aloha,<br/>Thank you for choosing the Courtyard King Kamehameha’s Kona Beach Hotel for your recent visit to Kona. We’re pleased you enjoyed your accommodations as well as our convenient location in addition to the friendliness of our staff. . Please visit us again soon. Mahalo
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_222092452" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:222092452, isGeo:false, locationid:87181})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_222092452" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222092452">
+<a name="UR222092452"></a>
+<div id="UR222092452" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d87181-r222092452-Courtyard_King_Kamehameha_s_Kona_Beach_Hotel-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222092452">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='16 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Aloha,<br/>Thank you for choosing the Courtyard King Kamehameha’s Kona Beach Hotel for your recent visit to Kona. We’re pleased you enjoyed your accommodations as well as our convenient location in addition to the friendliness of our staff. . Please visit us again soon. Mahalo
+</p>
+</div>
+<div id="helpfulq222092452_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222092452 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMvkUvUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKKv3Uv6XoXfXXmAomKkK6XoXfXXmdo3vXU6XoXfXXmKdAAv36XoXfXXXkkmUAk6XoXfXXXKAvmmv6XoXfXXU3AvXoo6XoXfXXUddUAkX6XoXfXXKvoUU3X6XoXfXXKvmXAoKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKKv3UvqHfipEIgJEMQQoqnQQxbSCyQQoqnQQxbJaVGJaVGJQQoqnQQtQQoqnQQxbiCJQQoqnQQ7VJnGQQoqnQQqWqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXXKAXdoX0tEn1XXXKAXdoX0zH13KvkX0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222092452" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222092452'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>

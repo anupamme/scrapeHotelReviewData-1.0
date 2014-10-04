@@ -1,0 +1,1480 @@
+<div id="expanded_review_224281476">
+<a name="UR224281476"></a>
+<div id="UR224281476" class="extended provider0 first newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_5BF04D72FF2D5EDD71005A1B58F39AD0-SRC_224281476" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_5BF04D72FF2D5EDD71005A1B58F39AD0 ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: '5BF04D72FF2D5EDD71005A1B58F39AD0'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/6a/avatar048.jpg" class="avatar potentialFacebookAvatar avatarGUID:5BF04D72FF2D5EDD71005A1B58F39AD0" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_5BF04D72FF2D5EDD71005A1B58F39AD0" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Diane S</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_5BF04D72FF2D5EDD71005A1B58F39AD0-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187497-d1597580-r224281476-Hotel_4_Barcelona-Barcelona_Catalonia.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224281476">&#x201c;<span class='noQuotes'>Me,Robert Stech &amp; Diane Stech is spellbound by its services.</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed yesterday
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Me Robert along with my wife Diane Stech went for a small trip to Spain last year.There we decided to stay at Hotel 4 Barcelona. I must admit that it is one of the finest hotels allthrough out the world. Diane Stech got really impressed after the Manager presented with utmost hospitality to us. I must admit that everything is good for this hotel. So anyone planning for a couples visit must come to this hotel once.<br/><br/>Thanks,<br/>Robert Stech &amp; Diane Stech.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed November 2013, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224281476_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224281476 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkdAkqHMUoAkovKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXvUdk36XoXfXXm3UkXmo6XoXfXXXAmUvXU6XoXfXXXU3kmK36XoXfXXKdkKKkd6XoXfXUoUvU3vd6XoXfXUoUdoddU6XoXfXUdvkd3Km6XoXfXUd33moKU6XoXfXUdmmmokdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXvUdk3qHqWQQoqnQQdQQoqnQQ7JEnVciCJqH7JEnVciCJQQoqnQQfJIJciCSJxiGIac6XoXmqoTpcXXdXvUdk30tEn1XXdXvUdk30zH1UvkdAk0pSM1o7qnKdxMkXqnqnXxMozsxMxMkUKKobU7ovqnmAbxMK0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224281476" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224281476'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1597580', 'Diane S', '5BF04D72FF2D5EDD71005A1B58F39AD0', 'en', '224281476', 'Hotel 4 Barcelona');">Ask Diane S about Hotel 4 Barcelona</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_223617235">
+<a name="UR223617235"></a>
+<div id="UR223617235" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_35C418801FCEB3CC532B6749671EB1FE-SRC_223617235" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_35C418801FCEB3CC532B6749671EB1FE ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/05/32/31/a4/ani-sunshine.jpg" class="avatar potentialFacebookAvatar avatarGUID:35C418801FCEB3CC532B6749671EB1FE" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_35C418801FCEB3CC532B6749671EB1FE" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">ani_sunshine</span>
+</div>
+</div>
+<div class="location">
+London, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_35C418801FCEB3CC532B6749671EB1FE-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="18 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">18 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">5 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '35C418801FCEB3CC532B6749671EB1FE', screenName: 'ani_sunshine', geos: [294013, 580420, 503771, 187062, 187497, 295424, 186338, 1480252], geo: '187497' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 8 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 8 cities</span> </div>
+<div id="UID_35C418801FCEB3CC532B6749671EB1FE-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="8 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">8 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187497-d1597580-r223617235-Hotel_4_Barcelona-Barcelona_Catalonia.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223617235">&#x201c;<span class='noQuotes'>Away from all the hustle and bustle</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Stayed August 2014. The hotel is located very close to the beach a short walk away and there is also a mcdonalds very closeby. The metro is very close to the hotel as is the bus turistic bus stop which is very convenient. The hotel offers a discount if you buy the tickets for the bus turistic with them. We originally booked a standard room but upgraded to superior for 20 euros per night. It was well worth it as the standard rooms did not come with a fridge whereas the superior one did. Rooms were cleaned everyday although I would not say this is a 4* hotel as the lamp shades were a little dirty and one of the walls had something stuck to it. Bathroom is a decent size and always stocked up everyday with the usual bathroom items. we had a lovely seaview room although two twin beds put together instead of a double one but this didnt bother us. There is a cemetery behind the hotel but it is very well kept and not creepy at all. Staff were very helpful and kind and were happy to answer our questions and also happy to print our boarding passes. <br/><br/>overall a nice stay but not a 4* hotel.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Ask for a seaview room and also upgrade to superior it is well worth it!
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223617235_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223617235 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkdAkqHMUoAkovKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXvUdk36XoXfXXm3UkXmo6XoXfXXXAmUvXU6XoXfXXXU3kmK36XoXfXXKdkKKkd6XoXfXUoUvU3vd6XoXfXUoUdoddU6XoXfXUdvkd3Km6XoXfXUd33moKU6XoXfXUdmmmokdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXvUdk3qHqWQQoqnQQdQQoqnQQ7JEnVciCJqH7JEnVciCJQQoqnQQfJIJciCSJxiGIac6XoXmqoTpcXXm3UkXmo0tEn1XXm3UkXmo0zH1UvkdAk0pSM1mofdUvvKUqnfzs7mffomX73kdA3kUzs7Uqnzs0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223617235" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223617235'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1597580', 'ani_sunshine', '35C418801FCEB3CC532B6749671EB1FE', 'en', '223617235', 'Hotel 4 Barcelona');">Ask ani_sunshine about Hotel 4 Barcelona</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222931821">
+<a name="UR222931821"></a>
+<div id="UR222931821" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_2451ACC07163E1FC16797E769D593FD3-SRC_222931821" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_2451ACC07163E1FC16797E769D593FD3 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/75/avatar057.jpg" class="avatar potentialFacebookAvatar avatarGUID:2451ACC07163E1FC16797E769D593FD3" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_2451ACC07163E1FC16797E769D593FD3" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">SumtotaL</span>
+</div>
+</div>
+<div class="location">
+London, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_2451ACC07163E1FC16797E769D593FD3-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="7 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">7 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '2451ACC07163E1FC16797E769D593FD3', screenName: 'SumtotaL', geos: [662644, 609036, 187497], geo: '187497' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 3 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 3 cities</span> </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187497-d1597580-r222931821-Hotel_4_Barcelona-Barcelona_Catalonia.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222931821">&#x201c;<span class='noQuotes'>Quiet location for easy stopover</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='19 August 2014'>Reviewed 1 week ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Good one night stopover in a quiet part of town near the Olympic Port. Secure parking a bonus. Attentive staff. Good breakfast. However, not up to 4 star for maintenance, as one bedroom light not working, and a feeble shower which spent most if the time trying to spray the wall!
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014</span>
+</div>
+</div>
+<div id="helpfulq222931821_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222931821 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkdAkqHMUoAkovKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXvUdk36XoXfXXm3UkXmo6XoXfXXXAmUvXU6XoXfXXXU3kmK36XoXfXXKdkKKkd6XoXfXUoUvU3vd6XoXfXUoUdoddU6XoXfXUdvkd3Km6XoXfXUd33moKU6XoXfXUdmmmokdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXvUdk3qHqWQQoqnQQdQQoqnQQ7JEnVciCJqH7JEnVciCJQQoqnQQfJIJciCSJxiGIac6XoXmqoTpcXXXAmUvXU0tEn1XXXAmUvXU0zH1UvkdAk0pSM1XdoUbffKkU3mzsUqnfU3kAkzsk3AxMoAmqnxMm0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222931821" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222931821'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1597580', 'SumtotaL', '2451ACC07163E1FC16797E769D593FD3', 'en', '222931821', 'Hotel 4 Barcelona');">Ask SumtotaL about Hotel 4 Barcelona</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+BestHotelscities, Gerente at Hotel 4 Barcelona, responded to this review,
+<span class="res_date relativeDate" title='22 August 2014'>4 days ago</span>
+</div>
+<div class="displayText" id="response_222931821">
+Dear Guest, <br/><br/>Thank you for the time spent in sharing your thoughts about our hotel. We take a note of your comments for revision and improvement of our services and facilities. <br/><br/>Sincerely, <br/><br/>Pilar Aso<br/>Manager of the Hotel
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223646922" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223646922, isGeo:false, locationid:1597580})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223646922" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223646922">
+<a name="UR223646922"></a>
+<div id="UR223646922" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187497-d1597580-r223646922-Hotel_4_Barcelona-Barcelona_Catalonia.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223646922">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest, <br/><br/>Thank you for the time spent in sharing your thoughts about our hotel. We take a note of your comments for revision and improvement of our services and facilities. <br/><br/>Sincerely, <br/><br/>Pilar Aso<br/>Manager of the Hotel
+</p>
+</div>
+<div id="helpfulq223646922_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223646922 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkdAkqHMUoAkovKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXvUdk36XoXfXXm3UkXmo6XoXfXXXAmUvXU6XoXfXXXU3kmK36XoXfXXKdkKKkd6XoXfXUoUvU3vd6XoXfXUoUdoddU6XoXfXUdvkd3Km6XoXfXUd33moKU6XoXfXUdmmmokdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXvUdk3qHqWQQoqnQQdQQoqnQQ7JEnVciCJqH7JEnVciCJQQoqnQQfJIJciCSJxiGIac6XoXmqoTpcXXm3d3AXX0tEn1XXm3d3AXX0zH1UvkdAk0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223646922" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223646922'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222167306">
+<a name="UR222167306"></a>
+<div id="UR222167306" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_E0E504A76D41DF412C050AE70C199F9D-SRC_222167306" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_E0E504A76D41DF412C050AE70C199F9D ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/91/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:E0E504A76D41DF412C050AE70C199F9D" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_E0E504A76D41DF412C050AE70C199F9D" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">florence006</span>
+</div>
+</div>
+<div class="location">
+cambridgeshire
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_E0E504A76D41DF412C050AE70C199F9D-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="14 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">14 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">4 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'E0E504A76D41DF412C050AE70C199F9D', screenName: 'florence006', geos: [3637154, 793509, 54273, 551727, 187870, 187497, 1458297], geo: '187497' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 7 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 7 cities</span> </div>
+<div id="UID_E0E504A76D41DF412C050AE70C199F9D-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">3 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187497-d1597580-r222167306-Hotel_4_Barcelona-Barcelona_Catalonia.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222167306">&#x201c;<span class='noQuotes'>great hotel for short break</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='16 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+August 2014. The hotel is very well located to get to the lovely beaches (6 minute easy walk to the nearest one) as well as getting into the centre of Barcelona (10 minute taxi ride or a 70 minute brisk walk ) and from the airport (about a 30 minute taxi ride costing 35 euros). Very clean hotel, not at all noisy, with excellent Reception staff who were very helpful. Breakfast choice was adequate. Our triple room for 3 adults was ok as the third bed was a put-you-up but was adequately comfortable. The outlook from the room had a view of the sea if you looked beyond the local Poblenou cemetery (not at all creepy as very well kept and quite pretty park area). It was a shame there was no fridge in the room. Overall, good value for money (booked through hotelsdirect) and would happily return there.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222167306_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222167306 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkdAkqHMUoAkovKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXvUdk36XoXfXXm3UkXmo6XoXfXXXAmUvXU6XoXfXXXU3kmK36XoXfXXKdkKKkd6XoXfXUoUvU3vd6XoXfXUoUdoddU6XoXfXUdvkd3Km6XoXfXUd33moKU6XoXfXUdmmmokdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXvUdk3qHqWQQoqnQQdQQoqnQQ7JEnVciCJqH7JEnVciCJQQoqnQQfJIJciCSJxiGIac6XoXmqoTpcXXXU3kmK30tEn1XXXU3kmK30zH1UvkdAk0pSM1zsKzsoKdbk3xMdUxMqndUXfKoKbzskKfUAAqnAxM0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222167306" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222167306'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1597580', 'florence006', 'E0E504A76D41DF412C050AE70C199F9D', 'en', '222167306', 'Hotel 4 Barcelona');">Ask florence006 about Hotel 4 Barcelona</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+BestHotelscities, Director de Relaciones con Clientes at Hotel 4 Barcelona, responded to this review,
+<span class="res_date relativeDate" title='18 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_222167306">
+Dear Guest, <br/><br/>Many thanks for your review. <br/><br/>Fantastic that you were able to make most of your holidays; I do agree, the Hotel 4 Barcelona has indeed a brilliant location which allows you to reach the main places in the city without any difficulties. Thank you for your lovely comments on our staff too; we aim to ensure all our guests are comfortable and relaxed; I am glad this has been appreciated! <br/><br/>We all look forward to welcoming you back in Barcelona. <br/><br/>Best Regards, <br/><br/>Management of the Hotel
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_222659249" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:222659249, isGeo:false, locationid:1597580})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_222659249" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222659249">
+<a name="UR222659249"></a>
+<div id="UR222659249" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187497-d1597580-r222659249-Hotel_4_Barcelona-Barcelona_Catalonia.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222659249">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='18 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest, <br/><br/>Many thanks for your review. <br/><br/>Fantastic that you were able to make most of your holidays; I do agree, the Hotel 4 Barcelona has indeed a brilliant location which allows you to reach the main places in the city without any difficulties. Thank you for your lovely comments on our staff too; we aim to ensure all our guests are comfortable and relaxed; I am glad this has been appreciated! <br/><br/>We all look forward to welcoming you back in Barcelona. <br/><br/>Best Regards, <br/><br/>Management of the Hotel
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222659249_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222659249 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkdAkqHMUoAkovKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXvUdk36XoXfXXm3UkXmo6XoXfXXXAmUvXU6XoXfXXXU3kmK36XoXfXXKdkKKkd6XoXfXUoUvU3vd6XoXfXUoUdoddU6XoXfXUdvkd3Km6XoXfXUd33moKU6XoXfXUdmmmokdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXvUdk3qHqWQQoqnQQdQQoqnQQ7JEnVciCJqH7JEnVciCJQQoqnQQfJIJciCSJxiGIac6XoXmqoTpcXXX3oAXdA0tEn1XXX3oAXdA0zH1UvkdAk0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222659249" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222659249'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220470074">
+<a name="UR220470074"></a>
+<div id="UR220470074" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_1E8B846B5D84E1C0D311398CA359684A-SRC_220470074" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_1E8B846B5D84E1C0D311398CA359684A ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/89/avatar010.jpg" class="avatar potentialFacebookAvatar avatarGUID:1E8B846B5D84E1C0D311398CA359684A" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_1E8B846B5D84E1C0D311398CA359684A" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">whereissussex</span>
+</div>
+</div>
+<div class="location">
+Sussex by the sea
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_1E8B846B5D84E1C0D311398CA359684A-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="16 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">16 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">8 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '1E8B846B5D84E1C0D311398CA359684A', screenName: 'whereissussex', geos: [551622, 190730, 188644, 147344, 186315, 187497, 188666, 188064, 186237, 187069], geo: '187497' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 10 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 10 cities</span> </div>
+<div id="UID_1E8B846B5D84E1C0D311398CA359684A-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="9 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">9 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187497-d1597580-r220470074-Hotel_4_Barcelona-Barcelona_Catalonia.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220470074">&#x201c;<span class='noQuotes'>Great hotel in Barcelona</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='8 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+My wife and I and two teenage daughters stayed at Hotel 4 for a short-break in Barcelona. The hotel is a short walk to the beach and within easy reach of the city centre by bus, metro or taxi. Close by is Rambla del Pobleneu which has quite a local feel and free of any hassle from beggars or other low life - great for an evening meal and much better value than the city centre. We ate at the hotel one night and the food was very good. We arrived as the restaurant was closing, but the helpful staff were welcoming and laid up a table with no fuss and served up a very good meal. <br/>The cleanliness of the rooms is excellent and most amenities are at hand. The only downside was that our rooms had no fridges and the TV had no English language channels available. Minor points - overall our stay was very comfortable and enjoyable.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq220470074_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220470074 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkdAkqHMUoAkovKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXvUdk36XoXfXXm3UkXmo6XoXfXXXAmUvXU6XoXfXXXU3kmK36XoXfXXKdkKKkd6XoXfXUoUvU3vd6XoXfXUoUdoddU6XoXfXUdvkd3Km6XoXfXUd33moKU6XoXfXUdmmmokdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXvUdk3qHqWQQoqnQQdQQoqnQQ7JEnVciCJqH7JEnVciCJQQoqnQQfJIJciCSJxiGIac6XoXmqoTpcXXKdkKKkd0tEn1XXKdkKKkd0zH1UvkdAk0pSM1Uzsv7vd37oxMvdzsUfKxMmUUmAvfbmoA3vdb0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220470074" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220470074'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/whereissussex/g187497" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 4 reviews by whereissussex for Barcelona </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1597580', 'whereissussex', '1E8B846B5D84E1C0D311398CA359684A', 'en', '220470074', 'Hotel 4 Barcelona');">Ask whereissussex about Hotel 4 Barcelona</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+BestHotelscities, Director de Relaciones con Clientes at Hotel 4 Barcelona, responded to this review,
+<span class="res_date relativeDate" title='14 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_220470074">
+Dear Guest, Thank you so much for your review. We are glad to read that you enjoyed our hotel and the surroundings. I am happy that despite a short stay you had a chance to visit our restaurant and to experience the friendliness of our staff which is absolutely central to our service ethos. I am sorry for the inconvenience with satellite channels, there was a breakdown caused by a storm which has now been rectified. We hope to welcome you again in the future, Best Regards, Management
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_221763598" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:221763598, isGeo:false, locationid:1597580})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_221763598" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221763598">
+<a name="UR221763598"></a>
+<div id="UR221763598" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187497-d1597580-r221763598-Hotel_4_Barcelona-Barcelona_Catalonia.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221763598">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='14 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest, Thank you so much for your review. We are glad to read that you enjoyed our hotel and the surroundings. I am happy that despite a short stay you had a chance to visit our restaurant and to experience the friendliness of our staff which is absolutely central to our service ethos. I am sorry for the inconvenience with satellite channels, there was a breakdown caused by a storm which has now been rectified. We hope to welcome you again in the future, Best Regards, Management
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221763598_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221763598 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkdAkqHMUoAkovKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXvUdk36XoXfXXm3UkXmo6XoXfXXXAmUvXU6XoXfXXXU3kmK36XoXfXXKdkKKkd6XoXfXUoUvU3vd6XoXfXUoUdoddU6XoXfXUdvkd3Km6XoXfXUd33moKU6XoXfXUdmmmokdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXvUdk3qHqWQQoqnQQdQQoqnQQ7JEnVciCJqH7JEnVciCJQQoqnQQfJIJciCSJxiGIac6XoXmqoTpcXXUk3moAv0tEn1XXUk3moAv0zH1UvkdAk0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221763598" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221763598'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_215181684">
+<a name="UR215181684"></a>
+<div id="UR215181684" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_7683FDD30B86EB21C68D5AFFB29496B1-SRC_215181684" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_7683FDD30B86EB21C68D5AFFB29496B1 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/f1/96/6b/facebook-avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:7683FDD30B86EB21C68D5AFFB29496B1" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_7683FDD30B86EB21C68D5AFFB29496B1" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Paula C</span>
+</div>
+</div>
+<div class="location">
+Kouvola, Finland
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_7683FDD30B86EB21C68D5AFFB29496B1-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">2 reviews</span>
+</div>
+<div id="UID_7683FDD30B86EB21C68D5AFFB29496B1-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="2 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">2 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187497-d1597580-r215181684-Hotel_4_Barcelona-Barcelona_Catalonia.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r215181684">&#x201c;<span class='noQuotes'>Very good for a great price</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate">Reviewed 13 July 2014
+</span>
+</div>
+<div class="entry">
+<p>
+Lovely hotel with a good breakfast. Rooms were clean, make sure you try the sauna and the steam room! Helpful staff. No iron in the room though. The nearest beach is just a stone throw away. We would definitely stay in this hotel again!
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed June 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq215181684_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq215181684 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkdAkqHMUoAkovKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXvUdk36XoXfXXm3UkXmo6XoXfXXXAmUvXU6XoXfXXXU3kmK36XoXfXXKdkKKkd6XoXfXUoUvU3vd6XoXfXUoUdoddU6XoXfXUdvkd3Km6XoXfXUd33moKU6XoXfXUdmmmokdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXvUdk3qHqWQQoqnQQdQQoqnQQ7JEnVciCJqH7JEnVciCJQQoqnQQfJIJciCSJxiGIac6XoXmqoTpcXUoUvU3vd0tEn1XUoUvU3vd0zH1UvkdAk0pSM1k3vmqnxMxMmK7v3zs7XUf3vxMobqnqn7XAdA37U0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_215181684" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '215181684'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1597580', 'Paula C', '7683FDD30B86EB21C68D5AFFB29496B1', 'en', '215181684', 'Hotel 4 Barcelona');">Ask Paula C about Hotel 4 Barcelona</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+BestHotelscities, Gerente at Hotel 4 Barcelona, responded to this review,
+<span class="res_date" title='14 August 2014'>15 July 2014</span>
+</div>
+<div class="displayText" id="response_215181684">
+Dear Paula, We would like to express our gratitude for your visit at our Hotel 4 Barcelona and for the time you spent to write a review on your personal experience as this helps us to know where we can improve our daily work. We hope to welcome you again in the future, Yours sincerely, Pilar Aso Hotel Manager Hotel 4 Barcelona
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_215486066" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:215486066, isGeo:false, locationid:1597580})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_215486066" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_215486066">
+<a name="UR215486066"></a>
+<div id="UR215486066" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187497-d1597580-r215486066-Hotel_4_Barcelona-Barcelona_Catalonia.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r215486066">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate">Reviewed 15 July 2014
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Paula, We would like to express our gratitude for your visit at our Hotel 4 Barcelona and for the time you spent to write a review on your personal experience as this helps us to know where we can improve our daily work. We hope to welcome you again in the future, Yours sincerely, Pilar Aso Hotel Manager Hotel 4 Barcelona
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq215486066_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq215486066 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkdAkqHMUoAkovKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXvUdk36XoXfXXm3UkXmo6XoXfXXXAmUvXU6XoXfXXXU3kmK36XoXfXXKdkKKkd6XoXfXUoUvU3vd6XoXfXUoUdoddU6XoXfXUdvkd3Km6XoXfXUd33moKU6XoXfXUdmmmokdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXvUdk3qHqWQQoqnQQdQQoqnQQ7JEnVciCJqH7JEnVciCJQQoqnQQfJIJciCSJxiGIac6XoXmqoTpcXUodv3K330tEn1XUodv3K330zH1UvkdAk0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_215486066" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '215486066'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_215145441">
+<a name="UR215145441"></a>
+<div id="UR215145441" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_8A471B4AA0C8C7DC1A6251903395EE69-SRC_215145441" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_8A471B4AA0C8C7DC1A6251903395EE69 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/73/avatar055.jpg" class="avatar potentialFacebookAvatar avatarGUID:8A471B4AA0C8C7DC1A6251903395EE69" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_8A471B4AA0C8C7DC1A6251903395EE69" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">jeparfitt</span>
+</div>
+</div>
+<div class="location">
+Caerleon, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_8A471B4AA0C8C7DC1A6251903395EE69-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="42 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">42 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">14 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '8A471B4AA0C8C7DC1A6251903395EE69', screenName: 'jeparfitt', geos: [194891, 311424, 186462, 186463, 186460, 3676471, 635637, 190822, 187232, 1929481, 189970, 1471622, 186253, 186254, 295371, 735764, 187497, 580326, 504119, 528813, 57119, 186370, 45963], geo: '187497' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 23 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 23 cities</span> </div>
+<div id="UID_8A471B4AA0C8C7DC1A6251903395EE69-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="27 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">27 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187497-d1597580-r215145441-Hotel_4_Barcelona-Barcelona_Catalonia.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r215145441">&#x201c;<span class='noQuotes'>A very good place to stay!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate">Reviewed 13 July 2014
+</span>
+</div>
+<div class="entry">
+<p>
+We stayed for two nights at the end of a holiday on the Costa Brava and I'm glad we chose this place, it was spotlessly clean with very good facilities, close to the beach if you want that but with easy access to the city centre (a 10€ taxi ride got four of us to the Platja de Catalunya) Rooms are very good and well serviced. Breakfast is good. Parking is 15€ per day in a secure underground car park.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq215145441_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq215145441 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkdAkqHMUoAkovKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXvUdk36XoXfXXm3UkXmo6XoXfXXXAmUvXU6XoXfXXXU3kmK36XoXfXXKdkKKkd6XoXfXUoUvU3vd6XoXfXUoUdoddU6XoXfXUdvkd3Km6XoXfXUd33moKU6XoXfXUdmmmokdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXvUdk3qHqWQQoqnQQdQQoqnQQ7JEnVciCJqH7JEnVciCJQQoqnQQfJIJciCSJxiGIac6XoXmqoTpcXUoUdoddU0tEn1XUoUdoddU0zH1UvkdAk0pSM1vbdkU7dbbKfvfkxMfUb3XoUAKmmAozszs3A0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_215145441" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '215145441'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1597580', 'jeparfitt', '8A471B4AA0C8C7DC1A6251903395EE69', 'en', '215145441', 'Hotel 4 Barcelona');">Ask jeparfitt about Hotel 4 Barcelona</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+BestHotelscities, Gerente at Hotel 4 Barcelona, responded to this review,
+<span class="res_date" title='14 August 2014'>15 July 2014</span>
+</div>
+<div class="displayText" id="response_215145441">
+Dear Guest, Thank you very much for your positive feedback. Delighted that you enjoyed your stay and the service from the team and hope you choose to visit us again. We have many more amazing rooms for you to enjoy! Best Regards from Barcelona, Pilar Aso
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_215485843" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:215485843, isGeo:false, locationid:1597580})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_215485843" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_215485843">
+<a name="UR215485843"></a>
+<div id="UR215485843" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187497-d1597580-r215485843-Hotel_4_Barcelona-Barcelona_Catalonia.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r215485843">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate">Reviewed 15 July 2014
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest, Thank you very much for your positive feedback. Delighted that you enjoyed your stay and the service from the team and hope you choose to visit us again. We have many more amazing rooms for you to enjoy! Best Regards from Barcelona, Pilar Aso
+</p>
+</div>
+<div id="helpfulq215485843_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq215485843 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkdAkqHMUoAkovKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXvUdk36XoXfXXm3UkXmo6XoXfXXXAmUvXU6XoXfXXXU3kmK36XoXfXXKdkKKkd6XoXfXUoUvU3vd6XoXfXUoUdoddU6XoXfXUdvkd3Km6XoXfXUd33moKU6XoXfXUdmmmokdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXvUdk3qHqWQQoqnQQdQQoqnQQ7JEnVciCJqH7JEnVciCJQQoqnQQfJIJciCSJxiGIac6XoXmqoTpcXUodvovdm0tEn1XUodvovdm0zH1UvkdAk0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_215485843" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '215485843'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_214874603">
+<a name="UR214874603"></a>
+<div id="UR214874603" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_C96B83E1AB93025FEA50887C96E69BF5-SRC_214874603" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_C96B83E1AB93025FEA50887C96E69BF5 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/8e/avatar015.jpg" class="avatar potentialFacebookAvatar avatarGUID:C96B83E1AB93025FEA50887C96E69BF5" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_C96B83E1AB93025FEA50887C96E69BF5" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Shelley Y</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_C96B83E1AB93025FEA50887C96E69BF5-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">2 reviews</span>
+</div>
+<div id="UID_C96B83E1AB93025FEA50887C96E69BF5-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">4 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187497-d1597580-r214874603-Hotel_4_Barcelona-Barcelona_Catalonia.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r214874603">&#x201c;<span class='noQuotes'>Amazing!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate">Reviewed 12 July 2014
+</span>
+</div>
+<div class="entry">
+<p>
+Stayed here for 7 nights and I highly recommend it. It's in a good location and is a 5 minute walk to the nearest metro station (Llacuna) and to the nearest beach. There is also a cinema and some shops close by. I highly recommend room service for when you're feeling tired and don't want to go out for dinner as it is very efficient and of a high standard. The reception staff were always helpful and our room was cleaned to a high standard every day. Definitely would stay here again!
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed July 2014</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq214874603_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq214874603 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkdAkqHMUoAkovKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXvUdk36XoXfXXm3UkXmo6XoXfXXXAmUvXU6XoXfXXXU3kmK36XoXfXXKdkKKkd6XoXfXUoUvU3vd6XoXfXUoUdoddU6XoXfXUdvkd3Km6XoXfXUd33moKU6XoXfXUdmmmokdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXvUdk3qHqWQQoqnQQdQQoqnQQ7JEnVciCJqH7JEnVciCJQQoqnQQfJIJciCSJxiGIac6XoXmqoTpcXUdvkd3Km0tEn1XUdvkd3Km0zH1UvkdAk0pSM1fA37vmzsUb7AmKXoqnzsboKvvkfA3zs3A7qno0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_214874603" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '214874603'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/519shelleyy/g187497" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 3 reviews by Shelley Y for Barcelona </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1597580', 'Shelley Y', 'C96B83E1AB93025FEA50887C96E69BF5', 'en', '214874603', 'Hotel 4 Barcelona');">Ask Shelley Y about Hotel 4 Barcelona</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+BestHotelscities, Gerente at Hotel 4 Barcelona, responded to this review,
+<span class="res_date" title='14 August 2014'>15 July 2014</span>
+</div>
+<div class="displayText" id="response_214874603">
+Dear Shelley, First of all we would like to thank you for your review. Many thanks for your comments about your vacation in the 4 Barcelona hotel. I'm glad you passed a pleasant holiday with us and I hope to see you again in the future. I really hope that you come back next year and keep enjoying your holidays with us. Yours sincerely, Pilar Aso Hotel Manager Hotel 4 Barcelona
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_215486413" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:215486413, isGeo:false, locationid:1597580})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_215486413" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_215486413">
+<a name="UR215486413"></a>
+<div id="UR215486413" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187497-d1597580-r215486413-Hotel_4_Barcelona-Barcelona_Catalonia.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r215486413">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate">Reviewed 15 July 2014
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Shelley, First of all we would like to thank you for your review. Many thanks for your comments about your vacation in the 4 Barcelona hotel. I'm glad you passed a pleasant holiday with us and I hope to see you again in the future. I really hope that you come back next year and keep enjoying your holidays with us. Yours sincerely, Pilar Aso Hotel Manager Hotel 4 Barcelona
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq215486413_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq215486413 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkdAkqHMUoAkovKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXvUdk36XoXfXXm3UkXmo6XoXfXXXAmUvXU6XoXfXXXU3kmK36XoXfXXKdkKKkd6XoXfXUoUvU3vd6XoXfXUoUdoddU6XoXfXUdvkd3Km6XoXfXUd33moKU6XoXfXUdmmmokdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXvUdk3qHqWQQoqnQQdQQoqnQQ7JEnVciCJqH7JEnVciCJQQoqnQQfJIJciCSJxiGIac6XoXmqoTpcXUodv3dUm0tEn1XUodv3dUm0zH1UvkdAk0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_215486413" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '215486413'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_214663501">
+<a name="UR214663501"></a>
+<div id="UR214663501" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_129E58C7CE0D25F5D4494E3B741B5D33-SRC_214663501" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_129E58C7CE0D25F5D4494E3B741B5D33 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/82/aa/07/sacham3.jpg" class="avatar potentialFacebookAvatar avatarGUID:129E58C7CE0D25F5D4494E3B741B5D33" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_129E58C7CE0D25F5D4494E3B741B5D33" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">SachaM3</span>
+</div>
+</div>
+<div class="location">
+London, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_129E58C7CE0D25F5D4494E3B741B5D33-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="10 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">10 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">7 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '129E58C7CE0D25F5D4494E3B741B5D33', screenName: 'SachaM3', geos: [187147, 293734, 274856, 666312, 187497, 34439, 34438, 297555, 60713], geo: '187497' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 9 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 9 cities</span> </div>
+<div id="UID_129E58C7CE0D25F5D4494E3B741B5D33-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="10 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">10 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187497-d1597580-r214663501-Hotel_4_Barcelona-Barcelona_Catalonia.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r214663501">&#x201c;<span class='noQuotes'>Good for the price</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate">Reviewed 10 July 2014
+</span>
+</div>
+<div class="entry">
+<p>
+We managed to secure a £60 per night rate through booking.com. Photos on website are pretty accurate so rooms are clean and modern.<br/><br/>No tea/coffee facilities in rooms or irons so iron in advance!<br/><br/>Gym is available at a 5eur surcharge but only really good for cardio.<br/><br/>Bar in lobby was the most expensive we had in Barcelona which includes the W hotel so best to go down the road.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed July 2014</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq214663501_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq214663501 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkdAkqHMUoAkovKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXvUdk36XoXfXXm3UkXmo6XoXfXXXAmUvXU6XoXfXXXU3kmK36XoXfXXKdkKKkd6XoXfXUoUvU3vd6XoXfXUoUdoddU6XoXfXUdvkd3Km6XoXfXUd33moKU6XoXfXUdmmmokdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXvUdk3qHqWQQoqnQQdQQoqnQQ7JEnVciCJqH7JEnVciCJQQoqnQQfJIJciCSJxiGIac6XoXmqoTpcXUd33moKU0tEn1XUd33moKU0zH1UvkdAk0pSM1UXAzsovfkfzsKxMXoqnoxMddAdzsm7kdU7oxMmm0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_214663501" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '214663501'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1597580', 'SachaM3', '129E58C7CE0D25F5D4494E3B741B5D33', 'en', '214663501', 'Hotel 4 Barcelona');">Ask SachaM3 about Hotel 4 Barcelona</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Pascual M, Gerente at Hotel 4 Barcelona, responded to this review,
+<span class="res_date" title='14 August 2014'>12 July 2014</span>
+</div>
+<div class="displayText" id="response_214663501">
+Dear Guest, Thank you for your review of your recent stay with us at the Hotel 4 Barcelona. . Please be assured that we take very seriously your comments, as they provide us the opportunity to improve our services. Yours sincerely, Pilar Aso Hotel Manager Hotel 4 Barcelona
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_214935968" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:214935968, isGeo:false, locationid:1597580})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_214935968" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_214935968">
+<a name="UR214935968"></a>
+<div id="UR214935968" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187497-d1597580-r214935968-Hotel_4_Barcelona-Barcelona_Catalonia.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r214935968">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate">Reviewed 12 July 2014
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest, Thank you for your review of your recent stay with us at the Hotel 4 Barcelona. . Please be assured that we take very seriously your comments, as they provide us the opportunity to improve our services. Yours sincerely, Pilar Aso Hotel Manager Hotel 4 Barcelona
+</p>
+</div>
+<div id="helpfulq214935968_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq214935968 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkdAkqHMUoAkovKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXvUdk36XoXfXXm3UkXmo6XoXfXXXAmUvXU6XoXfXXXU3kmK36XoXfXXKdkKKkd6XoXfXUoUvU3vd6XoXfXUoUdoddU6XoXfXUdvkd3Km6XoXfXUd33moKU6XoXfXUdmmmokdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXvUdk3qHqWQQoqnQQdQQoqnQQ7JEnVciCJqH7JEnVciCJQQoqnQQfJIJciCSJxiGIac6XoXmqoTpcXUdAmoA3v0tEn1XUdAmoA3v0zH1UvkdAk0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_214935968" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '214935968'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_214333574">
+<a name="UR214333574"></a>
+<div id="UR214333574" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_28EE850A2E46C0DA95A0826D2C357230-SRC_214333574" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_28EE850A2E46C0DA95A0826D2C357230 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/57/avatar030.jpg" class="avatar potentialFacebookAvatar avatarGUID:28EE850A2E46C0DA95A0826D2C357230" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_28EE850A2E46C0DA95A0826D2C357230" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Graham C</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_28EE850A2E46C0DA95A0826D2C357230-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">3 reviews</span>
+</div>
+<div id="UID_28EE850A2E46C0DA95A0826D2C357230-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="1 helpful vote" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">1 helpful vote</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187497-d1597580-r214333574-Hotel_4_Barcelona-Barcelona_Catalonia.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r214333574">&#x201c;<span class='noQuotes'>Ok for the price</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate">Reviewed 8 July 2014
+</span>
+</div>
+<div class="entry">
+<p>
+We booked well in advance so got £60 per night. Staff are really friendly but I would expect more from a 4 star hotel. There is no iron in the room, the air con takes an age to kick in and toiletries were never replenished but they were when it was pointed out to staff. <br/><br/>Did not book breakfast so can't comment on that. <br/><br/>Good location for the beach with easy access to the Metro for city centre travelling
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed July 2014, travelled with friends</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq214333574_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq214333574 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkdAkqHMUoAkovKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXvUdk36XoXfXXm3UkXmo6XoXfXXXAmUvXU6XoXfXXXU3kmK36XoXfXXKdkKKkd6XoXfXUoUvU3vd6XoXfXUoUdoddU6XoXfXUdvkd3Km6XoXfXUd33moKU6XoXfXUdmmmokdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXvUdk3qHqWQQoqnQQdQQoqnQQ7JEnVciCJqH7JEnVciCJQQoqnQQfJIJciCSJxiGIac6XoXmqoTpcXUdmmmokd0tEn1XUdmmmokd0zH1UvkdAk0pSM1XvzszsvoKbXzsd3fKxMbAobKvX3xMXfmokXmK0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_214333574" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '214333574'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/204grahamc/g187497" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 3 reviews by Graham C for Barcelona </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1597580', 'Graham C', '28EE850A2E46C0DA95A0826D2C357230', 'en', '214333574', 'Hotel 4 Barcelona');">Ask Graham C about Hotel 4 Barcelona</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Pascual M, Gerente at Hotel 4 Barcelona, responded to this review,
+<span class="res_date" title='14 August 2014'>12 July 2014</span>
+</div>
+<div class="displayText" id="response_214333574">
+Dear Guest, First of all we would like to thank you for your review. We consider our customers´ feedback very important to improve the service of our hotel. Yours sincerely, Pilar Aso Hotel Manager Hotel 4 Barcelona
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_214935781" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:214935781, isGeo:false, locationid:1597580})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_214935781" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_214935781">
+<a name="UR214935781"></a>
+<div id="UR214935781" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187497-d1597580-r214935781-Hotel_4_Barcelona-Barcelona_Catalonia.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r214935781">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate">Reviewed 12 July 2014
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest, First of all we would like to thank you for your review. We consider our customers´ feedback very important to improve the service of our hotel. Yours sincerely, Pilar Aso Hotel Manager Hotel 4 Barcelona
+</p>
+</div>
+<div id="helpfulq214935781_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq214935781 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkdAkqHMUoAkovKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdXvUdk36XoXfXXm3UkXmo6XoXfXXXAmUvXU6XoXfXXXU3kmK36XoXfXXKdkKKkd6XoXfXUoUvU3vd6XoXfXUoUdoddU6XoXfXUdvkd3Km6XoXfXUd33moKU6XoXfXUdmmmokdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdXvUdk3qHqWQQoqnQQdQQoqnQQ7JEnVciCJqH7JEnVciCJQQoqnQQfJIJciCSJxiGIac6XoXmqoTpcXUdAmokvU0tEn1XUdAmokvU0zH1UvkdAk0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_214935781" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '214935781'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>

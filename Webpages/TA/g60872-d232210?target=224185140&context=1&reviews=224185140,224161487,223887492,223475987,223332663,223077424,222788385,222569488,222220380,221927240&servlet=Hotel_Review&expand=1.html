@@ -1,0 +1,1142 @@
+<div id="expanded_review_224185140">
+<a name="UR224185140"></a>
+<div id="UR224185140" class="extended provider0 first newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_6DD8CEDB3C8A8B3F3837507951E3274B-SRC_224185140" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_6DD8CEDB3C8A8B3F3837507951E3274B ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: '6DD8CEDB3C8A8B3F3837507951E3274B'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-o/05/3c/f6/d0/sbnixie.jpg" class="avatar potentialFacebookAvatar avatarGUID:6DD8CEDB3C8A8B3F3837507951E3274B" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_6DD8CEDB3C8A8B3F3837507951E3274B" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">sbnixie</span>
+</div>
+</div>
+<div class="location">
+Freehold, NJ
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_6DD8CEDB3C8A8B3F3837507951E3274B-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="37 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">37 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">12 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '6DD8CEDB3C8A8B3F3837507951E3274B', screenName: 'sbnixie', geos: [52787, 60872, 46521, 147247, 48416, 60978, 58202, 60745, 53315, 46551, 31352, 57821, 54069, 147350, 499450, 34515, 58313, 147249, 60798, 28970, 46890, 45963], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 22 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 22 cities</span> </div>
+<div id="UID_6DD8CEDB3C8A8B3F3837507951E3274B-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="41 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">41 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d232210-r224185140-Kona_Coast_Resort-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224185140">&#x201c;<span class='noQuotes'>Great resort in a great location</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+This was my first visit to Hawaii, and I was able to exchange my timeshare to Kona. The resort is along the ocean, but there is no beach access. The beach is a 5 minute drive or 15 minute walk from the resort. We were in phase 2 and near the pool /fitness center. Our room was on the 2nd floor (which we did not mind) and facing the adjacent golf course (no ocean view). It was still peaceful and beautiful. The unit was a one bedroom with 2 bathrooms. It was clean and well maintained. The sofa bed's mattress was a bit thin and sloped into the middle. Not so good if 2 people had to sleep in it. TV in the bedroom is very small (more like a computer monitor). There is a larger TV in the living room. Kitchen utensils/dishware were good. There is a washer and dryer in the unit. They provide dish soap and laundry detergent. The only issue we had was a smoker in the adjacent unit (drifting onto our balcony). We had to close the balcony door. They charge $8-$9 a day for air conditioning (more for bigger units).There is a state occupancy tax as well ($4-$5 a day). We did fine with just the fans in the unit. Landscape is beautifully maintained. The location is close to the Kona coffee farms. I recommend going to the local Walmart for food, as the supermarket across the way is a bit expensive. There is a nice French coffee shop in the mall across the way (Peaberry and Gallette) that serves good coffee and excellent crepes. Check out the sunsets from any of the beaches on Ali'i drive. You won't be disappointed.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224185140_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224185140 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXmXXUKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUvoUdK6XoXfXXdU3Udvk6XoXfXXmvvkdAX6XoXfXXmdkoAvk6XoXfXXmmmX33m6XoXfXXmKkkdXd6XoXfXXXkvvmvo6XoXfXXXo3Advv6XoXfXXXXXKmvK6XoXfXXUAXkXdKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUvoUdKqHxbiCJQQoqnQQfiJtIQQoqnQQeVtiEIqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXdUvoUdK0tEn1XXdUvoUdK0zH13KvkX0pSM13xMxMvfzsxM7mfvbv7mqnmvmkoKkAoUzsmXkd70EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224185140" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224185140'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '232210', 'sbnixie', '6DD8CEDB3C8A8B3F3837507951E3274B', 'en', '224185140', 'Kona Coast Resort');">Ask sbnixie about Kona Coast Resort</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_224161487">
+<a name="UR224161487"></a>
+<div id="UR224161487" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_943CC7EB6C09683CB5240BB9F88A2022-SRC_224161487" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_943CC7EB6C09683CB5240BB9F88A2022 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/87/avatar008.jpg" class="avatar potentialFacebookAvatar avatarGUID:943CC7EB6C09683CB5240BB9F88A2022" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_943CC7EB6C09683CB5240BB9F88A2022" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">chi_dave</span>
+</div>
+</div>
+<div class="location">
+Chicago, Illinois
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_943CC7EB6C09683CB5240BB9F88A2022-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="24 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">24 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">3 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '943CC7EB6C09683CB5240BB9F88A2022', screenName: 'chi_dave', geos: [60872, 36525, 60607, 60590, 50226, 50360, 2219999, 60596, 36396, 36577, 1007318, 35805], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 12 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 12 cities</span> </div>
+<div id="UID_943CC7EB6C09683CB5240BB9F88A2022-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="1 helpful vote" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">1 helpful vote</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d232210-r224161487-Kona_Coast_Resort-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224161487">&#x201c;<span class='noQuotes'>Very Nice</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+We had a one bedroom condo unit (exchange) on the second floor, there are 8 or so steps leading to this unit (no elevators on the property - however the resort did call a week or so before our arrival to inquire if anyone in our party was unable to walk up stairs). The unit was pretty spacious, plenty of room to spread out. The loveseat and couch could have been a bit more comfortable, but for a week it was fine (the large pillows helped). The unit had everything we needed. There is a charge for air conditioning, and they also charge rentals for beach gear use, but overall I thought it was a pretty nice place.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224161487_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224161487 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXmXXUKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUvoUdK6XoXfXXdU3Udvk6XoXfXXmvvkdAX6XoXfXXmdkoAvk6XoXfXXmmmX33m6XoXfXXmKkkdXd6XoXfXXXkvvmvo6XoXfXXXo3Advv6XoXfXXXXXKmvK6XoXfXXUAXkXdKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUvoUdKqHxbiCJQQoqnQQfiJtIQQoqnQQeVtiEIqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXdU3Udvk0tEn1XXdU3Udvk0zH13KvkX0pSM1Admffkzs73fKA3vmf7oXdK77AqnvvbXKXX0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224161487" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224161487'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/chi_dave/g60872" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 4 reviews by chi_dave for Kailua-Kona </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '232210', 'chi_dave', '943CC7EB6C09683CB5240BB9F88A2022', 'en', '224161487', 'Kona Coast Resort');">Ask chi_dave about Kona Coast Resort</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223887492">
+<a name="UR223887492"></a>
+<div id="UR223887492" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_ADF5E45616D3B7F46EC3DCE230725730-SRC_223887492" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_ADF5E45616D3B7F46EC3DCE230725730 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/6f/avatar052.jpg" class="avatar potentialFacebookAvatar avatarGUID:ADF5E45616D3B7F46EC3DCE230725730" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_ADF5E45616D3B7F46EC3DCE230725730" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">maxi51</span>
+</div>
+</div>
+<div class="location">
+Los Angeles
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_ADF5E45616D3B7F46EC3DCE230725730-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="23 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">23 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">6 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'ADF5E45616D3B7F46EC3DCE230725730', screenName: 'maxi51', geos: [29217, 60872, 294305, 60623, 45953, 57119, 45978, 45963, 33224, 32491], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 10 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 10 cities</span> </div>
+<div id="UID_ADF5E45616D3B7F46EC3DCE230725730-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="15 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">15 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d232210-r223887492-Kona_Coast_Resort-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223887492">&#x201c;<span class='noQuotes'>Good location</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+I am a veteran traveler and own timeshares around the US and Hawaii. The one bedroom condo was spacious and well equipped. However, I found it totally frustrating that I had to sign out for only<br/>2 beach towels.. They constantly ran out. When I wanted to exchange 2 towels in the middle of the day,they were out. We had many issues with the dryer in our unit and finally after calling maintenance, we had to shut off the circuit breaker. There was no directory in the unit, so we had to keep asking where markets were, restaurants, etc. We had arrived late in the evening and requested a ground floor unit...HAH, we had two flights of stairs to descend... Nothing else was available. The Carpet is outdated, the TV in the bedroom was old and who uses a boombox?<br/>The WI-fi was very reliable. Can you imagine that They even charged you for AC ?
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> This is a condo not a hotel. There are over 200 condos of different sizes. I couldn&#39;t
+Really co...
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223887492_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223887492 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXmXXUKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUvoUdK6XoXfXXdU3Udvk6XoXfXXmvvkdAX6XoXfXXmdkoAvk6XoXfXXmmmX33m6XoXfXXmKkkdXd6XoXfXXXkvvmvo6XoXfXXXo3Advv6XoXfXXXXXKmvK6XoXfXXUAXkXdKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUvoUdKqHxbiCJQQoqnQQfiJtIQQoqnQQeVtiEIqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXmvvkdAX0tEn1XXmvvkdAX0zH13KvkX0pSM1bxMqnozsdo3U3xMm7kqnd3zsfmxMfzsXmKkXokmK0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223887492" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223887492'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/maxi51/g60872" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 3 reviews by maxi51 for Kailua-Kona </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '232210', 'maxi51', 'ADF5E45616D3B7F46EC3DCE230725730', 'en', '223887492', 'Kona Coast Resort');">Ask maxi51 about Kona Coast Resort</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223475987">
+<a name="UR223475987"></a>
+<div id="UR223475987" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_8A64EDB8A3FBEE25F09B61169A5362A0-SRC_223475987" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_8A64EDB8A3FBEE25F09B61169A5362A0 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/41/d6/d0/steve-w.jpg" class="avatar potentialFacebookAvatar avatarGUID:8A64EDB8A3FBEE25F09B61169A5362A0" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_8A64EDB8A3FBEE25F09B61169A5362A0" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Steve W</span>
+</div>
+</div>
+<div class="location">
+Shreveport, Louisiana
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_8A64EDB8A3FBEE25F09B61169A5362A0-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="33 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">33 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">5 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '8A64EDB8A3FBEE25F09B61169A5362A0', screenName: 'Steve W', geos: [60872, 40424, 32676, 55711, 152516, 60864, 33093, 40314, 34345, 152515], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 10 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 10 cities</span> </div>
+<div id="UID_8A64EDB8A3FBEE25F09B61169A5362A0-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="7 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">7 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d232210-r223475987-Kona_Coast_Resort-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223475987">&#x201c;<span class='noQuotes'>Great view of golf course and ocean</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 1 week ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Great 2 bedroom suites, full kitchen and washer dryer, coming down the hill is a cutout to watch sunsets near property-fantantistic- close to shopping and local beaches- Kona has a flea market on weekends-- great place for fruit and flowers-- Wyland has gallery near by, cool pieces of Art, volcano and state park are about 1-2 hour drive from property, make sure and take a jacket it can get cold and rainy at that elevation
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Request a ocean view
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed November 2013, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223475987_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223475987 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXmXXUKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUvoUdK6XoXfXXdU3Udvk6XoXfXXmvvkdAX6XoXfXXmdkoAvk6XoXfXXmmmX33m6XoXfXXmKkkdXd6XoXfXXXkvvmvo6XoXfXXXo3Advv6XoXfXXXXXKmvK6XoXfXXUAXkXdKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUvoUdKqHxbiCJQQoqnQQfiJtIQQoqnQQeVtiEIqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXmdkoAvk0tEn1XXmdkoAvk0zH13KvkX0pSM1vb3dzsxM7vbmqn7zszsXoqnKA73UU3Abom3XbK0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223475987" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223475987'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '232210', 'Steve W', '8A64EDB8A3FBEE25F09B61169A5362A0', 'en', '223475987', 'Kona Coast Resort');">Ask Steve W about Kona Coast Resort</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223332663">
+<a name="UR223332663"></a>
+<div id="UR223332663" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_F687EA5C40F44DC0AF5A548D1D3BE860-SRC_223332663" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_F687EA5C40F44DC0AF5A548D1D3BE860 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/6b/avatar049.jpg" class="avatar potentialFacebookAvatar avatarGUID:F687EA5C40F44DC0AF5A548D1D3BE860" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_F687EA5C40F44DC0AF5A548D1D3BE860" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">onlyharley</span>
+</div>
+</div>
+<div class="location">
+California
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_F687EA5C40F44DC0AF5A548D1D3BE860-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+<div id="UID_F687EA5C40F44DC0AF5A548D1D3BE860-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="1 helpful vote" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">1 helpful vote</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d232210-r223332663-Kona_Coast_Resort-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223332663">&#x201c;<span class='noQuotes'>First timers here</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+We exchanged our home resort in Kauai to this one on the Big Island. The gal from the office phoned me approximately 2 weeks before arrival to confirm everything. I had done my own homework on the buildings and units and requested if possible the newer buildings, a ground level unit,(due to me being on a cane) and a oceanview if at all possible..oh and close to the pool. To our surprise we were granted everything. We walked into the unit which was nice and cool, clean and presented very well. The table was set for 4 with wine glasses. Now I could imagine that this was done to possibly be interested in purchasing a time share with them but we own 3 already and made this clear upon going to the orientation the next day. I do have to say that they presented with a welcome bag, postcards, keychain..but there was also extra coffee like other places but interestingly there was a bag of popcorn and a small packet of lemonade. We reserved a 1 bedroom with a sofa bed for our son. It worked out perfectly. The main bedroom was great! Bed nice and comfy everything was clean, carpets were clean, we walked first with our socks as in any place, floors were tile and clean. Other than needing to request an iron and more tp which apparently should have been placed in the unit....our week here was wonderful and comfortable. The bar is small but cozie. The main pool was great. The staff was nice and courteous...I would definatley stay here again!!! ( the only bad thing was the nosie from the Koki Frog)
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> We had requested the part of the units that were newer....we were in buidling 25
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223332663_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223332663 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXmXXUKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUvoUdK6XoXfXXdU3Udvk6XoXfXXmvvkdAX6XoXfXXmdkoAvk6XoXfXXmmmX33m6XoXfXXmKkkdXd6XoXfXXXkvvmvo6XoXfXXXo3Advv6XoXfXXXXXKmvK6XoXfXXUAXkXdKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUvoUdKqHxbiCJQQoqnQQfiJtIQQoqnQQeVtiEIqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXmmmX33m0tEn1XXmmmX33m0zH13KvkX0pSM1qn3vkzsbofdKqnddxMfKbqnobodvxMUxMm7zsv3K0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223332663" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223332663'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '232210', 'onlyharley', 'F687EA5C40F44DC0AF5A548D1D3BE860', 'en', '223332663', 'Kona Coast Resort');">Ask onlyharley about Kona Coast Resort</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223077424">
+<a name="UR223077424"></a>
+<div id="UR223077424" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_EBBD78AA99AE6F81A64DF43868677395-SRC_223077424" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_EBBD78AA99AE6F81A64DF43868677395 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9d/avatar068.jpg" class="avatar potentialFacebookAvatar avatarGUID:EBBD78AA99AE6F81A64DF43868677395" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_EBBD78AA99AE6F81A64DF43868677395" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">funtotravel4926</span>
+</div>
+</div>
+<div class="location">
+Laguna Niguel, California
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_EBBD78AA99AE6F81A64DF43868677395-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="33 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">33 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">9 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'EBBD78AA99AE6F81A64DF43868677395', screenName: 'funtotravel4926', geos: [60634, 32999, 60872, 55229, 198563, 60626, 188590, 754479, 580462, 562790, 60750, 60616, 60623, 60621, 32389, 187286, 187291, 60613], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 18 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 18 cities</span> </div>
+<div id="UID_EBBD78AA99AE6F81A64DF43868677395-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="14 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">14 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d232210-r223077424-Kona_Coast_Resort-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223077424">&#x201c;<span class='noQuotes'>We&#39;ll maintained property</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='20 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+This is our third time staying at this property, we are every other year owners. Log at some of the comments this property might be a little &quot;dated&quot; but everything is always well maintained. Most recent visit, I like the buildings close to the pool, only thing is next time I would ask for a second floor unit, could hear the people above us walking around. Glad to see the restaurant back in operation. Only wish the pool was a little bigger
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223077424_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223077424 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXmXXUKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUvoUdK6XoXfXXdU3Udvk6XoXfXXmvvkdAX6XoXfXXmdkoAvk6XoXfXXmmmX33m6XoXfXXmKkkdXd6XoXfXXXkvvmvo6XoXfXXXo3Advv6XoXfXXXXXKmvK6XoXfXXUAXkXdKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUvoUdKqHxbiCJQQoqnQQfiJtIQQoqnQQeVtiEIqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXmKkkdXd0tEn1XXmKkkdXd0zH13KvkX0pSM1zs77xMkvbbAAbzs3qnvUb3dxMqndmv3v3kkmAo0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223077424" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223077424'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/funtotravel4926/g60872" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 4 reviews by funtotravel4926 for Kailua-Kona </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '232210', 'funtotravel4926', 'EBBD78AA99AE6F81A64DF43868677395', 'en', '223077424', 'Kona Coast Resort');">Ask funtotravel4926 about Kona Coast Resort</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222788385">
+<a name="UR222788385"></a>
+<div id="UR222788385" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_23DF50EE00AEF2FC21F32915BA9376D0-SRC_222788385" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_23DF50EE00AEF2FC21F32915BA9376D0 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-o/05/13/b9/02/paul-s.jpg" class="avatar potentialFacebookAvatar avatarGUID:23DF50EE00AEF2FC21F32915BA9376D0" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_23DF50EE00AEF2FC21F32915BA9376D0" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Paul S</span>
+</div>
+</div>
+<div class="location">
+Winter Haven, Florida, United States
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_23DF50EE00AEF2FC21F32915BA9376D0-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="41 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">41 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '23DF50EE00AEF2FC21F32915BA9376D0', screenName: 'Paul S', geos: [60634, 60872, 60588, 30709, 60607, 60639, 34746, 60596, 34680, 60864, 60941], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 11 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 11 cities</span> </div>
+<div id="UID_23DF50EE00AEF2FC21F32915BA9376D0-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="19 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">19 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d232210-r222788385-Kona_Coast_Resort-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222788385">&#x201c;<span class='noQuotes'>Excellent location to relax and enjoy the Big Island.</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='19 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+We stayed at the Kona Coast Resort II as a timeshare exchange. Could not have asked for better. Great location, very clean and had everything that we needed. Air conditioning is an additional $8.50 per day but this is the norm for most timeshare resorts in Hawaii. Be mindful the electricity is very expensive in HI. A studio apartment can run $350.00 per month for electricity. We were in building 25 - room 204. It overlooked the golf course but could still see the ocean. Had a variety of colorful birds on our lanai every morning. While the units are not new, there was nothing broken or falling apart. Had an old style CRT tv in the living room and a new flat screen in the bed room. Washer/dryer in unit. Staff was very friendly and helpful. Plenty of parking with shopping close by. Would book this location again in a heart beat.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Building 25, 26 &amp; 27 are best. 2nd or 3rd floor.
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222788385_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222788385 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXmXXUKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUvoUdK6XoXfXXdU3Udvk6XoXfXXmvvkdAX6XoXfXXmdkoAvk6XoXfXXmmmX33m6XoXfXXmKkkdXd6XoXfXXXkvvmvo6XoXfXXXo3Advv6XoXfXXXXXKmvK6XoXfXXUAXkXdKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUvoUdKqHxbiCJQQoqnQQfiJtIQQoqnQQeVtiEIqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXXkvvmvo0tEn1XXXkvvmvo0zH13KvkX0pSM1XmxMqnoKzszsKKbzsqnXqnfXUqnmXAUo7bAmk3xMK0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222788385" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222788385'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/N9816THpauls/g60872" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 4 reviews by Paul S for Kailua-Kona </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '232210', 'Paul S', '23DF50EE00AEF2FC21F32915BA9376D0', 'en', '222788385', 'Kona Coast Resort');">Ask Paul S about Kona Coast Resort</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222569488">
+<a name="UR222569488"></a>
+<div id="UR222569488" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_80DDE55274B2F01DB2816D76EA2BFCAA-SRC_222569488" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_80DDE55274B2F01DB2816D76EA2BFCAA ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/6b/04/42/jose-p.jpg" class="avatar potentialFacebookAvatar avatarGUID:80DDE55274B2F01DB2816D76EA2BFCAA" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_80DDE55274B2F01DB2816D76EA2BFCAA" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Jose P</span>
+</div>
+</div>
+<div class="location">
+Oxnard, California
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_80DDE55274B2F01DB2816D76EA2BFCAA-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="6 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">6 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">3 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '80DDE55274B2F01DB2816D76EA2BFCAA', screenName: 'Jose P', geos: [60872, 31805, 32915, 60583], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 4 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 4 cities</span> </div>
+<div id="UID_80DDE55274B2F01DB2816D76EA2BFCAA-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="10 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">10 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d232210-r222569488-Kona_Coast_Resort-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222569488">&#x201c;<span class='noQuotes'>Broken promises and lies</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s10" src="http://c1.tacdn.com/img2/x.gif" alt="1 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='18 August 2014'>Reviewed 1 week ago
+</span>
+<a class="viaMobile sprite-grayPhone" href="/apps" target="_blank" onclick="ta.util.cookie.setPIDCookie(24687)">via mobile</a>
+</div>
+<div class="entry">
+<p>
+The booking description stays that free internet is included, but they fail to says that the signal is null or at best sluggish like dial up speed. <br/>The access is really hard and to exit the complex is about 10 min to civilization. <br/>Obsolete furniture and stinky silverware. <br/>A d very old TV like those big ones was in the bed room. <br/>I booked two bed and instead they assigned me a one bed and one sofa &quot;bed&quot; for my son. I ended up sleeping in the same bed with my son. <br/>I'm a business person that really use the online services and having not connection really affect my stay . <br/>The price was $180 a night, for that much or even less I could had stayed in another place with blazing fast internet access. <br/>I DO NOT RECOMMEND THIS PLACE, go else where. Bunch of lies. <br/>Unfortunately the hotels experiences that I have in Hawaii is the same of lies and broken deals where they offer a service when you book and you get something else.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss20" src="http://c1.tacdn.com/img2/x.gif" alt="2 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss10" src="http://c1.tacdn.com/img2/x.gif" alt="1 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss20" src="http://c1.tacdn.com/img2/x.gif" alt="2 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss10" src="http://c1.tacdn.com/img2/x.gif" alt="1 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222569488_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222569488 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXmXXUKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUvoUdK6XoXfXXdU3Udvk6XoXfXXmvvkdAX6XoXfXXmdkoAvk6XoXfXXmmmX33m6XoXfXXmKkkdXd6XoXfXXXkvvmvo6XoXfXXXo3Advv6XoXfXXXXXKmvK6XoXfXXUAXkXdKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUvoUdKqHxbiCJQQoqnQQfiJtIQQoqnQQeVtiEIqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXXo3Advv0tEn1XXXo3Advv0zH13KvkX0pSM1vKxMxMzsooXkd7XqnKUxM7XvU3xMk3zsbX7qnfbb0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222569488" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222569488'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '232210', 'Jose P', '80DDE55274B2F01DB2816D76EA2BFCAA', 'en', '222569488', 'Kona Coast Resort');">Ask Jose P about Kona Coast Resort</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222220380">
+<a name="UR222220380"></a>
+<div id="UR222220380" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_266B5542C7127215BC09FCE40A0E2974-SRC_222220380" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_266B5542C7127215BC09FCE40A0E2974 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/04/77/d2/7e/jamy-f.jpg" class="avatar potentialFacebookAvatar avatarGUID:266B5542C7127215BC09FCE40A0E2974" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_266B5542C7127215BC09FCE40A0E2974" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Jamy F</span>
+</div>
+</div>
+<div class="location">
+Philadelphia, Pennsylvania
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_266B5542C7127215BC09FCE40A0E2974-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">4 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">3 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '266B5542C7127215BC09FCE40A0E2974', screenName: 'Jamy F', geos: [60872, 60745, 34515, 34345], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 4 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 4 cities</span> </div>
+<div id="UID_266B5542C7127215BC09FCE40A0E2974-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="8 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">8 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d232210-r222220380-Kona_Coast_Resort-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222220380">&#x201c;<span class='noQuotes'>Great place to relax and enjoy</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='17 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+This resort has plenty to offer for everyone. Family's having reunions or just on vacation, couple's on vacation or adventures of all kinds will find this location and amenities to be perfect. It has been taken over by the Wyndham recently and they are in the process of improving the golf course and minor cosmetic's on the ground's and is about 20 minutes from the airport. The villas are comfortable and quiet and the view from our 3rd floor unit in bldg 27 was on the golf course and great for sunsets over the ocean. Plenty of parking and the grounds were very well kept. The restaurant was located pool side that served food and drinks all day long with nice sized portions. We did encounter one flaw with a activities and informational staff who was a bit on the grumpy side and somewhat negative but didn't stop us from going through with our plans and got us to where we were looking to go. <br/>We ventured to the Green &amp; Black sand beaches which were approximately a hour and a half from the resort and well worth the drive. FYI you need to hike in about 2.5 miles along a dusty road to reach the green sand beach or in our case we rented a jeep and 4 wheeled it in which was a adventure in it's self. Next to the Green sand beach is the Southern most Point where people jump off a 50' cliff into crystal clear blue water and or into a adjacent swim hole and the climb up the metal ladder on the cliff side adds too the thrill. We stopped in on some road side coffee stores and into the Volcano National Park and back to the resort. It was a full day excursion and the park is open on specific days only.<br/>The coast side town of Kailua-Kona is only a 10 minute drive north and has a ton of restaurant's, shops of all types and resorts that give you evening entertainment for several nights. If your a micro brew fan you must visit the Kona Brewing Co. for great beer, food, atmosphere and gifts. <br/>Fun town and a ton of history to be seen on this island. We will be back to make it to the top of Mauna Kea to experience the milkey way and a spectacular sun set at almost 14,000 ft with a average temp of 30°.<br/>Aloha!
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Golf course ocean side 2nd or 3rd floors.
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222220380_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222220380 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXmXXUKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUvoUdK6XoXfXXdU3Udvk6XoXfXXmvvkdAX6XoXfXXmdkoAvk6XoXfXXmmmX33m6XoXfXXmKkkdXd6XoXfXXXkvvmvo6XoXfXXXo3Advv6XoXfXXXXXKmvK6XoXfXXUAXkXdKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUvoUdKqHxbiCJQQoqnQQfiJtIQQoqnQQeVtiEIqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXXXXKmvK0tEn1XXXXXKmvK0zH13KvkX0pSM1X337oodXfkUXkXUo7fKAqnfzsdKbKzsXAkd0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222220380" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222220380'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '232210', 'Jamy F', '266B5542C7127215BC09FCE40A0E2974', 'en', '222220380', 'Kona Coast Resort');">Ask Jamy F about Kona Coast Resort</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221927240">
+<a name="UR221927240"></a>
+<div id="UR221927240" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_E97DB085200100DF5E5A3D8D4636DAE9-SRC_221927240" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_E97DB085200100DF5E5A3D8D4636DAE9 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/7a/avatar061.jpg" class="avatar potentialFacebookAvatar avatarGUID:E97DB085200100DF5E5A3D8D4636DAE9" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_E97DB085200100DF5E5A3D8D4636DAE9" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Edward R</span>
+</div>
+</div>
+<div class="location">
+los angeles, United States
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_E97DB085200100DF5E5A3D8D4636DAE9-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="5 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">5 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">3 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'E97DB085200100DF5E5A3D8D4636DAE9', screenName: 'Edward R', geos: [60872, 60878, 32171], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 3 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 3 cities</span> </div>
+<div id="UID_E97DB085200100DF5E5A3D8D4636DAE9-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">3 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d232210-r221927240-Kona_Coast_Resort-Kailua_Kona_Island_of_Hawaii_Hawaii.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221927240">&#x201c;<span class='noQuotes'>We loved it!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='15 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+My wife and I, with our nine year old daughter, stayed in the Kona Coast Resort for a week and we were absolutely pleased. We had a top (3rd) floor two bedroom two bath suite that was huge. Vaulted ceilings, a private lanai, beautiful furnishings, a complete and fully stocked kitchen, free wifi, three televisions, etc etc. I had read other reviews prior to arriving and was apprehensive, but no worries, it does not disappoint. The room and the grounds were very clean and well maintained, the pool always had lounge chairs available, the 24-hour front desk was quick to respond to all requests. Our suite was wonderfully quiet and private, with a golf course and mountain view. We took advantage of the hula lessons, the flower lei making, and the fitness rooms, plus free loans of beach balls and games. Yes, there was an optional charge of $11/day for the air conditioning, we decided that we needed it, no big deal especially when considering there is no silly &quot;resort fee&quot; added here, and even the parking is free of charge.<br/>I would not hesitate to stay here again, and would certainly recommend it as a quality place to stay while in the Kona area. Not a single complaint from me.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Take a top floor room, feels twice as large with the raised ceilings.
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221927240_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221927240 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMXmXXUKqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdUvoUdK6XoXfXXdU3Udvk6XoXfXXmvvkdAX6XoXfXXmdkoAvk6XoXfXXmmmX33m6XoXfXXmKkkdXd6XoXfXXXkvvmvo6XoXfXXXo3Advv6XoXfXXXXXKmvK6XoXfXXUAXkXdKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdUvoUdKqHxbiCJQQoqnQQfiJtIQQoqnQQeVtiEIqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXUAXkXdK0tEn1XXUAXkXdK0zH13KvkX0pSM1zsAkxM7KvoXKKUKKxMqnozsobmxMvxMd3m3xMbzsA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221927240" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221927240'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/57edwardr/g60872" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 3 reviews by Edward R for Kailua-Kona </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '232210', 'Edward R', 'E97DB085200100DF5E5A3D8D4636DAE9', 'en', '221927240', 'Kona Coast Resort');">Ask Edward R about Kona Coast Resort</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>

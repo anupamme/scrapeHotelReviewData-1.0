@@ -1,0 +1,1117 @@
+<div id="expanded_review_224049181">
+<a name="UR224049181"></a>
+<div id="UR224049181" class="extended provider0 first newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_2C465B600DEB8D5423A7FFE78136FB0E-SRC_224049181" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_2C465B600DEB8D5423A7FFE78136FB0E ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: '2C465B600DEB8D5423A7FFE78136FB0E'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/91/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:2C465B600DEB8D5423A7FFE78136FB0E" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_2C465B600DEB8D5423A7FFE78136FB0E" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Missyjf</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_2C465B600DEB8D5423A7FFE78136FB0E-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="11 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">11 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">11 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '2C465B600DEB8D5423A7FFE78136FB0E', screenName: 'Missyjf', geos: [31231, 1184698, 60811, 147312, 29750, 186338, 154998, 34636, 41298], geo: '34636' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 9 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 9 cities</span> </div>
+<div id="UID_2C465B600DEB8D5423A7FFE78136FB0E-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="12 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">12 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g34636-d1978545-r224049181-Hyatt_Siesta_Key_Beach_Resort_A_Hyatt_Residence_Club-Siesta_Key_Florida.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224049181">&#x201c;<span class='noQuotes'>Awesome, again!!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Our family had such a great experience at the Hyatt last July we just had to return. We love it here and feel so welcomed. The staff is wonderful and caring you have a good vacation. If there is anything you need they will take care of it. The suites and property is beautiful and well maintained. The beach is the best and not crowded. We will be back. Thank you!
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224049181_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224049181 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymd3m3qHMUAkvodoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKdAUvU6XoXfXXmAdkKmo6XoXfXXXkA3dU36XoXfXUAmUXKXo6XoXfXUAUUvAAk6XoXfXUvdXkvom6XoXfXUkov3doU6XoXfXUkdoUdvm6XoXfXUkK3UvmA6XoXfXU3v3oUoAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKdAUvUqH5gJIIQQoqnQQhSVtIJQQoqnQQxbVgQQoqnQQ7VJnGQQoqnQQeVtiEIQQoqnQQbQQoqnQQ5gJIIQQoqnQQeVtSMVCnVQQoqnQQfcpHqHhSVtIJQQoqnQQxbVgQQoqnQQqnciESMJxiGIac6XoXmqoTpcXXdKdAUvU0tEn1XXdKdAUvU0zH1md3m30pSM1Xfd3o73KKxMzs7vxModXmbkqnqnzskvUm3qn7Kzs0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224049181" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224049181'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1978545', 'Missyjf', '2C465B600DEB8D5423A7FFE78136FB0E', 'en', '224049181', 'Hyatt Siesta Key Beach Resort, A Hyatt Residence Club');">Ask Missyjf about Hyatt Siesta Key Beach Resort, A Hyatt Residence Club</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class='duplicateReviewsInline'>
+<div class='previous'>Missyjf has 1 more review of Hyatt Siesta Key Beach Resort, A Hyatt Residence Club</div>
+<ul class='dupReviews'>
+<li class="dupReviewItem">
+<div class='reviewTitle'>
+<a href="/ShowUserReviews-g34636-d1978545-r170365266-Hyatt_Siesta_Key_Beach_Resort_A_Hyatt_Residence_Club-Siesta_Key_Florida.html#REVIEWS">&#x201c;Fabulous family vacation&#x201d;</a>
+</div>
+<div class='rating'>
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="date">Reviewed 2 August 2013</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_223947035">
+<a name="UR223947035"></a>
+<div id="UR223947035" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_0C3B12DD7BA2A7C28DE97CC5A0195678-SRC_223947035" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_0C3B12DD7BA2A7C28DE97CC5A0195678 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/04/24/0a/68/palisadesgirl-m.jpg" class="avatar potentialFacebookAvatar avatarGUID:0C3B12DD7BA2A7C28DE97CC5A0195678" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_0C3B12DD7BA2A7C28DE97CC5A0195678" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">PalisadesGirl M</span>
+</div>
+</div>
+<div class="location">
+Wichita, Kansas
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_0C3B12DD7BA2A7C28DE97CC5A0195678-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="29 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">29 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">11 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '0C3B12DD7BA2A7C28DE97CC5A0195678', screenName: 'PalisadesGirl M', geos: [55197, 60636, 44574, 44844, 34618, 609129, 56003, 60933, 44535, 31582, 44160, 34515, 60885, 147249, 34636, 45963], geo: '34636' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 16 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 16 cities</span> </div>
+<div id="UID_0C3B12DD7BA2A7C28DE97CC5A0195678-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="8 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">8 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g34636-d1978545-r223947035-Hyatt_Siesta_Key_Beach_Resort_A_Hyatt_Residence_Club-Siesta_Key_Florida.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223947035">&#x201c;<span class='noQuotes'>Absolute Perfection!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 3 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Our entire family LOVED every aspect of this beautiful hotel, from the exceptional, friendly customer service by every employee we encountered, to the phenomenal, modern suites that were equipped with every possible feature imaginable to the ideal, relaxing, gorgeous beach setting on beautiful Siesta Key. There is no comparison to any other property on Siesta and the private beach made it that much more perfect as we felt like we had it to ourselves! We had rainy weather several days so the front desk offered us a complimentary PS3 system with 5 games to keep our boys happy. We will definitely be back very soon for another unforgettable vacation...thank you, Hyatt!
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223947035_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223947035 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymd3m3qHMUAkvodoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKdAUvU6XoXfXXmAdkKmo6XoXfXXXkA3dU36XoXfXUAmUXKXo6XoXfXUAUUvAAk6XoXfXUvdXkvom6XoXfXUkov3doU6XoXfXUkdoUdvm6XoXfXUkK3UvmA6XoXfXU3v3oUoAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKdAUvUqH5gJIIQQoqnQQhSVtIJQQoqnQQxbVgQQoqnQQ7VJnGQQoqnQQeVtiEIQQoqnQQbQQoqnQQ5gJIIQQoqnQQeVtSMVCnVQQoqnQQfcpHqHhSVtIJQQoqnQQxbVgQQoqnQQqnciESMJxiGIac6XoXmqoTpcXXmAdkKmo0tEn1XXmAdkKmo0zH1md3m30pSM1Kfm7UXxMxMk7bXbkfXvxMzsAkffobKUAo3kv0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223947035" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223947035'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1978545', 'PalisadesGirl M', '0C3B12DD7BA2A7C28DE97CC5A0195678', 'en', '223947035', 'Hyatt Siesta Key Beach Resort, A Hyatt Residence Club');">Ask PalisadesGirl M about Hyatt Siesta Key Beach Resort, A Hyatt Residence Club</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222796416">
+<a name="UR222796416"></a>
+<div id="UR222796416" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_4E80D3D8E601318546316BECADD8309A-SRC_222796416" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_4E80D3D8E601318546316BECADD8309A ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/9a/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:4E80D3D8E601318546316BECADD8309A" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_4E80D3D8E601318546316BECADD8309A" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Melissa K</span>
+</div>
+</div>
+<div class="location">
+New York City, New York
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_4E80D3D8E601318546316BECADD8309A-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="11 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">11 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">5 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '4E80D3D8E601318546316BECADD8309A', screenName: 'Melissa K', geos: [46841, 32172, 46289, 34636], geo: '34636' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 4 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 4 cities</span> </div>
+<div id="UID_4E80D3D8E601318546316BECADD8309A-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="1 helpful vote" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">1 helpful vote</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g34636-d1978545-r222796416-Hyatt_Siesta_Key_Beach_Resort_A_Hyatt_Residence_Club-Siesta_Key_Florida.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222796416">&#x201c;<span class='noQuotes'>Just lovely. Treated like gold. Thank you .</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='19 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+What a wonderful, lovely hotel - even though Hyatt is a chain, you would never know it. We were treated like family from beginning to end. In our travels, customer service is what matters most to me. It was clear that everyone from the manager to the staff were genuinely concerned that we had a happy experience. We met many other guests during their stay, and everyone commented on how lovely the staff was. Thank you! We will be back and will recommend you highly.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Every room we saw was delightful. And it didn&#39;t really matter - all of our friends and family w...
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed March 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222796416_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222796416 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymd3m3qHMUAkvodoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKdAUvU6XoXfXXmAdkKmo6XoXfXXXkA3dU36XoXfXUAmUXKXo6XoXfXUAUUvAAk6XoXfXUvdXkvom6XoXfXUkov3doU6XoXfXUkdoUdvm6XoXfXUkK3UvmA6XoXfXU3v3oUoAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKdAUvUqH5gJIIQQoqnQQhSVtIJQQoqnQQxbVgQQoqnQQ7VJnGQQoqnQQeVtiEIQQoqnQQbQQoqnQQ5gJIIQQoqnQQeVtSMVCnVQQoqnQQfcpHqHhSVtIJQQoqnQQxbVgQQoqnQQqnciESMJxiGIac6XoXmqoTpcXXXkA3dU30tEn1XXXkA3dU30zH1md3m30pSM1dzsvKxMmxMvzs3KUmUvod3mU37zsfbxMxMvmKAb0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222796416" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222796416'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1978545', 'Melissa K', '4E80D3D8E601318546316BECADD8309A', 'en', '222796416', 'Hyatt Siesta Key Beach Resort, A Hyatt Residence Club');">Ask Melissa K about Hyatt Siesta Key Beach Resort, A Hyatt Residence Club</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_219312025">
+<a name="UR219312025"></a>
+<div id="UR219312025" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_EAAA124924D67AC2B6249F6A8BAB9E6E-SRC_219312025" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_EAAA124924D67AC2B6249F6A8BAB9E6E ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/04/47/57/e0/youvegottaread.jpg" class="avatar potentialFacebookAvatar avatarGUID:EAAA124924D67AC2B6249F6A8BAB9E6E" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_EAAA124924D67AC2B6249F6A8BAB9E6E" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Youvegottaread</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_EAAA124924D67AC2B6249F6A8BAB9E6E-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Top Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="71 reviews" class="icon badge_topcontributor sprite-badge_topcontributor" width="25" height="24">
+<span class="badgeText">71 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">5 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'EAAA124924D67AC2B6249F6A8BAB9E6E', screenName: 'Youvegottaread', geos: [34342, 32469, 60814, 37242, 274707, 34747, 34471, 35241, 37035, 32172, 34682, 29168, 34346, 34344, 34618, 37621, 274761, 34515, 34602, 34636], geo: '34636' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 20 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 20 cities</span> </div>
+<div id="UID_EAAA124924D67AC2B6249F6A8BAB9E6E-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="52 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">52 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g34636-d1978545-r219312025-Hyatt_Siesta_Key_Beach_Resort_A_Hyatt_Residence_Club-Siesta_Key_Florida.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r219312025">&#x201c;<span class='noQuotes'>Doesn&#39;t get any better than this</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='4 August 2014'>Reviewed 3 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+What a find!!! My husband found this place for a last-minute getaway. We prefer a condo type set-up versus hotel rooms because we have teens, and when they have their own room they tend to hide. These units are gorgeous. Full gourmet kitchen with Wolf appliances and All-Clad cookware and every high-end gadget you would need. Flat screen TVs. Big balconies. Washer and dryer. Posh bathrooms (have to mention the heated toilet/bidet!). I felt like royalty. The facility has an excellent fitness center, pool and hot tub. There are guys to set up your beach chairs and umbrellas, and there is complementary bicycles, pool cabanas, kayaks, movie rentals. The only downside here is that there are no official dining options onsite, except for lite bites by the pool 12-3, but plenty of local restaurants will deliver, and places within walking distance. This is vacationing in style. We didn't want to leave.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Beach view rooms come at a very steep price. We were in a corner &quot;village view&quot; room whic...
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq219312025_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq219312025 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymd3m3qHMUAkvodoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKdAUvU6XoXfXXmAdkKmo6XoXfXXXkA3dU36XoXfXUAmUXKXo6XoXfXUAUUvAAk6XoXfXUvdXkvom6XoXfXUkov3doU6XoXfXUkdoUdvm6XoXfXUkK3UvmA6XoXfXU3v3oUoAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKdAUvUqH5gJIIQQoqnQQhSVtIJQQoqnQQxbVgQQoqnQQ7VJnGQQoqnQQeVtiEIQQoqnQQbQQoqnQQ5gJIIQQoqnQQeVtSMVCnVQQoqnQQfcpHqHhSVtIJQQoqnQQxbVgQQoqnQQqnciESMJxiGIac6XoXmqoTpcXUAmUXKXo0tEn1XUAmUXKXo0zH1md3m30pSM1zsbbbUXdAXdxM3kbfX73XdAqn3bv7b7Azs3zs0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">6</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_219312025" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '219312025'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/Youvegottaread/g34636" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 4 reviews by Youvegottaread for Siesta Key </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1978545', 'Youvegottaread', 'EAAA124924D67AC2B6249F6A8BAB9E6E', 'en', '219312025', 'Hyatt Siesta Key Beach Resort, A Hyatt Residence Club');">Ask Youvegottaread about Hyatt Siesta Key Beach Resort, A Hyatt Residence Club</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_219118997">
+<a name="UR219118997"></a>
+<div id="UR219118997" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_4CFD75A57BD63C806B2F63948B030321-SRC_219118997" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_4CFD75A57BD63C806B2F63948B030321 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/91/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:4CFD75A57BD63C806B2F63948B030321" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_4CFD75A57BD63C806B2F63948B030321" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Travelsnob22Dallas</span>
+</div>
+</div>
+<div class="location">
+Dallas
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_4CFD75A57BD63C806B2F63948B030321-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Top Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="78 reviews" class="icon badge_topcontributor sprite-badge_topcontributor" width="25" height="24">
+<span class="badgeText">78 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_3rd sprite-badge_hotels_3rd" width="25" height="24">
+<span class="badgeText">29 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '4CFD75A57BD63C806B2F63948B030321', screenName: 'Travelsnob22Dallas', geos: [56260, 55902, 1798615, 34467, 34618, 45956, 33155, 56764, 56691, 56208, 56003, 55879, 56086, 56144, 45963, 155987, 60945, 143028, 60904, 38771, 55870, 56229, 38636, 56577, 56062, 31352, 60956, 51697, 31407, 55711, 30155, 34091, 34515, 34636, 152515], geo: '34636' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 35 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 35 cities</span> </div>
+<div id="UID_4CFD75A57BD63C806B2F63948B030321-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="53 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">53 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g34636-d1978545-r219118997-Hyatt_Siesta_Key_Beach_Resort_A_Hyatt_Residence_Club-Siesta_Key_Florida.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r219118997">&#x201c;<span class='noQuotes'>Simply elegant!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='3 August 2014'>Reviewed 3 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+We stayed in the 2bd Premier Gulf Front condo. It was absolutely gorgeous! 2400 sq ft of pure elegance. The furnishings and amenities were first class! The master bathroom had a huge tub that was open to the master bedroom. The shower had 2 heads and a rain shower. The toilet had a heated seat. The kitchen had Wolf appliances, which sadly we didn't use. There were 3.5 bathrooms which was awesome! All of them had beautiful tiles and furnishings. The views are too die for. The condos are right on the beach. The pool wasn't the greatest but apparently they bought a hotel and tore it down so they had to just refurbish the pool. The sitting areas around the pool were very nice. We enjoyed drinks and snacks while we watched World Cup. The bartender was very cool and made some good drinks. The negative is that they only open 12-5. There is free breakfast every morning which was nice. The workout facility had nice equipment which is a must! The beach is one of nicest I have been to. The sand was cool and felt like flour on your feet. The water was warm and clear. They have free kayaks and paddle boards to use. There is some nice snorkeling right off the resort. I loved the fact that the gate to the beach required our room key so it kept others out. There are some restaurants in walking distance that were good as well. This resort is absolutely gorgeous just needs a restaurant!
+</p>
+</div>
+<div class="media  thumbCols3">
+<div class="thumbnails">
+<div class="photosInline">
+<ul>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g34636-d1978545-i105715188-r219118997-Hyatt_Siesta_Key_Beach_Resort_A_Hyatt_Residence_Club-Siesta_Ke.html#105715188 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 1978545, 34636, 2, 105715188);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/4d/15/f4/pool-area.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g34636-d1978545-i105715118-r219118997-Hyatt_Siesta_Key_Beach_Resort_A_Hyatt_Residence_Club-Siesta_Ke.html#105715118 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 1978545, 34636, 2, 105715118);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/4d/15/ae/2nd-bedroom.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g34636-d1978545-i105715077-r219118997-Hyatt_Siesta_Key_Beach_Resort_A_Hyatt_Residence_Club-Siesta_Ke.html#105715077 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 1978545, 34636, 2, 105715077);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/4d/15/85/movie-room-or-extra-bedroom.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g34636-d1978545-i105715004-r219118997-Hyatt_Siesta_Key_Beach_Resort_A_Hyatt_Residence_Club-Siesta_Ke.html#105715004 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 1978545, 34636, 2, 105715004);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/4d/15/3c/master-bath.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g34636-d1978545-i105714946-r219118997-Hyatt_Siesta_Key_Beach_Resort_A_Hyatt_Residence_Club-Siesta_Ke.html#105714946 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 1978545, 34636, 2, 105714946);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/4d/15/02/hotel-from-the-beach.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g34636-d1978545-i105714912-r219118997-Hyatt_Siesta_Key_Beach_Resort_A_Hyatt_Residence_Club-Siesta_Ke.html#105714912 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 1978545, 34636, 2, 105714912);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/4d/14/e0/entrance.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g34636-d1978545-i105714980-r219118997-Hyatt_Siesta_Key_Beach_Resort_A_Hyatt_Residence_Club-Siesta_Ke.html#105714980 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 1978545, 34636, 2, 105714980);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/4d/15/24/master-bedroom.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class="lastThumb ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g34636-d1978545-i105715029-r219118997-Hyatt_Siesta_Key_Beach_Resort_A_Hyatt_Residence_Club-Siesta_Ke.html#105715029 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 1978545, 34636, 2, 105715029);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/4d/15/55/living.jpg" alt="" width="50" height="50">
+</span>
+</li>
+</ul>
+<div class="more">
+<a class="u_/LocationPhotoDirectLink-g34636-d1978545-i105715188-Hyatt_Siesta_Key_Beach_Resort_A_Hyatt_Residence_Club-Siesta_Key_Florida.html#105715188 " href="/LocationPhotoDirectLink-g34636-d1978545-i105715188-Hyatt_Siesta_Key_Beach_Resort_A_Hyatt_Residence_Club-Siesta_Key_Florida.html#105715188" onclick="ta.util.cookie.setPIDCookie(5042); ta.trackEventOnPage('Reviews', 'user_photo', 'see_all'); return ta.call('ta.overlays.Factory.albumsLB', event, this, 1978545, 34636);">
+See all photos
+</a>
+</div>
+</div> </div> </div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed July 2014</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq219118997_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq219118997 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymd3m3qHMUAkvodoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKdAUvU6XoXfXXmAdkKmo6XoXfXXXkA3dU36XoXfXUAmUXKXo6XoXfXUAUUvAAk6XoXfXUvdXkvom6XoXfXUkov3doU6XoXfXUkdoUdvm6XoXfXUkK3UvmA6XoXfXU3v3oUoAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKdAUvUqH5gJIIQQoqnQQhSVtIJQQoqnQQxbVgQQoqnQQ7VJnGQQoqnQQeVtiEIQQoqnQQbQQoqnQQ5gJIIQQoqnQQeVtSMVCnVQQoqnQQfcpHqHhSVtIJQQoqnQQxbVgQQoqnQQqnciESMJxiGIac6XoXmqoTpcXUAUUvAAk0tEn1XUAUUvAAk0zH1md3m30pSM1dfqnxMkobok7xM3mfvK37Xqn3mAdv7KmKmXU0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">5</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_219118997" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '219118997'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/Travelsnob22Dallas/g34636" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 3 reviews by Travelsnob22Dallas for Siesta Key </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1978545', 'Travelsnob22Dallas', '4CFD75A57BD63C806B2F63948B030321', 'en', '219118997', 'Hyatt Siesta Key Beach Resort, A Hyatt Residence Club');">Ask Travelsnob22Dallas about Hyatt Siesta Key Beach Resort, A Hyatt Residence Club</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_218427853">
+<a name="UR218427853"></a>
+<div id="UR218427853" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_CA732CECFF41167373E6E298D079C3AE-SRC_218427853" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_CA732CECFF41167373E6E298D079C3AE ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/04/c3/f8/33/diane-l.jpg" class="avatar potentialFacebookAvatar avatarGUID:CA732CECFF41167373E6E298D079C3AE" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_CA732CECFF41167373E6E298D079C3AE" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Diane L</span>
+</div>
+</div>
+<div class="location">
+New Albany, Ohio
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_CA732CECFF41167373E6E298D079C3AE-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="7 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">7 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">4 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'CA732CECFF41167373E6E298D079C3AE', screenName: 'Diane L', geos: [6351853, 60950, 31297, 60763, 34399, 34636], geo: '34636' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 6 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 6 cities</span> </div>
+<div id="UID_CA732CECFF41167373E6E298D079C3AE-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="9 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">9 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g34636-d1978545-r218427853-Hyatt_Siesta_Key_Beach_Resort_A_Hyatt_Residence_Club-Siesta_Key_Florida.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r218427853">&#x201c;<span class='noQuotes'>Perfection!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='30 July 2014'>Reviewed 3 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+This property is situated on one of the most beautiful beaches in the world and our stay there which was a one week stay could not have been nicer. The condos are just gorgeous and pristine as is the entire property and the beach itself. So many creature comforts and thoughtful amenities. The details in the design of each of these condos are something really special! I came away with a million ideas for my own home! It is truly an exceptional property. The staff was terrific; they were all friendly. They couldn't have been more welcoming or accommodating! I was there with my family and we were there largely to get some serious rest after a very difficult year so we were very content to just relax at the beach every single day. There are kayaks and plenty of things to do there if you feel more ambitious! The pool is small by today's resort standards however it is very, very nice with cabanas, a spa with a waterfall and a little bar situated right next to it. There is a nice fitness room and garage parking for your car. It truly feels like your own private condo on the beach. We stayed in two different units because we extended our stay when we just couldn't bring ourselves to leave. That is just how great it really was. Both units did face the water and the views were amazing from every room. The Hyatt does offer grocery and food delivery and many other services to make the stay amazingly comfortable. We had a rental car there and so we did venture out in the evenings. Siesta Key is very low key and very much a small beach town. You can walk from the Hyatt across Midnight Pass Road to reach a couple of the local restaurants and bars. We had a rental car and so a few different times we ventured out to get our shopping fix and for more upscale dining. A short drive from the Hyatt (20 minutes?) there is terrific resort style shopping at St. Armands Circle where Sarasota meets Longboat Key. There is also a mall en route to Longboat Key however we were not interested in shopping in stores we can shop in at home so we skipped that experience. Euphemia Haye on Longboat Key has to be one of the best restaurants in the area. That drive is a little longer, maybe about 45 minutes from the Hyatt but well worth it. Still, the best part of this vacation was hands down the fact that the Hyatt was perfection. They offered all the comforts of home in a luxury setting on one of the, if not THE best beach in the world! This was our best beach vacation ever!!
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> You only live once. Book far enough in advance and splurge on a condo facing the gulf. You won&#39;t...
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed May 2014, travelled with family</span>
+<ul class="recommend-column first">
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq218427853_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq218427853 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymd3m3qHMUAkvodoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKdAUvU6XoXfXXmAdkKmo6XoXfXXXkA3dU36XoXfXUAmUXKXo6XoXfXUAUUvAAk6XoXfXUvdXkvom6XoXfXUkov3doU6XoXfXUkdoUdvm6XoXfXUkK3UvmA6XoXfXU3v3oUoAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKdAUvUqH5gJIIQQoqnQQhSVtIJQQoqnQQxbVgQQoqnQQ7VJnGQQoqnQQeVtiEIQQoqnQQbQQoqnQQ5gJIIQQoqnQQeVtSMVCnVQQoqnQQfcpHqHhSVtIJQQoqnQQxbVgQQoqnQQqnciESMJxiGIac6XoXmqoTpcXUvdXkvom0tEn1XUvdXkvom0zH1md3m30pSM1fbkmXfzsfqnqndUU3kmkmzs3zsXAvxMKkAfmbzs0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">5</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_218427853" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '218427853'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1978545', 'Diane L', 'CA732CECFF41167373E6E298D079C3AE', 'en', '218427853', 'Hyatt Siesta Key Beach Resort, A Hyatt Residence Club');">Ask Diane L about Hyatt Siesta Key Beach Resort, A Hyatt Residence Club</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_217586451">
+<a name="UR217586451"></a>
+<div id="UR217586451" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_3B6B59675ECEFD1B8D3E79AB5F85611F-SRC_217586451" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_3B6B59675ECEFD1B8D3E79AB5F85611F ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/49/a5/53/kimcpa.jpg" class="avatar potentialFacebookAvatar avatarGUID:3B6B59675ECEFD1B8D3E79AB5F85611F" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_3B6B59675ECEFD1B8D3E79AB5F85611F" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">KimCPA</span>
+</div>
+</div>
+<div class="location">
+Jacksonville, Florida
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_3B6B59675ECEFD1B8D3E79AB5F85611F-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+<div id="UID_3B6B59675ECEFD1B8D3E79AB5F85611F-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="6 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">6 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g34636-d1978545-r217586451-Hyatt_Siesta_Key_Beach_Resort_A_Hyatt_Residence_Club-Siesta_Key_Florida.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r217586451">&#x201c;<span class='noQuotes'>Best Family Vacation Location Yet - Amazing and Wonderful Resort</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='26 July 2014'>Reviewed 4 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+Our family had a wonderful vacation at the Hyatt Siesta Key Beach Resort. The residence (it felt like home) we stayed in was very beautiful (I wish it were mine), impeccably designed, very comfortable and immaculate. Our view of the Gulf and the sunsets were amazing! The friendly and courteous service we received was way beyond our expectations -- from the time we arrived until we left we were treated as honored guests -- all of the staff were so very pleasant. We loved our meals and drinks poolside. I wish I could specifically mention all of the names as the staff were all so wonderful but kudos to the resort manager, Ed Braunlich for managing the best resort we have ever stayed at. -- Guisella Lopez's friendliness, beautiful smile and ability to handle the many demands placed on the front desk and Jon Dindo's warmth and professionalism as he made sure the resort was operating at its very best were certainly the key ingredients to our best vacation and vacation location yet! :-) Can you tell I highly recommend this resort?
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed June 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq217586451_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq217586451 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymd3m3qHMUAkvodoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKdAUvU6XoXfXXmAdkKmo6XoXfXXXkA3dU36XoXfXUAmUXKXo6XoXfXUAUUvAAk6XoXfXUvdXkvom6XoXfXUkov3doU6XoXfXUkdoUdvm6XoXfXUkK3UvmA6XoXfXU3v3oUoAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKdAUvUqH5gJIIQQoqnQQhSVtIJQQoqnQQxbVgQQoqnQQ7VJnGQQoqnQQeVtiEIQQoqnQQbQQoqnQQ5gJIIQQoqnQQeVtSMVCnVQQoqnQQfcpHqHhSVtIJQQoqnQQxbVgQQoqnQQqnciESMJxiGIac6XoXmqoTpcXUkov3doU0tEn1XUkov3doU0zH1md3m30pSM1m737oA3kozsfzsqnxMU7vxMmzskAb7oqnvo3UUqn0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">6</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_217586451" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '217586451'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1978545', 'KimCPA', '3B6B59675ECEFD1B8D3E79AB5F85611F', 'en', '217586451', 'Hyatt Siesta Key Beach Resort, A Hyatt Residence Club');">Ask KimCPA about Hyatt Siesta Key Beach Resort, A Hyatt Residence Club</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_217451483">
+<a name="UR217451483"></a>
+<div id="UR217451483" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_90ABA1E6A33FC34179C50396A349C99B-SRC_217451483" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_90ABA1E6A33FC34179C50396A349C99B ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/03/c5/29/1d/stephanie-r.jpg" class="avatar potentialFacebookAvatar avatarGUID:90ABA1E6A33FC34179C50396A349C99B" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_90ABA1E6A33FC34179C50396A349C99B" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Stephanie R</span>
+</div>
+</div>
+<div class="location">
+New Castle, Pennsylvania, United States
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_90ABA1E6A33FC34179C50396A349C99B-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">3 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '90ABA1E6A33FC34179C50396A349C99B', screenName: 'Stephanie R', geos: [29750, 34636], geo: '34636' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 2 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 2 cities</span> </div>
+<div id="UID_90ABA1E6A33FC34179C50396A349C99B-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">4 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g34636-d1978545-r217451483-Hyatt_Siesta_Key_Beach_Resort_A_Hyatt_Residence_Club-Siesta_Key_Florida.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r217451483">&#x201c;<span class='noQuotes'>Amazing!!!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='25 July 2014'>Reviewed 4 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+I recently returned from my 1st trip to Florida and stayed at the Hyatt Siesta Key Beach Resort. There are no words to describe this place other than amazing. The place was spotless, the staff was so pleasant and so accommodating that it made you feel so at home. There was a young staff member by the name of Lee, who was just awesome. Anything we needed he was always around to help in anyway he could. There is no other place that I would have rather stayed at. I highly recommend this resort!!!
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled with friends</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq217451483_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq217451483 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymd3m3qHMUAkvodoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKdAUvU6XoXfXXmAdkKmo6XoXfXXXkA3dU36XoXfXUAmUXKXo6XoXfXUAUUvAAk6XoXfXUvdXkvom6XoXfXUkov3doU6XoXfXUkdoUdvm6XoXfXUkK3UvmA6XoXfXU3v3oUoAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKdAUvUqH5gJIIQQoqnQQhSVtIJQQoqnQQxbVgQQoqnQQ7VJnGQQoqnQQeVtiEIQQoqnQQbQQoqnQQ5gJIIQQoqnQQeVtSMVCnVQQoqnQQfcpHqHhSVtIJQQoqnQQxbVgQQoqnQQqnciESMJxiGIac6XoXmqoTpcXUkdoUdvm0tEn1XUkdoUdvm0zH1md3m30pSM1AKb7bUzs3bmmqnfmdUkAfoKmA3bmdAfAA70EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">4</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_217451483" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '217451483'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1978545', 'Stephanie R', '90ABA1E6A33FC34179C50396A349C99B', 'en', '217451483', 'Hyatt Siesta Key Beach Resort, A Hyatt Residence Club');">Ask Stephanie R about Hyatt Siesta Key Beach Resort, A Hyatt Residence Club</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_217061839">
+<a name="UR217061839"></a>
+<div id="UR217061839" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_ADC57123EB9EE01F753452F5A9676AD0-SRC_217061839" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_ADC57123EB9EE01F753452F5A9676AD0 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/a1/avatar072.jpg" class="avatar potentialFacebookAvatar avatarGUID:ADC57123EB9EE01F753452F5A9676AD0" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_ADC57123EB9EE01F753452F5A9676AD0" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">TommyPettitiModeling</span>
+</div>
+</div>
+<div class="location">
+Sarasota, Florida, United States
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_ADC57123EB9EE01F753452F5A9676AD0-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+<div id="UID_ADC57123EB9EE01F753452F5A9676AD0-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="6 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">6 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g34636-d1978545-r217061839-Hyatt_Siesta_Key_Beach_Resort_A_Hyatt_Residence_Club-Siesta_Key_Florida.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r217061839">&#x201c;<span class='noQuotes'>Tommy Pettiti&#39;s Modeling &amp; Talent Agency Staff Enjoyed the Unforgettable View, wish the Servants were as accommodating.</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='23 July 2014'>Reviewed 4 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+The L.E.D. lighting show in each toilet with a television to watch while relieving oneself was very interesting. Food provided by Morton's was superbly unbeatable. Service at front desk needs some help and the beach servant could have been quicker setting umbrella up as well as a bit faster pulling our kayaks down to water. A+ on view, A+ food, E for Effort on beach servants but F for Front Desk as their Customer Service is the reason we will not return. A+++ on laser light bathrooms!
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2013</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss10" src="http://c1.tacdn.com/img2/x.gif" alt="1 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq217061839_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq217061839 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymd3m3qHMUAkvodoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKdAUvU6XoXfXXmAdkKmo6XoXfXXXkA3dU36XoXfXUAmUXKXo6XoXfXUAUUvAAk6XoXfXUvdXkvom6XoXfXUkov3doU6XoXfXUkdoUdvm6XoXfXUkK3UvmA6XoXfXU3v3oUoAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKdAUvUqH5gJIIQQoqnQQhSVtIJQQoqnQQxbVgQQoqnQQ7VJnGQQoqnQQeVtiEIQQoqnQQbQQoqnQQ5gJIIQQoqnQQeVtSMVCnVQQoqnQQfcpHqHhSVtIJQQoqnQQxbVgQQoqnQQqnciESMJxiGIac6XoXmqoTpcXUkK3UvmA0tEn1XUkK3UvmA0zH1md3m30pSM1bxMfokUXmzs7AzszsKUqnkomdoXqnobA3k3bxMK0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">6</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_217061839" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '217061839'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1978545', 'TommyPettitiModeling', 'ADC57123EB9EE01F753452F5A9676AD0', 'en', '217061839', 'Hyatt Siesta Key Beach Resort, A Hyatt Residence Club');">Ask TommyPettitiModeling about Hyatt Siesta Key Beach Resort, A Hyatt Residence Club</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_216865159">
+<a name="UR216865159"></a>
+<div id="UR216865159" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_346547099FCDB780F189FF680B79F8B7-SRC_216865159" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_346547099FCDB780F189FF680B79F8B7 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/6d/avatar050.jpg" class="avatar potentialFacebookAvatar avatarGUID:346547099FCDB780F189FF680B79F8B7" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_346547099FCDB780F189FF680B79F8B7" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Longboat57</span>
+</div>
+</div>
+<div class="location">
+London, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_346547099FCDB780F189FF680B79F8B7-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="11 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">11 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">8 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '346547099FCDB780F189FF680B79F8B7', screenName: 'Longboat57', geos: [503836, 1169695, 187791, 293918, 609129, 186390, 295424, 34515, 34636], geo: '34636' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 9 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 9 cities</span> </div>
+<div id="UID_346547099FCDB780F189FF680B79F8B7-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="19 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">19 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g34636-d1978545-r216865159-Hyatt_Siesta_Key_Beach_Resort_A_Hyatt_Residence_Club-Siesta_Key_Florida.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r216865159">&#x201c;<span class='noQuotes'>Amazing view, Fantastic Resort</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='23 July 2014'>Reviewed 5 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+We were so well looked after from the moment we arrived at this fantastic resort. After leaving a very unsatisfactory over hyped vacation rental in disgust, we were so happy the Hyatt could accommodate us. The residence was impeccable , superbly comfortable and with an amazing Gulf view. Nothing was too much trouble, from assistance with our mountain of bags at check in, to beach service, housekeeping etc was all excellent. Nothing was too much trouble. We had an amazing time here and would love to return.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Gulf view is the only way to go here, it&#39;s amazing.
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed June 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq216865159_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq216865159 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymd3m3qHMUAkvodoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKdAUvU6XoXfXXmAdkKmo6XoXfXXXkA3dU36XoXfXUAmUXKXo6XoXfXUAUUvAAk6XoXfXUvdXkvom6XoXfXUkov3doU6XoXfXUkdoUdvm6XoXfXUkK3UvmA6XoXfXU3v3oUoAqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKdAUvUqH5gJIIQQoqnQQhSVtIJQQoqnQQxbVgQQoqnQQ7VJnGQQoqnQQeVtiEIQQoqnQQbQQoqnQQ5gJIIQQoqnQQeVtSMVCnVQQoqnQQfcpHqHhSVtIJQQoqnQQxbVgQQoqnQQqnciESMJxiGIac6XoXmqoTpcXU3v3oUoA0tEn1XU3v3oUoA0zH1md3m30pSM1md3odkKAAqnfxM7kvKqnUvAqnqn3vK7kAqnv7k0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_216865159" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '216865159'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1978545', 'Longboat57', '346547099FCDB780F189FF680B79F8B7', 'en', '216865159', 'Hyatt Siesta Key Beach Resort, A Hyatt Residence Club');">Ask Longboat57 about Hyatt Siesta Key Beach Resort, A Hyatt Residence Club</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>

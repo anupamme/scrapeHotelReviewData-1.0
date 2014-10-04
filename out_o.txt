@@ -1,0 +1,332 @@
+State =  California
+City file =  sample_cities.txt
+Output file =  orbitz_reviews.txt
+1) Getting the list of hotels page for  San Francisco  in state  California
+Webpages/Orbitz//hotelList_cit-San+Francisco_st-California_respg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California  to file:  Webpages/Orbitz//hotelList_cit-San+Francisco_st-California_respg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California')
+after response1
+Finished downloading hotel list page
+San Francisco hotel list pruned to  26  lines from  6982  lines
+('orbitz hotel urls ', 25, ' : ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=16266&hotel.hkey=16266_null_null_null_A2:0#reviews')
+5) Getting reviews for hotel Hotel Nikko San Francisco
+Webpages/Orbitz//hotelReviews_ind-16266_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=16266&hotel.hkey=16266_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-16266_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=16266&hotel.hkey=16266_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1135  lines
+********************Total Reviews So Far :  0  for  1  hotels
+5) Getting reviews for hotel The Stanford Court
+Webpages/Orbitz//hotelReviews_ind-39418_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=39418&hotel.hkey=39418_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-39418_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=39418&hotel.hkey=39418_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1079  lines
+********************Total Reviews So Far :  0  for  2  hotels
+5) Getting reviews for hotel InterContinental SAN FRANCISCO
+Webpages/Orbitz//hotelReviews_ind-257946_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=257946&hotel.hkey=257946_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-257946_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=257946&hotel.hkey=257946_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1152  lines
+********************Total Reviews So Far :  0  for  3  hotels
+5) Getting reviews for hotel Parc 55 Wyndham San Francisco - Union Square
+Webpages/Orbitz//hotelReviews_ind-219054_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=219054&hotel.hkey=219054_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-219054_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=219054&hotel.hkey=219054_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1150  lines
+********************Total Reviews So Far :  0  for  4  hotels
+5) Getting reviews for hotel The Westin San Francisco Market Street
+Webpages/Orbitz//hotelReviews_ind-225527_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=225527&hotel.hkey=225527_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-225527_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=225527&hotel.hkey=225527_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1135  lines
+********************Total Reviews So Far :  0  for  5  hotels
+5) Getting reviews for hotel Omni San Francisco Hotel
+Webpages/Orbitz//hotelReviews_ind-30892_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=30892&hotel.hkey=30892_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-30892_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=30892&hotel.hkey=30892_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1199  lines
+********************Total Reviews So Far :  0  for  6  hotels
+5) Getting reviews for hotel InterContinental MARK HOPKINS SAN FRANCISCO
+Webpages/Orbitz//hotelReviews_ind-39055_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=39055&hotel.hkey=39055_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-39055_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=39055&hotel.hkey=39055_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  53  lines from  3169  lines
+Webpages/Orbitz//hotelReviews_ind-39055_pg-2.html
+Downloading URL :  http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=39055_null_null_null_A2%3A0&type=hotel&hotel.hid=39055&hotel.keyword.key=San+Francisco%2C+California&reviewPage=2  to file:  Webpages/Orbitz//hotelReviews_ind-39055_pg-2.html
+('url to open: ', 'http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=39055_null_null_null_A2%3A0&type=hotel&hotel.hid=39055&hotel.keyword.key=San+Francisco%2C+California&reviewPage=2')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  53  lines from  3179  lines
+Webpages/Orbitz//hotelReviews_ind-39055_pg-3.html
+Downloading URL :  http://www.orbitz.com/shop/home?hotel.type=keyword&reviewPage=3&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=39055_null_null_null_A2%3A0&type=hotel&hotel.hid=39055&hotel.keyword.key=San+Francisco%2C+California  to file:  Webpages/Orbitz//hotelReviews_ind-39055_pg-3.html
+('url to open: ', 'http://www.orbitz.com/shop/home?hotel.type=keyword&reviewPage=3&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=39055_null_null_null_A2%3A0&type=hotel&hotel.hid=39055&hotel.keyword.key=San+Francisco%2C+California')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  53  lines from  3179  lines
+Webpages/Orbitz//hotelReviews_ind-39055_pg-4.html
+Downloading URL :  http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&reviewPage=4&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=39055_null_null_null_A2%3A0&type=hotel&hotel.hid=39055&hotel.keyword.key=San+Francisco%2C+California  to file:  Webpages/Orbitz//hotelReviews_ind-39055_pg-4.html
+('url to open: ', 'http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&reviewPage=4&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=39055_null_null_null_A2%3A0&type=hotel&hotel.hid=39055&hotel.keyword.key=San+Francisco%2C+California')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1155  lines
+********************Total Reviews So Far :  27  for  7  hotels
+5) Getting reviews for hotel Grand Hyatt San Francisco on Union Square
+Webpages/Orbitz//hotelReviews_ind-28891_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=28891&hotel.hkey=28891_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-28891_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=28891&hotel.hkey=28891_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  53  lines from  3258  lines
+Webpages/Orbitz//hotelReviews_ind-28891_pg-2.html
+Downloading URL :  http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=28891_null_null_null_A2%3A0&type=hotel&hotel.hid=28891&hotel.keyword.key=San+Francisco%2C+California&reviewPage=2  to file:  Webpages/Orbitz//hotelReviews_ind-28891_pg-2.html
+('url to open: ', 'http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=28891_null_null_null_A2%3A0&type=hotel&hotel.hid=28891&hotel.keyword.key=San+Francisco%2C+California&reviewPage=2')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  53  lines from  3195  lines
+Webpages/Orbitz//hotelReviews_ind-28891_pg-3.html
+Downloading URL :  http://www.orbitz.com/shop/home?hotel.type=keyword&reviewPage=3&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=28891_null_null_null_A2%3A0&type=hotel&hotel.hid=28891&hotel.keyword.key=San+Francisco%2C+California  to file:  Webpages/Orbitz//hotelReviews_ind-28891_pg-3.html
+('url to open: ', 'http://www.orbitz.com/shop/home?hotel.type=keyword&reviewPage=3&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=28891_null_null_null_A2%3A0&type=hotel&hotel.hid=28891&hotel.keyword.key=San+Francisco%2C+California')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  53  lines from  3217  lines
+Webpages/Orbitz//hotelReviews_ind-28891_pg-4.html
+Downloading URL :  http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&reviewPage=4&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=28891_null_null_null_A2%3A0&type=hotel&hotel.hid=28891&hotel.keyword.key=San+Francisco%2C+California  to file:  Webpages/Orbitz//hotelReviews_ind-28891_pg-4.html
+('url to open: ', 'http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&reviewPage=4&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=28891_null_null_null_A2%3A0&type=hotel&hotel.hid=28891&hotel.keyword.key=San+Francisco%2C+California')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  53  lines from  3255  lines
+Webpages/Orbitz//hotelReviews_ind-28891_pg-5.html
+Downloading URL :  http://www.orbitz.com/shop/home?hotel.type=keyword&reviewPage=5&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=28891_null_null_null_A2%3A0&type=hotel&hotel.hid=28891&hotel.keyword.key=San+Francisco%2C+California  to file:  Webpages/Orbitz//hotelReviews_ind-28891_pg-5.html
+('url to open: ', 'http://www.orbitz.com/shop/home?hotel.type=keyword&reviewPage=5&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=28891_null_null_null_A2%3A0&type=hotel&hotel.hid=28891&hotel.keyword.key=San+Francisco%2C+California')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1184  lines
+********************Total Reviews So Far :  63  for  8  hotels
+5) Getting reviews for hotel Sir Francis Drake, a Kimpton Hotel
+Webpages/Orbitz//hotelReviews_ind-26623_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=26623&hotel.hkey=26623_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-26623_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=26623&hotel.hkey=26623_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1197  lines
+********************Total Reviews So Far :  63  for  9  hotels
+5) Getting reviews for hotel W San Francisco
+Webpages/Orbitz//hotelReviews_ind-40080_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=40080&hotel.hkey=40080_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-40080_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=40080&hotel.hkey=40080_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1119  lines
+********************Total Reviews So Far :  63  for  10  hotels
+5) Getting reviews for hotel San Francisco Marriott Marquis
+Webpages/Orbitz//hotelReviews_ind-11727_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=11727&hotel.hkey=11727_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-11727_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=11727&hotel.hkey=11727_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  53  lines from  3269  lines
+Webpages/Orbitz//hotelReviews_ind-11727_pg-2.html
+Downloading URL :  http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=11727_null_null_null_A2%3A0&type=hotel&hotel.hid=11727&hotel.keyword.key=San+Francisco%2C+California&reviewPage=2  to file:  Webpages/Orbitz//hotelReviews_ind-11727_pg-2.html
+('url to open: ', 'http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=11727_null_null_null_A2%3A0&type=hotel&hotel.hid=11727&hotel.keyword.key=San+Francisco%2C+California&reviewPage=2')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  53  lines from  3193  lines
+Webpages/Orbitz//hotelReviews_ind-11727_pg-3.html
+Downloading URL :  http://www.orbitz.com/shop/home?hotel.type=keyword&reviewPage=3&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=11727_null_null_null_A2%3A0&type=hotel&hotel.hid=11727&hotel.keyword.key=San+Francisco%2C+California  to file:  Webpages/Orbitz//hotelReviews_ind-11727_pg-3.html
+('url to open: ', 'http://www.orbitz.com/shop/home?hotel.type=keyword&reviewPage=3&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=11727_null_null_null_A2%3A0&type=hotel&hotel.hid=11727&hotel.keyword.key=San+Francisco%2C+California')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1168  lines
+********************Total Reviews So Far :  81  for  11  hotels
+5) Getting reviews for hotel Palace Hotel, a Luxury Collection Hotel, San Francisco
+Webpages/Orbitz//hotelReviews_ind-254204_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=254204&hotel.hkey=254204_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-254204_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=254204&hotel.hkey=254204_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  53  lines from  3188  lines
+Webpages/Orbitz//hotelReviews_ind-254204_pg-2.html
+Downloading URL :  http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=254204_null_null_null_A2%3A0&type=hotel&hotel.hid=254204&hotel.keyword.key=San+Francisco%2C+California&reviewPage=2  to file:  Webpages/Orbitz//hotelReviews_ind-254204_pg-2.html
+('url to open: ', 'http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=254204_null_null_null_A2%3A0&type=hotel&hotel.hid=254204&hotel.keyword.key=San+Francisco%2C+California&reviewPage=2')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  53  lines from  3203  lines
+Webpages/Orbitz//hotelReviews_ind-254204_pg-3.html
+Downloading URL :  http://www.orbitz.com/shop/home?hotel.type=keyword&reviewPage=3&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=254204_null_null_null_A2%3A0&type=hotel&hotel.hid=254204&hotel.keyword.key=San+Francisco%2C+California  to file:  Webpages/Orbitz//hotelReviews_ind-254204_pg-3.html
+('url to open: ', 'http://www.orbitz.com/shop/home?hotel.type=keyword&reviewPage=3&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=254204_null_null_null_A2%3A0&type=hotel&hotel.hid=254204&hotel.keyword.key=San+Francisco%2C+California')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  53  lines from  3208  lines
+Webpages/Orbitz//hotelReviews_ind-254204_pg-4.html
+Downloading URL :  http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&reviewPage=4&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=254204_null_null_null_A2%3A0&type=hotel&hotel.hid=254204&hotel.keyword.key=San+Francisco%2C+California  to file:  Webpages/Orbitz//hotelReviews_ind-254204_pg-4.html
+('url to open: ', 'http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&reviewPage=4&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=254204_null_null_null_A2%3A0&type=hotel&hotel.hid=254204&hotel.keyword.key=San+Francisco%2C+California')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  53  lines from  3216  lines
+Webpages/Orbitz//hotelReviews_ind-254204_pg-5.html
+Downloading URL :  http://www.orbitz.com/shop/home?hotel.type=keyword&reviewPage=5&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=254204_null_null_null_A2%3A0&type=hotel&hotel.hid=254204&hotel.keyword.key=San+Francisco%2C+California  to file:  Webpages/Orbitz//hotelReviews_ind-254204_pg-5.html
+('url to open: ', 'http://www.orbitz.com/shop/home?hotel.type=keyword&reviewPage=5&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=254204_null_null_null_A2%3A0&type=hotel&hotel.hid=254204&hotel.keyword.key=San+Francisco%2C+California')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1121  lines
+********************Total Reviews So Far :  117  for  12  hotels
+5) Getting reviews for hotel Hotel Griffon
+Webpages/Orbitz//hotelReviews_ind-83573_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=83573&hotel.hkey=83573_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-83573_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=83573&hotel.hkey=83573_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  53  lines from  3176  lines
+Webpages/Orbitz//hotelReviews_ind-83573_pg-2.html
+Downloading URL :  http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=83573_null_null_null_A2%3A0&type=hotel&hotel.hid=83573&hotel.keyword.key=San+Francisco%2C+California&reviewPage=2  to file:  Webpages/Orbitz//hotelReviews_ind-83573_pg-2.html
+('url to open: ', 'http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=83573_null_null_null_A2%3A0&type=hotel&hotel.hid=83573&hotel.keyword.key=San+Francisco%2C+California&reviewPage=2')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1130  lines
+********************Total Reviews So Far :  126  for  13  hotels
+5) Getting reviews for hotel The Westin St. Francis San Francisco on Union Square
+Webpages/Orbitz//hotelReviews_ind-33175_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=33175&hotel.hkey=33175_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-33175_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=33175&hotel.hkey=33175_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1147  lines
+********************Total Reviews So Far :  126  for  14  hotels
+5) Getting reviews for hotel Villa Florence
+Webpages/Orbitz//hotelReviews_ind-225294_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=225294&hotel.hkey=225294_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-225294_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=225294&hotel.hkey=225294_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1123  lines
+********************Total Reviews So Far :  126  for  15  hotels
+5) Getting reviews for hotel Hotel Adagio, Autograph Collection
+Webpages/Orbitz//hotelReviews_ind-8818_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=8818&hotel.hkey=8818_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-8818_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=8818&hotel.hkey=8818_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  53  lines from  3206  lines
+Webpages/Orbitz//hotelReviews_ind-8818_pg-2.html
+Downloading URL :  http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=8818_null_null_null_A2%3A0&type=hotel&hotel.hid=8818&hotel.keyword.key=San+Francisco%2C+California&reviewPage=2  to file:  Webpages/Orbitz//hotelReviews_ind-8818_pg-2.html
+('url to open: ', 'http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=8818_null_null_null_A2%3A0&type=hotel&hotel.hid=8818&hotel.keyword.key=San+Francisco%2C+California&reviewPage=2')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  53  lines from  3221  lines
+Webpages/Orbitz//hotelReviews_ind-8818_pg-3.html
+Downloading URL :  http://www.orbitz.com/shop/home?hotel.type=keyword&reviewPage=3&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=8818_null_null_null_A2%3A0&type=hotel&hotel.hid=8818&hotel.keyword.key=San+Francisco%2C+California  to file:  Webpages/Orbitz//hotelReviews_ind-8818_pg-3.html
+('url to open: ', 'http://www.orbitz.com/shop/home?hotel.type=keyword&reviewPage=3&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=8818_null_null_null_A2%3A0&type=hotel&hotel.hid=8818&hotel.keyword.key=San+Francisco%2C+California')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  53  lines from  3227  lines
+Webpages/Orbitz//hotelReviews_ind-8818_pg-4.html
+Downloading URL :  http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&reviewPage=4&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=8818_null_null_null_A2%3A0&type=hotel&hotel.hid=8818&hotel.keyword.key=San+Francisco%2C+California  to file:  Webpages/Orbitz//hotelReviews_ind-8818_pg-4.html
+('url to open: ', 'http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&reviewPage=4&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=8818_null_null_null_A2%3A0&type=hotel&hotel.hid=8818&hotel.keyword.key=San+Francisco%2C+California')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1149  lines
+********************Total Reviews So Far :  153  for  16  hotels
+5) Getting reviews for hotel Nob Hill Hotel
+Webpages/Orbitz//hotelReviews_ind-50972_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=50972&hotel.hkey=50972_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-50972_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=50972&hotel.hkey=50972_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  53  lines from  3062  lines
+Webpages/Orbitz//hotelReviews_ind-50972_pg-2.html
+Downloading URL :  http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=50972_null_null_null_A2%3A0&type=hotel&hotel.hid=50972&hotel.keyword.key=San+Francisco%2C+California&reviewPage=2  to file:  Webpages/Orbitz//hotelReviews_ind-50972_pg-2.html
+('url to open: ', 'http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=50972_null_null_null_A2%3A0&type=hotel&hotel.hid=50972&hotel.keyword.key=San+Francisco%2C+California&reviewPage=2')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1085  lines
+********************Total Reviews So Far :  162  for  17  hotels
+5) Getting reviews for hotel Le Meridien San Francisco
+Webpages/Orbitz//hotelReviews_ind-182502_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=182502&hotel.hkey=182502_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-182502_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=182502&hotel.hkey=182502_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1108  lines
+********************Total Reviews So Far :  162  for  18  hotels
+5) Getting reviews for hotel The Opal San Francisco
+Webpages/Orbitz//hotelReviews_ind-186507_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=186507&hotel.hkey=186507_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-186507_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=186507&hotel.hkey=186507_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1143  lines
+********************Total Reviews So Far :  162  for  19  hotels
+5) Getting reviews for hotel Harbor Court, a Kimpton Hotel
+Webpages/Orbitz//hotelReviews_ind-621_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=621&hotel.hkey=621_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-621_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=621&hotel.hkey=621_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1171  lines
+********************Total Reviews So Far :  162  for  20  hotels
+5) Getting reviews for hotel Monaco San Francisco, a Kimpton Hotel
+Webpages/Orbitz//hotelReviews_ind-26621_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=26621&hotel.hkey=26621_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-26621_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=26621&hotel.hkey=26621_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  53  lines from  3209  lines
+Webpages/Orbitz//hotelReviews_ind-26621_pg-2.html
+Downloading URL :  http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=26621_null_null_null_A2%3A0&type=hotel&hotel.hid=26621&hotel.keyword.key=San+Francisco%2C+California&reviewPage=2  to file:  Webpages/Orbitz//hotelReviews_ind-26621_pg-2.html
+('url to open: ', 'http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=26621_null_null_null_A2%3A0&type=hotel&hotel.hid=26621&hotel.keyword.key=San+Francisco%2C+California&reviewPage=2')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1177  lines
+********************Total Reviews So Far :  171  for  21  hotels
+5) Getting reviews for hotel Hilton San Francisco Union Square
+Webpages/Orbitz//hotelReviews_ind-22266_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=22266&hotel.hkey=22266_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-22266_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=22266&hotel.hkey=22266_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1096  lines
+********************Total Reviews So Far :  171  for  22  hotels
+5) Getting reviews for hotel Hotel Zetta San Francisco
+Webpages/Orbitz//hotelReviews_ind-82807_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=82807&hotel.hkey=82807_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-82807_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=82807&hotel.hkey=82807_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  53  lines from  3152  lines
+Webpages/Orbitz//hotelReviews_ind-82807_pg-2.html
+Downloading URL :  http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=82807_null_null_null_A2%3A0&type=hotel&hotel.hid=82807&hotel.keyword.key=San+Francisco%2C+California&reviewPage=2  to file:  Webpages/Orbitz//hotelReviews_ind-82807_pg-2.html
+('url to open: ', 'http://www.orbitz.com/shop/home?hotel.type=keyword&hsv.showDetails=true&hotel.rooms[0].adlts=2&search=Search&hotel.rooms[0].chlds=0&hotel.hkey=82807_null_null_null_A2%3A0&type=hotel&hotel.hid=82807&hotel.keyword.key=San+Francisco%2C+California&reviewPage=2')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1165  lines
+********************Total Reviews So Far :  180  for  23  hotels
+5) Getting reviews for hotel JW Marriott San Francisco Union Square
+Webpages/Orbitz//hotelReviews_ind-181248_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=181248&hotel.hkey=181248_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-181248_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=181248&hotel.hkey=181248_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1147  lines
+********************Total Reviews So Far :  180  for  24  hotels
+5) Getting reviews for hotel Club Quarters in San Francisco
+Webpages/Orbitz//hotelReviews_ind-177098_pg-1.html
+Downloading URL :  http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=177098&hotel.hkey=177098_null_null_null_A2:0#reviews  to file:  Webpages/Orbitz//hotelReviews_ind-177098_pg-1.html
+('url to open: ', 'http://www.orbitz.com/shop/home?type=hotel&hotel.type=keyword&hotel.rooms%5B0%5D.adlts=2&hotel.rooms%5B0%5D.chlds=0&search=Search&hotel.keyword.key=San+Francisco%2C+California&hsv.showDetails=true&hotel.hid=177098&hotel.hkey=177098_null_null_null_A2:0#reviews')
+after response1
+Finished downloading review page
+San Francisco review file pruned to  3  lines from  1165  lines
+********************Total Reviews So Far :  180  for  25  hotels
+----->Total number of hotels so far:  25

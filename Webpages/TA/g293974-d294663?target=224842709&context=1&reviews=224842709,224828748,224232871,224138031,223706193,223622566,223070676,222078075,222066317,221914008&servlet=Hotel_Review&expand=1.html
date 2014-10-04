@@ -1,0 +1,1660 @@
+<div id="expanded_review_224842709">
+<a name="UR224842709"></a>
+<div id="UR224842709" class="extended provider0 first newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_EB7B33B87BC9A099477D32E138163656-SRC_224842709" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_EB7B33B87BC9A099477D32E138163656 ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: 'EB7B33B87BC9A099477D32E138163656'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/55/avatar028.jpg" class="avatar potentialFacebookAvatar avatarGUID:EB7B33B87BC9A099477D32E138163656" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_EB7B33B87BC9A099477D32E138163656" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">PAD626</span>
+</div>
+</div>
+<div class="location">
+Los Angeles, California
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_EB7B33B87BC9A099477D32E138163656-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">2 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'EB7B33B87BC9A099477D32E138163656', screenName: 'PAD626', geos: [293974, 188590], geo: '293974' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 2 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 2 cities</span> </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d294663-r224842709-Four_Seasons_Hotel_Istanbul_at_Sultanahmet-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224842709">&#x201c;<span class='noQuotes'>Outstanding in Every Possible Way</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='27 August 2014'>Reviewed yesterday
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+A once in a lifetime, beautiful experience, enhanced by the gracious service of all personnel at this property. The concierge team in particular is world class. We were traveling with children, and the staff was so incredibly kind to them, bringing them treats and toys daily. We were debating between this property and that at the Bosphorous. Do not make the mistake of choosing the Bosphorous property--the staff--particularly concierge team--are arrogant and the property is creepy and sterile--reminded me of an overbuilt Vegas hotel. Stay in the Sultanahment by all means!!!
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224842709_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224842709 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMXAd33mqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdvdXkKA6XoXfXXdvXvkdv6XoXfXXdXmXvkU6XoXfXXdUmvKmU6XoXfXXmkK3UAm6XoXfXXm3XXo336XoXfXXmKkK3k36XoXfXXXKkvKko6XoXfXXXK33mUk6XoXfXXUAUdKKvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdvdXkKAqHqnipEQQoqnQQhVJtiCtQQoqnQQqWQQoqnQQltIJCHpcQQoqnQQJIQQoqnQQhpcIJCJGaVIqHltIJCHpcxiGIac6XoXmqoTpcXXdvdXkKA0tEn1XXdvdXkKA0zH1XAmAkd0pSM1zs7k7mm7vk7fAbKAAdkkxMmXzsUmvU3m3o30EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224842709" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224842709'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '294663', 'PAD626', 'EB7B33B87BC9A099477D32E138163656', 'en', '224842709', 'Four Seasons Hotel Istanbul at Sultanahmet');">Ask PAD626 about Four Seasons Hotel Istanbul at Sultanahmet</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_224828748">
+<a name="UR224828748"></a>
+<div id="UR224828748" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_4B86C40A7A26CE1FB0282ADD86F7AD5D-SRC_224828748" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_4B86C40A7A26CE1FB0282ADD86F7AD5D ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/62/avatar040.jpg" class="avatar potentialFacebookAvatar avatarGUID:4B86C40A7A26CE1FB0282ADD86F7AD5D" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_4B86C40A7A26CE1FB0282ADD86F7AD5D" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">J L</span>
+</div>
+</div>
+<div class="location">
+Philadelphia, Pennsylvania
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_4B86C40A7A26CE1FB0282ADD86F7AD5D-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="5 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">5 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">4 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '4B86C40A7A26CE1FB0282ADD86F7AD5D', screenName: 'J L', geos: [3176298, 187147, 293974, 186338], geo: '293974' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 4 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 4 cities</span> </div>
+<div id="UID_4B86C40A7A26CE1FB0282ADD86F7AD5D-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">3 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d294663-r224828748-Four_Seasons_Hotel_Istanbul_at_Sultanahmet-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224828748">&#x201c;<span class='noQuotes'>Best Hotel Ever</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='27 August 2014'>Reviewed yesterday
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+It is clear to see why this hotel is consistently rated in the top 10 in the world. Simply put, they have a way of catering to your every need, without being obtrusive. Every luxury is offered. The food is unforgettable. The staff is classy, warm, professional and truly wanting to please. The décor felt Turkish, but without being over the top kitschy. The location is in the heart of everything. The best hotel experience we've ever had, hands down.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224828748_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224828748 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMXAd33mqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdvdXkKA6XoXfXXdvXvkdv6XoXfXXdXmXvkU6XoXfXXdUmvKmU6XoXfXXmkK3UAm6XoXfXXm3XXo336XoXfXXmKkK3k36XoXfXXXKkvKko6XoXfXXXK33mUk6XoXfXXUAUdKKvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdvdXkKAqHqnipEQQoqnQQhVJtiCtQQoqnQQqWQQoqnQQltIJCHpcQQoqnQQJIQQoqnQQhpcIJCJGaVIqHltIJCHpcxiGIac6XoXmqoTpcXXdvXvkdv0tEn1XXdvXvkdv0zH1XAmAkd0pSM1d7v3fdKbkbX3fzsUqn7KXvXbxMxMv3qnkbxMoxM0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224828748" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224828748'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '294663', 'J L', '4B86C40A7A26CE1FB0282ADD86F7AD5D', 'en', '224828748', 'Four Seasons Hotel Istanbul at Sultanahmet');">Ask J L about Four Seasons Hotel Istanbul at Sultanahmet</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224232871">
+<a name="UR224232871"></a>
+<div id="UR224232871" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_0C3CAFB4286FC7F0CD6BAEE42A640C55-SRC_224232871" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_0C3CAFB4286FC7F0CD6BAEE42A640C55 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-f/06/71/0b/0e/vanessa-d.jpg" class="avatar potentialFacebookAvatar avatarGUID:0C3CAFB4286FC7F0CD6BAEE42A640C55" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_0C3CAFB4286FC7F0CD6BAEE42A640C55" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Vanessa D</span>
+</div>
+</div>
+<div class="location">
+Zurich, Switzerland
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_0C3CAFB4286FC7F0CD6BAEE42A640C55-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">4 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">4 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '0C3CAFB4286FC7F0CD6BAEE42A640C55', screenName: 'Vanessa D', geos: [297972, 297989, 293974, 297965], geo: '293974' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 4 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 4 cities</span> </div>
+<div id="UID_0C3CAFB4286FC7F0CD6BAEE42A640C55-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">4 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d294663-r224232871-Four_Seasons_Hotel_Istanbul_at_Sultanahmet-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224232871">&#x201c;<span class='noQuotes'>It was really wonderful..</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed 3 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+We are happy to stay in this hotel a lot..I have been other hotels in Istanbul but this was really different..It was charming... We love Istanbul Kussadasi, Cappadocia and Marmaris..Rooms are very clean..Location is perfect and staff are very helpful...thank you guys..
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed September 2013, travelled with friends</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq224232871_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224232871 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMXAd33mqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdvdXkKA6XoXfXXdvXvkdv6XoXfXXdXmXvkU6XoXfXXdUmvKmU6XoXfXXmkK3UAm6XoXfXXm3XXo336XoXfXXmKkK3k36XoXfXXXKkvKko6XoXfXXXK33mUk6XoXfXXUAUdKKvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdvdXkKAqHqnipEQQoqnQQhVJtiCtQQoqnQQqWQQoqnQQltIJCHpcQQoqnQQJIQQoqnQQhpcIJCJGaVIqHltIJCHpcxiGIac6XoXmqoTpcXXdXmXvkU0tEn1XXdXmXvkU0zH1XAmAkd0pSM1Kfmfbqn7dXv3qnfkqnKfxM37bzszsdXb3dKfoo0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224232871" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224232871'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '294663', 'Vanessa D', '0C3CAFB4286FC7F0CD6BAEE42A640C55', 'en', '224232871', 'Four Seasons Hotel Istanbul at Sultanahmet');">Ask Vanessa D about Four Seasons Hotel Istanbul at Sultanahmet</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+FS_Istanbul, General Manager at Four Seasons Hotel Istanbul at Sultanahmet, responded to this review,
+<span class="res_date relativeDate" title='26 August 2014'>2 days ago</span>
+</div>
+<div class="displayText" id="response_224232871">
+Dear Vanessa D,<br/><br/>Thank you very much for sharing this post regarding your stay in September 2013. It is a great pleasure to read that you and your friends enjoyed your time with us and loved the room, location as well as the staff. <br/><br/>We look forward to being your host again during your next trips to Istanbul.<br/><br/>Best regards,<br/><br/>Michael Purtill<br/>General Manager<br/>Four Seasons Hotel Sultanahmet
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_224548524" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:224548524, isGeo:false, locationid:294663})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_224548524" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224548524">
+<a name="UR224548524"></a>
+<div id="UR224548524" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_918A0F5D6E9D78D6D72433630A73A999-SRC_224548524" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_918A0F5D6E9D78D6D72433630A73A999 ">
+<a onclick=>
+<img src="http://c1.tacdn.com/img/facebook/connect/fb_default_icon.gif" class="avatar potentialFacebookAvatar avatarGUID:918A0F5D6E9D78D6D72433630A73A999" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_918A0F5D6E9D78D6D72433630A73A999" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">FS_Istanbul</span>
+</div>
+</div>
+<div class="location">
+Istanbul
+</div>
+</div>
+<div class="memberBadging">
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d294663-r224548524-Four_Seasons_Hotel_Istanbul_at_Sultanahmet-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224548524">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='26 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Vanessa D,<br/><br/>Thank you very much for sharing this post regarding your stay in September 2013. It is a great pleasure to read that you and your friends enjoyed your time with us and loved the room, location as well as the staff. <br/><br/>We look forward to being your host again during your next trips to Istanbul.<br/><br/>Best regards,<br/><br/>Michael Purtill<br/>General Manager<br/>Four Seasons Hotel Sultanahmet
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224548524_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224548524 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMXAd33mqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdvdXkKA6XoXfXXdvXvkdv6XoXfXXdXmXvkU6XoXfXXdUmvKmU6XoXfXXmkK3UAm6XoXfXXm3XXo336XoXfXXmKkK3k36XoXfXXXKkvKko6XoXfXXXK33mUk6XoXfXXUAUdKKvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdvdXkKAqHqnipEQQoqnQQhVJtiCtQQoqnQQqWQQoqnQQltIJCHpcQQoqnQQJIQQoqnQQhpcIJCJGaVIqHltIJCHpcxiGIac6XoXmqoTpcXXdodvoXd0tEn1XXdodvoXd0zH1XAmAkd0pSM1AUvbKqnoxM3zsAxMkvxM3xMkXdmm3mKbkmbAAA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224548524" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224548524'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '294663', 'FS_Istanbul', '918A0F5D6E9D78D6D72433630A73A999', 'en', '224548524', 'Four Seasons Hotel Istanbul at Sultanahmet');">Ask FS_Istanbul about Four Seasons Hotel Istanbul at Sultanahmet</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224138031">
+<a name="UR224138031"></a>
+<div id="UR224138031" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_E3A4C60A0A114D2ABB6AAD74C5B5B8F5-SRC_224138031" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_E3A4C60A0A114D2ABB6AAD74C5B5B8F5 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/2c/74/a9/dodotraveller.jpg" class="avatar potentialFacebookAvatar avatarGUID:E3A4C60A0A114D2ABB6AAD74C5B5B8F5" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_E3A4C60A0A114D2ABB6AAD74C5B5B8F5" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">DodoTraveller</span>
+</div>
+</div>
+<div class="location">
+Toronto, Canada
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_E3A4C60A0A114D2ABB6AAD74C5B5B8F5-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="19 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">19 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">8 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'E3A4C60A0A114D2ABB6AAD74C5B5B8F5', screenName: 'DodoTraveller', geos: [58625, 227102, 188095, 60878, 293974, 188080, 34515, 735767, 188098, 188113], geo: '293974' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 10 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 10 cities</span> </div>
+<div id="UID_E3A4C60A0A114D2ABB6AAD74C5B5B8F5-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="9 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">9 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d294663-r224138031-Four_Seasons_Hotel_Istanbul_at_Sultanahmet-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224138031">&#x201c;<span class='noQuotes'>Wonderful service and a great location</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+For our first time in Istanbul, we wanted a quality hotel in a location in the Sultanahmet area - close to major attractions. <br/><br/>The Four Seasons is ideally located, a few steps from the central park between the Hagia Sophia and the Blue Mosque, and situated on a quiet street away from the hustle and bustle. Also close to the Basilica Cistern and within walking distance to the Grand Bazaar, Spice Bazaar, many restaurants, and Topkapi Palace. The streetcar station is also close by, which connects you with the Galata bridge and ferries, and the other parts of Istanbul northeast of the bridge. <br/><br/>The hotel itself is of very high standard, even though it was a former prison. The hotel is beautifully designed with high quality furnishings. We were give a spacious room on the top floor with a balcony, with a great view of the Hagia Sophia and the Bosphorus. Large modern bathroom with all the amenities. Standards of service were high as one would expect from Four Seasons - reception, housekeeping, front doors. We took advantage of the excellent buffet breakfast every morning.<br/><br/>For evening dining, we always went to a street (Akbiyik) one block south of the hotel, where there was a good selection of quality restaurants serving Turkish meals. We enjoyed bantering with the restaurant staff and greatly enjoyed our meals.<br/><br/>We would happily return to Istanbul and the Four Seasons Sultanahmet.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Ask for a balcony room facing the Hagia Sophia.
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed April 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224138031_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224138031 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMXAd33mqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdvdXkKA6XoXfXXdvXvkdv6XoXfXXdXmXvkU6XoXfXXdUmvKmU6XoXfXXmkK3UAm6XoXfXXm3XXo336XoXfXXmKkK3k36XoXfXXXKkvKko6XoXfXXXK33mUk6XoXfXXUAUdKKvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdvdXkKAqHqnipEQQoqnQQhVJtiCtQQoqnQQqWQQoqnQQltIJCHpcQQoqnQQJIQQoqnQQhpcIJCJGaVIqHltIJCHpcxiGIac6XoXmqoTpcXXdUmvKmU0tEn1XXdUmvKmU0zH1XAmAkd0pSM1zsmbdf3KbKbUUdxMXb773bbxMkdfo7o7vqno0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224138031" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224138031'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '294663', 'DodoTraveller', 'E3A4C60A0A114D2ABB6AAD74C5B5B8F5', 'en', '224138031', 'Four Seasons Hotel Istanbul at Sultanahmet');">Ask DodoTraveller about Four Seasons Hotel Istanbul at Sultanahmet</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+FS_Istanbul, General Manager at Four Seasons Hotel Istanbul at Sultanahmet, responded to this review,
+<span class="res_date relativeDate" title='26 August 2014'>2 days ago</span>
+</div>
+<div class="displayText" id="response_224138031">
+Dear DodoTraveller,<br/><br/>Thank you very much for taking the time to write such a detailed review regarding your stay in April and for choosing Four Seasons Hotel Sultanahmet for your first time stay in this magical city. I'm delighted to read that we ensured the legendary service standard that Four Seasons is known for and you and your family enjoyed your entire stay. I noted that you discovered the neighborhood areas as well.<br/><br/>Thank you once again for all your kind comments and we hope that your next trip to Istanbul will be very soon...<br/><br/>Best regards,<br/><br/>Michael Purtill<br/>General Manager<br/>Four Seasons Hotel Sultanahmet
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_224554074" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:224554074, isGeo:false, locationid:294663})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_224554074" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224554074">
+<a name="UR224554074"></a>
+<div id="UR224554074" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_918A0F5D6E9D78D6D72433630A73A999-SRC_224554074" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_918A0F5D6E9D78D6D72433630A73A999 ">
+<a onclick=>
+<img src="http://c1.tacdn.com/img/facebook/connect/fb_default_icon.gif" class="avatar potentialFacebookAvatar avatarGUID:918A0F5D6E9D78D6D72433630A73A999" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_918A0F5D6E9D78D6D72433630A73A999" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">FS_Istanbul</span>
+</div>
+</div>
+<div class="location">
+Istanbul
+</div>
+</div>
+<div class="memberBadging">
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d294663-r224554074-Four_Seasons_Hotel_Istanbul_at_Sultanahmet-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224554074">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='26 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear DodoTraveller,<br/><br/>Thank you very much for taking the time to write such a detailed review regarding your stay in April and for choosing Four Seasons Hotel Sultanahmet for your first time stay in this magical city. I'm delighted to read that we ensured the legendary service standard that Four Seasons is known for and you and your family enjoyed your entire stay. I noted that you discovered the neighborhood areas as well.<br/><br/>Thank you once again for all your kind comments and we hope that your next trip to Istanbul will be very soon...<br/><br/>Best regards,<br/><br/>Michael Purtill<br/>General Manager<br/>Four Seasons Hotel Sultanahmet
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224554074_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224554074 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMXAd33mqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdvdXkKA6XoXfXXdvXvkdv6XoXfXXdXmXvkU6XoXfXXdUmvKmU6XoXfXXmkK3UAm6XoXfXXm3XXo336XoXfXXmKkK3k36XoXfXXXKkvKko6XoXfXXXK33mUk6XoXfXXUAUdKKvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdvdXkKAqHqnipEQQoqnQQhVJtiCtQQoqnQQqWQQoqnQQltIJCHpcQQoqnQQJIQQoqnQQhpcIJCJGaVIqHltIJCHpcxiGIac6XoXmqoTpcXXdoodKkd0tEn1XXdoodKkd0zH1XAmAkd0pSM1AUvbKqnoxM3zsAxMkvxM3xMkXdmm3mKbkmbAAA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224554074" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224554074'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '294663', 'FS_Istanbul', '918A0F5D6E9D78D6D72433630A73A999', 'en', '224554074', 'Four Seasons Hotel Istanbul at Sultanahmet');">Ask FS_Istanbul about Four Seasons Hotel Istanbul at Sultanahmet</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223706193">
+<a name="UR223706193"></a>
+<div id="UR223706193" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_80659F56496F8CAB4BC2F2B94A84E0A0-SRC_223706193" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_80659F56496F8CAB4BC2F2B94A84E0A0 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/a0/avatar071.jpg" class="avatar potentialFacebookAvatar avatarGUID:80659F56496F8CAB4BC2F2B94A84E0A0" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_80659F56496F8CAB4BC2F2B94A84E0A0" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Elstagm1</span>
+</div>
+</div>
+<div class="location">
+Washington, District of Columbia, District of Columbia, United States
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_80659F56496F8CAB4BC2F2B94A84E0A0-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+<div id="UID_80659F56496F8CAB4BC2F2B94A84E0A0-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="2 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">2 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d294663-r223706193-Four_Seasons_Hotel_Istanbul_at_Sultanahmet-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223706193">&#x201c;<span class='noQuotes'>Wonderful!!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='23 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+I don't usually write reviews, but this hotel far exceeded my already high expectations. The facilities are amazing, and the service is the best we have ever had. <br/>We also had a fabulous tour guide for one full day and one half day touring the major sites in the old city. Our guide's name is Ulku Simsek with Travelium, and she was so friendly and knowledgeable. We highly recommend her! We found her through the hotel, but you can also contact the agency directly.<br/>We left Istanbul yesterday, and are already ready to go back! Such a wonderful experience at the Four Seasons Sultenahmet and with Ulku!
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223706193_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223706193 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMXAd33mqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdvdXkKA6XoXfXXdvXvkdv6XoXfXXdXmXvkU6XoXfXXdUmvKmU6XoXfXXmkK3UAm6XoXfXXm3XXo336XoXfXXmKkK3k36XoXfXXXKkvKko6XoXfXXXK33mUk6XoXfXXUAUdKKvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdvdXkKAqHqnipEQQoqnQQhVJtiCtQQoqnQQqWQQoqnQQltIJCHpcQQoqnQQJIQQoqnQQhpcIJCJGaVIqHltIJCHpcxiGIac6XoXmqoTpcXXmkK3UAm0tEn1XXmkK3UAm0zH1XAmAkd0pSM1vK3oAqno3dA3qnvfb7d7fXqnX7AdbvdzsKbK0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223706193" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223706193'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '294663', 'Elstagm1', '80659F56496F8CAB4BC2F2B94A84E0A0', 'en', '223706193', 'Four Seasons Hotel Istanbul at Sultanahmet');">Ask Elstagm1 about Four Seasons Hotel Istanbul at Sultanahmet</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+FS_Istanbul, General Manager at Four Seasons Hotel Istanbul at Sultanahmet, responded to this review,
+<span class="res_date relativeDate" title='26 August 2014'>2 days ago</span>
+</div>
+<div class="displayText" id="response_223706193">
+Dear Elstagm1,<br/><br/>Thank you very much for sharing this review regarding your stay in August. It means a lot for me and for my team to read our guests' comments and we were quite touched when we read that you normally do not write reviews. It is a great pleasure to see that you had a lovely time at Four Seasons Hotel Sultanahmet and you were happy with our Concierge services. I've shared your comments with Travelium as well. <br/><br/>We look forward to welcoming you back in the nearest future.<br/><br/>Best regards,<br/><br/>Michael Purtill<br/>General Manager<br/>Four Seasons Hotel Sultanahmet
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_224557455" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:224557455, isGeo:false, locationid:294663})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_224557455" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224557455">
+<a name="UR224557455"></a>
+<div id="UR224557455" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_918A0F5D6E9D78D6D72433630A73A999-SRC_224557455" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_918A0F5D6E9D78D6D72433630A73A999 ">
+<a onclick=>
+<img src="http://c1.tacdn.com/img/facebook/connect/fb_default_icon.gif" class="avatar potentialFacebookAvatar avatarGUID:918A0F5D6E9D78D6D72433630A73A999" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_918A0F5D6E9D78D6D72433630A73A999" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">FS_Istanbul</span>
+</div>
+</div>
+<div class="location">
+Istanbul
+</div>
+</div>
+<div class="memberBadging">
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d294663-r224557455-Four_Seasons_Hotel_Istanbul_at_Sultanahmet-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224557455">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='26 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Elstagm1,<br/><br/>Thank you very much for sharing this review regarding your stay in August. It means a lot for me and for my team to read our guests' comments and we were quite touched when we read that you normally do not write reviews. It is a great pleasure to see that you had a lovely time at Four Seasons Hotel Sultanahmet and you were happy with our Concierge services. I've shared your comments with Travelium as well. <br/><br/>We look forward to welcoming you back in the nearest future.<br/><br/>Best regards,<br/><br/>Michael Purtill<br/>General Manager<br/>Four Seasons Hotel Sultanahmet
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224557455_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224557455 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMXAd33mqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdvdXkKA6XoXfXXdvXvkdv6XoXfXXdXmXvkU6XoXfXXdUmvKmU6XoXfXXmkK3UAm6XoXfXXm3XXo336XoXfXXmKkK3k36XoXfXXXKkvKko6XoXfXXXK33mUk6XoXfXXUAUdKKvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdvdXkKAqHqnipEQQoqnQQhVJtiCtQQoqnQQqWQQoqnQQltIJCHpcQQoqnQQJIQQoqnQQhpcIJCJGaVIqHltIJCHpcxiGIac6XoXmqoTpcXXdookdoo0tEn1XXdookdoo0zH1XAmAkd0pSM1AUvbKqnoxM3zsAxMkvxM3xMkXdmm3mKbkmbAAA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224557455" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224557455'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '294663', 'FS_Istanbul', '918A0F5D6E9D78D6D72433630A73A999', 'en', '224557455', 'Four Seasons Hotel Istanbul at Sultanahmet');">Ask FS_Istanbul about Four Seasons Hotel Istanbul at Sultanahmet</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223622566">
+<a name="UR223622566"></a>
+<div id="UR223622566" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_9DB668795DB678AC152E662BC4B94E3D-SRC_223622566" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_9DB668795DB678AC152E662BC4B94E3D ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/85/avatar006.jpg" class="avatar potentialFacebookAvatar avatarGUID:9DB668795DB678AC152E662BC4B94E3D" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_9DB668795DB678AC152E662BC4B94E3D" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">BrandonM87</span>
+</div>
+</div>
+<div class="location">
+Toronto, Canada
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_9DB668795DB678AC152E662BC4B94E3D-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="14 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">14 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">14 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '9DB668795DB678AC152E662BC4B94E3D', screenName: 'BrandonM87', geos: [294217, 1182465, 293916, 60878, 293974, 187497, 1066457, 188590, 34439, 60763, 186338, 60713], geo: '293974' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 12 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 12 cities</span> </div>
+<div id="UID_9DB668795DB678AC152E662BC4B94E3D-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="22 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">22 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d294663-r223622566-Four_Seasons_Hotel_Istanbul_at_Sultanahmet-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223622566">&#x201c;<span class='noQuotes'>Fantastic in almost every way</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Moved here after a disappointing stay at the Bosphorus property. This is markedly better. The service is genuinely caring and the rooms have actual character (and no, that is not a euphemism for &quot;small&quot; or &quot;dated&quot; -- my Premier room is very large and has good amenities). <br/><br/>Location is great -- not only are you thatclose to the sights but it's very easy to take public transit to Beyoglu/Taksim and across to Kadikoy, which is a great neighborhood (again, much easier to get places than from the Bosphorus, even though you're further away).<br/><br/>Rooftop bar has unbeatable views. But oh my god the muzak. I feel like I'm stuck in some twilight zone episode where I'm doomed to look at the Hagia Sophia while listening to the same 8 songs over and over and over, every evening. They really need a new (or larger) music play list. I've only been here for two days and I've already heard each song four or five times.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014, travelled solo</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223622566_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223622566 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMXAd33mqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdvdXkKA6XoXfXXdvXvkdv6XoXfXXdXmXvkU6XoXfXXdUmvKmU6XoXfXXmkK3UAm6XoXfXXm3XXo336XoXfXXmKkK3k36XoXfXXXKkvKko6XoXfXXXK33mUk6XoXfXXUAUdKKvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdvdXkKAqHqnipEQQoqnQQhVJtiCtQQoqnQQqWQQoqnQQltIJCHpcQQoqnQQJIQQoqnQQhpcIJCJGaVIqHltIJCHpcxiGIac6XoXmqoTpcXXm3XXo330tEn1XXm3XXo330zH1XAmAkd0pSM1AxM733vkAoxM73kvbfUoXzs33X7fd7AdzsmxM0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223622566" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223622566'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '294663', 'BrandonM87', '9DB668795DB678AC152E662BC4B94E3D', 'en', '223622566', 'Four Seasons Hotel Istanbul at Sultanahmet');">Ask BrandonM87 about Four Seasons Hotel Istanbul at Sultanahmet</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+FS_Istanbul, General Manager at Four Seasons Hotel Istanbul at Sultanahmet, responded to this review,
+<span class="res_date relativeDate" title='26 August 2014'>2 days ago</span>
+</div>
+<div class="displayText" id="response_223622566">
+Dear BrandonM87,<br/><br/>Thank you very much for sharing this post regarding your stay in August. I'm very sorry to read that you were not happy at our sister property but it is a big relief to see that your experience ended up well and you enjoyed your time with us. <br/><br/>I totally agree with you that our rooftop terrace, A'YA Lounge has a special charm and it's one-of-a-kind place. I appreciate your valuable feedback on the music playlist and we will look into this issue right away.<br/><br/>We hope you come back and visit us again very soon...<br/><br/>Best regards,<br/><br/>Michael Purtill<br/>General Manager<br/>Four Seasons Hotel Sultanahmet
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_224559070" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:224559070, isGeo:false, locationid:294663})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_224559070" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224559070">
+<a name="UR224559070"></a>
+<div id="UR224559070" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_918A0F5D6E9D78D6D72433630A73A999-SRC_224559070" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_918A0F5D6E9D78D6D72433630A73A999 ">
+<a onclick=>
+<img src="http://c1.tacdn.com/img/facebook/connect/fb_default_icon.gif" class="avatar potentialFacebookAvatar avatarGUID:918A0F5D6E9D78D6D72433630A73A999" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_918A0F5D6E9D78D6D72433630A73A999" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">FS_Istanbul</span>
+</div>
+</div>
+<div class="location">
+Istanbul
+</div>
+</div>
+<div class="memberBadging">
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d294663-r224559070-Four_Seasons_Hotel_Istanbul_at_Sultanahmet-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224559070">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='26 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear BrandonM87,<br/><br/>Thank you very much for sharing this post regarding your stay in August. I'm very sorry to read that you were not happy at our sister property but it is a big relief to see that your experience ended up well and you enjoyed your time with us. <br/><br/>I totally agree with you that our rooftop terrace, A'YA Lounge has a special charm and it's one-of-a-kind place. I appreciate your valuable feedback on the music playlist and we will look into this issue right away.<br/><br/>We hope you come back and visit us again very soon...<br/><br/>Best regards,<br/><br/>Michael Purtill<br/>General Manager<br/>Four Seasons Hotel Sultanahmet
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224559070_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224559070 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMXAd33mqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdvdXkKA6XoXfXXdvXvkdv6XoXfXXdXmXvkU6XoXfXXdUmvKmU6XoXfXXmkK3UAm6XoXfXXm3XXo336XoXfXXmKkK3k36XoXfXXXKkvKko6XoXfXXXK33mUk6XoXfXXUAUdKKvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdvdXkKAqHqnipEQQoqnQQhVJtiCtQQoqnQQqWQQoqnQQltIJCHpcQQoqnQQJIQQoqnQQhpcIJCJGaVIqHltIJCHpcxiGIac6XoXmqoTpcXXdooAKkK0tEn1XXdooAKkK0zH1XAmAkd0pSM1AUvbKqnoxM3zsAxMkvxM3xMkXdmm3mKbkmbAAA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224559070" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224559070'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '294663', 'FS_Istanbul', '918A0F5D6E9D78D6D72433630A73A999', 'en', '224559070', 'Four Seasons Hotel Istanbul at Sultanahmet');">Ask FS_Istanbul about Four Seasons Hotel Istanbul at Sultanahmet</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223070676">
+<a name="UR223070676"></a>
+<div id="UR223070676" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_764ABBB86DEB183860EA75E2E5A2FDEF-SRC_223070676" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_764ABBB86DEB183860EA75E2E5A2FDEF ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/02/4b/ce/de/sumeetbr.jpg" class="avatar potentialFacebookAvatar avatarGUID:764ABBB86DEB183860EA75E2E5A2FDEF" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_764ABBB86DEB183860EA75E2E5A2FDEF" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Sumeetbr</span>
+</div>
+</div>
+<div class="location">
+Fortaleza
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_764ABBB86DEB183860EA75E2E5A2FDEF-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="28 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">28 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">15 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '764ABBB86DEB183860EA75E2E5A2FDEF', screenName: 'Sumeetbr', geos: [297596, 303631, 2444722, 293974, 293825, 304026, 293797, 2144928, 303404, 297513, 303522, 303886, 304551, 303293, 635974], geo: '293974' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 15 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 15 cities</span> </div>
+<div id="UID_764ABBB86DEB183860EA75E2E5A2FDEF-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="20 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">20 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d294663-r223070676-Four_Seasons_Hotel_Istanbul_at_Sultanahmet-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223070676">&#x201c;<span class='noQuotes'>exceeded expectations</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='20 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+ranked as istanbul's number 1 hotel at tripadvisor, expectations were high. the hotel exceeded my expectations in every possible way..from the warm reception, to the extremely well laid out room, comfortable furnishings, well appointed toilet area, complimentary water and fruit, views from the room....to the excellent included breakfast buffet, exceptional service at the restaurant, quality of food...and the people..from the concierge to the doorman...<br/>a quite exceptional hotel!!
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223070676_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223070676 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMXAd33mqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdvdXkKA6XoXfXXdvXvkdv6XoXfXXdXmXvkU6XoXfXXdUmvKmU6XoXfXXmkK3UAm6XoXfXXm3XXo336XoXfXXmKkK3k36XoXfXXXKkvKko6XoXfXXXK33mUk6XoXfXXUAUdKKvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdvdXkKAqHqnipEQQoqnQQhVJtiCtQQoqnQQqWQQoqnQQltIJCHpcQQoqnQQJIQQoqnQQhpcIJCJGaVIqHltIJCHpcxiGIac6XoXmqoTpcXXmKkK3k30tEn1XXmKkK3k30zH1XAmAkd0pSM1k3db777v3xMzs7Uvmv3KzsbkozsXzsobXqnxMzsqn0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223070676" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223070676'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '294663', 'Sumeetbr', '764ABBB86DEB183860EA75E2E5A2FDEF', 'en', '223070676', 'Four Seasons Hotel Istanbul at Sultanahmet');">Ask Sumeetbr about Four Seasons Hotel Istanbul at Sultanahmet</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+FS_Istanbul, General Manager at Four Seasons Hotel Istanbul at Sultanahmet, responded to this review,
+<span class="res_date relativeDate" title='26 August 2014'>2 days ago</span>
+</div>
+<div class="displayText" id="response_223070676">
+Dear Sumeetbr,<br/><br/>Thank you very much for taking the time to share this post regarding your stay in August. <br/>I cannot thank you enough for your kind words. I read your review over and over and had goose bumps each time! As we always say, our people our biggest asset at Four Seasons.<br/><br/>We look forward to welcoming you again in the nearest future...<br/><br/>Best regards,<br/><br/>Michael Purtill<br/>General Manager<br/>Four Seasons Hotel Sultanahmet
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_224560343" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:224560343, isGeo:false, locationid:294663})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_224560343" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224560343">
+<a name="UR224560343"></a>
+<div id="UR224560343" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_918A0F5D6E9D78D6D72433630A73A999-SRC_224560343" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_918A0F5D6E9D78D6D72433630A73A999 ">
+<a onclick=>
+<img src="http://c1.tacdn.com/img/facebook/connect/fb_default_icon.gif" class="avatar potentialFacebookAvatar avatarGUID:918A0F5D6E9D78D6D72433630A73A999" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_918A0F5D6E9D78D6D72433630A73A999" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">FS_Istanbul</span>
+</div>
+</div>
+<div class="location">
+Istanbul
+</div>
+</div>
+<div class="memberBadging">
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d294663-r224560343-Four_Seasons_Hotel_Istanbul_at_Sultanahmet-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224560343">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='26 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Sumeetbr,<br/><br/>Thank you very much for taking the time to share this post regarding your stay in August. <br/>I cannot thank you enough for your kind words. I read your review over and over and had goose bumps each time! As we always say, our people our biggest asset at Four Seasons.<br/><br/>We look forward to welcoming you again in the nearest future...<br/><br/>Best regards,<br/><br/>Michael Purtill<br/>General Manager<br/>Four Seasons Hotel Sultanahmet
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224560343_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224560343 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMXAd33mqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdvdXkKA6XoXfXXdvXvkdv6XoXfXXdXmXvkU6XoXfXXdUmvKmU6XoXfXXmkK3UAm6XoXfXXm3XXo336XoXfXXmKkK3k36XoXfXXXKkvKko6XoXfXXXK33mUk6XoXfXXUAUdKKvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdvdXkKAqHqnipEQQoqnQQhVJtiCtQQoqnQQqWQQoqnQQltIJCHpcQQoqnQQJIQQoqnQQhpcIJCJGaVIqHltIJCHpcxiGIac6XoXmqoTpcXXdo3Kmdm0tEn1XXdo3Kmdm0zH1XAmAkd0pSM1AUvbKqnoxM3zsAxMkvxM3xMkXdmm3mKbkmbAAA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224560343" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224560343'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '294663', 'FS_Istanbul', '918A0F5D6E9D78D6D72433630A73A999', 'en', '224560343', 'Four Seasons Hotel Istanbul at Sultanahmet');">Ask FS_Istanbul about Four Seasons Hotel Istanbul at Sultanahmet</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222078075">
+<a name="UR222078075"></a>
+<div id="UR222078075" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_415F39188276DDE80A8D0D81AE1FEED3-SRC_222078075" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_415F39188276DDE80A8D0D81AE1FEED3 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/55/avatar028.jpg" class="avatar potentialFacebookAvatar avatarGUID:415F39188276DDE80A8D0D81AE1FEED3" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_415F39188276DDE80A8D0D81AE1FEED3" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">puredeadbrilliant</span>
+</div>
+</div>
+<div class="location">
+London, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_415F39188276DDE80A8D0D81AE1FEED3-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">3 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '415F39188276DDE80A8D0D81AE1FEED3', screenName: 'puredeadbrilliant', geos: [187497, 293974], geo: '293974' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 2 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 2 cities</span> </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d294663-r222078075-Four_Seasons_Hotel_Istanbul_at_Sultanahmet-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222078075">&#x201c;<span class='noQuotes'>Proper mint!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='16 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Beautiful hotel in a beautiful city. From the moment we arrived we were treated like royalty. My 3 children each received a personalised mug personalised cookies and the shirts complimentary of The Four Seasons. The rooms were nice and clean with spectacular views of the Hagia Sofia. Location wise this was ideal as we could visit all the famous sites by foot. The food was great and the staff were welcoming, which helped to make our stay so enjoyable.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed April 2014</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222078075_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222078075 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMXAd33mqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdvdXkKA6XoXfXXdvXvkdv6XoXfXXdXmXvkU6XoXfXXdUmvKmU6XoXfXXmkK3UAm6XoXfXXm3XXo336XoXfXXmKkK3k36XoXfXXXKkvKko6XoXfXXXK33mUk6XoXfXXUAUdKKvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdvdXkKAqHqnipEQQoqnQQhVJtiCtQQoqnQQqWQQoqnQQltIJCHpcQQoqnQQJIQQoqnQQhpcIJCJGaVIqHltIJCHpcxiGIac6XoXmqoTpcXXXKkvKko0tEn1XXXKkvKko0zH1XAmAkd0pSM1dUoqnmAUvvXk3xMxMzsvKbvxMKxMvUbzsUqnzszsxMm0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222078075" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222078075'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '294663', 'puredeadbrilliant', '415F39188276DDE80A8D0D81AE1FEED3', 'en', '222078075', 'Four Seasons Hotel Istanbul at Sultanahmet');">Ask puredeadbrilliant about Four Seasons Hotel Istanbul at Sultanahmet</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+FS_Istanbul, General Manager at Four Seasons Hotel Istanbul at Sultanahmet, responded to this review,
+<span class="res_date relativeDate" title='19 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_222078075">
+Dear puredeadbrilliant,<br/><br/>Thank you very much for sharing this post regarding your stay in April. It is a great pleasure to see that you and your family had a lovely time with us and enjoyed the personalized touch while you were in Istanbul.<br/><br/>We hope you come back and visit us again very soon...<br/><br/>Best regards,<br/><br/>Michael Purtill<br/>General Manager<br/>Four Seasons Hotel Sultanahmet
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_222883809" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:222883809, isGeo:false, locationid:294663})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_222883809" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222883809">
+<a name="UR222883809"></a>
+<div id="UR222883809" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_918A0F5D6E9D78D6D72433630A73A999-SRC_222883809" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_918A0F5D6E9D78D6D72433630A73A999 ">
+<a onclick=>
+<img src="http://c1.tacdn.com/img/facebook/connect/fb_default_icon.gif" class="avatar potentialFacebookAvatar avatarGUID:918A0F5D6E9D78D6D72433630A73A999" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_918A0F5D6E9D78D6D72433630A73A999" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">FS_Istanbul</span>
+</div>
+</div>
+<div class="location">
+Istanbul
+</div>
+</div>
+<div class="memberBadging">
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d294663-r222883809-Four_Seasons_Hotel_Istanbul_at_Sultanahmet-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222883809">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='19 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Dear puredeadbrilliant,<br/><br/>Thank you very much for sharing this post regarding your stay in April. It is a great pleasure to see that you and your family had a lovely time with us and enjoyed the personalized touch while you were in Istanbul.<br/><br/>We hope you come back and visit us again very soon...<br/><br/>Best regards,<br/><br/>Michael Purtill<br/>General Manager<br/>Four Seasons Hotel Sultanahmet
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222883809_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222883809 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMXAd33mqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdvdXkKA6XoXfXXdvXvkdv6XoXfXXdXmXvkU6XoXfXXdUmvKmU6XoXfXXmkK3UAm6XoXfXXm3XXo336XoXfXXmKkK3k36XoXfXXXKkvKko6XoXfXXXK33mUk6XoXfXXUAUdKKvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdvdXkKAqHqnipEQQoqnQQhVJtiCtQQoqnQQqWQQoqnQQltIJCHpcQQoqnQQJIQQoqnQQhpcIJCJGaVIqHltIJCHpcxiGIac6XoXmqoTpcXXXvvmvKA0tEn1XXXvvmvKA0zH1XAmAkd0pSM1AUvbKqnoxM3zsAxMkvxM3xMkXdmm3mKbkmbAAA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222883809" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222883809'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '294663', 'FS_Istanbul', '918A0F5D6E9D78D6D72433630A73A999', 'en', '222883809', 'Four Seasons Hotel Istanbul at Sultanahmet');">Ask FS_Istanbul about Four Seasons Hotel Istanbul at Sultanahmet</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222066317">
+<a name="UR222066317"></a>
+<div id="UR222066317" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_09A2A1CEBD92DC54F0EB0457A2A803E8-SRC_222066317" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_09A2A1CEBD92DC54F0EB0457A2A803E8 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/9a/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:09A2A1CEBD92DC54F0EB0457A2A803E8" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_09A2A1CEBD92DC54F0EB0457A2A803E8" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Ewokrac</span>
+</div>
+</div>
+<div class="location">
+Los Angeles, California
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_09A2A1CEBD92DC54F0EB0457A2A803E8-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">3 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">3 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '09A2A1CEBD92DC54F0EB0457A2A803E8', screenName: 'Ewokrac', geos: [187147, 187791, 293974], geo: '293974' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 3 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 3 cities</span> </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d294663-r222066317-Four_Seasons_Hotel_Istanbul_at_Sultanahmet-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222066317">&#x201c;<span class='noQuotes'>Amazing Views</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='16 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Beautiful hotel, great attention to detail and amazing view of Hagia Sophia from our room. The hotel used to be a Turkish prison, and original columns with graffiti from prisoners still remain in the hallways.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed September 2013, travelled with family</span>
+<ul class="recommend-column first">
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq222066317_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222066317 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMXAd33mqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdvdXkKA6XoXfXXdvXvkdv6XoXfXXdXmXvkU6XoXfXXdUmvKmU6XoXfXXmkK3UAm6XoXfXXm3XXo336XoXfXXmKkK3k36XoXfXXXKkvKko6XoXfXXXK33mUk6XoXfXXUAUdKKvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdvdXkKAqHqnipEQQoqnQQhVJtiCtQQoqnQQqWQQoqnQQltIJCHpcQQoqnQQJIQQoqnQQhpcIJCJGaVIqHltIJCHpcxiGIac6XoXmqoTpcXXXK33mUk0tEn1XXXK33mUk0zH1XAmAkd0pSM1KAbXbUfzs7xMAXxMfodqnKzs7KdokbXbvKmzsv0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222066317" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222066317'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '294663', 'Ewokrac', '09A2A1CEBD92DC54F0EB0457A2A803E8', 'en', '222066317', 'Four Seasons Hotel Istanbul at Sultanahmet');">Ask Ewokrac about Four Seasons Hotel Istanbul at Sultanahmet</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+FS_Istanbul, General Manager at Four Seasons Hotel Istanbul at Sultanahmet, responded to this review,
+<span class="res_date relativeDate" title='19 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_222066317">
+Dear Ewokrac,<br/><br/>Thank you very much for sharing this post regarding your stay in September 2013 and for your kind comments. I'm happy to read that you and your family enjoyed your time with us at our &quot;little&quot; prison. The building indeed has a story tell...<br/><br/>We hope you come back and visit us again very soon...<br/><br/>Best regards,<br/><br/>Michael Purtill<br/>General Manager<br/>Four Seasons Hotel Sultanahmet
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_222885303" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:222885303, isGeo:false, locationid:294663})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_222885303" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222885303">
+<a name="UR222885303"></a>
+<div id="UR222885303" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_918A0F5D6E9D78D6D72433630A73A999-SRC_222885303" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_918A0F5D6E9D78D6D72433630A73A999 ">
+<a onclick=>
+<img src="http://c1.tacdn.com/img/facebook/connect/fb_default_icon.gif" class="avatar potentialFacebookAvatar avatarGUID:918A0F5D6E9D78D6D72433630A73A999" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_918A0F5D6E9D78D6D72433630A73A999" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">FS_Istanbul</span>
+</div>
+</div>
+<div class="location">
+Istanbul
+</div>
+</div>
+<div class="memberBadging">
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d294663-r222885303-Four_Seasons_Hotel_Istanbul_at_Sultanahmet-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222885303">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='19 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Ewokrac,<br/><br/>Thank you very much for sharing this post regarding your stay in September 2013 and for your kind comments. I'm happy to read that you and your family enjoyed your time with us at our &quot;little&quot; prison. The building indeed has a story tell...<br/><br/>We hope you come back and visit us again very soon...<br/><br/>Best regards,<br/><br/>Michael Purtill<br/>General Manager<br/>Four Seasons Hotel Sultanahmet
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222885303_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222885303 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMXAd33mqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdvdXkKA6XoXfXXdvXvkdv6XoXfXXdXmXvkU6XoXfXXdUmvKmU6XoXfXXmkK3UAm6XoXfXXm3XXo336XoXfXXmKkK3k36XoXfXXXKkvKko6XoXfXXXK33mUk6XoXfXXUAUdKKvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdvdXkKAqHqnipEQQoqnQQhVJtiCtQQoqnQQqWQQoqnQQltIJCHpcQQoqnQQJIQQoqnQQhpcIJCJGaVIqHltIJCHpcxiGIac6XoXmqoTpcXXXvvomKm0tEn1XXXvvomKm0zH1XAmAkd0pSM1AUvbKqnoxM3zsAxMkvxM3xMkXdmm3mKbkmbAAA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222885303" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222885303'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '294663', 'FS_Istanbul', '918A0F5D6E9D78D6D72433630A73A999', 'en', '222885303', 'Four Seasons Hotel Istanbul at Sultanahmet');">Ask FS_Istanbul about Four Seasons Hotel Istanbul at Sultanahmet</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221914008">
+<a name="UR221914008"></a>
+<div id="UR221914008" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_8E0D48E6755BB319DFB514135DF1C39C-SRC_221914008" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_8E0D48E6755BB319DFB514135DF1C39C ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/2a/e3/25/matt-h.jpg" class="avatar potentialFacebookAvatar avatarGUID:8E0D48E6755BB319DFB514135DF1C39C" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_8E0D48E6755BB319DFB514135DF1C39C" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Matt H</span>
+</div>
+</div>
+<div class="location">
+New York City, New York
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_8E0D48E6755BB319DFB514135DF1C39C-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Top Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="52 reviews" class="icon badge_topcontributor sprite-badge_topcontributor" width="25" height="24">
+<span class="badgeText">52 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">13 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '8E0D48E6755BB319DFB514135DF1C39C', screenName: 'Matt H', geos: [32588, 187147, 5521739, 147428, 187209, 303506, 187089, 187150, 293974, 187454, 34227, 60750, 294323, 196611, 196506, 4973369, 672988, 1940682, 60763, 147416, 186338, 312741, 187251], geo: '293974' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 23 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 23 cities</span> </div>
+<div id="UID_8E0D48E6755BB319DFB514135DF1C39C-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="23 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">23 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d294663-r221914008-Four_Seasons_Hotel_Istanbul_at_Sultanahmet-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221914008">&#x201c;<span class='noQuotes'>Excellent, in all regards</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='15 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+From the limo at airport to personal attention upon arrival at hotel, fantastic service at every turn. Great location, interesting architecture in the hotel and amenities, we were very well taken care of. We also appreciated the concierge commenting on some reservations we had made ourselves and directed us to some more age appropriate venues.. Very much enjoyed roof top bar, amazing views.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed September 2013, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221914008_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221914008 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMXAd33mqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdvdXkKA6XoXfXXdvXvkdv6XoXfXXdXmXvkU6XoXfXXdUmvKmU6XoXfXXmkK3UAm6XoXfXXm3XXo336XoXfXXmKkK3k36XoXfXXXKkvKko6XoXfXXXK33mUk6XoXfXXUAUdKKvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdvdXkKAqHqnipEQQoqnQQhVJtiCtQQoqnQQqWQQoqnQQltIJCHpcQQoqnQQJIQQoqnQQhpcIJCJGaVIqHltIJCHpcxiGIac6XoXmqoTpcXXUAUdKKv0tEn1XXUAUdKKv0zH1XAmAkd0pSM1vzsKxMdvzs3koo77mUAxMqn7oUdUmoxMqnUfmAf0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221914008" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221914008'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '294663', 'Matt H', '8E0D48E6755BB319DFB514135DF1C39C', 'en', '221914008', 'Four Seasons Hotel Istanbul at Sultanahmet');">Ask Matt H about Four Seasons Hotel Istanbul at Sultanahmet</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+FS_Istanbul, General Manager at Four Seasons Hotel Istanbul at Sultanahmet, responded to this review,
+<span class="res_date relativeDate" title='19 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_221914008">
+Dear Matt H,<br/><br/>Thank you very much for sharing this post regarding your stay in September 2013. I'm delighted to see that you enjoyed your time with us and had the opportunity to visit our rooftop terrace, A'YA Lounge, which has an awe inspiring view of the Old Town. I've shared your kind comments with the rest of the team, especially with our Concierge experts.<br/><br/>We hope you come back and visit us again very soon...<br/><br/>Best regards,<br/><br/>Michael Purtill<br/>General Manager<br/>Four Seasons Hotel Sultanahmet
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_222887095" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:222887095, isGeo:false, locationid:294663})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_222887095" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222887095">
+<a name="UR222887095"></a>
+<div id="UR222887095" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_918A0F5D6E9D78D6D72433630A73A999-SRC_222887095" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_918A0F5D6E9D78D6D72433630A73A999 ">
+<a onclick=>
+<img src="http://c1.tacdn.com/img/facebook/connect/fb_default_icon.gif" class="avatar potentialFacebookAvatar avatarGUID:918A0F5D6E9D78D6D72433630A73A999" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_918A0F5D6E9D78D6D72433630A73A999" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">FS_Istanbul</span>
+</div>
+</div>
+<div class="location">
+Istanbul
+</div>
+</div>
+<div class="memberBadging">
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d294663-r222887095-Four_Seasons_Hotel_Istanbul_at_Sultanahmet-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222887095">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='19 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Matt H,<br/><br/>Thank you very much for sharing this post regarding your stay in September 2013. I'm delighted to see that you enjoyed your time with us and had the opportunity to visit our rooftop terrace, A'YA Lounge, which has an awe inspiring view of the Old Town. I've shared your kind comments with the rest of the team, especially with our Concierge experts.<br/><br/>We hope you come back and visit us again very soon...<br/><br/>Best regards,<br/><br/>Michael Purtill<br/>General Manager<br/>Four Seasons Hotel Sultanahmet
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222887095_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222887095 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMXAd33mqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdvdXkKA6XoXfXXdvXvkdv6XoXfXXdXmXvkU6XoXfXXdUmvKmU6XoXfXXmkK3UAm6XoXfXXm3XXo336XoXfXXmKkK3k36XoXfXXXKkvKko6XoXfXXXK33mUk6XoXfXXUAUdKKvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdvdXkKAqHqnipEQQoqnQQhVJtiCtQQoqnQQqWQQoqnQQltIJCHpcQQoqnQQJIQQoqnQQhpcIJCJGaVIqHltIJCHpcxiGIac6XoXmqoTpcXXXvvkKAo0tEn1XXXvvkKAo0zH1XAmAkd0pSM1AUvbKqnoxM3zsAxMkvxM3xMkXdmm3mKbkmbAAA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222887095" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222887095'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '294663', 'FS_Istanbul', '918A0F5D6E9D78D6D72433630A73A999', 'en', '222887095', 'Four Seasons Hotel Istanbul at Sultanahmet');">Ask FS_Istanbul about Four Seasons Hotel Istanbul at Sultanahmet</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,1222 @@
+<div id="expanded_review_223047918">
+<a name="UR223047918"></a>
+<div id="UR223047918" class="extended provider0 first newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_670007801ACF17857CF6A9137CFFF011-SRC_223047918" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_670007801ACF17857CF6A9137CFFF011 ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: '670007801ACF17857CF6A9137CFFF011'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/04/02/79/25/quazoosle.jpg" class="avatar potentialFacebookAvatar avatarGUID:670007801ACF17857CF6A9137CFFF011" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_670007801ACF17857CF6A9137CFFF011" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Quazoosle</span>
+</div>
+</div>
+<div class="location">
+Brisbane, Australia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_670007801ACF17857CF6A9137CFFF011-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="22 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">22 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">7 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '670007801ACF17857CF6A9137CFFF011', screenName: 'Quazoosle', geos: [187147, 255072, 2247997, 298309, 60827, 488342, 2138344, 255068, 294335, 612490, 294122], geo: '187147' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 11 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 11 cities</span> </div>
+<div id="UID_670007801ACF17857CF6A9137CFFF011-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="7 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">7 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187147-d290407-r223047918-Paris_France_Hotel-Paris_Ile_de_France.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223047918">&#x201c;<span class='noQuotes'>Good honest establishment. </span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='20 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+This is no 5 star hotel and doesn't pretend to be. Two to three stars is about right. What it lacks in luxury is made up for by it being neat, clean, and with efficient friendly staff. It is very conveniently located near two metro stations, Republic and Temple. Free WiFi a plus.
+</p>
+</div>
+<div class="media  thumbCols3">
+<div class="thumbnails">
+<div class="photosInline">
+<ul>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g187147-d290407-i107583025-r223047918-Paris_France_Hotel-Paris_Ile_de_France.html#107583025 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 290407, 187147, 2, 107583025);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/69/96/31/from-outside.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g187147-d290407-i107582936-r223047918-Paris_France_Hotel-Paris_Ile_de_France.html#107582936 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 290407, 187147, 2, 107582936);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/69/95/d8/bedroom.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g187147-d290407-i107582986-r223047918-Paris_France_Hotel-Paris_Ile_de_France.html#107582986 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 290407, 187147, 2, 107582986);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/69/96/0a/view-from-top-floor.jpg" alt="" width="50" height="50">
+</span>
+</li>
+</ul>
+</div> </div> </div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014</span>
+</div>
+</div>
+<div id="helpfulq223047918_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223047918 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkUdkqHMXAKdKkqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmKdkAUv6XoXfXXUdvKA3X6XoXfXXK3AdKdU6XoXfXXKd33Uom6XoXfXXKXdoKdm6XoXfXUAXXvdmK6XoXfXUAUUvkvU6XoXfXUvAU3UUo6XoXfXUvvvAUUU6XoXfXUvkdAkmKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmKdkAUvqHwJEStQQoqnQQqnEJCnVQQoqnQQqWqHwJEStQQoqnQQlcVQQoqnQQMVQQoqnQQqnEJCnVxiGIac6XoXmqoTpcXXmKdkAUv0tEn1XXmKdkAUv0zH1UvkUdk0pSM13kKKKkvKUbfqnUkvokfqn3bAUmkfqnqnqnKUU0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223047918" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223047918'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/Quazoosle/g187147" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 4 reviews by Quazoosle for Paris </a>
+</div>
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=670007801ACF17857CF6A9137CFFF011&amp;lang=en&amp;messagetype=2&amp;d=290407&amp;geo=&amp;src=223047918&amp;t=r&amp;summary=Paris+France+Hotel" id="pm670007801ACF17857CF6A9137CFFF011" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Quazoosle about Paris France Hotel</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_221480962">
+<a name="UR221480962"></a>
+<div id="UR221480962" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_AECBD16E00828BBC6E412C01DFAE6DE9-SRC_221480962" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_AECBD16E00828BBC6E412C01DFAE6DE9 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/8f/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:AECBD16E00828BBC6E412C01DFAE6DE9" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_AECBD16E00828BBC6E412C01DFAE6DE9" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">newvalidusername</span>
+</div>
+</div>
+<div class="location">
+Hamilton, New Zealand
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_AECBD16E00828BBC6E412C01DFAE6DE9-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="7 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">7 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">5 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'AECBD16E00828BBC6E412C01DFAE6DE9', screenName: 'newvalidusername', geos: [187147, 187791, 187870, 187323, 186338, 187309], geo: '187147' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 6 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 6 cities</span> </div>
+<div id="UID_AECBD16E00828BBC6E412C01DFAE6DE9-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">4 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187147-d290407-r221480962-Paris_France_Hotel-Paris_Ile_de_France.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221480962">&#x201c;<span class='noQuotes'>Good hotel, but the noise</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='13 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+This hotel was our first stop on a 10-stop European honeymoon. This hotel was more than suitable for out needs. It is in a good location, very close to the metro and supermarket. The staff were friendly and helpful (not always easy to find in Paris).<br/><br/>However, the noise was substantial at night, despite my requesting a quiet room. I am normally a very light sleeper and would have had a very bad time in Paris if the exhaustion of jet lag had not got me to sleep.<br/><br/>The breakfast was simple, but a little pricy (we were originally led to believe it was free, but this was obviously a simple error in translation, possible caused by my thick kiwi accent).<br/><br/>Overall, i would recommend this hotel for most people, except the absurdly light sleepers and insomniacs like myself.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed June 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss10" src="http://c1.tacdn.com/img2/x.gif" alt="1 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221480962_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221480962 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkUdkqHMXAKdKkqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmKdkAUv6XoXfXXUdvKA3X6XoXfXXK3AdKdU6XoXfXXKd33Uom6XoXfXXKXdoKdm6XoXfXUAXXvdmK6XoXfXUAUUvkvU6XoXfXUvAU3UUo6XoXfXUvvvAUUU6XoXfXUvkdAkmKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmKdkAUvqHwJEStQQoqnQQqnEJCnVQQoqnQQqWqHwJEStQQoqnQQlcVQQoqnQQMVQQoqnQQqnEJCnVxiGIac6XoXmqoTpcXXUdvKA3X0tEn1XXUdvKA3X0zH1UvkUdk0pSM1bzsf7xMU3zsKKvXv77f3zsdUXfKUxMqnbzs3xMzsA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">3</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221480962" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221480962'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=AECBD16E00828BBC6E412C01DFAE6DE9&amp;lang=en&amp;messagetype=2&amp;d=290407&amp;geo=&amp;src=221480962&amp;t=r&amp;summary=Paris+France+Hotel" id="pmAECBD16E00828BBC6E412C01DFAE6DE9" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask newvalidusername about Paris France Hotel</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220694041">
+<a name="UR220694041"></a>
+<div id="UR220694041" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_449F9DDEF4CE8A218F855DC535BD0DFC-SRC_220694041" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_449F9DDEF4CE8A218F855DC535BD0DFC ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/e4/a3/1d/malbear.jpg" class="avatar potentialFacebookAvatar avatarGUID:449F9DDEF4CE8A218F855DC535BD0DFC" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_449F9DDEF4CE8A218F855DC535BD0DFC" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Malbear</span>
+</div>
+</div>
+<div class="location">
+London
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_449F9DDEF4CE8A218F855DC535BD0DFC-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Top Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="114 reviews" class="icon badge_topcontributor sprite-badge_topcontributor" width="25" height="24">
+<span class="badgeText">114 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_3rd sprite-badge_hotels_3rd" width="25" height="24">
+<span class="badgeText">36 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '449F9DDEF4CE8A218F855DC535BD0DFC', screenName: 'Malbear', geos: [734464, 298006, 562819, 188644, 318895, 188590, 186235, 187371, 187870, 187529, 297971, 187321, 187525, 187190, 187191, 293986, 187189, 293731, 189158, 187147, 304018, 189852, 293734, 293733, 298101, 293974, 187514, 198395, 298349, 187337, 189106, 187281, 187162, 187164, 187075, 187073, 187346], geo: '187147' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 37 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 37 cities</span> </div>
+<div id="UID_449F9DDEF4CE8A218F855DC535BD0DFC-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="91 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">91 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187147-d290407-r220694041-Paris_France_Hotel-Paris_Ile_de_France.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220694041">&#x201c;<span class='noQuotes'>Good location</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='9 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+This is a charming old building which has been well modernised though I would suggest more comfortable sofas in the reception areas. My room was on the top floor that could be reached by the compact but modern lift. There are two more floors reached by stairs. My room was pleasantly decorated and I had a great view of the streets heading West and East. The bathroom was small but it had a good shower though there was no grab rail. However you could hold onto the washbasin when stepping out of the shower as the space was quite tight. You can't be tempted to steal the complimentary toiletries as there aren't any except soap. The bed was comfortable and the bedlinen was good. There is a desk and chair and complimentary wifi but I would have like to have had a comfortable armchair too. The breakfast was fine - croissants, bread, butter and jam and as much orange juice, coffee and tea as you want. What made it a very pleasurable stay was the friendly and helpful staff. Also the hotel is located just minutes from the Republique Metro which is hub for several different lines. One of them, No. 5, is only 3 stops to the Gare du Nord.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> I had a 7th floor room on the street side which gave me panoramic views of the streets and rooftops...
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled solo</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq220694041_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220694041 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkUdkqHMXAKdKkqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmKdkAUv6XoXfXXUdvKA3X6XoXfXXK3AdKdU6XoXfXXKd33Uom6XoXfXXKXdoKdm6XoXfXUAXXvdmK6XoXfXUAUUvkvU6XoXfXUvAU3UUo6XoXfXUvvvAUUU6XoXfXUvkdAkmKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmKdkAUvqHwJEStQQoqnQQqnEJCnVQQoqnQQqWqHwJEStQQoqnQQlcVQQoqnQQMVQQoqnQQqnEJCnVxiGIac6XoXmqoTpcXXK3AdKdU0tEn1XXK3AdKdU0zH1UvkUdk0pSM1ddAqnAxMxMzsqndfzsvbXUvqnvooxMfomo7xMKxMqnf0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220694041" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220694041'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/Malbear/g187147" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 11 reviews by Malbear for Paris </a>
+</div>
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=449F9DDEF4CE8A218F855DC535BD0DFC&amp;lang=en&amp;messagetype=2&amp;d=290407&amp;geo=&amp;src=220694041&amp;t=r&amp;summary=Paris+France+Hotel" id="pm449F9DDEF4CE8A218F855DC535BD0DFC" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Malbear about Paris France Hotel</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220466153">
+<a name="UR220466153"></a>
+<div id="UR220466153" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_860CBB7CFB97056AE3F8AE769792D57D-SRC_220466153" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_860CBB7CFB97056AE3F8AE769792D57D ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9d/avatar068.jpg" class="avatar potentialFacebookAvatar avatarGUID:860CBB7CFB97056AE3F8AE769792D57D" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_860CBB7CFB97056AE3F8AE769792D57D" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">teachersheb</span>
+</div>
+</div>
+<div class="location">
+Arlington, Virginia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_860CBB7CFB97056AE3F8AE769792D57D-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="25 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">25 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">12 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '860CBB7CFB97056AE3F8AE769792D57D', screenName: 'teachersheb', geos: [47369, 187147, 58258, 187791, 608874, 1229340, 60811, 32341, 34227, 189400, 34048, 189970, 482941, 187870, 482942, 150810, 189934, 29750, 58313], geo: '187147' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 19 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 19 cities</span> </div>
+<div id="UID_860CBB7CFB97056AE3F8AE769792D57D-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="26 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">26 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187147-d290407-r220466153-Paris_France_Hotel-Paris_Ile_de_France.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220466153">&#x201c;<span class='noQuotes'>Such a gem! Great location and great value!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='8 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+Hotel Paris France was an absolute gem. Not only is the building itself charming and beautiful, but it is in a great location, close to several metro stops--making all parts of Paris easily accessible. The closest metro stop is Temple, and it is also near Republique. Every staff member we encountered at the hotel was helpful and friendly. Breakfast is 6 Euros if you want to eat in the hotel. We didn't try the breakfast, as there are many, many cafes nearby where you can grab a croissant and coffee. <br/>The room we stayed in was small but impeccably maintained and very clean. The bed was comfortable, and the crisp, white sheets were changed daily. Despite being on the busy Rue de Turbigo, the double-paned windows keep the noise down pretty well. I would recommend bringing ear plugs and playing the white noise app on your phone at night and in the morning. Because the rooms are packed closely together, it's inevitable that you will hear your neighbors banging around. Also, the wi-fi could be better--our connection kept dropping. The best place to use the wi-fi was in the lobby of the hotel. <br/>In my opinion, this hotel was a fantastic value, and we will stay here again when we come back to Paris.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Bring ear plugs and use a white noise app on your iPhone, and you will sleep fine! This is a great...
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq220466153_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220466153 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkUdkqHMXAKdKkqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmKdkAUv6XoXfXXUdvKA3X6XoXfXXK3AdKdU6XoXfXXKd33Uom6XoXfXXKXdoKdm6XoXfXUAXXvdmK6XoXfXUAUUvkvU6XoXfXUvAU3UUo6XoXfXUvvvAUUU6XoXfXUvkdAkmKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmKdkAUvqHwJEStQQoqnQQqnEJCnVQQoqnQQqWqHwJEStQQoqnQQlcVQQoqnQQMVQQoqnQQqnEJCnVxiGIac6XoXmqoTpcXXKd33Uom0tEn1XXKd33Uom0zH1UvkUdk0pSM1v3Kf77kfqn7AkKo3bzsmqnvbzsk3AkAXxMokxM0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220466153" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220466153'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/teachersheb/g187147" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 3 reviews by teachersheb for Paris </a>
+</div>
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=860CBB7CFB97056AE3F8AE769792D57D&amp;lang=en&amp;messagetype=2&amp;d=290407&amp;geo=&amp;src=220466153&amp;t=r&amp;summary=Paris+France+Hotel" id="pm860CBB7CFB97056AE3F8AE769792D57D" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask teachersheb about Paris France Hotel</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220245043">
+<a name="UR220245043"></a>
+<div id="UR220245043" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_3F582F66867E7B44543E62027C4CCBA4-SRC_220245043" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_3F582F66867E7B44543E62027C4CCBA4 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/99/avatar025.jpg" class="avatar potentialFacebookAvatar avatarGUID:3F582F66867E7B44543E62027C4CCBA4" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_3F582F66867E7B44543E62027C4CCBA4" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Patricia L</span>
+</div>
+</div>
+<div class="location">
+London, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_3F582F66867E7B44543E62027C4CCBA4-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">3 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '3F582F66867E7B44543E62027C4CCBA4', screenName: 'Patricia L', geos: [187147, 186338], geo: '187147' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 2 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 2 cities</span> </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187147-d290407-r220245043-Paris_France_Hotel-Paris_Ile_de_France.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220245043">&#x201c;<span class='noQuotes'>best of all!!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='7 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+In love with paris and in love with this hotel! the view of eiffel tower from our room was just something unbelievable , room was awesome, staff were great and really pleasant! want to go back! Thank you!
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed March 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq220245043_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220245043 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkUdkqHMXAKdKkqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmKdkAUv6XoXfXXUdvKA3X6XoXfXXK3AdKdU6XoXfXXKd33Uom6XoXfXXKXdoKdm6XoXfXUAXXvdmK6XoXfXUAUUvkvU6XoXfXUvAU3UUo6XoXfXUvvvAUUU6XoXfXUvkdAkmKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmKdkAUvqHwJEStQQoqnQQqnEJCnVQQoqnQQqWqHwJEStQQoqnQQlcVQQoqnQQMVQQoqnQQqnEJCnVxiGIac6XoXmqoTpcXXKXdoKdm0tEn1XXKXdoKdm0zH1UvkUdk0pSM1mqnovXqn33v3kzsk7ddodmzs3XKXkfdff7bd0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220245043" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220245043'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=3F582F66867E7B44543E62027C4CCBA4&amp;lang=en&amp;messagetype=2&amp;d=290407&amp;geo=&amp;src=220245043&amp;t=r&amp;summary=Paris+France+Hotel" id="pm3F582F66867E7B44543E62027C4CCBA4" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Patricia L about Paris France Hotel</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_219228430">
+<a name="UR219228430"></a>
+<div id="UR219228430" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_2797C7481958DB3F768D62D57C6DFE18-SRC_219228430" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_2797C7481958DB3F768D62D57C6DFE18 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-o/04/5d/37/65/shirrenlim.jpg" class="avatar potentialFacebookAvatar avatarGUID:2797C7481958DB3F768D62D57C6DFE18" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_2797C7481958DB3F768D62D57C6DFE18" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">ShirrenLim</span>
+</div>
+</div>
+<div class="location">
+Jakarta, Indonesia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_2797C7481958DB3F768D62D57C6DFE18-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="21 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">21 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">6 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '2797C7481958DB3F768D62D57C6DFE18', screenName: 'ShirrenLim', geos: [187147, 294223, 188590, 293890, 1169608, 186338, 1221645, 321541], geo: '187147' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 8 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 8 cities</span> </div>
+<div id="UID_2797C7481958DB3F768D62D57C6DFE18-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="12 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">12 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187147-d290407-r219228430-Paris_France_Hotel-Paris_Ile_de_France.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r219228430">&#x201c;<span class='noQuotes'>Great hotel!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='3 August 2014'>Reviewed 3 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+We booked this hotel based on the reviews here and we must say that we were not disappointed at all ! The staffs are friendly and super helpful. Thank you Monsieur Herve for answering all our curious questions.<br/><br/>We stayed in the red room on the 7th floor that has a view of the Eiffel Tower in the distance. The room is adequately sized with super comfortable bed and pillows. The bathroom is delightfully spacious, clean and bright. Wifi internet works fast in the room. The church right next to the hotel has a bell that chimes at 15 mins increments but thankfully we weren't much disturbed by it.<br/><br/>Paris is best explored by foot and the hotel's central location makes it a great place to stay in the city. To the left of the hotel is Centre Georges Pompidou, Notre Dame and further down is the Louvre Museum. All within walking distance. Further away is the wonderful Marais area. Behind the hotel is the Monoprix supermarket for all your grocery needs. The Republique and Temple Metro Station is just a short walk from the hotel, if you’re thinking of using the Metro. This lovely hotel is also surrounded by cafes so there's really no need to include breakfast with the hotel.<br/><br/>We highly recommend this 2 star hotel at a 5 star location and will surely stay here again!
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Request for the red room (high floor with view of Eiffel Tower) You can see the Tower lit up at nigh...
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="media  thumbCols1">
+<div class="thumbnails">
+<div class="photosInline">
+<ul>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g187147-d290407-i105833011-r219228430-Paris_France_Hotel-Paris_Ile_de_France.html#105833011 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 290407, 187147, 2, 105833011);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/4e/e2/33/paris-france-hotel.jpg" alt="" width="50" height="50">
+</span>
+</li>
+</ul>
+</div> </div> </div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled with friends</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq219228430_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq219228430 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkUdkqHMXAKdKkqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmKdkAUv6XoXfXXUdvKA3X6XoXfXXK3AdKdU6XoXfXXKd33Uom6XoXfXXKXdoKdm6XoXfXUAXXvdmK6XoXfXUAUUvkvU6XoXfXUvAU3UUo6XoXfXUvvvAUUU6XoXfXUvkdAkmKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmKdkAUvqHwJEStQQoqnQQqnEJCnVQQoqnQQqWqHwJEStQQoqnQQlcVQQoqnQQMVQQoqnQQqnEJCnVxiGIac6XoXmqoTpcXUAXXvdmK0tEn1XUAXXvdmK0zH1UvkUdk0pSM1XkAkfkdvUAovxM7mqnk3vxM3XxMokf3xMqnzsUv0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_219228430" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '219228430'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/ShirrenLim/g187147" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 6 reviews by ShirrenLim for Paris </a>
+</div>
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=2797C7481958DB3F768D62D57C6DFE18&amp;lang=en&amp;messagetype=2&amp;d=290407&amp;geo=&amp;src=219228430&amp;t=r&amp;summary=Paris+France+Hotel" id="pm2797C7481958DB3F768D62D57C6DFE18" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask ShirrenLim about Paris France Hotel</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_219118781">
+<a name="UR219118781"></a>
+<div id="UR219118781" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_85A4CB3C9C56FCDBEE653A10D02D973E-SRC_219118781" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_85A4CB3C9C56FCDBEE653A10D02D973E ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/02/c0/97/ec/riocat.jpg" class="avatar potentialFacebookAvatar avatarGUID:85A4CB3C9C56FCDBEE653A10D02D973E" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_85A4CB3C9C56FCDBEE653A10D02D973E" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Riocat</span>
+</div>
+</div>
+<div class="location">
+York, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_85A4CB3C9C56FCDBEE653A10D02D973E-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="10 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">10 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">6 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '85A4CB3C9C56FCDBEE653A10D02D973E', screenName: 'Riocat', geos: [187147, 186347, 186411, 186330, 667803, 190820], geo: '187147' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 6 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 6 cities</span> </div>
+<div id="UID_85A4CB3C9C56FCDBEE653A10D02D973E-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="7 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">7 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187147-d290407-r219118781-Paris_France_Hotel-Paris_Ile_de_France.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r219118781">&#x201c;<span class='noQuotes'>Great little hotel and 5* location</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='3 August 2014'>Reviewed 3 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+Booked this hotel over a year in advance for the finish of Le Tour de France so choices were limited. We've never looked at 2* hotels before but so glad we took a chance on this one. We stayed for 3 nights and had one of our best ever trips to Paris! <br/><br/>The hotel is in an great location - easy to get to by RER B from CDG and just three metro stops from GDN. It's in a lovely neighbourhood. 5-10 mins walk from Pompidou centre with loads of lovely cafés and restaurants nearby on Le Brise Miche. There are a couple of cafe bars near the hotel too which are perfect for a night cap or coffee before bed. <br/><br/>The hotel itself was lovely and clean, all the staff were super friendly and welcoming, and the breakfast croissants and baguettes were very fresh and tasty. Our room was so cosy and quiet - we were on 7th floor which felt private and we had fabulous views, including the top of the Eiffel Tower. <br/><br/>We walked everywhere in Paris but if you prefer to use the metro there are two stations nearby (republique and Temple). There are also bikes (like Boris bikes) on the street, if you're feeling brave! We ate out each night but there are a couple of Monoprix and Carrefour stores nearby (one right behind the hotel). <br/><br/>All in all, a fantastic place to stay in Paris and the only place we'll book in future. Really good value for money.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed July 2014</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq219118781_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq219118781 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkUdkqHMXAKdKkqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmKdkAUv6XoXfXXUdvKA3X6XoXfXXK3AdKdU6XoXfXXKd33Uom6XoXfXXKXdoKdm6XoXfXUAXXvdmK6XoXfXUAUUvkvU6XoXfXUvAU3UUo6XoXfXUvvvAUUU6XoXfXUvkdAkmKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmKdkAUvqHwJEStQQoqnQQqnEJCnVQQoqnQQqWqHwJEStQQoqnQQlcVQQoqnQQMVQQoqnQQqnEJCnVxiGIac6XoXmqoTpcXUAUUvkvU0tEn1XUAUUvkvU0zH1UvkUdk0pSM1vobdf7mfAfo3qnfxM7zszs3ombUKxMKXxMAkmzs0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_219118781" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '219118781'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=85A4CB3C9C56FCDBEE653A10D02D973E&amp;lang=en&amp;messagetype=2&amp;d=290407&amp;geo=&amp;src=219118781&amp;t=r&amp;summary=Paris+France+Hotel" id="pm85A4CB3C9C56FCDBEE653A10D02D973E" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Riocat about Paris France Hotel</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_218916115">
+<a name="UR218916115"></a>
+<div id="UR218916115" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_047358094F0D421C52021FC0F59D6AF7-SRC_218916115" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_047358094F0D421C52021FC0F59D6AF7 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/02/76/91/3c/loveeurope411.jpg" class="avatar potentialFacebookAvatar avatarGUID:047358094F0D421C52021FC0F59D6AF7" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_047358094F0D421C52021FC0F59D6AF7" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">LoveEurope411</span>
+</div>
+</div>
+<div class="location">
+Baltimore, Maryland
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_047358094F0D421C52021FC0F59D6AF7-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Top Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="229 reviews" class="icon badge_topcontributor sprite-badge_topcontributor" width="25" height="24">
+<span class="badgeText">229 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">24 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '047358094F0D421C52021FC0F59D6AF7', screenName: 'LoveEurope411', geos: [187849, 147244, 147366, 41310, 147243, 60811, 188644, 41166, 226865, 186525, 34141, 187309, 41298, 291967, 60827, 196646, 187870, 187185, 186338, 186370, 187147, 52819, 187514, 46365, 651718, 187899, 187497, 34515, 147355, 187895, 58313, 147354, 48261, 186298, 187791, 41363, 187786, 41368, 188590, 41232, 60745, 292019, 187256, 53048, 60763, 187793, 28970, 188600, 187212, 291968, 29494, 147406, 41268, 46404, 150809, 41381, 190745, 60795, 580326, 147416, 186605, 188675, 60798, 41388], geo: '187147' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 64 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 64 cities</span> </div>
+<div id="UID_047358094F0D421C52021FC0F59D6AF7-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="131 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">131 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187147-d290407-r218916115-Paris_France_Hotel-Paris_Ile_de_France.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r218916115">&#x201c;<span class='noQuotes'>Our Latest Stay</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='2 August 2014'>Reviewed 3 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+If you have seen my other reviews of this hotel there's not much else for me to add. I've stayed at the Paris France Hotel yearly for the past 6-7 years. I'll just reinforce what I've said before this hotel is a great place to stay in Paris. Things are changing there as always for the better . In July they were remodeling what used to be the front lounge area can't wait to see what it looks like. We'll be back again next year.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> I think we have stayed on every floor and never had a problem. This trip we were on the seventh floo...
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq218916115_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq218916115 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkUdkqHMXAKdKkqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmKdkAUv6XoXfXXUdvKA3X6XoXfXXK3AdKdU6XoXfXXKd33Uom6XoXfXXKXdoKdm6XoXfXUAXXvdmK6XoXfXUAUUvkvU6XoXfXUvAU3UUo6XoXfXUvvvAUUU6XoXfXUvkdAkmKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmKdkAUvqHwJEStQQoqnQQqnEJCnVQQoqnQQqWqHwJEStQQoqnQQlcVQQoqnQQMVQQoqnQQqnEJCnVxiGIac6XoXmqoTpcXUvAU3UUo0tEn1XUvAU3UUo0zH1UvkUdk0pSM1KdkmovKAdqnKxMdXUfoXKXUqnfKqnoAxM3bqnk0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_218916115" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '218916115'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/LoveEurope411/g187147" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 17 reviews by LoveEurope411 for Paris </a>
+</div>
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=047358094F0D421C52021FC0F59D6AF7&amp;lang=en&amp;messagetype=2&amp;d=290407&amp;geo=&amp;src=218916115&amp;t=r&amp;summary=Paris+France+Hotel" id="pm047358094F0D421C52021FC0F59D6AF7" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask LoveEurope411 about Paris France Hotel</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class='duplicateReviewsInline'>
+<div class='previous'>LoveEurope411 has 3 more reviews of Paris France Hotel</div>
+<ul class='dupReviews'>
+<li class="dupReviewItem">
+<div class='reviewTitle'>
+<a href="/ShowUserReviews-g187147-d290407-r112084000-Paris_France_Hotel-Paris_Ile_de_France.html#REVIEWS">&#x201c;A Very Nice Hotel And We Are Going Back To Stay Again In July 2011&#x201d;</a>
+</div>
+<div class='rating'>
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="date">Reviewed 8 June 2011</span>
+</div>
+</li>
+<li class="dupReviewItem">
+<div class='reviewTitle'>
+<a href="/ShowUserReviews-g187147-d290407-r120111239-Paris_France_Hotel-Paris_Ile_de_France.html#REVIEWS">&#x201c;Our Second Stay, Just as Nice as The First&#x201d;</a>
+</div>
+<div class='rating'>
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="date">Reviewed 3 November 2011</span>
+</div>
+</li>
+<li class="dupReviewItem">
+<div class='reviewTitle'>
+<a href="/ShowUserReviews-g187147-d290407-r168078628-Paris_France_Hotel-Paris_Ile_de_France.html#REVIEWS">&#x201c;Third Times the Charm&#x201d;</a>
+</div>
+<div class='rating'>
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="date">Reviewed 19 July 2013</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_218889111">
+<a name="UR218889111"></a>
+<div id="UR218889111" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_FBC57179F43B71EB76FAEE2496B86469-SRC_218889111" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_FBC57179F43B71EB76FAEE2496B86469 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/9e/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:FBC57179F43B71EB76FAEE2496B86469" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_FBC57179F43B71EB76FAEE2496B86469" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">joachim S</span>
+</div>
+</div>
+<div class="location">
+Berlin, Germany
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_FBC57179F43B71EB76FAEE2496B86469-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">3 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'FBC57179F43B71EB76FAEE2496B86469', screenName: 'joachim S', geos: [187147, 293734], geo: '187147' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 2 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 2 cities</span> </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187147-d290407-r218889111-Paris_France_Hotel-Paris_Ile_de_France.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r218889111">&#x201c;<span class='noQuotes'>Very well located</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='1 August 2014'>Reviewed 3 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+I came here with my girlfriend after a long week in Morocco<br/>This is nice hotel very well located close to all the main monuments.<br/>The service is ok.<br/>It's a nice place if you want to spend a short week in Paris.<br/>I do recommand this place.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq218889111_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq218889111 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkUdkqHMXAKdKkqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmKdkAUv6XoXfXXUdvKA3X6XoXfXXK3AdKdU6XoXfXXKd33Uom6XoXfXXKXdoKdm6XoXfXUAXXvdmK6XoXfXUAUUvkvU6XoXfXUvAU3UUo6XoXfXUvvvAUUU6XoXfXUvkdAkmKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmKdkAUvqHwJEStQQoqnQQqnEJCnVQQoqnQQqWqHwJEStQQoqnQQlcVQQoqnQQMVQQoqnQQqnEJCnVxiGIac6XoXmqoTpcXUvvvAUUU0tEn1XUvvvAUUU0zH1UvkUdk0pSM1qn7fokUkAqndm7kUzs7k3qnbzszsXdA37v3d3A0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_218889111" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '218889111'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=FBC57179F43B71EB76FAEE2496B86469&amp;lang=en&amp;messagetype=2&amp;d=290407&amp;geo=&amp;src=218889111&amp;t=r&amp;summary=Paris+France+Hotel" id="pmFBC57179F43B71EB76FAEE2496B86469" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask joachim S about Paris France Hotel</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_218749730">
+<a name="UR218749730"></a>
+<div id="UR218749730" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_803A17250DEE158608549A065B623610-SRC_218749730" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_803A17250DEE158608549A065B623610 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9d/avatar068.jpg" class="avatar potentialFacebookAvatar avatarGUID:803A17250DEE158608549A065B623610" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_803A17250DEE158608549A065B623610" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Gary C</span>
+</div>
+</div>
+<div class="location">
+Queenstown, New Zealand
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_803A17250DEE158608549A065B623610-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="5 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">5 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">4 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '803A17250DEE158608549A065B623610', screenName: 'Gary C', geos: [187147, 186423, 186258], geo: '187147' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 3 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 3 cities</span> </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187147-d290407-r218749730-Paris_France_Hotel-Paris_Ile_de_France.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r218749730">&#x201c;<span class='noQuotes'>Great experience</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='1 August 2014'>Reviewed 3 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+We really enjoyed our stay at this hotel. The room was very clean and a good size. The staff were very friendly and helpful. Our room was ready even though we arrive early in the morning. We would recommend staying at this hotel and we would stay there again. The hotel was in walking distance to all of the main attraction.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq218749730_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq218749730 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkUdkqHMXAKdKkqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmKdkAUv6XoXfXXUdvKA3X6XoXfXXK3AdKdU6XoXfXXKd33Uom6XoXfXXKXdoKdm6XoXfXUAXXvdmK6XoXfXUAUUvkvU6XoXfXUvAU3UUo6XoXfXUvvvAUUU6XoXfXUvkdAkmKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmKdkAUvqHwJEStQQoqnQQqnEJCnVQQoqnQQqWqHwJEStQQoqnQQlcVQQoqnQQMVQQoqnQQqnEJCnVxiGIac6XoXmqoTpcXUvkdAkmK0tEn1XUvkdAkmK0zH1UvkUdk0pSM1vKmbUkXoKxMzszsUov3KvodAbK3o73Xm3UK0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_218749730" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '218749730'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=803A17250DEE158608549A065B623610&amp;lang=en&amp;messagetype=2&amp;d=290407&amp;geo=&amp;src=218749730&amp;t=r&amp;summary=Paris+France+Hotel" id="pm803A17250DEE158608549A065B623610" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Gary C about Paris France Hotel</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,1224 @@
+<div id="expanded_review_224094237">
+<a name="UR224094237"></a>
+<div id="UR224094237" class="extended provider0 first newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_7DA5AF7A7678986B9110A28BBEB265EE-SRC_224094237" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_7DA5AF7A7678986B9110A28BBEB265EE ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: '7DA5AF7A7678986B9110A28BBEB265EE'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/ef/66/83/soffis.jpg" class="avatar potentialFacebookAvatar avatarGUID:7DA5AF7A7678986B9110A28BBEB265EE" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_7DA5AF7A7678986B9110A28BBEB265EE" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">soffis</span>
+</div>
+</div>
+<div class="location">
+Stockholm, Sweden
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_7DA5AF7A7678986B9110A28BBEB265EE-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="47 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">47 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">22 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '7DA5AF7A7678986B9110A28BBEB265EE', screenName: 'soffis', geos: [186609, 189852, 616290, 274951, 147329, 189541, 295424, 608868, 274958, 1370498, 294474, 189836, 189970, 147282, 186600, 187323, 189894, 274887, 186470], geo: '187323' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 19 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 19 cities</span> </div>
+<div id="UID_7DA5AF7A7678986B9110A28BBEB265EE-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="29 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">29 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187323-d589462-r224094237-Melia_Berlin-Berlin.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224094237">&#x201c;<span class='noQuotes'>Overall a good hotel</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed yesterday
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Stayed here for 3 days with work. I had a very good experience. I asked for a non smoking quiet room and got a quiet room on the 4th floor far away from elevators. The room was quiet didn't hear anyone really. Big and clean. With a small bathtub. Small flat screen TV with 2 English news channels. I also tried their pillow service and got a pillow filled with seeds, not really what I expected but I liked it and its a nice service to have. <br/><br/>The breakfast was good, no complaints, you can select your own omelette, get fried eggs the way you like it and all the normal features. There was also sparkling wine at the breakfast buffet.<br/><br/>I wanted to use the treadmill in the fitness centre on the 8th floor but it was always busy and it was rather cold up there anyway so I went out for my runs instead. You can get a 5k run just to the beginning of Tiergarten and back by the river. The fitness centre is small but has some free weights, cycle and a cross trainer. There is a door out to the roof from the area as well you can get a view over the front street.<br/><br/>I took the 128 bus from Tegel to Kurt-Schumacher station and the s-bahn from there to Fredrichstrasse station, just by the hotel, took about 25min cost €2.6. Took a taxi back to Tegel which the hotel arranged for me for €26.<br/><br/>The hotel is located very good, took me about 30min to walk to Alexander platz. 20min to Checkpoint Charlie. There is a supermarket in the Fredrichstrasse station. Shops and restaurants just by the hotel.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled on business</span>
+<ul class="recommend-column first">
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224094237_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224094237 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkmXmqHMovAd3XqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKAdXmk6XoXfXXm3k3AXk6XoXfXXm3ooAXK6XoXfXXmoAd3mk6XoXfXXmmoUv3m6XoXfXXmXkAKXK6XoXfXXmUAdKAX6XoXfXXXAdXAKv6XoXfXXX3K3dmv6XoXfXXXokmXvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKAdXmkqHDVcSJQQoqnQQ7VEcSCqH7VEcSCxiGIac6XoXmqoTpcXXdKAdXmk0tEn1XXdKAdXmk0zH1UvkmXm0pSM1kxMbobqnkbk3kvAv37AUUKbXv77zs7X3ozszs0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224094237" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224094237'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/soffis/g187323" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 7 reviews by soffis for Berlin </a>
+</div>
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=7DA5AF7A7678986B9110A28BBEB265EE&amp;lang=en&amp;messagetype=2&amp;d=589462&amp;geo=&amp;src=224094237&amp;t=r&amp;summary=Melia+Berlin" id="pm7DA5AF7A7678986B9110A28BBEB265EE" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask soffis about Melia Berlin</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_223676927">
+<a name="UR223676927"></a>
+<div id="UR223676927" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_65F5BF469ECE91D16ABA14A5BFE46C59-SRC_223676927" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_65F5BF469ECE91D16ABA14A5BFE46C59 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/97/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:65F5BF469ECE91D16ABA14A5BFE46C59" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_65F5BF469ECE91D16ABA14A5BFE46C59" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">amnonvekill</span>
+</div>
+</div>
+<div class="location">
+Norway
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_65F5BF469ECE91D16ABA14A5BFE46C59-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="12 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">12 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">9 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '65F5BF469ECE91D16ABA14A5BFE46C59', screenName: 'amnonvekill', geos: [189839, 187147, 187331, 187323, 188590, 189873], geo: '187323' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 6 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 6 cities</span> </div>
+<div id="UID_65F5BF469ECE91D16ABA14A5BFE46C59-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="10 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">10 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187323-d589462-r223676927-Melia_Berlin-Berlin.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223676927">&#x201c;<span class='noQuotes'>one of the best</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='23 August 2014'>Reviewed 3 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+It's our 6th or 7th time at this hotel,and it's one of the best to stay at if you vitis Berlin.<br/>Great location near FriedrichStrasse station,with most of the attraction near by.<br/>Good service,great breakfast!(even if it became more expensive).<br/>Quite and clean rooms ,LED TV with CNN and BBC news and free Wi-Fi.<br/>If you need a kettle to make your own coffee or tea,just ask for it at the reception.<br/>One more importent thing, if it's your first time there i will reccomend you to be a member at Melia hotels,you'll get many benefits on your staying (such as newspaper at the door in the morning,possibility to a late check out,Wi-Fi, extra voucher to use at the hotel plus extra points that you'll might use later.<br/>Another great benefit with membership is that on your birthday you'll get the opportunity to get one free night if you book 2,3.or 4 night!<br/>Good luck. <br/>
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<p>Review collected in partnership with Melia Hotels International <span class="sprite-info_grn info_grn" onclick="ta.call('ta.overlays.Factory.showPartnerAttributionTip', event, this.parentNode, 'This business uses online tools and resources provided by TripAdvisor to encourage and collect reviews (including this one) from its guests.');"></span></p>
+<div id="helpfulq223676927_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223676927 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkmXmqHMovAd3XqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKAdXmk6XoXfXXm3k3AXk6XoXfXXm3ooAXK6XoXfXXmoAd3mk6XoXfXXmmoUv3m6XoXfXXmXkAKXK6XoXfXXmUAdKAX6XoXfXXXAdXAKv6XoXfXXX3K3dmv6XoXfXXXokmXvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKAdXmkqHDVcSJQQoqnQQ7VEcSCqH7VEcSCxiGIac6XoXmqoTpcXXm3k3AXk0tEn1XXm3k3AXk0zH1UvkmXm0pSM13oqno7qnd3AzsfzsAUxMU3b7bUdbo7qnzsd3foA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223676927" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223676927'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/amnonvekill/g187323" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 5 reviews by amnonvekill for Berlin </a>
+</div>
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=65F5BF469ECE91D16ABA14A5BFE46C59&amp;lang=en&amp;messagetype=2&amp;d=589462&amp;geo=&amp;src=223676927&amp;t=r&amp;summary=Melia+Berlin" id="pm65F5BF469ECE91D16ABA14A5BFE46C59" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask amnonvekill about Melia Berlin</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class='duplicateReviewsInline'>
+<div class='previous'>amnonvekill has 2 more reviews of Melia Berlin</div>
+<ul class='dupReviews'>
+<li class="dupReviewItem">
+<div class='reviewTitle'>
+<a href="/ShowUserReviews-g187323-d589462-r76426154-Melia_Berlin-Berlin.html#REVIEWS">&#x201c;Perfect hotel&#x201d;</a>
+</div>
+<div class='rating'>
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="date">Reviewed 23 August 2010</span>
+</div>
+</li>
+<li class="dupReviewItem">
+<div class='reviewTitle'>
+<a href="/ShowUserReviews-g187323-d589462-r117330742-Melia_Berlin-Berlin.html#REVIEWS">&#x201c;Still great hotel&#x201d;</a>
+</div>
+<div class='rating'>
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="date">Reviewed 28 August 2011</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223655920">
+<a name="UR223655920"></a>
+<div id="UR223655920" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_12F559B9A3128B53EBF78B6F6913084D-SRC_223655920" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_12F559B9A3128B53EBF78B6F6913084D ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/92/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:12F559B9A3128B53EBF78B6F6913084D" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_12F559B9A3128B53EBF78B6F6913084D" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">JanCux2011</span>
+</div>
+</div>
+<div class="location">
+Stockholm, Sweden
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_12F559B9A3128B53EBF78B6F6913084D-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="11 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">11 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">7 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '12F559B9A3128B53EBF78B6F6913084D', screenName: 'JanCux2011', geos: [187348, 189852, 189880, 641949, 187323, 187292, 188113, 297615], geo: '187323' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 8 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 8 cities</span> </div>
+<div id="UID_12F559B9A3128B53EBF78B6F6913084D-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="1 helpful vote" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">1 helpful vote</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187323-d589462-r223655920-Melia_Berlin-Berlin.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223655920">&#x201c;<span class='noQuotes'>Great hotel, great breakfast, close to sightseeing marks</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 3 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Very central. Walking distance to &quot;Brandenburger Tor&quot;, &quot;Reichstag&quot; and &quot;Checkpoint Charly&quot;. A great choice of restaurants in the proximity of the hotel. Very large and quite room. Very polite staff. Standard of the room was very good. The wifi is sluggish.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed June 2014, travelled solo</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq223655920_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223655920 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkmXmqHMovAd3XqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKAdXmk6XoXfXXm3k3AXk6XoXfXXm3ooAXK6XoXfXXmoAd3mk6XoXfXXmmoUv3m6XoXfXXmXkAKXK6XoXfXXmUAdKAX6XoXfXXXAdXAKv6XoXfXXX3K3dmv6XoXfXXXokmXvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKAdXmkqHDVcSJQQoqnQQ7VEcSCqH7VEcSCxiGIac6XoXmqoTpcXXm3ooAXK0tEn1XXm3ooAXK0zH1UvkmXm0pSM1UXqnooA7AbmUXv7omzs7qnkv73qn3AUmKvdxM0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223655920" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223655920'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=12F559B9A3128B53EBF78B6F6913084D&amp;lang=en&amp;messagetype=2&amp;d=589462&amp;geo=&amp;src=223655920&amp;t=r&amp;summary=Melia+Berlin" id="pm12F559B9A3128B53EBF78B6F6913084D" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask JanCux2011 about Melia Berlin</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223594637">
+<a name="UR223594637"></a>
+<div id="UR223594637" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_1D49AA3A2542FEAE407F66B34217BD8E-SRC_223594637" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_1D49AA3A2542FEAE407F66B34217BD8E ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/d1/d7/0d/vangelli9.jpg" class="avatar potentialFacebookAvatar avatarGUID:1D49AA3A2542FEAE407F66B34217BD8E" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_1D49AA3A2542FEAE407F66B34217BD8E" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">vangelli9</span>
+</div>
+</div>
+<div class="location">
+North Bergen, New Jersey
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_1D49AA3A2542FEAE407F66B34217BD8E-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="9 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">9 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">9 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '1D49AA3A2542FEAE407F66B34217BD8E', screenName: 'vangelli9', geos: [189431, 482941, 60811, 274707, 187323, 60745, 186338, 4764667, 635606], geo: '187323' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 9 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 9 cities</span> </div>
+<div id="UID_1D49AA3A2542FEAE407F66B34217BD8E-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="11 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">11 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187323-d589462-r223594637-Melia_Berlin-Berlin.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223594637">&#x201c;<span class='noQuotes'>Good hotel for business</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 3 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+I usually travel to Berlin twice a year on business and this is the only hotel I will stay at. The hotel is only a short cab ride from the airport and is walking distance to many attractions. The subway system is also very close to the hotel. The staff is nice and helpful. The rooms are a good size and clean. Breakfast is very plentiful. Will continue to stay here when visiting Berlin.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed May 2014, travelled on business</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223594637_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223594637 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkmXmqHMovAd3XqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKAdXmk6XoXfXXm3k3AXk6XoXfXXm3ooAXK6XoXfXXmoAd3mk6XoXfXXmmoUv3m6XoXfXXmXkAKXK6XoXfXXmUAdKAX6XoXfXXXAdXAKv6XoXfXXX3K3dmv6XoXfXXXokmXvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKAdXmkqHDVcSJQQoqnQQ7VEcSCqH7VEcSCxiGIac6XoXmqoTpcXXmoAd3mk0tEn1XXmoAd3mk0zH1UvkmXm0pSM1UxMdAbbmbXodXqnzsbzsdKkqn337mdXUk7xMvzs0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223594637" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223594637'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=1D49AA3A2542FEAE407F66B34217BD8E&amp;lang=en&amp;messagetype=2&amp;d=589462&amp;geo=&amp;src=223594637&amp;t=r&amp;summary=Melia+Berlin" id="pm1D49AA3A2542FEAE407F66B34217BD8E" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask vangelli9 about Melia Berlin</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223351863">
+<a name="UR223351863"></a>
+<div id="UR223351863" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_BF29B776D7911BD9295898A137164E21-SRC_223351863" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_BF29B776D7911BD9295898A137164E21 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/76/avatar058.jpg" class="avatar potentialFacebookAvatar avatarGUID:BF29B776D7911BD9295898A137164E21" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_BF29B776D7911BD9295898A137164E21" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">scarlett h</span>
+</div>
+</div>
+<div class="location">
+Alexandria, Virginia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_BF29B776D7911BD9295898A137164E21-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="41 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">41 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">11 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'BF29B776D7911BD9295898A137164E21', screenName: 'scarlett h', geos: [60634, 143057, 60632, 187147, 293974, 187514, 60630, 189400, 143015, 482942, 30226, 187323, 152516, 187439, 3326742, 187438, 45963, 61001], geo: '187323' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 18 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 18 cities</span> </div>
+<div id="UID_BF29B776D7911BD9295898A137164E21-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="48 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">48 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187323-d589462-r223351863-Melia_Berlin-Berlin.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223351863">&#x201c;<span class='noQuotes'>Outstanding location, great service and clean rooms</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+<a class="viaMobile sprite-grayPhone" href="/apps" target="_blank" onclick="ta.util.cookie.setPIDCookie(24687)">via mobile</a>
+</div>
+<div class="entry">
+<p>
+As others have indicated this is an ideal location to explore the most important Berlin museums on Museum island, close walk to the Brandenburg gate, neighborhood has a variety of affordable restaurants, and the rooms are modern and clean. I booked this through European Destinations with breakfast and I am glad I did because the morning buffets were exceptionally good and fueled us through the day. They were accommodating for vegetarian and gluten free items in the buffet. The train, tram, and buses are a few feet away from the hotel entrance so very convenient for public transportation. <br/><br/>How to get there- Taxis with tip is around 20 euros from Tegel if you have a lot of luggage or take the 128 bus from the airport to Kurt-Schumacher plaza on the u-Bahn and it is a direct shot to Friedrichstrasse station (use north exit) and the hotel will be right across the street. <br/><br/>Best value-- if you plan to visit lots of sights and museums, Berlin pass is well worth it. We saved a lot of money buying the 3 day pass. It also gives you one public transport pass per day which you can use during the days you are using the berlin pass or other days. Remember that the time in the berlin pass starts the first time the museum or attraction pass is scanned. We spent the first day going to the Hard Rock Cafe to pick up our berlin pass and walk around the Ku'Damn which is a good shopping area. <br/><br/>Best nearby food to the hotel that is vegetarian and gluten free (or you just need a break from German food) : Vietnam, Bombay, Tex-Mex Cantina, and DaVinci. Best fast food-- the Donner Kebap right outside the hotel.<br/><br/>Room tip: Email in advance asking for your desired floor. We were in 444 and had good views and quiet. Rooms facing the street are ok, the windows are thick so no problem. But best to stay on the higher floors.<br/><br/>Wifi tip: if connectivity is important to you, pay the daily 4.95 euros to have the high speed wifi. It it good for 24 hours and you will need to get the password and sign up for it daily. <br/><br/>Getting around: Public transport is awesome. Just be sure whether you are taking the s-Bahn, u-Bahn or the bus. Ask at least two people for directions so you increase your chances that they are right. <br/><br/>Timing: best to go to the Pergammon and line up by 915 am or so for a 10 o'clock opening because lines get long very fast. Or go around 330 or 4 pm which we did and the line was relatively short. Go to the Bundestag and reserve for breakfast in advance-- allows you to skip lines and the views are breathtaking and you get to take the tour using the audio guide even if the tours are full.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014, travelled as a couple</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223351863_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223351863 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkmXmqHMovAd3XqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKAdXmk6XoXfXXm3k3AXk6XoXfXXm3ooAXK6XoXfXXmoAd3mk6XoXfXXmmoUv3m6XoXfXXmXkAKXK6XoXfXXmUAdKAX6XoXfXXXAdXAKv6XoXfXXX3K3dmv6XoXfXXXokmXvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKAdXmkqHDVcSJQQoqnQQ7VEcSCqH7VEcSCxiGIac6XoXmqoTpcXXmmoUv3m0tEn1XXmmoUv3m0zH1UvkmXm0pSM17qnXA7kk3xMkAUU7xMAXAovAvbUmkU3dzsXU0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223351863" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223351863'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=BF29B776D7911BD9295898A137164E21&amp;lang=en&amp;messagetype=2&amp;d=589462&amp;geo=&amp;src=223351863&amp;t=r&amp;summary=Melia+Berlin" id="pmBF29B776D7911BD9295898A137164E21" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask scarlett h about Melia Berlin</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223279020">
+<a name="UR223279020"></a>
+<div id="UR223279020" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_63D897EB3FAB866C4AC844B4317F60C6-SRC_223279020" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_63D897EB3FAB866C4AC844B4317F60C6 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/04/80/ec/af/sec34.jpg" class="avatar potentialFacebookAvatar avatarGUID:63D897EB3FAB866C4AC844B4317F60C6" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_63D897EB3FAB866C4AC844B4317F60C6" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">sec34</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_63D897EB3FAB866C4AC844B4317F60C6-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="17 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">17 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">3 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '63D897EB3FAB866C4AC844B4317F60C6', screenName: 'sec34', geos: [154943, 52024, 1136493, 186334, 504175, 187323, 186338, 60750, 32355], geo: '187323' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 9 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 9 cities</span> </div>
+<div id="UID_63D897EB3FAB866C4AC844B4317F60C6-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="20 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">20 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187323-d589462-r223279020-Melia_Berlin-Berlin.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223279020">&#x201c;<span class='noQuotes'>Prime location</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Cannot be beaten on location for sightseeing and culture. <br/>On the river, opposite the U-Bahn, S-Bahn, tram system, river boats and buses. <br/>2 min walk to Museum Island, 10 min walk to Brandenburg Gate/Opera House/Reichstag.<br/>The street is Berlin's equivalent of 5th Avenue apparently - lots of shops and department stores, restaurants/bars, theatres etc.<br/>Direct train (20mins) to the Olympic Stadium. Bus at the end of the street to the airport goes every 5-7 mins, takes approximately 25mins.<br/><br/>The lobby and bar areas of the hotel are very inviting and modern, a good place to relax with a book or a cocktail whilst people watching.<br/>The rooms were clean and comfortable, the bed linens were lovely but the towels could do with being replaced with fluffy bath towels (small and thin cotton at present). Bath robes and slippers helped make up for that though.<br/>We were in a twin room at the back of the hotel, very good blackout curtains and couldn't hear any noise at all. We were in standard single twin beds but there was definitely room enough to allow for our preferred queen/double twin beds. <br/>Complimentary wifi password is provided by reception daily. The option to use PC's in the lobby was not available during our stay which we were disappointed with having seen that facility advertised and would have found it useful. The air con worked well, the bathroom extractor fan is not controlled in the room and was slightly irritating (noise wise) when we slept but you get used to it.<br/><br/>The staff were lovely, very friendly and helpful throughout our stay.<br/><br/>Being British, we would have loved tea &amp; coffee making facilities in our room which was sorely missed. The TV only has 2 english news channels (or pay for movies), no complimentary bottled water in the room either.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> We were in a rear facing room and had no problems. No view either but this didn&#39;t matter to us...
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with friends</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223279020_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223279020 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkmXmqHMovAd3XqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKAdXmk6XoXfXXm3k3AXk6XoXfXXm3ooAXK6XoXfXXmoAd3mk6XoXfXXmmoUv3m6XoXfXXmXkAKXK6XoXfXXmUAdKAX6XoXfXXXAdXAKv6XoXfXXX3K3dmv6XoXfXXXokmXvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKAdXmkqHDVcSJQQoqnQQ7VEcSCqH7VEcSCxiGIac6XoXmqoTpcXXmXkAKXK0tEn1XXmXkAKXK0zH1UvkmXm0pSM13mxMvAkzs7mqnb7v33fdbfvdd7dmUkqn3Kf30EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223279020" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223279020'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/sec34/g187323" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 5 reviews by sec34 for Berlin </a>
+</div>
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=63D897EB3FAB866C4AC844B4317F60C6&amp;lang=en&amp;messagetype=2&amp;d=589462&amp;geo=&amp;src=223279020&amp;t=r&amp;summary=Melia+Berlin" id="pm63D897EB3FAB866C4AC844B4317F60C6" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask sec34 about Melia Berlin</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223194092">
+<a name="UR223194092"></a>
+<div id="UR223194092" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_02372AA516D10855D2743CA5D2A7E096-SRC_223194092" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_02372AA516D10855D2743CA5D2A7E096 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/ed/d8/2f/captainmhb.jpg" class="avatar potentialFacebookAvatar avatarGUID:02372AA516D10855D2743CA5D2A7E096" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_02372AA516D10855D2743CA5D2A7E096" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">CaptainMHB</span>
+</div>
+</div>
+<div class="location">
+Fort Lauderdale, Florida
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_02372AA516D10855D2743CA5D2A7E096-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Top Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="176 reviews" class="icon badge_topcontributor sprite-badge_topcontributor" width="25" height="24">
+<span class="badgeText">176 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_3rd sprite-badge_hotels_3rd" width="25" height="24">
+<span class="badgeText">35 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '02372AA516D10855D2743CA5D2A7E096', screenName: 'CaptainMHB', geos: [49434, 34678, 147363, 34682, 2168003, 608948, 187323, 48562, 49549, 187051, 186338, 34296, 60950, 34503, 34170, 227101, 1840814, 309224, 187497, 147358, 29853, 147356, 147354, 147353, 31338, 33796, 60878, 196587, 49626, 188590, 39163, 34346, 34347, 60750, 34344, 34345, 55400, 39489, 34484, 33939, 4290673, 28970, 147275, 190327, 580449, 34225, 60898, 34439, 34227, 147271, 190328, 33845, 34088, 49136, 186605, 147420, 35805], geo: '187323' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 57 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 57 cities</span> </div>
+<div id="UID_02372AA516D10855D2743CA5D2A7E096-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="113 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">113 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187323-d589462-r223194092-Melia_Berlin-Berlin.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223194092">&#x201c;<span class='noQuotes'>Great Location, Wonderful Hotel..</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='20 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+I am in Berlin three to four times a year on business and the Melia Berlin is now the only place that I will stay in Berlin.<br/><br/>It's in a great location, easy cab ride from the airport. The rooms are very clean and spacious and well suited for working, rest and enjoyment.<br/><br/>The hotel has a wonderful Tapas restaurant as well as is in easy walking distance from dozens of great places to eat.<br/><br/>No need to stay anyplace else when in Berlin.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled on business</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223194092_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223194092 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkmXmqHMovAd3XqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKAdXmk6XoXfXXm3k3AXk6XoXfXXm3ooAXK6XoXfXXmoAd3mk6XoXfXXmmoUv3m6XoXfXXmXkAKXK6XoXfXXmUAdKAX6XoXfXXXAdXAKv6XoXfXXX3K3dmv6XoXfXXXokmXvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKAdXmkqHDVcSJQQoqnQQ7VEcSCqH7VEcSCxiGIac6XoXmqoTpcXXmUAdKAX0tEn1XXmUAdKAX0zH1UvkmXm0pSM1KXmkXbboU3xMUKvooxMXkdmfboxMXbkzsKA30EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223194092" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223194092'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/CaptainMHB/g187323" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 7 reviews by CaptainMHB for Berlin </a>
+</div>
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=02372AA516D10855D2743CA5D2A7E096&amp;lang=en&amp;messagetype=2&amp;d=589462&amp;geo=&amp;src=223194092&amp;t=r&amp;summary=Melia+Berlin" id="pm02372AA516D10855D2743CA5D2A7E096" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask CaptainMHB about Melia Berlin</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222942908">
+<a name="UR222942908"></a>
+<div id="UR222942908" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_8AB20EB4198B09198390A79F78FF7452-SRC_222942908" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_8AB20EB4198B09198390A79F78FF7452 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9b/avatar062.jpg" class="avatar potentialFacebookAvatar avatarGUID:8AB20EB4198B09198390A79F78FF7452" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_8AB20EB4198B09198390A79F78FF7452" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">sumitakku</span>
+</div>
+</div>
+<div class="location">
+Muko, Japan
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_8AB20EB4198B09198390A79F78FF7452-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="15 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">15 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">11 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '8AB20EB4198B09198390A79F78FF7452', screenName: 'sumitakku', geos: [1021316, 1066451, 1121354, 187323, 1021238, 298133, 298194, 1021236, 187373, 298230, 187371], geo: '187323' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 11 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 11 cities</span> </div>
+<div id="UID_8AB20EB4198B09198390A79F78FF7452-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="19 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">19 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187323-d589462-r222942908-Melia_Berlin-Berlin.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222942908">&#x201c;<span class='noQuotes'>The best location (観光に最高の立地)</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='19 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+This hotel is in the best location for sightseeing.<br/>And rooms are relatively large compared to other Melia hotels, and very comfortable.<br/>You can easily get to supermarket (Rewe city), station, main souvenior street, museum islands.<br/>Due to other reasons, I rent a car, but only for sightseeing, you don't even need a car.<br/>Since I stayed for a week, breakfast didn't change a lot, so it was difficult to choose what to eat on the final day. however, please don't worry. it is nice.<br/><br/>1週間家族で滞在しました。観光地や交通の便が最高によく、ターミナル駅のフリードリヒ駅は徒歩すぐ、博物館島、ウンターデンリンデン(お土産やブランデンブルグ門)もすぐ、トラムもすぐ、徒歩1分のところにスーパー（Rewe city)があり(確か結構遅くまであいてたはず)、何をするにも便利な立地です。<br/>ホテルの部屋は比較的広く、快適でした。朝食はおいしかったですが、典型的なドイツのホテルの朝ごはんで、毎日ほぼ同じなので、何日か(ドイツ2週間目だったので)たつと、食べるものがなく困りました。。。車やバスは渋滞があるので注意が必要です。(バスは専用レーンがあるので若干マシですが、それでも渋滞すると時間は読めません)
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed June 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222942908_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222942908 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkmXmqHMovAd3XqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKAdXmk6XoXfXXm3k3AXk6XoXfXXm3ooAXK6XoXfXXmoAd3mk6XoXfXXmmoUv3m6XoXfXXmXkAKXK6XoXfXXmUAdKAX6XoXfXXXAdXAKv6XoXfXXX3K3dmv6XoXfXXXokmXvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKAdXmkqHDVcSJQQoqnQQ7VEcSCqH7VEcSCxiGIac6XoXmqoTpcXXXAdXAKv0tEn1XXXAdXAKv0zH1UvkmXm0pSM1vb7XKzs7dUAv7KAUAvmAKbkAqnkvqnqnkdoX0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222942908" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222942908'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/sumitakku/g187323" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 3 reviews by sumitakku for Berlin </a>
+</div>
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=8AB20EB4198B09198390A79F78FF7452&amp;lang=en&amp;messagetype=2&amp;d=589462&amp;geo=&amp;src=222942908&amp;t=r&amp;summary=Melia+Berlin" id="pm8AB20EB4198B09198390A79F78FF7452" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask sumitakku about Melia Berlin</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222606438">
+<a name="UR222606438"></a>
+<div id="UR222606438" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_ACE3BD387069FE6CC85917A2971AD4FF-SRC_222606438" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_ACE3BD387069FE6CC85917A2971AD4FF ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9c/avatar067.jpg" class="avatar potentialFacebookAvatar avatarGUID:ACE3BD387069FE6CC85917A2971AD4FF" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_ACE3BD387069FE6CC85917A2971AD4FF" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Yade d</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_ACE3BD387069FE6CC85917A2971AD4FF-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+<div id="UID_ACE3BD387069FE6CC85917A2971AD4FF-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="1 helpful vote" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">1 helpful vote</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187323-d589462-r222606438-Melia_Berlin-Berlin.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222606438">&#x201c;<span class='noQuotes'>Fantastic hotel</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='18 August 2014'>Reviewed 1 week ago
+</span>
+<a class="viaMobile sprite-grayPhone" href="/apps" target="_blank" onclick="ta.util.cookie.setPIDCookie(24687)">via mobile</a>
+</div>
+<div class="entry">
+<p>
+Very friendly english spoken staff. Good location. Room was very big and clean. Staff let us check in early and choose a room with fantastic street-view. Really nice tapas bar with great food. Absolutely no complaints. Hope to stay here again!
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq222606438_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222606438 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkmXmqHMovAd3XqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKAdXmk6XoXfXXm3k3AXk6XoXfXXm3ooAXK6XoXfXXmoAd3mk6XoXfXXmmoUv3m6XoXfXXmXkAKXK6XoXfXXmUAdKAX6XoXfXXXAdXAKv6XoXfXXX3K3dmv6XoXfXXXokmXvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKAdXmkqHDVcSJQQoqnQQ7VEcSCqH7VEcSCxiGIac6XoXmqoTpcXXX3K3dmv0tEn1XXX3K3dmv0zH1UvkmXm0pSM1bfzsm7xMmvkK3Aqnzs3ffvoAUkbXAkUbxMdqnqn0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222606438" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222606438'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=ACE3BD387069FE6CC85917A2971AD4FF&amp;lang=en&amp;messagetype=2&amp;d=589462&amp;geo=&amp;src=222606438&amp;t=r&amp;summary=Melia+Berlin" id="pmACE3BD387069FE6CC85917A2971AD4FF" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Yade d about Melia Berlin</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222573283">
+<a name="UR222573283"></a>
+<div id="UR222573283" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_FB4E6D75E78803CF875942F0099DA633-SRC_222573283" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_FB4E6D75E78803CF875942F0099DA633 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/a3/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:FB4E6D75E78803CF875942F0099DA633" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_FB4E6D75E78803CF875942F0099DA633" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">BellaLondon21</span>
+</div>
+</div>
+<div class="location">
+London
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_FB4E6D75E78803CF875942F0099DA633-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">2 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'FB4E6D75E78803CF875942F0099DA633', screenName: 'BellaLondon21', geos: [187323, 186338], geo: '187323' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 2 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 2 cities</span> </div>
+<div id="UID_FB4E6D75E78803CF875942F0099DA633-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="2 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">2 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g187323-d589462-r222573283-Melia_Berlin-Berlin.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222573283">&#x201c;<span class='noQuotes'>Brilliant Location, Friendly Staff</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='18 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Just got back from a 2 night stay in this hotel - absolutely brilliant! The staff were so friendly, couldn't have been more helpful recommending restaurants and ordering us a cab to the airport. The breakfast buffet was amazing and on from 6.30am - 11am which meant it was hard to miss it! The bar area of the hotel was very sleek, and a great place to hang out late evening. The room was lovely, super clean and the most comfortable bed. And a lovely bathroom! What made this hotel was the location though - right by a station, so easy to get to from Schonefeld airport and really central - a great base for a weekend city break, near to so many attractions. We had the best time here and won't hesitate in rebooking to come back.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222573283_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222573283 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvkmXmqHMovAd3XqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdKAdXmk6XoXfXXm3k3AXk6XoXfXXm3ooAXK6XoXfXXmoAd3mk6XoXfXXmmoUv3m6XoXfXXmXkAKXK6XoXfXXmUAdKAX6XoXfXXXAdXAKv6XoXfXXX3K3dmv6XoXfXXXokmXvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdKAdXmkqHDVcSJQQoqnQQ7VEcSCqH7VEcSCxiGIac6XoXmqoTpcXXXokmXvm0tEn1XXXokmXvm0zH1UvkmXm0pSM1qn7dzs3xMkozskvvKmfqnvkoAdXqnKKAAxMb3mm0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222573283" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222573283'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=FB4E6D75E78803CF875942F0099DA633&amp;lang=en&amp;messagetype=2&amp;d=589462&amp;geo=&amp;src=222573283&amp;t=r&amp;summary=Melia+Berlin" id="pmFB4E6D75E78803CF875942F0099DA633" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask BellaLondon21 about Melia Berlin</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>

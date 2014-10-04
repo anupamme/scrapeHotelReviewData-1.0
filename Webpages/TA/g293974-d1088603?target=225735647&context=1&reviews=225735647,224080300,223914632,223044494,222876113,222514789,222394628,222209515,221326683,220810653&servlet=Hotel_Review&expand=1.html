@@ -1,0 +1,1109 @@
+<div id="expanded_review_225735647">
+<a name="UR225735647"></a>
+<div id="UR225735647" class="extended provider0 first newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_E935E93701308FB0CCF52EA6DB18D7AE-SRC_225735647" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_E935E93701308FB0CCF52EA6DB18D7AE ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: 'E935E93701308FB0CCF52EA6DB18D7AE'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/df/40/c8/beachkandi.jpg" class="avatar potentialFacebookAvatar avatarGUID:E935E93701308FB0CCF52EA6DB18D7AE" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_E935E93701308FB0CCF52EA6DB18D7AE" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">beachkandi</span>
+</div>
+</div>
+<div class="location">
+Edinburgh
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_E935E93701308FB0CCF52EA6DB18D7AE-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">3 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">3 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'E935E93701308FB0CCF52EA6DB18D7AE', screenName: 'beachkandi', geos: [187147, 293974, 186338], geo: '293974' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 3 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 3 cities</span> </div>
+<div id="UID_E935E93701308FB0CCF52EA6DB18D7AE-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="1 helpful vote" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">1 helpful vote</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d1088603-r225735647-Witt_Istanbul_Suites-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r225735647">&#x201c;<span class='noQuotes'>Can&#39;t I move in?! </span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='1 September 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+I'm always a little nervous anticipating what a hotel will reveal on arrival, and with time off so precious it takes a while to relax. But on arrival at the Witt just after sundown on a Sunday evening we could not have been put more at ease. A genuinely welcoming reception we felt like we'd arrived at a good friends home. Two chilled glasses of white sent to the room as we unpacked... Or should I say circled the suite in awe at the beautiful design. <br/>The Cihangir neighbourhood is perfect for a bite to eat or coffee as you watch Istanbul's day unfold and the helpful team at the Witt are always available to offer another tip on where to hang out. <br/>I was excited to visit Istanbul for the first time. But have to say without Team Witt and their beautiful home it wouldn't have been half as enjoyable. <br/>A huge thank you for helping Scott to geek out at the Energy Museum. For helping me through a night of insomnia. And for a mountain of interiors ideas for our sunny Scottish flat!
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014, travelled as a couple</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq225735647_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq225735647 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMUKvv3KmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokmo3dk6XoXfXXdKvKmKK6XoXfXXmAUd3mX6XoXfXXmKdddAd6XoXfXXXvk3UUm6XoXfXXXoUdkvA6XoXfXXXmAd3Xv6XoXfXXXXKAoUo6XoXfXXUmX33vm6XoXfXXKvUK3omqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokmo3dkqHxdSIIQQoqnQQltIJCHpcQQoqnQQhpSIVtqHltIJCHpcxiGIac6XoXmqoTpcXXokmo3dk0tEn1XXokmo3dk0zH1XAmAkd0pSM1zsAmozsAmkKUmKvqn7KffqnoXzsb3xM7UvxMkbzs0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_225735647" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '225735647'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1088603', 'beachkandi', 'E935E93701308FB0CCF52EA6DB18D7AE', 'en', '225735647', 'Witt Istanbul Suites');">Ask beachkandi about Witt Istanbul Suites</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_224080300">
+<a name="UR224080300"></a>
+<div id="UR224080300" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_67DA643A74D371858C245E836140DB27-SRC_224080300" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_67DA643A74D371858C245E836140DB27 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/05/f8/ff/a2/stuckinbangers.jpg" class="avatar potentialFacebookAvatar avatarGUID:67DA643A74D371858C245E836140DB27" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_67DA643A74D371858C245E836140DB27" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">StuckinBangers</span>
+</div>
+</div>
+<div class="location">
+Hong Kong, China
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_67DA643A74D371858C245E836140DB27-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Top Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="398 reviews" class="icon badge_topcontributor sprite-badge_topcontributor" width="25" height="24">
+<span class="badgeText">398 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_3rd sprite-badge_hotels_3rd" width="25" height="24">
+<span class="badgeText">114 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '67DA643A74D371858C245E836140DB27', screenName: 'StuckinBangers', geos: [261664, 186364, 297415, 297715, 1179396, 1234132, 189400, 186346, 294265, 1066457, 1066456, 285729, 186338, 471868, 293984, 298660, 844564, 187147, 469404, 255679, 294217, 255371, 255678, 255368, 293974, 294212, 255367, 187514, 504339, 580517, 552114, 255122, 469391, 255118, 311293, 504331, 609159, 552104, 255113, 297463, 187497, 255108, 1059779, 255109, 255110, 261658, 488341, 255106, 190428, 2536961, 227884, 2536968, 1926711, 2630531, 308272, 482941, 1061175, 189934, 293924, 187248, 1191887, 194861, 3135340, 1432365, 293913, 187209, 293919, 608486, 293916, 1788356, 499675, 190454, 187849, 186225, 664891, 2241979, 187069, 298558, 312578, 1811027, 187870, 1237093, 528914, 189449, 1307701, 1722390, 552249, 312660, 187791, 312659, 255095, 255580, 255097, 187373, 298313, 255103, 255100, 255344, 255072, 1095736, 311324, 1188000, 425103, 504288, 2423024, 255060, 504295, 676072, 255068, 187079, 658842, 1783376, 504308, 1554316, 312673, 257473, 298570, 2213689], geo: '293974' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 118 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 118 cities</span> </div>
+<div id="UID_67DA643A74D371858C245E836140DB27-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="315 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">315 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d1088603-r224080300-Witt_Istanbul_Suites-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224080300">&#x201c;<span class='noQuotes'>A flawless experience in is classic boutique hotel</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+I have rarely had such a flawless experience at any hotel anywhere in the world. We booked the penthouse (room 61) as we wanted a Bosphorous and Blue Mosque view and didn't want to pay the ridiculous money asked by four seasons etc. Whilst we still paid good coin the view, service and quality of the hotel more than justified the price. The wrap around balcony plus the views from inside the room were breathtaking from the penthouse. The room was also nicely appointed with a swirly funky feel with polished concrete, nice sofa area and cool bathroom.<br/>The service from Emrah, Ali and Volkan was truly welcoming. The breakfast room was just right.<br/>All I can say is the hotels that rank above Witt on TA must be amazingly good to beat Witt!!
+</p>
+</div>
+<div class="media  thumbCols3">
+<div class="thumbnails">
+<div class="photosInline">
+<ul>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g293974-d1088603-i108004198-r224080300-Witt_Istanbul_Suites-Istanbul.html#108004198 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 1088603, 293974, 2, 108004198);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/70/03/66/sofa-area.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g293974-d1088603-i108003953-r224080300-Witt_Istanbul_Suites-Istanbul.html#108003953 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 1088603, 293974, 2, 108003953);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/70/02/71/balcony.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g293974-d1088603-i108003755-r224080300-Witt_Istanbul_Suites-Istanbul.html#108003755 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 1088603, 293974, 2, 108003755);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/70/01/ab/view-from-penthouse.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g293974-d1088603-i108004115-r224080300-Witt_Istanbul_Suites-Istanbul.html#108004115 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 1088603, 293974, 2, 108004115);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/70/03/13/breakfast.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g293974-d1088603-i108004272-r224080300-Witt_Istanbul_Suites-Istanbul.html#108004272 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 1088603, 293974, 2, 108004272);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/70/03/b0/room-and-view.jpg" alt="" width="50" height="50">
+</span>
+</li>
+</ul>
+</div> </div> </div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014, travelled as a couple</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224080300_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224080300 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMUKvv3KmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokmo3dk6XoXfXXdKvKmKK6XoXfXXmAUd3mX6XoXfXXmKdddAd6XoXfXXXvk3UUm6XoXfXXXoUdkvA6XoXfXXXmAd3Xv6XoXfXXXXKAoUo6XoXfXXUmX33vm6XoXfXXKvUK3omqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokmo3dkqHxdSIIQQoqnQQltIJCHpcQQoqnQQhpSIVtqHltIJCHpcxiGIac6XoXmqoTpcXXdKvKmKK0tEn1XXdKvKmKK0zH1XAmAkd0pSM13kxMb3dmbkdxMmkUvovfXdozsvm3UdKxM7Xk0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224080300" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224080300'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/StuckinBangers/g293974" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 8 reviews by StuckinBangers for Istanbul </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1088603', 'StuckinBangers', '67DA643A74D371858C245E836140DB27', 'en', '224080300', 'Witt Istanbul Suites');">Ask StuckinBangers about Witt Istanbul Suites</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223914632">
+<a name="UR223914632"></a>
+<div id="UR223914632" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_58091F1550E36232A1BC485A1AF8F06A-SRC_223914632" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_58091F1550E36232A1BC485A1AF8F06A ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9d/avatar068.jpg" class="avatar potentialFacebookAvatar avatarGUID:58091F1550E36232A1BC485A1AF8F06A" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_58091F1550E36232A1BC485A1AF8F06A" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Katherine D</span>
+</div>
+</div>
+<div class="location">
+London, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_58091F1550E36232A1BC485A1AF8F06A-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="13 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">13 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">5 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '58091F1550E36232A1BC485A1AF8F06A', screenName: 'Katherine D', geos: [616121, 673851, 293974, 676072, 60763, 186338], geo: '293974' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 6 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 6 cities</span> </div>
+<div id="UID_58091F1550E36232A1BC485A1AF8F06A-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="1 helpful vote" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">1 helpful vote</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d1088603-r223914632-Witt_Istanbul_Suites-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223914632">&#x201c;<span class='noQuotes'>A real treasure</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+This is a perfect boutique style hotel. It's handily located so you can walk down the road and jump on to the tram, which is the only way to get around in Istanbul. The reception staff are incredibly friendly and fall over themselves to make your stay as comfortable as possible. If you are staying in the summer time, be aware that there is no outside space, although there was some talk of creating a roof top bar, when we visited in June. To get those most out of the hotel book a room with a balcony, the rooms on the top floor are the best for views. The hotel is on a very steep road, which can finish you off after a day at the bazaar, but the convenient location makes it all worthwhile.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Top floor or room with balcony
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed June 2014, travelled with friends</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223914632_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223914632 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMUKvv3KmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokmo3dk6XoXfXXdKvKmKK6XoXfXXmAUd3mX6XoXfXXmKdddAd6XoXfXXXvk3UUm6XoXfXXXoUdkvA6XoXfXXXmAd3Xv6XoXfXXXXKAoUo6XoXfXXUmX33vm6XoXfXXKvUK3omqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokmo3dkqHxdSIIQQoqnQQltIJCHpcQQoqnQQhpSIVtqHltIJCHpcxiGIac6XoXmqoTpcXXmAUd3mX0tEn1XXmAUd3mX0zH1XAmAkd0pSM1ovKAUqnUooKzsm3XmXbU7fdvobUbqnvqnK3b0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223914632" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223914632'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1088603', 'Katherine D', '58091F1550E36232A1BC485A1AF8F06A', 'en', '223914632', 'Witt Istanbul Suites');">Ask Katherine D about Witt Istanbul Suites</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223044494">
+<a name="UR223044494"></a>
+<div id="UR223044494" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_E0E1302E94C98E684BC6B09A73C05840-SRC_223044494" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_E0E1302E94C98E684BC6B09A73C05840 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/03/95/fb/d7/stanley-s.jpg" class="avatar potentialFacebookAvatar avatarGUID:E0E1302E94C98E684BC6B09A73C05840" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_E0E1302E94C98E684BC6B09A73C05840" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Stanley S</span>
+</div>
+</div>
+<div class="location">
+Washington DC, District of Columbia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_E0E1302E94C98E684BC6B09A73C05840-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="21 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">21 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">10 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'E0E1302E94C98E684BC6B09A73C05840', screenName: 'Stanley S', geos: [680222, 303492, 187147, 60814, 56463, 32780, 303631, 293974, 54171, 60898, 35805, 29196], geo: '293974' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 12 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 12 cities</span> </div>
+<div id="UID_E0E1302E94C98E684BC6B09A73C05840-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="16 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">16 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d1088603-r223044494-Witt_Istanbul_Suites-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223044494">&#x201c;<span class='noQuotes'>Rescued from a Disaster</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='20 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+OK, so I know NEVER again to use AirBnB! Suffice it to say that my two week stay in Istanbul (3rd trip) started off with a disasterous arrival at an apartment I rented through AirBnB that was unoccupiable (no a/c, no window screens!, pidgeons and mosquitoes, on the scariest street in Beyoğlu/Taksim). It's 7pm, after 15 hours of travel. My partner is freaking out (his 1st trip to Istanbul). SO, having stayed at the Witt on my previous trip (see review May, 2012), I called and miraculously they had a room available, booked it, and hailed a taxi. Our welcome at the Witt was so gracious and Room 63 (penthouse, best view) was available! It was like we belonged there after all.<br/><br/>I must say that I had wanted to stay at the Witt to begin with, but the original plans were for 4 other friends to meet us - ergo the apartment. Well those plans fizzled and it was just us two after all. Fortuitously.<br/><br/>We ended up staying the entire two weeks (minus 2 mights away to Fethiye) and I must say this vacation was one of the best I've ever had. The staff (especially Volkan) are superlative! The most attentive and helpful I've ever encountered - truly making me feel as though I was staying with friends, not just at a hotel. I can not imagine ever coming to Istanbul and staying anywhere else. <br/><br/>Every time I asked about places to go, the staff was knowledgeable, had maps and directions, and was one step ahead of me calling and researching, providing me above-and-beyond the call of duty level of information. For example, we in passing expressed an interest in Ebru (Turkish marbling/painting) and when we came back by the front desk later in the day, Volkan had the place for us to go take a class. You just don't get this level of service anywhere that I have ever experienced.<br/><br/>The other reviews here will comment on the wonderful breakfast, room design, spotless housekeeping, the &quot;hill&quot; (which for me was great cardio after gorging on Turkish delights and Baklava), the view, etc., etc. I want to focus on how special and unique this hotel is, and share with you my absolute recommendation to stay here. <br/><br/>A heartfelt thank you to everyone at the Witt for turning a disaster into a triumph. I look forward to seeing you again!
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Floor 5 and 6 for the view.
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="media  thumbCols3">
+<div class="thumbnails">
+<div class="photosInline">
+<ul>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g293974-d1088603-i107581831-r223044494-Witt_Istanbul_Suites-Istanbul.html#107581831 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 1088603, 293974, 2, 107581831);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/69/91/87/witt-istanbul-suites.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g293974-d1088603-i107581815-r223044494-Witt_Istanbul_Suites-Istanbul.html#107581815 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 1088603, 293974, 2, 107581815);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/69/91/77/witt-istanbul-suites.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g293974-d1088603-i107581795-r223044494-Witt_Istanbul_Suites-Istanbul.html#107581795 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 1088603, 293974, 2, 107581795);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/69/91/63/witt-istanbul-suites.jpg" alt="" width="50" height="50">
+</span>
+</li>
+</ul>
+</div> </div> </div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223044494_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223044494 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMUKvv3KmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokmo3dk6XoXfXXdKvKmKK6XoXfXXmAUd3mX6XoXfXXmKdddAd6XoXfXXXvk3UUm6XoXfXXXoUdkvA6XoXfXXXmAd3Xv6XoXfXXXXKAoUo6XoXfXXUmX33vm6XoXfXXKvUK3omqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokmo3dkqHxdSIIQQoqnQQltIJCHpcQQoqnQQhpSIVtqHltIJCHpcxiGIac6XoXmqoTpcXXmKdddAd0tEn1XXmKdddAd0zH1XAmAkd0pSM1zsKzsUmKXzsAdfAvzs3vd7f37KAbkmfKovdK0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223044494" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223044494'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/srginc/g293974" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 3 reviews by Stanley S for Istanbul </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1088603', 'Stanley S', 'E0E1302E94C98E684BC6B09A73C05840', 'en', '223044494', 'Witt Istanbul Suites');">Ask Stanley S about Witt Istanbul Suites</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class='duplicateReviewsInline'>
+<div class='previous'>Stanley S has 1 more review of Witt Istanbul Suites</div>
+<ul class='dupReviews'>
+<li class="dupReviewItem">
+<div class='reviewTitle'>
+<a href="/ShowUserReviews-g293974-d1088603-r129853454-Witt_Istanbul_Suites-Istanbul.html#REVIEWS">&#x201c;Wonderful Hotel / Fantastic Staff&#x201d;</a>
+</div>
+<div class='rating'>
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="date">Reviewed 13 May 2012</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222876113">
+<a name="UR222876113"></a>
+<div id="UR222876113" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_C69FCA443F9195F37D4AA083B9E96CFE-SRC_222876113" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_C69FCA443F9195F37D4AA083B9E96CFE ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/7c/avatar063.jpg" class="avatar potentialFacebookAvatar avatarGUID:C69FCA443F9195F37D4AA083B9E96CFE" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_C69FCA443F9195F37D4AA083B9E96CFE" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">TravelsFromHK</span>
+</div>
+</div>
+<div class="location">
+New York City, New York
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_C69FCA443F9195F37D4AA083B9E96CFE-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="38 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">38 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">10 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'C69FCA443F9195F37D4AA083B9E96CFE', screenName: 'TravelsFromHK', geos: [298564, 297989, 54273, 57307, 293974, 187323, 60763, 34439, 34515, 47869, 57415], geo: '293974' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 11 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 11 cities</span> </div>
+<div id="UID_C69FCA443F9195F37D4AA083B9E96CFE-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="13 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">13 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d1088603-r222876113-Witt_Istanbul_Suites-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222876113">&#x201c;<span class='noQuotes'>Really impressive hotel</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='19 August 2014'>Reviewed 2 weeks ago
+</span>
+<a class="viaMobile sprite-grayPhone" href="/apps" target="_blank" onclick="ta.util.cookie.setPIDCookie(24687)">via mobile</a>
+</div>
+<div class="entry">
+<p>
+My husband and I stayed here for 5 nights and absolutely loved it. I was first drawn to the hotel by it's excellent online app which provided so much useful info on Istanbul. I decided to cancel our original res and try the Witt and that was a great decision. What loved:<br/>-enormous rooms, with kitchenette<br/>-fantastic modern decor<br/>-best free breakfast buffet of all the places we stayed in Turkey<br/>-completely accommodating staff. They lent us with an Istanbul TravelKart for trams, ferries, buses upon check in<br/>-location in the super trendy Cihangir neighborhood. Felt like the Lower East Side of Manhattan. Easy walk to great neighborhood restaurants and to the Taksim, Beyoglu areas. Easy walk to the tram to take you to the old town with all the major sites. Tram is clean and completely safe.<br/><br/>The hotel is constructing a rooftop bar which will be great because the views from there are terrific and would add some sorely needed outdoor space.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222876113_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222876113 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMUKvv3KmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokmo3dk6XoXfXXdKvKmKK6XoXfXXmAUd3mX6XoXfXXmKdddAd6XoXfXXXvk3UUm6XoXfXXXoUdkvA6XoXfXXXmAd3Xv6XoXfXXXXKAoUo6XoXfXXUmX33vm6XoXfXXKvUK3omqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokmo3dkqHxdSIIQQoqnQQltIJCHpcQQoqnQQhpSIVtqHltIJCHpcxiGIac6XoXmqoTpcXXXvk3UUm0tEn1XXXvk3UUm0zH1XAmAkd0pSM1f3AqnfbddmqnAUAoqnmkxMdbbKvm7AzsA3fqnzs0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222876113" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222876113'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/TravelsFromHK/g293974" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 8 reviews by TravelsFromHK for Istanbul </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1088603', 'TravelsFromHK', 'C69FCA443F9195F37D4AA083B9E96CFE', 'en', '222876113', 'Witt Istanbul Suites');">Ask TravelsFromHK about Witt Istanbul Suites</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222514789">
+<a name="UR222514789"></a>
+<div id="UR222514789" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_FF550A9C61CF42ED7F1C90702ECD8196-SRC_222514789" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_FF550A9C61CF42ED7F1C90702ECD8196 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/eb/ad/cd/facebook-avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:FF550A9C61CF42ED7F1C90702ECD8196" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_FF550A9C61CF42ED7F1C90702ECD8196" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">DavidShalleck</span>
+</div>
+</div>
+<div class="location">
+San Francisco, California
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_FF550A9C61CF42ED7F1C90702ECD8196-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="6 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">6 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">4 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'FF550A9C61CF42ED7F1C90702ECD8196', screenName: 'DavidShalleck', geos: [669130, 1238427, 293974, 187827, 189449], geo: '293974' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 5 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 5 cities</span> </div>
+<div id="UID_FF550A9C61CF42ED7F1C90702ECD8196-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="2 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">2 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d1088603-r222514789-Witt_Istanbul_Suites-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222514789">&#x201c;<span class='noQuotes'>Encore &quot;Performance&quot;!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='18 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+This was my second stay at this hotel and the five-star reasons in my original review hold true. I am in the hospitality business and for me, the Witt has something authentic, simple, and genuine in its ambiance and customer service which makes it very accommodating. <br/><br/>Now I know for sure, the next time I make a reservation for the Witt I will arrange my transit so I can add an extra day to my stay if not more. <br/>
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014, travelled solo</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222514789_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222514789 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMUKvv3KmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokmo3dk6XoXfXXdKvKmKK6XoXfXXmAUd3mX6XoXfXXmKdddAd6XoXfXXXvk3UUm6XoXfXXXoUdkvA6XoXfXXXmAd3Xv6XoXfXXXXKAoUo6XoXfXXUmX33vm6XoXfXXKvUK3omqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokmo3dkqHxdSIIQQoqnQQltIJCHpcQQoqnQQhpSIVtqHltIJCHpcxiGIac6XoXmqoTpcXXXoUdkvA0tEn1XXXoUdkvA0zH1XAmAkd0pSM1qnqnooKbAf3UfqndXzsxMkqnUfAKkKXzsfxMvUA30EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222514789" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222514789'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1088603', 'DavidShalleck', 'FF550A9C61CF42ED7F1C90702ECD8196', 'en', '222514789', 'Witt Istanbul Suites');">Ask DavidShalleck about Witt Istanbul Suites</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class='duplicateReviewsInline'>
+<div class='previous'>DavidShalleck has 1 more review of Witt Istanbul Suites</div>
+<ul class='dupReviews'>
+<li class="dupReviewItem">
+<div class='reviewTitle'>
+<a href="/ShowUserReviews-g293974-d1088603-r184644320-Witt_Istanbul_Suites-Istanbul.html#REVIEWS">&#x201c;Wanted to return before I left!&#x201d;</a>
+</div>
+<div class='rating'>
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="date">Reviewed 14 November 2013</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222394628">
+<a name="UR222394628"></a>
+<div id="UR222394628" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_44C534DC095093A9E55EFDD078023D83-SRC_222394628" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_44C534DC095093A9E55EFDD078023D83 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/9f/72/9b/zialondon.jpg" class="avatar potentialFacebookAvatar avatarGUID:44C534DC095093A9E55EFDD078023D83" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_44C534DC095093A9E55EFDD078023D83" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">ZiaLondon</span>
+</div>
+</div>
+<div class="location">
+London
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_44C534DC095093A9E55EFDD078023D83-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="40 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">40 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_3rd sprite-badge_hotels_3rd" width="25" height="24">
+<span class="badgeText">26 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '44C534DC095093A9E55EFDD078023D83', screenName: 'ZiaLondon', geos: [303897, 297924, 293916, 1179396, 293974, 608528, 298082, 293928, 1136493, 298086, 298085, 187870, 303907, 60763, 293922, 293925, 186338, 293924, 186370, 293926, 2154215], geo: '293974' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 21 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 21 cities</span> </div>
+<div id="UID_44C534DC095093A9E55EFDD078023D83-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="26 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">26 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d1088603-r222394628-Witt_Istanbul_Suites-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222394628">&#x201c;<span class='noQuotes'>Almost perfect</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='17 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+We had the pleasure of staying for 5 nights in the king panoramic with terrace. The room looked stunning but it was the view that really made it spectacular. We really enjoyed spending time on the terrace at different times during the day. Breakfast, afternoon sun bathing and drinks before going out for the evening. The staff were brilliant and common areas also looked amazing. The only slight niggles ( and mainly because I am a fussy git) is that some of the finishes in the room could have been a little crisper so if you're looking at it from a completely high end design point you may notice this. As mentioned the hill was not good but we survived! The surrounding area was great with a plethora of stylish bars and restaurants largely frequented by locals. I would not hesitate to stay again.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222394628_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222394628 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMUKvv3KmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokmo3dk6XoXfXXdKvKmKK6XoXfXXmAUd3mX6XoXfXXmKdddAd6XoXfXXXvk3UUm6XoXfXXXoUdkvA6XoXfXXXmAd3Xv6XoXfXXXXKAoUo6XoXfXXUmX33vm6XoXfXXKvUK3omqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokmo3dkqHxdSIIQQoqnQQltIJCHpcQQoqnQQhpSIVtqHltIJCHpcxiGIac6XoXmqoTpcXXXmAd3Xv0tEn1XXXmAd3Xv0zH1XAmAkd0pSM1ddfomdxMfKAoKAmbAzsoozsqnxMxMKkvKXmxMvm0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222394628" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222394628'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/ZiaLondon/g293974" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 4 reviews by ZiaLondon for Istanbul </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1088603', 'ZiaLondon', '44C534DC095093A9E55EFDD078023D83', 'en', '222394628', 'Witt Istanbul Suites');">Ask ZiaLondon about Witt Istanbul Suites</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222209515">
+<a name="UR222209515"></a>
+<div id="UR222209515" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_0CC2B1AEB678C0D9FE981E1FC3C6375C-SRC_222209515" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_0CC2B1AEB678C0D9FE981E1FC3C6375C ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/5a/avatar032.jpg" class="avatar potentialFacebookAvatar avatarGUID:0CC2B1AEB678C0D9FE981E1FC3C6375C" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_0CC2B1AEB678C0D9FE981E1FC3C6375C" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">SamuelPondolfino</span>
+</div>
+</div>
+<div class="location">
+Santa Rosa, California
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_0CC2B1AEB678C0D9FE981E1FC3C6375C-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d1088603-r222209515-Witt_Istanbul_Suites-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222209515">&#x201c;<span class='noQuotes'>It was the best</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='16 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+I agree totally with all of the other positive reviews. Everything was great, but the highlight was the staff. Thank you to Volkan, Ali, Cagatay, Ece, Emrah, Mehmet, Aykut, and of course all of the housekeeping staff, and anyone else I'm forgetting to mention. I can't imagine returning to Istanbul and staying anywhere else.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq222209515_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222209515 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMUKvv3KmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokmo3dk6XoXfXXdKvKmKK6XoXfXXmAUd3mX6XoXfXXmKdddAd6XoXfXXXvk3UUm6XoXfXXXoUdkvA6XoXfXXXmAd3Xv6XoXfXXXXKAoUo6XoXfXXUmX33vm6XoXfXXKvUK3omqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokmo3dkqHxdSIIQQoqnQQltIJCHpcQQoqnQQhpSIVtqHltIJCHpcxiGIac6XoXmqoTpcXXXXKAoUo0tEn1XXXXKAoUo0zH1XAmAkd0pSM1KffX7Ubzs73kvfKxMAqnzsAvUzsUqnfmf3mkof0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222209515" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222209515'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1088603', 'SamuelPondolfino', '0CC2B1AEB678C0D9FE981E1FC3C6375C', 'en', '222209515', 'Witt Istanbul Suites');">Ask SamuelPondolfino about Witt Istanbul Suites</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221326683">
+<a name="UR221326683"></a>
+<div id="UR221326683" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_B49FF92E5AAD6788A7C13836B90EE83E-SRC_221326683" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_B49FF92E5AAD6788A7C13836B90EE83E ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/5a/avatar032.jpg" class="avatar potentialFacebookAvatar avatarGUID:B49FF92E5AAD6788A7C13836B90EE83E" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_B49FF92E5AAD6788A7C13836B90EE83E" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">MIchelle G</span>
+</div>
+</div>
+<div class="location">
+London
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_B49FF92E5AAD6788A7C13836B90EE83E-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">2 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'B49FF92E5AAD6788A7C13836B90EE83E', screenName: 'MIchelle G', geos: [293974, 612353], geo: '293974' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 2 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 2 cities</span> </div>
+<div id="UID_B49FF92E5AAD6788A7C13836B90EE83E-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="5 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">5 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d1088603-r221326683-Witt_Istanbul_Suites-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221326683">&#x201c;<span class='noQuotes'>Great hotel and fantastic, friendly &amp; helpful staff.</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='12 August 2014'>Reviewed 3 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+This is a wonderful, small boutique hotel. It’s centrally located and is around 7min walk from the main road (where the nearest tram stop is) however, do bear in mind it's a rather steep walk up the hill! If you are fit and healthy, then this is a great daily exercise after a hefty but delicious breakfast! The rooms are very spacious and equipped with everything you might need. It's very elegantly furnished and quiet. The best bit however, is the hotel staff. Every single person working at the hotel has gone out of their way to be polite to us, friendly and helpful. Nothing was a problem. I couldn’t praise them enough for making us feel so welcome. The view from the hotel rooftop is simply stunning!<br/><br/>This hotel fully deserves the praise and all the wonderful reviews. Thank you for an unforgettable stay!
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221326683_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221326683 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMUKvv3KmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokmo3dk6XoXfXXdKvKmKK6XoXfXXmAUd3mX6XoXfXXmKdddAd6XoXfXXXvk3UUm6XoXfXXXoUdkvA6XoXfXXXmAd3Xv6XoXfXXXXKAoUo6XoXfXXUmX33vm6XoXfXXKvUK3omqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokmo3dkqHxdSIIQQoqnQQltIJCHpcQQoqnQQhpSIVtqHltIJCHpcxiGIac6XoXmqoTpcXXUmX33vm0tEn1XXUmX33vm0zH1XAmAkd0pSM17dAqnqnAXzsobbxM3kvvbkfUmvm37AKzszsvmzs0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221326683" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221326683'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1088603', 'MIchelle G', 'B49FF92E5AAD6788A7C13836B90EE83E', 'en', '221326683', 'Witt Istanbul Suites');">Ask MIchelle G about Witt Istanbul Suites</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220810653">
+<a name="UR220810653"></a>
+<div id="UR220810653" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_0F1013F751E280ADD307353C3524ABC6-SRC_220810653" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_0F1013F751E280ADD307353C3524ABC6 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/03/7c/20/0a/nooree.jpg" class="avatar potentialFacebookAvatar avatarGUID:0F1013F751E280ADD307353C3524ABC6" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_0F1013F751E280ADD307353C3524ABC6" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">nooree</span>
+</div>
+</div>
+<div class="location">
+Melbourne, Australia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_0F1013F751E280ADD307353C3524ABC6-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="27 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">27 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">22 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '0F1013F751E280ADD307353C3524ABC6', screenName: 'nooree', geos: [294013, 1006900, 298343, 293974, 295424, 294005, 488117, 187234, 1940497, 255100, 298564, 187457, 1925994, 612383, 190409, 187870, 187323, 187221, 488101, 312741, 186338], geo: '293974' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 21 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 21 cities</span> </div>
+<div id="UID_0F1013F751E280ADD307353C3524ABC6-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="73 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">73 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293974-d1088603-r220810653-Witt_Istanbul_Suites-Istanbul.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220810653">&#x201c;<span class='noQuotes'>Fantastic service, some rooms amazing, others just OK</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='10 August 2014'>Reviewed 3 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+This hotel has received some amazing reviews, so I'm hoping to make this one a bit more balanced so people can make an educated decision.<br/><br/>Positives:<br/>- the staff here are absolutely wonderful. I was a difficult guest for them, having changed rooms a couple of times over our stay, and Ali went out of his way to make us as comfortable as possible. Nothing was too much to ask. Other hotels should take a leaf out of their book in terms of how customer service at a boutique hotel should be.<br/>- the penthouse suite (on the 6th floor) was absolutely incredible, as was the king panoramic suite on the 5th floor. The views of the Bosphorous/Golden Horn were magical (see comments on other rooms below). <br/>- All rooms have modern, funky decor designed by Turkish designers Autoban, great rain showers, gorgeous kitchenette and very cool rocking chair.<br/>- I loved the fact that we could have our breakfast in our room at no extra charge. My husband and I were celebrating our first anniversary and it was a lovely, romantic touch that we could just eat our breakfast in bed.<br/><br/>Negatives:<br/>- The king room we were originally booked into (on the 3rd floor) had nice furniture/decor, but was terribly dark and had no views whatsoever. It looked straight out into the adjacent building, and offered zero views other than into someone else's bedroom (they could obviously also see into ours - so we had to keep our curtains shut the whole time, making our room even darker). I felt deceived given that the hotel's website says, &quot;Since the hotel is a corner building, every single room has stunning views.&quot; It says that rooms on lower floors &quot;offer views of Istanbul’s vibrant city life&quot; (does this mean into other people's bedrooms?). I had read the assurance of &quot;stunning views&quot; from &quot;every single room&quot; when booking, and therefore decided to book a King Room rather than a King Panoramic (had I known I would have paid more for a higher category room). I brought this to the hotel's attention, and at first they did not agree, then when I showed them the link they changed their position and said that it would clarify it on their website. I have just checked and their website has not been changed. While Ali worked hard to move us into a different room, we were first met with strong resistance and this put a very bitter taste into our mouths.<br/>- The location is just OK. It is a very, very steep walk from the tram and the main street, so I would not recommend it to old people, or anyone with a knee injury or similar. It is about 15 minutes walk from the Galata Tower and Taksim Square, but there are plenty of other hotels that are much closer. There is not too much going on in the neighbourhood near the hotel. Don't be under any illusion that it is in the middle of the hustle and bustle - it feels more like a small apartment building in the outskirts, with a couple of cafes and shops here and there.<br/>- there is very little in the way of facilities here - no restaurant, pool, gym etc. Only a negative because other places of a comparable price will have all of these add ons.<br/><br/>I am still rating this place &quot;good&quot; rather than &quot;average&quot;, because if you stay in a King Panoramic, Queen Terrace or Penthouse Suite, and don't mind the steep climb and a decent walk to all the sites, you will have an absolutely fantastic time. The staff do also try very hard to make you comfortable. However if you are only prepared to pay 225 euro a night, and therefore book into a Grand King room, you probably won't be wowed by this place.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Definitely spend the extra money and book a King Panoramic, Queen Terrace or King Penthouse Room. Th...
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq220810653_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220810653 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmAkdqHMUKvv3KmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokmo3dk6XoXfXXdKvKmKK6XoXfXXmAUd3mX6XoXfXXmKdddAd6XoXfXXXvk3UUm6XoXfXXXoUdkvA6XoXfXXXmAd3Xv6XoXfXXXXKAoUo6XoXfXXUmX33vm6XoXfXXKvUK3omqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokmo3dkqHxdSIIQQoqnQQltIJCHpcQQoqnQQhpSIVtqHltIJCHpcxiGIac6XoXmqoTpcXXKvUK3om0tEn1XXKvUK3om0zH1XAmAkd0pSM1KqnUKUmqnkoUzsXvKbxMxMmKkmomfmoXdb7f30EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">3</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220810653" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220810653'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '1088603', 'nooree', '0F1013F751E280ADD307353C3524ABC6', 'en', '220810653', 'Witt Istanbul Suites');">Ask nooree about Witt Istanbul Suites</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>

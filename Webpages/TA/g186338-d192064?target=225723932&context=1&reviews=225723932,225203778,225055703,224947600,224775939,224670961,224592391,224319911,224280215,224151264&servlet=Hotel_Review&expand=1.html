@@ -1,0 +1,1715 @@
+<div id="expanded_review_225723932">
+<a name="UR225723932"></a>
+<div id="UR225723932" class="extended provider0 first newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_15071BB0BC9B7DA0F742D042DB70CDB3-SRC_225723932" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_15071BB0BC9B7DA0F742D042DB70CDB3 ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: '15071BB0BC9B7DA0F742D042DB70CDB3'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/05/fc/f7/74/judy3295.jpg" class="avatar potentialFacebookAvatar avatarGUID:15071BB0BC9B7DA0F742D042DB70CDB3" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_15071BB0BC9B7DA0F742D042DB70CDB3" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Judy3295</span>
+</div>
+</div>
+<div class="location">
+Somerset, Massachusetts
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_15071BB0BC9B7DA0F742D042DB70CDB3-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">3 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '15071BB0BC9B7DA0F742D042DB70CDB3', screenName: 'Judy3295', geos: [187147, 41818, 186338], geo: '186338' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 3 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 3 cities</span> </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d192064-r225723932-The_Chesterfield_Mayfair-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r225723932">&#x201c;<span class='noQuotes'>Extraordinary</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='1 September 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+What a wonderful, outstanding hotel!! Service was impeccable and concierge, Chris, extraordinary. Breakfast was far more than one could imagine. Excellent location close to everything yet in a quiet neighborhood. We can't wait to return.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Booked a superior king with breakfast
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed May 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq225723932_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq225723932 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMUAXK3dqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXmAmX6XoXfXXoXKmkkv6XoXfXXoKookKm6XoXfXXdAdk3KK6XoXfXXdkkoAmA6XoXfXXd3kKA3U6XoXfXXdoAXmAU6XoXfXXdmUAAUU6XoXfXXdXvKXUo6XoXfXXdUoUX3dqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXmAmXqHrGVQQoqnQQfGVtIVETSVcMQQoqnQQDJgTJSEqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXokXmAmX0tEn1XXokXmAmX0zH1Uv3mmv0pSM1UoKkU77K7fA7kxMbKqnkdXxMKdXxM7kKfxM7m0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_225723932" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '225723932'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '192064', 'Judy3295', '15071BB0BC9B7DA0F742D042DB70CDB3', 'en', '225723932', 'The Chesterfield Mayfair');">Ask Judy3295 about The Chesterfield Mayfair</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Oliver R, General Manager at The Chesterfield Mayfair, responded to this review,
+<span class="res_date relativeDate" title='1 September 2014'>yesterday</span>
+</div>
+<div class="displayText" id="response_225723932">
+Dear Guest,<br/><br/>Thank you for your great review of The Chesterfield Mayfair Hotel.<br/><br/>I am pleased that you enjoyed your stay at with us and I am glad that you found the location convenient for you, with many of the main sights within walking distance of the hotel. I am delighted that you had the chance to join us in Butlers Restaurant and that you found the breakfast to be delicious. Thank you for your kind words regarding the helpful staff that you experienced; especially Chris and the concierge team who were able to assist you in planning your time in London. <br/><br/>I look forward to you joining us again at The Chesterfield Mayfair Hotel in the near future.<br/><br/>Kind regards,<br/><br/>Oliver<br/><br/>Oliver Raggett<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_225909393" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:225909393, isGeo:false, locationid:192064})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_225909393" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_225909393">
+<a name="UR225909393"></a>
+<div id="UR225909393" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d192064-r225909393-The_Chesterfield_Mayfair-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r225909393">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='1 September 2014'>Reviewed yesterday
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest,<br/><br/>Thank you for your great review of The Chesterfield Mayfair Hotel.<br/><br/>I am pleased that you enjoyed your stay at with us and I am glad that you found the location convenient for you, with many of the main sights within walking distance of the hotel. I am delighted that you had the chance to join us in Butlers Restaurant and that you found the breakfast to be delicious. Thank you for your kind words regarding the helpful staff that you experienced; especially Chris and the concierge team who were able to assist you in planning your time in London. <br/><br/>I look forward to you joining us again at The Chesterfield Mayfair Hotel in the near future.<br/><br/>Kind regards,<br/><br/>Oliver<br/><br/>Oliver Raggett<br/>General Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq225909393_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq225909393 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMUAXK3dqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXmAmX6XoXfXXoXKmkkv6XoXfXXoKookKm6XoXfXXdAdk3KK6XoXfXXdkkoAmA6XoXfXXd3kKA3U6XoXfXXdoAXmAU6XoXfXXdmUAAUU6XoXfXXdXvKXUo6XoXfXXdUoUX3dqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXmAmXqHrGVQQoqnQQfGVtIVETSVcMQQoqnQQDJgTJSEqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXoAKAmAm0tEn1XXoAKAmAm0zH1Uv3mmv0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_225909393" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '225909393'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_225203778">
+<a name="UR225203778"></a>
+<div id="UR225203778" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_DC6B047AEF9BB4B8161C86C4AC54E249-SRC_225203778" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_DC6B047AEF9BB4B8161C86C4AC54E249 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-f/05/ec/32/ea/andy-m.jpg" class="avatar potentialFacebookAvatar avatarGUID:DC6B047AEF9BB4B8161C86C4AC54E249" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_DC6B047AEF9BB4B8161C86C4AC54E249" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Andy M</span>
+</div>
+</div>
+<div class="location">
+Ripley, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_DC6B047AEF9BB4B8161C86C4AC54E249-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="13 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">13 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'DC6B047AEF9BB4B8161C86C4AC54E249', screenName: 'Andy M', geos: [659911, 190928, 776616, 187048, 635677, 186338, 551761, 1480282], geo: '186338' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 8 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 8 cities</span> </div>
+<div id="UID_DC6B047AEF9BB4B8161C86C4AC54E249-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="7 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">7 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d192064-r225203778-The_Chesterfield_Mayfair-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r225203778">&#x201c;<span class='noQuotes'>Home from Home</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='29 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Last week-end (August 22nd to 25th) we stayed at The Chesterfield Mayfair, our third stay since 2009. The suite we had was very luxurious and met all our expectations. Our long week-end in the heart of London was a great success. We always enjoy staying at The Chesterfield Mayfair and highly recommend it.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq225203778_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq225203778 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMUAXK3dqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXmAmX6XoXfXXoXKmkkv6XoXfXXoKookKm6XoXfXXdAdk3KK6XoXfXXdkkoAmA6XoXfXXd3kKA3U6XoXfXXdoAXmAU6XoXfXXdmUAAUU6XoXfXXdXvKXUo6XoXfXXdUoUX3dqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXmAmXqHrGVQQoqnQQfGVtIVETSVcMQQoqnQQDJgTJSEqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXoXKmkkv0tEn1XXoXKmkkv0zH1Uv3mmv0pSM1xMf37KdkbzsqnA77d7vU3Ufv3fdbfodzsXdA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_225203778" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '225203778'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/539andym/g186338" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 3 reviews by Andy M for London </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '192064', 'Andy M', 'DC6B047AEF9BB4B8161C86C4AC54E249', 'en', '225203778', 'The Chesterfield Mayfair');">Ask Andy M about The Chesterfield Mayfair</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Oliver R, General Manager at The Chesterfield Mayfair, responded to this review,
+<span class="res_date relativeDate" title='1 September 2014'>yesterday</span>
+</div>
+<div class="displayText" id="response_225203778">
+Dear Guest,<br/><br/>Thank you for taking the time to write a review of your wonderful experience at The Chesterfield Mayfair Hotel.<br/><br/>It was our pleasure to have you join us again; we love to welcome back guests to our boutique hotel. I am delighted to learn that your recent stay with us has exceeded your expectations and thank you for recommending The Chesterfield Mayfair Hotel.<br/> <br/>I look forward to welcoming you back again.<br/><br/>Kind regards,<br/><br/>Oliver<br/><br/>Oliver Raggett<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_225895556" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:225895556, isGeo:false, locationid:192064})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_225895556" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_225895556">
+<a name="UR225895556"></a>
+<div id="UR225895556" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d192064-r225895556-The_Chesterfield_Mayfair-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r225895556">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='1 September 2014'>Reviewed yesterday
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest,<br/><br/>Thank you for taking the time to write a review of your wonderful experience at The Chesterfield Mayfair Hotel.<br/><br/>It was our pleasure to have you join us again; we love to welcome back guests to our boutique hotel. I am delighted to learn that your recent stay with us has exceeded your expectations and thank you for recommending The Chesterfield Mayfair Hotel.<br/> <br/>I look forward to welcoming you back again.<br/><br/>Kind regards,<br/><br/>Oliver<br/><br/>Oliver Raggett<br/>General Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq225895556_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq225895556 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMUAXK3dqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXmAmX6XoXfXXoXKmkkv6XoXfXXoKookKm6XoXfXXdAdk3KK6XoXfXXdkkoAmA6XoXfXXd3kKA3U6XoXfXXdoAXmAU6XoXfXXdmUAAUU6XoXfXXdXvKXUo6XoXfXXdUoUX3dqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXmAmXqHrGVQQoqnQQfGVtIVETSVcMQQoqnQQDJgTJSEqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXovAooo30tEn1XXovAooo30zH1Uv3mmv0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_225895556" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '225895556'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_225055703">
+<a name="UR225055703"></a>
+<div id="UR225055703" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_B5A69690557E85EDF859CA3917A87BD0-SRC_225055703" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_B5A69690557E85EDF859CA3917A87BD0 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/a2/avatar073.jpg" class="avatar potentialFacebookAvatar avatarGUID:B5A69690557E85EDF859CA3917A87BD0" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_B5A69690557E85EDF859CA3917A87BD0" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">OdellUK</span>
+</div>
+</div>
+<div class="location">
+UK
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_B5A69690557E85EDF859CA3917A87BD0-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="7 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">7 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">4 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'B5A69690557E85EDF859CA3917A87BD0', screenName: 'OdellUK', geos: [651752, 1077008, 319793, 190920, 186338, 190737], geo: '186338' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 6 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 6 cities</span> </div>
+<div id="UID_B5A69690557E85EDF859CA3917A87BD0-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="8 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">8 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d192064-r225055703-The_Chesterfield_Mayfair-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r225055703">&#x201c;<span class='noQuotes'>Overall excellence</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='28 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+My mother returns year after year from South Africa to the Chesterfield. The Chesterfield never disappoints. This year she received a hand written letter from the Manager thanking her for her continuous valued custom together with a bowl of fruit. The concierge greeted her when she arrived - having recognised her from previous years - and knew her name! She said she felt so valued by this hotel and her head had grown the size of the Chesterfield itself! This is old world charm, where every visitor is treated as royalty. Well done!
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled solo</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq225055703_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq225055703 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMUAXK3dqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXmAmX6XoXfXXoXKmkkv6XoXfXXoKookKm6XoXfXXdAdk3KK6XoXfXXdkkoAmA6XoXfXXd3kKA3U6XoXfXXdoAXmAU6XoXfXXdmUAAUU6XoXfXXdXvKXUo6XoXfXXdUoUX3dqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXmAmXqHrGVQQoqnQQfGVtIVETSVcMQQoqnQQDJgTJSEqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXoKookKm0tEn1XXoKookKm0zH1Uv3mmv0pSM17ob3A3AKookzsvozsxMqnvoAfbmAUkbvk7xMK0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_225055703" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '225055703'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '192064', 'OdellUK', 'B5A69690557E85EDF859CA3917A87BD0', 'en', '225055703', 'The Chesterfield Mayfair');">Ask OdellUK about The Chesterfield Mayfair</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Oliver R, General Manager at The Chesterfield Mayfair, responded to this review,
+<span class="res_date relativeDate" title='29 August 2014'>4 days ago</span>
+</div>
+<div class="displayText" id="response_225055703">
+Dear Guest,<br/><br/>Thank you for your great review of your mother's experience at The Chesterfield Mayfair Hotel.<br/><br/>I am delighted to hear that your mother had another enjoyable stay with us; we love to welcome back members of our Chesterfield family. I am thrilled that she appreciated the fruit and personal note in her room and that my team recognised her by name; we love when guests notice our dedication. <br/><br/>I look forward to welcoming your mother back to The Chesterfield Mayfair Hotel.<br/><br/>Kind regards,<br/><br/>Oliver<br/><br/>Oliver Raggett<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_225251348" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:225251348, isGeo:false, locationid:192064})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_225251348" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_225251348">
+<a name="UR225251348"></a>
+<div id="UR225251348" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d192064-r225251348-The_Chesterfield_Mayfair-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r225251348">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='29 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest,<br/><br/>Thank you for your great review of your mother's experience at The Chesterfield Mayfair Hotel.<br/><br/>I am delighted to hear that your mother had another enjoyable stay with us; we love to welcome back members of our Chesterfield family. I am thrilled that she appreciated the fruit and personal note in her room and that my team recognised her by name; we love when guests notice our dedication. <br/><br/>I look forward to welcoming your mother back to The Chesterfield Mayfair Hotel.<br/><br/>Kind regards,<br/><br/>Oliver<br/><br/>Oliver Raggett<br/>General Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq225251348_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq225251348 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMUAXK3dqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXmAmX6XoXfXXoXKmkkv6XoXfXXoKookKm6XoXfXXdAdk3KK6XoXfXXdkkoAmA6XoXfXXd3kKA3U6XoXfXXdoAXmAU6XoXfXXdmUAAUU6XoXfXXdXvKXUo6XoXfXXdUoUX3dqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXmAmXqHrGVQQoqnQQfGVtIVETSVcMQQoqnQQDJgTJSEqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXoXoUmdv0tEn1XXoXoUmdv0zH1Uv3mmv0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_225251348" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '225251348'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224947600">
+<a name="UR224947600"></a>
+<div id="UR224947600" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_AB50974FB99CCC99768467C69EF99BDA-SRC_224947600" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_AB50974FB99CCC99768467C69EF99BDA ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/02/4b/37/c0/kcosta1.jpg" class="avatar potentialFacebookAvatar avatarGUID:AB50974FB99CCC99768467C69EF99BDA" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_AB50974FB99CCC99768467C69EF99BDA" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">kcosta1</span>
+</div>
+</div>
+<div class="location">
+Melbourne, Australia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_AB50974FB99CCC99768467C69EF99BDA-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="14 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">14 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">9 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'AB50974FB99CCC99768467C69EF99BDA', screenName: 'kcosta1', geos: [255060, 194947, 255093, 580240, 188590, 187783, 186338, 255103, 187892], geo: '186338' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 9 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 9 cities</span> </div>
+<div id="UID_AB50974FB99CCC99768467C69EF99BDA-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="11 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">11 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d192064-r224947600-The_Chesterfield_Mayfair-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224947600">&#x201c;<span class='noQuotes'>Quaint, cozy and lovely</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='28 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+<a class="viaMobile sprite-grayPhone" href="/apps" target="_blank" onclick="ta.util.cookie.setPIDCookie(24687)">via mobile</a>
+</div>
+<div class="entry">
+<p>
+Stayed here for 4 nights. First time on London, loved the area and this quaint but opulent hotel. The furnishings were lovely and very comfortable. Rooms were small, but cozy, I expected this. Beds were so comfortable. The staff were lovely and very helpful. They event surprised us with a signed card from all the team and lovely cupcakes as a for our 22 year anniversary. Thankyou!<br/>The area was affluent as expected and had great coffee shops, pubs and restaurants close by. Easy to get cabs, which the doorman hails very quickly so no problem with finding transport.<br/>I would recommend this hotel and area to stay in.<br/>Hopefully will get to return soon<br/>
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014, travelled as a couple</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224947600_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224947600 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMUAXK3dqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXmAmX6XoXfXXoXKmkkv6XoXfXXoKookKm6XoXfXXdAdk3KK6XoXfXXdkkoAmA6XoXfXXd3kKA3U6XoXfXXdoAXmAU6XoXfXXdmUAAUU6XoXfXXdXvKXUo6XoXfXXdUoUX3dqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXmAmXqHrGVQQoqnQQfGVtIVETSVcMQQoqnQQDJgTJSEqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXdAdk3KK0tEn1XXdAdk3KK0zH1Uv3mmv0pSM1b7oKAkdqn7AAfffAAk3vd3kf3AzsqnAA7xMb0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224947600" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224947600'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '192064', 'kcosta1', 'AB50974FB99CCC99768467C69EF99BDA', 'en', '224947600', 'The Chesterfield Mayfair');">Ask kcosta1 about The Chesterfield Mayfair</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Oliver R, General Manager at The Chesterfield Mayfair, responded to this review,
+<span class="res_date relativeDate" title='29 August 2014'>4 days ago</span>
+</div>
+<div class="displayText" id="response_224947600">
+Dear Guest,<br/><br/>Thank you for your great review of your experience at The Chesterfield Mayfair Hotel.<br/><br/>It gives me great pleasure to know that you chose to stay at The Chesterfield Mayfair for your first ever trip to London and that you had an enjoyable stay with us. My Executive Housekeeper will be thrilled to hear that you found the finishings to be of a high standard throughout the hotel and that you had a great nights rest in our comfortable beds. <br/><br/>I am delighted that you appreciated the added touches of a card and cupcake for your anniversary; we are grateful when guests notice our dedication. <br/><br/>Thank you for recommending The Chesterfield Mayfair Hotel and I look forward to welcoming you back to in the future.<br/><br/>Kind regards,<br/><br/>Oliver<br/><br/>Oliver Raggett<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_225247639" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:225247639, isGeo:false, locationid:192064})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_225247639" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_225247639">
+<a name="UR225247639"></a>
+<div id="UR225247639" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d192064-r225247639-The_Chesterfield_Mayfair-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r225247639">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='29 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest,<br/><br/>Thank you for your great review of your experience at The Chesterfield Mayfair Hotel.<br/><br/>It gives me great pleasure to know that you chose to stay at The Chesterfield Mayfair for your first ever trip to London and that you had an enjoyable stay with us. My Executive Housekeeper will be thrilled to hear that you found the finishings to be of a high standard throughout the hotel and that you had a great nights rest in our comfortable beds. <br/><br/>I am delighted that you appreciated the added touches of a card and cupcake for your anniversary; we are grateful when guests notice our dedication. <br/><br/>Thank you for recommending The Chesterfield Mayfair Hotel and I look forward to welcoming you back to in the future.<br/><br/>Kind regards,<br/><br/>Oliver<br/><br/>Oliver Raggett<br/>General Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq225247639_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq225247639 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMUAXK3dqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXmAmX6XoXfXXoXKmkkv6XoXfXXoKookKm6XoXfXXdAdk3KK6XoXfXXdkkoAmA6XoXfXXd3kKA3U6XoXfXXdoAXmAU6XoXfXXdmUAAUU6XoXfXXdXvKXUo6XoXfXXdUoUX3dqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXmAmXqHrGVQQoqnQQfGVtIVETSVcMQQoqnQQDJgTJSEqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXoXdk3mA0tEn1XXoXdk3mA0zH1Uv3mmv0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_225247639" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '225247639'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224775939">
+<a name="UR224775939"></a>
+<div id="UR224775939" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_4CF9A5BF5E8394E4A2E3EFB939ED159D-SRC_224775939" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_4CF9A5BF5E8394E4A2E3EFB939ED159D ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/89/avatar010.jpg" class="avatar potentialFacebookAvatar avatarGUID:4CF9A5BF5E8394E4A2E3EFB939ED159D" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_4CF9A5BF5E8394E4A2E3EFB939ED159D" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">BAJ89</span>
+</div>
+</div>
+<div class="location">
+Henlow, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_4CF9A5BF5E8394E4A2E3EFB939ED159D-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="44 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">44 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">8 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '4CF9A5BF5E8394E4A2E3EFB939ED159D', screenName: 'BAJ89', geos: [31030, 154943, 186414, 186346, 60877, 503900, 3722435, 184850, 154945, 190740, 31020, 186338, 181717], geo: '186338' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 13 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 13 cities</span> </div>
+<div id="UID_4CF9A5BF5E8394E4A2E3EFB939ED159D-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="24 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">24 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d192064-r224775939-The_Chesterfield_Mayfair-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224775939">&#x201c;<span class='noQuotes'>Excellent Hotel in a perfect location</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='27 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Wonderful stay this exceptional hotel, everything was perfect The staff and service are outstanding. Our rooms were lovely. All of our Restaurant meals were superb; from breakfast with its outstanding range of options, to the afternoon teas to our wonderful evening meals.<br/><br/>The attention to detail at the Chesterfield is second to none; everything seems to be carefully thought of to ensure we enjoyed a unique experience.<br/><br/>Location is easily within walking distance of the shops in Oxford Street, Kensington and Knightsbridge together with the typical London attractions. However it is worth taking a few minutes stroll towards Berkeley Square, and window shop for your next car possibly a Bentley or a Rolls or even a Bugatti, if only!<br/><br/>Already looking forward to a return visit.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224775939_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224775939 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMUAXK3dqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXmAmX6XoXfXXoXKmkkv6XoXfXXoKookKm6XoXfXXdAdk3KK6XoXfXXdkkoAmA6XoXfXXd3kKA3U6XoXfXXdoAXmAU6XoXfXXdmUAAUU6XoXfXXdXvKXUo6XoXfXXdUoUX3dqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXmAmXqHrGVQQoqnQQfGVtIVETSVcMQQoqnQQDJgTJSEqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXdkkoAmA0tEn1XXdkkoAmA0zH1Uv3mmv0pSM1dfqnAbo7qnozsvmAdzsdbXzsmzsqn7AmAzsxMUoAxM0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">3</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224775939" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224775939'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/BAJ89/g186338" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 12 reviews by BAJ89 for London </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '192064', 'BAJ89', '4CF9A5BF5E8394E4A2E3EFB939ED159D', 'en', '224775939', 'The Chesterfield Mayfair');">Ask BAJ89 about The Chesterfield Mayfair</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Oliver R, General Manager at The Chesterfield Mayfair, responded to this review,
+<span class="res_date relativeDate" title='29 August 2014'>4 days ago</span>
+</div>
+<div class="displayText" id="response_224775939">
+Dear Guest,<br/><br/>Thank you for taking the time to write a brilliant review after your recent stay with us.<br/><br/>I am pleased to hear that your stay at the Chesterfield Mayfair was a memorable experience and that you found the rooms to be comfortable and well decorated. My Restaurant Manger will be happy to hear that the food in our in house restaurant, Butlers was delicious and that you were able to join us for breakfast and afternoon tea.<br/><br/>We take great pride in our attention to detail here at The Chesterfield and I am thrilled that you appreciated the care and attention that you experienced from my team during your stay. I am delighted that our Mayfair location was ideal for your few days exploring London as well. <br/><br/>I look forward to welcoming you back to The Chesterfield Mayfair Hotel..<br/><br/>Kind regards,<br/><br/>Oliver<br/><br/>Oliver Raggett<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_225243125" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:225243125, isGeo:false, locationid:192064})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_225243125" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_225243125">
+<a name="UR225243125"></a>
+<div id="UR225243125" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d192064-r225243125-The_Chesterfield_Mayfair-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r225243125">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='29 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest,<br/><br/>Thank you for taking the time to write a brilliant review after your recent stay with us.<br/><br/>I am pleased to hear that your stay at the Chesterfield Mayfair was a memorable experience and that you found the rooms to be comfortable and well decorated. My Restaurant Manger will be happy to hear that the food in our in house restaurant, Butlers was delicious and that you were able to join us for breakfast and afternoon tea.<br/><br/>We take great pride in our attention to detail here at The Chesterfield and I am thrilled that you appreciated the care and attention that you experienced from my team during your stay. I am delighted that our Mayfair location was ideal for your few days exploring London as well. <br/><br/>I look forward to welcoming you back to The Chesterfield Mayfair Hotel..<br/><br/>Kind regards,<br/><br/>Oliver<br/><br/>Oliver Raggett<br/>General Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq225243125_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq225243125 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMUAXK3dqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXmAmX6XoXfXXoXKmkkv6XoXfXXoKookKm6XoXfXXdAdk3KK6XoXfXXdkkoAmA6XoXfXXd3kKA3U6XoXfXXdoAXmAU6XoXfXXdmUAAUU6XoXfXXdXvKXUo6XoXfXXdUoUX3dqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXmAmXqHrGVQQoqnQQfGVtIVETSVcMQQoqnQQDJgTJSEqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXoXdmUXo0tEn1XXoXdmUXo0zH1Uv3mmv0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_225243125" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '225243125'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224670961">
+<a name="UR224670961"></a>
+<div id="UR224670961" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_4D6FDE5EC07305211B8AB7392DADFFF9-SRC_224670961" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_4D6FDE5EC07305211B8AB7392DADFFF9 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/02/7a/95/23/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:4D6FDE5EC07305211B8AB7392DADFFF9" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_4D6FDE5EC07305211B8AB7392DADFFF9" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">M45H</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_4D6FDE5EC07305211B8AB7392DADFFF9-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="6 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">6 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">6 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '4D6FDE5EC07305211B8AB7392DADFFF9', screenName: 'M45H', geos: [187147, 187221, 226865, 295419, 186338, 187309], geo: '186338' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 6 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 6 cities</span> </div>
+<div id="UID_4D6FDE5EC07305211B8AB7392DADFFF9-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">4 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d192064-r224670961-The_Chesterfield_Mayfair-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224670961">&#x201c;<span class='noQuotes'>Excellent</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='27 August 2014'>Reviewed 1 week ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Excellent service. Excellent location. the rooms are a little small, but everything else makes u forget the tiny space and forces you to fall in love with this authentic English hotel. The concierge service in this hotel is phenomenal! A superb hotel!
+</p>
+</div>
+<div class="media  thumbCols1">
+<div class="thumbnails">
+<div class="photosInline">
+<ul>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g186338-d192064-i108212167-r224670961-The_Chesterfield_Mayfair-London_England.html#108212167 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 192064, 186338, 2, 108212167);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/73/2f/c7/tiny-english-room.jpg" alt="" width="50" height="50">
+</span>
+</li>
+</ul>
+</div> </div> </div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014</span>
+</div>
+</div>
+<div id="helpfulq224670961_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224670961 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMUAXK3dqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXmAmX6XoXfXXoXKmkkv6XoXfXXoKookKm6XoXfXXdAdk3KK6XoXfXXdkkoAmA6XoXfXXd3kKA3U6XoXfXXdoAXmAU6XoXfXXdmUAAUU6XoXfXXdXvKXUo6XoXfXXdUoUX3dqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXmAmXqHrGVQQoqnQQfGVtIVETSVcMQQoqnQQDJgTJSEqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXd3kKA3U0tEn1XXd3kKA3U0zH1Uv3mmv0pSM1dxM3qnxMzsozsfKkmKoXUU7vb7kmAXxMbxMqnqnqnA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224670961" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224670961'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '192064', 'M45H', '4D6FDE5EC07305211B8AB7392DADFFF9', 'en', '224670961', 'The Chesterfield Mayfair');">Ask M45H about The Chesterfield Mayfair</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Oliver R, General Manager at The Chesterfield Mayfair, responded to this review,
+<span class="res_date relativeDate" title='29 August 2014'>4 days ago</span>
+</div>
+<div class="displayText" id="response_224670961">
+Dear Guest,<br/><br/>Thank you for your great review of The Chesterfield Mayfair Hotel.<br/><br/>I am pleased that you enjoyed your stay at our traditional English hotel and that your bedroom was well appointed. I am glad that you found the location convenient for you; with many of the main sights within walking distance of the hotel. Thank you for your kind words regarding the helpful staff that you experienced; especially the concierge team who were able to assist you in planning your time in London. <br/><br/>I look forward to you joining us again at The Chesterfield Mayfair Hotel in the near future.<br/><br/>Kind regards,<br/><br/>Oliver<br/><br/>Oliver Raggett<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_225239307" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:225239307, isGeo:false, locationid:192064})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_225239307" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_225239307">
+<a name="UR225239307"></a>
+<div id="UR225239307" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d192064-r225239307-The_Chesterfield_Mayfair-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r225239307">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='29 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest,<br/><br/>Thank you for your great review of The Chesterfield Mayfair Hotel.<br/><br/>I am pleased that you enjoyed your stay at our traditional English hotel and that your bedroom was well appointed. I am glad that you found the location convenient for you; with many of the main sights within walking distance of the hotel. Thank you for your kind words regarding the helpful staff that you experienced; especially the concierge team who were able to assist you in planning your time in London. <br/><br/>I look forward to you joining us again at The Chesterfield Mayfair Hotel in the near future.<br/><br/>Kind regards,<br/><br/>Oliver<br/><br/>Oliver Raggett<br/>General Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq225239307_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq225239307 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMUAXK3dqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXmAmX6XoXfXXoXKmkkv6XoXfXXoKookKm6XoXfXXdAdk3KK6XoXfXXdkkoAmA6XoXfXXd3kKA3U6XoXfXXdoAXmAU6XoXfXXdmUAAUU6XoXfXXdXvKXUo6XoXfXXdUoUX3dqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXmAmXqHrGVQQoqnQQfGVtIVETSVcMQQoqnQQDJgTJSEqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXoXmAmKk0tEn1XXoXmAmKk0zH1Uv3mmv0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_225239307" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '225239307'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224592391">
+<a name="UR224592391"></a>
+<div id="UR224592391" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_A35F105BC01E3AF5357CB9F91D56CADB-SRC_224592391" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_A35F105BC01E3AF5357CB9F91D56CADB ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9c/avatar067.jpg" class="avatar potentialFacebookAvatar avatarGUID:A35F105BC01E3AF5357CB9F91D56CADB" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_A35F105BC01E3AF5357CB9F91D56CADB" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Matthew_from_Perth</span>
+</div>
+</div>
+<div class="location">
+Perth, Australia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_A35F105BC01E3AF5357CB9F91D56CADB-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">2 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'A35F105BC01E3AF5357CB9F91D56CADB', screenName: 'Matthew_from_Perth', geos: [482942, 186338], geo: '186338' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 2 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 2 cities</span> </div>
+<div id="UID_A35F105BC01E3AF5357CB9F91D56CADB-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="1 helpful vote" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">1 helpful vote</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d192064-r224592391-The_Chesterfield_Mayfair-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224592391">&#x201c;<span class='noQuotes'>Perfect Mayfair Hotel</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='26 August 2014'>Reviewed 1 week ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+We wanted a very English/Mayfair experience and this beautiful hotel provided exactly that. The room was warm and spacious accompanied by an elegant bathroom. The location was perfect literally a minute walk to Berkley Square. The service from all staff was excellent and the English breakfast we had each morning fresh and delicious. We will be back.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq224592391_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224592391 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMUAXK3dqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXmAmX6XoXfXXoXKmkkv6XoXfXXoKookKm6XoXfXXdAdk3KK6XoXfXXdkkoAmA6XoXfXXd3kKA3U6XoXfXXdoAXmAU6XoXfXXdmUAAUU6XoXfXXdXvKXUo6XoXfXXdUoUX3dqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXmAmXqHrGVQQoqnQQfGVtIVETSVcMQQoqnQQDJgTJSEqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXdoAXmAU0tEn1XXdoAXmAU0zH1Uv3mmv0pSM1bmoqnUKo7fKUzsmbqnomokf7AqnAUxMo3fbxM70EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224592391" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224592391'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '192064', 'Matthew_from_Perth', 'A35F105BC01E3AF5357CB9F91D56CADB', 'en', '224592391', 'The Chesterfield Mayfair');">Ask Matthew_from_Perth about The Chesterfield Mayfair</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Oliver R, General Manager at The Chesterfield Mayfair, responded to this review,
+<span class="res_date relativeDate" title='29 August 2014'>4 days ago</span>
+</div>
+<div class="displayText" id="response_224592391">
+Dear Guest,<br/><br/>Thank you for your taking the time to provide feedback of your stay at The Chesterfield Mayfair Hotel.<br/><br/>I am delighted to know that you had the true British experience you wished for at our traditional boutique hotel. My Executive Housekeeper will be happy to hear that you found your room to be warm and tastefully decorated and for the bathrooms to be well appointed. Breakfast in Butlers Restaurant is a great start to the day and I am glad that you found it to be fresh and delicious. <br/><br/>I look forward to welcoming you back to The Chesterfield Mayfair Hotel.<br/><br/>Kind regards,<br/><br/>Oliver<br/><br/>Oliver Raggett<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_225237184" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:225237184, isGeo:false, locationid:192064})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_225237184" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_225237184">
+<a name="UR225237184"></a>
+<div id="UR225237184" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d192064-r225237184-The_Chesterfield_Mayfair-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r225237184">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='29 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest,<br/><br/>Thank you for your taking the time to provide feedback of your stay at The Chesterfield Mayfair Hotel.<br/><br/>I am delighted to know that you had the true British experience you wished for at our traditional boutique hotel. My Executive Housekeeper will be happy to hear that you found your room to be warm and tastefully decorated and for the bathrooms to be well appointed. Breakfast in Butlers Restaurant is a great start to the day and I am glad that you found it to be fresh and delicious. <br/><br/>I look forward to welcoming you back to The Chesterfield Mayfair Hotel.<br/><br/>Kind regards,<br/><br/>Oliver<br/><br/>Oliver Raggett<br/>General Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq225237184_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq225237184 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMUAXK3dqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXmAmX6XoXfXXoXKmkkv6XoXfXXoKookKm6XoXfXXdAdk3KK6XoXfXXdkkoAmA6XoXfXXd3kKA3U6XoXfXXdoAXmAU6XoXfXXdmUAAUU6XoXfXXdXvKXUo6XoXfXXdUoUX3dqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXmAmXqHrGVQQoqnQQfGVtIVETSVcMQQoqnQQDJgTJSEqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXoXmkUvd0tEn1XXoXmkUvd0zH1Uv3mmv0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_225237184" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '225237184'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224319911">
+<a name="UR224319911"></a>
+<div id="UR224319911" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_1F6FB8D54899D8CB191E17458A888026-SRC_224319911" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_1F6FB8D54899D8CB191E17458A888026 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/76/avatar058.jpg" class="avatar potentialFacebookAvatar avatarGUID:1F6FB8D54899D8CB191E17458A888026" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_1F6FB8D54899D8CB191E17458A888026" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Robert H</span>
+</div>
+</div>
+<div class="location">
+Centereach, New York, United States
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_1F6FB8D54899D8CB191E17458A888026-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+<div id="UID_1F6FB8D54899D8CB191E17458A888026-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="2 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">2 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d192064-r224319911-The_Chesterfield_Mayfair-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224319911">&#x201c;<span class='noQuotes'>RHARDIE10</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+This hotel is magnificent. Rooms are bright and cheery. Staff is more then helpful. Area attractions are in walking distance. Taxi service is right in front when necessary. Restaurant is top quality. Concierge service staff is exceptional, answering all questions with expert
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled with friends</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq224319911_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224319911 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMUAXK3dqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXmAmX6XoXfXXoXKmkkv6XoXfXXoKookKm6XoXfXXdAdk3KK6XoXfXXdkkoAmA6XoXfXXd3kKA3U6XoXfXXdoAXmAU6XoXfXXdmUAAUU6XoXfXXdXvKXUo6XoXfXXdUoUX3dqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXmAmXqHrGVQQoqnQQfGVtIVETSVcMQQoqnQQDJgTJSEqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXdmUAAUU0tEn1XXdmUAAUU0zH1Uv3mmv0pSM1Uqn3qn7vxModvAAxMvf7UAUzsUkdovbvvvKX30EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224319911" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224319911'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '192064', 'Robert H', '1F6FB8D54899D8CB191E17458A888026', 'en', '224319911', 'The Chesterfield Mayfair');">Ask Robert H about The Chesterfield Mayfair</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Oliver R, General Manager at The Chesterfield Mayfair, responded to this review,
+<span class="res_date relativeDate" title='29 August 2014'>4 days ago</span>
+</div>
+<div class="displayText" id="response_224319911">
+Dear Guest,<br/><br/>Thank you for your brilliant review of The Chesterfield Mayfair Hotel.<br/><br/>I am pleased that you enjoyed your stay with us and found the bedrooms to be well decorated and comfortable. I am glad that you took advantage of our Mayfair location and walked to the major attractions. Thank you for your kind words regarding the helpful staff that you experienced; especially the concierge team who were able to assist you in planning your time in London. <br/><br/>I look forward to you joining us again at The Chesterfield Mayfair Hotel in the near future.<br/><br/>Kind regards,<br/><br/>Oliver<br/><br/>Oliver Raggett<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_225224813" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:225224813, isGeo:false, locationid:192064})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_225224813" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_225224813">
+<a name="UR225224813"></a>
+<div id="UR225224813" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d192064-r225224813-The_Chesterfield_Mayfair-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r225224813">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='29 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest,<br/><br/>Thank you for your brilliant review of The Chesterfield Mayfair Hotel.<br/><br/>I am pleased that you enjoyed your stay with us and found the bedrooms to be well decorated and comfortable. I am glad that you took advantage of our Mayfair location and walked to the major attractions. Thank you for your kind words regarding the helpful staff that you experienced; especially the concierge team who were able to assist you in planning your time in London. <br/><br/>I look forward to you joining us again at The Chesterfield Mayfair Hotel in the near future.<br/><br/>Kind regards,<br/><br/>Oliver<br/><br/>Oliver Raggett<br/>General Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq225224813_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq225224813 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMUAXK3dqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXmAmX6XoXfXXoXKmkkv6XoXfXXoKookKm6XoXfXXdAdk3KK6XoXfXXdkkoAmA6XoXfXXd3kKA3U6XoXfXXdoAXmAU6XoXfXXdmUAAUU6XoXfXXdXvKXUo6XoXfXXdUoUX3dqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXmAmXqHrGVQQoqnQQfGVtIVETSVcMQQoqnQQDJgTJSEqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXoXXdvUm0tEn1XXoXXdvUm0zH1Uv3mmv0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_225224813" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '225224813'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224280215">
+<a name="UR224280215"></a>
+<div id="UR224280215" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_A1841CAA5142B487C2D505C0EF3404C5-SRC_224280215" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_A1841CAA5142B487C2D505C0EF3404C5 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/cd/b4/40/bazjosmith.jpg" class="avatar potentialFacebookAvatar avatarGUID:A1841CAA5142B487C2D505C0EF3404C5" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_A1841CAA5142B487C2D505C0EF3404C5" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">bazjosmith</span>
+</div>
+</div>
+<div class="location">
+warwickshire
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_A1841CAA5142B487C2D505C0EF3404C5-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Top Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="79 reviews" class="icon badge_topcontributor sprite-badge_topcontributor" width="25" height="24">
+<span class="badgeText">79 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">19 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'A1841CAA5142B487C2D505C0EF3404C5', screenName: 'bazjosmith', geos: [1902352, 1213796, 186399, 187791, 186361, 186358, 188590, 190920, 3528963, 190822, 186293, 186254, 186284, 551630, 186220, 191282, 186338, 186400, 186402, 190804, 1772508, 551703, 315991, 191252], geo: '186338' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 24 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 24 cities</span> </div>
+<div id="UID_A1841CAA5142B487C2D505C0EF3404C5-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="43 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">43 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d192064-r224280215-The_Chesterfield_Mayfair-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224280215">&#x201c;<span class='noQuotes'>Wonderful hotel and attentive staff</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+I took my Grandmother to London for a short trip to celebrate her birthday and stay at The Chesterfield. Having stayed at red carnation hotels before including The Milestone in London I had high expectations and I am pleased to say I wasn't disappointed. From the moment we checked in the staff made my Grandmother &amp; I feel very welcome. We had been upgraded as it was a special occasion which was much appreciated and she was accompanied arm in arm to our suite which made her feel very special. We also ate lunch in the restuarant which was delightful and again the staff were very friendly and attentive. Upon arrival back at the hotel later in the day we arrived in the room to find a birthday card and small birthday cake for my grandmother which made her day and I would like to express my gratitude to all the staff for helping make her stay in London a special one. Every single member of the team was polite, helpful and very attentive, a credit to the red carnation group - with special mention to the front of house/reception team. Last but not least the breakfast was also delicious, I would highly recommend staying here and will be back again.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224280215_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224280215 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMUAXK3dqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXmAmX6XoXfXXoXKmkkv6XoXfXXoKookKm6XoXfXXdAdk3KK6XoXfXXdkkoAmA6XoXfXXd3kKA3U6XoXfXXdoAXmAU6XoXfXXdmUAAUU6XoXfXXdXvKXUo6XoXfXXdUoUX3dqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXmAmXqHrGVQQoqnQQfGVtIVETSVcMQQoqnQQDJgTJSEqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXdXvKXUo0tEn1XXdXvKXUo0zH1Uv3mmv0pSM1bUvdUfbboUdX7dvkfXxMoKofKzsqnmdKdfo0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224280215" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224280215'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/bazjosmith/g186338" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 17 reviews by bazjosmith for London </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '192064', 'bazjosmith', 'A1841CAA5142B487C2D505C0EF3404C5', 'en', '224280215', 'The Chesterfield Mayfair');">Ask bazjosmith about The Chesterfield Mayfair</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Oliver R, General Manager at The Chesterfield Mayfair, responded to this review,
+<span class="res_date relativeDate" title='29 August 2014'>4 days ago</span>
+</div>
+<div class="displayText" id="response_224280215">
+Dear Guest,<br/><br/>Thank you for taking the time to provide feedback of your stay at The Chesterfield Mayfair Hotel.<br/><br/>I am delighted to learn that after staying at some of our sister properties you chose to join us as The Chesterfield Mayfair to celebrate your grandmother’s birthday. We enjoy making our guests feel at home with us and I am thrilled that you felt warmly welcomed to the hotel and that you appreciated the larger room for the special occasion. <br/><br/>It gives me great pleasure to know that you joined us in Bulters Restaurant for lunch and that you found the food to be delicious. We take great pride in our attention to detail here at The Chesterfield and I am glad that you appreciated the added touches of birthday treats for your grandmother. Thank you for your kind words regarding the friendly and helpful service that you experienced through out your stay, I will be sure to share your review with all of my team here. <br/><br/>As always, I look forward to welcoming you back to The Chesterfield Mayfair Hotel.<br/><br/>Kind regards,<br/><br/>Oliver<br/><br/>Oliver Raggett<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_225221078" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:225221078, isGeo:false, locationid:192064})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_225221078" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_225221078">
+<a name="UR225221078"></a>
+<div id="UR225221078" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d192064-r225221078-The_Chesterfield_Mayfair-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r225221078">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='29 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest,<br/><br/>Thank you for taking the time to provide feedback of your stay at The Chesterfield Mayfair Hotel.<br/><br/>I am delighted to learn that after staying at some of our sister properties you chose to join us as The Chesterfield Mayfair to celebrate your grandmother’s birthday. We enjoy making our guests feel at home with us and I am thrilled that you felt warmly welcomed to the hotel and that you appreciated the larger room for the special occasion. <br/><br/>It gives me great pleasure to know that you joined us in Bulters Restaurant for lunch and that you found the food to be delicious. We take great pride in our attention to detail here at The Chesterfield and I am glad that you appreciated the added touches of birthday treats for your grandmother. Thank you for your kind words regarding the friendly and helpful service that you experienced through out your stay, I will be sure to share your review with all of my team here. <br/><br/>As always, I look forward to welcoming you back to The Chesterfield Mayfair Hotel.<br/><br/>Kind regards,<br/><br/>Oliver<br/><br/>Oliver Raggett<br/>General Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq225221078_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq225221078 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMUAXK3dqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXmAmX6XoXfXXoXKmkkv6XoXfXXoKookKm6XoXfXXdAdk3KK6XoXfXXdkkoAmA6XoXfXXd3kKA3U6XoXfXXdoAXmAU6XoXfXXdmUAAUU6XoXfXXdXvKXUo6XoXfXXdUoUX3dqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXmAmXqHrGVQQoqnQQfGVtIVETSVcMQQoqnQQDJgTJSEqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXoXXUKkv0tEn1XXoXXUKkv0zH1Uv3mmv0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_225221078" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '225221078'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224151264">
+<a name="UR224151264"></a>
+<div id="UR224151264" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_DEF7B0659BD535F18A3B24D81CD97CF1-SRC_224151264" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_DEF7B0659BD535F18A3B24D81CD97CF1 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9e/avatar069.jpg" class="avatar potentialFacebookAvatar avatarGUID:DEF7B0659BD535F18A3B24D81CD97CF1" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_DEF7B0659BD535F18A3B24D81CD97CF1" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">leachim7</span>
+</div>
+</div>
+<div class="location">
+michigan
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_DEF7B0659BD535F18A3B24D81CD97CF1-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="5 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">5 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">3 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'DEF7B0659BD535F18A3B24D81CD97CF1', screenName: 'leachim7', geos: [34530, 60763, 186338], geo: '186338' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 3 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 3 cities</span> </div>
+<div id="UID_DEF7B0659BD535F18A3B24D81CD97CF1-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="5 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">5 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d192064-r224151264-The_Chesterfield_Mayfair-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224151264">&#x201c;<span class='noQuotes'>The Chesterfield Mayfair Hotel</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+CHESTERFIELD MAYFAIR HOTEL, LONDON, ENGLAND<br/>The Chesterfield Mayfair Hotel (CMH) in the Mayfair borough of London, a Red Carnation boutique establishment, was selected by my wife after a long Internet and personal networking process. The CMH is nicely located for walking to venues or to access transportation, tube or bus. It is on a quiet semi-residential street only a few blocks from Berkeley Square, a pleasant place, and less than that to a nice pub. If you want to walk around and get your head swiveled by passing Ferraris, Maseratis and Lamborghinis, then this is the neighborhood for you! I saw more of them in a week than in my entire life. Someone(s) in the neighborhood has serious money. <br/>My wife can be compulsive as she sets out to plan a trip, in this case her birthday present. No, I was deemed unable (incompetent?) to do it and no, I cannot divulge which birthday. The last time we had been in London was 43 years ago, which does not exactly help anyone find a nice, well-located hotel in today’s world. However, the Chesterfield Mayfair Hotel is one such abode though it is not idyllic. I actually like that because my reality is not replete with perfection. Some of what I am about to relate is affected by the cogent realization that we are more night than day people whereas nearly three quarters of the world’s inhabitants are morning people. For this reason, we rarely go traveling with tours and generally eat breakfast shortly after most others have finished lunch. <br/>We received an unusual and heartwarming email from the CMH asking us for certain of our preferences, including what kind of pillows we would like to have. I wrote in at the bottom that we would like a quiet room, too (as am burdened with a lifelong sensitivity to noise and unexpected sounds, with hearing that used to be like a dog’s, literally). I can tell you from personal experience that humans should not hear things dogs hear. Alas, we were put into one of the noisiest rooms in the hotel. Well, if the room is facing active building construction and it’s adjacent to the double doors at the end of the hallway that conceal the service elevators, mornings are not quiet. Though it might be better on construction-free Sundays, there is no respite from daily hotel service, a mixed blessing. Now, if you are a morning person, you are out of the room and blissfully unaware of this impending auditory onslaught. Later on, we learned that this hotel is on someone’s published list of quiet hotels in England (a list I have not seen). After several days I spoke to the hotel’s assistant manager and negotiated an increased rate for a larger, quiet room, a junior suite. Our room (201) was nicely appointed but not spacious, though it was not tiny as European hotel rooms can be. We looked forward to the change, which occurred after a delightful, cultural day and evening out. Well, we came back after midnight to a smaller room (at the higher negotiated rate!) facing the same construction, which I specifically asked to avoid. Being an astute and patient reader, you already surmised that this was not going to work. The hotel’s night manager recognized the problem in its entirety and we wound up in one of the deluxe hotel suites at the same rate as our original room, by 3 AM. No problem for us, da night people. <br/>Before going further, the above is a good introduction to the behavior of the hotel’s staff and management. They were always gracious, friendly, resourceful and tried to be helpful at every turn. Obviously, retraining needed to be done with some of their people, which the hotel’s general manager told me was already in progress. It was good to learn that the assistant and night managers communicated effectively with the general manager (the boss), who found us at high tea in their impressive restaurant. He already knew all the details, including all the rooms we were in. In fact, he offered to pave the way for us should we wish to stay in other Red Carnation establishments, elsewhere. I could sum it up by saying we are most pleased with the staff’s behavior, recognizing and admitting to their problems, applying generous fixes and at all times behaving in a most friendly and supportive manner. I believe it is largely due to the hotel’s staff that clients return to the Chesterfield Mayfair Hotel time after time. It is easy to spot the returnees if you are near the front desk; the staff knows their names on sight as they are registering. <br/>The Chesterfield Mayfair’s room(s): our first room (201) was traditionally decorated but not ostentatious, of pleasing size but not quite large enough to feel spacious. The walls were upholstered, a very nice touch we noted throughout. The bathroom was well appointed with plenty of counter space, something desirable and not to be taken for granted. The tub serves for the shower, as well, and the tiled floor is marginally protected from shower spray by a hinged (or fixed) glass panel that sits on the outer edge of the tub; it’s a clumsy and not terribly effective solution. The shower head is directly overhead, unfortunately without the presence of a shower wand. You might find it an interesting challenge to rinse those of your parts below the navel . The tub differs from American bathtubs in that it is deeper and considerably narrower. Its high walls make entry and exit more of an athletic feat than you might expect. Furthermore, there are no grab handles, inclining me to believe this just won’t work for some folks. Our rooms (including the deluxe suite) did not have a shower stall, which raises the question as to whether any rooms in the Chesterfield Mayfair are so equipped? Having only a European style bathtub for both tubbing and showering could be a deficit for very big and broad persons as its narrowness will really put the squeeze on. We were pleased that the rooms had individually controllable, constantly running HVAC. We sleep in coldish temperatures and like a monotonous, low grade background fan noise, rather than power misers that stop and start all night long (that drive me nuts). Closet and storage space were generous in our rooms but not in one we reviewed. <br/>The Chesterfield Mayfair’s hallways were exceedingly pleasant, including the main, central stairway, which is adorned with oil paintings, lovely carpeting and an impressive brass banister. We used that stairway much more than the pair of elevators, also rather nicely done. My wife openly wondered if we should consider doing something similar to our home’s staircase; not. The painting near the main floor is a wonderful copy of one we had just seen in the Wallace collection… or is the one in the Wallace the copy? I absolutely love the way that man is cradling his dog’s head in his right hand. The stairway complements the feeling of comfortable elegance and coziness that the hotel projects, something quite unobtainable in large, busy, noisy hotels.<br/>The Chesterfield Mayfair Hotel’s restaurant, Butlers Restaurant, should not be missed, even if you elect to stay elsewhere. The head chef, Ben Cohen, is London born and trained, which would incline you to think his food is ordinary Brit stuff; it isn’t. We ate two meals there plus a high tea with a London couple who frequent Browns high tea but had not, yet, done it at Butlers. They felt Butlers Restaurant was at least as good as Browns, if not a shade better, which is high praise as the latter has a solid reputation. Incidentally, the word on Butlers Restaurant’s high tea is spreading so you had better plan ahead with a reservation for a weekend day, though it is not as booked on weekdays. If you can get it, shoot for a table in the solarium. The restaurant is comfortable, well appointed and cozy, craftily using mirrored walls to give you a sense of openness while avoiding the feeling you are eating in the middle of a football field. You are welcome to choose whichever kind of football field gives you the best image. Butlers’s staff is very attentive, knowledgeable and friendly, always willing to call over their young (and very tall) sommelier for questions they cannot field. Of particular interest to us was the daily, baked entrée specialty served out of a large, rare, silver server that was wheeled up to our table. We sampled it both days and were very pleased. The presentation on the plate and freshness of ingredients was darn good to excellent and always delightful. Whereas we ate in some very good restaurants during our stay, we opined that none were better than Butlers Restaurant and perhaps not even on a par. Bon Appetite! <br/>In closing, a brief comment about visiting London, England, and staying at the Chesterfield Mayfair Hotel; yes, we do recommend you give this hotel a serious look-over if London is on your goto list. And if London is not on your goto list, put it there. We were impressed with what London had to offer and the way in which it did that. London is more cosmopolitan, international and expansive than any city we have experienced (yes, more than New York City or Paris; ). London is laced with easy to use subways (the tube) and truly impressive taxi cab drivers. Other than standard historic landmarks and Queen E, London is vastly different and improved in most categories that matter to visitors as compared to our last trip, in our opinion. We were unfailingly impressed with the friendliness of Londoners (contrary to what we read) who volunteered their help at every turn, whether on the street as we pored over a map or in the tube lugging luggage. On a daily basis we met people from all over the world but mostly from the mainland, especially France and Italy. That London is still an upbeat work in progress is testified to by the (many) construction cranes that dot (plague?) its skyline and the sense of upbeatness that Londoners project. Don’t miss today’s London (2014) or its cabbies, none of whom use GPS and all of whom seem to be chatty. All of London is between their ears, unlike Parisian cabbies who are apparently insecure about getting to the corner without a GPS display. London cabbies are charming, pleasant and downright impressive, especially for someone such as me who is genetically devoid of a sense of direction. After due consideration, it may not be a good idea to bring up the 2014 World Cup with anyone in London, cabbies included.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed June 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224151264_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224151264 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMUAXK3dqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXmAmX6XoXfXXoXKmkkv6XoXfXXoKookKm6XoXfXXdAdk3KK6XoXfXXdkkoAmA6XoXfXXd3kKA3U6XoXfXXdoAXmAU6XoXfXXdmUAAUU6XoXfXXdXvKXUo6XoXfXXdUoUX3dqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXmAmXqHrGVQQoqnQQfGVtIVETSVcMQQoqnQQDJgTJSEqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXdUoUX3d0tEn1XXdUoUX3d0zH1Uv3mmv0pSM1xMzsqnk7K3oA7xMomoqnUvbm7XdxMvUfxMAkfqnU0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224151264" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224151264'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/leachim7/g186338" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 3 reviews by leachim7 for London </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '192064', 'leachim7', 'DEF7B0659BD535F18A3B24D81CD97CF1', 'en', '224151264', 'The Chesterfield Mayfair');">Ask leachim7 about The Chesterfield Mayfair</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Oliver R, General Manager at The Chesterfield Mayfair, responded to this review,
+<span class="res_date relativeDate" title='29 August 2014'>4 days ago</span>
+</div>
+<div class="displayText" id="response_224151264">
+Dear Guest,<br/><br/>Thank you for taking the time to provide this thorough review of your recent visit to The Chesterfield Mayfair Hotel. <br/><br/>It gives me great pleasure to know that your wife selected The Chesterfield Mayfair Hotel after searching the internet and that you were delighted with your overall stay with us. I am pleased that you found our Mayfair location convenient for your stay in London and that you enjoyed surveying the many luxury cars found in the area. Whilst I am disappointed to learn that your original room did not live up to your expectations; I am glad that, along with my team, we were able to resolve the problem and move you to one of our beautiful Junior Suites, where I am pleased to hear you slept soundly.<br/><br/>We take great pride in our attention to detail here at the hotel and I am thrilled that you found the air conditioning and storage facilities to be excellent in the rooms. The heritage of the hotel is reflected in our traditional English decor and I am delighted that you appreciated the artwork throughout the hotel. Butlers Restaurant maintains the same English theme and I am pleased that you found the food to be delicious; I will be happy to pass on your kind words to my Executive Chef Ben. <br/><br/>It is fantastic that after many years you have returned to the city and fallen in love with it once again; from the helpful residents, to the accessible tube system, to the friendly cab drivers. Thank you also for your compliments regarding the service that you experienced here at the hotel; we really do appreciate when guests notice our dedication. <br/> <br/>I hope to welcome you again to The Chesterfield Mayfair Hotel in the future. <br/><br/>Kind regards,<br/><br/>Oliver<br/><br/>Oliver Raggett<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_225216356" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:225216356, isGeo:false, locationid:192064})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_225216356" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_225216356">
+<a name="UR225216356"></a>
+<div id="UR225216356" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d192064-r225216356-The_Chesterfield_Mayfair-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r225216356">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='29 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest,<br/><br/>Thank you for taking the time to provide this thorough review of your recent visit to The Chesterfield Mayfair Hotel. <br/><br/>It gives me great pleasure to know that your wife selected The Chesterfield Mayfair Hotel after searching the internet and that you were delighted with your overall stay with us. I am pleased that you found our Mayfair location convenient for your stay in London and that you enjoyed surveying the many luxury cars found in the area. Whilst I am disappointed to learn that your original room did not live up to your expectations; I am glad that, along with my team, we were able to resolve the problem and move you to one of our beautiful Junior Suites, where I am pleased to hear you slept soundly.<br/><br/>We take great pride in our attention to detail here at the hotel and I am thrilled that you found the air conditioning and storage facilities to be excellent in the rooms. The heritage of the hotel is reflected in our traditional English decor and I am delighted that you appreciated the artwork throughout the hotel. Butlers Restaurant maintains the same English theme and I am pleased that you found the food to be delicious; I will be happy to pass on your kind words to my Executive Chef Ben. <br/><br/>It is fantastic that after many years you have returned to the city and fallen in love with it once again; from the helpful residents, to the accessible tube system, to the friendly cab drivers. Thank you also for your compliments regarding the service that you experienced here at the hotel; we really do appreciate when guests notice our dedication. <br/> <br/>I hope to welcome you again to The Chesterfield Mayfair Hotel in the future. <br/><br/>Kind regards,<br/><br/>Oliver<br/><br/>Oliver Raggett<br/>General Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq225216356_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq225216356 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMUAXK3dqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXmAmX6XoXfXXoXKmkkv6XoXfXXoKookKm6XoXfXXdAdk3KK6XoXfXXdkkoAmA6XoXfXXd3kKA3U6XoXfXXdoAXmAU6XoXfXXdmUAAUU6XoXfXXdXvKXUo6XoXfXXdUoUX3dqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXmAmXqHrGVQQoqnQQfGVtIVETSVcMQQoqnQQDJgTJSEqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXoXU3mo30tEn1XXoXU3mo30zH1Uv3mmv0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_225216356" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '225216356'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>

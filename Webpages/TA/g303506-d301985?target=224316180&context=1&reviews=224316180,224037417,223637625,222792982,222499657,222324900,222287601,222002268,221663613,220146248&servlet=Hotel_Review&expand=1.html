@@ -1,0 +1,1516 @@
+<div id="expanded_review_224316180">
+<a name="UR224316180"></a>
+<div id="UR224316180" class="extended provider0 first newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_A5AC15D0B66A9D621B00E8F123A39427-SRC_224316180" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_A5AC15D0B66A9D621B00E8F123A39427 ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: 'A5AC15D0B66A9D621B00E8F123A39427'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/78/avatar059.jpg" class="avatar potentialFacebookAvatar avatarGUID:A5AC15D0B66A9D621B00E8F123A39427" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_A5AC15D0B66A9D621B00E8F123A39427" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">SLFL</span>
+</div>
+</div>
+<div class="location">
+Rio De Janeiro
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_A5AC15D0B66A9D621B00E8F123A39427-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g303506-d301985-r224316180-Belmond_Copacabana_Palace-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224316180">&#x201c;<span class='noQuotes'>By far, the best!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed yesterday
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+This is an upscale hotel like no other in the world. Service is fantastic, rooms are big, and the whole ambiance is very sophisticated. Not to mention the location, right across the beach in Copacabana. <br/>
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Review collected in partnership with this hotel <span class="sprite-info_grn info_grn" onclick="ta.call('ta.overlays.Factory.showPartnerAttributionTip', event, this.parentNode, 'This business uses online tools and resources provided by TripAdvisor to encourage and collect reviews (including this one) from its guests.');"></span></p>
+<div id="helpfulq224316180_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224316180 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKmoK3qHMmKUAvoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdmU3UvK6XoXfXXdKmkdUk6XoXfXXm3mk3Xo6XoXfXXXkAXAvX6XoXfXXXdAA3ok6XoXfXXXmXdAKK6XoXfXXXXvk3KU6XoXfXXXKKXX3v6XoXfXXU33m3Um6XoXfXXKUd3XdvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdmU3UvKqH7VcaiCMQQoqnQQfi2JnJHJCJQQoqnQQwJcJnVqHeSiQQoqnQQMVQQoqnQQx2JCVSEiQQoqnQQhIJIVQQoqnQQiTQQoqnQQeSiQQoqnQQMVQQoqnQQx2JCVSEixiGIac6XoXmqoTpcXXdmU3UvK0tEn1XXdmU3UvK0zH1mKmoK30pSM1bobfUoxMK733bAxM3XU7KKzsvqnUXmbmAdXk0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224316180" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224316180'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '301985', 'SLFL', 'A5AC15D0B66A9D621B00E8F123A39427', 'en', '224316180', 'Belmond Copacabana Palace');">Ask SLFL about Belmond Copacabana Palace</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_224037417">
+<a name="UR224037417"></a>
+<div id="UR224037417" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_A2BF7A1EDB99B80C35F2471DA832F02E-SRC_224037417" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_A2BF7A1EDB99B80C35F2471DA832F02E ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/74/avatar056.jpg" class="avatar potentialFacebookAvatar avatarGUID:A2BF7A1EDB99B80C35F2471DA832F02E" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_A2BF7A1EDB99B80C35F2471DA832F02E" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Teacher_on_Tour</span>
+</div>
+</div>
+<div class="location">
+Essex
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_A2BF7A1EDB99B80C35F2471DA832F02E-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Top Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="52 reviews" class="icon badge_topcontributor sprite-badge_topcontributor" width="25" height="24">
+<span class="badgeText">52 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">17 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'A2BF7A1EDB99B80C35F2471DA832F02E', screenName: 'Teacher_on_Tour', geos: [190327, 58466, 274951, 186363, 2146376, 303506, 60878, 226865, 304138, 304136, 1755325, 274967, 227101, 189934, 551731, 60763, 312741, 186338, 186403, 293926], geo: '303506' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 20 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 20 cities</span> </div>
+<div id="UID_A2BF7A1EDB99B80C35F2471DA832F02E-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="33 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">33 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g303506-d301985-r224037417-Belmond_Copacabana_Palace-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224037417">&#x201c;<span class='noQuotes'>Great cocktails and great service!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Brought my wife here for several cocktails as a treat one evening. Service excellent they could not do enough. You felt like royalty and there was plenty of choice. Pricey but then again what do you expect it's the atmosphere, the service and the cocktails that made it all the more special. Top job all round and try it out for yourself.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Sea view and a balcony. Tip the staff they work very hard and always do their best.
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224037417_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224037417 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKmoK3qHMmKUAvoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdmU3UvK6XoXfXXdKmkdUk6XoXfXXm3mk3Xo6XoXfXXXkAXAvX6XoXfXXXdAA3ok6XoXfXXXmXdAKK6XoXfXXXXvk3KU6XoXfXXXKKXX3v6XoXfXXU33m3Um6XoXfXXKUd3XdvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdmU3UvKqH7VcaiCMQQoqnQQfi2JnJHJCJQQoqnQQwJcJnVqHeSiQQoqnQQMVQQoqnQQx2JCVSEiQQoqnQQhIJIVQQoqnQQiTQQoqnQQeSiQQoqnQQMVQQoqnQQx2JCVSEixiGIac6XoXmqoTpcXXdKmkdUk0tEn1XXdKmkdUk0zH1mKmoK30pSM1bX7qnkbUzsxM7AA7vKfmoqnXdkUxMbvmXqnKXzs0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224037417" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224037417'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/Teacher_on_Tour/g303506" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 8 reviews by Teacher_on_Tour for Rio de Janeiro </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '301985', 'Teacher_on_Tour', 'A2BF7A1EDB99B80C35F2471DA832F02E', 'en', '224037417', 'Belmond Copacabana Palace');">Ask Teacher_on_Tour about Belmond Copacabana Palace</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223637625">
+<a name="UR223637625"></a>
+<div id="UR223637625" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_540CF0D24C5B98C07F433E49BF2DFB25-SRC_223637625" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_540CF0D24C5B98C07F433E49BF2DFB25 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/5a/7c/ec/ilane2001.jpg" class="avatar potentialFacebookAvatar avatarGUID:540CF0D24C5B98C07F433E49BF2DFB25" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_540CF0D24C5B98C07F433E49BF2DFB25" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Ilane2001</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_540CF0D24C5B98C07F433E49BF2DFB25-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="38 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">38 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">7 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '540CF0D24C5B98C07F433E49BF2DFB25', screenName: 'Ilane2001', geos: [303492, 293918, 303506, 1179396, 1893002, 676072, 303503, 303444], geo: '303506' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 8 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 8 cities</span> </div>
+<div id="UID_540CF0D24C5B98C07F433E49BF2DFB25-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="8 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">8 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g303506-d301985-r223637625-Belmond_Copacabana_Palace-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223637625">&#x201c;<span class='noQuotes'>Simply the best</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Our 3rd visit to Rio our 3rd time in copacabana palace. This hotel is special. <br/><br/>Service is amazing, food is great (breakfast, lunch). Rooms are spacious. Ask for sea view as it changes everything. <br/><br/>The service is absolutely perfect. Everything is made for you to feel well.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014</span>
+</div>
+</div>
+<div id="helpfulq223637625_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223637625 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKmoK3qHMmKUAvoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdmU3UvK6XoXfXXdKmkdUk6XoXfXXm3mk3Xo6XoXfXXXkAXAvX6XoXfXXXdAA3ok6XoXfXXXmXdAKK6XoXfXXXXvk3KU6XoXfXXXKKXX3v6XoXfXXU33m3Um6XoXfXXKUd3XdvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdmU3UvKqH7VcaiCMQQoqnQQfi2JnJHJCJQQoqnQQwJcJnVqHeSiQQoqnQQMVQQoqnQQx2JCVSEiQQoqnQQhIJIVQQoqnQQiTQQoqnQQeSiQQoqnQQMVQQoqnQQx2JCVSEixiGIac6XoXmqoTpcXXm3mk3Xo0tEn1XXm3mk3Xo0zH1mKmoK30pSM1odKfqnKxMXdfo7AvfKkqndmmzsdA7qnXxMqn7Xo0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223637625" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223637625'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/Ilane2001/g303506" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 17 reviews by Ilane2001 for Rio de Janeiro </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '301985', 'Ilane2001', '540CF0D24C5B98C07F433E49BF2DFB25', 'en', '223637625', 'Belmond Copacabana Palace');">Ask Ilane2001 about Belmond Copacabana Palace</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class='duplicateReviewsInline'>
+<div class='previous'>Ilane2001 has 1 more review of Belmond Copacabana Palace</div>
+<ul class='dupReviews'>
+<li class="dupReviewItem">
+<div class='reviewTitle'>
+<a href="/ShowUserReviews-g303506-d301985-r188031483-Belmond_Copacabana_Palace-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html#REVIEWS">&#x201c;Best hotel in Rio&#x201d;</a>
+</div>
+<div class='rating'>
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="date">Reviewed 19 December 2013</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222792982">
+<a name="UR222792982"></a>
+<div id="UR222792982" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_3B2F251D57959EB47667307603A629D5-SRC_222792982" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_3B2F251D57959EB47667307603A629D5 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/02/62/1d/12/louisandco.jpg" class="avatar potentialFacebookAvatar avatarGUID:3B2F251D57959EB47667307603A629D5" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_3B2F251D57959EB47667307603A629D5" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">LouisandCo</span>
+</div>
+</div>
+<div class="location">
+Paris, France
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_3B2F251D57959EB47667307603A629D5-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="35 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">35 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">9 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '3B2F251D57959EB47667307603A629D5', screenName: 'LouisandCo', geos: [187147, 294305, 469404, 303631, 1010131, 303506, 295424, 196517, 187232, 642170, 294264, 3318346, 294265, 187497, 562635], geo: '303506' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 15 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 15 cities</span> </div>
+<div id="UID_3B2F251D57959EB47667307603A629D5-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="12 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">12 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g303506-d301985-r222792982-Belmond_Copacabana_Palace-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222792982">&#x201c;<span class='noQuotes'>Amazing but dated hotel, uneven service</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='19 August 2014'>Reviewed 1 week ago
+</span>
+<a class="viaMobile sprite-grayPhone" href="/apps" target="_blank" onclick="ta.util.cookie.setPIDCookie(24687)">via mobile</a>
+</div>
+<div class="entry">
+<p>
+For sure the hotel is amazing, the place is beutiful but bare in mind that it is the only one in the neighborhood, the surroundings are not luxury at all.<br/>We stayed in a junior suite, room was nice with dated decoration but it's not shocking. Turndown service with bottled water by the evening and truly accomodating staff (we had a baby they handed us bottles by 5 or 6).<br/>The pool is beautiful but it is not heated and most of the time it is in the shade so water is cool. It's a nice place to hang around though, the lifeguard on duty is helpful with everything.<br/>Food is good, not amazing but service at the restaurant can prove chaotic with kids waiting up to 45 minutes for a plate of spaghetti bolognese.<br/>For the price I would strongly recommend going to hotels on Ipanema beach instead.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed September 2013, travelled with family</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222792982_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222792982 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKmoK3qHMmKUAvoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdmU3UvK6XoXfXXdKmkdUk6XoXfXXm3mk3Xo6XoXfXXXkAXAvX6XoXfXXXdAA3ok6XoXfXXXmXdAKK6XoXfXXXXvk3KU6XoXfXXXKKXX3v6XoXfXXU33m3Um6XoXfXXKUd3XdvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdmU3UvKqH7VcaiCMQQoqnQQfi2JnJHJCJQQoqnQQwJcJnVqHeSiQQoqnQQMVQQoqnQQx2JCVSEiQQoqnQQhIJIVQQoqnQQiTQQoqnQQeSiQQoqnQQMVQQoqnQQx2JCVSEixiGIac6XoXmqoTpcXXXkAXAvX0tEn1XXXkAXAvX0zH1mKmoK30pSM1m7XqnXoUxMokAoAzs7dk33kmKk3Kmb3XAxMo0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222792982" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222792982'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/LouisandCo/g303506" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 5 reviews by LouisandCo for Rio de Janeiro </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '301985', 'LouisandCo', '3B2F251D57959EB47667307603A629D5', 'en', '222792982', 'Belmond Copacabana Palace');">Ask LouisandCo about Belmond Copacabana Palace</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Adriano S, Assistant to the General Manager at Belmond Copacabana Palace, responded to this review,
+<span class="res_date relativeDate" title='21 August 2014'>6 days ago</span>
+</div>
+<div class="displayText" id="response_222792982">
+Dear Guest,<br/>We really would like to thank you for sending your feedback regarding your stay with us. Something we need to mention is that we regret only to be informed of your impressions in the restaurant almost a year later. Be assured that we would do everything possible to investigate and take appropriate action. We also need to add that our main pool is heated. Even after having spent this time, we would like to apologize for any lack of service. Feel free to send more details on our website at the contact us part.<br/><br/>All the best,
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223269896" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223269896, isGeo:false, locationid:301985})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223269896" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223269896">
+<a name="UR223269896"></a>
+<div id="UR223269896" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g303506-d301985-r223269896-Belmond_Copacabana_Palace-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223269896">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest,<br/>We really would like to thank you for sending your feedback regarding your stay with us. Something we need to mention is that we regret only to be informed of your impressions in the restaurant almost a year later. Be assured that we would do everything possible to investigate and take appropriate action. We also need to add that our main pool is heated. Even after having spent this time, we would like to apologize for any lack of service. Feel free to send more details on our website at the contact us part.<br/><br/>All the best,
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223269896_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223269896 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKmoK3qHMmKUAvoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdmU3UvK6XoXfXXdKmkdUk6XoXfXXm3mk3Xo6XoXfXXXkAXAvX6XoXfXXXdAA3ok6XoXfXXXmXdAKK6XoXfXXXXvk3KU6XoXfXXXKKXX3v6XoXfXXU33m3Um6XoXfXXKUd3XdvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdmU3UvKqH7VcaiCMQQoqnQQfi2JnJHJCJQQoqnQQwJcJnVqHeSiQQoqnQQMVQQoqnQQx2JCVSEiQQoqnQQhIJIVQQoqnQQiTQQoqnQQeSiQQoqnQQMVQQoqnQQx2JCVSEixiGIac6XoXmqoTpcXXmX3AvA30tEn1XXmX3AvA30zH1mKmoK30pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223269896" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223269896'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222499657">
+<a name="UR222499657"></a>
+<div id="UR222499657" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_7E85486D179F310D8CB1EC231C76CFCD-SRC_222499657" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_7E85486D179F310D8CB1EC231C76CFCD ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/a2/avatar073.jpg" class="avatar potentialFacebookAvatar avatarGUID:7E85486D179F310D8CB1EC231C76CFCD" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_7E85486D179F310D8CB1EC231C76CFCD" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Richardharris1968</span>
+</div>
+</div>
+<div class="location">
+Vancouver
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_7E85486D179F310D8CB1EC231C76CFCD-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">4 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">4 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '7E85486D179F310D8CB1EC231C76CFCD', screenName: 'Richardharris1968', geos: [303235, 303522, 303506, 783195], geo: '303506' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 4 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 4 cities</span> </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g303506-d301985-r222499657-Belmond_Copacabana_Palace-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222499657">&#x201c;<span class='noQuotes'>Outstanding and newly renovated </span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='18 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Visited in August 2014. Refurbished in 2012. Excellent rooms. Excellent maid service, concierge and other staff. Cipriani and Mee restaurants both excellent. Only downfall is weak service and menu at lunch and supper in Pergola poolside restaurant.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014</span>
+</div>
+</div>
+<div id="helpfulq222499657_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222499657 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKmoK3qHMmKUAvoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdmU3UvK6XoXfXXdKmkdUk6XoXfXXm3mk3Xo6XoXfXXXkAXAvX6XoXfXXXdAA3ok6XoXfXXXmXdAKK6XoXfXXXXvk3KU6XoXfXXXKKXX3v6XoXfXXU33m3Um6XoXfXXKUd3XdvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdmU3UvKqH7VcaiCMQQoqnQQfi2JnJHJCJQQoqnQQwJcJnVqHeSiQQoqnQQMVQQoqnQQx2JCVSEiQQoqnQQhIJIVQQoqnQQiTQQoqnQQeSiQQoqnQQMVQQoqnQQx2JCVSEixiGIac6XoXmqoTpcXXXdAA3ok0tEn1XXXdAA3ok0zH1mKmoK30pSM1kzsvodv3xMUkAqnmUKxMvf7UzsfXmUfk3fqnfxM0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222499657" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222499657'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '301985', 'Richardharris1968', '7E85486D179F310D8CB1EC231C76CFCD', 'en', '222499657', 'Belmond Copacabana Palace');">Ask Richardharris1968 about Belmond Copacabana Palace</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Adriano S, Assistant to the General Manager at Belmond Copacabana Palace, responded to this review,
+<span class="res_date relativeDate" title='22 August 2014'>5 days ago</span>
+</div>
+<div class="displayText" id="response_222499657">
+Dear Guest,<br/>Thank you very much for sending your impressions and feedback related to your recent stay with us. We are very glad to be informed that several aspects of our hotel impressed you. However, your last sentence left us concerned and we would like to express apologies for any lack of service that you have noticed. Could you be so kind to provide more details? Feel free to access our homepage at the section - contact us.<br/><br/>All the best,
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223489088" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223489088, isGeo:false, locationid:301985})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223489088" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223489088">
+<a name="UR223489088"></a>
+<div id="UR223489088" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g303506-d301985-r223489088-Belmond_Copacabana_Palace-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223489088">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest,<br/>Thank you very much for sending your impressions and feedback related to your recent stay with us. We are very glad to be informed that several aspects of our hotel impressed you. However, your last sentence left us concerned and we would like to express apologies for any lack of service that you have noticed. Could you be so kind to provide more details? Feel free to access our homepage at the section - contact us.<br/><br/>All the best,
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223489088_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223489088 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKmoK3qHMmKUAvoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdmU3UvK6XoXfXXdKmkdUk6XoXfXXm3mk3Xo6XoXfXXXkAXAvX6XoXfXXXdAA3ok6XoXfXXXmXdAKK6XoXfXXXXvk3KU6XoXfXXXKKXX3v6XoXfXXU33m3Um6XoXfXXKUd3XdvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdmU3UvKqH7VcaiCMQQoqnQQfi2JnJHJCJQQoqnQQwJcJnVqHeSiQQoqnQQMVQQoqnQQx2JCVSEiQQoqnQQhIJIVQQoqnQQiTQQoqnQQeSiQQoqnQQMVQQoqnQQx2JCVSEixiGIac6XoXmqoTpcXXmdvAKvv0tEn1XXmdvAKvv0zH1mKmoK30pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223489088" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223489088'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222324900">
+<a name="UR222324900"></a>
+<div id="UR222324900" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_FD16297A631AFA017602B1D1152942C9-SRC_222324900" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_FD16297A631AFA017602B1D1152942C9 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/6f/d9/3f/kkn889.jpg" class="avatar potentialFacebookAvatar avatarGUID:FD16297A631AFA017602B1D1152942C9" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_FD16297A631AFA017602B1D1152942C9" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">kkn889</span>
+</div>
+</div>
+<div class="location">
+Johannesburg, South Africa
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_FD16297A631AFA017602B1D1152942C9-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="34 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">34 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_3rd sprite-badge_hotels_3rd" width="25" height="24">
+<span class="badgeText">33 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'FD16297A631AFA017602B1D1152942C9', screenName: 'kkn889', geos: [472513, 294305, 312659, 303506, 186525, 293767, 293997, 308272, 294207, 294265, 312586, 60763, 186338, 155032, 187147, 297443, 294217, 303631, 293916, 294458, 293974, 188113, 312608, 297407, 312741, 186605, 150800, 274887], geo: '303506' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 28 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 28 cities</span> </div>
+<div id="UID_FD16297A631AFA017602B1D1152942C9-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="33 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">33 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g303506-d301985-r222324900-Belmond_Copacabana_Palace-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222324900">&#x201c;<span class='noQuotes'>A true palace</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='17 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Got upgraded to a bigger suit in the main building. Lovely, lovely, lovely. Brilliant concierge service. They helped us with booking and setting all our outdoor activities. Lots of choice for breakfast and the buffet lunch. Had dinner at Mee restaurant. Lovely Asian food treat.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq222324900_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222324900 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKmoK3qHMmKUAvoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdmU3UvK6XoXfXXdKmkdUk6XoXfXXm3mk3Xo6XoXfXXXkAXAvX6XoXfXXXdAA3ok6XoXfXXXmXdAKK6XoXfXXXXvk3KU6XoXfXXXKKXX3v6XoXfXXU33m3Um6XoXfXXKUd3XdvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdmU3UvKqH7VcaiCMQQoqnQQfi2JnJHJCJQQoqnQQwJcJnVqHeSiQQoqnQQMVQQoqnQQx2JCVSEiQQoqnQQhIJIVQQoqnQQiTQQoqnQQeSiQQoqnQQMVQQoqnQQx2JCVSEixiGIac6XoXmqoTpcXXXmXdAKK0tEn1XXXmXdAKK0zH1mKmoK30pSM1qnxMU3XAkb3mUbqnbKUk3KX7UxMUUoXAdXfA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222324900" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222324900'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '301985', 'kkn889', 'FD16297A631AFA017602B1D1152942C9', 'en', '222324900', 'Belmond Copacabana Palace');">Ask kkn889 about Belmond Copacabana Palace</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Adriano S, Assistant to the General Manager at Belmond Copacabana Palace, responded to this review,
+<span class="res_date relativeDate" title='22 August 2014'>5 days ago</span>
+</div>
+<div class="displayText" id="response_222324900">
+Dear Guest,<br/>Thank you very much for posting your comments. All of us got very happy and satisfied that we were able to achieve and surpass your expectations. <br/>All the best,
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223491488" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223491488, isGeo:false, locationid:301985})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223491488" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223491488">
+<a name="UR223491488"></a>
+<div id="UR223491488" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g303506-d301985-r223491488-Belmond_Copacabana_Palace-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223491488">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest,<br/>Thank you very much for posting your comments. All of us got very happy and satisfied that we were able to achieve and surpass your expectations. <br/>All the best,
+</p>
+</div>
+<div id="helpfulq223491488_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223491488 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKmoK3qHMmKUAvoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdmU3UvK6XoXfXXdKmkdUk6XoXfXXm3mk3Xo6XoXfXXXkAXAvX6XoXfXXXdAA3ok6XoXfXXXmXdAKK6XoXfXXXXvk3KU6XoXfXXXKKXX3v6XoXfXXU33m3Um6XoXfXXKUd3XdvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdmU3UvKqH7VcaiCMQQoqnQQfi2JnJHJCJQQoqnQQwJcJnVqHeSiQQoqnQQMVQQoqnQQx2JCVSEiQQoqnQQhIJIVQQoqnQQiTQQoqnQQeSiQQoqnQQMVQQoqnQQx2JCVSEixiGIac6XoXmqoTpcXXmdAUdvv0tEn1XXmdAUdvv0zH1mKmoK30pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223491488" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223491488'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222287601">
+<a name="UR222287601"></a>
+<div id="UR222287601" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_F1893024566C886E333B959C199F41D1-SRC_222287601" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_F1893024566C886E333B959C199F41D1 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9c/avatar067.jpg" class="avatar potentialFacebookAvatar avatarGUID:F1893024566C886E333B959C199F41D1" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_F1893024566C886E333B959C199F41D1" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Mauricio C</span>
+</div>
+</div>
+<div class="location">
+Bogota, Colombia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_F1893024566C886E333B959C199F41D1-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="16 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">16 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">10 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'F1893024566C886E333B959C199F41D1', screenName: 'Mauricio C', geos: [294308, 303506, 56003, 297473, 294074, 297476, 294316], geo: '303506' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 7 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 7 cities</span> </div>
+<div id="UID_F1893024566C886E333B959C199F41D1-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="1 helpful vote" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">1 helpful vote</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g303506-d301985-r222287601-Belmond_Copacabana_Palace-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222287601">&#x201c;<span class='noQuotes'>Price not according to the service</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='17 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+With no doubt this Hotel is a landmark in Rio de Janeiro placed right in the middle of CopaCabana beach where you can find any kind of fun. Walk by the beach, restaurants, small kiosks to dine and drink or simply walk all the way Atlantica Avenue. The bedrooms are fantastic with great view either to the ocean or the poolside. The Hotel itself is an icon however the service is not according to the price you are paying for.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Pick a room with ocean view. Great for the mornings and sunsets. Top floors are better away from the...
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed September 2013, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222287601_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222287601 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKmoK3qHMmKUAvoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdmU3UvK6XoXfXXdKmkdUk6XoXfXXm3mk3Xo6XoXfXXXkAXAvX6XoXfXXXdAA3ok6XoXfXXXmXdAKK6XoXfXXXXvk3KU6XoXfXXXKKXX3v6XoXfXXU33m3Um6XoXfXXKUd3XdvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdmU3UvKqH7VcaiCMQQoqnQQfi2JnJHJCJQQoqnQQwJcJnVqHeSiQQoqnQQMVQQoqnQQx2JCVSEiQQoqnQQhIJIVQQoqnQQiTQQoqnQQeSiQQoqnQQMVQQoqnQQx2JCVSEixiGIac6XoXmqoTpcXXXXvk3KU0tEn1XXXXvk3KU0zH1mKmoK30pSM1qnUvAmKXdo33fvv3zsmmm7AoAfUAAqndUxMU0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222287601" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222287601'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '301985', 'Mauricio C', 'F1893024566C886E333B959C199F41D1', 'en', '222287601', 'Belmond Copacabana Palace');">Ask Mauricio C about Belmond Copacabana Palace</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Adriano S, Assistant to the General Manager at Belmond Copacabana Palace, responded to this review,
+<span class="res_date relativeDate" title='20 August 2014'>6 days ago</span>
+</div>
+<div class="displayText" id="response_222287601">
+Dear Guest,<br/>Thank you for sending your impressions about your stay with us. We are very happy to read your commendations. However, in your conclusion, you mentioned that our service didn't please you. Although it took place last September, almost one year ago, could you please be so kind to provide further information? We are eager to know about that. Please access our homepage in contact us.<br/>All the best,
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223204515" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223204515, isGeo:false, locationid:301985})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223204515" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223204515">
+<a name="UR223204515"></a>
+<div id="UR223204515" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g303506-d301985-r223204515-Belmond_Copacabana_Palace-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223204515">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='20 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest,<br/>Thank you for sending your impressions about your stay with us. We are very happy to read your commendations. However, in your conclusion, you mentioned that our service didn't please you. Although it took place last September, almost one year ago, could you please be so kind to provide further information? We are eager to know about that. Please access our homepage in contact us.<br/>All the best,
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223204515_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223204515 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKmoK3qHMmKUAvoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdmU3UvK6XoXfXXdKmkdUk6XoXfXXm3mk3Xo6XoXfXXXkAXAvX6XoXfXXXdAA3ok6XoXfXXXmXdAKK6XoXfXXXXvk3KU6XoXfXXXKKXX3v6XoXfXXU33m3Um6XoXfXXKUd3XdvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdmU3UvKqH7VcaiCMQQoqnQQfi2JnJHJCJQQoqnQQwJcJnVqHeSiQQoqnQQMVQQoqnQQx2JCVSEiQQoqnQQhIJIVQQoqnQQiTQQoqnQQeSiQQoqnQQMVQQoqnQQx2JCVSEixiGIac6XoXmqoTpcXXmXKdoUo0tEn1XXmXKdoUo0zH1mKmoK30pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223204515" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223204515'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222002268">
+<a name="UR222002268"></a>
+<div id="UR222002268" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_422B74C034CBEC2981A8A1402BFB0A92-SRC_222002268" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_422B74C034CBEC2981A8A1402BFB0A92 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-f/05/16/e4/0b/hannesv.jpg" class="avatar potentialFacebookAvatar avatarGUID:422B74C034CBEC2981A8A1402BFB0A92" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_422B74C034CBEC2981A8A1402BFB0A92" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">HannesV</span>
+</div>
+</div>
+<div class="location">
+Rio De Janeiro
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_422B74C034CBEC2981A8A1402BFB0A92-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">3 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">3 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '422B74C034CBEC2981A8A1402BFB0A92', screenName: 'HannesV', geos: [1056623, 303506, 303501], geo: '303506' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 3 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 3 cities</span> </div>
+<div id="UID_422B74C034CBEC2981A8A1402BFB0A92-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="1 helpful vote" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">1 helpful vote</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g303506-d301985-r222002268-Belmond_Copacabana_Palace-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222002268">&#x201c;<span class='noQuotes'>A true Palace</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='15 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Generally, the staff was extremely kind and helpful. The decor, style and cleanliness of the hotel was an amazing experience.<br/>Thank you very much for making our Honeymoon such an unforgettable experience. <br/>I strongly urge everybody to visit the Belmond Copacabana Palace at least once in your life!
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Review collected in partnership with this hotel <span class="sprite-info_grn info_grn" onclick="ta.call('ta.overlays.Factory.showPartnerAttributionTip', event, this.parentNode, 'This business uses online tools and resources provided by TripAdvisor to encourage and collect reviews (including this one) from its guests.');"></span></p>
+<div id="helpfulq222002268_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222002268 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKmoK3qHMmKUAvoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdmU3UvK6XoXfXXdKmkdUk6XoXfXXm3mk3Xo6XoXfXXXkAXAvX6XoXfXXXdAA3ok6XoXfXXXmXdAKK6XoXfXXXXvk3KU6XoXfXXXKKXX3v6XoXfXXU33m3Um6XoXfXXKUd3XdvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdmU3UvKqH7VcaiCMQQoqnQQfi2JnJHJCJQQoqnQQwJcJnVqHeSiQQoqnQQMVQQoqnQQx2JCVSEiQQoqnQQhIJIVQQoqnQQiTQQoqnQQeSiQQoqnQQMVQQoqnQQx2JCVSEixiGIac6XoXmqoTpcXXXKKXX3v0tEn1XXXKKXX3v0zH1mKmoK30pSM1dXX7kdfKmdf7zsfXAvUbvbUdKX7qn7KbAX0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222002268" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222002268'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '301985', 'HannesV', '422B74C034CBEC2981A8A1402BFB0A92', 'en', '222002268', 'Belmond Copacabana Palace');">Ask HannesV about Belmond Copacabana Palace</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Adriano S, Assistant to the General Manager at Belmond Copacabana Palace, responded to this review,
+<span class="res_date relativeDate" title='22 August 2014'>5 days ago</span>
+</div>
+<div class="displayText" id="response_222002268">
+Dear Guest,<br/>we really need to recognize that your comment was amazing. We are very happy to know that your honneymoon took place during your stay. Our hotel is outstanding to celebrate birthdays, marriages, aniversaries and special dates. <br/><br/>Yours sincerely,
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223490639" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223490639, isGeo:false, locationid:301985})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223490639" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223490639">
+<a name="UR223490639"></a>
+<div id="UR223490639" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g303506-d301985-r223490639-Belmond_Copacabana_Palace-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223490639">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest,<br/>we really need to recognize that your comment was amazing. We are very happy to know that your honneymoon took place during your stay. Our hotel is outstanding to celebrate birthdays, marriages, aniversaries and special dates. <br/><br/>Yours sincerely,
+</p>
+</div>
+<div id="helpfulq223490639_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223490639 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKmoK3qHMmKUAvoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdmU3UvK6XoXfXXdKmkdUk6XoXfXXm3mk3Xo6XoXfXXXkAXAvX6XoXfXXXdAA3ok6XoXfXXXmXdAKK6XoXfXXXXvk3KU6XoXfXXXKKXX3v6XoXfXXU33m3Um6XoXfXXKUd3XdvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdmU3UvKqH7VcaiCMQQoqnQQfi2JnJHJCJQQoqnQQwJcJnVqHeSiQQoqnQQMVQQoqnQQx2JCVSEiQQoqnQQhIJIVQQoqnQQiTQQoqnQQeSiQQoqnQQMVQQoqnQQx2JCVSEixiGIac6XoXmqoTpcXXmdAK3mA0tEn1XXmdAK3mA0zH1mKmoK30pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223490639" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223490639'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221663613">
+<a name="UR221663613"></a>
+<div id="UR221663613" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_1408EE3977AF7BE04B8F7214482D14E9-SRC_221663613" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_1408EE3977AF7BE04B8F7214482D14E9 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/97/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:1408EE3977AF7BE04B8F7214482D14E9" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_1408EE3977AF7BE04B8F7214482D14E9" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">travelman_dk</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_1408EE3977AF7BE04B8F7214482D14E9-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="5 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">5 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">4 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '1408EE3977AF7BE04B8F7214482D14E9', screenName: 'travelman_dk', geos: [303506, 147293, 34439, 303444], geo: '303506' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 4 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 4 cities</span> </div>
+<div id="UID_1408EE3977AF7BE04B8F7214482D14E9-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="5 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">5 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g303506-d301985-r221663613-Belmond_Copacabana_Palace-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221663613">&#x201c;<span class='noQuotes'>Iconic hotel but overpriced</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='14 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+We stayed at this hotel for 4 nights during our trip in Brazil.<br/><br/>Overall we found the location excellent and this hotel is really a hallmark in the hotel. <br/><br/>Room quality does not match the price. Pool was nice but avoid the restaurants - especially the &quot;posh&quot; italian restaurant.<br/><br/>Overall, still a decent hotel but has seen better days. If staying at Copacabana is not crucial we would advise to book the Fasano's instead in Ipanema
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed September 2013</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss20" src="http://c1.tacdn.com/img2/x.gif" alt="2 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221663613_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221663613 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKmoK3qHMmKUAvoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdmU3UvK6XoXfXXdKmkdUk6XoXfXXm3mk3Xo6XoXfXXXkAXAvX6XoXfXXXdAA3ok6XoXfXXXmXdAKK6XoXfXXXXvk3KU6XoXfXXXKKXX3v6XoXfXXU33m3Um6XoXfXXKUd3XdvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdmU3UvKqH7VcaiCMQQoqnQQfi2JnJHJCJQQoqnQQwJcJnVqHeSiQQoqnQQMVQQoqnQQx2JCVSEiQQoqnQQhIJIVQQoqnQQiTQQoqnQQeSiQQoqnQQMVQQoqnQQx2JCVSEixiGIac6XoXmqoTpcXXU33m3Um0tEn1XXU33m3Um0zH1mKmoK30pSM1UdKvzszsmAkkbqnk7zsKd7vqnkXUddvXxMUdzsA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221663613" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221663613'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '301985', 'travelman_dk', '1408EE3977AF7BE04B8F7214482D14E9', 'en', '221663613', 'Belmond Copacabana Palace');">Ask travelman_dk about Belmond Copacabana Palace</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Adriano S, Assistant to the General Manager at Belmond Copacabana Palace, responded to this review,
+<span class="res_date relativeDate" title='16 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_221663613">
+Dear Guest,<br/>Thank you for sending your comments. Please accept our apologies for any inconvenience during your stay. We really would like to have more details about the reasons why we weren't able to exceed your expectations. Could you please access our website at the part 'contact us'?<br/>Yours Sincerely,
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_222037049" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:222037049, isGeo:false, locationid:301985})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_222037049" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222037049">
+<a name="UR222037049"></a>
+<div id="UR222037049" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g303506-d301985-r222037049-Belmond_Copacabana_Palace-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222037049">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='16 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest,<br/>Thank you for sending your comments. Please accept our apologies for any inconvenience during your stay. We really would like to have more details about the reasons why we weren't able to exceed your expectations. Could you please access our website at the part 'contact us'?<br/>Yours Sincerely,
+</p>
+</div>
+<div id="helpfulq222037049_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222037049 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKmoK3qHMmKUAvoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdmU3UvK6XoXfXXdKmkdUk6XoXfXXm3mk3Xo6XoXfXXXkAXAvX6XoXfXXXdAA3ok6XoXfXXXmXdAKK6XoXfXXXXvk3KU6XoXfXXXKKXX3v6XoXfXXU33m3Um6XoXfXXKUd3XdvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdmU3UvKqH7VcaiCMQQoqnQQfi2JnJHJCJQQoqnQQwJcJnVqHeSiQQoqnQQMVQQoqnQQx2JCVSEiQQoqnQQhIJIVQQoqnQQiTQQoqnQQeSiQQoqnQQMVQQoqnQQx2JCVSEixiGIac6XoXmqoTpcXXXKmkKdA0tEn1XXXKmkKdA0zH1mKmoK30pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222037049" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222037049'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220146248">
+<a name="UR220146248"></a>
+<div id="UR220146248" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_E149CF0C60009C59C660B8E71D269BA5-SRC_220146248" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_E149CF0C60009C59C660B8E71D269BA5 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/03/29/15/26/facebook-avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:E149CF0C60009C59C660B8E71D269BA5" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_E149CF0C60009C59C660B8E71D269BA5" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">JuLima_00</span>
+</div>
+</div>
+<div class="location">
+Coimbra, Portugal
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_E149CF0C60009C59C660B8E71D269BA5-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">3 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'E149CF0C60009C59C660B8E71D269BA5', screenName: 'JuLima_00', geos: [303506, 190475, 187069], geo: '303506' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 3 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 3 cities</span> </div>
+<div id="UID_E149CF0C60009C59C660B8E71D269BA5-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="1 helpful vote" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">1 helpful vote</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g303506-d301985-r220146248-Belmond_Copacabana_Palace-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220146248">&#x201c;<span class='noQuotes'>First class hotel</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='7 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+Checked in early to the copacobana palace. On arrival was served coffee and water- nice touch. Throughout the stay we found the staff extremely helpful.Would definitely stay here again if I come to Rio. Only thing missing was chocolate on the pillow for the turn down service.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Sea view suit
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq220146248_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220146248 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKmoK3qHMmKUAvoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdmU3UvK6XoXfXXdKmkdUk6XoXfXXm3mk3Xo6XoXfXXXkAXAvX6XoXfXXXdAA3ok6XoXfXXXmXdAKK6XoXfXXXXvk3KU6XoXfXXXKKXX3v6XoXfXXU33m3Um6XoXfXXKUd3XdvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdmU3UvKqH7VcaiCMQQoqnQQfi2JnJHJCJQQoqnQQwJcJnVqHeSiQQoqnQQMVQQoqnQQx2JCVSEiQQoqnQQhIJIVQQoqnQQiTQQoqnQQeSiQQoqnQQMVQQoqnQQx2JCVSEixiGIac6XoXmqoTpcXXKUd3Xdv0tEn1XXKUd3Xdv0zH1mKmoK30pSM1zsUdAfqnKf3KKKAfoAf33K7vzskUxMX3A7bo0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220146248" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220146248'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '301985', 'JuLima_00', 'E149CF0C60009C59C660B8E71D269BA5', 'en', '220146248', 'Belmond Copacabana Palace');">Ask JuLima_00 about Belmond Copacabana Palace</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Adriano S, Assistente da Gerência Geral at Belmond Copacabana Palace, responded to this review,
+<span class="res_date relativeDate" title='9 August 2014'>2 weeks ago</span>
+</div>
+<div class="displayText" id="response_220146248">
+Dear Guest,<br/>Thank you very much for posting your valuable feedback. We are very glad to be informed that your stay was remarkable and memorable. Regarding the turn down service, we got very concerned because it is not common to take place. Maybe you have put a not disturb identification at your door. In any case, we will reinforce to our team.<br/><br/>All the best,
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_220540982" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:220540982, isGeo:false, locationid:301985})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_220540982" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220540982">
+<a name="UR220540982"></a>
+<div id="UR220540982" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g303506-d301985-r220540982-Belmond_Copacabana_Palace-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220540982">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='9 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest,<br/>Thank you very much for posting your valuable feedback. We are very glad to be informed that your stay was remarkable and memorable. Regarding the turn down service, we got very concerned because it is not common to take place. Maybe you have put a not disturb identification at your door. In any case, we will reinforce to our team.<br/><br/>All the best,
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq220540982_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220540982 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKmoK3qHMmKUAvoqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdmU3UvK6XoXfXXdKmkdUk6XoXfXXm3mk3Xo6XoXfXXXkAXAvX6XoXfXXXdAA3ok6XoXfXXXmXdAKK6XoXfXXXXvk3KU6XoXfXXXKKXX3v6XoXfXXU33m3Um6XoXfXXKUd3XdvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdmU3UvKqH7VcaiCMQQoqnQQfi2JnJHJCJQQoqnQQwJcJnVqHeSiQQoqnQQMVQQoqnQQx2JCVSEiQQoqnQQhIJIVQQoqnQQiTQQoqnQQeSiQQoqnQQMVQQoqnQQx2JCVSEixiGIac6XoXmqoTpcXXKodKAvX0tEn1XXKodKAvX0zH1mKmoK30pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220540982" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220540982'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,1326 @@
+<div id="expanded_review_223889022">
+<a name="UR223889022"></a>
+<div id="UR223889022" class="extended provider0 first newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_5A7AF02C1984D22E3744A872BD6C04DD-SRC_223889022" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_5A7AF02C1984D22E3744A872BD6C04DD ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: '5A7AF02C1984D22E3744A872BD6C04DD'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/02/eb/2e/18/samanthak27.jpg" class="avatar potentialFacebookAvatar avatarGUID:5A7AF02C1984D22E3744A872BD6C04DD" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_5A7AF02C1984D22E3744A872BD6C04DD" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">samanthak27</span>
+</div>
+</div>
+<div class="location">
+Carlisle, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_5A7AF02C1984D22E3744A872BD6C04DD-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Top Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="54 reviews" class="icon badge_topcontributor sprite-badge_topcontributor" width="25" height="24">
+<span class="badgeText">54 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_3rd sprite-badge_hotels_3rd" width="25" height="24">
+<span class="badgeText">40 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '5A7AF02C1984D22E3744A872BD6C04DD', screenName: 'samanthak27', geos: [60873, 312663, 312595, 1137965, 424940, 316100, 312659, 312602, 297899, 293767, 479197, 312578, 316112, 673057, 681212, 60880, 1026865, 312559, 482831, 297685, 319718, 472670, 274772, 479221, 479220, 1178366, 186327, 469397, 667498, 297318, 186322, 469391, 293821, 293820, 298357, 304554, 304551, 293890, 3138038, 480213, 424917, 424916], geo: '293890' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 42 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 42 cities</span> </div>
+<div id="UID_5A7AF02C1984D22E3744A872BD6C04DD-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="21 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">21 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293890-d3861343-r223889022-Hotel_Friends_Home-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223889022">&#x201c;<span class='noQuotes'>Friendly, central and value for money</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 3 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+This is a small but very accommodating hotel. The welcome was great and we ate each evening on the roof top terrace.<br/><br/>The rooms were comfortable. There was excellent service at breakfast. The hotel was within walking distance if good shopping.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed April 2014, travelled with friends</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq223889022_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223889022 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmvAKqHMmv3UmdmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmvvAKXX6XoXfXXmdUmUKm6XoXfXXmmoUU336XoXfXXmmdXAkd6XoXfXXXmmmk3v6XoXfXXUokm3Xv6XoXfXXKd3UUoo6XoXfXXKdoKAoo6XoXfXXKm3UXod6XoXfXXKXkXkvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmvvAKXXqHqWQQoqnQQqnESVCMtQQoqnQQ5iaVqHxbJIGaJCMpQQoqnQQxbJIGaJCMpQQoqnQQqiJccVgQQoqnQQ7JyaJISQQoqnQQx5iCVQQoqnQQfVCIEJcQQoqnQQeVySiCxiGIac6XoXmqoTpcXXmvvAKXX0tEn1XXmvvAKXX0zH1XAmvAK0pSM1obkbqnKXfUAvdxMXXzsmkddbvkX7xM3fKdxMxM0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223889022" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223889022'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '3861343', 'samanthak27', '5A7AF02C1984D22E3744A872BD6C04DD', 'en', '223889022', 'Hotel Friends Home');">Ask samanthak27 about Hotel Friends Home</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_223413103">
+<a name="UR223413103"></a>
+<div id="UR223413103" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_514DB9F5F6BD7DBC5FA5127AD2F49DE8-SRC_223413103" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_514DB9F5F6BD7DBC5FA5127AD2F49DE8 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/97/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:514DB9F5F6BD7DBC5FA5127AD2F49DE8" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_514DB9F5F6BD7DBC5FA5127AD2F49DE8" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">TrevZink</span>
+</div>
+</div>
+<div class="location">
+Saskatoon, Canada
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_514DB9F5F6BD7DBC5FA5127AD2F49DE8-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293890-d3861343-r223413103-Hotel_Friends_Home-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223413103">&#x201c;<span class='noQuotes'>Friendly staff, great location, very clean! </span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Great location right in the heart of the Thamel area. When you first walk in you are greeted by a very friendly staff who all speak good english and are very accommodating! The rooms are large and clean and have very good air conditioning; excellent rooms for the price. Their continental breakfast is delicious and good selection. They also let us store our luggage free of charge while we went to Thailand for a month. All in all it is a great place to spend your days in Kathmandu!
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014, travelled as a couple</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223413103_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223413103 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmvAKqHMmv3UmdmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmvvAKXX6XoXfXXmdUmUKm6XoXfXXmmoUU336XoXfXXmmdXAkd6XoXfXXXmmmk3v6XoXfXXUokm3Xv6XoXfXXKd3UUoo6XoXfXXKdoKAoo6XoXfXXKm3UXod6XoXfXXKXkXkvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmvvAKXXqHqWQQoqnQQqnESVCMtQQoqnQQ5iaVqHxbJIGaJCMpQQoqnQQxbJIGaJCMpQQoqnQQqiJccVgQQoqnQQ7JyaJISQQoqnQQx5iCVQQoqnQQfVCIEJcQQoqnQQeVySiCxiGIac6XoXmqoTpcXXmdUmUKm0tEn1XXmdUmUKm0zH1XAmvAK0pSM1oUdxM7Aqnoqn37xMkxM7foqnboUXkbxMXqndAxMzsv0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223413103" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223413103'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '3861343', 'TrevZink', '514DB9F5F6BD7DBC5FA5127AD2F49DE8', 'en', '223413103', 'Hotel Friends Home');">Ask TrevZink about Hotel Friends Home</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223351166">
+<a name="UR223351166"></a>
+<div id="UR223351166" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_CB406FB5EEF5C927ADB876F87CBC8E46-SRC_223351166" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_CB406FB5EEF5C927ADB876F87CBC8E46 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/95/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:CB406FB5EEF5C927ADB876F87CBC8E46" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_CB406FB5EEF5C927ADB876F87CBC8E46" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">lyndseey</span>
+</div>
+</div>
+<div class="location">
+Saskatoon, Canada
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_CB406FB5EEF5C927ADB876F87CBC8E46-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293890-d3861343-r223351166-Hotel_Friends_Home-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223351166">&#x201c;<span class='noQuotes'>Great hotel, great staff, great location!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Stayed at hotel friends home on two different occasions and both times we recieved amazing service. The staff are wonderful and the hotel is kept super clean. Rooms are comfrotable and clean especially for Nepali standards. <br/>Location: Easy to get in and out of, close to kingsway and not in the heart of thamel which is great! There is construction going on near the hotel so streets are a little more dirty then most but it is minor. The sound from construction is sometimes loud but never interrupts your sleep at night. There are really good restraunts close by such as or2k and a minimart. If you want to be in or near thamel this is the place to be! <br/><br/>I have stayed at many hotels in Nepal over the past three months (4 in Thamel and 1 in boudha) and HFH has been by far the best value with the most friendly and helpful staff. They also have a good breakfast and give you complimentary beverages. <br/><br/>The staff will go above and beyond and are always interested in what you have planned for the day! They want to help you make the most of your time in nepal not just make a profit off of you which is very refrshing especially being a tourist in Thamel! I would take advantage of there travel desk; based on what I have seen and heard from other guests they provide great services. <br/><br/>The hotel also allowed us to leave some baggage for about a month at no additional charge. This was very handy!
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014, travelled as a couple</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223351166_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223351166 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmvAKqHMmv3UmdmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmvvAKXX6XoXfXXmdUmUKm6XoXfXXmmoUU336XoXfXXmmdXAkd6XoXfXXXmmmk3v6XoXfXXUokm3Xv6XoXfXXKd3UUoo6XoXfXXKdoKAoo6XoXfXXKm3UXod6XoXfXXKXkXkvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmvvAKXXqHqWQQoqnQQqnESVCMtQQoqnQQ5iaVqHxbJIGaJCMpQQoqnQQxbJIGaJCMpQQoqnQQqiJccVgQQoqnQQ7JyaJISQQoqnQQx5iCVQQoqnQQfVCIEJcQQoqnQQeVySiCxiGIac6XoXmqoTpcXXmmoUU330tEn1XXmmoUU330zH1XAmvAK0pSM1f7dK3qn7ozszsqnofAXkbxM7vk3qnvkf7fvzsd30EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223351166" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223351166'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '3861343', 'lyndseey', 'CB406FB5EEF5C927ADB876F87CBC8E46', 'en', '223351166', 'Hotel Friends Home');">Ask lyndseey about Hotel Friends Home</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223342974">
+<a name="UR223342974"></a>
+<div id="UR223342974" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_BBC6A98B517EB4E86BA509875599E92F-SRC_223342974" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_BBC6A98B517EB4E86BA509875599E92F ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/74/avatar056.jpg" class="avatar potentialFacebookAvatar avatarGUID:BBC6A98B517EB4E86BA509875599E92F" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_BBC6A98B517EB4E86BA509875599E92F" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Stephen W</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_BBC6A98B517EB4E86BA509875599E92F-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">2 reviews</span>
+</div>
+<div id="UID_BBC6A98B517EB4E86BA509875599E92F-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="9 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">9 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293890-d3861343-r223342974-Hotel_Friends_Home-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223342974">&#x201c;<span class='noQuotes'>A great hotel for staying in Kathmandu</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+My son, daughter and I have had a fantastic stay at Friends Home in Kathmandu. <br/>It is based in the centre of the city, and they fully deserve the accolade of 1 of the top 3 hotels to stay in the city.From the moment you arrive, the welcome and attention to detail is superb. Nothing was too much trouble from all the staff. <br/>In addition, the hotel rep (Badri) organised some great trips for us while we stayed there.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223342974_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223342974 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmvAKqHMmv3UmdmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmvvAKXX6XoXfXXmdUmUKm6XoXfXXmmoUU336XoXfXXmmdXAkd6XoXfXXXmmmk3v6XoXfXXUokm3Xv6XoXfXXKd3UUoo6XoXfXXKdoKAoo6XoXfXXKm3UXod6XoXfXXKXkXkvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmvvAKXXqHqWQQoqnQQqnESVCMtQQoqnQQ5iaVqHxbJIGaJCMpQQoqnQQxbJIGaJCMpQQoqnQQqiJccVgQQoqnQQ7JyaJISQQoqnQQx5iCVQQoqnQQfVCIEJcQQoqnQQeVySiCxiGIac6XoXmqoTpcXXmmdXAkd0tEn1XXmmdXAkd0zH1XAmvAK0pSM177f3bAv7oUkzs7dzsv37boKAvkooAAzsAXqn0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223342974" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223342974'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '3861343', 'Stephen W', 'BBC6A98B517EB4E86BA509875599E92F', 'en', '223342974', 'Hotel Friends Home');">Ask Stephen W about Hotel Friends Home</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222333768">
+<a name="UR222333768"></a>
+<div id="UR222333768" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_87BC7605040544912DDDAC1F816FE448-SRC_222333768" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_87BC7605040544912DDDAC1F816FE448 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/c8/d3/30/jfishbein.jpg" class="avatar potentialFacebookAvatar avatarGUID:87BC7605040544912DDDAC1F816FE448" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_87BC7605040544912DDDAC1F816FE448" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">JFishbein</span>
+</div>
+</div>
+<div class="location">
+West Palm Beach
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_87BC7605040544912DDDAC1F816FE448-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="6 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">6 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '87BC7605040544912DDDAC1F816FE448', screenName: 'JFishbein', geos: [298082, 293916, 293891, 293890, 34345], geo: '293890' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 5 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 5 cities</span> </div>
+<div id="UID_87BC7605040544912DDDAC1F816FE448-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="25 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">25 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293890-d3861343-r222333768-Hotel_Friends_Home-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222333768">&#x201c;<span class='noQuotes'>This Hotel Deserves it&#39;s Name!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='17 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+This hotel is excellent!<br/><br/>I have been in Nepal for nearly one month now, first arriving in Kathmandu and then leaving after two days to travel the country. I returned to Kathmandu today. It is raining heavily, and I had my taxi take me to directly back to Hotel Friends Home.<br/><br/>It has been weeks since I last stayed here, and upon walking in the staff immediately recognized me and warmly welcomed me in. The staff here is so well-trained and helpful. Sandeep, at the front desk, let me know that the hotel was all booked (no surprise, it's excellent), but since it was raining he still offered me complementary tea and coffee, a place to relax and told me that if there is a cancellation he would get me the room or help arrange for my accommodations at another hotel. So nice!! And to my luck, there was a cancellation shortly thereafter.<br/><br/>I am in my room now and writing this review on the fast wifi... and I'm finally in a big, comfortable and clean bed! I haven't been on a comfortable bed since leaving this hotel nearly a month ago (for those who have been to Nepal before, you know luxury is hard to come by). And I am so happy to be back!! <br/><br/>I should also note, importantly, that the owner of this hotel helped arrange my entire month of travel in Nepal. He went above and beyond the services of any ordinary hotel, but that seems to be the way Hotel Friends Home operates - they REALLY do treat you like a friend.<br/><br/>I am so thankful for how Hotel Friends Home helped make a month of traveling in Nepal so easy and enjoyable.<br/><br/>HIGHLY RECOMMENDED!!!
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014, travelled solo</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222333768_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222333768 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmvAKqHMmv3UmdmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmvvAKXX6XoXfXXmdUmUKm6XoXfXXmmoUU336XoXfXXmmdXAkd6XoXfXXXmmmk3v6XoXfXXUokm3Xv6XoXfXXKd3UUoo6XoXfXXKdoKAoo6XoXfXXKm3UXod6XoXfXXKXkXkvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmvvAKXXqHqWQQoqnQQqnESVCMtQQoqnQQ5iaVqHxbJIGaJCMpQQoqnQQxbJIGaJCMpQQoqnQQqiJccVgQQoqnQQ7JyaJISQQoqnQQx5iCVQQoqnQQfVCIEJcQQoqnQQeVySiCxiGIac6XoXmqoTpcXXXmmmk3v0tEn1XXXmmmk3v0zH1XAmvAK0pSM1vk7fk3KoKdKoddAUXxMxMxMbfUqnvU3qnzsddv0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">4</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222333768" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222333768'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '3861343', 'JFishbein', '87BC7605040544912DDDAC1F816FE448', 'en', '222333768', 'Hotel Friends Home');">Ask JFishbein about Hotel Friends Home</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221573628">
+<a name="UR221573628"></a>
+<div id="UR221573628" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_9DD282929F677ECF224BFBF0BAB62986-SRC_221573628" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_9DD282929F677ECF224BFBF0BAB62986 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/98/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:9DD282929F677ECF224BFBF0BAB62986" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_9DD282929F677ECF224BFBF0BAB62986" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Sharon H</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_9DD282929F677ECF224BFBF0BAB62986-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">2 reviews</span>
+</div>
+<div id="UID_9DD282929F677ECF224BFBF0BAB62986-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">3 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293890-d3861343-r221573628-Hotel_Friends_Home-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221573628">&#x201c;<span class='noQuotes'>Excellent hotel - very very clean and very very comfortable!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='13 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+I came to Nepal alone for a month and was delighted with Friends hotel home after staying in various other guest houses and hotels around Kathmandu and mostly in uncomfortable single beds at that!!Friends hotel had the most comfortable bed ever and I only intended on staying there as a treat for a couple of nights but after going to see yet more unclean and uncomfortable rooms I found myself back here again looking for a room for the remainder of my stay.It is situated in the heart of Thamel so is very convenient for all the local shops and markets and very close to places like Durbar Square.The cleanliness is 100% and the staff are extremely nice. I stayed at 6 places around Kathmandu in my trip and this is without doubt the cleanest and most comfortable hotel I stayed at and I highly recommend it.No power cuts here,the water is hot when u take a shower,the TV had no interference and it also has a lovely roof top terrace where you can enjoy a beer...all simple things that make it feel like you are indeed at a friends home in a foreign country. Namaste
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014, travelled solo</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221573628_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221573628 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmvAKqHMmv3UmdmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmvvAKXX6XoXfXXmdUmUKm6XoXfXXmmoUU336XoXfXXmmdXAkd6XoXfXXXmmmk3v6XoXfXXUokm3Xv6XoXfXXKd3UUoo6XoXfXXKdoKAoo6XoXfXXKm3UXod6XoXfXXKXkXkvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmvvAKXXqHqWQQoqnQQqnESVCMtQQoqnQQ5iaVqHxbJIGaJCMpQQoqnQQxbJIGaJCMpQQoqnQQqiJccVgQQoqnQQ7JyaJISQQoqnQQx5iCVQQoqnQQfVCIEJcQQoqnQQeVySiCxiGIac6XoXmqoTpcXXUokm3Xv0tEn1XXUokm3Xv0zH1XAmvAK0pSM1AxMxMXvXAXAqn3kkzsfqnXXd7qn7qnK7b73XAv30EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">3</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221573628" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221573628'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '3861343', 'Sharon H', '9DD282929F677ECF224BFBF0BAB62986', 'en', '221573628', 'Hotel Friends Home');">Ask Sharon H about Hotel Friends Home</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+friendshome, Owner at Hotel Friends Home, responded to this review,
+<span class="res_date relativeDate" title='14 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_221573628">
+Dear guest <br/>Thank you for taking time to wrote review of Friends home. It was a great pleasure to have you in our property. We very delightful to know that you had nice time in friends home. We will always try our best for our guest. We are learning day by day and trying to improve our services. Our main goal is hospitality for our guest like make them feel it’s a their real friends home in Nepal, we hope you feel like that too. We again and again hope to welcome you in Friends home, Once again thank you for your great review. <br/><br/>Rajendra and team of the Friends home, <br/>Chushya Galli, Jyatha, Thamel Kathmandu, Nepal.
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_221705745" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:221705745, isGeo:false, locationid:3861343})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_221705745" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221705745">
+<a name="UR221705745"></a>
+<div id="UR221705745" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_05A9B12183D71A9C0B6FCC2F89CB9809-SRC_221705745" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_05A9B12183D71A9C0B6FCC2F89CB9809 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/5e/avatar036.jpg" class="avatar potentialFacebookAvatar avatarGUID:05A9B12183D71A9C0B6FCC2F89CB9809" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_05A9B12183D71A9C0B6FCC2F89CB9809" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">friendshome</span>
+</div>
+</div>
+<div class="location">
+Kathmandu, Nepal
+</div>
+</div>
+<div class="memberBadging">
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293890-d3861343-r221705745-Hotel_Friends_Home-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221705745">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='14 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Dear guest <br/>Thank you for taking time to wrote review of Friends home. It was a great pleasure to have you in our property. We very delightful to know that you had nice time in friends home. We will always try our best for our guest. We are learning day by day and trying to improve our services. Our main goal is hospitality for our guest like make them feel it’s a their real friends home in Nepal, we hope you feel like that too. We again and again hope to welcome you in Friends home, Once again thank you for your great review. <br/><br/>Rajendra and team of the Friends home, <br/>Chushya Galli, Jyatha, Thamel Kathmandu, Nepal.
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221705745_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221705745 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmvAKqHMmv3UmdmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmvvAKXX6XoXfXXmdUmUKm6XoXfXXmmoUU336XoXfXXmmdXAkd6XoXfXXXmmmk3v6XoXfXXUokm3Xv6XoXfXXKd3UUoo6XoXfXXKdoKAoo6XoXfXXKm3UXod6XoXfXXKXkXkvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmvvAKXXqHqWQQoqnQQqnESVCMtQQoqnQQ5iaVqHxbJIGaJCMpQQoqnQQxbJIGaJCMpQQoqnQQqiJccVgQQoqnQQ7JyaJISQQoqnQQx5iCVQQoqnQQfVCIEJcQQoqnQQeVySiCxiGIac6XoXmqoTpcXXUkKokdo0tEn1XXUkKokdo0zH1XAmvAK0pSM1KobA7UXUvmxMkUbAfK73qnffXqnvAf7AvKA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221705745" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221705745'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '3861343', 'friendshome', '05A9B12183D71A9C0B6FCC2F89CB9809', 'en', '221705745', 'Hotel Friends Home');">Ask friendshome about Hotel Friends Home</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220461155">
+<a name="UR220461155"></a>
+<div id="UR220461155" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_AFA9F0B248F6C0DF6CDFC3AE3EC17B86-SRC_220461155" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_AFA9F0B248F6C0DF6CDFC3AE3EC17B86 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/54/avatar027.jpg" class="avatar potentialFacebookAvatar avatarGUID:AFA9F0B248F6C0DF6CDFC3AE3EC17B86" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_AFA9F0B248F6C0DF6CDFC3AE3EC17B86" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">carolsstory</span>
+</div>
+</div>
+<div class="location">
+Edinburgh, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_AFA9F0B248F6C0DF6CDFC3AE3EC17B86-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="5 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">5 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">5 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'AFA9F0B248F6C0DF6CDFC3AE3EC17B86', screenName: 'carolsstory', geos: [293734, 293891, 293890, 671929], geo: '293890' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 4 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 4 cities</span> </div>
+<div id="UID_AFA9F0B248F6C0DF6CDFC3AE3EC17B86-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="5 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">5 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293890-d3861343-r220461155-Hotel_Friends_Home-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220461155">&#x201c;<span class='noQuotes'>Friendly and Helpful</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='8 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+This hotel lives up to it's name, within minutes of arriving we were given cups of tea, coffee and when we asked where to book our flight to Pokhara, one of the staff organised the flights for us while we shared a plate of MoMo's ( lovely as was the noodle soup I had later that day ). Thamel is a very busy area but as this hotel is up a side street it is nice and quiet, a great base to explore this area of Kathmandu the Garden of Dreams one of my favourite places just a five minute walk away. The rooms are clean, spacious and the beds comfy, hot water and air con made our stay a comfortable one. Would recommend this hotel to anyone visiting Kathmandu.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq220461155_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220461155 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmvAKqHMmv3UmdmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmvvAKXX6XoXfXXmdUmUKm6XoXfXXmmoUU336XoXfXXmmdXAkd6XoXfXXXmmmk3v6XoXfXXUokm3Xv6XoXfXXKd3UUoo6XoXfXXKdoKAoo6XoXfXXKm3UXod6XoXfXXKXkXkvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmvvAKXXqHqWQQoqnQQqnESVCMtQQoqnQQ5iaVqHxbJIGaJCMpQQoqnQQxbJIGaJCMpQQoqnQQqiJccVgQQoqnQQ7JyaJISQQoqnQQx5iCVQQoqnQQfVCIEJcQQoqnQQeVySiCxiGIac6XoXmqoTpcXXKd3UUoo0tEn1XXKd3UUoo0zH1XAmvAK0pSM1bqnbAqnK7Xdvqn3fKxMqn3fxMqnfmbzsmzsfUk7v30EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">3</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220461155" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220461155'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '3861343', 'carolsstory', 'AFA9F0B248F6C0DF6CDFC3AE3EC17B86', 'en', '220461155', 'Hotel Friends Home');">Ask carolsstory about Hotel Friends Home</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+friendshome, Owner at Hotel Friends Home, responded to this review,
+<span class="res_date relativeDate" title='14 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_220461155">
+Dear guest <br/>Thank you for taking time to wrote review of Friends home. It was a great pleasure to have you in our property. We very delightful to know that you had nice time in friends home. We will always try our best for our guest. We are learning day by day and trying to improve our services. Our main goal is hospitality for our guest like make them feel it’s a their real friends home in Nepal, we hope you feel like that too. We again and again hope to welcome you in Friends home, Once again thank you for your great review. <br/><br/>Rajendra and team of the Friends home, <br/>Chushya Galli, Jyatha, Thamel Kathmandu, Nepal.
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_221706460" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:221706460, isGeo:false, locationid:3861343})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_221706460" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221706460">
+<a name="UR221706460"></a>
+<div id="UR221706460" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_05A9B12183D71A9C0B6FCC2F89CB9809-SRC_221706460" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_05A9B12183D71A9C0B6FCC2F89CB9809 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/5e/avatar036.jpg" class="avatar potentialFacebookAvatar avatarGUID:05A9B12183D71A9C0B6FCC2F89CB9809" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_05A9B12183D71A9C0B6FCC2F89CB9809" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">friendshome</span>
+</div>
+</div>
+<div class="location">
+Kathmandu, Nepal
+</div>
+</div>
+<div class="memberBadging">
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293890-d3861343-r221706460-Hotel_Friends_Home-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221706460">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='14 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Dear guest <br/>Thank you for taking time to wrote review of Friends home. It was a great pleasure to have you in our property. We very delightful to know that you had nice time in friends home. We will always try our best for our guest. We are learning day by day and trying to improve our services. Our main goal is hospitality for our guest like make them feel it’s a their real friends home in Nepal, we hope you feel like that too. We again and again hope to welcome you in Friends home, Once again thank you for your great review. <br/><br/>Rajendra and team of the Friends home, <br/>Chushya Galli, Jyatha, Thamel Kathmandu, Nepal.
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221706460_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221706460 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmvAKqHMmv3UmdmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmvvAKXX6XoXfXXmdUmUKm6XoXfXXmmoUU336XoXfXXmmdXAkd6XoXfXXXmmmk3v6XoXfXXUokm3Xv6XoXfXXKd3UUoo6XoXfXXKdoKAoo6XoXfXXKm3UXod6XoXfXXKXkXkvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmvvAKXXqHqWQQoqnQQqnESVCMtQQoqnQQ5iaVqHxbJIGaJCMpQQoqnQQxbJIGaJCMpQQoqnQQqiJccVgQQoqnQQ7JyaJISQQoqnQQx5iCVQQoqnQQfVCIEJcQQoqnQQeVySiCxiGIac6XoXmqoTpcXXUkK3d3K0tEn1XXUkK3d3K0zH1XAmvAK0pSM1KobA7UXUvmxMkUbAfK73qnffXqnvAf7AvKA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221706460" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221706460'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '3861343', 'friendshome', '05A9B12183D71A9C0B6FCC2F89CB9809', 'en', '221706460', 'Hotel Friends Home');">Ask friendshome about Hotel Friends Home</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220450955">
+<a name="UR220450955"></a>
+<div id="UR220450955" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_33C0C0F2287D907544E8DAD3C7AE3746-SRC_220450955" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_33C0C0F2287D907544E8DAD3C7AE3746 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/53/48/05/sarojdhakal.jpg" class="avatar potentialFacebookAvatar avatarGUID:33C0C0F2287D907544E8DAD3C7AE3746" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_33C0C0F2287D907544E8DAD3C7AE3746" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">sarojdhakal</span>
+</div>
+</div>
+<div class="location">
+Kathmandu, Nepal
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_33C0C0F2287D907544E8DAD3C7AE3746-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="7 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">7 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">4 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '33C0C0F2287D907544E8DAD3C7AE3746', screenName: 'sarojdhakal', geos: [293950, 293916, 293890, 297586, 424934, 32761], geo: '293890' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 6 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 6 cities</span> </div>
+<div id="UID_33C0C0F2287D907544E8DAD3C7AE3746-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">4 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293890-d3861343-r220450955-Hotel_Friends_Home-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220450955">&#x201c;<span class='noQuotes'>Great Hotel</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='8 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+It's amazing hotel , clean , really friendly staffs and feels like you are at friend's home . close to Thamel and most many other tourist attractions . Away from noise and pollution . Good sleep . internet could be better though .
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed November 2013, travelled solo</span>
+</div>
+</div>
+<div id="helpfulq220450955_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220450955 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmvAKqHMmv3UmdmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmvvAKXX6XoXfXXmdUmUKm6XoXfXXmmoUU336XoXfXXmmdXAkd6XoXfXXXmmmk3v6XoXfXXUokm3Xv6XoXfXXKd3UUoo6XoXfXXKdoKAoo6XoXfXXKm3UXod6XoXfXXKXkXkvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmvvAKXXqHqWQQoqnQQqnESVCMtQQoqnQQ5iaVqHxbJIGaJCMpQQoqnQQxbJIGaJCMpQQoqnQQqiJccVgQQoqnQQ7JyaJISQQoqnQQx5iCVQQoqnQQfVCIEJcQQoqnQQeVySiCxiGIac6XoXmqoTpcXXKdoKAoo0tEn1XXKdoKAoo0zH1XAmvAK0pSM1mmfKfKqnXXvkxMAKkoddzsvxMbxMmfkbzsmkd30EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220450955" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220450955'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '3861343', 'sarojdhakal', '33C0C0F2287D907544E8DAD3C7AE3746', 'en', '220450955', 'Hotel Friends Home');">Ask sarojdhakal about Hotel Friends Home</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+friendshome, Owner at Hotel Friends Home, responded to this review,
+<span class="res_date relativeDate" title='14 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_220450955">
+Dear guest <br/>Thank you for taking time to wrote review of Friends home. It was a great pleasure to have you in our property. We very delightful to know that you had nice time in friends home. We will always try our best for our guest. We are learning day by day and trying to improve our services. Our main goal is hospitality for our guest like make them feel it’s a their real friends home in Nepal, we hope you feel like that too. We again and again hope to welcome you in Friends home, Once again thank you for your great review. <br/><br/>Rajendra and team of the Friends home, <br/>Chushya Galli, Jyatha, Thamel Kathmandu, Nepal.
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_221706556" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:221706556, isGeo:false, locationid:3861343})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_221706556" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221706556">
+<a name="UR221706556"></a>
+<div id="UR221706556" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_05A9B12183D71A9C0B6FCC2F89CB9809-SRC_221706556" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_05A9B12183D71A9C0B6FCC2F89CB9809 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/5e/avatar036.jpg" class="avatar potentialFacebookAvatar avatarGUID:05A9B12183D71A9C0B6FCC2F89CB9809" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_05A9B12183D71A9C0B6FCC2F89CB9809" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">friendshome</span>
+</div>
+</div>
+<div class="location">
+Kathmandu, Nepal
+</div>
+</div>
+<div class="memberBadging">
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293890-d3861343-r221706556-Hotel_Friends_Home-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221706556">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='14 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Dear guest <br/>Thank you for taking time to wrote review of Friends home. It was a great pleasure to have you in our property. We very delightful to know that you had nice time in friends home. We will always try our best for our guest. We are learning day by day and trying to improve our services. Our main goal is hospitality for our guest like make them feel it’s a their real friends home in Nepal, we hope you feel like that too. We again and again hope to welcome you in Friends home, Once again thank you for your great review. <br/><br/>Rajendra and team of the Friends home, <br/>Chushya Galli, Jyatha, Thamel Kathmandu, Nepal.
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221706556_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221706556 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmvAKqHMmv3UmdmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmvvAKXX6XoXfXXmdUmUKm6XoXfXXmmoUU336XoXfXXmmdXAkd6XoXfXXXmmmk3v6XoXfXXUokm3Xv6XoXfXXKd3UUoo6XoXfXXKdoKAoo6XoXfXXKm3UXod6XoXfXXKXkXkvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmvvAKXXqHqWQQoqnQQqnESVCMtQQoqnQQ5iaVqHxbJIGaJCMpQQoqnQQxbJIGaJCMpQQoqnQQqiJccVgQQoqnQQ7JyaJISQQoqnQQx5iCVQQoqnQQfVCIEJcQQoqnQQeVySiCxiGIac6XoXmqoTpcXXUkK3oo30tEn1XXUkK3oo30zH1XAmvAK0pSM1KobA7UXUvmxMkUbAfK73qnffXqnvAf7AvKA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221706556" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221706556'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '3861343', 'friendshome', '05A9B12183D71A9C0B6FCC2F89CB9809', 'en', '221706556', 'Hotel Friends Home');">Ask friendshome about Hotel Friends Home</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220361254">
+<a name="UR220361254"></a>
+<div id="UR220361254" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_F320A7FA8A35FD3EEEE8CC8322CD0555-SRC_220361254" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_F320A7FA8A35FD3EEEE8CC8322CD0555 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/7d/avatar064.jpg" class="avatar potentialFacebookAvatar avatarGUID:F320A7FA8A35FD3EEEE8CC8322CD0555" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_F320A7FA8A35FD3EEEE8CC8322CD0555" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Sharafutdinova</span>
+</div>
+</div>
+<div class="location">
+Dubai
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_F320A7FA8A35FD3EEEE8CC8322CD0555-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">2 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'F320A7FA8A35FD3EEEE8CC8322CD0555', screenName: 'Sharafutdinova', geos: [293891, 293890], geo: '293890' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 2 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 2 cities</span> </div>
+<div id="UID_F320A7FA8A35FD3EEEE8CC8322CD0555-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="2 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">2 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293890-d3861343-r220361254-Hotel_Friends_Home-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220361254">&#x201c;<span class='noQuotes'>Wonderful place to stay in</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='8 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+I had a wonderful stay at this hotel and recommend it to anyone visiting Kathmandu. Perfect service and assistance from all the hotel staff. No problems with hot water and AC or wifi. Will definitely stay there again
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq220361254_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220361254 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmvAKqHMmv3UmdmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmvvAKXX6XoXfXXmdUmUKm6XoXfXXmmoUU336XoXfXXmmdXAkd6XoXfXXXmmmk3v6XoXfXXUokm3Xv6XoXfXXKd3UUoo6XoXfXXKdoKAoo6XoXfXXKm3UXod6XoXfXXKXkXkvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmvvAKXXqHqWQQoqnQQqnESVCMtQQoqnQQ5iaVqHxbJIGaJCMpQQoqnQQxbJIGaJCMpQQoqnQQqiJccVgQQoqnQQ7JyaJISQQoqnQQx5iCVQQoqnQQfVCIEJcQQoqnQQeVySiCxiGIac6XoXmqoTpcXXKm3UXod0tEn1XXKm3UXod0zH1XAmvAK0pSM1qnmXKbkqnbvbmoqnxMmzszszszsvffvmXXfxMKooo0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220361254" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220361254'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '3861343', 'Sharafutdinova', 'F320A7FA8A35FD3EEEE8CC8322CD0555', 'en', '220361254', 'Hotel Friends Home');">Ask Sharafutdinova about Hotel Friends Home</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+friendshome, Owner at Hotel Friends Home, responded to this review,
+<span class="res_date relativeDate" title='14 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_220361254">
+Dear guest <br/>Thank you for taking time to wrote review of Friends home. It was a great pleasure to have you in our property. We very delightful to know that you had nice time in friends home. We will always try our best for our guest. We are learning day by day and trying to improve our services. Our main goal is hospitality for our guest like make them feel it’s a their real friends home in Nepal, we hope you feel like that too. We again and again hope to welcome you in Friends home, Once again thank you for your great review. <br/><br/>Rajendra and team of the Friends home, <br/>Chushya Galli, Jyatha, Thamel Kathmandu, Nepal.
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_221706635" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:221706635, isGeo:false, locationid:3861343})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_221706635" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221706635">
+<a name="UR221706635"></a>
+<div id="UR221706635" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_05A9B12183D71A9C0B6FCC2F89CB9809-SRC_221706635" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_05A9B12183D71A9C0B6FCC2F89CB9809 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/5e/avatar036.jpg" class="avatar potentialFacebookAvatar avatarGUID:05A9B12183D71A9C0B6FCC2F89CB9809" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_05A9B12183D71A9C0B6FCC2F89CB9809" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">friendshome</span>
+</div>
+</div>
+<div class="location">
+Kathmandu, Nepal
+</div>
+</div>
+<div class="memberBadging">
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293890-d3861343-r221706635-Hotel_Friends_Home-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221706635">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='14 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Dear guest <br/>Thank you for taking time to wrote review of Friends home. It was a great pleasure to have you in our property. We very delightful to know that you had nice time in friends home. We will always try our best for our guest. We are learning day by day and trying to improve our services. Our main goal is hospitality for our guest like make them feel it’s a their real friends home in Nepal, we hope you feel like that too. We again and again hope to welcome you in Friends home, Once again thank you for your great review. <br/><br/>Rajendra and team of the Friends home, <br/>Chushya Galli, Jyatha, Thamel Kathmandu, Nepal.
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221706635_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221706635 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmvAKqHMmv3UmdmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmvvAKXX6XoXfXXmdUmUKm6XoXfXXmmoUU336XoXfXXmmdXAkd6XoXfXXXmmmk3v6XoXfXXUokm3Xv6XoXfXXKd3UUoo6XoXfXXKdoKAoo6XoXfXXKm3UXod6XoXfXXKXkXkvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmvvAKXXqHqWQQoqnQQqnESVCMtQQoqnQQ5iaVqHxbJIGaJCMpQQoqnQQxbJIGaJCMpQQoqnQQqiJccVgQQoqnQQ7JyaJISQQoqnQQx5iCVQQoqnQQfVCIEJcQQoqnQQeVySiCxiGIac6XoXmqoTpcXXUkK33mo0tEn1XXUkK33mo0zH1XAmvAK0pSM1KobA7UXUvmxMkUbAfK73qnffXqnvAf7AvKA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221706635" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221706635'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '3861343', 'friendshome', '05A9B12183D71A9C0B6FCC2F89CB9809', 'en', '221706635', 'Hotel Friends Home');">Ask friendshome about Hotel Friends Home</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220272783">
+<a name="UR220272783"></a>
+<div id="UR220272783" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_E016EFF4A8E0712B6C5AC6128A45A2DC-SRC_220272783" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_E016EFF4A8E0712B6C5AC6128A45A2DC ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/05/eb/1d/c9/laura-cv.jpg" class="avatar potentialFacebookAvatar avatarGUID:E016EFF4A8E0712B6C5AC6128A45A2DC" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_E016EFF4A8E0712B6C5AC6128A45A2DC" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Laura_CV</span>
+</div>
+</div>
+<div class="location">
+Roma
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_E016EFF4A8E0712B6C5AC6128A45A2DC-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="18 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">18 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">8 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'E016EFF4A8E0712B6C5AC6128A45A2DC', screenName: 'Laura_CV', geos: [194950, 194830, 187906, 187791, 3916131, 1201606, 580210, 194721, 293890, 189894, 1169495, 635638], geo: '293890' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 12 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 12 cities</span> </div>
+<div id="UID_E016EFF4A8E0712B6C5AC6128A45A2DC-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="9 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">9 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293890-d3861343-r220272783-Hotel_Friends_Home-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220272783">&#x201c;<span class='noQuotes'>Feeling like home in Kathmandu!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='7 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+We chose this hotel after reading ratings on Tripadvisor. And we were not wrong!<br/>The staff is excellent, ready to help you whenever you need. The hotel is in Thamel, but you can sleep excellent cause the road is a lateral one, without traffic and loud.<br/>The room was clean and enough wide, with air con, even if we used only twice (and it worked very well).<br/>You can have free refill of water every morning, and a very good black nepali tea too! <br/>Finally at the end of our vacancy, when we'll be back in KTM, we are going to stay here again:-)
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with friends</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq220272783_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220272783 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmvAKqHMmv3UmdmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmvvAKXX6XoXfXXmdUmUKm6XoXfXXmmoUU336XoXfXXmmdXAkd6XoXfXXXmmmk3v6XoXfXXUokm3Xv6XoXfXXKd3UUoo6XoXfXXKdoKAoo6XoXfXXKm3UXod6XoXfXXKXkXkvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmvvAKXXqHqWQQoqnQQqnESVCMtQQoqnQQ5iaVqHxbJIGaJCMpQQoqnQQxbJIGaJCMpQQoqnQQqiJccVgQQoqnQQ7JyaJISQQoqnQQx5iCVQQoqnQQfVCIEJcQQoqnQQeVySiCxiGIac6XoXmqoTpcXXKXkXkvm0tEn1XXKXkXkvm0zH1XAmvAK0pSM1zsKU3zsqnqndbvzsKkUX73fobf3UXvbdobXxMf0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">3</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220272783" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220272783'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '3861343', 'Laura_CV', 'E016EFF4A8E0712B6C5AC6128A45A2DC', 'en', '220272783', 'Hotel Friends Home');">Ask Laura_CV about Hotel Friends Home</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+friendshome, Owner at Hotel Friends Home, responded to this review,
+<span class="res_date relativeDate" title='14 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_220272783">
+Dear guest <br/>Thank you for taking time to wrote review of Friends home. It was a great pleasure to have you in our property. We very delightful to know that you had nice time in friends home. We will always try our best for our guest. We are learning day by day and trying to improve our services. Our main goal is hospitality for our guest like make them feel it’s a their real friends home in Nepal, we hope you feel like that too. We again and again hope to welcome you in Friends home, Once again thank you for your great review. <br/><br/>Rajendra and team of the Friends home, <br/>Chushya Galli, Jyatha, Thamel Kathmandu, Nepal.
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_221708945" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:221708945, isGeo:false, locationid:3861343})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_221708945" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221708945">
+<a name="UR221708945"></a>
+<div id="UR221708945" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_05A9B12183D71A9C0B6FCC2F89CB9809-SRC_221708945" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_05A9B12183D71A9C0B6FCC2F89CB9809 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/5e/avatar036.jpg" class="avatar potentialFacebookAvatar avatarGUID:05A9B12183D71A9C0B6FCC2F89CB9809" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_05A9B12183D71A9C0B6FCC2F89CB9809" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">friendshome</span>
+</div>
+</div>
+<div class="location">
+Kathmandu, Nepal
+</div>
+</div>
+<div class="memberBadging">
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g293890-d3861343-r221708945-Hotel_Friends_Home-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221708945">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='14 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Dear guest <br/>Thank you for taking time to wrote review of Friends home. It was a great pleasure to have you in our property. We very delightful to know that you had nice time in friends home. We will always try our best for our guest. We are learning day by day and trying to improve our services. Our main goal is hospitality for our guest like make them feel it’s a their real friends home in Nepal, we hope you feel like that too. We again and again hope to welcome you in Friends home, Once again thank you for your great review. <br/><br/>Rajendra and team of the Friends home, <br/>Chushya Galli, Jyatha, Thamel Kathmandu, Nepal.
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221708945_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221708945 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXAmvAKqHMmv3UmdmqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmvvAKXX6XoXfXXmdUmUKm6XoXfXXmmoUU336XoXfXXmmdXAkd6XoXfXXXmmmk3v6XoXfXXUokm3Xv6XoXfXXKd3UUoo6XoXfXXKdoKAoo6XoXfXXKm3UXod6XoXfXXKXkXkvmqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmvvAKXXqHqWQQoqnQQqnESVCMtQQoqnQQ5iaVqHxbJIGaJCMpQQoqnQQxbJIGaJCMpQQoqnQQqiJccVgQQoqnQQ7JyaJISQQoqnQQx5iCVQQoqnQQfVCIEJcQQoqnQQeVySiCxiGIac6XoXmqoTpcXXUkKvAdo0tEn1XXUkKvAdo0zH1XAmvAK0pSM1KobA7UXUvmxMkUbAfK73qnffXqnvAf7AvKA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221708945" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221708945'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '3861343', 'friendshome', '05A9B12183D71A9C0B6FCC2F89CB9809', 'en', '221708945', 'Hotel Friends Home');">Ask friendshome about Hotel Friends Home</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,1796 @@
+<div id="expanded_review_223913150">
+<a name="UR223913150"></a>
+<div id="UR223913150" class="extended provider24 first newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_5DEF9A867C3221FC0C504B4862060817-SRC_223913150" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_5DEF9A867C3221FC0C504B4862060817 ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: '5DEF9A867C3221FC0C504B4862060817'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/68/avatar046.jpg" class="avatar potentialFacebookAvatar avatarGUID:5DEF9A867C3221FC0C504B4862060817" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_5DEF9A867C3221FC0C504B4862060817" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">JulieW2290</span>
+</div>
+</div>
+<div class="location">
+Lake Macquarie, Australia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_5DEF9A867C3221FC0C504B4862060817-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="5 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">5 reviews</span>
+</div>
+<div id="UID_5DEF9A867C3221FC0C504B4862060817-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="6 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">6 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g255060-d256598-r223913150-Mercure_Sydney-Sydney_New_South_Wales.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223913150">&#x201c;<span class='noQuotes'>Great for leisure or business</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 3 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Excellent location for an overnight stay prior to business meetings in Redfern. Within walking distance of Central station, Paddy's Markets and Chinatown.<br/>Staff are excellent, nothing is too much trouble for them. <br/> <br/>
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled on business</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Review collected in partnership with Accorhotels.com <span class="sprite-info_grn info_grn" onclick="ta.call('ta.overlays.Factory.showPartnerAttributionTip', event, this.parentNode, 'This business uses online tools and resources provided by TripAdvisor to encourage and collect reviews (including this one) from its guests.');"></span></p>
+<div id="helpfulq223913150_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223913150 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXooK3KqHMXo3oAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAUmUoK6XoXfXXmkkKoAd6XoXfXXmk3mUko6XoXfXXm3d3Xkm6XoXfXXmmXXAok6XoXfXXmKvKkoo6XoXfXXmK3dmoA6XoXfXXXk33mUK6XoXfXXX3k3Xdo6XoXfXXXK3UkkKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAUmUoKqHDVEnpEVQQoqnQQhgMCVgqHhgMCVgQQoqnQQZVuQQoqnQQhipIGQQoqnQQxdJcVtxiGIac6XoXmqoTpcXXmAUmUoK0tEn1XXmAUmUoK0zH1XooK3K0pSM1oxMzsqnAbv3kfmXXUqnfKfoKd7dv3XK3KvUk0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223913150" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223913150'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '256598', 'JulieW2290', '5DEF9A867C3221FC0C504B4862060817', 'en', '223913150', 'Mercure Sydney');">Ask JulieW2290 about Mercure Sydney</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of an individual traveller and not of TripAdvisor LLC nor of its partners. </div>
+<div class="mgrRspnInline">
+<div class="header">
+GregBrady, General Manager at Mercure Sydney, responded to this review,
+<span class="res_date relativeDate" title='25 August 2014'>yesterday</span>
+</div>
+<div class="displayText" id="response_223913150">
+Hi Julie,<br/><br/>Thank you for your feedback. I am thrilled to see that my staff were friendly and courteous. <br/>Thank you again for your kind comments and we look forward to welcoming you back to the Mercure Sydney.<br/><br/>Kind regards<br/><br/>Greg Brady<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_224223430" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:224223430, isGeo:false, locationid:256598})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_224223430" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC nor of its partners.
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_224223430">
+<a name="UR224223430"></a>
+<div id="UR224223430" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g255060-d256598-r224223430-Mercure_Sydney-Sydney_New_South_Wales.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224223430">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed yesterday
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Hi Julie,<br/><br/>Thank you for your feedback. I am thrilled to see that my staff were friendly and courteous. <br/>Thank you again for your kind comments and we look forward to welcoming you back to the Mercure Sydney.<br/><br/>Kind regards<br/><br/>Greg Brady<br/>General Manager
+</p>
+</div>
+<div id="helpfulq224223430_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224223430 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXooK3KqHMXo3oAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAUmUoK6XoXfXXmkkKoAd6XoXfXXmk3mUko6XoXfXXm3d3Xkm6XoXfXXmmXXAok6XoXfXXmKvKkoo6XoXfXXmK3dmoA6XoXfXXXk33mUK6XoXfXXX3k3Xdo6XoXfXXXK3UkkKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAUmUoKqHDVEnpEVQQoqnQQhgMCVgqHhgMCVgQQoqnQQZVuQQoqnQQhipIGQQoqnQQxdJcVtxiGIac6XoXmqoTpcXXdXXmdmK0tEn1XXdXXmdmK0zH1XooK3K0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224223430" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224223430'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223770594">
+<a name="UR223770594"></a>
+<div id="UR223770594" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_1200D356A7805D3E77423A38F1A24846-SRC_223770594" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_1200D356A7805D3E77423A38F1A24846 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/7a/avatar061.jpg" class="avatar potentialFacebookAvatar avatarGUID:1200D356A7805D3E77423A38F1A24846" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_1200D356A7805D3E77423A38F1A24846" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">harold775</span>
+</div>
+</div>
+<div class="location">
+Research, Australia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_1200D356A7805D3E77423A38F1A24846-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="15 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">15 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">6 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '1200D356A7805D3E77423A38F1A24846', screenName: 'harold775', geos: [60634, 580504, 495006, 255060, 255079, 658994, 255100, 143033], geo: '255060' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 8 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 8 cities</span> </div>
+<div id="UID_1200D356A7805D3E77423A38F1A24846-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="6 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">6 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g255060-d256598-r223770594-Mercure_Sydney-Sydney_New_South_Wales.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223770594">&#x201c;<span class='noQuotes'>Great location! Concrete bed!!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='23 August 2014'>Reviewed 3 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+We stayed here for 4 nights (pre booked, not a good idea) mainly because of it's location, which was very good, close to trains and buses and only 10 mins taxi to Circular Quay and Darling Harbour.<br/><br/>Another reason was that the website advertises &quot;wifi in your room&quot; but fails to tell you that you have to pay for it. It is hard to believe that wifi is not free in your room. You can can get in free for 30 minutes, but not in your room, but it it is still very inconvenient.<br/><br/>Our major problem was the bed was like sleeping on concrete!!<br/><br/>The staff were helpful and we changed rooms but it didn't help. We ended up sleeping on three duvets and a blanket to be half comfortable. We are not that old and travel a lot, but this was the most uncomfortable bed we have ever slept in, in a hotel of this quality. I would not recommend staying more than one night. Room size was good and block out curtains were great and traffic noise was minimal, we were on one of the higher floor.<br/><br/>We had dinner at the Four Elements Restaurant on the first night, we waited 45 minutes after ordering before we asked about our meal, which was quickly brought out, but tasted like it had been sitting around for awhile, not impressed and didn't return.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Ask for a room overlooking Railway Square, the higher the better
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled on business</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss10" src="http://c1.tacdn.com/img2/x.gif" alt="1 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223770594_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223770594 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXooK3KqHMXo3oAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAUmUoK6XoXfXXmkkKoAd6XoXfXXmk3mUko6XoXfXXm3d3Xkm6XoXfXXmmXXAok6XoXfXXmKvKkoo6XoXfXXmK3dmoA6XoXfXXXk33mUK6XoXfXXX3k3Xdo6XoXfXXXK3UkkKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAUmUoKqHDVEnpEVQQoqnQQhgMCVgqHhgMCVgQQoqnQQZVuQQoqnQQhipIGQQoqnQQxdJcVtxiGIac6XoXmqoTpcXXmkkKoAd0tEn1XXmkkKoAd0zH1XooK3K0pSM1UXKKxMmo3bkvKoxMmzskkdXmbmvqnUbXdvd30EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223770594" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223770594'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/harold775/g255060" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 3 reviews by harold775 for Sydney </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '256598', 'harold775', '1200D356A7805D3E77423A38F1A24846', 'en', '223770594', 'Mercure Sydney');">Ask harold775 about Mercure Sydney</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+GregBrady, General Manager at Mercure Sydney, responded to this review,
+<span class="res_date relativeDate" title='25 August 2014'>yesterday</span>
+</div>
+<div class="displayText" id="response_223770594">
+Hi Harrold,<br/><br/>Thank you for your feedback. I was obviously disappointed to read your review. I have spoken to the marketing team to update our website regarding the wifi. I have also spoken to the restaurant manager to investigate why your meal took so long. If convenient please call the hotel on +61 2 9217 6666 or email H2073@accor.com as we would like to discuss your experience further. <br/><br/>Thanks again for your feedback, and we look forward in speaking to you soon.<br/><br/>Kind regards<br/>Greg Brady<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_224222932" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:224222932, isGeo:false, locationid:256598})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_224222932" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224222932">
+<a name="UR224222932"></a>
+<div id="UR224222932" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g255060-d256598-r224222932-Mercure_Sydney-Sydney_New_South_Wales.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224222932">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed yesterday
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Hi Harrold,<br/><br/>Thank you for your feedback. I was obviously disappointed to read your review. I have spoken to the marketing team to update our website regarding the wifi. I have also spoken to the restaurant manager to investigate why your meal took so long. If convenient please call the hotel on +61 2 9217 6666 or email H2073@accor.com as we would like to discuss your experience further. <br/><br/>Thanks again for your feedback, and we look forward in speaking to you soon.<br/><br/>Kind regards<br/>Greg Brady<br/>General Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224222932_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224222932 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXooK3KqHMXo3oAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAUmUoK6XoXfXXmkkKoAd6XoXfXXmk3mUko6XoXfXXm3d3Xkm6XoXfXXmmXXAok6XoXfXXmKvKkoo6XoXfXXmK3dmoA6XoXfXXXk33mUK6XoXfXXX3k3Xdo6XoXfXXXK3UkkKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAUmUoKqHDVEnpEVQQoqnQQhgMCVgqHhgMCVgQQoqnQQZVuQQoqnQQhipIGQQoqnQQxdJcVtxiGIac6XoXmqoTpcXXdXXXAmX0tEn1XXdXXXAmX0zH1XooK3K0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224222932" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224222932'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223763175">
+<a name="UR223763175"></a>
+<div id="UR223763175" class="extended provider24 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_B5EF4466FD9254FB87C0B71A843366E3-SRC_223763175" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_B5EF4466FD9254FB87C0B71A843366E3 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/93/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:B5EF4466FD9254FB87C0B71A843366E3" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_B5EF4466FD9254FB87C0B71A843366E3" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Gail E</span>
+</div>
+</div>
+<div class="location">
+Nelson Bay, Australia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_B5EF4466FD9254FB87C0B71A843366E3-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g255060-d256598-r223763175-Mercure_Sydney-Sydney_New_South_Wales.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223763175">&#x201c;<span class='noQuotes'>Accommodation in Sydney</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='23 August 2014'>Reviewed 3 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+We stay at the Mercure Central a few times a year when we come to Sydney &amp; always find the service and room excellent. The hotel is close to public transport to access the city or a pleasant 15 minute walk. <br/>
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Review collected in partnership with Accorhotels.com <span class="sprite-info_grn info_grn" onclick="ta.call('ta.overlays.Factory.showPartnerAttributionTip', event, this.parentNode, 'This business uses online tools and resources provided by TripAdvisor to encourage and collect reviews (including this one) from its guests.');"></span></p>
+<div id="helpfulq223763175_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223763175 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXooK3KqHMXo3oAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAUmUoK6XoXfXXmkkKoAd6XoXfXXmk3mUko6XoXfXXm3d3Xkm6XoXfXXmmXXAok6XoXfXXmKvKkoo6XoXfXXmK3dmoA6XoXfXXXk33mUK6XoXfXXX3k3Xdo6XoXfXXXK3UkkKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAUmUoKqHDVEnpEVQQoqnQQhgMCVgqHhgMCVgQQoqnQQZVuQQoqnQQhipIGQQoqnQQxdJcVtxiGIac6XoXmqoTpcXXmk3mUko0tEn1XXmk3mUko0zH1XooK3K0pSM17ozsqndd33qnxMAXodqn7vkfK7kUbvdmm33zsm0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223763175" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223763175'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '256598', 'Gail E', 'B5EF4466FD9254FB87C0B71A843366E3', 'en', '223763175', 'Mercure Sydney');">Ask Gail E about Mercure Sydney</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of an individual traveller and not of TripAdvisor LLC nor of its partners. </div>
+<div class="mgrRspnInline">
+<div class="header">
+GregBrady, General Manager at Mercure Sydney, responded to this review,
+<span class="res_date relativeDate" title='25 August 2014'>yesterday</span>
+</div>
+<div class="displayText" id="response_223763175">
+Hi Gail,<br/><br/>Thank you for your feedback! I am thrilled that you are a regular at our hotel and that you enjoyed your stay!<br/><br/>We can not wait for your next stay! <br/><br/>Kind regards<br/><br/>Greg Brady<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_224221301" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:224221301, isGeo:false, locationid:256598})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_224221301" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC nor of its partners.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224221301">
+<a name="UR224221301"></a>
+<div id="UR224221301" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g255060-d256598-r224221301-Mercure_Sydney-Sydney_New_South_Wales.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224221301">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed yesterday
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Hi Gail,<br/><br/>Thank you for your feedback! I am thrilled that you are a regular at our hotel and that you enjoyed your stay!<br/><br/>We can not wait for your next stay! <br/><br/>Kind regards<br/><br/>Greg Brady<br/>General Manager
+</p>
+</div>
+<div id="helpfulq224221301_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224221301 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXooK3KqHMXo3oAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAUmUoK6XoXfXXmkkKoAd6XoXfXXmk3mUko6XoXfXXm3d3Xkm6XoXfXXmmXXAok6XoXfXXmKvKkoo6XoXfXXmK3dmoA6XoXfXXXk33mUK6XoXfXXX3k3Xdo6XoXfXXXK3UkkKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAUmUoKqHDVEnpEVQQoqnQQhgMCVgqHhgMCVgQQoqnQQZVuQQoqnQQhipIGQQoqnQQxdJcVtxiGIac6XoXmqoTpcXXdXXUmKU0tEn1XXdXXUmKU0zH1XooK3K0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224221301" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224221301'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223646273">
+<a name="UR223646273"></a>
+<div id="UR223646273" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_52CB5DA0BC3BE3C5B1719EA0C175191D-SRC_223646273" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_52CB5DA0BC3BE3C5B1719EA0C175191D ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-f/04/62/d8/fb/danielle-r.jpg" class="avatar potentialFacebookAvatar avatarGUID:52CB5DA0BC3BE3C5B1719EA0C175191D" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_52CB5DA0BC3BE3C5B1719EA0C175191D" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Danielle R</span>
+</div>
+</div>
+<div class="location">
+Bayside, New York
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_52CB5DA0BC3BE3C5B1719EA0C175191D-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="28 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">28 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">6 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '52CB5DA0BC3BE3C5B1719EA0C175191D', screenName: 'Danielle R', geos: [189970, 255060, 309226, 186338, 154998, 255069, 255070], geo: '255060' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 7 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 7 cities</span> </div>
+<div id="UID_52CB5DA0BC3BE3C5B1719EA0C175191D-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="8 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">8 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g255060-d256598-r223646273-Mercure_Sydney-Sydney_New_South_Wales.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223646273">&#x201c;<span class='noQuotes'>Clean and comfortable</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+The Mercure is very close to the Sydney airport, which was nice. It is also nearby to many restaurants and shops, as well as the train if you want to go to Darling Harbour or Sydney Harbour. Check in was quick and easy. Staff was very nice and helpful, including front desk staff and concierge. Rooms and bathrooms were nice but small (comparable to any hotel in a large city, like London or NYC.) The bathroom lighting was great, as well as the toiletries. The room was very clean and maintained nicely by housekeeping. We went to the Four Elements restaurant for dinner one night, and although service was slow (I overheard the staff saying how backed up they were due to the rain and an influx of room service orders), the food was delicious! I had the gnocchi and my husband had the lamb rump, and both were excellent! The hotel has a gym and indoor pool, too, but we didn't have time to use it.<br/><br/>The only reason that I gave this four stars instead of five is because of the wi-fi. The website advertises &quot;wifi in your room&quot; but fails to tell you that you have to pay for it. It is hard to believe that in this day and age wifi is not included. They do have complimentary 30-minute access per day, but you have to go down to the front desk to get a login card. There were multiple times that my husband and I went down (from the 7th floor), just to get back up to the room to find that the login we were given did not work, so we had to go back down to get another one. This was extremely frustrating.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> We had a city view room, which was nice!
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="media  thumbCols3">
+<div class="thumbnails">
+<div class="photosInline">
+<ul>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g255060-d256598-i107784769-r223646273-Mercure_Sydney-Sydney_New_South_Wales.html#107784769 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 256598, 255060, 2, 107784769);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/6c/aa/41/mercure-sydney.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g255060-d256598-i107784787-r223646273-Mercure_Sydney-Sydney_New_South_Wales.html#107784787 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 256598, 255060, 2, 107784787);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/6c/aa/53/mercure-sydney.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g255060-d256598-i107784779-r223646273-Mercure_Sydney-Sydney_New_South_Wales.html#107784779 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 256598, 255060, 2, 107784779);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/6c/aa/4b/mercure-sydney.jpg" alt="" width="50" height="50">
+</span>
+</li>
+</ul>
+</div> </div> </div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223646273_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223646273 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXooK3KqHMXo3oAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAUmUoK6XoXfXXmkkKoAd6XoXfXXmk3mUko6XoXfXXm3d3Xkm6XoXfXXmmXXAok6XoXfXXmKvKkoo6XoXfXXmK3dmoA6XoXfXXXk33mUK6XoXfXXX3k3Xdo6XoXfXXXK3UkkKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAUmUoKqHDVEnpEVQQoqnQQhgMCVgqHhgMCVgQQoqnQQZVuQQoqnQQhipIGQQoqnQQxdJcVtxiGIac6XoXmqoTpcXXm3d3Xkm0tEn1XXm3d3Xkm0zH1XooK3K0pSM1oXf7oxMbK7fm7zsmfo7UkUAzsbKfUkoUAUxM0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223646273" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223646273'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/487danieller/g255060" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 4 reviews by Danielle R for Sydney </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '256598', 'Danielle R', '52CB5DA0BC3BE3C5B1719EA0C175191D', 'en', '223646273', 'Mercure Sydney');">Ask Danielle R about Mercure Sydney</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+GregBrady, General Manager at Mercure Sydney, responded to this review,
+<span class="res_date relativeDate" title='25 August 2014'>yesterday</span>
+</div>
+<div class="displayText" id="response_223646273">
+Hi Danielle,<br/><br/>Thank you so much for your feedback. It is such a shame it was raining while you visited us on the weekend! I assure you Sydney does not usually have that kind of miserable weather. Thank you for your compliments about our hotel restaurant and I apologise for the wait time. I have spoken to the marketing team to ensure our website is more clear about the additional wifi charges. They have assured me they will fix this today.<br/><br/>We do hope to see you again soon (perhaps during our summer when the rain should stay away).<br/><br/>Kindest regards<br/><br/>Greg Brady<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_224218461" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:224218461, isGeo:false, locationid:256598})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_224218461" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224218461">
+<a name="UR224218461"></a>
+<div id="UR224218461" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g255060-d256598-r224218461-Mercure_Sydney-Sydney_New_South_Wales.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224218461">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed yesterday
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Hi Danielle,<br/><br/>Thank you so much for your feedback. It is such a shame it was raining while you visited us on the weekend! I assure you Sydney does not usually have that kind of miserable weather. Thank you for your compliments about our hotel restaurant and I apologise for the wait time. I have spoken to the marketing team to ensure our website is more clear about the additional wifi charges. They have assured me they will fix this today.<br/><br/>We do hope to see you again soon (perhaps during our summer when the rain should stay away).<br/><br/>Kindest regards<br/><br/>Greg Brady<br/>General Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224218461_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224218461 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXooK3KqHMXo3oAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAUmUoK6XoXfXXmkkKoAd6XoXfXXmk3mUko6XoXfXXm3d3Xkm6XoXfXXmmXXAok6XoXfXXmKvKkoo6XoXfXXmK3dmoA6XoXfXXXk33mUK6XoXfXXX3k3Xdo6XoXfXXXK3UkkKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAUmUoKqHDVEnpEVQQoqnQQhgMCVgqHhgMCVgQQoqnQQZVuQQoqnQQhipIGQQoqnQQxdJcVtxiGIac6XoXmqoTpcXXdXUvd3U0tEn1XXdXUvd3U0zH1XooK3K0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224218461" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224218461'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223322957">
+<a name="UR223322957"></a>
+<div id="UR223322957" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_19E53DA7439A2D55CDC0FF8FB76C173A-SRC_223322957" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_19E53DA7439A2D55CDC0FF8FB76C173A ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/7e/avatar065.jpg" class="avatar potentialFacebookAvatar avatarGUID:19E53DA7439A2D55CDC0FF8FB76C173A" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_19E53DA7439A2D55CDC0FF8FB76C173A" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Hemant01</span>
+</div>
+</div>
+<div class="location">
+Pune
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_19E53DA7439A2D55CDC0FF8FB76C173A-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="39 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">39 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">16 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '19E53DA7439A2D55CDC0FF8FB76C173A', screenName: 'Hemant01', geos: [297684, 660548, 4975755, 293913, 255060, 304160, 298309, 255122, 298283, 255118, 679051, 297908, 304554, 660694, 304551, 298573, 293890, 298570], geo: '255060' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 18 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 18 cities</span> </div>
+<div id="UID_19E53DA7439A2D55CDC0FF8FB76C173A-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="18 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">18 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g255060-d256598-r223322957-Mercure_Sydney-Sydney_New_South_Wales.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223322957">&#x201c;<span class='noQuotes'>Excellent location for Walkers !</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+This hotel's location is excellent for Tourists especially walkers ! The hotel is in the centre of Sydney,with a bus stand &amp; train station very close by. The hotel has excellent restaurants &amp; pubs within walking distance.<br/>The hotel rooms are medium-sized but very comfortable &amp; cozy.In spite of the hotel being in the heart of the city the rooms are very quiet.<br/>The hotel staff are very curteous &amp; helpful.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> The rooms are all very quiet , but the ones on the higher floors &amp; facing the back &amp; overloo...
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed March 2014, travelled with friends</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223322957_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223322957 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXooK3KqHMXo3oAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAUmUoK6XoXfXXmkkKoAd6XoXfXXmk3mUko6XoXfXXm3d3Xkm6XoXfXXmmXXAok6XoXfXXmKvKkoo6XoXfXXmK3dmoA6XoXfXXXk33mUK6XoXfXXX3k3Xdo6XoXfXXXK3UkkKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAUmUoKqHDVEnpEVQQoqnQQhgMCVgqHhgMCVgQQoqnQQZVuQQoqnQQhipIGQQoqnQQxdJcVtxiGIac6XoXmqoTpcXXmmXXAok0tEn1XXmmXXAok0zH1XooK3K0pSM1UAzsomxMbkdmAbXxMoofxMfKqnqnvqn7k3fUkmb0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223322957" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223322957'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/Hemant01/g255060" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 3 reviews by Hemant01 for Sydney </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '256598', 'Hemant01', '19E53DA7439A2D55CDC0FF8FB76C173A', 'en', '223322957', 'Mercure Sydney');">Ask Hemant01 about Mercure Sydney</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+GregBrady, General Manager at Mercure Sydney, responded to this review,
+<span class="res_date relativeDate" title='22 August 2014'>5 days ago</span>
+</div>
+<div class="displayText" id="response_223322957">
+Hi Herman,<br/><br/>I am so pleased you loved the location of our hotel. Thank you so much for this fantastic feedback!<br/><br/>It means a lot to all of us at Mercure Sydney!<br/><br/>We hope to see you again soon<br/><br/>Regards,<br/>Greg Brady<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223509117" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223509117, isGeo:false, locationid:256598})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223509117" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223509117">
+<a name="UR223509117"></a>
+<div id="UR223509117" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g255060-d256598-r223509117-Mercure_Sydney-Sydney_New_South_Wales.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223509117">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Hi Herman,<br/><br/>I am so pleased you loved the location of our hotel. Thank you so much for this fantastic feedback!<br/><br/>It means a lot to all of us at Mercure Sydney!<br/><br/>We hope to see you again soon<br/><br/>Regards,<br/>Greg Brady<br/>General Manager
+</p>
+</div>
+<div id="helpfulq223509117_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223509117 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXooK3KqHMXo3oAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAUmUoK6XoXfXXmkkKoAd6XoXfXXmk3mUko6XoXfXXm3d3Xkm6XoXfXXmmXXAok6XoXfXXmKvKkoo6XoXfXXmK3dmoA6XoXfXXXk33mUK6XoXfXXX3k3Xdo6XoXfXXXK3UkkKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAUmUoKqHDVEnpEVQQoqnQQhgMCVgqHhgMCVgQQoqnQQZVuQQoqnQQhipIGQQoqnQQxdJcVtxiGIac6XoXmqoTpcXXmoKAUUk0tEn1XXmoKAUUk0zH1XooK3K0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223509117" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223509117'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223080755">
+<a name="UR223080755"></a>
+<div id="UR223080755" class="extended provider24 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_572AFD19A89F619FFF2CD33E8DC210E1-SRC_223080755" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_572AFD19A89F619FFF2CD33E8DC210E1 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/96/avatar022.jpg" class="avatar potentialFacebookAvatar avatarGUID:572AFD19A89F619FFF2CD33E8DC210E1" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_572AFD19A89F619FFF2CD33E8DC210E1" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">canberragirl45</span>
+</div>
+</div>
+<div class="location">
+Canberra
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_572AFD19A89F619FFF2CD33E8DC210E1-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">2 reviews</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g255060-d256598-r223080755-Mercure_Sydney-Sydney_New_South_Wales.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223080755">&#x201c;<span class='noQuotes'>Amazing service</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='20 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+From the moment I did a pre check of the hotel to the end of my stay the service was wonderful. I was very lucky to have a friend give me a voucher and was given not only a discount but upgrade. The views from the room were beautiful at night with the city lights. <br/>
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Review collected in partnership with Accorhotels.com <span class="sprite-info_grn info_grn" onclick="ta.call('ta.overlays.Factory.showPartnerAttributionTip', event, this.parentNode, 'This business uses online tools and resources provided by TripAdvisor to encourage and collect reviews (including this one) from its guests.');"></span></p>
+<div id="helpfulq223080755_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223080755 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXooK3KqHMXo3oAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAUmUoK6XoXfXXmkkKoAd6XoXfXXmk3mUko6XoXfXXm3d3Xkm6XoXfXXmmXXAok6XoXfXXmKvKkoo6XoXfXXmK3dmoA6XoXfXXXk33mUK6XoXfXXX3k3Xdo6XoXfXXXK3UkkKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAUmUoKqHDVEnpEVQQoqnQQhgMCVgqHhgMCVgQQoqnQQZVuQQoqnQQhipIGQQoqnQQxdJcVtxiGIac6XoXmqoTpcXXmKvKkoo0tEn1XXmKvKkoo0zH1XooK3K0pSM1okXbqnxMUAbvAqn3UAqnqnqnXfxMmmzsvxMfXUKzsU0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223080755" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223080755'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '256598', 'canberragirl45', '572AFD19A89F619FFF2CD33E8DC210E1', 'en', '223080755', 'Mercure Sydney');">Ask canberragirl45 about Mercure Sydney</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of an individual traveller and not of TripAdvisor LLC nor of its partners. </div>
+<div class="mgrRspnInline">
+<div class="header">
+GregBrady, General Manager at Mercure Sydney, responded to this review,
+<span class="res_date relativeDate" title='21 August 2014'>6 days ago</span>
+</div>
+<div class="displayText" id="response_223080755">
+Hi there,<br/><br/>Thank you so much for your feedback. I look forward to reading about our guest's experiences everyday! I thrilled to hear that you were so pleased with the service and will pass this on to my staff.<br/><br/>Thank you again<br/><br/>Regards<br/><br/>Greg Brady<br/><br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223283027" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223283027, isGeo:false, locationid:256598})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223283027" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC nor of its partners.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223283027">
+<a name="UR223283027"></a>
+<div id="UR223283027" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g255060-d256598-r223283027-Mercure_Sydney-Sydney_New_South_Wales.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223283027">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Hi there,<br/><br/>Thank you so much for your feedback. I look forward to reading about our guest's experiences everyday! I thrilled to hear that you were so pleased with the service and will pass this on to my staff.<br/><br/>Thank you again<br/><br/>Regards<br/><br/>Greg Brady<br/><br/>General Manager
+</p>
+</div>
+<div id="helpfulq223283027_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223283027 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXooK3KqHMXo3oAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAUmUoK6XoXfXXmkkKoAd6XoXfXXmk3mUko6XoXfXXm3d3Xkm6XoXfXXmmXXAok6XoXfXXmKvKkoo6XoXfXXmK3dmoA6XoXfXXXk33mUK6XoXfXXX3k3Xdo6XoXfXXXK3UkkKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAUmUoKqHDVEnpEVQQoqnQQhgMCVgqHhgMCVgQQoqnQQZVuQQoqnQQhipIGQQoqnQQxdJcVtxiGIac6XoXmqoTpcXXmXvmKXk0tEn1XXmXvmKXk0zH1XooK3K0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223283027" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223283027'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223064359">
+<a name="UR223064359"></a>
+<div id="UR223064359" class="extended provider24 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_883522033575EDE98F32CF80D5242AF5-SRC_223064359" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_883522033575EDE98F32CF80D5242AF5 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/55/avatar028.jpg" class="avatar potentialFacebookAvatar avatarGUID:883522033575EDE98F32CF80D5242AF5" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_883522033575EDE98F32CF80D5242AF5" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Vivienne D</span>
+</div>
+</div>
+<div class="location">
+Melbourne, Victoria, Australia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_883522033575EDE98F32CF80D5242AF5-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g255060-d256598-r223064359-Mercure_Sydney-Sydney_New_South_Wales.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223064359">&#x201c;<span class='noQuotes'>Location</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='20 August 2014'>Reviewed 1 week ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Located close to trains and bus services the Mecure Sydney is very conveniently located. The Queen room was very clean and quiet. The staff were very helpful. I would highly recommend this venue for your stay particularly if you need to use Sydney's transport system.<br/>
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled solo</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Review collected in partnership with Accorhotels.com <span class="sprite-info_grn info_grn" onclick="ta.call('ta.overlays.Factory.showPartnerAttributionTip', event, this.parentNode, 'This business uses online tools and resources provided by TripAdvisor to encourage and collect reviews (including this one) from its guests.');"></span></p>
+<div id="helpfulq223064359_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223064359 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXooK3KqHMXo3oAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAUmUoK6XoXfXXmkkKoAd6XoXfXXmk3mUko6XoXfXXm3d3Xkm6XoXfXXmmXXAok6XoXfXXmKvKkoo6XoXfXXmK3dmoA6XoXfXXXk33mUK6XoXfXXX3k3Xdo6XoXfXXXK3UkkKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAUmUoKqHDVEnpEVQQoqnQQhgMCVgqHhgMCVgQQoqnQQZVuQQoqnQQhipIGQQoqnQQxdJcVtxiGIac6XoXmqoTpcXXmK3dmoA0tEn1XXmK3dmoA0zH1XooK3K0pSM1vvmoXXKmmokozsxMzsAvqnmXfqnvKxMoXdXbqno0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223064359" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223064359'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '256598', 'Vivienne D', '883522033575EDE98F32CF80D5242AF5', 'en', '223064359', 'Mercure Sydney');">Ask Vivienne D about Mercure Sydney</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of an individual traveller and not of TripAdvisor LLC nor of its partners. </div>
+<div class="mgrRspnInline">
+<div class="header">
+GregBrady, General Manager at Mercure Sydney, responded to this review,
+<span class="res_date relativeDate" title='21 August 2014'>6 days ago</span>
+</div>
+<div class="displayText" id="response_223064359">
+Hi Vivenne,<br/><br/>Thank you so much for your feedback! I am so pleased to see you enjoyed your stay at our hotel and that our staff was helpful. I am thrilled to pass this feedback on.<br/><br/>We look forward to welcoming you back soon<br/><br/>Regards<br/><br/>Greg Brady<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223282653" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223282653, isGeo:false, locationid:256598})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223282653" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC nor of its partners.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223282653">
+<a name="UR223282653"></a>
+<div id="UR223282653" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g255060-d256598-r223282653-Mercure_Sydney-Sydney_New_South_Wales.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223282653">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Hi Vivenne,<br/><br/>Thank you so much for your feedback! I am so pleased to see you enjoyed your stay at our hotel and that our staff was helpful. I am thrilled to pass this feedback on.<br/><br/>We look forward to welcoming you back soon<br/><br/>Regards<br/><br/>Greg Brady<br/>General Manager
+</p>
+</div>
+<div id="helpfulq223282653_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223282653 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXooK3KqHMXo3oAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAUmUoK6XoXfXXmkkKoAd6XoXfXXmk3mUko6XoXfXXm3d3Xkm6XoXfXXmmXXAok6XoXfXXmKvKkoo6XoXfXXmK3dmoA6XoXfXXXk33mUK6XoXfXXX3k3Xdo6XoXfXXXK3UkkKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAUmUoKqHDVEnpEVQQoqnQQhgMCVgqHhgMCVgQQoqnQQZVuQQoqnQQhipIGQQoqnQQxdJcVtxiGIac6XoXmqoTpcXXmXvX3om0tEn1XXmXvX3om0zH1XooK3K0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223282653" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223282653'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222766310">
+<a name="UR222766310"></a>
+<div id="UR222766310" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_0BCD10E60C73D3C161BF85F23E57E771-SRC_222766310" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_0BCD10E60C73D3C161BF85F23E57E771 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/70/avatar053.jpg" class="avatar potentialFacebookAvatar avatarGUID:0BCD10E60C73D3C161BF85F23E57E771" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_0BCD10E60C73D3C161BF85F23E57E771" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">WhiteKnightDBS</span>
+</div>
+</div>
+<div class="location">
+Melbourne, Australia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_0BCD10E60C73D3C161BF85F23E57E771-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="33 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">33 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_3rd sprite-badge_hotels_3rd" width="25" height="24">
+<span class="badgeText">27 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '0BCD10E60C73D3C161BF85F23E57E771', screenName: 'WhiteKnightDBS', geos: [255060, 297697, 294265, 294226], geo: '255060' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 4 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 4 cities</span> </div>
+<div id="UID_0BCD10E60C73D3C161BF85F23E57E771-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="11 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">11 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g255060-d256598-r222766310-Mercure_Sydney-Sydney_New_South_Wales.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222766310">&#x201c;<span class='noQuotes'>Just OK, well located, nothing special</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='19 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+I stayed here for just a single night stop over as it had been a few years since I had stayed at this hotel. Room was clean, albeit a little small. The queen sized bed was comfortable. Black out blind was terrific (love this!). The bathroom was small but well laid out with good lighting and space to put toiletries. Shower was very good. The thing I did find disconcerting was the odd choice for interior design. A mix (and clash) of normal boring 90s hotel fittings with some cheap designer items and a purple feature wall. They probably paid some one a lot of money to come up with this. Cant comment on the breakfast option as I ran out of time to indulge. Eve's Bar downstairs is a nice casual option. Reception staff were OK, but not promoting the Accor brand like my Novotel stays. Location was nice and close to trains and buses. They could do a lot more with what they have.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Ask them not to locate you next to the Service Room as it can get a little noisy.
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled on business</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222766310_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222766310 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXooK3KqHMXo3oAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAUmUoK6XoXfXXmkkKoAd6XoXfXXmk3mUko6XoXfXXm3d3Xkm6XoXfXXmmXXAok6XoXfXXmKvKkoo6XoXfXXmK3dmoA6XoXfXXXk33mUK6XoXfXXX3k3Xdo6XoXfXXXK3UkkKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAUmUoKqHDVEnpEVQQoqnQQhgMCVgqHhgMCVgQQoqnQQZVuQQoqnQQhipIGQQoqnQQxdJcVtxiGIac6XoXmqoTpcXXXk33mUK0tEn1XXXk33mUK0zH1XooK3K0pSM1K7fxMUKzs3KfkmxMmfU3U7qnvoqnXmzsokzskkU0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222766310" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222766310'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/WhiteKnightDBS/g255060" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 27 reviews by WhiteKnightDBS for Sydney </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '256598', 'WhiteKnightDBS', '0BCD10E60C73D3C161BF85F23E57E771', 'en', '222766310', 'Mercure Sydney');">Ask WhiteKnightDBS about Mercure Sydney</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+GregBrady, General Manager at Mercure Sydney, responded to this review,
+<span class="res_date relativeDate" title='20 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_222766310">
+Hi there,<br/><br/>Thank you so much for your feedback. I am glad to see you enjoyed the facilities- particularly the shower and the comfortable bed (both of which are really important to us at Mercure). <br/><br/>However, I was disappointed to read that you found our reception staff mediocre and I have passed this feedback on to ensure this does not happen again. If convenient, could you please call the hotel on +61 2 9217 6666 or email H2073@accor.com so that we can discuss your experience further. We strive to provide exceptional service at the Mercure Sydney and wish to rectify this experience.<br/><br/>Thanks again for your feedback, and look forward in speaking to you soon.<br/><br/>Regards<br/><br/>Greg Brady <br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223055793" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223055793, isGeo:false, locationid:256598})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223055793" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223055793">
+<a name="UR223055793"></a>
+<div id="UR223055793" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g255060-d256598-r223055793-Mercure_Sydney-Sydney_New_South_Wales.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223055793">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='20 August 2014'>Reviewed 1 week ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Hi there,<br/><br/>Thank you so much for your feedback. I am glad to see you enjoyed the facilities- particularly the shower and the comfortable bed (both of which are really important to us at Mercure). <br/><br/>However, I was disappointed to read that you found our reception staff mediocre and I have passed this feedback on to ensure this does not happen again. If convenient, could you please call the hotel on +61 2 9217 6666 or email H2073@accor.com so that we can discuss your experience further. We strive to provide exceptional service at the Mercure Sydney and wish to rectify this experience.<br/><br/>Thanks again for your feedback, and look forward in speaking to you soon.<br/><br/>Regards<br/><br/>Greg Brady <br/>General Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223055793_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223055793 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXooK3KqHMXo3oAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAUmUoK6XoXfXXmkkKoAd6XoXfXXmk3mUko6XoXfXXm3d3Xkm6XoXfXXmmXXAok6XoXfXXmKvKkoo6XoXfXXmK3dmoA6XoXfXXXk33mUK6XoXfXXX3k3Xdo6XoXfXXXK3UkkKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAUmUoKqHDVEnpEVQQoqnQQhgMCVgqHhgMCVgQQoqnQQZVuQQoqnQQhipIGQQoqnQQxdJcVtxiGIac6XoXmqoTpcXXmKookAm0tEn1XXmKookAm0zH1XooK3K0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223055793" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223055793'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222676245">
+<a name="UR222676245"></a>
+<div id="UR222676245" class="extended provider24">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_0342C098B385CB23A7E92958A3464F34-SRC_222676245" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_0342C098B385CB23A7E92958A3464F34 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/92/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:0342C098B385CB23A7E92958A3464F34" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_0342C098B385CB23A7E92958A3464F34" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Scott F</span>
+</div>
+</div>
+<div class="location">
+Melbourne, Australia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_0342C098B385CB23A7E92958A3464F34-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">3 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">3 hotel reviews</span>
+</div> </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g255060-d256598-r222676245-Mercure_Sydney-Sydney_New_South_Wales.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222676245">&#x201c;<span class='noQuotes'>Cheese</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='18 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+The Mercure is centrally located which is convenient. Rooms are not too bad but are of a lower quality when compared to others of similar price. Staff are helpful and nice. Internet was good which is important for business.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled on business</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss20" src="http://c1.tacdn.com/img2/x.gif" alt="2 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Review collected in partnership with Accorhotels.com <span class="sprite-info_grn info_grn" onclick="ta.call('ta.overlays.Factory.showPartnerAttributionTip', event, this.parentNode, 'This business uses online tools and resources provided by TripAdvisor to encourage and collect reviews (including this one) from its guests.');"></span></p>
+<div id="helpfulq222676245_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222676245 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXooK3KqHMXo3oAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAUmUoK6XoXfXXmkkKoAd6XoXfXXmk3mUko6XoXfXXm3d3Xkm6XoXfXXmmXXAok6XoXfXXmKvKkoo6XoXfXXmK3dmoA6XoXfXXXk33mUK6XoXfXXX3k3Xdo6XoXfXXXK3UkkKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAUmUoKqHDVEnpEVQQoqnQQhgMCVgqHhgMCVgQQoqnQQZVuQQoqnQQhipIGQQoqnQQxdJcVtxiGIac6XoXmqoTpcXXX3k3Xdo0tEn1XXX3k3Xdo0zH1XooK3K0pSM1KmdXfKAv7mvof7XmbkzsAXAovbmd3dqnmd0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222676245" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222676245'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '256598', 'Scott F', '0342C098B385CB23A7E92958A3464F34', 'en', '222676245', 'Mercure Sydney');">Ask Scott F about Mercure Sydney</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of an individual traveller and not of TripAdvisor LLC nor of its partners. </div>
+<div class="mgrRspnInline">
+<div class="header">
+GregBrady, General Manager at Mercure Sydney, responded to this review,
+<span class="res_date relativeDate" title='20 August 2014'>6 days ago</span>
+</div>
+<div class="displayText" id="response_222676245">
+Hi Scott,<br/><br/>Thank you for your feedback. I was disappointed to read about your experience and we would like to discuss this further with you. <br/><br/>If convenient please call the hotel on +61 2 9217 6666 email H2073@accor.com .<br/><br/>Thanks again for your feedback, and look forward in speaking to you soon.<br/><br/>Kind regards<br/>Greg Brady<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223072621" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223072621, isGeo:false, locationid:256598})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223072621" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC nor of its partners.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223072621">
+<a name="UR223072621"></a>
+<div id="UR223072621" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g255060-d256598-r223072621-Mercure_Sydney-Sydney_New_South_Wales.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223072621">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='20 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Hi Scott,<br/><br/>Thank you for your feedback. I was disappointed to read about your experience and we would like to discuss this further with you. <br/><br/>If convenient please call the hotel on +61 2 9217 6666 email H2073@accor.com .<br/><br/>Thanks again for your feedback, and look forward in speaking to you soon.<br/><br/>Kind regards<br/>Greg Brady<br/>General Manager
+</p>
+</div>
+<div id="helpfulq223072621_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223072621 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXooK3KqHMXo3oAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAUmUoK6XoXfXXmkkKoAd6XoXfXXmk3mUko6XoXfXXm3d3Xkm6XoXfXXmmXXAok6XoXfXXmKvKkoo6XoXfXXmK3dmoA6XoXfXXXk33mUK6XoXfXXX3k3Xdo6XoXfXXXK3UkkKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAUmUoKqHDVEnpEVQQoqnQQhgMCVgqHhgMCVgQQoqnQQZVuQQoqnQQhipIGQQoqnQQxdJcVtxiGIac6XoXmqoTpcXXmKkX3XU0tEn1XXmKkX3XU0zH1XooK3K0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223072621" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223072621'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222061770">
+<a name="UR222061770"></a>
+<div id="UR222061770" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_BE596DE70FAB7D256BF23525BE87CAA6-SRC_222061770" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_BE596DE70FAB7D256BF23525BE87CAA6 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/8e/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:BE596DE70FAB7D256BF23525BE87CAA6" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_BE596DE70FAB7D256BF23525BE87CAA6" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Lindsay N</span>
+</div>
+</div>
+<div class="location">
+Canmore
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_BE596DE70FAB7D256BF23525BE87CAA6-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="43 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">43 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_3rd sprite-badge_hotels_3rd" width="25" height="24">
+<span class="badgeText">25 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'BE596DE70FAB7D256BF23525BE87CAA6', screenName: 'Lindsay N', geos: [32847, 255060, 31147, 35572, 181727, 285727, 154919, 182194, 294212, 298464, 181716, 31262, 154913, 60713, 298460, 298461, 298450, 60880, 143022, 154932, 57119, 45212, 57151], geo: '255060' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 23 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 23 cities</span> </div>
+<div id="UID_BE596DE70FAB7D256BF23525BE87CAA6-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="8 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">8 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g255060-d256598-r222061770-Mercure_Sydney-Sydney_New_South_Wales.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222061770">&#x201c;<span class='noQuotes'>Great Dayroom Stopover</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='16 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+We arranged for this room as a stopover at the conclusion of our cross Pacific Cruise from San Francisco to Sydney. It was very comfortable and close to the airport. Staff were very accommodating and the hotel was near shopping and parks.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed November 2013, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq222061770_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222061770 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXooK3KqHMXo3oAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAUmUoK6XoXfXXmkkKoAd6XoXfXXmk3mUko6XoXfXXm3d3Xkm6XoXfXXmmXXAok6XoXfXXmKvKkoo6XoXfXXmK3dmoA6XoXfXXXk33mUK6XoXfXXX3k3Xdo6XoXfXXXK3UkkKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAUmUoKqHDVEnpEVQQoqnQQhgMCVgqHhgMCVgQQoqnQQZVuQQoqnQQhipIGQQoqnQQxdJcVtxiGIac6XoXmqoTpcXXXK3UkkK0tEn1XXXK3UkkK0zH1XooK3K0pSM17zsoA3xMzskKqnb7kxMXo37qnXmoXo7zsvkfbb30EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222061770" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222061770'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '256598', 'Lindsay N', 'BE596DE70FAB7D256BF23525BE87CAA6', 'en', '222061770', 'Mercure Sydney');">Ask Lindsay N about Mercure Sydney</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+GregBrady, General Manager at Mercure Sydney, responded to this review,
+<span class="res_date relativeDate" title='18 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_222061770">
+Hi Lindsay,<br/><br/>Thank you for your feedback. I am so pleased you enjoyed the location of our hotel and that our staff were helpful. We really appreciate your kind comments.<br/><br/>We look forward to seeing you again soon,<br/><br/>Regards,<br/><br/>Greg Brady<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_222511025" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:222511025, isGeo:false, locationid:256598})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_222511025" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222511025">
+<a name="UR222511025"></a>
+<div id="UR222511025" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g255060-d256598-r222511025-Mercure_Sydney-Sydney_New_South_Wales.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222511025">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='18 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Hi Lindsay,<br/><br/>Thank you for your feedback. I am so pleased you enjoyed the location of our hotel and that our staff were helpful. We really appreciate your kind comments.<br/><br/>We look forward to seeing you again soon,<br/><br/>Regards,<br/><br/>Greg Brady<br/>General Manager
+</p>
+</div>
+<div id="helpfulq222511025_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222511025 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyXooK3KqHMXo3oAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAUmUoK6XoXfXXmkkKoAd6XoXfXXmk3mUko6XoXfXXm3d3Xkm6XoXfXXmmXXAok6XoXfXXmKvKkoo6XoXfXXmK3dmoA6XoXfXXXk33mUK6XoXfXXX3k3Xdo6XoXfXXXK3UkkKqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAUmUoKqHDVEnpEVQQoqnQQhgMCVgqHhgMCVgQQoqnQQZVuQQoqnQQhipIGQQoqnQQxdJcVtxiGIac6XoXmqoTpcXXXoUUKXo0tEn1XXXoUUKXo0zH1XooK3K0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222511025" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222511025'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>

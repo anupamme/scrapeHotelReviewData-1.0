@@ -1,0 +1,1456 @@
+<div id="expanded_review_223937582">
+<a name="UR223937582"></a>
+<div id="UR223937582" class="extended provider0 first newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_3006E120CCB32D91387ACA47F113221C-SRC_223937582" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_3006E120CCB32D91387ACA47F113221C ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: '3006E120CCB32D91387ACA47F113221C'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/95/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:3006E120CCB32D91387ACA47F113221C" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_3006E120CCB32D91387ACA47F113221C" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Zlsk</span>
+</div>
+</div>
+<div class="location">
+Lusaka, Zambia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_3006E120CCB32D91387ACA47F113221C-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="18 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">18 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">7 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '3006E120CCB32D91387ACA47F113221C', screenName: 'Zlsk', geos: [312595, 312608, 187807, 187791, 304554, 1725258, 187870, 295424, 479226, 488101, 293843], geo: '304554' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 11 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 11 cities</span> </div>
+<div id="UID_3006E120CCB32D91387ACA47F113221C-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="9 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">9 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g304554-d302179-r223937582-The_Taj_Mahal_Palace-Mumbai_Bombay_Maharashtra.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223937582">&#x201c;<span class='noQuotes'>An Icon</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+An excellent hotel with rich history and heritage, in an excellent location. Plenty of restaurants, cafes and shops nearby. Stayed in the palace wing overlooking the quiet street. If you want to see the chaos that is Mumbai, stay in the other wing or rooms overlooking the Gateway.<br/><br/>The breakfast was stupendous! The staff, at your service. Our room, first class. The hotel is a welcome retreat after a chaotic day out on the streets of Mumbai. <br/><br/>Stay here.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed March 2014, travelled on business</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223937582_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223937582 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKdoodqHMmKXUkAqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAmkovX6XoXfXXmAmoUAv6XoXfXXmAUov3d6XoXfXXmAKU3mk6XoXfXXmk3KKAm6XoXfXXmdAdoUK6XoXfXXmdmkKvA6XoXfXXmKkodk36XoXfXXXAdAkoK6XoXfXXXkA3o3AqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAmkovXqHrGVQQoqnQQrJOQQoqnQQDJGJcQQoqnQQwJcJnVqHDpaHJSQQoqnQQ7iaHJgQQoqnQQDJGJEJtGIEJxiGIac6XoXmqoTpcXXmAmkovX0tEn1XXmAmkovX0zH1mKdood0pSM1mKK3zsUXKff7mXxMAUmvkbfbdkqnUUmXXUf0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223937582" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223937582'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=3006E120CCB32D91387ACA47F113221C&amp;lang=en&amp;messagetype=2&amp;d=302179&amp;geo=&amp;src=223937582&amp;t=r&amp;summary=The+Taj+Mahal+Palace" id="pm3006E120CCB32D91387ACA47F113221C" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Zlsk about The Taj Mahal Palace</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_223935198">
+<a name="UR223935198"></a>
+<div id="UR223935198" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_60E0A0105D3A360CFB1D4EE9D2843B5E-SRC_223935198" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_60E0A0105D3A360CFB1D4EE9D2843B5E ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/6e/a1/79/safjuanito.jpg" class="avatar potentialFacebookAvatar avatarGUID:60E0A0105D3A360CFB1D4EE9D2843B5E" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_60E0A0105D3A360CFB1D4EE9D2843B5E" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">SafJuanito</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_60E0A0105D3A360CFB1D4EE9D2843B5E-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="8 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">8 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">5 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '60E0A0105D3A360CFB1D4EE9D2843B5E', screenName: 'SafJuanito', geos: [293983, 186334, 304554, 1136501, 293986], geo: '304554' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 5 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 5 cities</span> </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g304554-d302179-r223935198-The_Taj_Mahal_Palace-Mumbai_Bombay_Maharashtra.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223935198">&#x201c;<span class='noQuotes'>Fantastic</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+This is a fantastic hotel and genuinely lives up to the sterling reputation that it was worked hard to achieve.<br/>My wife and I stayed here on our honeymoon and thoroughly enjoyed ourselves. The pools, grounds and gardens are beautiful, and the location of this trademark Indian institution left nothing to be desired. Its location on Apollo Bunder is fantastic, and is in close proximity to many important Bombay sites.<br/>Rooms are sumptuous, well furnished, clean and everything conceivable is adequate or excellent in quality. The view from its rooms are also great.<br/>Whilst this is a great hotel to stay at, it is in fact reasonably priced and definitely recommended for both special occasions and business travellers.<br/>The Taj Mahal Palace Hotel deserves its sterling reputation!
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed September 2013, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223935198_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223935198 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKdoodqHMmKXUkAqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAmkovX6XoXfXXmAmoUAv6XoXfXXmAUov3d6XoXfXXmAKU3mk6XoXfXXmk3KKAm6XoXfXXmdAdoUK6XoXfXXmdmkKvA6XoXfXXmKkodk36XoXfXXXAdAkoK6XoXfXXXkA3o3AqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAmkovXqHrGVQQoqnQQrJOQQoqnQQDJGJcQQoqnQQwJcJnVqHDpaHJSQQoqnQQ7iaHJgQQoqnQQDJGJEJtGIEJxiGIac6XoXmqoTpcXXmAmoUAv0tEn1XXmAmoUAv0zH1mKdood0pSM13KzsKbKUKoxMmbm3Kfqn7UxMdzszsAxMXvdm7ozs0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223935198" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223935198'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=60E0A0105D3A360CFB1D4EE9D2843B5E&amp;lang=en&amp;messagetype=2&amp;d=302179&amp;geo=&amp;src=223935198&amp;t=r&amp;summary=The+Taj+Mahal+Palace" id="pm60E0A0105D3A360CFB1D4EE9D2843B5E" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask SafJuanito about The Taj Mahal Palace</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223915864">
+<a name="UR223915864"></a>
+<div id="UR223915864" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_D2E9DCA7BB353C9343425D800D31178A-SRC_223915864" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_D2E9DCA7BB353C9343425D800D31178A ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/93/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:D2E9DCA7BB353C9343425D800D31178A" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_D2E9DCA7BB353C9343425D800D31178A" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Msemmab</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_D2E9DCA7BB353C9343425D800D31178A-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">4 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">4 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'D2E9DCA7BB353C9343425D800D31178A', screenName: 'Msemmab', geos: [293982, 293983, 304554, 297758], geo: '304554' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 4 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 4 cities</span> </div>
+<div id="UID_D2E9DCA7BB353C9343425D800D31178A-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">3 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g304554-d302179-r223915864-The_Taj_Mahal_Palace-Mumbai_Bombay_Maharashtra.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223915864">&#x201c;<span class='noQuotes'>My favourite hotel</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+I love this hotel, so relaxing. The foods great, the pool area is beautiful and the staff are lovely and generous. We stayed here in March and I can't wait to go again next year. I think it may be my favourite hotel in the world!
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed March 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq223915864_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223915864 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKdoodqHMmKXUkAqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAmkovX6XoXfXXmAmoUAv6XoXfXXmAUov3d6XoXfXXmAKU3mk6XoXfXXmk3KKAm6XoXfXXmdAdoUK6XoXfXXmdmkKvA6XoXfXXmKkodk36XoXfXXXAdAkoK6XoXfXXXkA3o3AqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAmkovXqHrGVQQoqnQQrJOQQoqnQQDJGJcQQoqnQQwJcJnVqHDpaHJSQQoqnQQ7iaHJgQQoqnQQDJGJEJtGIEJxiGIac6XoXmqoTpcXXmAUov3d0tEn1XXmAUov3d0zH1mKdood0pSM1xMXzsAxMfbk77momfAmdmdXoxMvKKxMmUUkvb0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223915864" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223915864'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=D2E9DCA7BB353C9343425D800D31178A&amp;lang=en&amp;messagetype=2&amp;d=302179&amp;geo=&amp;src=223915864&amp;t=r&amp;summary=The+Taj+Mahal+Palace" id="pmD2E9DCA7BB353C9343425D800D31178A" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Msemmab about The Taj Mahal Palace</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223901637">
+<a name="UR223901637"></a>
+<div id="UR223901637" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_FC1673EF6F3DBD077E2EA1B67E3EDC41-SRC_223901637" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_FC1673EF6F3DBD077E2EA1B67E3EDC41 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/6e/3f/92/socprof67.jpg" class="avatar potentialFacebookAvatar avatarGUID:FC1673EF6F3DBD077E2EA1B67E3EDC41" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_FC1673EF6F3DBD077E2EA1B67E3EDC41" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Socprof67</span>
+</div>
+</div>
+<div class="location">
+Modesto, California
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_FC1673EF6F3DBD077E2EA1B67E3EDC41-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="23 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">23 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">14 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'FC1673EF6F3DBD077E2EA1B67E3EDC41', screenName: 'Socprof67', geos: [297685, 33048, 274873, 32873, 297683, 196587, 188590, 295388, 32724, 294472, 304555, 304554, 295371, 293890, 295370, 33197, 303833], geo: '304554' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 17 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 17 cities</span> </div>
+<div id="UID_FC1673EF6F3DBD077E2EA1B67E3EDC41-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="6 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">6 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g304554-d302179-r223901637-The_Taj_Mahal_Palace-Mumbai_Bombay_Maharashtra.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223901637">&#x201c;<span class='noQuotes'>1903 Palace overlooks the Gate of India</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Listed in 1000 Place to See Before You Die, it does live up to its reputation. There are two spaces: the original and a tower next door, all connected from a magnificent central lobby. Either is a good choice. The tower has the advantage of height which allows many rooms to view the sea and port. Our room had a screen across the patio which formed an early 20th century visage to the Gate and beyond. We did not use the restaurants, but stayed with room service, which was fine. The hotel has a tour which was enjoyable. Strolls around the neighborhood may be disappointing as Mumbai is extremely crowded at most hours. The security is very pronounced; checkpoints and metal detectors are at the entrance and taxis are inspected. It may be slow to get to the hotel from the airport and particularly the last two blocks. It is worth seeing by special arrangement the laundry Ghats and Dharavi, the famous &quot;slum&quot;; Reality Tours can arrange the latter.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed January 2014, travelled as a couple</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223901637_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223901637 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKdoodqHMmKXUkAqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAmkovX6XoXfXXmAmoUAv6XoXfXXmAUov3d6XoXfXXmAKU3mk6XoXfXXmk3KKAm6XoXfXXmdAdoUK6XoXfXXmdmkKvA6XoXfXXmKkodk36XoXfXXXAdAkoK6XoXfXXXkA3o3AqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAmkovXqHrGVQQoqnQQrJOQQoqnQQDJGJcQQoqnQQwJcJnVqHDpaHJSQQoqnQQ7iaHJgQQoqnQQDJGJEJtGIEJxiGIac6XoXmqoTpcXXmAKU3mk0tEn1XXmAKU3mk0zH1mKdood0pSM1qnfU3kmzsqn3qnmxM7xMKkkzsXzsbU73kzsmzsxMfdU0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223901637" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223901637'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=FC1673EF6F3DBD077E2EA1B67E3EDC41&amp;lang=en&amp;messagetype=2&amp;d=302179&amp;geo=&amp;src=223901637&amp;t=r&amp;summary=The+Taj+Mahal+Palace" id="pmFC1673EF6F3DBD077E2EA1B67E3EDC41" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Socprof67 about The Taj Mahal Palace</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223760093">
+<a name="UR223760093"></a>
+<div id="UR223760093" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_744B5463882555883D26E6880B892D98-SRC_223760093" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_744B5463882555883D26E6880B892D98 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-o/05/80/6e/3a/lovedeepsnow.jpg" class="avatar potentialFacebookAvatar avatarGUID:744B5463882555883D26E6880B892D98" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_744B5463882555883D26E6880B892D98" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">LoveDeepSnow</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_744B5463882555883D26E6880B892D98-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Top Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="69 reviews" class="icon badge_topcontributor sprite-badge_topcontributor" width="25" height="24">
+<span class="badgeText">69 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">14 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '744B5463882555883D26E6880B892D98', screenName: 'LoveDeepSnow', geos: [311425, 209948, 1102787, 214506, 188087, 294265, 198835, 60763, 551596, 186338, 188070, 255057, 190795, 255060, 4522345, 274707, 295424, 198855, 1085457, 187337, 188113, 190479, 186595, 304554, 186600, 186605, 1068942, 297615, 298570, 186470], geo: '304554' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 30 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 30 cities</span> </div>
+<div id="UID_744B5463882555883D26E6880B892D98-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="41 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">41 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g304554-d302179-r223760093-The_Taj_Mahal_Palace-Mumbai_Bombay_Maharashtra.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223760093">&#x201c;<span class='noQuotes'>Good by Indian Standards but there are better places</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='23 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+It is an impressive building with history too.<br/><br/>But there is a smell in the hotel, the layout requires you for long walks, the breakfast was average, internet is charged separately.<br/><br/>The service is okay but not great, what you would expect from a restaurant at that level.<br/><br/>We ate once in the hotel and we were almost the only ones. This also should have given us an indication what to expect. The food was okay, the wine served way to warm.<br/><br/>The price / quality ratio is not great.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled on business</span>
+<ul class="recommend-column first">
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223760093_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223760093 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKdoodqHMmKXUkAqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAmkovX6XoXfXXmAmoUAv6XoXfXXmAUov3d6XoXfXXmAKU3mk6XoXfXXmk3KKAm6XoXfXXmdAdoUK6XoXfXXmdmkKvA6XoXfXXmKkodk36XoXfXXXAdAkoK6XoXfXXXkA3o3AqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAmkovXqHrGVQQoqnQQrJOQQoqnQQDJGJcQQoqnQQwJcJnVqHDpaHJSQQoqnQQ7iaHJgQQoqnQQDJGJEJtGIEJxiGIac6XoXmqoTpcXXmk3KKAm0tEn1XXmk3KKAm0zH1mKdood0pSM1kdd7od3mvvXooovvmxMX3zs3vvK7vAXxMAv0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223760093" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223760093'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=744B5463882555883D26E6880B892D98&amp;lang=en&amp;messagetype=2&amp;d=302179&amp;geo=&amp;src=223760093&amp;t=r&amp;summary=The+Taj+Mahal+Palace" id="pm744B5463882555883D26E6880B892D98" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask LoveDeepSnow about The Taj Mahal Palace</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223494510">
+<a name="UR223494510"></a>
+<div id="UR223494510" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_4C0368854105870CF0249D5DAB7E498D-SRC_223494510" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_4C0368854105870CF0249D5DAB7E498D ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/72/avatar054.jpg" class="avatar potentialFacebookAvatar avatarGUID:4C0368854105870CF0249D5DAB7E498D" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_4C0368854105870CF0249D5DAB7E498D" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Ulysses160667</span>
+</div>
+</div>
+<div class="location">
+Melbourne, Australia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_4C0368854105870CF0249D5DAB7E498D-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="5 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">5 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">4 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '4C0368854105870CF0249D5DAB7E498D', screenName: 'Ulysses160667', geos: [294217, 304554, 294265, 1020948, 187069], geo: '304554' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 5 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 5 cities</span> </div>
+<div id="UID_4C0368854105870CF0249D5DAB7E498D-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="2 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">2 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g304554-d302179-r223494510-The_Taj_Mahal_Palace-Mumbai_Bombay_Maharashtra.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223494510">&#x201c;<span class='noQuotes'>Outstanding</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+This is a good central KL hotel. The club lounge is wonderful and it does work despite some overcrowding. Rooms are very comfortable indeed. Worth a visit. I'd suggest getting Taj membership to ensure your treated like a VIP.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed February 2014, travelled on business</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq223494510_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223494510 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKdoodqHMmKXUkAqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAmkovX6XoXfXXmAmoUAv6XoXfXXmAUov3d6XoXfXXmAKU3mk6XoXfXXmk3KKAm6XoXfXXmdAdoUK6XoXfXXmdmkKvA6XoXfXXmKkodk36XoXfXXXAdAkoK6XoXfXXXkA3o3AqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAmkovXqHrGVQQoqnQQrJOQQoqnQQDJGJcQQoqnQQwJcJnVqHDpaHJSQQoqnQQ7iaHJgQQoqnQQDJGJEJtGIEJxiGIac6XoXmqoTpcXXmdAdoUK0tEn1XXmdAdoUK0zH1mKdood0pSM1dfKm3vvodUKovkKfqnKXdAxMoxMb7kzsdAvxM0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223494510" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223494510'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=4C0368854105870CF0249D5DAB7E498D&amp;lang=en&amp;messagetype=2&amp;d=302179&amp;geo=&amp;src=223494510&amp;t=r&amp;summary=The+Taj+Mahal+Palace" id="pm4C0368854105870CF0249D5DAB7E498D" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Ulysses160667 about The Taj Mahal Palace</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+tmhgm_bom, General Manager at The Taj Mahal Palace, responded to this review,
+<span class="res_date relativeDate" title='23 August 2014'>2 days ago</span>
+</div>
+<div class="displayText" id="response_223494510">
+Dear Guest,<br/><br/>Thank you for taking the time to share your positive feedback with us on Tripadvisor.com.<br/><br/>It is a pleasure to learn that you enjoyed your stay at The Taj Mahal Palace, Mumbai. We are glad that our “central” location, “wonderful” club lounge and “VIP” treatment made your stay comfortable and memorable. We also thank you for your kind words regarding your hotel room.<br/><br/>We welcome you to being a Taj Inner Circle member and look forward to see you back at The Taj Mahal Palace for another “outstanding” stay.<br/><br/>Kind Regards,<br/><br/><br/>Gaurav Pokhariyal<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223749101" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223749101, isGeo:false, locationid:302179})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223749101" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223749101">
+<a name="UR223749101"></a>
+<div id="UR223749101" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g304554-d302179-r223749101-The_Taj_Mahal_Palace-Mumbai_Bombay_Maharashtra.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223749101">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='23 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest,<br/><br/>Thank you for taking the time to share your positive feedback with us on Tripadvisor.com.<br/><br/>It is a pleasure to learn that you enjoyed your stay at The Taj Mahal Palace, Mumbai. We are glad that our “central” location, “wonderful” club lounge and “VIP” treatment made your stay comfortable and memorable. We also thank you for your kind words regarding your hotel room.<br/><br/>We welcome you to being a Taj Inner Circle member and look forward to see you back at The Taj Mahal Palace for another “outstanding” stay.<br/><br/>Kind Regards,<br/><br/><br/>Gaurav Pokhariyal<br/>General Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223749101_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223749101 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKdoodqHMmKXUkAqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAmkovX6XoXfXXmAmoUAv6XoXfXXmAUov3d6XoXfXXmAKU3mk6XoXfXXmk3KKAm6XoXfXXmdAdoUK6XoXfXXmdmkKvA6XoXfXXmKkodk36XoXfXXXAdAkoK6XoXfXXXkA3o3AqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAmkovXqHrGVQQoqnQQrJOQQoqnQQDJGJcQQoqnQQwJcJnVqHDpaHJSQQoqnQQ7iaHJgQQoqnQQDJGJEJtGIEJxiGIac6XoXmqoTpcXXmkdAUKU0tEn1XXmkdAUKU0zH1mKdood0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223749101" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223749101'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223437089">
+<a name="UR223437089"></a>
+<div id="UR223437089" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_A8E707BC16BE529A5FF4E2522F38EB5C-SRC_223437089" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_A8E707BC16BE529A5FF4E2522F38EB5C ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/57/avatar030.jpg" class="avatar potentialFacebookAvatar avatarGUID:A8E707BC16BE529A5FF4E2522F38EB5C" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_A8E707BC16BE529A5FF4E2522F38EB5C" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">nicjobro88</span>
+</div>
+</div>
+<div class="location">
+Birmingham, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_A8E707BC16BE529A5FF4E2522F38EB5C-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="20 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">20 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">8 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'A8E707BC16BE529A5FF4E2522F38EB5C', screenName: 'nicjobro88', geos: [304555, 304554, 295424, 304551, 499545, 190820, 186338, 312681, 186246, 186402], geo: '304554' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 10 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 10 cities</span> </div>
+<div id="UID_A8E707BC16BE529A5FF4E2522F38EB5C-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="9 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">9 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g304554-d302179-r223437089-The_Taj_Mahal_Palace-Mumbai_Bombay_Maharashtra.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223437089">&#x201c;<span class='noQuotes'>Honestly the best hotel in the world</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+We stayed at the taj mahal palace and were 100% overwhelmed by the entire experience. The welcome, the décor, the bouquets of flowers in every corner of the hotel, the unique and interesting tour of the hotel was just the beginning.<br/><br/>We spent our entire 2 day stay smiling. It was the small details that made the difference for us such as the turning down service which was outstanding and how literally every colleague would greet you. We ate in the Chinese restaurant and had a fantastic waiter who recommended some outstanding dishes for us (shredded lamb and chicken/seafood crispy noodles)<br/><br/>We stayed in the palace wing and was able to have free access to the tea room which was so lovely.<br/><br/>I cannot recommend this hotel enough, we travelled a lot around india and it was our highlight. We enjoyed it so much we only left for a short 20minute walk as we didn't want to miss a second in this magical place.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> You must book a room in the palace!
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223437089_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223437089 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKdoodqHMmKXUkAqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAmkovX6XoXfXXmAmoUAv6XoXfXXmAUov3d6XoXfXXmAKU3mk6XoXfXXmk3KKAm6XoXfXXmdAdoUK6XoXfXXmdmkKvA6XoXfXXmKkodk36XoXfXXXAdAkoK6XoXfXXXkA3o3AqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAmkovXqHrGVQQoqnQQrJOQQoqnQQDJGJcQQoqnQQwJcJnVqHDpaHJSQQoqnQQ7iaHJgQQoqnQQDJGJEJtGIEJxiGIac6XoXmqoTpcXXmdmkKvA0tEn1XXmdmkKvA0zH1mKdood0pSM1bvzskKk7fU37zsoXAboqnqndzsXoXXqnmvzs7of0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223437089" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223437089'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=A8E707BC16BE529A5FF4E2522F38EB5C&amp;lang=en&amp;messagetype=2&amp;d=302179&amp;geo=&amp;src=223437089&amp;t=r&amp;summary=The+Taj+Mahal+Palace" id="pmA8E707BC16BE529A5FF4E2522F38EB5C" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask nicjobro88 about The Taj Mahal Palace</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+tmhgm_bom, General Manager at The Taj Mahal Palace, responded to this review,
+<span class="res_date relativeDate" title='22 August 2014'>3 days ago</span>
+</div>
+<div class="displayText" id="response_223437089">
+Dear Guest,<br/><br/>We would like to thank you for having taken the time to share your feedback about your recent stay at The Taj Mahal Palace, Mumbai.<br/><br/>We are delighted that you chose to stay at our heritage property during your trip to Mumbai and enjoyed your stay to the fullest. <br/><br/>Your compliments about the floral decorations, service and meal experience at the Golden Dragon will be shared with our team. <br/><br/>We look forward to welcoming you back to The Taj Mahal Palace, Mumbai for another enjoyable experience.<br/><br/>Kind regards, <br/><br/><br/>Gaurav Pokhariyal<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223586954" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223586954, isGeo:false, locationid:302179})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223586954" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223586954">
+<a name="UR223586954"></a>
+<div id="UR223586954" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g304554-d302179-r223586954-The_Taj_Mahal_Palace-Mumbai_Bombay_Maharashtra.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223586954">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 3 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest,<br/><br/>We would like to thank you for having taken the time to share your feedback about your recent stay at The Taj Mahal Palace, Mumbai.<br/><br/>We are delighted that you chose to stay at our heritage property during your trip to Mumbai and enjoyed your stay to the fullest. <br/><br/>Your compliments about the floral decorations, service and meal experience at the Golden Dragon will be shared with our team. <br/><br/>We look forward to welcoming you back to The Taj Mahal Palace, Mumbai for another enjoyable experience.<br/><br/>Kind regards, <br/><br/><br/>Gaurav Pokhariyal<br/>General Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223586954_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223586954 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKdoodqHMmKXUkAqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAmkovX6XoXfXXmAmoUAv6XoXfXXmAUov3d6XoXfXXmAKU3mk6XoXfXXmk3KKAm6XoXfXXmdAdoUK6XoXfXXmdmkKvA6XoXfXXmKkodk36XoXfXXXAdAkoK6XoXfXXXkA3o3AqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAmkovXqHrGVQQoqnQQrJOQQoqnQQDJGJcQQoqnQQwJcJnVqHDpaHJSQQoqnQQ7iaHJgQQoqnQQDJGJEJtGIEJxiGIac6XoXmqoTpcXXmov3Aod0tEn1XXmov3Aod0zH1mKdood0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223586954" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223586954'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223075476">
+<a name="UR223075476"></a>
+<div id="UR223075476" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_5F39DA8843494740BD51506A909D9051-SRC_223075476" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_5F39DA8843494740BD51506A909D9051 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/82/avatar003.jpg" class="avatar potentialFacebookAvatar avatarGUID:5F39DA8843494740BD51506A909D9051" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_5F39DA8843494740BD51506A909D9051" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Sagar S</span>
+</div>
+</div>
+<div class="location">
+Bangalore
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_5F39DA8843494740BD51506A909D9051-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="7 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">7 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">7 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '5F39DA8843494740BD51506A909D9051', screenName: 'Sagar S', geos: [303884, 304554, 304551, 297609, 32717, 297628, 45992], geo: '304554' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 7 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 7 cities</span> </div>
+<div id="UID_5F39DA8843494740BD51506A909D9051-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="2 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">2 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g304554-d302179-r223075476-The_Taj_Mahal_Palace-Mumbai_Bombay_Maharashtra.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223075476">&#x201c;<span class='noQuotes'>So Much History!!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='20 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Staying in this hotel was a very different experience. Don't opt this this hotel entirely for luxuury. I had a room in the palace wing of the hotel. It was pretty nice, but not the best room I had in India,by a long shot! I also felt the AC was not too good in the corridors, as it used to get a bit hot there. The service too was very good, but not impeccable! It's not bad, but if just luxury is your foremost priority you have better options.<br/><br/>Stay in this hotel for the history!! The palace section really takes you back to a different time. There is a rustic charm all around you. I've stayed in lot of good heritage hotels in India, but this is competely different. This hotel has modern history and not some stories of kings! A very new experience. <br/><br/>They have a history tour around 5:30 PM, I highly recommend you take that. <br/>Also in the hotel's harbor bar, try there signature cocktail - 'on the harbor since 1933'. <br/>The bartender will come to your table to make it, and tell you a 10 min story about the drink's story as he is making it!!
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Palace, on the higher floors.
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed April 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223075476_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223075476 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKdoodqHMmKXUkAqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAmkovX6XoXfXXmAmoUAv6XoXfXXmAUov3d6XoXfXXmAKU3mk6XoXfXXmk3KKAm6XoXfXXmdAdoUK6XoXfXXmdmkKvA6XoXfXXmKkodk36XoXfXXXAdAkoK6XoXfXXXkA3o3AqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAmkovXqHrGVQQoqnQQrJOQQoqnQQDJGJcQQoqnQQwJcJnVqHDpaHJSQQoqnQQ7iaHJgQQoqnQQDJGJEJtGIEJxiGIac6XoXmqoTpcXXmKkodk30tEn1XXmKkodk30zH1mKdood0pSM1oqnmAxMbvvdmdAdkdK7xMoUoK3bAKAxMAKoU0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223075476" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223075476'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=5F39DA8843494740BD51506A909D9051&amp;lang=en&amp;messagetype=2&amp;d=302179&amp;geo=&amp;src=223075476&amp;t=r&amp;summary=The+Taj+Mahal+Palace" id="pm5F39DA8843494740BD51506A909D9051" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Sagar S about The Taj Mahal Palace</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+tmhgm_bom, General Manager at The Taj Mahal Palace, responded to this review,
+<span class="res_date relativeDate" title='21 August 2014'>4 days ago</span>
+</div>
+<div class="displayText" id="response_223075476">
+Dear Guest,<br/><br/>We would like to thank you for sharing your feedback with us regarding your recent stay at The Taj Mahal Palace.<br/><br/>We have noted your feedback regarding the Air Conditioning in the corridors and are working to rectify it.<br/><br/>We are glad to learn about your appreciation for the history of our heritage property, Harbour Bar’s signature cocktail experience and the heritage tour of the Hotel. <br/><br/>We hope to have the pleasure to welcome you back to The Taj Mahal Palace Mumbai soon!<br/><br/>Kind regards, <br/><br/>Gaurav Pokhariyal<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223354808" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223354808, isGeo:false, locationid:302179})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223354808" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223354808">
+<a name="UR223354808"></a>
+<div id="UR223354808" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g304554-d302179-r223354808-The_Taj_Mahal_Palace-Mumbai_Bombay_Maharashtra.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223354808">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest,<br/><br/>We would like to thank you for sharing your feedback with us regarding your recent stay at The Taj Mahal Palace.<br/><br/>We have noted your feedback regarding the Air Conditioning in the corridors and are working to rectify it.<br/><br/>We are glad to learn about your appreciation for the history of our heritage property, Harbour Bar’s signature cocktail experience and the heritage tour of the Hotel. <br/><br/>We hope to have the pleasure to welcome you back to The Taj Mahal Palace Mumbai soon!<br/><br/>Kind regards, <br/><br/>Gaurav Pokhariyal<br/>General Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223354808_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223354808 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKdoodqHMmKXUkAqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAmkovX6XoXfXXmAmoUAv6XoXfXXmAUov3d6XoXfXXmAKU3mk6XoXfXXmk3KKAm6XoXfXXmdAdoUK6XoXfXXmdmkKvA6XoXfXXmKkodk36XoXfXXXAdAkoK6XoXfXXXkA3o3AqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAmkovXqHrGVQQoqnQQrJOQQoqnQQDJGJcQQoqnQQwJcJnVqHDpaHJSQQoqnQQ7iaHJgQQoqnQQDJGJEJtGIEJxiGIac6XoXmqoTpcXXmmodvKv0tEn1XXmmodvKv0zH1mKdood0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223354808" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223354808'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222949750">
+<a name="UR222949750"></a>
+<div id="UR222949750" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_5023E45C6248FD4615250E724FDC1E85-SRC_222949750" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_5023E45C6248FD4615250E724FDC1E85 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/78/avatar059.jpg" class="avatar potentialFacebookAvatar avatarGUID:5023E45C6248FD4615250E724FDC1E85" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_5023E45C6248FD4615250E724FDC1E85" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Sidkishore</span>
+</div>
+</div>
+<div class="location">
+Miami, Florida
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_5023E45C6248FD4615250E724FDC1E85-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="27 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">27 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">21 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '5023E45C6248FD4615250E724FDC1E85', screenName: 'Sidkishore', geos: [318895, 295424, 293974, 34438, 1162449, 297988, 297668, 304555, 304554, 319729, 304551, 297983, 951923, 293986], geo: '304554' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 14 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 14 cities</span> </div>
+<div id="UID_5023E45C6248FD4615250E724FDC1E85-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="19 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">19 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g304554-d302179-r222949750-The_Taj_Mahal_Palace-Mumbai_Bombay_Maharashtra.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222949750">&#x201c;<span class='noQuotes'>Once in a lifetime experience !</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='19 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Don't miss this, if you travel to mumbai. This is by far one of the top hotels of india.<br/>There are 2 wings, old palace and the new wing.<br/>Palace side is where I will recommend you to stay.<br/>Taj always makes you feel like home. This is part of the chain of hotels run by india's most trusted groups : the Tata group ( around 150 billion $ group)<br/><br/>This is a royal experience. <br/>
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed February 2014, travelled on business</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222949750_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222949750 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKdoodqHMmKXUkAqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAmkovX6XoXfXXmAmoUAv6XoXfXXmAUov3d6XoXfXXmAKU3mk6XoXfXXmk3KKAm6XoXfXXmdAdoUK6XoXfXXmdmkKvA6XoXfXXmKkodk36XoXfXXXAdAkoK6XoXfXXXkA3o3AqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAmkovXqHrGVQQoqnQQrJOQQoqnQQDJGJcQQoqnQQwJcJnVqHDpaHJSQQoqnQQ7iaHJgQQoqnQQDJGJEJtGIEJxiGIac6XoXmqoTpcXXXAdAkoK0tEn1XXXAdAkoK0zH1mKdood0pSM1oKXmzsdof3XdvqnxMd3UoXoKzskXdqnxMfUzsvo0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222949750" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222949750'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/Sidkishore/g304554" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 5 reviews by Sidkishore for Mumbai </a>
+</div>
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=5023E45C6248FD4615250E724FDC1E85&amp;lang=en&amp;messagetype=2&amp;d=302179&amp;geo=&amp;src=222949750&amp;t=r&amp;summary=The+Taj+Mahal+Palace" id="pm5023E45C6248FD4615250E724FDC1E85" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Sidkishore about The Taj Mahal Palace</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+tmhgm_bom, General Manager at The Taj Mahal Palace, responded to this review,
+<span class="res_date relativeDate" title='21 August 2014'>4 days ago</span>
+</div>
+<div class="displayText" id="response_222949750">
+Dear Guest,<br/><br/>We would like to thank you for taking the time to share your experience at The Taj Mahal Palace, Mumbai with us. <br/><br/>We are delighted to hear that we managed to “make you feel at home” with our dedicated and personalized services.<br/><br/>We look forward of welcoming you back soon for another “royal experience” !<br/><br/>Kind regards, <br/><br/><br/>Gaurav Pokhariyal<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223313566" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223313566, isGeo:false, locationid:302179})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223313566" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223313566">
+<a name="UR223313566"></a>
+<div id="UR223313566" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g304554-d302179-r223313566-The_Taj_Mahal_Palace-Mumbai_Bombay_Maharashtra.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223313566">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest,<br/><br/>We would like to thank you for taking the time to share your experience at The Taj Mahal Palace, Mumbai with us. <br/><br/>We are delighted to hear that we managed to “make you feel at home” with our dedicated and personalized services.<br/><br/>We look forward of welcoming you back soon for another “royal experience” !<br/><br/>Kind regards, <br/><br/><br/>Gaurav Pokhariyal<br/>General Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223313566_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223313566 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKdoodqHMmKXUkAqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAmkovX6XoXfXXmAmoUAv6XoXfXXmAUov3d6XoXfXXmAKU3mk6XoXfXXmk3KKAm6XoXfXXmdAdoUK6XoXfXXmdmkKvA6XoXfXXmKkodk36XoXfXXXAdAkoK6XoXfXXXkA3o3AqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAmkovXqHrGVQQoqnQQrJOQQoqnQQDJGJcQQoqnQQwJcJnVqHDpaHJSQQoqnQQ7iaHJgQQoqnQQDJGJEJtGIEJxiGIac6XoXmqoTpcXXmmUmo330tEn1XXmmUmo330zH1mKdood0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223313566" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223313566'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222796569">
+<a name="UR222796569"></a>
+<div id="UR222796569" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_BA815F7FC66F0E86B6BA7A8C06C64642-SRC_222796569" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_BA815F7FC66F0E86B6BA7A8C06C64642 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/83/avatar004.jpg" class="avatar potentialFacebookAvatar avatarGUID:BA815F7FC66F0E86B6BA7A8C06C64642" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_BA815F7FC66F0E86B6BA7A8C06C64642" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">roundtheworld53</span>
+</div>
+</div>
+<div class="location">
+Dublin, Ireland
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_BA815F7FC66F0E86B6BA7A8C06C64642-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="30 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">30 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_3rd sprite-badge_hotels_3rd" width="25" height="24">
+<span class="badgeText">25 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'BA815F7FC66F0E86B6BA7A8C06C64642', screenName: 'roundtheworld53', geos: [188590, 187782, 315902, 635607, 608666, 190356, 983265, 186338, 188671, 186643, 34300, 189158, 194683, 189156, 274772, 665810, 186616, 190441, 304555, 212091, 304554, 562814, 304551, 187497, 189112, 34515, 189117], geo: '304554' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 27 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 27 cities</span> </div>
+<div id="UID_BA815F7FC66F0E86B6BA7A8C06C64642-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="20 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">20 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g304554-d302179-r222796569-The_Taj_Mahal_Palace-Mumbai_Bombay_Maharashtra.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222796569">&#x201c;<span class='noQuotes'>Amazing </span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='19 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+We stayed here on our last night in India and only wish we stayed longer!This hotel is amazing, great location, great choice for breakfast and staff are so helpful. They made us feel so welcome and despite the large numbers who stay here. when we checked in we were made feel like the only guests which you don't often get in larger hotels!They also allowed us a late checkout which was great!<br/>The pool area is lovely it gets the sun all day but there is also plenty of shade if that's what you need. We will be back for longer on our next trip!
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed April 2014, travelled as a couple</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222796569_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222796569 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKdoodqHMmKXUkAqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAmkovX6XoXfXXmAmoUAv6XoXfXXmAUov3d6XoXfXXmAKU3mk6XoXfXXmk3KKAm6XoXfXXmdAdoUK6XoXfXXmdmkKvA6XoXfXXmKkodk36XoXfXXXAdAkoK6XoXfXXXkA3o3AqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAmkovXqHrGVQQoqnQQrJOQQoqnQQDJGJcQQoqnQQwJcJnVqHDpaHJSQQoqnQQ7iaHJgQQoqnQQDJGJEJtGIEJxiGIac6XoXmqoTpcXXXkA3o3A0tEn1XXXkA3o3A0zH1mKdood0pSM17bvUoqnkqnf33qnKzsv3737bkbvfK3f3d3dX0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222796569" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222796569'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=BA815F7FC66F0E86B6BA7A8C06C64642&amp;lang=en&amp;messagetype=2&amp;d=302179&amp;geo=&amp;src=222796569&amp;t=r&amp;summary=The+Taj+Mahal+Palace" id="pmBA815F7FC66F0E86B6BA7A8C06C64642" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask roundtheworld53 about The Taj Mahal Palace</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+tmhgm_bom, General Manager at The Taj Mahal Palace, responded to this review,
+<span class="res_date relativeDate" title='21 August 2014'>4 days ago</span>
+</div>
+<div class="displayText" id="response_222796569">
+Dear Guest,<br/><br/>We would like to thank you for taking the time to share your experience at The Taj Mahal Palace Mumbai, with us. <br/><br/>We are glad to learn that you enjoyed the location, choices available at breakfast and personalized service. <br/><br/>We look forward to welcoming you back soon for some more relaxing time at our lovely pool area. <br/><br/>Kind regards, <br/><br/><br/>Gaurav Pokhariyal<br/>General Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223312545" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223312545, isGeo:false, locationid:302179})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223312545" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223312545">
+<a name="UR223312545"></a>
+<div id="UR223312545" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g304554-d302179-r223312545-The_Taj_Mahal_Palace-Mumbai_Bombay_Maharashtra.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223312545">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Guest,<br/><br/>We would like to thank you for taking the time to share your experience at The Taj Mahal Palace Mumbai, with us. <br/><br/>We are glad to learn that you enjoyed the location, choices available at breakfast and personalized service. <br/><br/>We look forward to welcoming you back soon for some more relaxing time at our lovely pool area. <br/><br/>Kind regards, <br/><br/><br/>Gaurav Pokhariyal<br/>General Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223312545_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223312545 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymKdoodqHMmKXUkAqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmAmkovX6XoXfXXmAmoUAv6XoXfXXmAUov3d6XoXfXXmAKU3mk6XoXfXXmk3KKAm6XoXfXXmdAdoUK6XoXfXXmdmkKvA6XoXfXXmKkodk36XoXfXXXAdAkoK6XoXfXXXkA3o3AqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmAmkovXqHrGVQQoqnQQrJOQQoqnQQDJGJcQQoqnQQwJcJnVqHDpaHJSQQoqnQQ7iaHJgQQoqnQQDJGJEJtGIEJxiGIac6XoXmqoTpcXXmmUXodo0tEn1XXmmUXodo0zH1mKdood0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223312545" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223312545'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>

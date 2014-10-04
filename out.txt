@@ -1,0 +1,247 @@
+City file =  sample_cities.txt
+Output file =  trip_advisor_reviews.txt
+Istanbul, Turkey started!
+1) Searching for the hotels page for  Istanbul  in state  Turkey
+('city search url: ', 'http://www.tripadvisor.com/Search?q=Istanbul%2C+Turkey&sub-search=SEARCH&geo=&returnTo=__2F__')
+('path: ', 'Webpages/TA/')
+('Filename: ', 'citySearch_city-Istanbul_state-Turkey.html')
+Webpages/TA//citySearch_city-Istanbul_state-Turkey.html
+Downloading URL :  http://www.tripadvisor.com/Search?q=Istanbul%2C+Turkey&sub-search=SEARCH&geo=&returnTo=__2F__  to file:  Webpages/TA//citySearch_city-Istanbul_state-Turkey.html
+('url to open: ', 'http://www.tripadvisor.com/Search?q=Istanbul%2C+Turkey&sub-search=SEARCH&geo=&returnTo=__2F__')
+after response1
+('hotel page list: ', 'Hotels-g293974-Istanbul-Hotels.html')
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-Istanbul-Hotels.html')
+after response1
+('num pages: ', 31)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974--Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974--Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974--Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974--Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974--Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa30-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa30-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa30-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa30-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa30-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa60-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa60-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa60-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa60-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa60-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa90-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa90-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa90-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa90-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa90-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa120-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa120-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa120-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa120-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa120-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa150-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa150-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa150-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa150-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa150-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa180-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa180-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa180-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa180-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa180-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa210-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa210-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa210-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa210-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa210-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa240-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa240-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa240-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa240-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa240-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa270-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa270-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa270-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa270-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa270-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa300-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa300-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa300-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa300-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa300-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa330-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa330-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa330-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa330-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa330-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa360-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa360-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa360-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa360-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa360-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa390-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa390-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa390-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa390-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa390-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa420-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa420-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa420-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa420-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa420-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa450-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa450-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa450-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa450-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa450-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa480-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa480-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa480-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa480-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa480-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa510-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa510-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa510-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa510-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa510-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa540-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa540-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa540-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa540-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa540-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa570-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa570-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa570-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa570-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa570-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa600-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa600-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa600-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa600-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa600-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa630-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa630-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa630-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa630-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa630-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa660-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa660-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa660-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa660-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa660-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa690-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa690-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa690-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa690-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa690-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa720-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa720-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa720-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa720-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa720-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa750-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa750-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa750-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa750-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa750-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa780-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa780-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa780-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa780-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa780-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa810-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa810-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa810-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa810-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa810-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa840-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa840-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa840-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa840-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa840-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa870-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa870-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa870-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa870-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa870-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 30)
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotels-g293974-oa900-Istanbul-Hotels.html')
+Webpages/TA//Hotels-g293974-oa900-Istanbul-Hotels.html
+Downloading URL :  http://www.tripadvisor.com/Hotels-g293974-oa900-Istanbul-Hotels.html  to file:  Webpages/TA//Hotels-g293974-oa900-Istanbul-Hotels.html
+('url to open: ', 'http://www.tripadvisor.com/Hotels-g293974-oa900-Istanbul-Hotels.html')
+after response1
+('Total hotel urls parsed: ', 24)
+('Total TA Hotels: ', 924)
+('length of hotel urls: ', 924)
+('checking for url: ', 0, ' : ', 'Hotel_Review-g293974-d2158116-Reviews-Neorion_Hotel-Istanbul.html')
+('5) Getting reviews for hotel ', 'Hotel_Review-g293974-d2158116-Reviews-Neorion_Hotel-Istanbul.html')
+('path: ', 'Webpages/TA/')
+('Filename: ', 'Hotel_Review-g293974-d2158116-Reviews-Neorion_Hotel-Istanbul.html')
+Webpages/TA//Hotel_Review-g293974-d2158116-Reviews-Neorion_Hotel-Istanbul.html
+Downloading URL :  http://www.tripadvisor.com/Hotel_Review-g293974-d2158116-Reviews-Neorion_Hotel-Istanbul.html  to file:  Webpages/TA//Hotel_Review-g293974-d2158116-Reviews-Neorion_Hotel-Istanbul.html
+('url to open: ', 'http://www.tripadvisor.com/Hotel_Review-g293974-d2158116-Reviews-Neorion_Hotel-Istanbul.html')
+after response1
+('total pages: ', 195)

@@ -1,0 +1,1278 @@
+<div id="expanded_review_223963725">
+<a name="UR223963725"></a>
+<div id="UR223963725" class="extended provider0 first newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_D3A10069445528ADD711CAC40C4E0040-SRC_223963725" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_D3A10069445528ADD711CAC40C4E0040 ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: 'D3A10069445528ADD711CAC40C4E0040'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-f/06/6c/20/79/adriennejw.jpg" class="avatar potentialFacebookAvatar avatarGUID:D3A10069445528ADD711CAC40C4E0040" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_D3A10069445528ADD711CAC40C4E0040" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">AdrienneJW</span>
+</div>
+</div>
+<div class="location">
+Toronto, Canada
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_D3A10069445528ADD711CAC40C4E0040-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="8 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">8 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">5 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'D3A10069445528ADD711CAC40C4E0040', screenName: 'AdrienneJW', geos: [60872, 60814, 609129, 54171, 54283], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 5 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 5 cities</span> </div>
+<div id="UID_D3A10069445528ADD711CAC40C4E0040-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="9 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">9 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d111582-r223963725-Four_Seasons_Resort_Hualalai_at_Historic_Ka_upulehu-Kailua_Kona_Island_of_Hawaii_H.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223963725">&#x201c;<span class='noQuotes'>Very romantic and relaxing - great for honeymooning</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 3 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+You get what you pay for at the four seasons. It's expensive but the property is designed like a little village with tons of lush trees surrounding it. The ocean is right there and turtles come right up to the beach everyday to sleep. The breakfast is awesome. They gave us free little snacks in our room a couple of the nights - local goat cheese and taro crackers, champagne. I should mention we were there during the hurricane and they provided a complimentary buffet dinner, packed lunches and breakfast for the next day - they were really great. I really have no complaints. You pay a lot, but they treat you like you paid a lot. My biggest pet peeve in travelling is paying a lot but feeling ignored or like a second class citizen. This is first class all the way. Saving up to return!
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> If you want more quiet get a room near the lagoon but be prepared for a walk to the amenities. If yo...
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223963725_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223963725 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMUUUovXqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmA3mkXo6XoXfXXmvkkXXm6XoXfXXm3oUKv36XoXfXXmd3m33d6XoXfXXX3dm3Km6XoXfXXXomdkvX6XoXfXXXoX3Akm6XoXfXXXddUUUk6XoXfXXXm3Uddd6XoXfXXUAK3oodqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmA3mkXoqHqnipEQQoqnQQhVJtiCtQQoqnQQeVtiEIQQoqnQQ5pJcJcJSQQoqnQQJIQQoqnQQ5StIiESnQQoqnQQxbJQQoqnQQp2pcVGpqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXmA3mkXo0tEn1XXmA3mkXo0zH13KvkX0pSM1xMmbUKK3AddooXvbxMxMkUUfbfdKfdzsKKdK0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223963725" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223963725'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '111582', 'AdrienneJW', 'D3A10069445528ADD711CAC40C4E0040', 'en', '223963725', 'Four Seasons Resort Hualalai at Historic Ka\'upulehu');">Ask AdrienneJW about Four Seasons Resort Hualalai at Historic Ka&#39;upulehu</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_223877223">
+<a name="UR223877223"></a>
+<div id="UR223877223" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_BB708E8F8AC52883D53BF7A455980C56-SRC_223877223" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_BB708E8F8AC52883D53BF7A455980C56 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9a/avatar026.jpg" class="avatar potentialFacebookAvatar avatarGUID:BB708E8F8AC52883D53BF7A455980C56" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_BB708E8F8AC52883D53BF7A455980C56" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">VirginiaFamily03</span>
+</div>
+</div>
+<div class="location">
+Virginia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_BB708E8F8AC52883D53BF7A455980C56-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="14 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">14 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">7 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'BB708E8F8AC52883D53BF7A455980C56', screenName: 'VirginiaFamily03', geos: [150812, 60872, 186534, 609129, 147399, 58277, 1096491, 147266, 186543, 58060, 57821], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 11 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 11 cities</span> </div>
+<div id="UID_BB708E8F8AC52883D53BF7A455980C56-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="17 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">17 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d111582-r223877223-Four_Seasons_Resort_Hualalai_at_Historic_Ka_upulehu-Kailua_Kona_Island_of_Hawaii_H.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223877223">&#x201c;<span class='noQuotes'>Great Property, Very Expensive</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='23 August 2014'>Reviewed 3 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Our 3-member family traveled to the Four Seasons in August 2014, just missing the two hurricanes that hit Hawaii during this time. We had a great time at this resort, although it is very expensive. Breakfast at the only breakfast place on the property was $100 for the 3 of us (including a 9-year old), lunch at the couple of restaurants was $150 for the 3 of us, and dinner was $200 to $300 depending on wine/desserts. Unfortunately the resort is not near any restaurants or shopping centers so you are a captive audience at this resort. Our room was $1,500 a night (including taxes) and that was not a suite. Service was very good and employees were very friendly. Also very close to airport (10-minute drive).
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss20" src="http://c1.tacdn.com/img2/x.gif" alt="2 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223877223_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223877223 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMUUUovXqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmA3mkXo6XoXfXXmvkkXXm6XoXfXXm3oUKv36XoXfXXmd3m33d6XoXfXXX3dm3Km6XoXfXXXomdkvX6XoXfXXXoX3Akm6XoXfXXXddUUUk6XoXfXXXm3Uddd6XoXfXXUAK3oodqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmA3mkXoqHqnipEQQoqnQQhVJtiCtQQoqnQQeVtiEIQQoqnQQ5pJcJcJSQQoqnQQJIQQoqnQQ5StIiESnQQoqnQQxbJQQoqnQQp2pcVGpqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXmvkkXXm0tEn1XXmvkkXXm0zH13KvkX0pSM177kKvzsvqnvbfoXvvmxMom7qnkbdooAvKfo30EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223877223" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223877223'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '111582', 'VirginiaFamily03', 'BB708E8F8AC52883D53BF7A455980C56', 'en', '223877223', 'Four Seasons Resort Hualalai at Historic Ka\'upulehu');">Ask VirginiaFamily03 about Four Seasons Resort Hualalai at Historic Ka&#39;upulehu</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223651086">
+<a name="UR223651086"></a>
+<div id="UR223651086" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_BD9EDE702AA8D943384D42068FC91058-SRC_223651086" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_BD9EDE702AA8D943384D42068FC91058 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/8a/avatar011.jpg" class="avatar potentialFacebookAvatar avatarGUID:BD9EDE702AA8D943384D42068FC91058" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_BD9EDE702AA8D943384D42068FC91058" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Rui M</span>
+</div>
+</div>
+<div class="location">
+Lisbon, Portugal
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_BD9EDE702AA8D943384D42068FC91058-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="42 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">42 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">13 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'BD9EDE702AA8D943384D42068FC91058', screenName: 'Rui M', geos: [34067, 189158, 60872, 187147, 187791, 294217, 303506, 33052, 295424, 34439, 1066444, 1190869, 227947, 32655, 1066451, 294265, 187497, 311415, 312741], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 19 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 19 cities</span> </div>
+<div id="UID_BD9EDE702AA8D943384D42068FC91058-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="15 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">15 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d111582-r223651086-Four_Seasons_Resort_Hualalai_at_Historic_Ka_upulehu-Kailua_Kona_Island_of_Hawaii_H.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223651086">&#x201c;<span class='noQuotes'>Fantastic top resort in Hawai</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+this resort is located in Big Island Hawai and no doubt that Four Seasons has done a fantastic job transforming this &quot;lava&quot; location in the best resort in Hawai and for sure one of the best worldwide. I am sure $$$$$$$ USD have been invested here. For those that are used to FS hotels and resorts this one in Kona is at the top 5 for sure (and I have stayed before in the FS Bora Bora and FS Maldivies). The resort has a good balance beetween couples and families and if you do not want to be distrub you have an adults pool and pleanty of space in the resort also for golfers you have your own golf course in the resort. The service is at the top offer by FS and the dinning option are excelent (my wife prefered the ULU restaurant for its location, 10 meters for the sea, and the tasting food, specialy the local Poke). The rooms are spacious and the gardens well treated. the beach are were you can swimming is not immense but you can always find a small turtle swimming along side with you. The sea water is clear and clean.Of course you cannot have budget constrains to relax at FS Hualalai but definately is one of the best FS beach resorts.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> ask for a room with sea view.
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223651086_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223651086 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMUUUovXqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmA3mkXo6XoXfXXmvkkXXm6XoXfXXm3oUKv36XoXfXXmd3m33d6XoXfXXX3dm3Km6XoXfXXXomdkvX6XoXfXXXoX3Akm6XoXfXXXddUUUk6XoXfXXXm3Uddd6XoXfXXUAK3oodqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmA3mkXoqHqnipEQQoqnQQhVJtiCtQQoqnQQeVtiEIQQoqnQQ5pJcJcJSQQoqnQQJIQQoqnQQ5StIiESnQQoqnQQxbJQQoqnQQp2pcVGpqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXm3oUKv30tEn1XXm3oUKv30zH13KvkX0pSM17xMAzsxMzskKXbbvxMAdmmvdxMdXK3vqnfAUKov0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223651086" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223651086'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '111582', 'Rui M', 'BD9EDE702AA8D943384D42068FC91058', 'en', '223651086', 'Four Seasons Resort Hualalai at Historic Ka\'upulehu');">Ask Rui M about Four Seasons Resort Hualalai at Historic Ka&#39;upulehu</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223463664">
+<a name="UR223463664"></a>
+<div id="UR223463664" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_B4DE24B4FE80D78B429473EB228315C2-SRC_223463664" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_B4DE24B4FE80D78B429473EB228315C2 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/04/5b/79/d8/buffy14322.jpg" class="avatar potentialFacebookAvatar avatarGUID:B4DE24B4FE80D78B429473EB228315C2" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_B4DE24B4FE80D78B429473EB228315C2" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">buffy14322</span>
+</div>
+</div>
+<div class="location">
+buffy14322
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_B4DE24B4FE80D78B429473EB228315C2-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d111582-r223463664-Four_Seasons_Resort_Hualalai_at_Historic_Ka_upulehu-Kailua_Kona_Island_of_Hawaii_H.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223463664">&#x201c;<span class='noQuotes'>our happy place</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+We have now stayed here three times (fall 2011,2012, and 2013) and have planned our return trip for November of 2014. Each year we contemplate going somewhere new but end up deciding there really isn't anything else we enjoy more than returning to hualalai. From the moment we arrive at the airport and the staff is waiting to assist with bags from the moment we leave and they are waving goodbye we feel completely relaxed and taken care of. <br/><br/>We have stayed in the golf ocean room, a golf ocean suite and a pool side room and there really isnt a bad spot on the property just different perspectives. Would recommend the golf ocean or palm grove for privacy although the golf ocean is a slightly longer walk to most of the pools and restaurants. <br/><br/> There isn't enough praise I could give to the staff including front desk, golf shop, pool, restaurant and housekeeping. Everyone has been flawless and attentive without being overbearing. They seem to truly want to accommodate your requests. If you are thinking about going, just book it. It's worth every penny. There is nothing better than sitting at the beach tree with a glass of wine watching the sun go down hearing the hawaiian band. Its our happy place and we are counting down the days until we return.
+</p>
+</div>
+<div class="media  thumbCols3">
+<div class="thumbnails">
+<div class="photosInline">
+<ul>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g60872-d111582-i107704553-r223463664-Four_Seasons_Resort_Hualalai_at_Historic_Ka_upulehu-Kailua_Kona.html#107704553 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 111582, 60872, 2, 107704553);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/6b/70/e9/four-seasons-resort-hualalai.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g60872-d111582-i107704537-r223463664-Four_Seasons_Resort_Hualalai_at_Historic_Ka_upulehu-Kailua_Kona.html#107704537 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 111582, 60872, 2, 107704537);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/6b/70/d9/four-seasons-resort-hualalai.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g60872-d111582-i107704521-r223463664-Four_Seasons_Resort_Hualalai_at_Historic_Ka_upulehu-Kailua_Kona.html#107704521 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 111582, 60872, 2, 107704521);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/6b/70/c9/four-seasons-resort-hualalai.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g60872-d111582-i107704543-r223463664-Four_Seasons_Resort_Hualalai_at_Historic_Ka_upulehu-Kailua_Kona.html#107704543 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 111582, 60872, 2, 107704543);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/6b/70/df/four-seasons-resort-hualalai.jpg" alt="" width="50" height="50">
+</span>
+</li>
+</ul>
+</div> </div> </div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed November 2013, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223463664_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223463664 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMUUUovXqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmA3mkXo6XoXfXXmvkkXXm6XoXfXXm3oUKv36XoXfXXmd3m33d6XoXfXXX3dm3Km6XoXfXXXomdkvX6XoXfXXXoX3Akm6XoXfXXXddUUUk6XoXfXXXm3Uddd6XoXfXXUAK3oodqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmA3mkXoqHqnipEQQoqnQQhVJtiCtQQoqnQQeVtiEIQQoqnQQ5pJcJcJSQQoqnQQJIQQoqnQQ5StIiESnQQoqnQQxbJQQoqnQQp2pcVGpqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXmd3m33d0tEn1XXmd3m33d0zH13KvkX0pSM17dxMzsXd7dqnzsvKxMkv7dXAdkmzs7XXvmUofX0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223463664" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223463664'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '111582', 'buffy14322', 'B4DE24B4FE80D78B429473EB228315C2', 'en', '223463664', 'Four Seasons Resort Hualalai at Historic Ka\'upulehu');">Ask buffy14322 about Four Seasons Resort Hualalai at Historic Ka&#39;upulehu</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222643603">
+<a name="UR222643603"></a>
+<div id="UR222643603" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_18D85F363111DD9EE582F96874B76EAF-SRC_222643603" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_18D85F363111DD9EE582F96874B76EAF ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-o/06/03/f1/ed/emily-j.jpg" class="avatar potentialFacebookAvatar avatarGUID:18D85F363111DD9EE582F96874B76EAF" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_18D85F363111DD9EE582F96874B76EAF" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Emily J</span>
+</div>
+</div>
+<div class="location">
+Chicago, Illinois
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_18D85F363111DD9EE582F96874B76EAF-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Top Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="84 reviews" class="icon badge_topcontributor sprite-badge_topcontributor" width="25" height="24">
+<span class="badgeText">84 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">6 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '18D85F363111DD9EE582F96874B76EAF', screenName: 'Emily J', geos: [60634, 60872, 187147, 186346, 60625, 147341, 186338, 186605, 147339, 60628, 60612], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 11 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 11 cities</span> </div>
+<div id="UID_18D85F363111DD9EE582F96874B76EAF-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="12 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">12 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d111582-r222643603-Four_Seasons_Resort_Hualalai_at_Historic_Ka_upulehu-Kailua_Kona_Island_of_Hawaii_H.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222643603">&#x201c;<span class='noQuotes'>An easy five stars</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='18 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+How can you NOT give this 5 stars? It deserves at least 10 in my book. The resort has everything you can possibly imagine, and more. I have stayed in the resort itself and also in a private residence within the resort. I enjoyed the amenities offered by the Four Seasons at both. I would recommend going to the quiet pool for some nice rest and recovery. Just be warned that by quiet they mean silent and you will be asked to leave and go to the less quiet pool if you have a conversation. They take quiet seriously! I love it here and cannot wait to go back again.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed December 2013, travelled with friends</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222643603_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222643603 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMUUUovXqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmA3mkXo6XoXfXXmvkkXXm6XoXfXXm3oUKv36XoXfXXmd3m33d6XoXfXXX3dm3Km6XoXfXXXomdkvX6XoXfXXXoX3Akm6XoXfXXXddUUUk6XoXfXXXm3Uddd6XoXfXXUAK3oodqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmA3mkXoqHqnipEQQoqnQQhVJtiCtQQoqnQQeVtiEIQQoqnQQ5pJcJcJSQQoqnQQJIQQoqnQQ5StIiESnQQoqnQQxbJQQoqnQQp2pcVGpqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXX3dm3Km0tEn1XXX3dm3Km0zH13KvkX0pSM1UvxMvoqnm3mUUUxMxMAzszsovXqnA3vkd7k3zsbqn0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222643603" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222643603'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/81emilyj/g60872" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 6 reviews by Emily J for Kailua-Kona </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '111582', 'Emily J', '18D85F363111DD9EE582F96874B76EAF', 'en', '222643603', 'Four Seasons Resort Hualalai at Historic Ka\'upulehu');">Ask Emily J about Four Seasons Resort Hualalai at Historic Ka&#39;upulehu</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Rheba C, Executive Office at Four Seasons Resort Hualalai at Historic Ka&#39;upulehu, responded to this review,
+<span class="res_date relativeDate" title='22 August 2014'>5 days ago</span>
+</div>
+<div class="displayText" id="response_222643603">
+Greetings from Hualalai!<br/><br/>And we cannot wait to welcome you back! This beautiful resort has a place for everyone - kids playing in the Sea Shell pool, families snorkeling in King's Pond and people looking for peace and quiet happily sitting at the Palm Grove pool. I am so happy you love it here - hurry back!<br/><br/>With tons of aloha,<br/><br/>Rheba Crane<br/>Executive Administrative Assistant
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223525853" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223525853, isGeo:false, locationid:111582})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223525853" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223525853">
+<a name="UR223525853"></a>
+<div id="UR223525853" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d111582-r223525853-Four_Seasons_Resort_Hualalai_at_Historic_Ka_upulehu-Kailua_Kona_Island_of_Hawaii_H.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223525853">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Greetings from Hualalai!<br/><br/>And we cannot wait to welcome you back! This beautiful resort has a place for everyone - kids playing in the Sea Shell pool, families snorkeling in King's Pond and people looking for peace and quiet happily sitting at the Palm Grove pool. I am so happy you love it here - hurry back!<br/><br/>With tons of aloha,<br/><br/>Rheba Crane<br/>Executive Administrative Assistant
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223525853_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223525853 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMUUUovXqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmA3mkXo6XoXfXXmvkkXXm6XoXfXXm3oUKv36XoXfXXmd3m33d6XoXfXXX3dm3Km6XoXfXXXomdkvX6XoXfXXXoX3Akm6XoXfXXXddUUUk6XoXfXXXm3Uddd6XoXfXXUAK3oodqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmA3mkXoqHqnipEQQoqnQQhVJtiCtQQoqnQQeVtiEIQQoqnQQ5pJcJcJSQQoqnQQJIQQoqnQQ5StIiESnQQoqnQQxbJQQoqnQQp2pcVGpqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXmoXovom0tEn1XXmoXovom0zH13KvkX0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223525853" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223525853'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222534782">
+<a name="UR222534782"></a>
+<div id="UR222534782" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_E884BFD6EE676D2AB49608CE6C52B738-SRC_222534782" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_E884BFD6EE676D2AB49608CE6C52B738 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/97/avatar023.jpg" class="avatar potentialFacebookAvatar avatarGUID:E884BFD6EE676D2AB49608CE6C52B738" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_E884BFD6EE676D2AB49608CE6C52B738" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Endless Summer L</span>
+</div>
+</div>
+<div class="location">
+San Diego, California
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_E884BFD6EE676D2AB49608CE6C52B738-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="16 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">16 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">9 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'E884BFD6EE676D2AB49608CE6C52B738', screenName: 'Endless Summer L', geos: [60872, 32588, 31350, 60724, 1509268, 33191, 33156, 31352, 33045, 32578], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 10 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 10 cities</span> </div>
+<div id="UID_E884BFD6EE676D2AB49608CE6C52B738-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="7 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">7 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d111582-r222534782-Four_Seasons_Resort_Hualalai_at_Historic_Ka_upulehu-Kailua_Kona_Island_of_Hawaii_H.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222534782">&#x201c;<span class='noQuotes'>Wonderful in every way!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='18 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+I have been to this property twice and everything about it is perfection. Though the Big Island is not my favorite Hawaiian island, the Four Seasons Resort Haulalai is a show stopper! The pools, the beach, the restaurants, the spa, and of course the staff, are wonderful. When I am stressed out and tightly wound, I still close my eyes and think of this property and the absolutely relaxing and peaceful time that I had there!
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed February 2014, travelled with friends</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222534782_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222534782 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMUUUovXqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmA3mkXo6XoXfXXmvkkXXm6XoXfXXm3oUKv36XoXfXXmd3m33d6XoXfXXX3dm3Km6XoXfXXXomdkvX6XoXfXXXoX3Akm6XoXfXXXddUUUk6XoXfXXXm3Uddd6XoXfXXUAK3oodqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmA3mkXoqHqnipEQQoqnQQhVJtiCtQQoqnQQeVtiEIQQoqnQQ5pJcJcJSQQoqnQQJIQQoqnQQ5StIiESnQQoqnQQxbJQQoqnQQp2pcVGpqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXXomdkvX0tEn1XXXomdkvX0zH13KvkX0pSM1zsvvd7qnxM3zszs3k3xMXb7dA3Kvfzs3foX7kmv0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222534782" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222534782'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '111582', 'Endless Summer L', 'E884BFD6EE676D2AB49608CE6C52B738', 'en', '222534782', 'Four Seasons Resort Hualalai at Historic Ka\'upulehu');">Ask Endless Summer L about Four Seasons Resort Hualalai at Historic Ka&#39;upulehu</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222526973">
+<a name="UR222526973"></a>
+<div id="UR222526973" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_67B9EC604AB1114FF3D6F79D9EA46061-SRC_222526973" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_67B9EC604AB1114FF3D6F79D9EA46061 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/03/c2/ae/e2/irene-f.jpg" class="avatar potentialFacebookAvatar avatarGUID:67B9EC604AB1114FF3D6F79D9EA46061" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_67B9EC604AB1114FF3D6F79D9EA46061" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Irene F</span>
+</div>
+</div>
+<div class="location">
+Kennewick, Washington
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_67B9EC604AB1114FF3D6F79D9EA46061-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="7 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">7 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">3 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '67B9EC604AB1114FF3D6F79D9EA46061', screenName: 'Irene F', geos: [60872, 52024, 52026, 35418, 52072, 60626, 311415], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 7 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 7 cities</span> </div>
+<div id="UID_67B9EC604AB1114FF3D6F79D9EA46061-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="12 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">12 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d111582-r222526973-Four_Seasons_Resort_Hualalai_at_Historic_Ka_upulehu-Kailua_Kona_Island_of_Hawaii_H.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222526973">&#x201c;<span class='noQuotes'>Beautiful resort..but..</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='18 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+We stayed here with our 13yo son for a week and enjoyed the beautiful room (and outdoor shower--although a resident bee kept us out of it for the next 3 days) and amenities (laundry rooms conveniently located! loved that), great food, gorgeous ocean view, and friendly, hospitable staff. The resort is spacious enough that we never had to scramble for lounge chairs, never felt claustrophobic. We had a good time, no doubt. The &quot;but&quot; part here is that we had previously stayed at the Four Seasons Bora Bora, and we expected the same flawless experience, which it wasn't. The Kona version had a little more &quot;harried&quot; atmosphere, especially for breakfast, where the hostess never remembered us and kept on asking &quot;How many in the group?&quot; when it was the same 3 people standing in front of her daily for a week. The sunset viewing in front of the Beach Tree restaurant was chaotic--- kids and adults playing catch in front of diners, and I would hold my breath hoping their balls wouldn't knock out the nightly ukelele singer. <br/><br/>So I don't think it is the hotel's &quot;fault&quot; it has a different &quot;vibe&quot; as much as it is the fact that our expectations for what we were paying for were a lot different, and thus not met ; the bar was set so high previously. Might be because this resort is more accessible than Four Seasons Bora Bora, so it is is a lot more packed, a little rowdier, with a lot more kids running around. The staff in Tahiti seemed genuinely relaxed. Always remembered us! They even gave us a little bag to pack our breakfast leftovers for our snorkeling trip later in the day; in Kona, we got a polite but still somewhat condescending look and a suggestion :&quot;you can order a sandwich to go&quot;. For about the same price, I think we probably should have gone back to Bora Bora ! But don't get me wrong---this is a great resort, food was always wonderful ( we ate in all their restaurants). You just have to know what to expect.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Choose the rooms that are in the vicinity of the adults-only pool -- a lot quieter!
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="media  thumbCols1">
+<div class="thumbnails">
+<div class="photosInline">
+<ul>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g60872-d111582-i107390497-r222526973-Four_Seasons_Resort_Hualalai_at_Historic_Ka_upulehu-Kailua_Kona.html#107390497 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 111582, 60872, 2, 107390497);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/66/a6/21/four-seasons-resort-hualalai.jpg" alt="" width="50" height="50">
+</span>
+</li>
+</ul>
+</div> </div> </div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222526973_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222526973 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMUUUovXqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmA3mkXo6XoXfXXmvkkXXm6XoXfXXm3oUKv36XoXfXXmd3m33d6XoXfXXX3dm3Km6XoXfXXXomdkvX6XoXfXXXoX3Akm6XoXfXXXddUUUk6XoXfXXXm3Uddd6XoXfXXUAK3oodqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmA3mkXoqHqnipEQQoqnQQhVJtiCtQQoqnQQeVtiEIQQoqnQQ5pJcJcJSQQoqnQQJIQQoqnQQ5StIiESnQQoqnQQxbJQQoqnQQp2pcVGpqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXXoX3Akm0tEn1XXXoX3Akm0zH13KvkX0pSM13k7Azsf3Kdb7UUUdqnqnmxM3qnkAxMAzsbd3K3U0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222526973" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222526973'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '111582', 'Irene F', '67B9EC604AB1114FF3D6F79D9EA46061', 'en', '222526973', 'Four Seasons Resort Hualalai at Historic Ka\'upulehu');">Ask Irene F about Four Seasons Resort Hualalai at Historic Ka&#39;upulehu</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Rheba C, Executive Office at Four Seasons Resort Hualalai at Historic Ka&#39;upulehu, responded to this review,
+<span class="res_date relativeDate" title='22 August 2014'>5 days ago</span>
+</div>
+<div class="displayText" id="response_222526973">
+Greetings from Hualalai!<br/><br/>Thank you for taking the time to review your recent visit to Four Seasons Resort Hualalai with your son. I am happy to hear that you found this to be a great resort with wonderful food. Each Four Seasons property definitely has a different &quot;vibe&quot; and many of our guests agree with you that Four Seasons Bora Bora is a tropical paradise. There are many families who visit with us during the summer months, Festive Season and spring break, which does mean a more boisterous atmosphere. I hope you will visit with us again when children are back in school so you can enjoy the peace and tranquility Hualalai has to offer.<br/><br/>Please do not hesitate to contact me if there is ever anything I can do to assist you. Again, mahalo for writing!<br/><br/>With warmest aloha,<br/><br/>Rheba Crane<br/>Executive Administrative Assistant
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223525113" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223525113, isGeo:false, locationid:111582})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223525113" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223525113">
+<a name="UR223525113"></a>
+<div id="UR223525113" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d111582-r223525113-Four_Seasons_Resort_Hualalai_at_Historic_Ka_upulehu-Kailua_Kona_Island_of_Hawaii_H.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223525113">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Greetings from Hualalai!<br/><br/>Thank you for taking the time to review your recent visit to Four Seasons Resort Hualalai with your son. I am happy to hear that you found this to be a great resort with wonderful food. Each Four Seasons property definitely has a different &quot;vibe&quot; and many of our guests agree with you that Four Seasons Bora Bora is a tropical paradise. There are many families who visit with us during the summer months, Festive Season and spring break, which does mean a more boisterous atmosphere. I hope you will visit with us again when children are back in school so you can enjoy the peace and tranquility Hualalai has to offer.<br/><br/>Please do not hesitate to contact me if there is ever anything I can do to assist you. Again, mahalo for writing!<br/><br/>With warmest aloha,<br/><br/>Rheba Crane<br/>Executive Administrative Assistant
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223525113_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223525113 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMUUUovXqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmA3mkXo6XoXfXXmvkkXXm6XoXfXXm3oUKv36XoXfXXmd3m33d6XoXfXXX3dm3Km6XoXfXXXomdkvX6XoXfXXXoX3Akm6XoXfXXXddUUUk6XoXfXXXm3Uddd6XoXfXXUAK3oodqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmA3mkXoqHqnipEQQoqnQQhVJtiCtQQoqnQQeVtiEIQQoqnQQ5pJcJcJSQQoqnQQJIQQoqnQQ5StIiESnQQoqnQQxbJQQoqnQQp2pcVGpqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXmoXoUUm0tEn1XXmoXoUUm0zH13KvkX0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223525113" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223525113'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222441117">
+<a name="UR222441117"></a>
+<div id="UR222441117" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_09881797FA489456212A7112757CB969-SRC_222441117" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_09881797FA489456212A7112757CB969 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/29/66/d6/shamysshores2.jpg" class="avatar potentialFacebookAvatar avatarGUID:09881797FA489456212A7112757CB969" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_09881797FA489456212A7112757CB969" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">ShamysShores2</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_09881797FA489456212A7112757CB969-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="13 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">13 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">6 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '09881797FA489456212A7112757CB969', screenName: 'ShamysShores2', geos: [60872, 155044, 155042, 41202, 60626, 4332426, 31352, 154913], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 8 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 8 cities</span> </div>
+<div id="UID_09881797FA489456212A7112757CB969-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="2 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">2 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d111582-r222441117-Four_Seasons_Resort_Hualalai_at_Historic_Ka_upulehu-Kailua_Kona_Island_of_Hawaii_H.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222441117">&#x201c;<span class='noQuotes'>Pristine, Superior Experience!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='18 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Our three night stay was the finest hotel experience we've had to date. Impeccable grounds, beautifully appointed spacious rooms (with complimentary L'Occitane natural beauty products), stunning ocean views and memorable cuisine helped make this an unforgettable holiday. Servers on the beach attend to your every need. Seasoned travellers should experience this hotel at least once - sheer bliss!
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed February 2014</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq222441117_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222441117 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMUUUovXqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmA3mkXo6XoXfXXmvkkXXm6XoXfXXm3oUKv36XoXfXXmd3m33d6XoXfXXX3dm3Km6XoXfXXXomdkvX6XoXfXXXoX3Akm6XoXfXXXddUUUk6XoXfXXXm3Uddd6XoXfXXUAK3oodqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmA3mkXoqHqnipEQQoqnQQhVJtiCtQQoqnQQeVtiEIQQoqnQQ5pJcJcJSQQoqnQQJIQQoqnQQ5StIiESnQQoqnQQxbJQQoqnQQp2pcVGpqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXXddUUUk0tEn1XXXddUUUk0zH13KvkX0pSM1KAvvUkAkqnbdvAdo3XUXbkUUXkokf7A3A0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222441117" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222441117'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '111582', 'ShamysShores2', '09881797FA489456212A7112757CB969', 'en', '222441117', 'Four Seasons Resort Hualalai at Historic Ka\'upulehu');">Ask ShamysShores2 about Four Seasons Resort Hualalai at Historic Ka&#39;upulehu</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222361444">
+<a name="UR222361444"></a>
+<div id="UR222361444" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_7B2D9B076832BBC187A88D9A379AB2E4-SRC_222361444" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_7B2D9B076832BBC187A88D9A379AB2E4 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/5a/avatar032.jpg" class="avatar potentialFacebookAvatar avatarGUID:7B2D9B076832BBC187A88D9A379AB2E4" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_7B2D9B076832BBC187A88D9A379AB2E4" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">TravelKix2014</span>
+</div>
+</div>
+<div class="location">
+New York, NY
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_7B2D9B076832BBC187A88D9A379AB2E4-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">3 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">3 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '7B2D9B076832BBC187A88D9A379AB2E4', screenName: 'TravelKix2014', geos: [60872, 60878, 57097], geo: '60872' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 3 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 3 cities</span> </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d111582-r222361444-Four_Seasons_Resort_Hualalai_at_Historic_Ka_upulehu-Kailua_Kona_Island_of_Hawaii_H.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222361444">&#x201c;<span class='noQuotes'>Sales Incentive Trip - Loved it!!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='17 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+I stayed here as part of my company's sales incentive trip in 2013. Everyone thought the grounds were beautiful and had an extraordinary time. The rooms are stunning, the multiple pools were amazing, the food was excellent (expensive though - watch out!!) and the service was top notch from A-Z. Loved it and see why it is world famous.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed September 2013</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq222361444_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222361444 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMUUUovXqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmA3mkXo6XoXfXXmvkkXXm6XoXfXXm3oUKv36XoXfXXmd3m33d6XoXfXXX3dm3Km6XoXfXXXomdkvX6XoXfXXXoX3Akm6XoXfXXXddUUUk6XoXfXXXm3Uddd6XoXfXXUAK3oodqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmA3mkXoqHqnipEQQoqnQQhVJtiCtQQoqnQQeVtiEIQQoqnQQ5pJcJcJSQQoqnQQJIQQoqnQQ5StIiESnQQoqnQQxbJQQoqnQQp2pcVGpqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXXm3Uddd0tEn1XXXm3Uddd0zH13KvkX0pSM1k7XxMA7Kk3vmX77fUvkbvvxMAbmkAb7Xzsd0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222361444" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222361444'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '111582', 'TravelKix2014', '7B2D9B076832BBC187A88D9A379AB2E4', 'en', '222361444', 'Four Seasons Resort Hualalai at Historic Ka\'upulehu');">Ask TravelKix2014 about Four Seasons Resort Hualalai at Historic Ka&#39;upulehu</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221906554">
+<a name="UR221906554"></a>
+<div id="UR221906554" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_C7049717D5A04D91586C2010CB651BFD-SRC_221906554" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_C7049717D5A04D91586C2010CB651BFD ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/76/avatar058.jpg" class="avatar potentialFacebookAvatar avatarGUID:C7049717D5A04D91586C2010CB651BFD" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_C7049717D5A04D91586C2010CB651BFD" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Igor K</span>
+</div>
+</div>
+<div class="location">
+London, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_C7049717D5A04D91586C2010CB651BFD-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+<div id="UID_C7049717D5A04D91586C2010CB651BFD-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="1 helpful vote" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">1 helpful vote</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g60872-d111582-r221906554-Four_Seasons_Resort_Hualalai_at_Historic_Ka_upulehu-Kailua_Kona_Island_of_Hawaii_H.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221906554">&#x201c;<span class='noQuotes'>Unforgettable Honeymoon! Beautiful property and staff that will blow you away!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='15 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+We stayed 6 nights at the Four Seasons Hualalai at Historic Ka'upulehu from July 31st to August 6th. <br/><br/>Our experience with this amazing hotel started well before we arrived, having made a booking we contacted the hotel and let them know that we will be spending a big part of our honeymoon at the property and kindly asked for a complimentary honeymoon upgrade, off course subject to hotel's discretion and availability. <br/><br/>Additionally concierge got in touch with me regarding activities and sent me a very detailed e-mail about things to do on the island and has kindly offered to make bookings of activities on my behalf. After a series of e-mails back and forth, the concierge team booked a snorkelling experience, a submarine and helicopter experience for us! <br/><br/>Dealing with concierge and not the service providers directly saved a lot of time and at the end of the process concierge team have put together an itinerary for us, with key dates, times, locations, directions so that we had the information that we needed to hand.<br/><br/>In the airport we were greeted by one of the Four Seasons greeters that went to fetch our luggage for us and within a couple of minutes of our arrival we were comfortably seated in the taxi van that was kindly arranged for us by the concierge.<br/><br/>Upon arrival we were greeted by one of the front desk staff named Jason, who offered us a refreshing drink as well as helped us check in at the comfort of a sofa in a personal, private environment, he also said that since we are on honeymoon and as per our e-mail request we will be upgraded from a basic room to the beautiful ocean view room.<br/><br/>From reception we were put on a golf cart and one of the bell staff drove us to our room, where we were greeted with a note from Jason and a selection of fruits and cheeses as a gift for our honeymoon. The room was clean, large with own outdoor shower! Very good, simple but elegant design.<br/><br/>For 6 days in the row we had the most amazing experience of our life. <br/><br/>The property is huge and has several beeches, from rocky to sandy, from busy to private and secluded, it has two golf courses and a sea-water swimming pool with over 3000 fish of 75 different species that you can swim with, snorkel, there is even an eagle ray that you can sign up to feed :)<br/><br/>Ohh the staff, they are all so kind and eager to help, eager to learn about you, eager to start a conversation and make your stay unforgettable, and I must tell you they did. Edwin working at the bell desk helped us out a million times, a very kind, softly spoken, educated gentleman who we are largely thankful to.<br/><br/>The Ulu restaurant at the property was very nice, the japanese cuisine with a local Hawaiian twist was great particularly all the tuna dishes which are an absolute must try. Average meal for two without wine at the property will cost you around $60-$120 bucks.<br/><br/>Generally the resort is probably the best of the best, very private not many people, very closed and exclusive (the most expensive resort on Hawaii). A best honeymoon destination for sure, a good destination for couples and family, kids will have a blast!!!<br/><br/>Great hotel, great staff, great experience!<br/><br/>Thank you guys!
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Get the ocean view room by the King&#39;s Pond
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221906554_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221906554 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHy3KvkXqHMUUUovXqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmA3mkXo6XoXfXXmvkkXXm6XoXfXXm3oUKv36XoXfXXmd3m33d6XoXfXXX3dm3Km6XoXfXXXomdkvX6XoXfXXXoX3Akm6XoXfXXXddUUUk6XoXfXXXm3Uddd6XoXfXXUAK3oodqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmA3mkXoqHqnipEQQoqnQQhVJtiCtQQoqnQQeVtiEIQQoqnQQ5pJcJcJSQQoqnQQJIQQoqnQQ5StIiESnQQoqnQQxbJQQoqnQQp2pcVGpqHxbJScpJQQoqnQQxbiCJQQoqnQQltcJCMQQoqnQQiTQQoqnQQ5JuJSSQQoqnQQ5JuJSSxiGIac6XoXmqoTpcXXUAK3ood0tEn1XXUAK3ood0zH13KvkX0pSM1fkKdAkUkxMobKdxMAUov3fXKUKf73oU7qnxM0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221906554" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221906554'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '111582', 'Igor K', 'C7049717D5A04D91586C2010CB651BFD', 'en', '221906554', 'Four Seasons Resort Hualalai at Historic Ka\'upulehu');">Ask Igor K about Four Seasons Resort Hualalai at Historic Ka&#39;upulehu</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>

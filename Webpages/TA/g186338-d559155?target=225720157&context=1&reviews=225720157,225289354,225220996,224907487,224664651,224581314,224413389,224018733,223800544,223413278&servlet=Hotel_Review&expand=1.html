@@ -1,0 +1,1280 @@
+<div id="expanded_review_225720157">
+<a name="UR225720157"></a>
+<div id="UR225720157" class="extended provider0 first newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_FE20D44BF43C3B3BFA0A09E33F35A82F-SRC_225720157" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_FE20D44BF43C3B3BFA0A09E33F35A82F ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: 'FE20D44BF43C3B3BFA0A09E33F35A82F'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/02/2d/ab/5f/kate-c.jpg" class="avatar potentialFacebookAvatar avatarGUID:FE20D44BF43C3B3BFA0A09E33F35A82F" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_FE20D44BF43C3B3BFA0A09E33F35A82F" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Kate C</span>
+</div>
+</div>
+<div class="location">
+Manchester, England, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_FE20D44BF43C3B3BFA0A09E33F35A82F-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">3 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">3 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'FE20D44BF43C3B3BFA0A09E33F35A82F', screenName: 'Kate C', geos: [186346, 186338, 227947], geo: '186338' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 3 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 3 cities</span> </div>
+<div id="UID_FE20D44BF43C3B3BFA0A09E33F35A82F-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="2 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">2 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d559155-r225720157-Taj_51_Buckingham_Gate_Suites_and_Residences-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r225720157">&#x201c;<span class='noQuotes'>Wonderful weekend</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='31 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+We have just returned from a perfect weekend trip for our Anniversary. We arrived on Friday and were very impressed with the location and the &quot;look&quot; of the hotel, especially the beautiful courtyard. It is a five minute walk from the tube and is in such a great place for all the best sight-seeing in London. The area was quiet and felt very safe.<br/>From the first moments, the staff at 51 Buckingham Gate made us feel like we had arrived somewhere very special indeed. Their attentiveness and courtesy are what we will remember most about our stay. We were upgraded to a 2 bedroom apartment (falconers) on the seventh floor, with stunning views. It had everything we needed and Sergio, the concierge, showed us everything in the room and gave us lots of info about amenities in the local area. <br/>We only ate breakfast at the hotel, which was excellent both days. A fantastic selection and again the service was first class, especially Errol and Georgio. The complimentary canapés and drinks in the library each evening were a really nice treat and we spent a lovely evening in the company of the two waiters from Hungary and Spain, who were so attentive and great to chat to.<br/>We can't wait to return to the hotel - we were treated royally by everyone we met and were made to feel truly &quot;at home&quot;. Thank you to all at 51 Buckingham Gate for making our Anniversary so very special.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> The views from the seventh floor were fantastic.
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq225720157_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq225720157 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMooAUooqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXKUok6XoXfXXoXvAmod6XoXfXXoXXKAA36XoXfXXdAKkdvk6XoXfXXd33d3oU6XoXfXXdovUmUd6XoXfXXddUmmvA6XoXfXXdKUvkmm6XoXfXXmvKKodd6XoXfXXmdUmXkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXKUokqHrJOQQoqnQQoUQQoqnQQ7pn9SCyGJaQQoqnQQzzJIVQQoqnQQhpSIVtQQoqnQQJCMQQoqnQQeVtSMVCnVtqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXokXKUok0tEn1XXokXKUok0zH1Uv3mmv0pSM1qnzsXKxMdd7qndmfm7m7qnbKbKAzsmmqnmobvXqn0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_225720157" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '225720157'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '559155', 'Kate C', 'FE20D44BF43C3B3BFA0A09E33F35A82F', 'en', '225720157', 'Taj 51 Buckingham Gate Suites and Residences');">Ask Kate C about Taj 51 Buckingham Gate Suites and Residences</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_225289354">
+<a name="UR225289354"></a>
+<div id="UR225289354" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_B6765B67C900ED7841D0A517ECF31065-SRC_225289354" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_B6765B67C900ED7841D0A517ECF31065 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9e/avatar069.jpg" class="avatar potentialFacebookAvatar avatarGUID:B6765B67C900ED7841D0A517ECF31065" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_B6765B67C900ED7841D0A517ECF31065" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">cindy6543</span>
+</div>
+</div>
+<div class="location">
+barbados
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_B6765B67C900ED7841D0A517ECF31065-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Top Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="51 reviews" class="icon badge_topcontributor sprite-badge_topcontributor" width="25" height="24">
+<span class="badgeText">51 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">16 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'B6765B67C900ED7841D0A517ECF31065', screenName: 'cindy6543', geos: [154984, 188590, 147296, 34227, 666611, 147263, 147389, 503751, 60763, 187051, 186338, 154998, 28970, 186400, 186402, 666622], geo: '186338' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 16 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 16 cities</span> </div>
+<div id="UID_B6765B67C900ED7841D0A517ECF31065-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="16 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">16 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d559155-r225289354-Taj_51_Buckingham_Gate_Suites_and_Residences-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r225289354">&#x201c;<span class='noQuotes'>August 2014</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='29 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Stayed at this hotel for the 4th time This time we were in a two bedroom apartment in Falconers Building Usual excellent service from staff. Special thanks to Erol and Eva in breakfast room for all their care and attention to us and granddaughters. Also thank you to the conceirge team.Our 2 bathroom suite had a walk in shower and a tub shower . one suggestion-- tub/showers need hand rail for getting in and out of tub. otherwise perfect hotel for stay in London.We will definitely stay at this hotel again
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> We Liked the Kings building .Has private entrance We stayed there on our previous visit
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq225289354_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq225289354 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMooAUooqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXKUok6XoXfXXoXvAmod6XoXfXXoXXKAA36XoXfXXdAKkdvk6XoXfXXd33d3oU6XoXfXXdovUmUd6XoXfXXddUmmvA6XoXfXXdKUvkmm6XoXfXXmvKKodd6XoXfXXmdUmXkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXKUokqHrJOQQoqnQQoUQQoqnQQ7pn9SCyGJaQQoqnQQzzJIVQQoqnQQhpSIVtQQoqnQQJCMQQoqnQQeVtSMVCnVtqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXoXvAmod0tEn1XXoXvAmod0zH1Uv3mmv0pSM173k3o73kfAKKzsxMkvdUxMKboUkzsfqnmUK3o0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_225289354" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '225289354'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/cindy6543/g186338" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 4 reviews by cindy6543 for London </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '559155', 'cindy6543', 'B6765B67C900ED7841D0A517ECF31065', 'en', '225289354', 'Taj 51 Buckingham Gate Suites and Residences');">Ask cindy6543 about Taj 51 Buckingham Gate Suites and Residences</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class='duplicateReviewsInline'>
+<div class='previous'>cindy6543 has 1 more review of Taj 51 Buckingham Gate Suites and Residences</div>
+<ul class='dupReviews'>
+<li class="dupReviewItem">
+<div class='reviewTitle'>
+<a href="/ShowUserReviews-g186338-d559155-r158710572-Taj_51_Buckingham_Gate_Suites_and_Residences-London_England.html#REVIEWS">&#x201c;51 BUCKINGHAM GATE&#x201d;</a>
+</div>
+<div class='rating'>
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="date">Reviewed 25 April 2013</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_225220996">
+<a name="UR225220996"></a>
+<div id="UR225220996" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_1511B9EA20315BF056A0CD786D8CFFE1-SRC_225220996" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_1511B9EA20315BF056A0CD786D8CFFE1 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/22/6b/40/philip-p.jpg" class="avatar potentialFacebookAvatar avatarGUID:1511B9EA20315BF056A0CD786D8CFFE1" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_1511B9EA20315BF056A0CD786D8CFFE1" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Philip P</span>
+</div>
+</div>
+<div class="location">
+Perth, Western Australia, Australia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_1511B9EA20315BF056A0CD786D8CFFE1-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">2 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '1511B9EA20315BF056A0CD786D8CFFE1', screenName: 'Philip P', geos: [188590, 186338], geo: '186338' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 2 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 2 cities</span> </div>
+<div id="UID_1511B9EA20315BF056A0CD786D8CFFE1-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="1 helpful vote" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">1 helpful vote</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d559155-r225220996-Taj_51_Buckingham_Gate_Suites_and_Residences-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r225220996">&#x201c;<span class='noQuotes'>Excellent</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='29 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Fantastic stay at this hotel, great location, great service. Was upgraded on arrival and everything was perfect. The staff assisted us with restaurants, attractions, travel tickets, we would definitely stay here again.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq225220996_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq225220996 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMooAUooqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXKUok6XoXfXXoXvAmod6XoXfXXoXXKAA36XoXfXXdAKkdvk6XoXfXXd33d3oU6XoXfXXdovUmUd6XoXfXXddUmmvA6XoXfXXdKUvkmm6XoXfXXmvKKodd6XoXfXXmdUmXkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXKUokqHrJOQQoqnQQoUQQoqnQQ7pn9SCyGJaQQoqnQQzzJIVQQoqnQQhpSIVtQQoqnQQJCMQQoqnQQeVtSMVCnVtqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXoXXKAA30tEn1XXoXXKAA30zH1Uv3mmv0pSM1UoUU7AzsbXKmUo7qnKo3bKfxMkv3xMvfqnqnzsU0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_225220996" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '225220996'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '559155', 'Philip P', '1511B9EA20315BF056A0CD786D8CFFE1', 'en', '225220996', 'Taj 51 Buckingham Gate Suites and Residences');">Ask Philip P about Taj 51 Buckingham Gate Suites and Residences</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224907487">
+<a name="UR224907487"></a>
+<div id="UR224907487" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_EC4D8DCA67007AC7D8ABDCD5E2E356C2-SRC_224907487" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_EC4D8DCA67007AC7D8ABDCD5E2E356C2 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/a2/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:EC4D8DCA67007AC7D8ABDCD5E2E356C2" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_EC4D8DCA67007AC7D8ABDCD5E2E356C2" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Kim P</span>
+</div>
+</div>
+<div class="location">
+Chicago, Illinois
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_EC4D8DCA67007AC7D8ABDCD5E2E356C2-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="15 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">15 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">9 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'EC4D8DCA67007AC7D8ABDCD5E2E356C2', screenName: 'Kim P', geos: [187147, 196642, 312659, 528779, 1077146, 315927, 186338, 49007, 4281811, 28970], geo: '186338' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 10 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 10 cities</span> </div>
+<div id="UID_EC4D8DCA67007AC7D8ABDCD5E2E356C2-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="11 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">11 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d559155-r224907487-Taj_51_Buckingham_Gate_Suites_and_Residences-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224907487">&#x201c;<span class='noQuotes'>Great location, service, and room</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='28 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+I am a huge fan of the Taj hotels having stayed at many around the world. Taj 51 is next door to the Taj St James Court. (Do NOT stay there.....very noisy and awful service). Taj 51 is a gorgeous property with lovely large suites. Our room was a King Suite and had a large bedroom, separate large living room, small modern kitchen, and a reasonable bathroom. (I would have given this hotel 5 stars if the bathroom had been as impressive as the rest of the room, but the bathroom was quite small).<br/><br/>The service is fantastic and they were always offering help with transportation, reservations, anything you need. Wifi is free. There is no parking.<br/><br/>They offer a full continental and made to order breakfast. My only complaint is that the continental breakfast, although offered a lot of options and was delicious, really wasnt work 20 GBP. It should have been included in the (extremely high) price.<br/><br/>The location is PERFECT. It is a 5 minute walk to Buckingham Palace; 7 minutes to Clarence house/St James Palace; 15 minute walk to Big Ben/Houses of Parliament/Westminster Abbey; 7 minute drive to Harrods (probably about 25 minute walk); 10 minute walk to Trafalgar Square.......everything is very close. <br/><br/>Try the attached, Michelin starred Quinlon restaurant. It is amazing south west Indian food. it is unlike anything you have tried.The flavors are unique with loads of both meat and vegetarian options. <br/><br/>Bistro 51 has a great Ahi Tuna Tartar and a lovely afternoon tea.<br/><br/>The price to stay here can be VERY high but is expected due to the room size and location.<br/><br/>Although this Taj property isnt as nice a some of those located in South Africa and India, it is still a very nice property and will not disappoint.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Request a room on a higher level to avoid any noise concerns.
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224907487_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224907487 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMooAUooqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXKUok6XoXfXXoXvAmod6XoXfXXoXXKAA36XoXfXXdAKkdvk6XoXfXXd33d3oU6XoXfXXdovUmUd6XoXfXXddUmmvA6XoXfXXdKUvkmm6XoXfXXmvKKodd6XoXfXXmdUmXkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXKUokqHrJOQQoqnQQoUQQoqnQQ7pn9SCyGJaQQoqnQQzzJIVQQoqnQQhpSIVtQQoqnQQJCMQQoqnQQeVtSMVCnVtqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXdAKkdvk0tEn1XXdAKkdvk0zH1Uv3mmv0pSM1zsfdxMvxMfb3kKKkbfkxMvb7xMfxMozsXzsmo3fX0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224907487" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224907487'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/681kimp/g186338" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 4 reviews by Kim P for London </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '559155', 'Kim P', 'EC4D8DCA67007AC7D8ABDCD5E2E356C2', 'en', '224907487', 'Taj 51 Buckingham Gate Suites and Residences');">Ask Kim P about Taj 51 Buckingham Gate Suites and Residences</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224664651">
+<a name="UR224664651"></a>
+<div id="UR224664651" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_22A271FB9641882492E8BBE0F92A5E8A-SRC_224664651" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_22A271FB9641882492E8BBE0F92A5E8A ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/8a/avatar011.jpg" class="avatar potentialFacebookAvatar avatarGUID:22A271FB9641882492E8BBE0F92A5E8A" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_22A271FB9641882492E8BBE0F92A5E8A" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">KelleyNorth</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_22A271FB9641882492E8BBE0F92A5E8A-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="22 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">22 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '22A271FB9641882492E8BBE0F92A5E8A', screenName: 'KelleyNorth', geos: [187147, 187137, 186338], geo: '186338' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 3 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 3 cities</span> </div>
+<div id="UID_22A271FB9641882492E8BBE0F92A5E8A-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="7 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">7 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d559155-r224664651-Taj_51_Buckingham_Gate_Suites_and_Residences-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224664651">&#x201c;<span class='noQuotes'>Amazing Experience</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='27 August 2014'>Reviewed 1 week ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+I cannot say enough how much my wife and I enjoyed our stay at Taj 51. We were in London for four days celebrating our 15th anniversary and we had not been on a trip since our kids were born over 8 years ago. Without stating the obvious, this was a very special trip for us. You have probably read about the service at the Taj and because we read these with a bit of caution we were slightly skeptical that it would live up to our expectations. Well our expectations were not met, but exceeded with flying colors. We packed about seven days of activities into four and all of this was made so much easier by service unlike any my wife and I have ever enjoyed. From several weeks before our trip to our actual stay in London, the staff was on top of everything. I felt like a pest before our trip by emailing every random question and request and they responded with timely well thoughtout answers that made our trip planning especially effortless. We have been places where the concierge will tell you how do things or help point you in the right direction, but the concierges at the Taj would handle everything from event tickets to train tickets and even dinner reservations. They even knew our names from the moment we stepped in until we left no matter who was on duty. The accommodations were fantastic and they have a really nice canape and drink event nightly and the hotel location is fantastic. Staying at Taj 51 was truly one of the best experiences my wife and I have been apart of.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224664651_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224664651 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMooAUooqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXKUok6XoXfXXoXvAmod6XoXfXXoXXKAA36XoXfXXdAKkdvk6XoXfXXd33d3oU6XoXfXXdovUmUd6XoXfXXddUmmvA6XoXfXXdKUvkmm6XoXfXXmvKKodd6XoXfXXmdUmXkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXKUokqHrJOQQoqnQQoUQQoqnQQ7pn9SCyGJaQQoqnQQzzJIVQQoqnQQhpSIVtQQoqnQQJCMQQoqnQQeVtSMVCnVtqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXd33d3oU0tEn1XXd33d3oU0zH1Uv3mmv0pSM1XXbXkUqn7A3dUvvXdAXzsv77zsKqnAXbozsvb0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">4</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224664651" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224664651'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/KelleyNorth/g186338" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 14 reviews by KelleyNorth for London </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '559155', 'KelleyNorth', '22A271FB9641882492E8BBE0F92A5E8A', 'en', '224664651', 'Taj 51 Buckingham Gate Suites and Residences');">Ask KelleyNorth about Taj 51 Buckingham Gate Suites and Residences</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224581314">
+<a name="UR224581314"></a>
+<div id="UR224581314" class="extended provider45 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_2AC4DD75B4B3D74F747C1C76A78E048D-SRC_224581314" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_2AC4DD75B4B3D74F747C1C76A78E048D ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/03/2d/3b/90/david-s.jpg" class="avatar potentialFacebookAvatar avatarGUID:2AC4DD75B4B3D74F747C1C76A78E048D" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_2AC4DD75B4B3D74F747C1C76A78E048D" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">David S</span>
+</div>
+</div>
+<div class="location">
+Worthing, England, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_2AC4DD75B4B3D74F747C1C76A78E048D-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="32 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">32 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">10 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '2AC4DD75B4B3D74F747C1C76A78E048D', screenName: 'David S', geos: [494960, 298664, 190761, 504227, 652380, 186405, 186273, 499616, 186338, 190820, 1096533, 504167], geo: '186338' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 12 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 12 cities</span> </div>
+<div id="UID_2AC4DD75B4B3D74F747C1C76A78E048D-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="26 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">26 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d559155-r224581314-Taj_51_Buckingham_Gate_Suites_and_Residences-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224581314">&#x201c;<span class='noQuotes'>The best of the very best.</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='26 August 2014'>Reviewed 1 week ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+this hotel never fails to suprise me on each and every visit. the suites are beautiful the staff are charming, helpful and in abundence. we had a fantastic stay. thank you all again we will be returning very soon. <br/><br/>if your looking for a flagship hotel in london ypu wont be disapointed.
+</p>
+</div>
+<div id="helpfulq224581314_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224581314 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMooAUooqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXKUok6XoXfXXoXvAmod6XoXfXXoXXKAA36XoXfXXdAKkdvk6XoXfXXd33d3oU6XoXfXXdovUmUd6XoXfXXddUmmvA6XoXfXXdKUvkmm6XoXfXXmvKKodd6XoXfXXmdUmXkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXKUokqHrJOQQoqnQQoUQQoqnQQ7pn9SCyGJaQQoqnQQzzJIVQQoqnQQhpSIVtQQoqnQQJCMQQoqnQQeVtSMVCnVtqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXdovUmUd0tEn1XXdovUmUd0zH1Uv3mmv0pSM1XbfdxMxMko7d7mxMkdqnkdkfUfk3bkvzsKdvxM0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224581314" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224581314'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '559155', 'David S', '2AC4DD75B4B3D74F747C1C76A78E048D', 'en', '224581314', 'Taj 51 Buckingham Gate Suites and Residences');">Ask David S about Taj 51 Buckingham Gate Suites and Residences</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of an individual traveller and not of TripAdvisor LLC nor of its partners. </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224413389">
+<a name="UR224413389"></a>
+<div id="UR224413389" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_16CC5E50097CE68DBAF6A0FF86835A34-SRC_224413389" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_16CC5E50097CE68DBAF6A0FF86835A34 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/04/4d/db/eb/thorpey1979.jpg" class="avatar potentialFacebookAvatar avatarGUID:16CC5E50097CE68DBAF6A0FF86835A34" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_16CC5E50097CE68DBAF6A0FF86835A34" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">thorpey1979</span>
+</div>
+</div>
+<div class="location">
+London, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_16CC5E50097CE68DBAF6A0FF86835A34-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">3 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '16CC5E50097CE68DBAF6A0FF86835A34', screenName: 'thorpey1979', geos: [297549, 186338], geo: '186338' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 2 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 2 cities</span> </div>
+<div id="UID_16CC5E50097CE68DBAF6A0FF86835A34-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="11 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">11 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d559155-r224413389-Taj_51_Buckingham_Gate_Suites_and_Residences-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224413389">&#x201c;<span class='noQuotes'>Fantastic Stay</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='26 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+My wife and I stayed at this hotel to celebrate our 10th wedding anniversary. We stayed in one of the Minister suites which was simply fantastic. The rooms were equipped with everything that we needed for a 3 day stay. The location was great and the breakfasts were lovely. The staff are so attentive and are a credit to the hotel. We were made to feel extra special and it really added to the weekend. We will definitely stay at this hotel again. I would go as far to say that this hotel is the best in London - Mr Thorpe
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224413389_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224413389 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMooAUooqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXKUok6XoXfXXoXvAmod6XoXfXXoXXKAA36XoXfXXdAKkdvk6XoXfXXd33d3oU6XoXfXXdovUmUd6XoXfXXddUmmvA6XoXfXXdKUvkmm6XoXfXXmvKKodd6XoXfXXmdUmXkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXKUokqHrJOQQoqnQQoUQQoqnQQ7pn9SCyGJaQQoqnQQzzJIVQQoqnQQhpSIVtQQoqnQQJCMQQoqnQQeVtSMVCnVtqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXddUmmvA0tEn1XXddUmmvA0zH1Uv3mmv0pSM1U3ffozsoKKAkfzs3vxM7bqn3bKqnqnv3vmobmd0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">3</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224413389" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224413389'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '559155', 'thorpey1979', '16CC5E50097CE68DBAF6A0FF86835A34', 'en', '224413389', 'Taj 51 Buckingham Gate Suites and Residences');">Ask thorpey1979 about Taj 51 Buckingham Gate Suites and Residences</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+James S, Manager at Taj 51 Buckingham Gate Suites and Residences, responded to this review,
+<span class="res_date relativeDate" title='26 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_224413389">
+Dear Mr Thrope.<br/><br/>First may I congratulate you both on your 10th Wedding Anniversary.<br/><br/>Thank you for sharing your recent stay with us with other Tripadvisors.<br/><br/>I was delighted to read you enjoyed your stay in one of our Minster Suites and the facilities of your suite.<br/><br/>I was also pleased to read my staff made you feel special during your stay.<br/><br/>It is always wonderful to hear such positive feedback, which serves as a great motivator to my team.<br/><br/>We look forward to wecolming you back again soon.<br/><br/>Best Regards<br/><br/>Araceli Ruis-Perez<br/>Hotel Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_224526554" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:224526554, isGeo:false, locationid:559155})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_224526554" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224526554">
+<a name="UR224526554"></a>
+<div id="UR224526554" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d559155-r224526554-Taj_51_Buckingham_Gate_Suites_and_Residences-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224526554">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='26 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Mr Thrope.<br/><br/>First may I congratulate you both on your 10th Wedding Anniversary.<br/><br/>Thank you for sharing your recent stay with us with other Tripadvisors.<br/><br/>I was delighted to read you enjoyed your stay in one of our Minster Suites and the facilities of your suite.<br/><br/>I was also pleased to read my staff made you feel special during your stay.<br/><br/>It is always wonderful to hear such positive feedback, which serves as a great motivator to my team.<br/><br/>We look forward to wecolming you back again soon.<br/><br/>Best Regards<br/><br/>Araceli Ruis-Perez<br/>Hotel Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224526554_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224526554 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMooAUooqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXKUok6XoXfXXoXvAmod6XoXfXXoXXKAA36XoXfXXdAKkdvk6XoXfXXd33d3oU6XoXfXXdovUmUd6XoXfXXddUmmvA6XoXfXXdKUvkmm6XoXfXXmvKKodd6XoXfXXmdUmXkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXKUokqHrJOQQoqnQQoUQQoqnQQ7pn9SCyGJaQQoqnQQzzJIVQQoqnQQhpSIVtQQoqnQQJCMQQoqnQQeVtSMVCnVtqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXdoX3ood0tEn1XXdoX3ood0zH1Uv3mmv0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224526554" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224526554'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224018733">
+<a name="UR224018733"></a>
+<div id="UR224018733" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_2F234689D19B4055148FEFA70982A773-SRC_224018733" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_2F234689D19B4055148FEFA70982A773 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/a2/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:2F234689D19B4055148FEFA70982A773" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_2F234689D19B4055148FEFA70982A773" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Francisco E</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_2F234689D19B4055148FEFA70982A773-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+<div id="UID_2F234689D19B4055148FEFA70982A773-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="1 helpful vote" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">1 helpful vote</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d559155-r224018733-Taj_51_Buckingham_Gate_Suites_and_Residences-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224018733">&#x201c;<span class='noQuotes'>Amazing Hotel</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+The service and the rooms were superb, is our first visit in London and they make this moment unforgetable..! Is close to the sub station, you have all the main attractions from London just by walking, they have a wonderful cafe cross the street, for a good breakfast before the tourist walk.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014, travelled as a couple</span>
+</div>
+</div>
+<div id="helpfulq224018733_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224018733 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMooAUooqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXKUok6XoXfXXoXvAmod6XoXfXXoXXKAA36XoXfXXdAKkdvk6XoXfXXd33d3oU6XoXfXXdovUmUd6XoXfXXddUmmvA6XoXfXXdKUvkmm6XoXfXXmvKKodd6XoXfXXmdUmXkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXKUokqHrJOQQoqnQQoUQQoqnQQ7pn9SCyGJaQQoqnQQzzJIVQQoqnQQhpSIVtQQoqnQQJCMQQoqnQQeVtSMVCnVtqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXdKUvkmm0tEn1XXdKUvkmm0zH1Uv3mmv0pSM1XqnXmd3vAxMUA7dKooUdvqnzsqnbkKAvXbkkm0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224018733" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224018733'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '559155', 'Francisco E', '2F234689D19B4055148FEFA70982A773', 'en', '224018733', 'Taj 51 Buckingham Gate Suites and Residences');">Ask Francisco E about Taj 51 Buckingham Gate Suites and Residences</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+James S, Manager at Taj 51 Buckingham Gate Suites and Residences, responded to this review,
+<span class="res_date relativeDate" title='26 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_224018733">
+Thank you for reviewing your recent stay at Taj 51 Buckingham Gate.<br/><br/>I was delighted to read you enjoyed your suite and our famous Taj Service. I was pleased to read that your first trip to London and my team created a nice memory for you.<br/><br/>We are within walking distant to many attractions around London includling Buckingham Palace, House of Commons, Ben Big and many more and with St. James Park Tube Station only 2 minutes walk away.<br/><br/>I hope that your next visit to London we will be able to welcoming you back to Taj London.<br/><br/>Best Regards<br/><br/>Araceli Ruis-Perez<br/>Hotel Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_224523553" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:224523553, isGeo:false, locationid:559155})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_224523553" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224523553">
+<a name="UR224523553"></a>
+<div id="UR224523553" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d559155-r224523553-Taj_51_Buckingham_Gate_Suites_and_Residences-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224523553">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='26 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Thank you for reviewing your recent stay at Taj 51 Buckingham Gate.<br/><br/>I was delighted to read you enjoyed your suite and our famous Taj Service. I was pleased to read that your first trip to London and my team created a nice memory for you.<br/><br/>We are within walking distant to many attractions around London includling Buckingham Palace, House of Commons, Ben Big and many more and with St. James Park Tube Station only 2 minutes walk away.<br/><br/>I hope that your next visit to London we will be able to welcoming you back to Taj London.<br/><br/>Best Regards<br/><br/>Araceli Ruis-Perez<br/>Hotel Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224523553_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224523553 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMooAUooqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXKUok6XoXfXXoXvAmod6XoXfXXoXXKAA36XoXfXXdAKkdvk6XoXfXXd33d3oU6XoXfXXdovUmUd6XoXfXXddUmmvA6XoXfXXdKUvkmm6XoXfXXmvKKodd6XoXfXXmdUmXkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXKUokqHrJOQQoqnQQoUQQoqnQQ7pn9SCyGJaQQoqnQQzzJIVQQoqnQQhpSIVtQQoqnQQJCMQQoqnQQeVtSMVCnVtqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXdoXmoom0tEn1XXdoXmoom0zH1Uv3mmv0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224523553" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224523553'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223800544">
+<a name="UR223800544"></a>
+<div id="UR223800544" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_C03D06F63F56108A7859B66E6DB8F54D-SRC_223800544" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_C03D06F63F56108A7859B66E6DB8F54D ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/02/a7/59/e6/ploce.jpg" class="avatar potentialFacebookAvatar avatarGUID:C03D06F63F56108A7859B66E6DB8F54D" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_C03D06F63F56108A7859B66E6DB8F54D" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Ploce</span>
+</div>
+</div>
+<div class="location">
+Mumbai, India
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_C03D06F63F56108A7859B66E6DB8F54D-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="38 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">38 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_3rd sprite-badge_hotels_3rd" width="25" height="24">
+<span class="badgeText">30 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'C03D06F63F56108A7859B66E6DB8F54D', screenName: 'Ploce', geos: [294013, 187791, 297654, 187785, 187780, 188590, 187782, 664891, 187309, 306994, 297633, 294265, 188064, 528813, 186338, 45963, 255060, 295424, 293974, 1940497, 188108, 552104, 665884, 255111, 274887], geo: '186338' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 25 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 25 cities</span> </div>
+<div id="UID_C03D06F63F56108A7859B66E6DB8F54D-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="47 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">47 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d559155-r223800544-Taj_51_Buckingham_Gate_Suites_and_Residences-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223800544">&#x201c;<span class='noQuotes'>Consistently great - perfect location</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='23 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+We have stayed here often and from our understanding the hotel was taken back by the Taj group following management by another hotel chain. The hotel is synonymous with the Taj chain, which is our favourite chain of hotel and renowned for its superb service. Same for this hotel, service was excellent and surprisingly personal for a hotel of this size. Nothing was too much trouble. We were in a junior suite so there was plenty of room with TVs in both rooms.<br/>Beautiful courtyard with a fountain. Luckily the weather was great and we were able to enjoy lunches out there.<br/><br/>Wifi excellent – free and fast.<br/><br/>Perfect location and walking distance to Buckingham Palace, Westminster, Big Ben, Green Park, St James Park, Victoria, Piccadilly and many other top spots. The tube station is just around the corner.<br/><br/>Highly recommended
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223800544_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223800544 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMooAUooqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXKUok6XoXfXXoXvAmod6XoXfXXoXXKAA36XoXfXXdAKkdvk6XoXfXXd33d3oU6XoXfXXdovUmUd6XoXfXXddUmmvA6XoXfXXdKUvkmm6XoXfXXmvKKodd6XoXfXXmdUmXkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXKUokqHrJOQQoqnQQoUQQoqnQQ7pn9SCyGJaQQoqnQQzzJIVQQoqnQQhpSIVtQQoqnQQJCMQQoqnQQeVtSMVCnVtqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXmvKKodd0tEn1XXmvKKodd0zH1Uv3mmv0pSM1fKmxMK3qn3mqno3UKvbkvoA733zs3xM7vqnodxM0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223800544" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223800544'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/Ploce/g186338" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 3 reviews by Ploce for London </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '559155', 'Ploce', 'C03D06F63F56108A7859B66E6DB8F54D', 'en', '223800544', 'Taj 51 Buckingham Gate Suites and Residences');">Ask Ploce about Taj 51 Buckingham Gate Suites and Residences</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223413278">
+<a name="UR223413278"></a>
+<div id="UR223413278" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_5043F359326BDF13327AE6292DC58DDF-SRC_223413278" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_5043F359326BDF13327AE6292DC58DDF ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/03/4d/b9/71/lovers111.jpg" class="avatar potentialFacebookAvatar avatarGUID:5043F359326BDF13327AE6292DC58DDF" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_5043F359326BDF13327AE6292DC58DDF" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Lovers111</span>
+</div>
+</div>
+<div class="location">
+Hove, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_5043F359326BDF13327AE6292DC58DDF-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">4 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">4 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '5043F359326BDF13327AE6292DC58DDF', screenName: 'Lovers111', geos: [186274, 499616, 186338, 45963], geo: '186338' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 4 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 4 cities</span> </div>
+<div id="UID_5043F359326BDF13327AE6292DC58DDF-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="9 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">9 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d559155-r223413278-Taj_51_Buckingham_Gate_Suites_and_Residences-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223413278">&#x201c;<span class='noQuotes'>Amazing....Something else.....</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 1 week ago
+</span>
+<a class="viaMobile sprite-grayPhone" href="/apps" target="_blank" onclick="ta.util.cookie.setPIDCookie(24687)">via mobile</a>
+</div>
+<div class="entry">
+<p>
+We stayed here with two of our close friends and stayed in the minister suites ... They were apartments!! So amazing and nothing was too much trouble.. The drinks in the court yard were great and a lovely touch with canapés <br/><br/>Everything was so comfy and welcoming... TV in the bath!! Wow!!<br/><br/>We went for breakfast in the morning and was the best I've tasted! Also the extras of smoked salmon, avocado and much more!<br/><br/>Really was the best hotel we have stayed in!!<br/><br/>Thank you to the staff that made us feel so welcome
+</p>
+</div>
+<div class="media  thumbCols3">
+<div class="thumbnails">
+<div class="photosInline">
+<ul>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g186338-d559155-i107707594-r223413278-Taj_51_Buckingham_Gate_Suites_and_Residences-London_England.html#107707594 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 559155, 186338, 2, 107707594);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/6b/7c/ca/breakfast.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g186338-d559155-i107707502-r223413278-Taj_51_Buckingham_Gate_Suites_and_Residences-London_England.html#107707502 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 559155, 186338, 2, 107707502);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/6b/7c/6e/bath-with-tv.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g186338-d559155-i107707461-r223413278-Taj_51_Buckingham_Gate_Suites_and_Residences-London_England.html#107707461 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 559155, 186338, 2, 107707461);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/6b/7c/45/bedroom.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g186338-d559155-i107707553-r223413278-Taj_51_Buckingham_Gate_Suites_and_Residences-London_England.html#107707553 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 559155, 186338, 2, 107707553);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/6b/7c/a1/kitchen.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g186338-d559155-i107707679-r223413278-Taj_51_Buckingham_Gate_Suites_and_Residences-London_England.html#107707679 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 559155, 186338, 2, 107707679);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/6b/7d/1f/buckingham-palace-view.jpg" alt="" width="50" height="50">
+</span>
+</li>
+</ul>
+</div> </div> </div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014, travelled with friends</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223413278_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223413278 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMooAUooqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXKUok6XoXfXXoXvAmod6XoXfXXoXXKAA36XoXfXXdAKkdvk6XoXfXXd33d3oU6XoXfXXdovUmUd6XoXfXXddUmmvA6XoXfXXdKUvkmm6XoXfXXmvKKodd6XoXfXXmdUmXkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXKUokqHrJOQQoqnQQoUQQoqnQQ7pn9SCyGJaQQoqnQQzzJIVQQoqnQQhpSIVtQQoqnQQJCMQQoqnQQeVtSMVCnVtqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXmdUmXkv0tEn1XXmdUmXkv0zH1Uv3mmv0pSM1oKdmqnmoAmX37xMqnUmmXkbzs3XAXxMfovxMxMqn0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223413278" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223413278'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '559155', 'Lovers111', '5043F359326BDF13327AE6292DC58DDF', 'en', '223413278', 'Taj 51 Buckingham Gate Suites and Residences');">Ask Lovers111 about Taj 51 Buckingham Gate Suites and Residences</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+James S, Manager at Taj 51 Buckingham Gate Suites and Residences, responded to this review,
+<span class="res_date relativeDate" title='26 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_223413278">
+Thank you for taking the time to write about your recent stay at Taj 51 Buckingham Gate.<br/><br/>I am delighted you enjoyed your suite in Minsters and the facilities within the suite.<br/><br/>Our Complimentry Drinks and Canapes are very popular with our guest and pleased you were able to join us.<br/><br/>We do hope that we will have the pleasure of welcoming back again soon.<br/><br/>Kind Regards<br/><br/><br/>Araceli Ruis-Perez<br/>Hotel Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_224521092" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:224521092, isGeo:false, locationid:559155})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_224521092" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_224521092">
+<a name="UR224521092"></a>
+<div id="UR224521092" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g186338-d559155-r224521092-Taj_51_Buckingham_Gate_Suites_and_Residences-London_England.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224521092">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='26 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Thank you for taking the time to write about your recent stay at Taj 51 Buckingham Gate.<br/><br/>I am delighted you enjoyed your suite in Minsters and the facilities within the suite.<br/><br/>Our Complimentry Drinks and Canapes are very popular with our guest and pleased you were able to join us.<br/><br/>We do hope that we will have the pleasure of welcoming back again soon.<br/><br/>Kind Regards<br/><br/><br/>Araceli Ruis-Perez<br/>Hotel Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224521092_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224521092 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUv3mmvqHMooAUooqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXokXKUok6XoXfXXoXvAmod6XoXfXXoXXKAA36XoXfXXdAKkdvk6XoXfXXd33d3oU6XoXfXXdovUmUd6XoXfXXddUmmvA6XoXfXXdKUvkmm6XoXfXXmvKKodd6XoXfXXmdUmXkvqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXokXKUokqHrJOQQoqnQQoUQQoqnQQ7pn9SCyGJaQQoqnQQzzJIVQQoqnQQhpSIVtQQoqnQQJCMQQoqnQQeVtSMVCnVtqHRiCMiCQQoqnQQzsCycJCMxiGIac6XoXmqoTpcXXdoXUKAX0tEn1XXdoXUKAX0zH1Uv3mmv0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224521092" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224521092'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>

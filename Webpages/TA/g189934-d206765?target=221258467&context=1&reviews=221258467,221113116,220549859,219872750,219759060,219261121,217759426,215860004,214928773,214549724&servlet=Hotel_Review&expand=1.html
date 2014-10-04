@@ -1,0 +1,1803 @@
+<div id="expanded_review_221258467">
+<a name="UR221258467"></a>
+<div id="UR221258467" class="extended provider0 first">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_2A72C63151282DCBCB4C25C2B6780EF3-SRC_221258467" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_2A72C63151282DCBCB4C25C2B6780EF3 ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: '2A72C63151282DCBCB4C25C2B6780EF3'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/93/avatar019.jpg" class="avatar potentialFacebookAvatar avatarGUID:2A72C63151282DCBCB4C25C2B6780EF3" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_2A72C63151282DCBCB4C25C2B6780EF3" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">wake35</span>
+</div>
+</div>
+<div class="location">
+Brighton, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_2A72C63151282DCBCB4C25C2B6780EF3-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+<div id="UID_2A72C63151282DCBCB4C25C2B6780EF3-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="1 helpful vote" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">1 helpful vote</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g189934-d206765-r221258467-Original_Sokos_Hotel_Presidentti-Helsinki_Southern_Finland.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221258467">&#x201c;<span class='noQuotes'>Nice for the price</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='12 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+We stayed at this hotel for a weekend break. The hotel is 5* for location, and the staff where all very helpful and happy. The hotel is a little dated in deco, however it was clean and had excellent access to free wifi, both provided by the hotel and Helsinki public wifi! The breakfast included in our rate was ok, nothing special but it did set us up well for the day. Returning from a meal one evening we had a night cap in the hotel bar which we found to be good. If I return to Helsinki or if any of my friends visit in the future we would recommend this mid range/ budget hotel to them.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221258467_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221258467 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvAAmdqHMXK3k3oqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXUXovd3k6XoXfXXUUUmUU36XoXfXXKodAvoA6XoXfXUAvkXkoK6XoXfXUAkoAK3K6XoXfXUAX3UUXU6XoXfXUkkoAdX36XoXfXUov3KKKd6XoXfXUdAXvkkm6XoXfXUdodAkXdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXUXovd3kqHNESySCJcQQoqnQQhi9itQQoqnQQqWQQoqnQQwEVtSMVCIISqH5VctSC9SQQoqnQQhipIGVECQQoqnQQqnSCcJCMxiGIac6XoXmqoTpcXXUXovd3k0tEn1XXUXovd3k0zH1UvAAmd0pSM1XbkXf3mUoUXvXxMf7f7dfXofX73kvKzsqnm0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221258467" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221258467'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=2A72C63151282DCBCB4C25C2B6780EF3&amp;lang=en&amp;messagetype=2&amp;d=206765&amp;geo=&amp;src=221258467&amp;t=r&amp;summary=Original+Sokos+Hotel+Presidentti" id="pm2A72C63151282DCBCB4C25C2B6780EF3" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask wake35 about Original Sokos Hotel Presidentti</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Presidentti, Manager at Original Sokos Hotel Presidentti, responded to this review,
+<span class="res_date relativeDate" title='21 August 2014'>4 days ago</span>
+</div>
+<div class="displayText" id="response_221258467">
+Dear wake35,<br/>Thank you for your visit and this review. I'm glad that you enjoyed the location and that our front desk staff was helpful and happy during your time with us. Wish you welcome back in our hotel when returning to Helsinki.<br/>Kind regards,<br/>Juha Sundqvist, Hotel Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223369527" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223369527, isGeo:false, locationid:206765})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223369527" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_223369527">
+<a name="UR223369527"></a>
+<div id="UR223369527" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g189934-d206765-r223369527-Original_Sokos_Hotel_Presidentti-Helsinki_Southern_Finland.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223369527">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear wake35,<br/>Thank you for your visit and this review. I'm glad that you enjoyed the location and that our front desk staff was helpful and happy during your time with us. Wish you welcome back in our hotel when returning to Helsinki.<br/>Kind regards,<br/>Juha Sundqvist, Hotel Manager
+</p>
+</div>
+<div id="helpfulq223369527_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223369527 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvAAmdqHMXK3k3oqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXUXovd3k6XoXfXXUUUmUU36XoXfXXKodAvoA6XoXfXUAvkXkoK6XoXfXUAkoAK3K6XoXfXUAX3UUXU6XoXfXUkkoAdX36XoXfXUov3KKKd6XoXfXUdAXvkkm6XoXfXUdodAkXdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXUXovd3kqHNESySCJcQQoqnQQhi9itQQoqnQQqWQQoqnQQwEVtSMVCIISqH5VctSC9SQQoqnQQhipIGVECQQoqnQQqnSCcJCMxiGIac6XoXmqoTpcXXmm3AoXk0tEn1XXmm3AoXk0zH1UvAAmd0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223369527" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223369527'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221113116">
+<a name="UR221113116"></a>
+<div id="UR221113116" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_D555FD719F9DE1CF68C52FF7BEF203DF-SRC_221113116" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_D555FD719F9DE1CF68C52FF7BEF203DF ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/02/7c/11/26/carefreeretiree2002.jpg" class="avatar potentialFacebookAvatar avatarGUID:D555FD719F9DE1CF68C52FF7BEF203DF" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_D555FD719F9DE1CF68C52FF7BEF203DF" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">CarefreeRetiree2002</span>
+</div>
+</div>
+<div class="location">
+Asheville, Nc
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_D555FD719F9DE1CF68C52FF7BEF203DF-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="40 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">40 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">8 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'D555FD719F9DE1CF68C52FF7BEF203DF', screenName: 'CarefreeRetiree2002', geos: [49068, 34543, 34297, 60742, 34678, 49553, 34438, 34230, 34345, 189932, 189934, 34420, 60734, 34636, 3844669, 34121], geo: '189934' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 16 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 16 cities</span> </div>
+<div id="UID_D555FD719F9DE1CF68C52FF7BEF203DF-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="31 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">31 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g189934-d206765-r221113116-Original_Sokos_Hotel_Presidentti-Helsinki_Southern_Finland.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221113116">&#x201c;<span class='noQuotes'>Great location, nice hotel!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='11 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+This Sokos worked out perfectly for us during our final days in Helsinki. It is very conveniently located near the historic Railway Station, Kiasma, and the Atteneum Museum, where there is currently a special exhibition of the art of Tove Jansson, a very famous writer in Finland. Shops, restaurants, Alco, and even a cider pub (I had a microbrew lingonberry cider there) are right around the corner. The breakfast buffet was generous and varied, with large picture windows featuring a view of the Museum of Natural History across the street. Staff at the front desk were very helpful and friendly, an English daily newspaper was provided free of charge, and we enjoyed a restaurant featuring tapas just up a small flight of stairs from the lobby. We also found an excellent tapas restaurant just two blocks away, across from the Railway Station. Convenient, clean, tidy, and a good breakfast--we were very pleased! There is also parking in the garage below the hotel, which is very pricey by U.S. standards, but this is downtown Helsinki, so that it is to be expected.
+</p>
+</div>
+<div class="media  thumbCols2">
+<div class="thumbnails">
+<div class="photosInline">
+<ul>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g189934-d206765-i106734190-r221113116-Original_Sokos_Hotel_Presidentti-Helsinki_Southern_Finland.html#106734190 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 206765, 189934, 2, 106734190);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/5c/a2/6e/original-sokos-hotel.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g189934-d206765-i106734093-r221113116-Original_Sokos_Hotel_Presidentti-Helsinki_Southern_Finland.html#106734093 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 206765, 189934, 2, 106734093);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/5c/a2/0d/original-sokos-hotel.jpg" alt="" width="50" height="50">
+</span>
+</li>
+</ul>
+</div> </div> </div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled with friends</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221113116_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221113116 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvAAmdqHMXK3k3oqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXUXovd3k6XoXfXXUUUmUU36XoXfXXKodAvoA6XoXfXUAvkXkoK6XoXfXUAkoAK3K6XoXfXUAX3UUXU6XoXfXUkkoAdX36XoXfXUov3KKKd6XoXfXUdAXvkkm6XoXfXUdodAkXdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXUXovd3kqHNESySCJcQQoqnQQhi9itQQoqnQQqWQQoqnQQwEVtSMVCIISqH5VctSC9SQQoqnQQhipIGVECQQoqnQQqnSCcJCMxiGIac6XoXmqoTpcXXUUUmUU30tEn1XXUUUmUU30zH1UvAAmd0pSM1xMoooqnxMkUAqnAxMzsUfqn3vfoXqnqnk7zsqnXKmxMqn0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221113116" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221113116'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=D555FD719F9DE1CF68C52FF7BEF203DF&amp;lang=en&amp;messagetype=2&amp;d=206765&amp;geo=&amp;src=221113116&amp;t=r&amp;summary=Original+Sokos+Hotel+Presidentti" id="pmD555FD719F9DE1CF68C52FF7BEF203DF" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask CarefreeRetiree2002 about Original Sokos Hotel Presidentti</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Presidentti, Manager at Original Sokos Hotel Presidentti, responded to this review,
+<span class="res_date relativeDate" title='21 August 2014'>4 days ago</span>
+</div>
+<div class="displayText" id="response_221113116">
+Dear CarefreeRetiree2002,<br/>Thank you for staying with us and providing such wonderful feedback and taking the time to share your experience with other Tripadvisor readers. I hope you have a chance to return soon in Helsinki and we look forward to welcoming you back in Original Sokos Hotel Presidentti.<br/>Kind regards,<br/>Juha Sundqvist, Hotel Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_223354489" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:223354489, isGeo:false, locationid:206765})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_223354489" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223354489">
+<a name="UR223354489"></a>
+<div id="UR223354489" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g189934-d206765-r223354489-Original_Sokos_Hotel_Presidentti-Helsinki_Southern_Finland.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223354489">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear CarefreeRetiree2002,<br/>Thank you for staying with us and providing such wonderful feedback and taking the time to share your experience with other Tripadvisor readers. I hope you have a chance to return soon in Helsinki and we look forward to welcoming you back in Original Sokos Hotel Presidentti.<br/>Kind regards,<br/>Juha Sundqvist, Hotel Manager
+</p>
+</div>
+<div id="helpfulq223354489_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223354489 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvAAmdqHMXK3k3oqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXUXovd3k6XoXfXXUUUmUU36XoXfXXKodAvoA6XoXfXUAvkXkoK6XoXfXUAkoAK3K6XoXfXUAX3UUXU6XoXfXUkkoAdX36XoXfXUov3KKKd6XoXfXUdAXvkkm6XoXfXUdodAkXdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXUXovd3kqHNESySCJcQQoqnQQhi9itQQoqnQQqWQQoqnQQwEVtSMVCIISqH5VctSC9SQQoqnQQhipIGVECQQoqnQQqnSCcJCMxiGIac6XoXmqoTpcXXmmoddvA0tEn1XXmmoddvA0zH1UvAAmd0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223354489" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223354489'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220549859">
+<a name="UR220549859"></a>
+<div id="UR220549859" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_41D3A86E9961C27F17A862287C77BE5D-SRC_220549859" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_41D3A86E9961C27F17A862287C77BE5D ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/99/avatar025.jpg" class="avatar potentialFacebookAvatar avatarGUID:41D3A86E9961C27F17A862287C77BE5D" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_41D3A86E9961C27F17A862287C77BE5D" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Sally0031</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_41D3A86E9961C27F17A862287C77BE5D-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="9 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">9 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">4 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '41D3A86E9961C27F17A862287C77BE5D', screenName: 'Sally0031', geos: [189934, 295424, 187497, 294005, 293831, 298264], geo: '189934' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 6 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 6 cities</span> </div>
+<div id="UID_41D3A86E9961C27F17A862287C77BE5D-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">3 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g189934-d206765-r220549859-Original_Sokos_Hotel_Presidentti-Helsinki_Southern_Finland.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220549859">&#x201c;<span class='noQuotes'>Best breakfast n location</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='9 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+The hotel room was pretty small .. basic ..clean .. wireless .. amazing breakfast buffet .. bit grumpy receptionists .. bit old fashioned and bit depressing .. the good news is the location .. it's located in the best place of Helsinki in a walking distance from moat of the attractions and the vital places of the finnish capital
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed February 2014</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq220549859_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220549859 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvAAmdqHMXK3k3oqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXUXovd3k6XoXfXXUUUmUU36XoXfXXKodAvoA6XoXfXUAvkXkoK6XoXfXUAkoAK3K6XoXfXUAX3UUXU6XoXfXUkkoAdX36XoXfXUov3KKKd6XoXfXUdAXvkkm6XoXfXUdodAkXdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXUXovd3kqHNESySCJcQQoqnQQhi9itQQoqnQQqWQQoqnQQwEVtSMVCIISqH5VctSC9SQQoqnQQhipIGVECQQoqnQQqnSCcJCMxiGIac6XoXmqoTpcXXKodAvoA0tEn1XXKodAvoA0zH1UvAAmd0pSM1dUxMmbv3zsAA3UfXkqnUkbv3XXvkfkk7zsoxM0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220549859" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220549859'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=41D3A86E9961C27F17A862287C77BE5D&amp;lang=en&amp;messagetype=2&amp;d=206765&amp;geo=&amp;src=220549859&amp;t=r&amp;summary=Original+Sokos+Hotel+Presidentti" id="pm41D3A86E9961C27F17A862287C77BE5D" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Sally0031 about Original Sokos Hotel Presidentti</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Presidentti, Manager at Original Sokos Hotel Presidentti, responded to this review,
+<span class="res_date relativeDate" title='15 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_220549859">
+Dear Sally0031,<br/>Thank you for your review. I'm glad that you enjoyed the location and breakfast while staying in out hotel. Unfortunate that the staff was not entirely successful in their service this time even though the feedback of their activities has generally been positive. Thank you again for choosing our hotel and we look forward to welcoming you back.<br/>Kind Regards,<br/>Juha Sundqvist, Hotel Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_221950680" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:221950680, isGeo:false, locationid:206765})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_221950680" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221950680">
+<a name="UR221950680"></a>
+<div id="UR221950680" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g189934-d206765-r221950680-Original_Sokos_Hotel_Presidentti-Helsinki_Southern_Finland.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221950680">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='15 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Sally0031,<br/>Thank you for your review. I'm glad that you enjoyed the location and breakfast while staying in out hotel. Unfortunate that the staff was not entirely successful in their service this time even though the feedback of their activities has generally been positive. Thank you again for choosing our hotel and we look forward to welcoming you back.<br/>Kind Regards,<br/>Juha Sundqvist, Hotel Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221950680_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221950680 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvAAmdqHMXK3k3oqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXUXovd3k6XoXfXXUUUmUU36XoXfXXKodAvoA6XoXfXUAvkXkoK6XoXfXUAkoAK3K6XoXfXUAX3UUXU6XoXfXUkkoAdX36XoXfXUov3KKKd6XoXfXUdAXvkkm6XoXfXUdodAkXdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXUXovd3kqHNESySCJcQQoqnQQhi9itQQoqnQQqWQQoqnQQwEVtSMVCIISqH5VctSC9SQQoqnQQhipIGVECQQoqnQQqnSCcJCMxiGIac6XoXmqoTpcXXUAoK3vK0tEn1XXUAoK3vK0zH1UvAAmd0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221950680" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221950680'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_219872750">
+<a name="UR219872750"></a>
+<div id="UR219872750" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_D60949F35E3FEE4B9A2EBCB53ED80324-SRC_219872750" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_D60949F35E3FEE4B9A2EBCB53ED80324 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/9a/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:D60949F35E3FEE4B9A2EBCB53ED80324" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_D60949F35E3FEE4B9A2EBCB53ED80324" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">pixieh</span>
+</div>
+</div>
+<div class="location">
+Scot in London
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_D60949F35E3FEE4B9A2EBCB53ED80324-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="27 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">27 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">6 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'D60949F35E3FEE4B9A2EBCB53ED80324', screenName: 'pixieh', geos: [189852, 642192, 189918, 187854, 1188556, 189934, 190475, 190502, 186338, 1532025, 504165, 187894, 190466], geo: '189934' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 13 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 13 cities</span> </div>
+<div id="UID_D60949F35E3FEE4B9A2EBCB53ED80324-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="18 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">18 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g189934-d206765-r219872750-Original_Sokos_Hotel_Presidentti-Helsinki_Southern_Finland.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r219872750">&#x201c;<span class='noQuotes'>Wonderful location, nice hotel</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='6 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+A very adequate comfortable hotel in a great location - all main attractions within walking distance including Parliament building, railway station, several museums, the new concert hall, the opera house, the main shopping street and the terminal for boat trips round the harbour. Oh yes, and a beach and the old Olympic Stadium as well! Only complaint about the hotel: the shower leaked so we managed to soak all the towels. The staff were delightful and the buffet breakfast excellent. Not the most characterful hotel in the world but I'd stay here again for the location.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Probably better to be high up and at the back as the hotel is near a big traffic intersection.
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled with friends</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq219872750_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq219872750 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvAAmdqHMXK3k3oqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXUXovd3k6XoXfXXUUUmUU36XoXfXXKodAvoA6XoXfXUAvkXkoK6XoXfXUAkoAK3K6XoXfXUAX3UUXU6XoXfXUkkoAdX36XoXfXUov3KKKd6XoXfXUdAXvkkm6XoXfXUdodAkXdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXUXovd3kqHNESySCJcQQoqnQQhi9itQQoqnQQqWQQoqnQQwEVtSMVCIISqH5VctSC9SQQoqnQQhipIGVECQQoqnQQqnSCcJCMxiGIac6XoXmqoTpcXUAvkXkoK0tEn1XUAvkXkoK0zH1UvAAmd0pSM1xM3KAdAqnmozsmqnzszsd7AbXzs7f7omzsxMvKmXd0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_219872750" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '219872750'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/pixieh/g189934" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 4 reviews by pixieh for Helsinki </a>
+</div>
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=D60949F35E3FEE4B9A2EBCB53ED80324&amp;lang=en&amp;messagetype=2&amp;d=206765&amp;geo=&amp;src=219872750&amp;t=r&amp;summary=Original+Sokos+Hotel+Presidentti" id="pmD60949F35E3FEE4B9A2EBCB53ED80324" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask pixieh about Original Sokos Hotel Presidentti</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Presidentti, Manager at Original Sokos Hotel Presidentti, responded to this review,
+<span class="res_date relativeDate" title='7 August 2014'>2 weeks ago</span>
+</div>
+<div class="displayText" id="response_219872750">
+Dear pixieh,<br/>Thank you for choosing to stay with us here in Original Sokos Hotel Presidentti. I truly appreciate your positive review and it is wonderful to hear you enjoyed your accommodation. I appreciate you for taking the time to write this comment and hope to see you again soon in our hotel.<br/>Kind regards,<br/>Juha Sundqvist, Hotel Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_220204396" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:220204396, isGeo:false, locationid:206765})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_220204396" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220204396">
+<a name="UR220204396"></a>
+<div id="UR220204396" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g189934-d206765-r220204396-Original_Sokos_Hotel_Presidentti-Helsinki_Southern_Finland.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220204396">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='7 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+Dear pixieh,<br/>Thank you for choosing to stay with us here in Original Sokos Hotel Presidentti. I truly appreciate your positive review and it is wonderful to hear you enjoyed your accommodation. I appreciate you for taking the time to write this comment and hope to see you again soon in our hotel.<br/>Kind regards,<br/>Juha Sundqvist, Hotel Manager
+</p>
+</div>
+<div id="helpfulq220204396_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220204396 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvAAmdqHMXK3k3oqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXUXovd3k6XoXfXXUUUmUU36XoXfXXKodAvoA6XoXfXUAvkXkoK6XoXfXUAkoAK3K6XoXfXUAX3UUXU6XoXfXUkkoAdX36XoXfXUov3KKKd6XoXfXUdAXvkkm6XoXfXUdodAkXdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXUXovd3kqHNESySCJcQQoqnQQhi9itQQoqnQQqWQQoqnQQwEVtSMVCIISqH5VctSC9SQQoqnQQhipIGVECQQoqnQQqnSCcJCMxiGIac6XoXmqoTpcXXKXKdmA30tEn1XXKXKdmA30zH1UvAAmd0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220204396" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220204396'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_219759060">
+<a name="UR219759060"></a>
+<div id="UR219759060" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_4C84E6F058DFFD5CEE9409EADB9DBCD4-SRC_219759060" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_4C84E6F058DFFD5CEE9409EADB9DBCD4 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/73/avatar055.jpg" class="avatar potentialFacebookAvatar avatarGUID:4C84E6F058DFFD5CEE9409EADB9DBCD4" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_4C84E6F058DFFD5CEE9409EADB9DBCD4" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">YEJ2013</span>
+</div>
+</div>
+<div class="location">
+Milan, Italy
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_4C84E6F058DFFD5CEE9409EADB9DBCD4-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="9 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">9 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">7 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '4C84E6F058DFFD5CEE9409EADB9DBCD4', screenName: 'YEJ2013', geos: [189929, 187147, 230071, 1182415, 189934, 187842, 194832, 652003], geo: '189934' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 8 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 8 cities</span> </div>
+<div id="UID_4C84E6F058DFFD5CEE9409EADB9DBCD4-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="5 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">5 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g189934-d206765-r219759060-Original_Sokos_Hotel_Presidentti-Helsinki_Southern_Finland.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r219759060">&#x201c;<span class='noQuotes'>Not really four stars for today&#39;s standards.</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='5 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+I have stayed in this hotel just a few nights ago. I arrived very late and the young woman at the reception was kind enough to check me in. However, the hotel is very large with many rooms. Outside looked like there had been strange people hanging about. Broken beer bottles and cigarette butts all over the place. Wasn't very clean. The elevators floors were stained with beverages. When I arrived to my room it was okay but my bathroom was dirty and the shower looked like it hadn't been cleaned well. There were hairs all over the floor. I ran the shower water, walked out a moment and came back in to find a flooded floor. I went down and had my room changed and the young woman was nice enough to give me a comfort room but the truth is this hotel has not been kept up nor renovated since the 70's or 80's. It could be nice but it is poorly ran down and not up to the standards of a what would be considered a 4 star hotel. My room wasn't even cleaned the first day and I had to find the guy cleaning the rooms to give me fresh towels. He told me since I checked in at 3am they didn't have my room down as a room to be cleaned. My shower head was broken. Never did the breakfast but if it was the little bar at the reception area, I can hardly consider that a proper breakfast area. Comfortable sleeping but not a hotel where I felt really comfortable. One advantage is it's location within walking distance is the center of the town.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled on business</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss20" src="http://c1.tacdn.com/img2/x.gif" alt="2 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq219759060_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq219759060 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvAAmdqHMXK3k3oqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXUXovd3k6XoXfXXUUUmUU36XoXfXXKodAvoA6XoXfXUAvkXkoK6XoXfXUAkoAK3K6XoXfXUAX3UUXU6XoXfXUkkoAdX36XoXfXUov3KKKd6XoXfXUdAXvkkm6XoXfXUdodAkXdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXUXovd3kqHNESySCJcQQoqnQQhi9itQQoqnQQqWQQoqnQQwEVtSMVCIISqH5VctSC9SQQoqnQQhipIGVECQQoqnQQqnSCcJCMxiGIac6XoXmqoTpcXUAkoAK3K0tEn1XUAkoAK3K0zH1UvAAmd0pSM1dfvdzs3qnKovxMqnqnxMofzszsAdKAzsbxM7AxM7fxMd0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_219759060" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '219759060'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=4C84E6F058DFFD5CEE9409EADB9DBCD4&amp;lang=en&amp;messagetype=2&amp;d=206765&amp;geo=&amp;src=219759060&amp;t=r&amp;summary=Original+Sokos+Hotel+Presidentti" id="pm4C84E6F058DFFD5CEE9409EADB9DBCD4" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask YEJ2013 about Original Sokos Hotel Presidentti</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Presidentti, Manager at Original Sokos Hotel Presidentti, responded to this review,
+<span class="res_date relativeDate" title='7 August 2014'>2 weeks ago</span>
+</div>
+<div class="displayText" id="response_219759060">
+Dear YEJ2013,<br/>I am sorry to hear that you found your first guest room unacceptable and our room standards which did not meet your expectations. Our housekeepers work very hard to keep our guest rooms clean and hotel room like described is not the standard at our hotel. My sincerest apologies. I hope you consider staying with us again when returning next time to Helsinki.<br/>With kind regards,<br/>Juha Sundqvist, Hotel Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_220202201" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:220202201, isGeo:false, locationid:206765})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_220202201" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220202201">
+<a name="UR220202201"></a>
+<div id="UR220202201" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g189934-d206765-r220202201-Original_Sokos_Hotel_Presidentti-Helsinki_Southern_Finland.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220202201">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='7 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+Dear YEJ2013,<br/>I am sorry to hear that you found your first guest room unacceptable and our room standards which did not meet your expectations. Our housekeepers work very hard to keep our guest rooms clean and hotel room like described is not the standard at our hotel. My sincerest apologies. I hope you consider staying with us again when returning next time to Helsinki.<br/>With kind regards,<br/>Juha Sundqvist, Hotel Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq220202201_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220202201 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvAAmdqHMXK3k3oqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXUXovd3k6XoXfXXUUUmUU36XoXfXXKodAvoA6XoXfXUAvkXkoK6XoXfXUAkoAK3K6XoXfXUAX3UUXU6XoXfXUkkoAdX36XoXfXUov3KKKd6XoXfXUdAXvkkm6XoXfXUdodAkXdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXUXovd3kqHNESySCJcQQoqnQQhi9itQQoqnQQqWQQoqnQQwEVtSMVCIISqH5VctSC9SQQoqnQQhipIGVECQQoqnQQqnSCcJCMxiGIac6XoXmqoTpcXXKXKXXKU0tEn1XXKXKXXKU0zH1UvAAmd0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220202201" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220202201'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_219261121">
+<a name="UR219261121"></a>
+<div id="UR219261121" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_42A83744C2B99263238927A1BC52488A-SRC_219261121" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_42A83744C2B99263238927A1BC52488A ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/75/avatar057.jpg" class="avatar potentialFacebookAvatar avatarGUID:42A83744C2B99263238927A1BC52488A" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_42A83744C2B99263238927A1BC52488A" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Olga Z</span>
+</div>
+</div>
+<div class="location">
+Sankt-peterburg
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_42A83744C2B99263238927A1BC52488A-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">3 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">3 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '42A83744C2B99263238927A1BC52488A', screenName: 'Olga Z', geos: [274707, 189934, 274958], geo: '189934' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 3 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 3 cities</span> </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g189934-d206765-r219261121-Original_Sokos_Hotel_Presidentti-Helsinki_Southern_Finland.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r219261121">&#x201c;<span class='noQuotes'>very modestly</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='3 August 2014'>Reviewed 3 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+Booking a room in this hotel in Helsinki, I was expecting a high level worthy of four stars. But, unfortunately, the room was fairly modest, shower uncomfortable and why that double was only one shower cap, I'm not talking about slippers and robes - and they are not promised. On resershen service is good, breakfast is acceptable, and, perhaps, the main plus of the hotel - it's location, right above the bus station in the city center.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled with friends</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq219261121_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq219261121 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvAAmdqHMXK3k3oqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXUXovd3k6XoXfXXUUUmUU36XoXfXXKodAvoA6XoXfXUAvkXkoK6XoXfXUAkoAK3K6XoXfXUAX3UUXU6XoXfXUkkoAdX36XoXfXUov3KKKd6XoXfXUdAXvkkm6XoXfXUdodAkXdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXUXovd3kqHNESySCJcQQoqnQQhi9itQQoqnQQqWQQoqnQQwEVtSMVCIISqH5VctSC9SQQoqnQQhipIGVECQQoqnQQqnSCcJCMxiGIac6XoXmqoTpcXUAX3UUXU0tEn1XUAX3UUXU0zH1UvAAmd0pSM1dXbvmkddfX7AAX3mXmvAXkbU7foXdvvb0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_219261121" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '219261121'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=42A83744C2B99263238927A1BC52488A&amp;lang=en&amp;messagetype=2&amp;d=206765&amp;geo=&amp;src=219261121&amp;t=r&amp;summary=Original+Sokos+Hotel+Presidentti" id="pm42A83744C2B99263238927A1BC52488A" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Olga Z about Original Sokos Hotel Presidentti</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Presidentti, Manager at Original Sokos Hotel Presidentti, responded to this review,
+<span class="res_date relativeDate" title='6 August 2014'>2 weeks ago</span>
+</div>
+<div class="displayText" id="response_219261121">
+Dear Olga Z,<br/>Thank you for your comments from your recent stay at our hotel. I apologize that we were unable to completely satisfy your needs during your visit with us. We strive to provide clean comfortable room and friendly service to our every guest. I was pleased to hear that guest service was successful and location excellent.<br/>Kind regards,<br/>Juha Sundqvist, Hotel Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_219978564" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:219978564, isGeo:false, locationid:206765})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_219978564" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_219978564">
+<a name="UR219978564"></a>
+<div id="UR219978564" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g189934-d206765-r219978564-Original_Sokos_Hotel_Presidentti-Helsinki_Southern_Finland.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r219978564">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='6 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Olga Z,<br/>Thank you for your comments from your recent stay at our hotel. I apologize that we were unable to completely satisfy your needs during your visit with us. We strive to provide clean comfortable room and friendly service to our every guest. I was pleased to hear that guest service was successful and location excellent.<br/>Kind regards,<br/>Juha Sundqvist, Hotel Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq219978564_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq219978564 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvAAmdqHMXK3k3oqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXUXovd3k6XoXfXXUUUmUU36XoXfXXKodAvoA6XoXfXUAvkXkoK6XoXfXUAkoAK3K6XoXfXUAX3UUXU6XoXfXUkkoAdX36XoXfXUov3KKKd6XoXfXUdAXvkkm6XoXfXUdodAkXdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXUXovd3kqHNESySCJcQQoqnQQhi9itQQoqnQQqWQQoqnQQwEVtSMVCIISqH5VctSC9SQQoqnQQhipIGVECQQoqnQQqnSCcJCMxiGIac6XoXmqoTpcXUAAkvo3d0tEn1XUAAkvo3d0zH1UvAAmd0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_219978564" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '219978564'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_217759426">
+<a name="UR217759426"></a>
+<div id="UR217759426" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_580BB45E2F21FCDD18127C55879AFC50-SRC_217759426" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_580BB45E2F21FCDD18127C55879AFC50 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/03/d2/0f/56/john2090.jpg" class="avatar potentialFacebookAvatar avatarGUID:580BB45E2F21FCDD18127C55879AFC50" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_580BB45E2F21FCDD18127C55879AFC50" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">John2090</span>
+</div>
+</div>
+<div class="location">
+Sydney, New South Wales, Australia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_580BB45E2F21FCDD18127C55879AFC50-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="19 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">19 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">6 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '580BB45E2F21FCDD18127C55879AFC50', screenName: 'John2090', geos: [6628152, 297701, 274967, 608486, 189934, 311298, 480231, 293829, 274958], geo: '189934' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 9 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 9 cities</span> </div>
+<div id="UID_580BB45E2F21FCDD18127C55879AFC50-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">3 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g189934-d206765-r217759426-Original_Sokos_Hotel_Presidentti-Helsinki_Southern_Finland.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r217759426">&#x201c;<span class='noQuotes'>A bit tired but comfortable</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='27 July 2014'>Reviewed 4 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+This hotel is well situated being close to the downtown area of Helsinki, close to the railway station and other transport. I was travelling with a group (58 Choristers) on route to the World Choir Games in Riga, Latvia. The room was clean and while not particularly large it was adequate. I had no difficulty with WiFi. I could control my room temperature with the termostat and slept well. The breakfast room was large and while busy, staff seemed to keep up with clearing tables and replenishing the buffet. Its easy to walk around Helsinki, and the markets are a must to visit. In summer the berries are plentiful and cheap.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled with friends</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq217759426_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq217759426 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvAAmdqHMXK3k3oqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXUXovd3k6XoXfXXUUUmUU36XoXfXXKodAvoA6XoXfXUAvkXkoK6XoXfXUAkoAK3K6XoXfXUAX3UUXU6XoXfXUkkoAdX36XoXfXUov3KKKd6XoXfXUdAXvkkm6XoXfXUdodAkXdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXUXovd3kqHNESySCJcQQoqnQQhi9itQQoqnQQqWQQoqnQQwEVtSMVCIISqH5VctSC9SQQoqnQQhipIGVECQQoqnQQqnSCcJCMxiGIac6XoXmqoTpcXUkkoAdX30tEn1XUkkoAdX30zH1UvAAmd0pSM1ovK77dozsXqnXUqnfxMxMUvUXkfoovkAbqnfoK0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_217759426" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '217759426'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/John2090/g189934" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 5 reviews by John2090 for Helsinki </a>
+</div>
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=580BB45E2F21FCDD18127C55879AFC50&amp;lang=en&amp;messagetype=2&amp;d=206765&amp;geo=&amp;src=217759426&amp;t=r&amp;summary=Original+Sokos+Hotel+Presidentti" id="pm580BB45E2F21FCDD18127C55879AFC50" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask John2090 about Original Sokos Hotel Presidentti</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Presidentti, Johtaja at Original Sokos Hotel Presidentti, responded to this review,
+<span class="res_date relativeDate" title='1 August 2014'>3 weeks ago</span>
+</div>
+<div class="displayText" id="response_217759426">
+Dear John2090,<br/>Thank you for your review on Trip Advisor. I greatly appreciate your detailed review and feel certain this information will be helpful to others traveling to our hotel. I am also pleased that your choir chose our hotel to stay in Helsinki and found it to be a good value considering the many choices in the area.<br/>Kind regards from Original Sokos Hotel Presidentti,<br/>Juha Sundqvist, Hotel Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_218825894" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:218825894, isGeo:false, locationid:206765})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_218825894" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_218825894">
+<a name="UR218825894"></a>
+<div id="UR218825894" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g189934-d206765-r218825894-Original_Sokos_Hotel_Presidentti-Helsinki_Southern_Finland.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r218825894">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='1 August 2014'>Reviewed 3 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+Dear John2090,<br/>Thank you for your review on Trip Advisor. I greatly appreciate your detailed review and feel certain this information will be helpful to others traveling to our hotel. I am also pleased that your choir chose our hotel to stay in Helsinki and found it to be a good value considering the many choices in the area.<br/>Kind regards from Original Sokos Hotel Presidentti,<br/>Juha Sundqvist, Hotel Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq218825894_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq218825894 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvAAmdqHMXK3k3oqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXUXovd3k6XoXfXXUUUmUU36XoXfXXKodAvoA6XoXfXUAvkXkoK6XoXfXUAkoAK3K6XoXfXUAX3UUXU6XoXfXUkkoAdX36XoXfXUov3KKKd6XoXfXUdAXvkkm6XoXfXUdodAkXdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXUXovd3kqHNESySCJcQQoqnQQhi9itQQoqnQQqWQQoqnQQwEVtSMVCIISqH5VctSC9SQQoqnQQhipIGVECQQoqnQQqnSCcJCMxiGIac6XoXmqoTpcXUvvXovAd0tEn1XUvvXovAd0zH1UvAAmd0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_218825894" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '218825894'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_215860004">
+<a name="UR215860004"></a>
+<div id="UR215860004" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_1CA37EC686CEA11742177A946C5F1079-SRC_215860004" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_1CA37EC686CEA11742177A946C5F1079 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/03/76/0d/42/niko-tampere.jpg" class="avatar potentialFacebookAvatar avatarGUID:1CA37EC686CEA11742177A946C5F1079" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_1CA37EC686CEA11742177A946C5F1079" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Niko_Tampere</span>
+</div>
+</div>
+<div class="location">
+Tampere, Finland
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_1CA37EC686CEA11742177A946C5F1079-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="17 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">17 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">14 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '1CA37EC686CEA11742177A946C5F1079', screenName: 'Niko_Tampere', geos: [2539242, 293918, 274951, 189934, 1597036, 188590, 469413, 676072, 187514, 186338, 3688649, 293925, 580110, 304074], geo: '189934' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 14 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 14 cities</span> </div>
+<div id="UID_1CA37EC686CEA11742177A946C5F1079-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="9 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">9 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g189934-d206765-r215860004-Original_Sokos_Hotel_Presidentti-Helsinki_Southern_Finland.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r215860004">&#x201c;<span class='noQuotes'>Back to the 80&#39;s</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s20" src="http://c1.tacdn.com/img2/x.gif" alt="2 of 5 stars">
+</span>
+<span class="ratingDate">Reviewed 17 July 2014
+</span>
+</div>
+<div class="entry">
+<p>
+The whole place is in desperate need of renovation. This hotel is by no means from the cheaper end of the range in Helsinki and proved to be very poor. The location is the only good thing about it as it's in the middle of everything. Reception was under staffed with big queues. The service was nice once you got to the desk. Room was decades old and dirty and broken down from here and there. Breakfast room was a chaos, staff was not able to clear the tables and fill in the buffet. Breakfast room with mostly long tables is not a nice option.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed May 2014, travelled on business</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss10" src="http://c1.tacdn.com/img2/x.gif" alt="1 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq215860004_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq215860004 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvAAmdqHMXK3k3oqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXUXovd3k6XoXfXXUUUmUU36XoXfXXKodAvoA6XoXfXUAvkXkoK6XoXfXUAkoAK3K6XoXfXUAX3UUXU6XoXfXUkkoAdX36XoXfXUov3KKKd6XoXfXUdAXvkkm6XoXfXUdodAkXdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXUXovd3kqHNESySCJcQQoqnQQhi9itQQoqnQQqWQQoqnQQwEVtSMVCIISqH5VctSC9SQQoqnQQhipIGVECQQoqnQQqnSCcJCMxiGIac6XoXmqoTpcXUov3KKKd0tEn1XUov3KKKd0zH1UvAAmd0pSM1Ufbmkzsf3v3fzsbUUkdXUkkbAd3foqnUKkA0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_215860004" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '215860004'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=1CA37EC686CEA11742177A946C5F1079&amp;lang=en&amp;messagetype=2&amp;d=206765&amp;geo=&amp;src=215860004&amp;t=r&amp;summary=Original+Sokos+Hotel+Presidentti" id="pm1CA37EC686CEA11742177A946C5F1079" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Niko_Tampere about Original Sokos Hotel Presidentti</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Presidentti, Manager at Original Sokos Hotel Presidentti, responded to this review,
+<span class="res_date relativeDate" title='25 July 2014'>4 weeks ago</span>
+</div>
+<div class="displayText" id="response_215860004">
+Dear Niko_Tampere,<br/>Thank you for taking the time to review our hotel on TripAdvisor! We always strive to provide enjoyable guest experiences but it is regrettable that we weren't able to do so on this occasion. Please accept my sincerest apologies if the condition of the room you were given was a disappointment and fully booked hotel which caused annoyance. I have taken note of your comments and this will be forwarded to management to consider for upgrades needed on premises.<br/>Kind regards,<br/>Juha Sundqvist, Hotel Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_217388861" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:217388861, isGeo:false, locationid:206765})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_217388861" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_217388861">
+<a name="UR217388861"></a>
+<div id="UR217388861" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g189934-d206765-r217388861-Original_Sokos_Hotel_Presidentti-Helsinki_Southern_Finland.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r217388861">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='25 July 2014'>Reviewed 4 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Niko_Tampere,<br/>Thank you for taking the time to review our hotel on TripAdvisor! We always strive to provide enjoyable guest experiences but it is regrettable that we weren't able to do so on this occasion. Please accept my sincerest apologies if the condition of the room you were given was a disappointment and fully booked hotel which caused annoyance. I have taken note of your comments and this will be forwarded to management to consider for upgrades needed on premises.<br/>Kind regards,<br/>Juha Sundqvist, Hotel Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq217388861_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq217388861 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvAAmdqHMXK3k3oqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXUXovd3k6XoXfXXUUUmUU36XoXfXXKodAvoA6XoXfXUAvkXkoK6XoXfXUAkoAK3K6XoXfXUAX3UUXU6XoXfXUkkoAdX36XoXfXUov3KKKd6XoXfXUdAXvkkm6XoXfXUdodAkXdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXUXovd3kqHNESySCJcQQoqnQQhi9itQQoqnQQqWQQoqnQQwEVtSMVCIISqH5VctSC9SQQoqnQQhipIGVECQQoqnQQqnSCcJCMxiGIac6XoXmqoTpcXUkmvvv3U0tEn1XUkmvvv3U0zH1UvAAmd0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_217388861" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '217388861'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_214928773">
+<a name="UR214928773"></a>
+<div id="UR214928773" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_E50DC43B1E7FF6AC9AE1C974D735F32E-SRC_214928773" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_E50DC43B1E7FF6AC9AE1C974D735F32E ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/a3/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:E50DC43B1E7FF6AC9AE1C974D735F32E" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_E50DC43B1E7FF6AC9AE1C974D735F32E" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">them1</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_E50DC43B1E7FF6AC9AE1C974D735F32E-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="16 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">16 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">9 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'E50DC43B1E7FF6AC9AE1C974D735F32E', screenName: 'them1', geos: [1022648, 297458, 297459, 189948, 1676116, 189934, 187271, 294212, 274887], geo: '189934' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 9 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 9 cities</span> </div>
+<div id="UID_E50DC43B1E7FF6AC9AE1C974D735F32E-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">3 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g189934-d206765-r214928773-Original_Sokos_Hotel_Presidentti-Helsinki_Southern_Finland.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r214928773">&#x201c;<span class='noQuotes'>Good location. Outdated room.</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+<span class="ratingDate">Reviewed 12 July 2014
+</span>
+</div>
+<div class="entry">
+<p>
+Hotel with good location. Good standard finnish hotel breakfast. Sleep quality was also pretty good. Room was outdated, especially bathroom is a trip to CCCP era, taking a shower was difficult if you are tall, and standing in a slippery bath tub.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed July 2014, travelled with family</span>
+</div>
+</div>
+<div id="helpfulq214928773_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq214928773 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvAAmdqHMXK3k3oqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXUXovd3k6XoXfXXUUUmUU36XoXfXXKodAvoA6XoXfXUAvkXkoK6XoXfXUAkoAK3K6XoXfXUAX3UUXU6XoXfXUkkoAdX36XoXfXUov3KKKd6XoXfXUdAXvkkm6XoXfXUdodAkXdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXUXovd3kqHNESySCJcQQoqnQQhi9itQQoqnQQqWQQoqnQQwEVtSMVCIISqH5VctSC9SQQoqnQQhipIGVECQQoqnQQqnSCcJCMxiGIac6XoXmqoTpcXUdAXvkkm0tEn1XUdAXvkkm0zH1UvAAmd0pSM1zsoKxMfdm7Uzskqnqn3bfAbzsUfAkdxMkmoqnmXzs0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_214928773" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '214928773'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/them1/g189934" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 3 reviews by them1 for Helsinki </a>
+</div>
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=E50DC43B1E7FF6AC9AE1C974D735F32E&amp;lang=en&amp;messagetype=2&amp;d=206765&amp;geo=&amp;src=214928773&amp;t=r&amp;summary=Original+Sokos+Hotel+Presidentti" id="pmE50DC43B1E7FF6AC9AE1C974D735F32E" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask them1 about Original Sokos Hotel Presidentti</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Presidentti, Manager at Original Sokos Hotel Presidentti, responded to this review,
+<span class="res_date relativeDate" title='25 July 2014'>4 weeks ago</span>
+</div>
+<div class="displayText" id="response_214928773">
+Dear them1,<br/>Thank you for your feedback regarding your recent stay at our hotel. We aplogize that we did not exceed your expectations and appreciate your comments. It is true, we do need some remodeling. Our building has aged, but we hope to make some significant changes in the near future.<br/>Kind regards,<br/>Juha Sundqvist, Hotel Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_217390813" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:217390813, isGeo:false, locationid:206765})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_217390813" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_217390813">
+<a name="UR217390813"></a>
+<div id="UR217390813" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g189934-d206765-r217390813-Original_Sokos_Hotel_Presidentti-Helsinki_Southern_Finland.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r217390813">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='25 July 2014'>Reviewed 4 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+Dear them1,<br/>Thank you for your feedback regarding your recent stay at our hotel. We aplogize that we did not exceed your expectations and appreciate your comments. It is true, we do need some remodeling. Our building has aged, but we hope to make some significant changes in the near future.<br/>Kind regards,<br/>Juha Sundqvist, Hotel Manager
+</p>
+</div>
+<div id="helpfulq217390813_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq217390813 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvAAmdqHMXK3k3oqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXUXovd3k6XoXfXXUUUmUU36XoXfXXKodAvoA6XoXfXUAvkXkoK6XoXfXUAkoAK3K6XoXfXUAX3UUXU6XoXfXUkkoAdX36XoXfXUov3KKKd6XoXfXUdAXvkkm6XoXfXUdodAkXdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXUXovd3kqHNESySCJcQQoqnQQhi9itQQoqnQQqWQQoqnQQwEVtSMVCIISqH5VctSC9SQQoqnQQhipIGVECQQoqnQQqnSCcJCMxiGIac6XoXmqoTpcXUkmAKvUm0tEn1XUkmAKvUm0zH1UvAAmd0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_217390813" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '217390813'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_214549724">
+<a name="UR214549724"></a>
+<div id="UR214549724" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_5FA3D569FC25CA0BF573DF0BBC9C0CC2-SRC_214549724" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_5FA3D569FC25CA0BF573DF0BBC9C0CC2 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/04/8e/9f/58/dick-mary.jpg" class="avatar potentialFacebookAvatar avatarGUID:5FA3D569FC25CA0BF573DF0BBC9C0CC2" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_5FA3D569FC25CA0BF573DF0BBC9C0CC2" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">dick_mary</span>
+</div>
+</div>
+<div class="location">
+Portland, Oregon
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_5FA3D569FC25CA0BF573DF0BBC9C0CC2-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Top Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="63 reviews" class="icon badge_topcontributor sprite-badge_topcontributor" width="25" height="24">
+<span class="badgeText">63 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">13 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '5FA3D569FC25CA0BF573DF0BBC9C0CC2', screenName: 'dick_mary', geos: [186609, 60872, 51956, 189852, 186612, 189541, 36897, 315867, 51765, 43323, 29998, 52024, 51790, 190479, 44885, 43327, 51907, 189934, 186605, 60887], geo: '189934' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 20 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 20 cities</span> </div>
+<div id="UID_5FA3D569FC25CA0BF573DF0BBC9C0CC2-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="20 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">20 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g189934-d206765-r214549724-Original_Sokos_Hotel_Presidentti-Helsinki_Southern_Finland.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r214549724">&#x201c;<span class='noQuotes'>A good hotel near the heart of Helsinki</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate">Reviewed 10 July 2014
+</span>
+</div>
+<div class="entry">
+<p>
+We found the hotel to be most comfortable and the staff friendly. It is quite a busy place especially because it has many tour groups. With an all-day transit pass, the hotel is convenient to everything in Helsinki. There are four different tram lines that pass within a couple of blocks of the hotel. Furthermore, Helsinki is an easy walking city. In addition, there are many restaurants nearby.<br/><br/>Now the for the issues. First, breakfast was OK, but nothing like we had in hotels in Oslo, Stockholm, or Copenhagen. Second, as we have been finding, controlling the room temperature is very difficult. While this was the coolest of four that we stayed in, we were unable to cool it down enough for comfortable sleeping. Third, while we had Wifi, access to the Internet was sporadic. Often we would have a connection and it would disappear. A number of people in our group made comments about its lack of reliability, especially when one was halfway through trying to send an e-mail. Finally, the shower (room 809) leaked at the bottom and made the bath mat useless. Simple caulking would solve the problem.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> The do not appear to be any bad rooms
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq214549724_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq214549724 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvAAmdqHMXK3k3oqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXUXovd3k6XoXfXXUUUmUU36XoXfXXKodAvoA6XoXfXUAvkXkoK6XoXfXUAkoAK3K6XoXfXUAX3UUXU6XoXfXUkkoAdX36XoXfXUov3KKKd6XoXfXUdAXvkkm6XoXfXUdodAkXdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXUXovd3kqHNESySCJcQQoqnQQhi9itQQoqnQQqWQQoqnQQwEVtSMVCIISqH5VctSC9SQQoqnQQhipIGVECQQoqnQQqnSCcJCMxiGIac6XoXmqoTpcXUdodAkXd0tEn1XUdodAkXd0zH1UvAAmd0pSM1oqnbmxMo3AqnfXofbK7qnokmxMqnK77fAfKffX0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_214549724" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '214549724'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=5FA3D569FC25CA0BF573DF0BBC9C0CC2&amp;lang=en&amp;messagetype=2&amp;d=206765&amp;geo=&amp;src=214549724&amp;t=r&amp;summary=Original+Sokos+Hotel+Presidentti" id="pm5FA3D569FC25CA0BF573DF0BBC9C0CC2" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask dick_mary about Original Sokos Hotel Presidentti</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Presidentti, Manager at Original Sokos Hotel Presidentti, responded to this review,
+<span class="res_date" title='25 July 2014'>18 July 2014</span>
+</div>
+<div class="displayText" id="response_214549724">
+Dear dick_mary,<br/><br/>Thank you for your time when writing this review and staying with us in Original Sokos Hotel Presidentti. However, I am certainly disappointed by the too warm room temperature and stucked drain in your room. Wifi connections were under maintenance during your stay as its capacity was improved. I apologize that this fact was not told to you at that time. <br/>Kind regards,<br/>Juha Sundqvist<br/>Hotel Manager
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_216032956" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:216032956, isGeo:false, locationid:206765})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_216032956" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_216032956">
+<a name="UR216032956"></a>
+<div id="UR216032956" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g189934-d206765-r216032956-Original_Sokos_Hotel_Presidentti-Helsinki_Southern_Finland.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r216032956">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate">Reviewed 18 July 2014
+</span>
+</div>
+<div class="entry">
+<p>
+Dear dick_mary,<br/><br/>Thank you for your time when writing this review and staying with us in Original Sokos Hotel Presidentti. However, I am certainly disappointed by the too warm room temperature and stucked drain in your room. Wifi connections were under maintenance during your stay as its capacity was improved. I apologize that this fact was not told to you at that time. <br/>Kind regards,<br/>Juha Sundqvist<br/>Hotel Manager
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq216032956_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq216032956 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUvAAmdqHMXK3k3oqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXUXovd3k6XoXfXXUUUmUU36XoXfXXKodAvoA6XoXfXUAvkXkoK6XoXfXUAkoAK3K6XoXfXUAX3UUXU6XoXfXUkkoAdX36XoXfXUov3KKKd6XoXfXUdAXvkkm6XoXfXUdodAkXdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXUXovd3kqHNESySCJcQQoqnQQhi9itQQoqnQQqWQQoqnQQwEVtSMVCIISqH5VctSC9SQQoqnQQhipIGVECQQoqnQQqnSCcJCMxiGIac6XoXmqoTpcXU3KmXAo30tEn1XU3KmXAo30zH1UvAAmd0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_216032956" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '216032956'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>

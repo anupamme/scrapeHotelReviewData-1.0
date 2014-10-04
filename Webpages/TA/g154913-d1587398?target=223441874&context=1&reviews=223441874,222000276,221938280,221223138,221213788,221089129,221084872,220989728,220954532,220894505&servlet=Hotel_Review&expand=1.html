@@ -1,0 +1,1450 @@
+<div id="expanded_review_223441874">
+<a name="UR223441874"></a>
+<div id="UR223441874" class="extended provider0 first newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_2EC150484A3F0163709313ED63C916E8-SRC_223441874" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_2EC150484A3F0163709313ED63C916E8 ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: '2EC150484A3F0163709313ED63C916E8'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/a7/avatar078.jpg" class="avatar potentialFacebookAvatar avatarGUID:2EC150484A3F0163709313ED63C916E8" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_2EC150484A3F0163709313ED63C916E8" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">matt t</span>
+</div>
+</div>
+<div class="location">
+Corona, California
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_2EC150484A3F0163709313ED63C916E8-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="19 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">19 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">7 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '2EC150484A3F0163709313ED63C916E8', screenName: 'matt t', geos: [32588, 32740, 33026, 240329, 32172, 154913, 60713], geo: '154913' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 7 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 7 cities</span> </div>
+<div id="UID_2EC150484A3F0163709313ED63C916E8-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">4 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g154913-d1587398-r223441874-Hotel_Le_Germain_Calgary-Calgary_Alberta.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223441874">&#x201c;<span class='noQuotes'>Great Hotel</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Currently staying at Le Germain. Love the modern design yet without the Ikea decor. Im on the 9th floor facing office buildings ( when i open the blinds I'm watching people work ) not exactly the best view. However, the bed is extremely comfortable and the room itself is VERY clean! <br/><br/>CONS<br/>-wifi isn't the best <br/>-theres only about 30 channels on the tv ( most of which are news or local canadian programming ) <br/>-when room doors close they are EXTREMELY LOUD!<br/>-location, since the hotel is situated downtown ( not walking distance to 17th ) you've got to snag a cab to any of the good restaurants or bars.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled on business</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223441874_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223441874 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUodAUmqHMUovkmAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmddUvkd6XoXfXXXKKKXk36XoXfXXUAmvXvK6XoXfXXUXXmUmv6XoXfXXUXUmkvv6XoXfXXUKvAUXA6XoXfXXUKvdvkX6XoXfXXKAvAkXv6XoXfXXKAodomX6XoXfXXKvAdoKoqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmddUvkdqHqWQQoqnQQRVQQoqnQQzzVEaJSCQQoqnQQfJcyJEgqHfJcyJEgQQoqnQQbcHVEIJxiGIac6XoXmqoTpcXXmddUvkd0tEn1XXmddUvkd0zH1UodAUm0pSM1XzsfUoKdvdbmqnKU3mkKAmUmzsxM3mfAU3zsv0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223441874" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223441874'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/mattt161/g154913" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 3 reviews by matt t for Calgary </a>
+</div>
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=2EC150484A3F0163709313ED63C916E8&amp;lang=en&amp;messagetype=2&amp;d=1587398&amp;geo=&amp;src=223441874&amp;t=r&amp;summary=Hotel+Le+Germain+Calgary" id="pm2EC150484A3F0163709313ED63C916E8" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask matt t about Hotel Le Germain Calgary</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_222000276">
+<a name="UR222000276"></a>
+<div id="UR222000276" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_BEA94CB9CA34F7EEE3EB95CEA275F207-SRC_222000276" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_BEA94CB9CA34F7EEE3EB95CEA275F207 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/9d/avatar068.jpg" class="avatar potentialFacebookAvatar avatarGUID:BEA94CB9CA34F7EEE3EB95CEA275F207" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_BEA94CB9CA34F7EEE3EB95CEA275F207" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Travellin53</span>
+</div>
+</div>
+<div class="location">
+White Rock, BC
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_BEA94CB9CA34F7EEE3EB95CEA275F207-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="8 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">8 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'BEA94CB9CA34F7EEE3EB95CEA275F207', screenName: 'Travellin53', geos: [184841, 154913], geo: '154913' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 2 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 2 cities</span> </div>
+<div id="UID_BEA94CB9CA34F7EEE3EB95CEA275F207-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="2 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">2 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g154913-d1587398-r222000276-Hotel_Le_Germain_Calgary-Calgary_Alberta.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222000276">&#x201c;<span class='noQuotes'>Best Boutique Hotel</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='15 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Aug 07 first time staying in downtown Calgary &amp; thrilled we booked &quot;boutique&quot; (small yet mighty) Hotel Le Germain, excellent from check in to check out, accommodating staff &amp; love the &quot;modern&quot; decor! Appreciate attention to detail &amp; layout, eco features throughout hotel. Location superb in heart of city (Calgary Tower across street &amp; walk to shops &amp; restaurants). We had a spacious corner room even with the cot for our 10 yr old! Great beds &amp; linen &amp; shower made it hard to leave our quiet, comfy, &quot;home away from home&quot; room....slept in &amp; almost missed the great continental breakfast on 2nd floor, staff again understanding. Excellent food at Char Cut for dinner and lunch in the great Lounge space. Hotel Le Germain a definite highlight on our 9 day (7 different hotels) vacation, leaving us with fond memories of Calgary! We will be back!
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> For a &quot;quieter&quot; dining experience ask to be seated in the comfortable Lounge &amp; they se...
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222000276_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222000276 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUodAUmqHMUovkmAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmddUvkd6XoXfXXXKKKXk36XoXfXXUAmvXvK6XoXfXXUXXmUmv6XoXfXXUXUmkvv6XoXfXXUKvAUXA6XoXfXXUKvdvkX6XoXfXXKAvAkXv6XoXfXXKAodomX6XoXfXXKvAdoKoqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmddUvkdqHqWQQoqnQQRVQQoqnQQzzVEaJSCQQoqnQQfJcyJEgqHfJcyJEgQQoqnQQbcHVEIJxiGIac6XoXmqoTpcXXXKKKXk30tEn1XXXKKKXk30zH1UodAUm0pSM17zsbAdf7Afbmdqnkzszszsmzs7AofzsbXkoqnXKk0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222000276" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222000276'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/Travellin53/g154913" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 4 reviews by Travellin53 for Calgary </a>
+</div>
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=BEA94CB9CA34F7EEE3EB95CEA275F207&amp;lang=en&amp;messagetype=2&amp;d=1587398&amp;geo=&amp;src=222000276&amp;t=r&amp;summary=Hotel+Le+Germain+Calgary" id="pmBEA94CB9CA34F7EEE3EB95CEA275F207" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Travellin53 about Hotel Le Germain Calgary</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Robert D, Manager at Hotel Le Germain Calgary, responded to this review,
+<span class="res_date relativeDate" title='19 August 2014'>6 days ago</span>
+</div>
+<div class="displayText" id="response_222000276">
+Dear Travellin53,<br/>Thank you for the fantastic comments on trip advisor. We are glad we were noted as the highlight hotel during your travels. Yes, bed linens and mattresses in our hotel are very comfortable and rain fall shower heads makes it feel like you are at a Spa. We look forward to welcoming to Le Germain on your next visit to Calgary!<br/>Warm Regards,<br/><br/>Robert D'Orazio
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_222962005" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:222962005, isGeo:false, locationid:1587398})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_222962005" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222962005">
+<a name="UR222962005"></a>
+<div id="UR222962005" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g154913-d1587398-r222962005-Hotel_Le_Germain_Calgary-Calgary_Alberta.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222962005">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='19 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Travellin53,<br/>Thank you for the fantastic comments on trip advisor. We are glad we were noted as the highlight hotel during your travels. Yes, bed linens and mattresses in our hotel are very comfortable and rain fall shower heads makes it feel like you are at a Spa. We look forward to welcoming to Le Germain on your next visit to Calgary!<br/>Warm Regards,<br/><br/>Robert D'Orazio
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222962005_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222962005 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUodAUmqHMUovkmAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmddUvkd6XoXfXXXKKKXk36XoXfXXUAmvXvK6XoXfXXUXXmUmv6XoXfXXUXUmkvv6XoXfXXUKvAUXA6XoXfXXUKvdvkX6XoXfXXKAvAkXv6XoXfXXKAodomX6XoXfXXKvAdoKoqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmddUvkdqHqWQQoqnQQRVQQoqnQQzzVEaJSCQQoqnQQfJcyJEgqHfJcyJEgQQoqnQQbcHVEIJxiGIac6XoXmqoTpcXXXA3XKKo0tEn1XXXA3XKKo0zH1UodAUm0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222962005" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222962005'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221938280">
+<a name="UR221938280"></a>
+<div id="UR221938280" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_62AACDBD4331A387CEBFB415C2889EDD-SRC_221938280" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_62AACDBD4331A387CEBFB415C2889EDD ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/03/83/81/a6/donnakg.jpg" class="avatar potentialFacebookAvatar avatarGUID:62AACDBD4331A387CEBFB415C2889EDD" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_62AACDBD4331A387CEBFB415C2889EDD" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">DONNAKG</span>
+</div>
+</div>
+<div class="location">
+INDIANA
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_62AACDBD4331A387CEBFB415C2889EDD-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="26 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">26 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">9 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '62AACDBD4331A387CEBFB415C2889EDD', screenName: 'DONNAKG', geos: [303506, 37209, 34227, 50108, 50168, 32279, 154913, 154912, 50427, 154910, 50395, 36925, 34420, 1073588, 312741], geo: '154913' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 15 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 15 cities</span> </div>
+<div id="UID_62AACDBD4331A387CEBFB415C2889EDD-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="8 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">8 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g154913-d1587398-r221938280-Hotel_Le_Germain_Calgary-Calgary_Alberta.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221938280">&#x201c;<span class='noQuotes'>LE GERMAIN HOTEL</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='15 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+What a gem! ultimate 5 star service, huge rooms, modern bath/shower, rain shower head, free expresso machine, location wonderful. Valet &amp; conceirge are the best! bed- side lighting was great for reading ,, flat screen tv. <br/>loved it!
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> there are all good
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq221938280_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221938280 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUodAUmqHMUovkmAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmddUvkd6XoXfXXXKKKXk36XoXfXXUAmvXvK6XoXfXXUXXmUmv6XoXfXXUXUmkvv6XoXfXXUKvAUXA6XoXfXXUKvdvkX6XoXfXXKAvAkXv6XoXfXXKAodomX6XoXfXXKvAdoKoqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmddUvkdqHqWQQoqnQQRVQQoqnQQzzVEaJSCQQoqnQQfJcyJEgqHfJcyJEgQQoqnQQbcHVEIJxiGIac6XoXmqoTpcXXUAmvXvK0tEn1XXUAmvXvK0zH1UodAUm0pSM13XbbfxM7xMdmmUbmvkfzs7qn7dUofXvvAzsxMxM0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221938280" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221938280'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/DONNAKG/g154913" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 4 reviews by DONNAKG for Calgary </a>
+</div>
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=62AACDBD4331A387CEBFB415C2889EDD&amp;lang=en&amp;messagetype=2&amp;d=1587398&amp;geo=&amp;src=221938280&amp;t=r&amp;summary=Hotel+Le+Germain+Calgary" id="pm62AACDBD4331A387CEBFB415C2889EDD" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask DONNAKG about Hotel Le Germain Calgary</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Robert D, Manager at Hotel Le Germain Calgary, responded to this review,
+<span class="res_date relativeDate" title='19 August 2014'>6 days ago</span>
+</div>
+<div class="displayText" id="response_221938280">
+Dear DONNAKG,<br/> Thank you for writing a review about your past stay at Le Germain Hotel. Yes, other than a great spacious modern room, our guest enjoy the many perks while staying with us which is included in the room rate such as, free nespresso in each room, WI-FI, continental breakfast, and a fantastic roof top fitness room. We hope to welcome you back in the near future.<br/> Warm Regards,<br/><br/>Robert D'Orazio
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_222962548" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:222962548, isGeo:false, locationid:1587398})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_222962548" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222962548">
+<a name="UR222962548"></a>
+<div id="UR222962548" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g154913-d1587398-r222962548-Hotel_Le_Germain_Calgary-Calgary_Alberta.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222962548">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='19 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear DONNAKG,<br/> Thank you for writing a review about your past stay at Le Germain Hotel. Yes, other than a great spacious modern room, our guest enjoy the many perks while staying with us which is included in the room rate such as, free nespresso in each room, WI-FI, continental breakfast, and a fantastic roof top fitness room. We hope to welcome you back in the near future.<br/> Warm Regards,<br/><br/>Robert D'Orazio
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222962548_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222962548 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUodAUmqHMUovkmAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmddUvkd6XoXfXXXKKKXk36XoXfXXUAmvXvK6XoXfXXUXXmUmv6XoXfXXUXUmkvv6XoXfXXUKvAUXA6XoXfXXUKvdvkX6XoXfXXKAvAkXv6XoXfXXKAodomX6XoXfXXKvAdoKoqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmddUvkdqHqWQQoqnQQRVQQoqnQQzzVEaJSCQQoqnQQfJcyJEgqHfJcyJEgQQoqnQQbcHVEIJxiGIac6XoXmqoTpcXXXA3Xodv0tEn1XXXA3Xodv0zH1UodAUm0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222962548" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222962548'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221223138">
+<a name="UR221223138"></a>
+<div id="UR221223138" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_C69EBFF9657E0A9A5C97ECCC4141A4C6-SRC_221223138" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_C69EBFF9657E0A9A5C97ECCC4141A4C6 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/97/avatar023.jpg" class="avatar potentialFacebookAvatar avatarGUID:C69EBFF9657E0A9A5C97ECCC4141A4C6" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_C69EBFF9657E0A9A5C97ECCC4141A4C6" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">DREAMEN.FOOL</span>
+</div>
+</div>
+<div class="location">
+TORONTO
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_C69EBFF9657E0A9A5C97ECCC4141A4C6-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="31 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">31 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">18 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'C69EBFF9657E0A9A5C97ECCC4141A4C6', screenName: 'DREAMEN.FOOL', geos: [58258, 1229340, 53164, 240327, 46696, 181744, 154913, 59437, 154911, 153510, 48050, 54359, 50207, 60763, 150807, 154998, 182183, 154999, 45963], geo: '154913' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 19 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 19 cities</span> </div>
+<div id="UID_C69EBFF9657E0A9A5C97ECCC4141A4C6-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="42 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">42 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g154913-d1587398-r221223138-Hotel_Le_Germain_Calgary-Calgary_Alberta.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221223138">&#x201c;<span class='noQuotes'>Wonderful modern comfort</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='12 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+This hotel did not disappoint. The rooms are clean and very nicely decorated in modern decor. The beds were comfortable and the bathrooms were luxurious. Room service was quick and the treatment we received both when checking in and out was exceptional. Only negatives were that the lighting was very dim and there was no do not disturb sign. This was annoying at 8:45am when I was trying to sleep in and housekeeping came knocking on the door. Not a huge deal, did not affect how I rated the hotel. Parking and valet was included, that was a nice plus.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014, travelled as a couple</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221223138_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221223138 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUodAUmqHMUovkmAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmddUvkd6XoXfXXXKKKXk36XoXfXXUAmvXvK6XoXfXXUXXmUmv6XoXfXXUXUmkvv6XoXfXXUKvAUXA6XoXfXXUKvdvkX6XoXfXXKAvAkXv6XoXfXXKAodomX6XoXfXXKvAdoKoqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmddUvkdqHqWQQoqnQQRVQQoqnQQzzVEaJSCQQoqnQQfJcyJEgqHfJcyJEgQQoqnQQbcHVEIJxiGIac6XoXmqoTpcXXUXXmUmv0tEn1XXUXXmUmv0zH1UodAUm0pSM1f3Azs7qnqnA3okzsKbAbofAkzsfffdUdUbdf30EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221223138" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221223138'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=C69EBFF9657E0A9A5C97ECCC4141A4C6&amp;lang=en&amp;messagetype=2&amp;d=1587398&amp;geo=&amp;src=221223138&amp;t=r&amp;summary=Hotel+Le+Germain+Calgary" id="pmC69EBFF9657E0A9A5C97ECCC4141A4C6" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask DREAMEN.FOOL about Hotel Le Germain Calgary</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Robert D, Manager at Hotel Le Germain Calgary, responded to this review,
+<span class="res_date relativeDate" title='19 August 2014'>6 days ago</span>
+</div>
+<div class="displayText" id="response_221223138">
+Dear DREAMEN.FOOL,<br/> Thank you for the review. We defiantly take pride on the cleanliness of our rooms and public spaces. Please feel free to ask us for extra lamps on your next stay. We do have electronic DND switches in each room; I will make sure our team informs all our guest! <br/>Warm Regards,<br/><br/>Robert D'Orazio
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_222963168" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:222963168, isGeo:false, locationid:1587398})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_222963168" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222963168">
+<a name="UR222963168"></a>
+<div id="UR222963168" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g154913-d1587398-r222963168-Hotel_Le_Germain_Calgary-Calgary_Alberta.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222963168">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='19 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Dear DREAMEN.FOOL,<br/> Thank you for the review. We defiantly take pride on the cleanliness of our rooms and public spaces. Please feel free to ask us for extra lamps on your next stay. We do have electronic DND switches in each room; I will make sure our team informs all our guest! <br/>Warm Regards,<br/><br/>Robert D'Orazio
+</p>
+</div>
+<div id="helpfulq222963168_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222963168 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUodAUmqHMUovkmAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmddUvkd6XoXfXXXKKKXk36XoXfXXUAmvXvK6XoXfXXUXXmUmv6XoXfXXUXUmkvv6XoXfXXUKvAUXA6XoXfXXUKvdvkX6XoXfXXKAvAkXv6XoXfXXKAodomX6XoXfXXKvAdoKoqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmddUvkdqHqWQQoqnQQRVQQoqnQQzzVEaJSCQQoqnQQfJcyJEgqHfJcyJEgQQoqnQQbcHVEIJxiGIac6XoXmqoTpcXXXA3mU3v0tEn1XXXA3mU3v0zH1UodAUm0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222963168" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222963168'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221213788">
+<a name="UR221213788"></a>
+<div id="UR221213788" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_4D7B7DA7DDC2717F23B588D6570C7BEF-SRC_221213788" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_4D7B7DA7DDC2717F23B588D6570C7BEF ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/a3/avatar074.jpg" class="avatar potentialFacebookAvatar avatarGUID:4D7B7DA7DDC2717F23B588D6570C7BEF" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_4D7B7DA7DDC2717F23B588D6570C7BEF" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">hotbrit45186</span>
+</div>
+</div>
+<div class="location">
+Edmonton, Canada
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_4D7B7DA7DDC2717F23B588D6570C7BEF-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">2 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '4D7B7DA7DDC2717F23B588D6570C7BEF', screenName: 'hotbrit45186', geos: [499445, 154913], geo: '154913' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 2 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 2 cities</span> </div>
+<div id="UID_4D7B7DA7DDC2717F23B588D6570C7BEF-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="2 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">2 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g154913-d1587398-r221213788-Hotel_Le_Germain_Calgary-Calgary_Alberta.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221213788">&#x201c;<span class='noQuotes'>Clean and Modern</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='12 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+Great place to stay in Calgary. Compared to Westin and Fairmont, this one wins by far. It is around the same price point, but it is WAY cleaner, more modern, and better maintained. Breakfast was nice for continental; includes coffee, juice, fresh fruit, yoghurt, granola, bagels, pastries, cheeses, hot oatmeal. Valet service is awesome. Unimpressed with front desk staff attitude.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with friends</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss20" src="http://c1.tacdn.com/img2/x.gif" alt="2 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq221213788_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221213788 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUodAUmqHMUovkmAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmddUvkd6XoXfXXXKKKXk36XoXfXXUAmvXvK6XoXfXXUXXmUmv6XoXfXXUXUmkvv6XoXfXXUKvAUXA6XoXfXXUKvdvkX6XoXfXXKAvAkXv6XoXfXXKAodomX6XoXfXXKvAdoKoqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmddUvkdqHqWQQoqnQQRVQQoqnQQzzVEaJSCQQoqnQQfJcyJEgqHfJcyJEgQQoqnQQbcHVEIJxiGIac6XoXmqoTpcXXUXUmkvv0tEn1XXUXUmkvv0zH1UodAUm0pSM1dxMk7kxMbkxMxMfXkUkqnXm7ovvxM3okKfk7zsqn0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221213788" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221213788'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=4D7B7DA7DDC2717F23B588D6570C7BEF&amp;lang=en&amp;messagetype=2&amp;d=1587398&amp;geo=&amp;src=221213788&amp;t=r&amp;summary=Hotel+Le+Germain+Calgary" id="pm4D7B7DA7DDC2717F23B588D6570C7BEF" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask hotbrit45186 about Hotel Le Germain Calgary</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Robert D, Manager at Hotel Le Germain Calgary, responded to this review,
+<span class="res_date relativeDate" title='13 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_221213788">
+Dear hotbrit45186, <br/>Thank you for the great review on trip advisor. We are glad you enjoyed our modern boutique style hotel. Everything is state of the art and high end. We do promote a very healthy continental breakfast which is included in all our room rates! All our guest take advantage of this as well as Wi-Fi being included in our rates. Look forward to welcoming you back to the hotel!<br/><br/>Warm Regards,<br/><br/>Robert D'Orazio<br/>rdorazio@germaincalgary.com
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_221439780" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:221439780, isGeo:false, locationid:1587398})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_221439780" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221439780">
+<a name="UR221439780"></a>
+<div id="UR221439780" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g154913-d1587398-r221439780-Hotel_Le_Germain_Calgary-Calgary_Alberta.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221439780">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='13 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Dear hotbrit45186, <br/>Thank you for the great review on trip advisor. We are glad you enjoyed our modern boutique style hotel. Everything is state of the art and high end. We do promote a very healthy continental breakfast which is included in all our room rates! All our guest take advantage of this as well as Wi-Fi being included in our rates. Look forward to welcoming you back to the hotel!<br/><br/>Warm Regards,<br/><br/>Robert D'Orazio<br/>rdorazio@germaincalgary.com
+</p>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221439780_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221439780 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUodAUmqHMUovkmAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmddUvkd6XoXfXXXKKKXk36XoXfXXUAmvXvK6XoXfXXUXXmUmv6XoXfXXUXUmkvv6XoXfXXUKvAUXA6XoXfXXUKvdvkX6XoXfXXKAvAkXv6XoXfXXKAodomX6XoXfXXKvAdoKoqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmddUvkdqHqWQQoqnQQRVQQoqnQQzzVEaJSCQQoqnQQfJcyJEgqHfJcyJEgQQoqnQQbcHVEIJxiGIac6XoXmqoTpcXXUdmAkvK0tEn1XXUdmAkvK0zH1UodAUm0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221439780" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221439780'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221089129">
+<a name="UR221089129"></a>
+<div id="UR221089129" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_824B00889B47E538451853FF8CEBDA87-SRC_221089129" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_824B00889B47E538451853FF8CEBDA87 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/05/36/66/98/meldebunda.jpg" class="avatar potentialFacebookAvatar avatarGUID:824B00889B47E538451853FF8CEBDA87" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_824B00889B47E538451853FF8CEBDA87" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Meldebunda</span>
+</div>
+</div>
+<div class="location">
+Hamilton, Canada
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_824B00889B47E538451853FF8CEBDA87-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="18 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">18 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">6 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '824B00889B47E538451853FF8CEBDA87', screenName: 'Meldebunda', geos: [60634, 155047, 32847, 60877, 182158, 60641, 31020, 155032, 154913, 154966], geo: '154913' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 10 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 10 cities</span> </div>
+<div id="UID_824B00889B47E538451853FF8CEBDA87-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="1 helpful vote" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">1 helpful vote</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g154913-d1587398-r221089129-Hotel_Le_Germain_Calgary-Calgary_Alberta.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221089129">&#x201c;<span class='noQuotes'>Brilliant, Quite Perfect</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='11 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+What a thrill to write such a glowing review for a hotel that is so fantastic!!!! I've been to 4 of the Le Germaine Properties and this one is my favourite. From the gorgeous check in desk, the friendly, efficient and friendly people that work in the lobby, nothing could be better. The sleek and sexy design of the hotel rooms, the bathrooms, the quality of the furnishings, the bedding, the sexy lighting in the rooms. Wow.. We just didn't want to leave the room. We actually booked here to stay &quot;at&quot; the hotel, and have a weekend away to just enjoy this hotel. The spa is stunning, like you've stepped into Shangri-la. The beds are perfect, the duvet, the pillows and if you put the flatscreen on channel 39, you have a roaring fire in front of you. The bathroom could be in a Style at Home Magazine. Perfect.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed December 2013, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221089129_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221089129 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUodAUmqHMUovkmAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmddUvkd6XoXfXXXKKKXk36XoXfXXUAmvXvK6XoXfXXUXXmUmv6XoXfXXUXUmkvv6XoXfXXUKvAUXA6XoXfXXUKvdvkX6XoXfXXKAvAkXv6XoXfXXKAodomX6XoXfXXKvAdoKoqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmddUvkdqHqWQQoqnQQRVQQoqnQQzzVEaJSCQQoqnQQfJcyJEgqHfJcyJEgQQoqnQQbcHVEIJxiGIac6XoXmqoTpcXXUKvAUXA0tEn1XXUKvAUXA0zH1UodAUm0pSM1vXd7KKvvA7dkzsomvdoUvomqnqnvfzs7xMbvk0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221089129" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221089129'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=824B00889B47E538451853FF8CEBDA87&amp;lang=en&amp;messagetype=2&amp;d=1587398&amp;geo=&amp;src=221089129&amp;t=r&amp;summary=Hotel+Le+Germain+Calgary" id="pm824B00889B47E538451853FF8CEBDA87" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Meldebunda about Hotel Le Germain Calgary</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class="mgrRspnInline">
+<div class="header">
+Robert D, Manager at Hotel Le Germain Calgary, responded to this review,
+<span class="res_date relativeDate" title='13 August 2014'>1 week ago</span>
+</div>
+<div class="displayText" id="response_221089129">
+Dear Meldebunda,<br/> Thank you for writing such a fantastic review about our hotel! We are glad you were able to enjoy a weekend at Le Germain and to take advantage of spending some time at Sante Spa. Everyone at Le Germain Hotel looks forward to welcoming you back! <br/><br/>Warm Regards,<br/><br/>Robert D'orazio<br/>rdorazio@germaincalgary.com
+</div>
+<span class="expandedProblem reportProblem">
+<span id="ReportIAP_OR_221442203" class="problem taLnk" onclick="ta.call('ta.overlays.Factory.iapOwnerFlyout', event, this, {reviewid:221442203, isGeo:false, locationid:1587398})">
+Report response as inappropriate
+</span>
+<span id="ReportIAP_OR_ThankYou_221442203" class="problem thank_you" style="display:none;">Thank you. We appreciate your input.</span>
+</span>
+<div class="note">
+This response is the subjective opinion of the management representative and not of TripAdvisor LLC
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221442203">
+<a name="UR221442203"></a>
+<div id="UR221442203" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div class="avatar ">
+<img src="http://c1.tacdn.com/img2/generic/site/no_user_photo-v1.gif" class="avatar" width="74" height="74"/>
+</div>
+<div class="username">
+A TripAdvisor Member </div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g154913-d1587398-r221442203-Hotel_Le_Germain_Calgary-Calgary_Alberta.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221442203">&#x201c;<span class='noQuotes'>Owner response</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="ratingDate relativeDate" title='13 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Dear Meldebunda,<br/> Thank you for writing such a fantastic review about our hotel! We are glad you were able to enjoy a weekend at Le Germain and to take advantage of spending some time at Sante Spa. Everyone at Le Germain Hotel looks forward to welcoming you back! <br/><br/>Warm Regards,<br/><br/>Robert D'orazio<br/>rdorazio@germaincalgary.com
+</p>
+</div>
+<div id="helpfulq221442203_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221442203 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUodAUmqHMUovkmAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmddUvkd6XoXfXXXKKKXk36XoXfXXUAmvXvK6XoXfXXUXXmUmv6XoXfXXUXUmkvv6XoXfXXUKvAUXA6XoXfXXUKvdvkX6XoXfXXKAvAkXv6XoXfXXKAodomX6XoXfXXKvAdoKoqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmddUvkdqHqWQQoqnQQRVQQoqnQQzzVEaJSCQQoqnQQfJcyJEgqHfJcyJEgQQoqnQQbcHVEIJxiGIac6XoXmqoTpcXXUddXXKm0tEn1XXUddXXKm0zH1UodAUm0pSM10EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221442203" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221442203'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221084872">
+<a name="UR221084872"></a>
+<div id="UR221084872" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_B127469CAFF26DF7CBF9E798B630F68F-SRC_221084872" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_B127469CAFF26DF7CBF9E798B630F68F ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/02/73/3a/64/lvbeachgirl.jpg" class="avatar potentialFacebookAvatar avatarGUID:B127469CAFF26DF7CBF9E798B630F68F" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_B127469CAFF26DF7CBF9E798B630F68F" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Beachgirl380</span>
+</div>
+</div>
+<div class="location">
+Toronto, Ontario
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_B127469CAFF26DF7CBF9E798B630F68F-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="33 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">33 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">17 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'B127469CAFF26DF7CBF9E798B630F68F', screenName: 'Beachgirl380', geos: [147365, 181752, 181722, 147367, 154984, 147399, 642244, 499275, 154913, 155002, 150812, 154943, 155004, 147293, 60763, 147248, 155033, 155032, 45963], geo: '154913' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 19 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 19 cities</span> </div>
+<div id="UID_B127469CAFF26DF7CBF9E798B630F68F-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="55 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">55 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g154913-d1587398-r221084872-Hotel_Le_Germain_Calgary-Calgary_Alberta.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221084872">&#x201c;<span class='noQuotes'>Clean and modern</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='11 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+Stayed for 3 nights on a business trip in August. Typically I stay at the Fairmont in Calgary but decided to give Le Germain a try. Overall the hotel is very modern and very clean. The bed in my room was extremely comfortable and the linens were very high quality. The bathroom was very large and modern with great toiletries. <br/><br/>The free breakfast that was included was ok, but would have been nice to have a few more options (example: there were no muffins which I thought was odd). The breakfast lounge had plenty of seating though, which was good.<br/><br/>The only aspect of the hotel I did not really care for was the overall &quot;dark&quot; ambience of the hotel. Hallways are very dark, my room was very dark with dark painted ceiling and it felt very &quot;industrial&quot; rather than cozy.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014, travelled on business</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221084872_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221084872 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUodAUmqHMUovkmAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmddUvkd6XoXfXXXKKKXk36XoXfXXUAmvXvK6XoXfXXUXXmUmv6XoXfXXUXUmkvv6XoXfXXUKvAUXA6XoXfXXUKvdvkX6XoXfXXKAvAkXv6XoXfXXKAodomX6XoXfXXKvAdoKoqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmddUvkdqHqWQQoqnQQRVQQoqnQQzzVEaJSCQQoqnQQfJcyJEgqHfJcyJEgQQoqnQQbcHVEIJxiGIac6XoXmqoTpcXXUKvdvkX0tEn1XXUKvdvkX0zH1UodAUm0pSM17UXkd3AfbqnqnX3xMqnkf7qnAzskAv73mKqn3vqn0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221084872" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221084872'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=B127469CAFF26DF7CBF9E798B630F68F&amp;lang=en&amp;messagetype=2&amp;d=1587398&amp;geo=&amp;src=221084872&amp;t=r&amp;summary=Hotel+Le+Germain+Calgary" id="pmB127469CAFF26DF7CBF9E798B630F68F" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Beachgirl380 about Hotel Le Germain Calgary</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220989728">
+<a name="UR220989728"></a>
+<div id="UR220989728" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_FBED316485E05A4693C030DD9D35E2EC-SRC_220989728" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_FBED316485E05A4693C030DD9D35E2EC ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/8e/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:FBED316485E05A4693C030DD9D35E2EC" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_FBED316485E05A4693C030DD9D35E2EC" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Lovetotravel88888</span>
+</div>
+</div>
+<div class="location">
+Red Deer, Canada
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_FBED316485E05A4693C030DD9D35E2EC-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="9 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">9 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">5 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'FBED316485E05A4693C030DD9D35E2EC', screenName: 'Lovetotravel88888', geos: [154942, 60634, 33412, 60632, 33388, 154913, 182167, 45963], geo: '154913' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 8 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 8 cities</span> </div>
+<div id="UID_FBED316485E05A4693C030DD9D35E2EC-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="2 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">2 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g154913-d1587398-r220989728-Hotel_Le_Germain_Calgary-Calgary_Alberta.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220989728">&#x201c;<span class='noQuotes'>Modern and gorgeous in downtown Calgary</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='11 August 2014'>Reviewed 2 weeks ago
+</span>
+<a class="viaMobile sprite-grayPhone" href="/apps" target="_blank" onclick="ta.util.cookie.setPIDCookie(24687)">via mobile</a>
+</div>
+<div class="entry">
+<p>
+Loved this hotel! Rooms are spacious, modern and new. Room even had a walk in closet! Breakfast had a huge selection and tasty. Walking distance to restaurants and shopping. One of the best hotels in downtown Calgary.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed September 2013, travelled with family</span>
+</div>
+</div>
+<div id="helpfulq220989728_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220989728 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUodAUmqHMUovkmAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmddUvkd6XoXfXXXKKKXk36XoXfXXUAmvXvK6XoXfXXUXXmUmv6XoXfXXUXUmkvv6XoXfXXUKvAUXA6XoXfXXUKvdvkX6XoXfXXKAvAkXv6XoXfXXKAodomX6XoXfXXKvAdoKoqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmddUvkdqHqWQQoqnQQRVQQoqnQQzzVEaJSCQQoqnQQfJcyJEgqHfJcyJEgQQoqnQQbcHVEIJxiGIac6XoXmqoTpcXXKAvAkXv0tEn1XXKAvAkXv0zH1UodAUm0pSM1qn7zsxMmU3dvozsKobd3AmfKmKxMxMAxMmozsXzsf0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220989728" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220989728'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=FBED316485E05A4693C030DD9D35E2EC&amp;lang=en&amp;messagetype=2&amp;d=1587398&amp;geo=&amp;src=220989728&amp;t=r&amp;summary=Hotel+Le+Germain+Calgary" id="pmFBED316485E05A4693C030DD9D35E2EC" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask Lovetotravel88888 about Hotel Le Germain Calgary</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220954532">
+<a name="UR220954532"></a>
+<div id="UR220954532" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_6846753E788D5F7CC63AC3C162749C2F-SRC_220954532" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_6846753E788D5F7CC63AC3C162749C2F ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/02/7a/87/04/laineylou81.jpg" class="avatar potentialFacebookAvatar avatarGUID:6846753E788D5F7CC63AC3C162749C2F" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_6846753E788D5F7CC63AC3C162749C2F" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">LaineyLou81</span>
+</div>
+</div>
+<div class="location">
+White Plains, New York
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_6846753E788D5F7CC63AC3C162749C2F-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="40 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">40 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">20 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '6846753E788D5F7CC63AC3C162749C2F', screenName: 'LaineyLou81', geos: [48720, 60745, 187069, 41955, 154911, 41524, 651907, 60763, 186220, 2187425, 185492, 47958, 186330, 666542, 6695203, 187337, 154913, 41623, 186534, 1488451, 186530, 187497, 41453, 46715, 147416, 154998], geo: '154913' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 26 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 26 cities</span> </div>
+<div id="UID_6846753E788D5F7CC63AC3C162749C2F-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="26 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">26 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g154913-d1587398-r220954532-Hotel_Le_Germain_Calgary-Calgary_Alberta.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220954532">&#x201c;<span class='noQuotes'>Modern, comfortable hotel</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='11 August 2014'>Reviewed 2 weeks ago
+</span>
+<a class="viaMobile sprite-grayPhone" href="/apps" target="_blank" onclick="ta.util.cookie.setPIDCookie(24687)">via mobile</a>
+</div>
+<div class="entry">
+<p>
+This is exactly the kind of hotel I like: very smartly styled but welcoming and not at all intimidating. Need to make a special mention of the shower, in fact the whole bathroom was incredibly stylish. I also very much appreciated the free WiFi and free continental breakfast - somewhat of a rarity at hotels of this standard. Location was good too, close to Calgary Tower so easy to find your way home at night. Would definitely stay here again.
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed July 2014, travelled as a couple</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq220954532_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220954532 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUodAUmqHMUovkmAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmddUvkd6XoXfXXXKKKXk36XoXfXXUAmvXvK6XoXfXXUXXmUmv6XoXfXXUXUmkvv6XoXfXXUKvAUXA6XoXfXXUKvdvkX6XoXfXXKAvAkXv6XoXfXXKAodomX6XoXfXXKvAdoKoqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmddUvkdqHqWQQoqnQQRVQQoqnQQzzVEaJSCQQoqnQQfJcyJEgqHfJcyJEgQQoqnQQbcHVEIJxiGIac6XoXmqoTpcXXKAodomX0tEn1XXKAodomX0zH1UodAUm0pSM13vd3komzskvvxMoqnkff3mbfmfU3XkdAfXqn0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220954532" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220954532'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=6846753E788D5F7CC63AC3C162749C2F&amp;lang=en&amp;messagetype=2&amp;d=1587398&amp;geo=&amp;src=220954532&amp;t=r&amp;summary=Hotel+Le+Germain+Calgary" id="pm6846753E788D5F7CC63AC3C162749C2F" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask LaineyLou81 about Hotel Le Germain Calgary</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220894505">
+<a name="UR220894505"></a>
+<div id="UR220894505" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_36C74B5181EDB25C5422018115A95B3D-SRC_220894505" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_36C74B5181EDB25C5422018115A95B3D ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/6d/avatar050.jpg" class="avatar potentialFacebookAvatar avatarGUID:36C74B5181EDB25C5422018115A95B3D" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_36C74B5181EDB25C5422018115A95B3D" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">CamilleHMoore</span>
+</div>
+</div>
+<div class="location">
+Red Deer, Canada
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_36C74B5181EDB25C5422018115A95B3D-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="8 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">8 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">3 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '36C74B5181EDB25C5422018115A95B3D', screenName: 'CamilleHMoore', geos: [45084, 154914, 154913], geo: '154913' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 3 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 3 cities</span> </div>
+<div id="UID_36C74B5181EDB25C5422018115A95B3D-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="5 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">5 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g154913-d1587398-r220894505-Hotel_Le_Germain_Calgary-Calgary_Alberta.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220894505">&#x201c;<span class='noQuotes'>Incredible</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='10 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+This place is incredible. My husband planned our second honeymoon and when we walked in there were rose pedals all over bed and the tub. Did I mention that the tub fills from the ceiling it was gorgeous! It has a rain shower that will melt all your stress away. They also brought us complimentary sparking juice and chocolates. They made is a reservation at the 360 Calgary Tower and the food was perfect. I would give the service a 10/5 stars. After we left we realized we had been overcharged on our bill because something moved in the fridge we called back and explained and they gave us the money back, they weren't just good to is because we were there and paying them, they were kind and quick. <br/><br/>However there is no valet parking and there isn't free parking. For a hotel this incredible and of this caliber it was very disappointing.<br/><br/>Thank you for the amazing night,
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed March 2014</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq220894505_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220894505 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUodAUmqHMUovkmAvqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmddUvkd6XoXfXXXKKKXk36XoXfXXUAmvXvK6XoXfXXUXXmUmv6XoXfXXUXUmkvv6XoXfXXUKvAUXA6XoXfXXUKvdvkX6XoXfXXKAvAkXv6XoXfXXKAodomX6XoXfXXKvAdoKoqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmddUvkdqHqWQQoqnQQRVQQoqnQQzzVEaJSCQQoqnQQfJcyJEgqHfJcyJEgQQoqnQQbcHVEIJxiGIac6XoXmqoTpcXXKvAdoKo0tEn1XXKvAdoKo0zH1UodAUm0pSM1m3fkd7oUvUzsxM7XofodXXKUvUUobAo7mxM0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220894505" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220894505'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/CamilleHMoore/g154913" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 5 reviews by CamilleHMoore for Calgary </a>
+</div>
+<div class="askQuestion">
+<script type="text/javascript">
+var JS_mem_travelnet_friends_disabledM2M = "You have disabled member-to-member communications";
+var JS_common_Clickhere = "Click here";
+var JS_mem_travelnet_friends_turnOn = "to turn the feature back on and send your message";
+var JS_common_close = "close";
+var JS_js_common__207f = "Are you sure?";
+var JS_common_Yes = "Yes";
+var JS_common_No = "No";
+</script>
+<a href="/SendMessageRD?to=36C74B5181EDB25C5422018115A95B3D&amp;lang=en&amp;messagetype=2&amp;d=1587398&amp;geo=&amp;src=220894505&amp;t=r&amp;summary=Hotel+Le+Germain+Calgary" id="pm36C74B5181EDB25C5422018115A95B3D" class=" pid5038" onclick="ta.trackEventOnPage('Reviews','ask_user',''); return ta.call('ta.overlays.Factory.showSendMessage',event,this);">Ask CamilleHMoore about Hotel Le Germain Calgary</a>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class='duplicateReviewsInline'>
+<div class='previous'>CamilleHMoore has 1 more review of Hotel Le Germain Calgary</div>
+<ul class='dupReviews'>
+<li class="dupReviewItem">
+<div class='reviewTitle'>
+<a href="/ShowUserReviews-g154913-d1587398-r199287243-Hotel_Le_Germain_Calgary-Calgary_Alberta.html#REVIEWS">&#x201c;Phenomenal!!!!!&#x201d;</a>
+</div>
+<div class='rating'>
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="date">Reviewed 31 March 2014</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>

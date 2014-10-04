@@ -1,0 +1,1120 @@
+<div id="expanded_review_224362628">
+<a name="UR224362628"></a>
+<div id="UR224362628" class="extended provider0 first newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_ACF2F9B258AAE83712014D66162BFEE3-SRC_224362628" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_ACF2F9B258AAE83712014D66162BFEE3 ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: 'ACF2F9B258AAE83712014D66162BFEE3'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/97/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:ACF2F9B258AAE83712014D66162BFEE3" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_ACF2F9B258AAE83712014D66162BFEE3" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">bill w</span>
+</div>
+</div>
+<div class="location">
+Easton, Pennsylvania
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_ACF2F9B258AAE83712014D66162BFEE3-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="6 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">6 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">4 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'ACF2F9B258AAE83712014D66162BFEE3', screenName: 'bill w', geos: [52563, 147313, 29750, 46671], geo: '147313' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 4 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 4 cities</span> </div>
+<div id="UID_ACF2F9B258AAE83712014D66162BFEE3-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="8 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">8 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g147313-d209701-r224362628-Hotel_Riu_Palace_Tropical_Bay-Negril_Westmoreland_Parish_Jamaica.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224362628">&#x201c;<span class='noQuotes'>Return to the Riu Palace tropical bay</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='25 August 2014'>Reviewed yesterday
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+We spent a week at the RPTB August 5-12. We were also there in December. It is a beautiful property, with workers constantly cleaning and maintaining its beauty. The beachfront and ocean are also amazing, but no waves, if you are into that. <br/> I feel that the food quality has dropped a notch since last year, and it wasn’t that great then. I would give it an overall C+. One example, no beef filet at the Italian restaurant this year. They really need to upgrade the desserts as well, both in the restaurants and the buffets. They also will only reserve 1 night at the restaurants at a time instead of 2 which they did last time. That means you have to get in line everyday to reserve a restaurant instead of every other day, which is a pain<br/> A big plus was Andrew, a front desk manager who is a very customer service oriented individual. He came to our room personally to address an issue. He is a big reason why we will go back. <br/> A tip for those like salt on their food, bring a toothpick, most of the salt shakers are clogged due to the humidity
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224362628_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224362628 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUdkmUmqHMXKAkKUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdm3X3Xv6XoXfXXdKomUov6XoXfXXmoAKoAk6XoXfXXmoUdkoo6XoXfXXmdmoUAv6XoXfXXmXdvXk36XoXfXXXAUmXXd6XoXfXXX3oUd3d6XoXfXXX3oKAmX6XoXfXXUXUUXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdm3X3XvqHqWQQoqnQQeSpQQoqnQQwJcJnVQQoqnQQrEi2SnJcQQoqnQQ7JgqHZVyEScQQoqnQQxdVtIaiEVcJCMQQoqnQQwJEStGQQoqnQQx2JaJSnJxiGIac6XoXmqoTpcXXdm3X3Xv0tEn1XXdm3X3Xv0zH1UdkmUm0pSM1bfqnXqnA7XovbbzsvmkUXKUdxM33U3X7qnzszsm0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224362628" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224362628'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '209701', 'bill w', 'ACF2F9B258AAE83712014D66162BFEE3', 'en', '224362628', 'Hotel Riu Palace Tropical Bay');">Ask bill w about Hotel Riu Palace Tropical Bay</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class='duplicateReviewsInline'>
+<div class='previous'>bill w has 1 more review of Hotel Riu Palace Tropical Bay</div>
+<ul class='dupReviews'>
+<li class="dupReviewItem">
+<div class='reviewTitle'>
+<a href="/ShowUserReviews-g147313-d209701-r147726200-Hotel_Riu_Palace_Tropical_Bay-Negril_Westmoreland_Parish_Jamaica.html#REVIEWS">&#x201c;A very nice vacation spot&#x201d;</a>
+</div>
+<div class='rating'>
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="date">Reviewed 19 December 2012</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_224053158">
+<a name="UR224053158"></a>
+<div id="UR224053158" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_DDDD102287CB7580923566076A63C5D7-SRC_224053158" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_DDDD102287CB7580923566076A63C5D7 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/a2/avatar073.jpg" class="avatar potentialFacebookAvatar avatarGUID:DDDD102287CB7580923566076A63C5D7" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_DDDD102287CB7580923566076A63C5D7" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Ginelle F</span>
+</div>
+</div>
+<div class="location">
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_DDDD102287CB7580923566076A63C5D7-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g147313-d209701-r224053158-Hotel_Riu_Palace_Tropical_Bay-Negril_Westmoreland_Parish_Jamaica.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r224053158">&#x201c;<span class='noQuotes'>Great stay</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 August 2014'>Reviewed 2 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+This was our first all inclusive experience and overall, it was a great experience.<br/><br/>Food: <br/>The food was really good. I'd say stick to the buffet. We only tried the Italian restaurant and we were not impressed at all. We ended up going to the buffet after because we didn't like/eat the food at the restaurant. Others did say they liked the restaurants so it could just be us. The buffet was more than fine for us, so we were happy to stick with that.<br/><br/>If you do decide to eat at the restaurants, know that they are pretty small and can fill up quickly (especially the first couple of days because people are eager to try them).<br/><br/>We were dissappointed that there wasnt a place we could get food 24hrs. You can order room service at any time but its a bit inconvenient if you're having a good time at the bar.<br/><br/>Beach/Pool<br/>The beach was amazing! The water was so clear and warm. Even as it got later into the afternoon, we would still be in the water.<br/><br/>The hotel staff did a good job at coming around ever so often to see of those at the beach would like any drinks and they brought them in a relatively timely manner<br/><br/>There are a lot of locals who walk the beach trying to sell little nick knacks. If you're not interested, just tell them no and they'll leave you alone<br/><br/>You can also take a nice long walk along the beachfront...its connected to a couple of the other hotels as well and there are little shops and things along the way<br/><br/>The pool bar is the place to be during the day. Jermaine is an awesome guy and was quick to get us whatever we wanted. They host a few games throughout the day that make it entertaining so definitely stick around a bit.<br/><br/>Nightlife/Entertainment:<br/>There's one 24hr bar. Its not very busy late at night but look out for O'neil - he's a great guy and will definitely take care of you.<br/><br/>Guests at the riu palace can eat, drink and party at the riu negril, but they don't have any bars open 24hrs and their club was nothing to get excited about. We went twice and there were hardly any people there. They also closed at 2am and apparently ran out of all alcohol except rum around 1:30 so we ended up just walking back to our hotel.<br/><br/>The entertainment crew is very talented. They put on a show every night and host the day activities. They definitely know how to get people engaged and having fun. <br/>The room:<br/>The room was pretty basic. Comfortable and clean. Nothing extraordinary but we didn't spend much time in the room so we were fine with it. The cleaning staff are amazing. We had Shirley and she must have come into the room 2-3 times a day. <br/><br/><br/>Overall, I would definitely stay there again. We had a great time and felt like our money was very well spent.<br/><br/>
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014, travelled with friends</span>
+</div>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq224053158_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq224053158 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUdkmUmqHMXKAkKUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdm3X3Xv6XoXfXXdKomUov6XoXfXXmoAKoAk6XoXfXXmoUdkoo6XoXfXXmdmoUAv6XoXfXXmXdvXk36XoXfXXXAUmXXd6XoXfXXX3oUd3d6XoXfXXX3oKAmX6XoXfXXUXUUXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdm3X3XvqHqWQQoqnQQeSpQQoqnQQwJcJnVQQoqnQQrEi2SnJcQQoqnQQ7JgqHZVyEScQQoqnQQxdVtIaiEVcJCMQQoqnQQwJEStGQQoqnQQx2JaJSnJxiGIac6XoXmqoTpcXXdKomUov0tEn1XXdKomUov0zH1UdkmUm0pSM1xMxMxMxMUKXXvkf7kovKAXmo33Kk3b3mfoxMk0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_224053158" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '224053158'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '209701', 'Ginelle F', 'DDDD102287CB7580923566076A63C5D7', 'en', '224053158', 'Hotel Riu Palace Tropical Bay');">Ask Ginelle F about Hotel Riu Palace Tropical Bay</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223590597">
+<a name="UR223590597"></a>
+<div id="UR223590597" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_FFB5CE83217D90C9500F362EA8B035EF-SRC_223590597" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_FFB5CE83217D90C9500F362EA8B035EF ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/05/c8/d0/d9/carol-c.jpg" class="avatar potentialFacebookAvatar avatarGUID:FFB5CE83217D90C9500F362EA8B035EF" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_FFB5CE83217D90C9500F362EA8B035EF" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Carol C</span>
+</div>
+</div>
+<div class="location">
+Newcastle-under-Lyme, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_FFB5CE83217D90C9500F362EA8B035EF-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="7 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">7 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'FFB5CE83217D90C9500F362EA8B035EF', screenName: 'Carol C', geos: [147313, 60763, 190819], geo: '147313' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 3 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 3 cities</span> </div>
+<div id="UID_FFB5CE83217D90C9500F362EA8B035EF-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="9 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">9 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g147313-d209701-r223590597-Hotel_Riu_Palace_Tropical_Bay-Negril_Westmoreland_Parish_Jamaica.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223590597">&#x201c;<span class='noQuotes'>All Inclusive Jamaican Bliss💞🍹</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 4 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+I have just returned home from a 10 day holiday at the Riu Palace Tropical Bay Negril.<br/>This is my first visit to Jamaica and I would love to return.<br/>The Riu Palace is located right on the beach it's beautiful, white sands and crystal clear sea.The sea was so warm just like getting into a warm bath!<br/> I have stayed in many Riu hotel's and was therefore not surprised by the design, layout and décor.<br/>Food standards and choice were very good, with the added bonus of speciality restaurants, try the Italian &amp; The Steak House well worth visiting.<br/>The bar staff, waiting on staff and entertainment team were absolutely brilliant, they all work incredibly hard. Look out for Sandie, Sweetie, Popcorn, Chicken &amp; Ojay.<br/>Part of my holiday was also to attend a family friends wedding it was incredible from start to finish.<br/>The Riu group needs to consider refurbishing the bedroom's mine was certainly looking tired, housekeeping was also very &quot;hit and miss&quot; a quality assurance scheme needs introducing!<br/>The only negative on this holiday was the continuous biting from Mosquitoes!!! Everyone in the hotel was bitten,despite using 3 cans of repellant and wearing insect repellant wrist bands I managed to get 63 bites!!! The hotel did fumigate twice during my stay so I can only assume guest's had been complaining? So be prepared for this.<br/>All in all a great all inclusive holiday.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223590597_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223590597 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUdkmUmqHMXKAkKUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdm3X3Xv6XoXfXXdKomUov6XoXfXXmoAKoAk6XoXfXXmoUdkoo6XoXfXXmdmoUAv6XoXfXXmXdvXk36XoXfXXXAUmXXd6XoXfXXX3oUd3d6XoXfXXX3oKAmX6XoXfXXUXUUXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdm3X3XvqHqWQQoqnQQeSpQQoqnQQwJcJnVQQoqnQQrEi2SnJcQQoqnQQ7JgqHZVyEScQQoqnQQxdVtIaiEVcJCMQQoqnQQwJEStGQQoqnQQx2JaJSnJxiGIac6XoXmqoTpcXXmoAKoAk0tEn1XXmoAKoAk0zH1UdkmUm0pSM1qnqn7ofzsvmXUkxMAKfAoKKqnm3Xzsbv7Kmozsqn0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">6</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223590597" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223590597'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '209701', 'Carol C', 'FFB5CE83217D90C9500F362EA8B035EF', 'en', '223590597', 'Hotel Riu Palace Tropical Bay');">Ask Carol C about Hotel Riu Palace Tropical Bay</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223514755">
+<a name="UR223514755"></a>
+<div id="UR223514755" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_9FFB012D70F0B623D095C7AB3F8DC5DD-SRC_223514755" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_9FFB012D70F0B623D095C7AB3F8DC5DD ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/04/1d/f8/19/rutterru.jpg" class="avatar potentialFacebookAvatar avatarGUID:9FFB012D70F0B623D095C7AB3F8DC5DD" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_9FFB012D70F0B623D095C7AB3F8DC5DD" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">rutterru</span>
+</div>
+</div>
+<div class="location">
+Pittsburgh, Pa
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_9FFB012D70F0B623D095C7AB3F8DC5DD-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="6 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">6 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">3 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '9FFB012D70F0B623D095C7AB3F8DC5DD', screenName: 'rutterru', geos: [150812, 147311, 58337, 52660, 147313, 499445], geo: '147313' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 6 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 6 cities</span> </div>
+<div id="UID_9FFB012D70F0B623D095C7AB3F8DC5DD-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="11 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">11 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g147313-d209701-r223514755-Hotel_Riu_Palace_Tropical_Bay-Negril_Westmoreland_Parish_Jamaica.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223514755">&#x201c;<span class='noQuotes'>Fun week at the Riu Palace Tropical Bay</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+We were there from August 12-19. The Palace is a small resort with 2 small pools. We arrived at the lobby and were given our room keys and 2 towel cards and our bracelets and were on our way. No formal greeting, no welcoming drink. Our porter took us to our suite. We have had hotel rooms larger than this suite. There was no clock, no radio, a small bathroom with a narrow tub with a stand up shower. As I have just recently had a knee replacement and am scheduled for a new hip in September the high ledge entrance to the tub/shower was an adventure. The bed was a full king size bed and not 2 double beds put together as others have noted. The refrigerator was cold and always well stocked. 4 different liquors were there for our use but I only used the rum. None of this was a deal breaker. How much time do you spend in the room anyway?<br/> Dinner started at 6:30 and it was about 4 in the afternoon and we hadn't eaten since early breakfast in Pittsburgh so we looked at the room service menu. The choices were rather limited, so we ventured to the buffet at the opening. We were greeted by Althea. When she found out this was our first time there she gave us a tour of the buffet. Every day she escorted us to out table and remembered what we liked to eat. In conversation we mentioned we were celebrating my wife's birthday and on that day the staff brought out a cake and sang Happy Birthday to her. In the morning Mario was our waiter and always had coffee ready for us at a table near a window. Thanks Mario and Althea you made our dining experience a treat and you, as well as all waiters and waitresses, work hard.<br/> Another problem here is the a a carte reservation system. There are 4 a la cartes but the problem is you have to reserve them for the next day. So, at 8 in the morning, the staff starts taking reservations. We arrived on Tuesday and ate in the buffet. Wednesday morning I arrived near 8 and was the 4th in line and got a reservation for the steak house but the reservation was for the next day. So the first 2 days you eat in the buffet. <br/> We went to the steak house and I had the strip steak and my wife had the lobster. The lobster was delicious she said but the steak was fatty and tough even though I ordered it medium rare. We think the a la cartes should be better than the buffets but after just the one a la carte we decided to stick with the buffets. The buffet always had different choices. There was the American corner with hot dogs, hamburgers and pizza. Saw lots of kids with that. But when in Jamaica eat like a Jamaican. During the week I had curried goat, oxtail, rice and peas, ackee and saltfish, etc. I liked the variety and the small portions offered as I was able to sample so many different things. The desserts deserve a mention on their own. Great mousses, etc. One day there was a chocolate fountain with fruit. <br/> The beach had smooth white sand and the calmest clear water we have ever seen. My wife can't swim but she spent a lot of time in the water with water up to her shoulders. The only problem with the beach is the lack of palapas. We are in our 60's (closer to 70) and now we need shade time when not in the water. There is morning to early afternoon shade with the trees but from mid afternoon on you see people moving their loungers back behind the trees to follow the shade. To me this is a problem. The resort next door has palapas on the beach.<br/> There are vendors passing by often but they were no problem. A couple of times my wife was offered weed. We enjoyed the strolling guitar players and one group of 4 who would stop and play for a couple of dollars. Really a fun beach.<br/> The shows were great. We had several opportunities to talk with the entertainers. A special shout out to Tweetie, Sweetie, Chicken, Popcorn, O. J., the girl D. J. (Sorry, I don't remember your name) and all the others who entertained us all week. These young people are professionals in every sense of the word and everyone should take in a show or 2 the week you are there. We had the same seats every night (right next to Queenie from New York and her group) and really enjoyed the shows. These professionals work hard all day with no air conditioning back stage and on the stage. They practice from 8;30 to 5 every day. They have to know 14 different shows!! Some reviewers complain that they are not broadway shows. 14 different shows each week! Come on people, take in at least one show and watch and applaud. That is the least anyone can do and the entertainers would sure appreciate it.<br/> Chicken led the water aerobics that my wife enjoyed every day. His personality made it fun she said. With my knee replacement and hip replacement to be in September I could not participate. But I watched and was proud of my wife keeping up even though ones half her age were dropping out. Since I am a retired basketball coach she knew what was expected of her.<br/> We at the Palace had exchange privileges with the Riu Negril which was down the beach but separated by another resort. The front desk said the beach was safe to walk at daytime but they did not recommend walking at night. They said taxis were available. Why not a van provided at night so we could go see the shows at both resorts?<br/> All in all it was a pleasant experience because of the beach, the food, and the wonderful people mentioned above as well as everyone else. In all honesty I did not encounter one disgruntled employee. And a note to some of the entertainers who said they read the reviews. Don't give up on your hopes and dreams. You made our week special.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223514755_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223514755 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUdkmUmqHMXKAkKUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdm3X3Xv6XoXfXXdKomUov6XoXfXXmoAKoAk6XoXfXXmoUdkoo6XoXfXXmdmoUAv6XoXfXXmXdvXk36XoXfXXXAUmXXd6XoXfXXX3oUd3d6XoXfXXX3oKAmX6XoXfXXUXUUXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdm3X3XvqHqWQQoqnQQeSpQQoqnQQwJcJnVQQoqnQQrEi2SnJcQQoqnQQ7JgqHZVyEScQQoqnQQxdVtIaiEVcJCMQQoqnQQwJEStGQQoqnQQx2JaJSnJxiGIac6XoXmqoTpcXXmoUdkoo0tEn1XXmoUdkoo0zH1UdkmUm0pSM1Aqnqn7KUXxMkKqnK73XmxMKAofkb7mqnvxMfoxMxM0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">6</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223514755" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223514755'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '209701', 'rutterru', '9FFB012D70F0B623D095C7AB3F8DC5DD', 'en', '223514755', 'Hotel Riu Palace Tropical Bay');">Ask rutterru about Hotel Riu Palace Tropical Bay</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223435198">
+<a name="UR223435198"></a>
+<div id="UR223435198" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_7945D982889B4D4F2EB32A3829ED7E41-SRC_223435198" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_7945D982889B4D4F2EB32A3829ED7E41 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/7a/avatar061.jpg" class="avatar potentialFacebookAvatar avatarGUID:7945D982889B4D4F2EB32A3829ED7E41" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_7945D982889B4D4F2EB32A3829ED7E41" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">BQQKS_12</span>
+</div>
+</div>
+<div class="location">
+Fenton, Missouri
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_7945D982889B4D4F2EB32A3829ED7E41-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="13 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">13 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">6 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '7945D982889B4D4F2EB32A3829ED7E41', screenName: 'BQQKS_12', geos: [663501, 44207, 147313, 34172, 29259, 34616, 34481], geo: '147313' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 7 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 7 cities</span> </div>
+<div id="UID_7945D982889B4D4F2EB32A3829ED7E41-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="9 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">9 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g147313-d209701-r223435198-Hotel_Riu_Palace_Tropical_Bay-Negril_Westmoreland_Parish_Jamaica.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223435198">&#x201c;<span class='noQuotes'>Mother &amp; Daughter Making Memories</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+My daughter &amp; I so enjoyed everything about our trip to Jamaica....The Riu Palace Tropical Bay is a wonderful resort. We stayed in a beach front junior suite &amp; enjoyed sitting on our balcony looking out over the beautiful beach. The food at the buffet was great...whether it was breakfast, lunch or dinner. The Steakhouse was good, but a hassle to get reservations. Had to be at the lobby by 7AM to try to get a reservation. We appreciated the friendliness of all the staff...front desk, housekeeping, bartenders...everyone that we dealt with at the Riu. A late afternoon Catamaran Cruise to Rick's Café is a MUST when in Negril. What a fun time that was. We also took a road trip by van to the south of the island (1 1/2 hours one way) to the Black River for a scenic boat ride. After that we enjoyed a delicious lunch &amp; headed to the YS Falls...beautiful. Then we headed back to the Riu. It was quite interesting to see the Jamaican countryside away from the resort. Our guide gave us so much information about the lifestyles of the people in the villages. I highly recommend this 8 hour experience to everyone. As I always wanted to parasail, but never did, Jamaica was the place to check that off my bucket list. So finally at the young age of 70, my daughter &amp; I parasailed. Wouldn't have missed it for the world. We wanted to visit the Riu Negril Resort, across the bay, so we took a paddle boat over &amp; enjoyed a cocktail at their pool bar...I would love to take my husband to the Riu Palace Tropical Bay to see &amp; enjoy the beach as much as I did.....the most beautiful clean, clear, calm beach that I have ever been to. There was a Hut on the beach that served Jerk chicken &amp; sides at lunch time. Delicious...The only thing I would have changed is to request a room closer to the lobby...we were in building 6....as far away as you can be. Our trip to Jamaica is one to remember...
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed February 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223435198_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223435198 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUdkmUmqHMXKAkKUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdm3X3Xv6XoXfXXdKomUov6XoXfXXmoAKoAk6XoXfXXmoUdkoo6XoXfXXmdmoUAv6XoXfXXmXdvXk36XoXfXXXAUmXXd6XoXfXXX3oUd3d6XoXfXXX3oKAmX6XoXfXXUXUUXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdm3X3XvqHqWQQoqnQQeSpQQoqnQQwJcJnVQQoqnQQrEi2SnJcQQoqnQQ7JgqHZVyEScQQoqnQQxdVtIaiEVcJCMQQoqnQQwJEStGQQoqnQQx2JaJSnJxiGIac6XoXmqoTpcXXmdmoUAv0tEn1XXmdmoUAv0zH1UdkmUm0pSM1kAdoxMAvXvvA7dxMdqnXzs7mXbmvXAzsxMkzsdU0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">4</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223435198" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223435198'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '209701', 'BQQKS_12', '7945D982889B4D4F2EB32A3829ED7E41', 'en', '223435198', 'Hotel Riu Palace Tropical Bay');">Ask BQQKS_12 about Hotel Riu Palace Tropical Bay</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_223248276">
+<a name="UR223248276"></a>
+<div id="UR223248276" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_629E288A3376284ED8544954FCD89F78-SRC_223248276" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_629E288A3376284ED8544954FCD89F78 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/05/ce/62/4e/sony-michelle-p.jpg" class="avatar potentialFacebookAvatar avatarGUID:629E288A3376284ED8544954FCD89F78" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_629E288A3376284ED8544954FCD89F78" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Sony Michelle P</span>
+</div>
+</div>
+<div class="location">
+Jackson, New Jersey
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_629E288A3376284ED8544954FCD89F78-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">2 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '629E288A3376284ED8544954FCD89F78', screenName: 'Sony Michelle P', geos: [147313, 60864], geo: '147313' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 2 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 2 cities</span> </div>
+<div id="UID_629E288A3376284ED8544954FCD89F78-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">4 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g147313-d209701-r223248276-Hotel_Riu_Palace_Tropical_Bay-Negril_Westmoreland_Parish_Jamaica.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223248276">&#x201c;<span class='noQuotes'>Our daughter&#39;s wedding and our 25th wedding anniversary</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='21 August 2014'>Reviewed 6 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+We were a group of 37 coming to celebrate our daughter's wedding. We booked with Megan Whalan from Honeymoons, Inc. based in GA. We cannot say enough good things about Megan as she did an excellent job delivering a semi-stress free double event. We had a wonderful stay, though there were minor issues w/ the front desk. We encountered Judean at the front desk. She was so amazingly helpful, friendly and professional. And we were advised that she was merely a trainee, WOW, good job Judean. Sherleene, on the other hand was unpleasant, unprofessional and hard to deal with. She attempted to have us sign a contract stating that we will agree to pay for an international call (toll free #) to our travel agent as they had listed our 23 y/o son as a child. We refused to sign and requested the help of her supervisor. She came to her rescue when we again pointed to the travel agency voucher which clearly indicated that he was an adult. We wasted a good 45 minutes trying to resolve this dilemma. No apologies were provided afterwards. Sophie Haughton, the wedding coordinator did a good job and provided ample info to make our stay memorable. <br/><br/>A complaint was with their reservation system. It definitely needs improvement. With a party of 37, I could understand they can only accommodate 8-10 of our guests at a time as other guests need to benefit from the specialty restaurants. But when the restaurant is half-empty at a 6:30 pm seating, you tend to question their reasoning. Another issue was we could often hear the staff very clearly near our door in the early morning and since I am a light sleeper, I would often wake up. That was kind of annoying.<br/><br/>This was our second trip to Jamaica and we have vacationed at numerous all-inclusive resorts through the Caribbean and Europe. This time, our daughter and us both stayed at a waterfront suite, second floor, building 3. Most of our guests were close to proximity. The staff was friendly and most of them will greet you by first name with a warm smile. The buffet at the Negril restaurant was as good as the food at the specialty restaurants. We managed to sample food at all four restaurants and Krystal is our favorite. The steakhouse is second, followed by the Japanese, then the Italian. We would stop by the lobby bar for a drink before going down to dinner and listen to the gentleman playing piano. He was great! The bartender there was really nice and made great drinks. The activity staff was quite energetic whether they were by the beach, pool area or performing at night. They really attempt to get the guests involved and work so hard at what they do. Kudos to all of them. The evening entertainment was good especially the M Jackson show and the steel band. The beach was awesome. We didn't use the pool as the beach was so inviting; warm, calm, blue water with a sandy shallow bottom. Simply perfect. My husband got me a star fish and had it dried on the balcony. We brought it back to the States as a nice remembrance of our stay. We had short showers/rain every day in mid-afternoon. <br/><br/>We had our double event by the gazebo on the left. Our pastor/friend performed a wonderful ceremony. The vows were beautiful and so perfect to the occasion. The reception was a pure delight. We brought our own centerpieces, overlays, name tags and it was very pleasing to the eyes. The food was delicious, our table had the lobster meal and our guests are still raving about how tender and delicious it was. The gentleman who was in charge, Samuel and his crew did an excellent job. They were an extremely professional and accommodating crew and Samuel took much pride in making sure everything was okay. It was nice to see someone who took such pride in the service he provided. I can't say enough nice things about Samuel. Too many people today do the bare minimum required in their jobs, so it was refreshing to see someone excel at what he does. <br/><br/>I must add that after the reception, we all gathered in the steakhouse to dance the night away as we had rented the entire restaurant for 2 hours (9-11PM). Alas, it was a total bust. For some reason, the blue tooth speaker system we brought did not function properly. It will start and drop off the music right in the middle of the song. We were so disappointed. It was not RIU's fault of course, nevertheless heartbreaking for my daughter not to have her first dance w/ her dad and my w/ my son in law. <br/><br/>We closed up that enchanting day by going to the beach and lighting our Chinese lanterns. We had about 50 of them. This made up for the dance fiasco. It was simply magical. <br/><br/>Special thanks to Sophie, Judean, Germain, Samuel and his crew. You guys make this place rock!!!
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Rooms with a waterfront are worth the extra money. Avoid the suites w/ water views as they are a re...
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq223248276_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223248276 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUdkmUmqHMXKAkKUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdm3X3Xv6XoXfXXdKomUov6XoXfXXmoAKoAk6XoXfXXmoUdkoo6XoXfXXmdmoUAv6XoXfXXmXdvXk36XoXfXXXAUmXXd6XoXfXXX3oUd3d6XoXfXXX3oKAmX6XoXfXXUXUUXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdm3X3XvqHqWQQoqnQQeSpQQoqnQQwJcJnVQQoqnQQrEi2SnJcQQoqnQQ7JgqHZVyEScQQoqnQQxdVtIaiEVcJCMQQoqnQQwJEStGQQoqnQQx2JaJSnJxiGIac6XoXmqoTpcXXmXdvXk30tEn1XXmXdvXk30zH1UdkmUm0pSM13XAzsXvvbmmk3XvdzsxMvoddAodqnfxMvAqnkv0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">4</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223248276" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223248276'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '209701', 'Sony Michelle P', '629E288A3376284ED8544954FCD89F78', 'en', '223248276', 'Hotel Riu Palace Tropical Bay');">Ask Sony Michelle P about Hotel Riu Palace Tropical Bay</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222913224">
+<a name="UR222913224"></a>
+<div id="UR222913224" class="extended provider0 newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_FB7039BC335A91305B4D30BF155DB072-SRC_222913224" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_FB7039BC335A91305B4D30BF155DB072 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/02/ba/ab/56/papa64.jpg" class="avatar potentialFacebookAvatar avatarGUID:FB7039BC335A91305B4D30BF155DB072" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_FB7039BC335A91305B4D30BF155DB072" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">PAPA64</span>
+</div>
+</div>
+<div class="location">
+New Berlin, Wisconsin
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_FB7039BC335A91305B4D30BF155DB072-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">4 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">4 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'FB7039BC335A91305B4D30BF155DB072', screenName: 'PAPA64', geos: [37282, 147312, 147313, 150807], geo: '147313' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 4 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 4 cities</span> </div>
+<div id="UID_FB7039BC335A91305B4D30BF155DB072-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="11 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">11 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g147313-d209701-r222913224-Hotel_Riu_Palace_Tropical_Bay-Negril_Westmoreland_Parish_Jamaica.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222913224">&#x201c;<span class='noQuotes'>Another trip home!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='19 August 2014'>Reviewed 1 week ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+We have been vacationing in Jamaica for 6 summers, 5 at this resort. Each trip has been super. The staff is cordial and goes out of their way to make you feel like you are &quot;coming home&quot;. Kudos to Jackie at the evening buffet. She even decorated our table with flowers for our anniversary. We were in building 6 facing the ocean. Unfortunately while we were there the ice machine literally blew up with a fire lighting up the night. No other problems that were not attended to promptly. One negative that had nothing to do with the resort happened at the airport when Frontier lost their computer ability so for 1 1/2 hours was spent at the check in only to see other passengers leaving after we had paid extra for preferred perks. Disappointment at not having time to shop at the airport. However, there is always next year. We will return to the Riu Palace. Love, love, love Jamaica!
+</p>
+</div>
+<div class="media  thumbCols1">
+<div class="thumbnails">
+<div class="photosInline">
+<ul>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g147313-d209701-i107540971-r222913224-Hotel_Riu_Palace_Tropical_Bay-Negril_Westmoreland_Parish_Jamai.html#107540971 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 209701, 147313, 2, 107540971);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/68/f1/eb/hotel-riu-palace-tropical.jpg" alt="" width="50" height="50">
+</span>
+</li>
+</ul>
+</div> </div> </div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed June 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222913224_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222913224 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUdkmUmqHMXKAkKUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdm3X3Xv6XoXfXXdKomUov6XoXfXXmoAKoAk6XoXfXXmoUdkoo6XoXfXXmdmoUAv6XoXfXXmXdvXk36XoXfXXXAUmXXd6XoXfXXX3oUd3d6XoXfXXX3oKAmX6XoXfXXUXUUXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdm3X3XvqHqWQQoqnQQeSpQQoqnQQwJcJnVQQoqnQQrEi2SnJcQQoqnQQ7JgqHZVyEScQQoqnQQxdVtIaiEVcJCMQQoqnQQwJEStGQQoqnQQx2JaJSnJxiGIac6XoXmqoTpcXXXAUmXXd0tEn1XXXAUmXXd0zH1UdkmUm0pSM1qn7kKmA7fmmobAUmKo7dxMmK7qnUooxM7KkX0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">4</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222913224" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222913224'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '209701', 'PAPA64', 'FB7039BC335A91305B4D30BF155DB072', 'en', '222913224', 'Hotel Riu Palace Tropical Bay');">Ask PAPA64 about Hotel Riu Palace Tropical Bay</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222651464">
+<a name="UR222651464"></a>
+<div id="UR222651464" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_1D5397ACF6ADB0EC4F03F4B9F3ACF3AA-SRC_222651464" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_1D5397ACF6ADB0EC4F03F4B9F3ACF3AA ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/80/avatar001.jpg" class="avatar potentialFacebookAvatar avatarGUID:1D5397ACF6ADB0EC4F03F4B9F3ACF3AA" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_1D5397ACF6ADB0EC4F03F4B9F3ACF3AA" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Debbie-PA</span>
+</div>
+</div>
+<div class="location">
+Mountain Top, PA
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_1D5397ACF6ADB0EC4F03F4B9F3ACF3AA-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">2 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '1D5397ACF6ADB0EC4F03F4B9F3ACF3AA', screenName: 'Debbie-PA', geos: [147313, 53451], geo: '147313' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 2 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 2 cities</span> </div>
+<div id="UID_1D5397ACF6ADB0EC4F03F4B9F3ACF3AA-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="6 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">6 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g147313-d209701-r222651464-Hotel_Riu_Palace_Tropical_Bay-Negril_Westmoreland_Parish_Jamaica.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222651464">&#x201c;<span class='noQuotes'>Love Jamaica but Riu left a lot to be desired</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s20" src="http://c1.tacdn.com/img2/x.gif" alt="2 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='18 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+I'd like to preface this by saying that we have traveled all through the Caribbean and this was our third trip to Jamaica. We've stayed at numerous all-inclusive resorts including Iberostar, Beaches, Occidental Royal Club as well as the Riu Palace in Punta Cana and Riviera Maya and have never had the issues encountered at the Tropical Bay resort. The trip wasn't a total bust so I'll list the pro's first:<br/><br/>The bar and wait staff were amazing. Encountered happy, friendly, accommodating folks in the lobby bar and the buffet restaurant. Althea and Avory welcomed us each evening making sure all nine of us could sit and have dinner together. The food was above average for an all- inclusive resort. There is a nice variety of everything from fresh fruits and salads to gourmet quality desserts. We also had very nice meals in the Steak House as well as Krystal. For the most part, staff all around the resort will great you with a warm, welcoming smile. As I sat in the lobby one evening, Beverly (who was busy keeping the area tidy) approached me with her beautiful smile just to ask if I was enjoying my day. It's the little things like this that would make you want to go back again, HOWEVER, here comes the cons:<br/><br/>We had no clock in our room. Since I didn't bring a watch, computer or cell phone, it was an inconvenience. We had family in three other rooms and all had clocks. Called the front desk to ask for a clock and was told they did not provide clocks in the rooms and if I wanted to know the correct time, I could walk [half way across the resort] to the lobby 24/hrs./day to check their clock!<br/><br/>Housekeeping was also lacking. When our room was made up, we received only bath towels. Each day we had to chase down a housekeeper to get hand towels and we were never able to get wash cloths or floor mats, only excuses.<br/><br/>Our major issue was with the key cards for the doors. Six times during the week (four in one day) we had problems with cards not working. The cards not working were not as annoying as the attitude of the front desk staff. Rather than just addressing the issue, they wanted to know what I had done to the cards. As it turned out, they had cancelled all the cards as if we had checked out of the resort. Had they been apologetic, it wouldn't have been a big deal but when I got attitude on top of ineptitude, enough was enough.<br/><br/>Their reservation system for a la carte restaurants is very inconvenient. You can only make reservations each morning for the following evening. Since we were a party of nine, I got to the lobby by 7am to ensure we would be accommodated. After sitting there for an hour, the staff arrived to begin taking the reservations for the following night. As I was about to make the reservations for my family, a member of the Riu staff ushers a gentleman in front of me. I was told he had an 8am excursion so he needed to make his reservations in a hurry. I was livid. He should have been there, as I was, at 7am or just eat at the buffet.<br/><br/>The evening before we checked out, I made it a point to see the resort managers to address my complaints. It was a huge waste of time. No apologies, lots of excuses. They actually had the nerve to tell me about their great reviews.<br/><br/>If you're going to Jamaica, check out Iberostar. We have stayed there before and should have went back this time. Lesson learned.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss30" src="http://c1.tacdn.com/img2/x.gif" alt="3 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss20" src="http://c1.tacdn.com/img2/x.gif" alt="2 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222651464_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222651464 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUdkmUmqHMXKAkKUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdm3X3Xv6XoXfXXdKomUov6XoXfXXmoAKoAk6XoXfXXmoUdkoo6XoXfXXmdmoUAv6XoXfXXmXdvXk36XoXfXXXAUmXXd6XoXfXXX3oUd3d6XoXfXXX3oKAmX6XoXfXXUXUUXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdm3X3XvqHqWQQoqnQQeSpQQoqnQQwJcJnVQQoqnQQrEi2SnJcQQoqnQQ7JgqHZVyEScQQoqnQQxdVtIaiEVcJCMQQoqnQQwJEStGQQoqnQQx2JaJSnJxiGIac6XoXmqoTpcXXX3oUd3d0tEn1XXX3oUd3d0zH1UdkmUm0pSM1UxMomAkbfqn3bxM7KzsfdqnKmqnd7Aqnmbfqnmbb0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">4</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222651464" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222651464'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '209701', 'Debbie-PA', '1D5397ACF6ADB0EC4F03F4B9F3ACF3AA', 'en', '222651464', 'Hotel Riu Palace Tropical Bay');">Ask Debbie-PA about Hotel Riu Palace Tropical Bay</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_222650932">
+<a name="UR222650932"></a>
+<div id="UR222650932" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_9046B071178297504B8135A38CD6A5D3-SRC_222650932" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_9046B071178297504B8135A38CD6A5D3 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/8e/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:9046B071178297504B8135A38CD6A5D3" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_9046B071178297504B8135A38CD6A5D3" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Gemma R</span>
+</div>
+</div>
+<div class="location">
+Lancashire, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_9046B071178297504B8135A38CD6A5D3-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">1 review</span>
+</div>
+<div id="UID_9046B071178297504B8135A38CD6A5D3-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="6 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">6 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g147313-d209701-r222650932-Hotel_Riu_Palace_Tropical_Bay-Negril_Westmoreland_Parish_Jamaica.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222650932">&#x201c;<span class='noQuotes'>Amazing Holiday!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='18 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+This was our first time to Jamaica, and first time in a RIU Hotel. We have to say it was out of this world. The room was great with a daily restocked fridge full of Red Stripe. The service and the people made our holiday, they were so caring and attentive, especially Sharon, Tony, Shereen and Kerisha. I would highly recommend this resort to anyone and everyone! The food was incredible from the buffet, through to the steak house where the surf and turf was out of this world. Every cocktail was sampled and enjoyed thoroughly. Every member of staff had a smile on their face and couldn't do enough for you. Highly recommend the evening entertainment especially the steel band WOW! A trip to Rick's is a must and the Scube Carribe Snorkel and Rick's Café trip is excellent value for money. We would have loved to have done more trips but the hotel was so fantastic it was hard to leave!
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> We had a great view from our room in block 3. However beware of the steps a slippery fall for me...
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222650932_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222650932 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUdkmUmqHMXKAkKUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdm3X3Xv6XoXfXXdKomUov6XoXfXXmoAKoAk6XoXfXXmoUdkoo6XoXfXXmdmoUAv6XoXfXXmXdvXk36XoXfXXXAUmXXd6XoXfXXX3oUd3d6XoXfXXX3oKAmX6XoXfXXUXUUXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdm3X3XvqHqWQQoqnQQeSpQQoqnQQwJcJnVQQoqnQQrEi2SnJcQQoqnQQ7JgqHZVyEScQQoqnQQxdVtIaiEVcJCMQQoqnQQwJEStGQQoqnQQx2JaJSnJxiGIac6XoXmqoTpcXXX3oKAmX0tEn1XXX3oKAmX0zH1UdkmUm0pSM1AKd37KkUUkvXAkoKd7vUmobmvfxM3boxMm0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">6</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222650932" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222650932'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '209701', 'Gemma R', '9046B071178297504B8135A38CD6A5D3', 'en', '222650932', 'Hotel Riu Palace Tropical Bay');">Ask Gemma R about Hotel Riu Palace Tropical Bay</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221211287">
+<a name="UR221211287"></a>
+<div id="UR221211287" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_7C07194DCC30CE16FEA09AB0792CF79D-SRC_221211287" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_7C07194DCC30CE16FEA09AB0792CF79D ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/02/59/e4/07/seadog1372.jpg" class="avatar potentialFacebookAvatar avatarGUID:7C07194DCC30CE16FEA09AB0792CF79D" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_7C07194DCC30CE16FEA09AB0792CF79D" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Seadog1372</span>
+</div>
+</div>
+<div class="location">
+Valley Cottage
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_7C07194DCC30CE16FEA09AB0792CF79D-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">3 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">3 hotel reviews</span>
+</div> </div>
+<div id="UID_7C07194DCC30CE16FEA09AB0792CF79D-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="29 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">29 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g147313-d209701-r221211287-Hotel_Riu_Palace_Tropical_Bay-Negril_Westmoreland_Parish_Jamaica.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221211287">&#x201c;<span class='noQuotes'>Great honeymoon at the Riu Tropical Bay, July 31-Aug 10, 2014</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='12 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+Just returned from our third trip to the Riu Tropical Bay. This trip was for our honeymoon. We enjoyed every second of our trip. The quality of the service was fantastic. The quality of the food was outstanding. The wait staff couldn't have been more attentive. Ragga from the Negril buffet is one the most attentive and best waiters I have every seen. The bar staff was very attentive. Kevin, Andre, Andrew and others from the bar staff kept the drinks flowing. The entertainment staff was fantastic. Chicken, Popcorn, Sweetie, Tweetie, etc. kept us entertained all day. These people work their butts off to make certain you enjoy your vacation. The cleaning and grounds staff worked around the clock to kept the resort in tip top shape. These guys and girls were constantly working. In short, it was an amazing vacation. I would highly recommend this resort to anyone considering going to Negril. We are already planning our family vacation for next year.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Ocean front rooms in Block 3 are fantastic.
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221211287_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221211287 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHyUdkmUmqHMXKAkKUqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXdm3X3Xv6XoXfXXdKomUov6XoXfXXmoAKoAk6XoXfXXmoUdkoo6XoXfXXmdmoUAv6XoXfXXmXdvXk36XoXfXXXAUmXXd6XoXfXXX3oUd3d6XoXfXXX3oKAmX6XoXfXXUXUUXvkqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXdm3X3XvqHqWQQoqnQQeSpQQoqnQQwJcJnVQQoqnQQrEi2SnJcQQoqnQQ7JgqHZVyEScQQoqnQQxdVtIaiEVcJCMQQoqnQQwJEStGQQoqnQQx2JaJSnJxiGIac6XoXmqoTpcXXUXUUXvk0tEn1XXUXUUXvk0zH1UdkmUm0pSM1kfKkUAdxMffmKfzsU3qnzsbKAb7KkAXfqnkAxM0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">15</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221211287" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221211287'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/Seadog1372/g147313" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 3 reviews by Seadog1372 for Negril </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '209701', 'Seadog1372', '7C07194DCC30CE16FEA09AB0792CF79D', 'en', '221211287', 'Hotel Riu Palace Tropical Bay');">Ask Seadog1372 about Hotel Riu Palace Tropical Bay</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+<div class='duplicateReviewsInline'>
+<div class='previous'>Seadog1372 has 2 more reviews of Hotel Riu Palace Tropical Bay</div>
+<ul class='dupReviews'>
+<li class="dupReviewItem">
+<div class='reviewTitle'>
+<a href="/ShowUserReviews-g147313-d209701-r127941970-Hotel_Riu_Palace_Tropical_Bay-Negril_Westmoreland_Parish_Jamaica.html#REVIEWS">&#x201c;Great resort, Great time. No Problem&#x201d;</a>
+</div>
+<div class='rating'>
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="date">Reviewed 16 April 2012</span>
+</div>
+</li>
+<li class="dupReviewItem">
+<div class='reviewTitle'>
+<a href="/ShowUserReviews-g147313-d209701-r171729992-Hotel_Riu_Palace_Tropical_Bay-Negril_Westmoreland_Parish_Jamaica.html#REVIEWS">&#x201c;Great trip once again. No problem&#x201d;</a>
+</div>
+<div class='rating'>
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="date">Reviewed 11 August 2013</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>

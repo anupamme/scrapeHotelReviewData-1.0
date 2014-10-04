@@ -1,0 +1,1150 @@
+<div id="expanded_review_223482613">
+<a name="UR223482613"></a>
+<div id="UR223482613" class="extended provider0 first newFlag">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_90C1B9577463049637E7EF29420C0BE2-SRC_223482613" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_90C1B9577463049637E7EF29420C0BE2 ">
+<a onclick=>
+<script type="text/javascript">
+ta.store('friendAvatarSwitcherObj', (function() {
+var AVATAR_CLASS_GUID_REGEX = /\bavatarGUID:(\w+)\b/; // Class that contains the GUID of the member
+//  whose avatar it's on.
+var AVATAR_CLASS = 'potentialFacebookAvatar';         // Signal class for Mootools parsing of the DOM.
+var AVATAR_CLASS_SELECTOR = '.' + AVATAR_CLASS;       // Selector needed for Mootools $$ function.
+var guidToImgMap = {};        // mapping of member guids to avatar img tags
+var friendGuidToSrcMap = {};  // mapping of friend guids* to facebook profile pic src values
+//  *only ever contains guids of people with avatar img tags on page
+var friendGuids = [];         // array of friend guids*, used because IE doesn't like for-each loops
+//  *only ever contains guids of people with avatar img tags on page
+return {
+// Finds all avatars on the page that match the signal class, and stores them
+// in a map for later replacement.
+findAvatarsOnPage: function() {
+$$(AVATAR_CLASS_SELECTOR).each(function (avatarImg) {
+var guid = avatarImg.className.match(AVATAR_CLASS_GUID_REGEX);
+if (guid && guid[1]) { // based on how JS regex works, guid[1] is the user's guid
+guidToImgMap[guid[1]] = avatarImg; // associate the guid with the img tag
+}
+});
+},
+// Replaces all avatars on the page with the correct FB avatars, using
+// the maps of GUIDs to img tags and FB profile src values.
+replaceAvatarsOnPage: function() {
+for (var i = 0; i < friendGuids.length; i++) { // because IE doesn't like for-each loops
+var avatarImg = guidToImgMap[friendGuids[i]]
+avatarImg.src = friendGuidToSrcMap[friendGuids[i]];
+avatarImg.className = avatarImg.className.replace(AVATAR_CLASS_GUID_REGEX, '').replace(AVATAR_CLASS, '');
+}
+},
+// Checks if guid is already in map of avatar img guids, and
+// if it is, adds it to map of guids to be converted. This is called
+// by a different file, such as friends_avatar_data_js.vm.
+checkAndAddGuidAndSrc: function(guid, src) {
+if (guidToImgMap.hasOwnProperty(guid)) {
+friendGuids.push(guid);
+friendGuidToSrcMap[guid] = src;
+}
+}
+}
+})());
+// Make the partial request, and set our response behavior.
+ta.merge('facebook.data.params', {uid: '90C1B9577463049637E7EF29420C0BE2'});          if(ta.keep) {
+ta.keep('facebook.data.request', 'FRIEND_AVATARS');
+}
+ta.keep('facebook.data.onAvail.FRIEND_AVATARS', function() {
+ta.retrieve('friendAvatarSwitcherObj').replaceAvatarsOnPage();
+});
+ta.queueForLoad(function() { // just in case we have the ta object before the DOM is fully initialized
+ta.retrieve('friendAvatarSwitcherObj').findAvatarsOnPage(); // as soon as we can, start parsing the DOM for avatars
+}, "findAvatarsOnPage");
+</script>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/54/avatar027.jpg" class="avatar potentialFacebookAvatar avatarGUID:90C1B9577463049637E7EF29420C0BE2" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_90C1B9577463049637E7EF29420C0BE2" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Calvin B</span>
+</div>
+</div>
+<div class="location">
+Brighouse, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_90C1B9577463049637E7EF29420C0BE2-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="5 reviews" class="icon badge_reviewer sprite-badge_reviewer" width="25" height="24">
+<span class="badgeText">5 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '90C1B9577463049637E7EF29420C0BE2', screenName: 'Calvin B', geos: [34515, 186338, 34636], geo: '34636' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 3 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 3 cities</span> </div>
+<div id="UID_90C1B9577463049637E7EF29420C0BE2-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="4 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">4 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g34636-d633314-r223482613-The_Capri_at_Siesta-Siesta_Key_Florida.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r223482613">&#x201c;<span class='noQuotes'>Five minute walk to paradise</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='22 August 2014'>Reviewed 5 days ago
+<span class="new">NEW</span>
+</span>
+</div>
+<div class="entry">
+<p>
+Small and comfortable excellent location to walk directly to the beach. As a family of three we stayed here for two nights and just used it as a base to be able to visit the other nearby beaches, as a rest from Orlando.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="helpfulq223482613_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq223482613 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymd3m3qHM3mmmUdqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmdvX3Um6XoXfXXXmAUv3m6XoXfXXUKomUKd6XoXfXXKooAAmd6XoXfXUAm3U3UU6XoXfXUAmdKmvX6XoXfXUAX3d3UU6XoXfXUvXmm33X6XoXfXUkXddAmX6XoXfXU3domKKdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmdvX3UmqHrGVQQoqnQQfJ2ESQQoqnQQJIQQoqnQQhSVtIJqHhSVtIJQQoqnQQxbVgQQoqnQQqnciESMJxiGIac6XoXmqoTpcXXmdvX3Um0tEn1XXmdvX3Um0zH1md3m30pSM1AKfU7Aokkd3mKdA3mkzskzsqnXAdXKfK7zsX0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_223482613" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '223482613'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '633314', 'Calvin B', '90C1B9577463049637E7EF29420C0BE2', 'en', '223482613', 'The Capri at Siesta');">Ask Calvin B about The Capri at Siesta</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+<div class="ad iab_inlineBanner">
+<div id="gpt-ad-468x60" class="adInner gptAd"></div>
+</div>
+</div>
+<div id="expanded_review_222391863">
+<a name="UR222391863"></a>
+<div id="UR222391863" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_F5DB179509DDD14AD818DDCD9F67242A-SRC_222391863" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_F5DB179509DDD14AD818DDCD9F67242A ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/97/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:F5DB179509DDD14AD818DDCD9F67242A" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_F5DB179509DDD14AD818DDCD9F67242A" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">TBegay</span>
+</div>
+</div>
+<div class="location">
+arizona
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_F5DB179509DDD14AD818DDCD9F67242A-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="49 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">49 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_3rd sprite-badge_hotels_3rd" width="25" height="24">
+<span class="badgeText">37 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'F5DB179509DDD14AD818DDCD9F67242A', screenName: 'TBegay', geos: [32588, 147367, 32465, 528762, 186525, 187234, 32171, 32579, 60750, 34344, 32655, 187130, 34345, 31300, 291962, 60763, 186338, 45963, 32810, 187147, 34296, 143024, 32939, 31357, 34225, 34439, 31171, 34227, 33280, 60713, 32148, 32825, 311415, 32697, 34636], geo: '34636' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 35 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 35 cities</span> </div>
+<div id="UID_F5DB179509DDD14AD818DDCD9F67242A-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="56 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">56 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g34636-d633314-r222391863-The_Capri_at_Siesta-Siesta_Key_Florida.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r222391863">&#x201c;<span class='noQuotes'>Quaint</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='17 August 2014'>Reviewed 1 week ago
+</span>
+</div>
+<div class="entry">
+<p>
+Spent 3 nights at this boutique (10) hotel and loved every minute of it. While it is true the pool is across the street and the ocean is a two minute walk both are quick and easy. The rooms are well laid out with a decent kitchen area. There is no daily maid service but fresh towels are easy to get. We stayed in 102 and had a street view which felt secluded from the other rooms, which was nice since there were several guests who smoked in the courtyard. There are BBQ grill to use and free laundry if needed. The staff were all friendly and helpful. Two things that did happen but didn't bother us...our clock in the room was broken and one of the dining chairs broke ( he weights 168 pounds) while my husband was sitting and he fell to the floor. We got a good laugh out of it but someone else might not think this was funny. I would absolutely recommend this cute little place. We brought our own beach chairs then donated them to the &quot; share&quot; room. If you don't bring your own or there are none in the room you can rent them cheap at the beach.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq222391863_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq222391863 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymd3m3qHM3mmmUdqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmdvX3Um6XoXfXXXmAUv3m6XoXfXXUKomUKd6XoXfXXKooAAmd6XoXfXUAm3U3UU6XoXfXUAmdKmvX6XoXfXUAX3d3UU6XoXfXUvXmm33X6XoXfXUkXddAmX6XoXfXU3domKKdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmdvX3UmqHrGVQQoqnQQfJ2ESQQoqnQQJIQQoqnQQhSVtIJqHhSVtIJQQoqnQQxbVgQQoqnQQqnciESMJxiGIac6XoXmqoTpcXXXmAUv3m0tEn1XXXmAUv3m0zH1md3m30pSM1qnoxM7UkAoKAxMxMxMUdbxMvUvxMxMfxMAqn3kXdXb0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_222391863" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '222391863'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '633314', 'TBegay', 'F5DB179509DDD14AD818DDCD9F67242A', 'en', '222391863', 'The Capri at Siesta');">Ask TBegay about The Capri at Siesta</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_221053104">
+<a name="UR221053104"></a>
+<div id="UR221053104" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_65B39A3EA1EA65A9FCBFCB80F846B3F3-SRC_221053104" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_65B39A3EA1EA65A9FCBFCB80F846B3F3 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-f/06/4e/92/aa/paula-t.jpg" class="avatar potentialFacebookAvatar avatarGUID:65B39A3EA1EA65A9FCBFCB80F846B3F3" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_65B39A3EA1EA65A9FCBFCB80F846B3F3" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Paula T</span>
+</div>
+</div>
+<div class="location">
+Burgess Hill, United Kingdom
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_65B39A3EA1EA65A9FCBFCB80F846B3F3-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">2 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '65B39A3EA1EA65A9FCBFCB80F846B3F3', screenName: 'Paula T', geos: [34337, 34636], geo: '34636' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 2 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 2 cities</span> </div>
+<div id="UID_65B39A3EA1EA65A9FCBFCB80F846B3F3-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="1 helpful vote" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">1 helpful vote</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g34636-d633314-r221053104-The_Capri_at_Siesta-Siesta_Key_Florida.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r221053104">&#x201c;<span class='noQuotes'>Paradise</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='11 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+Beautiful resort. Rooms are well appointed (refrigerator, dishwasher and full cooker) and very clean. Becky was super helpful with lots of knowledge about the local area. The communal area was delightful, lovely for an early evening beer whilst watching the BBQ. You could sit quietly or chat along with other guest. The atmosphere was very relaxing. The pull out bed was very uncomfortable however this was soon resolved with a blow up bed. Our girls aged 15 and 10 were fine with this. The local area was lovely with great food and boutique shopping. We would love to visit again.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed August 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq221053104_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq221053104 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymd3m3qHM3mmmUdqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmdvX3Um6XoXfXXXmAUv3m6XoXfXXUKomUKd6XoXfXXKooAAmd6XoXfXUAm3U3UU6XoXfXUAmdKmvX6XoXfXUAX3d3UU6XoXfXUvXmm33X6XoXfXUkXddAmX6XoXfXU3domKKdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmdvX3UmqHrGVQQoqnQQfJ2ESQQoqnQQJIQQoqnQQhSVtIJqHhSVtIJQQoqnQQxbVgQQoqnQQqnciESMJxiGIac6XoXmqoTpcXXUKomUKd0tEn1XXUKomUKd0zH1md3m30pSM13o7mAbmzsbUzsb3obAqnf7qnf7vKqnvd37mqnm0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_221053104" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '221053104'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '633314', 'Paula T', '65B39A3EA1EA65A9FCBFCB80F846B3F3', 'en', '221053104', 'The Capri at Siesta');">Ask Paula T about The Capri at Siesta</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_220559934">
+<a name="UR220559934"></a>
+<div id="UR220559934" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_803CD4FB932DD8803F73E9D0047A5992-SRC_220559934" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_803CD4FB932DD8803F73E9D0047A5992 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/8f/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:803CD4FB932DD8803F73E9D0047A5992" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_803CD4FB932DD8803F73E9D0047A5992" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Dreadlock</span>
+</div>
+</div>
+<div class="location">
+Sweden
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_803CD4FB932DD8803F73E9D0047A5992-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="48 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">48 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_2nd sprite-badge_hotels_2nd" width="25" height="24">
+<span class="badgeText">13 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '803CD4FB932DD8803F73E9D0047A5992', screenName: 'Dreadlock', geos: [34162, 60805, 226865, 274958, 34344, 34618, 297549, 150812, 34352, 189830, 34606, 34515, 186338, 34636, 45963], geo: '34636' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 15 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 15 cities</span> </div>
+<div id="UID_803CD4FB932DD8803F73E9D0047A5992-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="31 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">31 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g34636-d633314-r220559934-The_Capri_at_Siesta-Siesta_Key_Florida.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r220559934">&#x201c;<span class='noQuotes'>The place to stay at Siesta</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='9 August 2014'>Reviewed 2 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+We wanted a break from the busy parks, and with google and trip advisor's help we found this treasure. The Capri at Siesta is a small, well managed little property which don't sit right at the beach but a short walk from a private part of what is considered one of the top beaches in the US. <br/><br/>Room (107) was spacious but required one of us (party of two adults and two small children) to sleep in the futon which was both rock hard and about 4&quot; too short. But given that everything else was perfect, I've left that out and still rate the hotel a 5 star experience.<br/><br/>The hotel has the cutest little garden with two grills - which you can use at your convenience. Further down the hallway is a room filled with beach toys, chairs, umbrellas - pretty much anything you would need to enjoy a day at the beach - all free to you to use. And if that's not enough - there's even more things to rent down by the private beach which weren't 1/10 as crowded as the public one. Shelling is awesome and I can really recommend to stay and wait for lower water.<br/><br/>As with all reviews you got to put it in context - is this as good as a Saudi 7 star hotel with faucets of gold? Of course not. Is it the best spot to stay at Siesta Key? Hands down. We will return over and over again! Thank you so much for spoiling us.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Room 107 is the biggest as far as we know, but all of them are equal in standard. You can&#39;t go w...
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="media  thumbCols3">
+<div class="thumbnails">
+<div class="photosInline">
+<ul>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g34636-d633314-i106487439-r220559934-The_Capri_at_Siesta-Siesta_Key_Florida.html#106487439 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 633314, 34636, 2, 106487439);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/58/de/8f/the-capri-at-siesta.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g34636-d633314-i106487433-r220559934-The_Capri_at_Siesta-Siesta_Key_Florida.html#106487433 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 633314, 34636, 2, 106487433);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/58/de/89/the-capri-at-siesta.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g34636-d633314-i106487448-r220559934-The_Capri_at_Siesta-Siesta_Key_Florida.html#106487448 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 633314, 34636, 2, 106487448);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/58/de/98/the-capri-at-siesta.jpg" alt="" width="50" height="50">
+</span>
+</li>
+</ul>
+</div> </div> </div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled with family</span>
+<ul class="recommend-column first">
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq220559934_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq220559934 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymd3m3qHM3mmmUdqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmdvX3Um6XoXfXXXmAUv3m6XoXfXXUKomUKd6XoXfXXKooAAmd6XoXfXUAm3U3UU6XoXfXUAmdKmvX6XoXfXUAX3d3UU6XoXfXUvXmm33X6XoXfXUkXddAmX6XoXfXU3domKKdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmdvX3UmqHrGVQQoqnQQfJ2ESQQoqnQQJIQQoqnQQhSVtIJqHhSVtIJQQoqnQQxbVgQQoqnQQqnciESMJxiGIac6XoXmqoTpcXXKooAAmd0tEn1XXKooAAmd0zH1md3m30pSM1vKmfxMdqn7AmXxMxMvvKmqnkmzsAxMKKdkboAAX0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_220559934" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '220559934'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '633314', 'Dreadlock', '803CD4FB932DD8803F73E9D0047A5992', 'en', '220559934', 'The Capri at Siesta');">Ask Dreadlock about The Capri at Siesta</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_219361611">
+<a name="UR219361611"></a>
+<div id="UR219361611" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_2A919846AB8C32B2CC26C3E829B53CD8-SRC_219361611" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_2A919846AB8C32B2CC26C3E829B53CD8 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/f9/70/0d/alefasi.jpg" class="avatar potentialFacebookAvatar avatarGUID:2A919846AB8C32B2CC26C3E829B53CD8" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_2A919846AB8C32B2CC26C3E829B53CD8" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">alefasi</span>
+</div>
+</div>
+<div class="location">
+Cervignano del Friuli, Italy
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_2A919846AB8C32B2CC26C3E829B53CD8-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="28 reviews" class="icon badge_srcontributor sprite-badge_srcontributor" width="25" height="24">
+<span class="badgeText">28 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">5 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '2A919846AB8C32B2CC26C3E829B53CD8', screenName: 'alefasi', geos: [194847, 32432, 34439, 34210, 34467, 34346, 1191832, 34636, 34345], geo: '34636' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 9 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 9 cities</span> </div>
+<div id="UID_2A919846AB8C32B2CC26C3E829B53CD8-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="3 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">3 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g34636-d633314-r219361611-The_Capri_at_Siesta-Siesta_Key_Florida.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r219361611">&#x201c;<span class='noQuotes'>Wonderful place!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='4 August 2014'>Reviewed 3 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+I book this place after the reading of tripadvisor guide. I'm so glad of my choice. A familiar place close to the beach, with a courtyard to make barbecue, kitchen (hoven, dishwasher, fridge, microwave,...€, a very nice pool, and a perfect organisation! Parking is free!
+</p>
+</div>
+<div class="rating-list">
+<div class="recommend">
+<span class="recommend-titleInline noRatings">Stayed August 2014</span>
+</div>
+</div>
+<div id="helpfulq219361611_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq219361611 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymd3m3qHM3mmmUdqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmdvX3Um6XoXfXXXmAUv3m6XoXfXXUKomUKd6XoXfXXKooAAmd6XoXfXUAm3U3UU6XoXfXUAmdKmvX6XoXfXUAX3d3UU6XoXfXUvXmm33X6XoXfXUkXddAmX6XoXfXU3domKKdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmdvX3UmqHrGVQQoqnQQfJ2ESQQoqnQQJIQQoqnQQhSVtIJqHhSVtIJQQoqnQQxbVgQQoqnQQqnciESMJxiGIac6XoXmqoTpcXUAm3U3UU0tEn1XUAm3U3UU0zH1md3m30pSM1XbAUAvd3b7vfmX7XffX3fmzsvXA7omfxMv0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_219361611" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '219361611'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/alefasi/g34636" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 4 reviews by alefasi for Siesta Key </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '633314', 'alefasi', '2A919846AB8C32B2CC26C3E829B53CD8', 'en', '219361611', 'The Capri at Siesta');">Ask alefasi about The Capri at Siesta</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_219340382">
+<a name="UR219340382"></a>
+<div id="UR219340382" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_7C9CE76BCE2A0BF934824D2D089FF5F2-SRC_219340382" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_7C9CE76BCE2A0BF934824D2D089FF5F2 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/7c/avatar063.jpg" class="avatar potentialFacebookAvatar avatarGUID:7C9CE76BCE2A0BF934824D2D089FF5F2" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_7C9CE76BCE2A0BF934824D2D089FF5F2" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Gayla F</span>
+</div>
+</div>
+<div class="location">
+Huntington, West Virginia
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_7C9CE76BCE2A0BF934824D2D089FF5F2-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">2 reviews</span>
+</div>
+<div id="UID_7C9CE76BCE2A0BF934824D2D089FF5F2-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="2 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">2 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g34636-d633314-r219340382-The_Capri_at_Siesta-Siesta_Key_Florida.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r219340382">&#x201c;<span class='noQuotes'>Relaxing Find by the Beach</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='4 August 2014'>Reviewed 3 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+We stayed at The Capri at Siesta for our honeymoon and could not have been more pleased with our stay. The Capri offered every amenity we could have wanted- dedicated parking, clean and comfortable room, close proximity to shopping and restaurants, a nice pool, and a short walk to the beach. The staff is incredibly friendly and willing to accommodate in any way that they can. The size of the resort is great, too. With only 10 rooms, it felt more like a personal house. There are not large crowds or going up and down many flights of stairs. If we are ever in the area again, we will definitely stay here.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq219340382_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq219340382 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymd3m3qHM3mmmUdqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmdvX3Um6XoXfXXXmAUv3m6XoXfXXUKomUKd6XoXfXXKooAAmd6XoXfXUAm3U3UU6XoXfXUAmdKmvX6XoXfXUAX3d3UU6XoXfXUvXmm33X6XoXfXUkXddAmX6XoXfXU3domKKdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmdvX3UmqHrGVQQoqnQQfJ2ESQQoqnQQJIQQoqnQQhSVtIJqHhSVtIJQQoqnQQxbVgQQoqnQQqnciESMJxiGIac6XoXmqoTpcXUAmdKmvX0tEn1XUAmdKmvX0zH1md3m30pSM1kfAfzsk37fzsXbK7qnAmdvXdxMXxMKvAqnqnoqnX0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">1</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_219340382" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '219340382'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '633314', 'Gayla F', '7C9CE76BCE2A0BF934824D2D089FF5F2', 'en', '219340382', 'The Capri at Siesta');">Ask Gayla F about The Capri at Siesta</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_219264611">
+<a name="UR219264611"></a>
+<div id="UR219264611" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_6D32CFFEBDD95B8E813812BC5322919A-SRC_219264611" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_6D32CFFEBDD95B8E813812BC5322919A ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/68/avatar046.jpg" class="avatar potentialFacebookAvatar avatarGUID:6D32CFFEBDD95B8E813812BC5322919A" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_6D32CFFEBDD95B8E813812BC5322919A" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Tracy C</span>
+</div>
+</div>
+<div class="location">
+Saint Augustine, Florida
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_6D32CFFEBDD95B8E813812BC5322919A-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -25, -50);">
+<span class="badgeText">2 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: '6D32CFFEBDD95B8E813812BC5322919A', screenName: 'Tracy C', geos: [34636, 34618], geo: '34636' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 2 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 2 cities</span> </div>
+<div id="UID_6D32CFFEBDD95B8E813812BC5322919A-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="2 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">2 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g34636-d633314-r219264611-The_Capri_at_Siesta-Siesta_Key_Florida.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r219264611">&#x201c;<span class='noQuotes'>FANTASTIC place to stay!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='3 August 2014'>Reviewed 3 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+Because Trip Advisor was so instrumental in helping me to make my vacation plans, and because the review of this hotel was so spot on, I HAD to write a review for the first time! You will not be disappointed! The hotel is small, but has everything you need. We stayed in a one br to have a wall separating us from our kids. The room is clean, well decorated and nicely furnished. The kitchenette allows you to cook (we didn't want to) and the hotel has a room of beach chairs, pool toys and the 2 washers and dryers to use, for free! The courtyard is beautifully decorated, between the landscaping and the peaceful fountain, the 2 gas grills, the tables with umbrellas to eat at and the chairs and couches to sit and relax. The pool is shared among the 5-7 resorts on the circle where the hotel is, but is a 100 yard walk at most from the room. The beach is maybe another 100 yards and is beautiful! You can rent beach chairs, umbrellas, kayaks, stand up paddleboards and have it all charged to your room. Or you can do like we did and rent a stand up paddleboard from Siesta Key Beach and Kayak and they will deliver it to the entrance of the beach for you to use for the whole day, at the same cost for what renting on the beach would cost you to use for only 4 hours!<br/><br/>About .2 of a mile away, there are restaurants (we didn't eat at any of them), a small grocery store, ice cream and a drug store/post office. It is not central to &quot;downtown&quot; Siesta Key, but is 3 miles away, at most. It is really difficult to park downtown come dinner time, so be aware. Because it is so crowded, and because Sarasota is only 1 mile away, for more great dining options, we did eat over there a few times.<br/><br/>The staff at the hotel is wonderful as well! We dealt with Becky and Emily, but really never had to because we had no issues at all! Stay here, you will not be disappointed!
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Go to the website, they have the floorplans of all of the rooms, as well as pictures to help you see...
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq219264611_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq219264611 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymd3m3qHM3mmmUdqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmdvX3Um6XoXfXXXmAUv3m6XoXfXXUKomUKd6XoXfXXKooAAmd6XoXfXUAm3U3UU6XoXfXUAmdKmvX6XoXfXUAX3d3UU6XoXfXUvXmm33X6XoXfXUkXddAmX6XoXfXU3domKKdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmdvX3UmqHrGVQQoqnQQfJ2ESQQoqnQQJIQQoqnQQhSVtIJqHhSVtIJQQoqnQQxbVgQQoqnQQqnciESMJxiGIac6XoXmqoTpcXUAX3d3UU0tEn1XUAX3d3UU0zH1md3m30pSM13xMmXfqnqnzs7xMxMAo7vzsvUmvUX7fomXXAUAb0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_219264611" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '219264611'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '633314', 'Tracy C', '6D32CFFEBDD95B8E813812BC5322919A', 'en', '219264611', 'The Capri at Siesta');">Ask Tracy C about The Capri at Siesta</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_218233662">
+<a name="UR218233662"></a>
+<div id="UR218233662" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_BAC0BCD063670A13EF57AAAE8C4128BD-SRC_218233662" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_BAC0BCD063670A13EF57AAAE8C4128BD ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/06/46/9b/91/ny1lou.jpg" class="avatar potentialFacebookAvatar avatarGUID:BAC0BCD063670A13EF57AAAE8C4128BD" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_BAC0BCD063670A13EF57AAAE8C4128BD" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">NY1LOU</span>
+</div>
+</div>
+<div class="location">
+NJ
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_BAC0BCD063670A13EF57AAAE8C4128BD-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="11 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">11 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">10 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'BAC0BCD063670A13EF57AAAE8C4128BD', screenName: 'NY1LOU', geos: [46932, 46341, 34227, 34515, 2665727, 46671, 34571, 34636, 34345], geo: '34636' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 9 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 9 cities</span> </div>
+<div id="UID_BAC0BCD063670A13EF57AAAE8C4128BD-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="23 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">23 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g34636-d633314-r218233662-The_Capri_at_Siesta-Siesta_Key_Florida.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r218233662">&#x201c;<span class='noQuotes'>A wonderful quiet retreat.</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='29 July 2014'>Reviewed 4 weeks ago
+</span>
+</div>
+<div class="entry">
+<p>
+I stayed at the Capri at Siesta because the trip advisor reviews were very high. I'm glad I did becasue it was exactly what me and my family were looking for. We stayed in Orlando and did the park thing before coming to the Capri and we were looking for relaxation time and we got it. The Hotel is steps away from the common pool which was very clean and fun for the kids. Its also very close to the beach which is rated the #1 beach in the USA. The beach is beautiful and the water is clear. We stayed in room 109 which it is a suite with a separate bedroom and in the living room slash kitchen you had the futon which was quite comfy. I would have liked for the room to be a bit bigger but that is just me and it did not take away from the good time we had there. I cooked full meals in the kitchen and I made good use of the outdoor grills that the hotel provides. At night it was lovely to sit out in the courtyard and sip on a nice cocktail while looking at the stars. Bring mosquito spray if you are staying in July. All in all the hotel was really nice and kept very clean. I would say it is the nicest looking hotel of the bunch. Kudos to the owners for their great sense of outdoor style. Becky greeted us with a smile and is full of local information. It was perfect because she was there but not there if you know what I mean. I guess the greatest compliment I think my wife said was that she felt like she was at home and that is a good feeling. I would recommend this hotel to families with kids or without. It was a wonderful stay and a wonderful place to be in Siesta Key.
+</p>
+<div class="reviewItem inlineRoomTip">
+<b>Room Tip:</b> Room 109 was big enough for a family of five.
+<div class="taLnk hvrIE6" onclick="ta.call('ta.overlays.Factory.showRoomTipsOverlay', event, this, 'en');">See more room tips</div>
+</div>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled with family</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss40" src="http://c1.tacdn.com/img2/x.gif" alt="4 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq218233662_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq218233662 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymd3m3qHM3mmmUdqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmdvX3Um6XoXfXXXmAUv3m6XoXfXXUKomUKd6XoXfXXKooAAmd6XoXfXUAm3U3UU6XoXfXUAmdKmvX6XoXfXUAX3d3UU6XoXfXUvXmm33X6XoXfXUkXddAmX6XoXfXU3domKKdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmdvX3UmqHrGVQQoqnQQfJ2ESQQoqnQQJIQQoqnQQhSVtIJqHhSVtIJQQoqnQQxbVgQQoqnQQqnciESMJxiGIac6XoXmqoTpcXUvXmm33X0tEn1XUvXmm33X0zH1md3m30pSM17bfK7fxMK3m3kKbUmzsqnokbbbzsvfdUXv7xM0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">4</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_218233662" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '218233662'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '633314', 'NY1LOU', 'BAC0BCD063670A13EF57AAAE8C4128BD', 'en', '218233662', 'The Capri at Siesta');">Ask NY1LOU about The Capri at Siesta</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_217244932">
+<a name="UR217244932"></a>
+<div id="UR217244932" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_D0510889142C5484472BE982191E32E3-SRC_217244932" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_D0510889142C5484472BE982191E32E3 ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/a2/avatar.jpg" class="avatar potentialFacebookAvatar avatarGUID:D0510889142C5484472BE982191E32E3" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_D0510889142C5484472BE982191E32E3" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">FeveredDisco</span>
+</div>
+</div>
+<div class="location">
+Warren, Ohio
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_D0510889142C5484472BE982191E32E3-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Contributor</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="14 reviews" class="icon badge_contributor sprite-badge_contributor" width="25" height="24">
+<span class="badgeText">14 reviews</span>
+</div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'D0510889142C5484472BE982191E32E3', screenName: 'FeveredDisco', geos: [50376, 34636, 34618, 34705], geo: '34636' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 4 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 4 cities</span> </div>
+<div id="UID_D0510889142C5484472BE982191E32E3-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="11 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">11 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g34636-d633314-r217244932-The_Capri_at_Siesta-Siesta_Key_Florida.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r217244932">&#x201c;<span class='noQuotes'>Unwind. Relax. You&#39;re at The Capri.</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate relativeDate" title='24 July 2014'>Reviewed 4 weeks ago
+</span>
+<a class="viaMobile sprite-grayPhone" href="/apps" target="_blank" onclick="ta.util.cookie.setPIDCookie(24687)">via mobile</a>
+</div>
+<div class="entry">
+<p>
+After a week long stay at The Capri at Siesta, I honestly can say I can not wait to return. Most inns, hotels or motels usually don't leave that type of impression, but The Capri is a standout in a sea of cookie-cutter high rise chains.<br/>I had the good fortune of staying in the Royal Palm (rm 107), the Deluxe Suite. This suite offers a separate bedroom with a queen sized bed, a living room with a futon couch and chair, a dinette and a well-stocked kitchenette. Practically every comfort from home is found at The Capri, ranging from the Tommy Bahama brand soaps and toiletries to the waffle-weave cotton robes. Oh, can't forget the 2 flat screen TVs or the (quiet) remote controlled air conditioning units (one in each room of the suite). And I would be remiss if I didn't mention how tastefully decorated the suite is; in fact the entire property radiates a tropical beachiness while remaining modern and stylish. <br/>The walk to Crescent Beach is an easy one. And since you can rent 2 chaises and an umbrella for an entire day just by showing your room key, all you need to carry is a beach towel (also provided by The Capri). Be sure to check the common room before you go, there are beach toys and noodles (fun for floating!) to borrow. <br/>I could go on and on singing the praises of The Capri, from the little detail of the packages of snacks left in the clean towel basket to the huge friendly smiles from the most gracious hosts, Becky and Emily. You can tell they truly want your visit to be the best it can be. I know mine was.
+</p>
+</div>
+<div class="media  thumbCols3">
+<div class="thumbnails">
+<div class="photosInline">
+<ul>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g34636-d633314-i104809199-r217244932-The_Capri_at_Siesta-Siesta_Key_Florida.html#104809199 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 633314, 34636, 2, 104809199);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/3f/42/ef/walkway-to-crescent-beach.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g34636-d633314-i104808571-r217244932-The_Capri_at_Siesta-Siesta_Key_Florida.html#104808571 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 633314, 34636, 2, 104808571);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/3f/40/7b/royal-palm-rm-107.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g34636-d633314-i104808476-r217244932-The_Capri_at_Siesta-Siesta_Key_Florida.html#104808476 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 633314, 34636, 2, 104808476);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/3f/40/1c/royal-palm-rm-107.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g34636-d633314-i104808315-r217244932-The_Capri_at_Siesta-Siesta_Key_Florida.html#104808315 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 633314, 34636, 2, 104808315);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/3f/3f/7b/royal-palm-rm-107.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g34636-d633314-i104808190-r217244932-The_Capri_at_Siesta-Siesta_Key_Florida.html#104808190 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 633314, 34636, 2, 104808190);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/3f/3e/fe/courtyard-at-the-capri.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g34636-d633314-i104808256-r217244932-The_Capri_at_Siesta-Siesta_Key_Florida.html#104808256 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 633314, 34636, 2, 104808256);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/3f/3f/40/royal-palm-rm-107.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class=" ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g34636-d633314-i104808407-r217244932-The_Capri_at_Siesta-Siesta_Key_Florida.html#104808407 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 633314, 34636, 2, 104808407);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/3f/3f/d7/royal-palm-rm-107.jpg" alt="" width="50" height="50">
+</span>
+</li>
+<li class="lastThumb ThumbNailContainer">
+<span class="u_/LocationPhotoDirectLink-g34636-d633314-i104808521-r217244932-The_Capri_at_Siesta-Siesta_Key_Florida.html#104808521 fkASDF" onclick="ta.trackEventOnPage('Reviews','user_photo','image');ta.util.cookie.setPIDCookie(5042); return ta.call('ta.overlays.Factory.albumsLB', event, this, 633314, 34636, 2, 104808521);">
+<img src="http://media-cdn.tripadvisor.com/media/photo-t/06/3f/40/49/royal-palm-rm-107.jpg" alt="" width="50" height="50">
+</span>
+</li>
+</ul>
+<div class="more">
+<a class="u_/LocationPhotoDirectLink-g34636-d633314-i104809199-The_Capri_at_Siesta-Siesta_Key_Florida.html#104809199 " href="/LocationPhotoDirectLink-g34636-d633314-i104809199-The_Capri_at_Siesta-Siesta_Key_Florida.html#104809199" onclick="ta.util.cookie.setPIDCookie(5042); ta.trackEventOnPage('Reviews', 'user_photo', 'see_all'); return ta.call('ta.overlays.Factory.albumsLB', event, this, 633314, 34636);">
+See all photos
+</a>
+</div>
+</div> </div> </div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Value</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Location</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Rooms</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq217244932_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq217244932 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymd3m3qHM3mmmUdqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmdvX3Um6XoXfXXXmAUv3m6XoXfXXUKomUKd6XoXfXXKooAAmd6XoXfXUAm3U3UU6XoXfXUAmdKmvX6XoXfXUAX3d3UU6XoXfXUvXmm33X6XoXfXUkXddAmX6XoXfXU3domKKdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmdvX3UmqHrGVQQoqnQQfJ2ESQQoqnQQJIQQoqnQQhSVtIJqHhSVtIJQQoqnQQxbVgQQoqnQQqnciESMJxiGIac6XoXmqoTpcXUkXddAmX0tEn1XUkXddAmX0zH1md3m30pSM1xMKoUKvvAUdXfodvddkX7zsAvXUAUzsmXzsm0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_217244932" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '217244932'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="sameGeoActivity">
+<a href="/members-citypage/FeveredDisco/g34636" target="_blank" onclick="ta.setEvtCookie('Reviews','more_reviews_by_user','',0,this.href); ta.util.cookie.setPIDCookie(19160)">
+See all 7 reviews by FeveredDisco for Siesta Key </a>
+</div>
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '633314', 'FeveredDisco', 'D0510889142C5484472BE982191E32E3', 'en', '217244932', 'The Capri at Siesta');">Ask FeveredDisco about The Capri at Siesta</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
+<div id="expanded_review_216453004">
+<a name="UR216453004"></a>
+<div id="UR216453004" class="extended provider0">
+<div class="col1of2">
+<div class="member_info">
+<div id="UID_EE745CB4A34E8E52FA04F2A6471E88CF-SRC_216453004" class="memberOverlayLink" onmouseover="ta.trackEventOnPage('Reviews','show_reviewer_info_window','user_name_photo'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', 0, (new Element(this)).getElement('.avatar')&&(new Element(this)).getElement('.avatar').getStyle('border-radius')=='100%'?-10:0);">
+<div class="avatar profile_EE745CB4A34E8E52FA04F2A6471E88CF ">
+<a onclick=>
+<img src="http://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/96/avatar022.jpg" class="avatar potentialFacebookAvatar avatarGUID:EE745CB4A34E8E52FA04F2A6471E88CF" width="74" height="74"/>
+</a>
+</div>
+<div class="username mo">
+<span class="expand_inline scrname hvrIE6 mbrName_EE745CB4A34E8E52FA04F2A6471E88CF" onclick="ta.trackEventOnPage('Reviews', 'show_reviewer_info_window', 'user_name_name_click')">Ruth D</span>
+</div>
+</div>
+<div class="location">
+Old Bridge, New Jersey
+</div>
+</div>
+<div class="memberBadging">
+<div id="UID_EE745CB4A34E8E52FA04F2A6471E88CF-CONT" class="totalReviewBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','review_count'); ta.util.cookie.setPIDCookie('15984'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -10, -50);">
+<div class="reviewerTitle">Senior Reviewer</div>
+<img src="http://c1.tacdn.com/img2/x.gif" alt="6 reviews" class="icon badge_srreviewer sprite-badge_srreviewer" width="25" height="24">
+<span class="badgeText">6 reviews</span>
+<div class="contributionReviewBadge">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="" class="icon badge_hotels_1st sprite-badge_hotels_1st" width="25" height="24">
+<span class="badgeText">4 hotel reviews</span>
+</div> </div>
+<div class="passportStampsBadge badge" onclick="ta.call('ta.overlays.Factory.memberPassportStampOverlay', event, this,
+       { actionRecord: 'Cities_Badge_Clicked', memberId: 'EE745CB4A34E8E52FA04F2A6471E88CF', screenName: 'Ruth D', geos: [60814, 34599, 54273, 54171, 34636], geo: '34636' })">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="Reviews in 5 cities" class="icon badge_passport sprite-badge_passport" width="25" height="24">
+<span class="badgeText">Reviews in 5 cities</span> </div>
+<div id="UID_EE745CB4A34E8E52FA04F2A6471E88CF-HV" class="helpfulVotesBadge badge no_cpu" onclick="ta.trackEventOnPage('Reviews','show_reviewer_info_window','helpful_count'); ta.util.cookie.setPIDCookie('15983'); ta.call('ta.overlays.Factory.memberOverlayWOffset', event, this, 's3 dg rgba_gry update2012', -22, -50);">
+<img src="http://c1.tacdn.com/img2/x.gif" alt="9 helpful votes" class="icon badge_helpful sprite-badge_helpful" width="25" height="24">
+<span class="badgeText">9 helpful votes</span>
+</div>
+</div>
+</div>
+<div class="col2of2">
+<div class="innerBubble">
+<div class="quote"><a href="/ShowUserReviews-g34636-d633314-r216453004-The_Capri_at_Siesta-Siesta_Key_Florida.html#CHECK_RATES_CONT" onclick="ta.setEvtCookie('Reviews','title','',0,this.href); setPID()" id="r216453004">&#x201c;<span class='noQuotes'>Fabulous Find!</span>&#x201d;</a></div>
+<div class="rating reviewItemInline">
+<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+<span class="ratingDate">Reviewed 21 July 2014
+</span>
+</div>
+<div class="entry">
+<p>
+We chose the Capri based on TripAdvisor reviews and it exceeded our expectations. We have been traveling from New Jersey to Florida for three weeks and have stayed in 7 different hotels and the Capri was the best of them all. The rooms are immaculate which is the number one requirement for us. We had a King room . There was a fully equipped and supplied kitchen, and every possible amenity you could think of. The pool was great. The walk to the beach was pleasant. The courtyard is beautiful. When we checked in, Becky was there and she made us feel as if she was really glad we were there. We could not ask for anything better than what the Capri has to offer, and we will definitely stay here again.
+</p>
+</div>
+<div class="rating-list">
+<ul class="recommend">
+<li>
+<span class="recommend-titleInline">Stayed July 2014, travelled as a couple</span>
+<ul class="recommend-column first">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Sleep Quality</li>
+</ul>
+<ul class="recommend-column">
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Cleanliness</li>
+<li class="recommend-answer">
+<span class="rate sprite-rating_ss rating_ss">
+<img class="sprite-rating_ss_fill rating_ss_fill ss50" src="http://c1.tacdn.com/img2/x.gif" alt="5 of 5 stars">
+</span>
+Service</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="expanded lessLink">
+<span class="taLnk collapse ulBlueLinks ">Less</span><img class="textArrow_more sprite-arrow_dropdown_blu_up" src="http://c1.tacdn.com/img2/x.gif" alt=""/>
+</div>
+<div id="helpfulq216453004_expanded" class="helpful">
+<span class="isHelpful">Was this review helpful?</span>
+<span class="tgt_helpfulq216453004 rndBtn rndBtnGreen rndBtnSmall" onclick="ta.util.cookie.setPIDCookie(5034); ta.call('ta.servlet.Reviews.helpfulVoteHandlerOb', event, this, 'LeJIVqd4EVIpECri1GII26mbqgqguuuxizSxiSCqgzsxE2JCMVMqdtqHymd3m3qHM3mmmUdqHJQQoqnQQniCIVxEIxiUqHJQQoqnQQVxE2JCMxiUqHJQQoqnQQEVsSVutxiXXmdvX3Um6XoXfXXXmAUv3m6XoXfXXUKomUKd6XoXfXXKooAAmd6XoXfXUAm3U3UU6XoXfXUAmdKmvX6XoXfXUAX3d3UU6XoXfXUvXmm33X6XoXfXUkXddAmX6XoXfXU3domKKdqHJQQoqnQQtVEscVIxiqWQQoqnQQQQoqnQQoqnQQoqnQQQQoqnQQeVsSVuqHJQQoqnQQIJEyVIxiXXmdvX3UmqHrGVQQoqnQQfJ2ESQQoqnQQJIQQoqnQQhSVtIJqHhSVtIJQQoqnQQxbVgQQoqnQQqnciESMJxiGIac6XoXmqoTpcXU3domKKd0tEn1XU3domKKd0zH1md3m30pSM1zszskdof7dbmdzsvzsoXqnbKdqnXb3dkUzsvvfqn0EJIVqiJcpV1U');; ta.trackEventOnPage('helpful_vote_button', 'Yes')">Yes</span>
+<span class="sprite-grayArrowLeft"></span>
+<span class="numHlp"><span class="numHlpIn">2</span></span>
+</div>
+<div class="reportProblem">
+<span id="ReportIAP_216453004" class="problem collapsed taLnk" onclick="ta.trackEventOnPage('Reviews', 'report_problem', 'click'); ta.call('ta.overlays.Factory.iapFlyout', event, this, {voteContentType:'USERREVIEW', contentId: '216453004'})" onmouseover="ta.trackEventOnPage('Reviews', 'report_problem', 'hover_over_flag'); this.onmouseover=null">
+<span class="hidden ulBlueLinks">Problem with this review?</span>
+<img src="http://c1.tacdn.com/img2/icons/gray_flag.png" width="13" height="14" alt="">
+</span>
+</div>
+<div class="userLinks">
+<div class="askQuestion">
+<span class="taLnk ulBlueLinks" onclick="ta.trackEventOnPage('Answers','ask_user_intercept','38673'); return ta.call('ta.overlays.Factory.askReviewerIntercept', event, this, '633314', 'Ruth D', 'EE745CB4A34E8E52FA04F2A6471E88CF', 'en', '216453004', 'The Capri at Siesta');">Ask Ruth D about The Capri at Siesta</span>
+</div>
+</div>
+<div class="note">
+This review is the subjective opinion of a TripAdvisor member and not of TripAdvisor LLC </div>
+</div>
+</div>
+</div>
+</div>
